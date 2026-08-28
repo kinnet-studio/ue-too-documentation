@@ -23,7 +23,7 @@
   <a href="#under-the-hood">Basic API Overview</a>
 </p>
 
-![small-demo](https://ue-too.github.io/ue-too/assets/doc-media/small-demo-with-cursor.gif)
+![small-demo](https://kinnet-studio.github.io/ue-too/assets/doc-media/small-demo-with-cursor.gif)
 
 <p align="center">
     A demonstration of uē-tôo's core functionality.

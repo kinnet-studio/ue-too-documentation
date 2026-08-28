@@ -201,7 +201,7 @@ const jaThemeConfig = {
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: 'docs',
-  base: '/documentation/',
+  base: '/ue-too-documentation/',
 
   title: 'uē-tôo',
   description: 'A modular TypeScript library for HTML canvas applications. Features include infinite canvas with pan/zoom/rotate, animation system, state machines, Bezier curves, 2D physics, geographic projections, and more.',
