@@ -2,7 +2,7 @@
 
 # クラス: PointCal
 
-定義: [index.ts:89](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L89)
+定義: [index.ts:89](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L89)
 
 Utility class for point and vector calculations.
 
@@ -39,7 +39,7 @@ const dot = PointCal.dotProduct(v1, v2);
 
 > `static` **angleFromA2B**(`a`, `b`): `number`
 
-定義: [index.ts:439](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L439)
+定義: [index.ts:439](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L439)
 
 Calculates the signed angle from vector a to vector b.
 
@@ -86,7 +86,7 @@ const angleDown = PointCal.angleFromA2B(right, down); // -π/2 (90 degrees CW)
 
 > `static` **distanceBetweenPoints**(`a`, `b`): `number`
 
-定義: [index.ts:497](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L497)
+定義: [index.ts:497](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L497)
 
 Calculates the Euclidean distance between two points.
 
@@ -128,7 +128,7 @@ const distance = PointCal.distanceBetweenPoints(a, b); // 5
 
 > `static` **getLineIntersection**(`startPoint`, `endPoint`, `startPoint2`, `endPoint2`): `object`
 
-定義: [index.ts:630](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L630)
+定義: [index.ts:630](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L630)
 
 Calculates the intersection point of two line segments.
 
@@ -208,7 +208,7 @@ const result = PointCal.getLineIntersection(line1Start, line1End, line2Start, li
 
 > `static` **isEqual**(`a`, `b`): `boolean`
 
-定義: [index.ts:585](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L585)
+定義: [index.ts:585](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L585)
 
 Checks if two points are exactly equal.
 
@@ -255,7 +255,7 @@ PointCal.isEqual(a, c); // false (use samePoint for tolerance)
 
 > `static` **linearInterpolation**(`a`, `b`, `t`): [`point`](../type-aliases/point.md)
 
-定義: [index.ts:549](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L549)
+定義: [index.ts:549](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L549)
 
 Performs linear interpolation between two points.
 
@@ -309,7 +309,7 @@ const quarter = PointCal.linearInterpolation(a, b, 0.25); // { x: 2.5, y: 5 }
 
 > `static` **unitVectorFromA2B**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [index.ts:346](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L346)
+定義: [index.ts:346](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L346)
 
 Calculates the unit vector pointing from point a to point b.
 
@@ -351,7 +351,7 @@ const direction = PointCal.unitVectorFromA2B(a, b); // { x: 0.6, y: 0.8 }
 
 > `static` **flipYAxis**(`point`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [index.ts:519](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L519)
+定義: [index.ts:519](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L519)
 
 Flips a point's y-coordinate (mirrors across the x-axis).
 
@@ -387,7 +387,7 @@ const flipped = PointCal.flipYAxis(point); // { x: 10, y: -20 }
 
 > `static` **rotatePoint**(`point`, `angle`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [index.ts:373](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L373)
+定義: [index.ts:373](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L373)
 
 Rotates a point around the origin.
 
@@ -433,7 +433,7 @@ const rotated = PointCal.rotatePoint(point, Math.PI / 2); // { x: 0, y: 1 }
 
 > `static` **transform2NewAxis**(`point`, `angleFromOriginalAxis2DestAxis`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [index.ts:400](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L400)
+定義: [index.ts:400](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L400)
 
 Transforms a point's coordinates to a new rotated axis system.
 
@@ -476,7 +476,7 @@ const transformed = PointCal.transform2NewAxis(point, angle);
 
 > `static` **transformPointWRTAnchor**(`point`, `anchor`, `angle`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [index.ts:468](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L468)
+定義: [index.ts:468](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L468)
 
 Rotates a point around a custom anchor point.
 
@@ -529,7 +529,7 @@ const rotated = PointCal.transformPointWRTAnchor(point, anchor, angle);
 
 > `static` **addVector**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [index.ts:115](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L115)
+定義: [index.ts:115](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L115)
 
 Adds two vectors together.
 
@@ -577,7 +577,7 @@ const sum3d = PointCal.addVector(a3d, b3d); // { x: 5, y: 7, z: 9 }
 
 > `static` **divideVectorByScalar**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [index.ts:190](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L190)
+定義: [index.ts:190](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L190)
 
 Divides a vector by a scalar value.
 
@@ -618,7 +618,7 @@ const divided = PointCal.divideVectorByScalar(v, 2); // { x: 5, y: 10 }
 
 > `static` **multiplyVectorByScalar**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [index.ts:167](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L167)
+定義: [index.ts:167](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L167)
 
 Multiplies a vector by a scalar value.
 
@@ -655,7 +655,7 @@ const scaled = PointCal.multiplyVectorByScalar(v, 2.5); // { x: 5, y: 7.5 }
 
 > `static` **subVector**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [index.ts:143](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L143)
+定義: [index.ts:143](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L143)
 
 Subtracts vector b from vector a.
 
@@ -697,7 +697,7 @@ const diff = PointCal.subVector(a, b); // { x: 3, y: 4 }
 
 > `static` **crossProduct**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [index.ts:315](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L315)
+定義: [index.ts:315](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L315)
 
 Calculates the cross product of two vectors.
 
@@ -745,7 +745,7 @@ const cross = PointCal.crossProduct(a, b); // { x: 0, y: 0, z: 1 }
 
 > `static` **dotProduct**(`a`, `b`): `number`
 
-定義: [index.ts:281](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L281)
+定義: [index.ts:281](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L281)
 
 Calculates the dot product of two vectors.
 
@@ -796,7 +796,7 @@ const dot2 = PointCal.dotProduct(c, d); // 23
 
 > `static` **magnitude**(`a`): `number`
 
-定義: [index.ts:216](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L216)
+定義: [index.ts:216](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L216)
 
 Calculates the magnitude (length) of a vector.
 
@@ -834,7 +834,7 @@ const mag3d = PointCal.magnitude(v3d); // 3
 
 > `static` **unitVector**(`a`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [index.ts:242](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/index.ts#L242)
+定義: [index.ts:242](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/index.ts#L242)
 
 Converts a vector to its unit vector (normalized to length 1).
 

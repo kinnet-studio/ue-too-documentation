@@ -2,7 +2,7 @@
 
 # Class: ValueComparisonPrecondition\<T\>
 
-Defined in: [action-system/precondition.ts:26](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/action-system/precondition.ts#L26)
+Defined in: [action-system/precondition.ts:26](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/action-system/precondition.ts#L26)
 
 Unified value comparison precondition that works with both custom schema components
 and typed components. Automatically detects which approach to use based on whether
@@ -39,7 +39,7 @@ const precondition2 = new ValueComparisonPrecondition<HealthComponent>(
 
 > **new ValueComparisonPrecondition**\<`T`\>(`coordinator`, `componentName`, `entity`, `valuePath`, `value`, `operator`): `ValueComparisonPrecondition`\<`T`\>
 
-Defined in: [action-system/precondition.ts:37](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/action-system/precondition.ts#L37)
+Defined in: [action-system/precondition.ts:37](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/action-system/precondition.ts#L37)
 
 #### Parameters
 
@@ -75,7 +75,7 @@ keyof `T`
 
 > **new ValueComparisonPrecondition**\<`T`\>(`value`, `operator`, `coordinator`, `componentName`, `entity`, `valuePath`): `ValueComparisonPrecondition`\<`T`\>
 
-Defined in: [action-system/precondition.ts:46](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/action-system/precondition.ts#L46)
+Defined in: [action-system/precondition.ts:46](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/action-system/precondition.ts#L46)
 
 #### Parameters
 
@@ -113,7 +113,7 @@ Defined in: [action-system/precondition.ts:46](https://github.com/kinnet-studio/
 
 > **check**(): `boolean`
 
-Defined in: [action-system/precondition.ts:102](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/action-system/precondition.ts#L102)
+Defined in: [action-system/precondition.ts:102](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/action-system/precondition.ts#L102)
 
 #### Returns
 

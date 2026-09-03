@@ -2,7 +2,7 @@
 
 # Class: DisabledState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:371](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L371)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:371](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L371)
 
 ## Extends
 
@@ -14,7 +14,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **new DisabledState**(): `DisabledState`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:377](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L377)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:377](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L377)
 
 #### Returns
 
@@ -30,7 +30,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > `protected` **\_defer**: `Defer`\<[`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`, [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\> \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:493
+Defined in: packages/being/dist/interface.d.ts:581
 
 #### Inherited from
 
@@ -42,7 +42,7 @@ Defined in: packages/being/dist/interface.d.ts:493
 
 > `protected` **\_delay**: `Delay`\<[`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`, [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\> \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:492
+Defined in: packages/being/dist/interface.d.ts:580
 
 #### Inherited from
 
@@ -54,7 +54,7 @@ Defined in: packages/being/dist/interface.d.ts:492
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: packages/being/dist/interface.d.ts:491
+Defined in: packages/being/dist/interface.d.ts:578
 
 #### Inherited from
 
@@ -62,11 +62,23 @@ Defined in: packages/being/dist/interface.d.ts:491
 
 ***
 
+### \_eventPreconditions
+
+> `protected` **\_eventPreconditions**: `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+Defined in: packages/being/dist/interface.d.ts:579
+
+#### Inherited from
+
+`TemplateState._eventPreconditions`
+
+***
+
 ### \_eventReactions
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:390](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L390)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:390](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L390)
 
 #### Overrides
 
@@ -78,7 +90,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > `protected` **\_guards**: `Guard`\<`Context`\>
 
-Defined in: packages/being/dist/interface.d.ts:490
+Defined in: packages/being/dist/interface.d.ts:577
 
 #### Inherited from
 
@@ -92,7 +104,7 @@ Defined in: packages/being/dist/interface.d.ts:490
 
 > **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:498
+Defined in: packages/being/dist/interface.d.ts:587
 
 ##### Returns
 
@@ -110,7 +122,7 @@ Defined in: packages/being/dist/interface.d.ts:498
 
 > **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: packages/being/dist/interface.d.ts:496
+Defined in: packages/being/dist/interface.d.ts:584
 
 ##### Returns
 
@@ -122,13 +134,35 @@ Defined in: packages/being/dist/interface.d.ts:496
 
 ***
 
+### eventPreconditions
+
+#### Get Signature
+
+> **get** **eventPreconditions**(): `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+Defined in: packages/being/dist/interface.d.ts:585
+
+Pre-action vetoes: named guards that must all pass before this state
+handles an event. Optional so existing State implementations remain
+valid; TemplateState always provides it.
+
+##### Returns
+
+`Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+#### Inherited from
+
+`TemplateState.eventPreconditions`
+
+***
+
 ### eventReactions
 
 #### Get Signature
 
 > **get** **eventReactions**(): `EventReactions`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: packages/being/dist/interface.d.ts:497
+Defined in: packages/being/dist/interface.d.ts:586
 
 ##### Returns
 
@@ -146,7 +180,7 @@ Defined in: packages/being/dist/interface.d.ts:497
 
 > **get** **guards**(): `Guard`\<`Context`\>
 
-Defined in: packages/being/dist/interface.d.ts:495
+Defined in: packages/being/dist/interface.d.ts:583
 
 ##### Returns
 
@@ -164,7 +198,7 @@ Defined in: packages/being/dist/interface.d.ts:495
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-Defined in: packages/being/dist/interface.d.ts:494
+Defined in: packages/being/dist/interface.d.ts:582
 
 ##### Returns
 
@@ -180,7 +214,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`context`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:386](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L386)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:386](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L386)
 
 #### Parameters
 
@@ -202,7 +236,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventResult`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`, `K` *extends* keyof [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md) ? [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-Defined in: packages/being/dist/interface.d.ts:501
+Defined in: packages/being/dist/interface.d.ts:590
 
 #### Type Parameters
 
@@ -238,7 +272,7 @@ Defined in: packages/being/dist/interface.d.ts:501
 
 > **uponEnter**(`context`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:381](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L381)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:381](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L381)
 
 #### Parameters
 

@@ -2,7 +2,7 @@
 
 # Class: IdleState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:109](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L109)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:109](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L109)
 
 IDLE state - waiting for two-finger touch.
 
@@ -39,7 +39,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > `protected` **\_defer**: `Defer`\<[`TouchContext`](../interfaces/TouchContext.md), [`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\> \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:493
+Defined in: packages/being/dist/interface.d.ts:581
 
 #### Inherited from
 
@@ -51,7 +51,7 @@ Defined in: packages/being/dist/interface.d.ts:493
 
 > `protected` **\_delay**: `Delay`\<[`TouchContext`](../interfaces/TouchContext.md), [`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\> \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:492
+Defined in: packages/being/dist/interface.d.ts:580
 
 #### Inherited from
 
@@ -63,7 +63,7 @@ Defined in: packages/being/dist/interface.d.ts:492
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchContext`](../interfaces/TouchContext.md), *typeof* [`_guards`](#guards)\>\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:137](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L137)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:137](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L137)
 
 #### Overrides
 
@@ -71,11 +71,23 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 ***
 
+### \_eventPreconditions
+
+> `protected` **\_eventPreconditions**: `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+Defined in: packages/being/dist/interface.d.ts:579
+
+#### Inherited from
+
+`TemplateState._eventPreconditions`
+
+***
+
 ### \_eventReactions
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:115](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L115)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:115](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L115)
 
 #### Overrides
 
@@ -87,7 +99,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > `protected` **\_guards**: `Guard`\<[`TouchContext`](../interfaces/TouchContext.md), `"touchPointsCount"`\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:131](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L131)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:131](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L131)
 
 #### Overrides
 
@@ -101,7 +113,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:498
+Defined in: packages/being/dist/interface.d.ts:587
 
 ##### Returns
 
@@ -119,7 +131,7 @@ Defined in: packages/being/dist/interface.d.ts:498
 
 > **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: packages/being/dist/interface.d.ts:496
+Defined in: packages/being/dist/interface.d.ts:584
 
 ##### Returns
 
@@ -131,13 +143,35 @@ Defined in: packages/being/dist/interface.d.ts:496
 
 ***
 
+### eventPreconditions
+
+#### Get Signature
+
+> **get** **eventPreconditions**(): `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+Defined in: packages/being/dist/interface.d.ts:585
+
+Pre-action vetoes: named guards that must all pass before this state
+handles an event. Optional so existing State implementations remain
+valid; TemplateState always provides it.
+
+##### Returns
+
+`Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+#### Inherited from
+
+`TemplateState.eventPreconditions`
+
+***
+
 ### eventReactions
 
 #### Get Signature
 
 > **get** **eventReactions**(): `EventReactions`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: packages/being/dist/interface.d.ts:497
+Defined in: packages/being/dist/interface.d.ts:586
 
 ##### Returns
 
@@ -155,7 +189,7 @@ Defined in: packages/being/dist/interface.d.ts:497
 
 > **get** **guards**(): `Guard`\<`Context`\>
 
-Defined in: packages/being/dist/interface.d.ts:495
+Defined in: packages/being/dist/interface.d.ts:583
 
 ##### Returns
 
@@ -173,7 +207,7 @@ Defined in: packages/being/dist/interface.d.ts:495
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-Defined in: packages/being/dist/interface.d.ts:494
+Defined in: packages/being/dist/interface.d.ts:582
 
 ##### Returns
 
@@ -189,7 +223,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:500
+Defined in: packages/being/dist/interface.d.ts:589
 
 #### Parameters
 
@@ -219,7 +253,7 @@ Defined in: packages/being/dist/interface.d.ts:500
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventResult`\<[`TouchStates`](../type-aliases/TouchStates.md), `K` *extends* `"touchmove"` ? [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-Defined in: packages/being/dist/interface.d.ts:501
+Defined in: packages/being/dist/interface.d.ts:590
 
 #### Type Parameters
 
@@ -255,7 +289,7 @@ Defined in: packages/being/dist/interface.d.ts:501
 
 > **touchend**(`context`, `payload`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:163](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L163)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:163](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L163)
 
 #### Parameters
 
@@ -277,7 +311,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **touchstart**(`context`, `payload`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:159](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L159)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:159](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L159)
 
 #### Parameters
 
@@ -299,7 +333,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:499
+Defined in: packages/being/dist/interface.d.ts:588
 
 #### Parameters
 

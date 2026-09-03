@@ -2,7 +2,7 @@
 
 # Class: RotateControlStateMachine
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:128](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L128)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:128](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L128)
 
 State machine controlling rotation input flow and animations.
 
@@ -49,7 +49,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > **new RotateControlStateMachine**(`states`, `initialState`, `context`): `RotateControlStateMachine`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:134](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L134)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:134](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L134)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > `protected` **\_context**: `BaseContext`
 
-Defined in: packages/being/dist/interface.d.ts:384
+Defined in: packages/being/dist/interface.d.ts:468
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ Defined in: packages/being/dist/interface.d.ts:384
 
 > `protected` **\_currentState**: [`RotateControlStates`](../type-aliases/RotateControlStates.md) \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: packages/being/dist/interface.d.ts:382
+Defined in: packages/being/dist/interface.d.ts:466
 
 #### Inherited from
 
@@ -99,11 +99,23 @@ Defined in: packages/being/dist/interface.d.ts:382
 
 ***
 
+### \_eventResultCallbacks
+
+> `protected` **\_eventResultCallbacks**: `EventResultCallback`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), `BaseContext`, [`RotateControlStates`](../type-aliases/RotateControlStates.md)\>[]
+
+Defined in: packages/being/dist/interface.d.ts:472
+
+#### Inherited from
+
+`TemplateStateMachine._eventResultCallbacks`
+
+***
+
 ### \_happensCallbacks
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-Defined in: packages/being/dist/interface.d.ts:387
+Defined in: packages/being/dist/interface.d.ts:471
 
 #### Parameters
 
@@ -129,7 +141,7 @@ Defined in: packages/being/dist/interface.d.ts:387
 
 > `protected` **\_initialState**: [`RotateControlStates`](../type-aliases/RotateControlStates.md)
 
-Defined in: packages/being/dist/interface.d.ts:389
+Defined in: packages/being/dist/interface.d.ts:474
 
 #### Inherited from
 
@@ -141,7 +153,7 @@ Defined in: packages/being/dist/interface.d.ts:389
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md)\>[]
 
-Defined in: packages/being/dist/interface.d.ts:386
+Defined in: packages/being/dist/interface.d.ts:470
 
 #### Inherited from
 
@@ -153,7 +165,7 @@ Defined in: packages/being/dist/interface.d.ts:386
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:383
+Defined in: packages/being/dist/interface.d.ts:467
 
 #### Inherited from
 
@@ -165,7 +177,7 @@ Defined in: packages/being/dist/interface.d.ts:383
 
 > `protected` **\_statesArray**: [`RotateControlStates`](../type-aliases/RotateControlStates.md)[]
 
-Defined in: packages/being/dist/interface.d.ts:385
+Defined in: packages/being/dist/interface.d.ts:469
 
 #### Inherited from
 
@@ -177,7 +189,7 @@ Defined in: packages/being/dist/interface.d.ts:385
 
 > `protected` **\_timeouts**: `number` \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:388
+Defined in: packages/being/dist/interface.d.ts:473
 
 #### Inherited from
 
@@ -185,13 +197,38 @@ Defined in: packages/being/dist/interface.d.ts:388
 
 ## Accessors
 
+### context
+
+#### Get Signature
+
+> **get** **context**(): `Context`
+
+Defined in: packages/being/dist/interface.d.ts:487
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+TemplateStateMachine always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+##### Returns
+
+`Context`
+
+#### Inherited from
+
+`TemplateStateMachine.context`
+
+***
+
 ### currentState
 
 #### Get Signature
 
 > **get** **currentState**(): `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: packages/being/dist/interface.d.ts:399
+Defined in: packages/being/dist/interface.d.ts:485
 
 ##### Returns
 
@@ -209,7 +246,7 @@ Defined in: packages/being/dist/interface.d.ts:399
 
 > **get** **possibleStates**(): `States`[]
 
-Defined in: packages/being/dist/interface.d.ts:401
+Defined in: packages/being/dist/interface.d.ts:488
 
 ##### Returns
 
@@ -227,7 +264,7 @@ Defined in: packages/being/dist/interface.d.ts:401
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:402
+Defined in: packages/being/dist/interface.d.ts:489
 
 ##### Returns
 
@@ -245,7 +282,7 @@ Defined in: packages/being/dist/interface.d.ts:402
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), `K` *extends* keyof [`RotateControlOutputMapping`](../type-aliases/RotateControlOutputMapping.md) ? [`RotateControlOutputMapping`](../type-aliases/RotateControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-Defined in: packages/being/dist/interface.d.ts:395
+Defined in: packages/being/dist/interface.d.ts:480
 
 ##### Type Parameters
 
@@ -271,7 +308,7 @@ Defined in: packages/being/dist/interface.d.ts:395
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), `unknown`\>
 
-Defined in: packages/being/dist/interface.d.ts:396
+Defined in: packages/being/dist/interface.d.ts:481
 
 ##### Type Parameters
 
@@ -299,7 +336,7 @@ Defined in: packages/being/dist/interface.d.ts:396
 
 > **initateTransition**(): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:185](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L185)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:185](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L185)
 
 Initiates transition to `TRANSITION` state.
 
@@ -318,7 +355,7 @@ Called when starting programmatic camera movements.
 
 > **notifyRotateByInput**(`diff`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:160](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L160)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:160](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L160)
 
 Notifies the state machine of user rotation input.
 
@@ -347,7 +384,7 @@ where it may transition back to `ACCEPTING_USER_INPUT` (user interrupting animat
 
 > **notifyRotateToAnimationInput**(`target`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:174](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L174)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:174](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L174)
 
 Initiates a rotation animation to a target angle.
 
@@ -372,11 +409,50 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 ***
 
+### onEventResult()
+
+> **onEventResult**(`callback`): () => `void`
+
+Defined in: packages/being/dist/interface.d.ts:484
+
+Subscribe to every event result. Optional so existing StateMachine
+implementations remain valid; TemplateStateMachine always
+provides it. Returns a disposer on implementations that support one.
+Disposing during a dispatch takes effect starting with the next
+dispatch, not the one in progress — see EventResultCallback
+for the exact snapshot-iteration semantics.
+
+#### Parameters
+
+##### callback
+
+`EventResultCallback`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), `BaseContext`, [`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
+
+#### Returns
+
+> (): `void`
+
+##### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateStateMachine.onEventResult`
+
+***
+
 ### onHappens()
 
-> **onHappens**(`callback`): `void`
+> **onHappens**(`callback`): () => `void`
 
-Defined in: packages/being/dist/interface.d.ts:398
+Defined in: packages/being/dist/interface.d.ts:483
+
+Subscribe to every `happens()` call, before the state handles it.
+Returns a disposer on implementations that support one. Disposing
+during a dispatch takes effect starting with the next dispatch, not
+the one in progress — see EventResultCallback for the exact
+snapshot-iteration semantics.
 
 #### Parameters
 
@@ -385,6 +461,10 @@ Defined in: packages/being/dist/interface.d.ts:398
 (`args`, `context`) => `void`
 
 #### Returns
+
+> (): `void`
+
+##### Returns
 
 `void`
 
@@ -396,9 +476,14 @@ Defined in: packages/being/dist/interface.d.ts:398
 
 ### onStateChange()
 
-> **onStateChange**(`callback`): `void`
+> **onStateChange**(`callback`): () => `void`
 
-Defined in: packages/being/dist/interface.d.ts:397
+Defined in: packages/being/dist/interface.d.ts:482
+
+Subscribe to state changes. Returns a disposer on implementations that
+support one. Disposing during a dispatch takes effect starting with
+the next dispatch, not the one in progress — see
+EventResultCallback for the exact snapshot-iteration semantics.
 
 #### Parameters
 
@@ -407,6 +492,10 @@ Defined in: packages/being/dist/interface.d.ts:397
 `StateChangeCallback`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
 
 #### Returns
+
+> (): `void`
+
+##### Returns
 
 `void`
 
@@ -420,7 +509,7 @@ Defined in: packages/being/dist/interface.d.ts:397
 
 > **reset**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:391
+Defined in: packages/being/dist/interface.d.ts:476
 
 #### Returns
 
@@ -436,7 +525,7 @@ Defined in: packages/being/dist/interface.d.ts:391
 
 > **setContext**(`context`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:400
+Defined in: packages/being/dist/interface.d.ts:486
 
 #### Parameters
 
@@ -458,7 +547,7 @@ Defined in: packages/being/dist/interface.d.ts:400
 
 > **start**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:392
+Defined in: packages/being/dist/interface.d.ts:477
 
 #### Returns
 
@@ -474,7 +563,7 @@ Defined in: packages/being/dist/interface.d.ts:392
 
 > **switchTo**(`state`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:394
+Defined in: packages/being/dist/interface.d.ts:479
 
 #### Parameters
 
@@ -496,7 +585,7 @@ Defined in: packages/being/dist/interface.d.ts:394
 
 > **wrapup**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:393
+Defined in: packages/being/dist/interface.d.ts:478
 
 #### Returns
 

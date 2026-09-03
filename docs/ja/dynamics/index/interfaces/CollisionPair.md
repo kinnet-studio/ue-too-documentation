@@ -2,7 +2,7 @@
 
 # インターフェイス: CollisionPair
 
-定義: [pair-manager.ts:14](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/pair-manager.ts#L14)
+定義: [pair-manager.ts:14](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/pair-manager.ts#L14)
 
 Represents a collision pair between two bodies.
 
@@ -17,7 +17,7 @@ detection of collision start, update, and end events.
 
 > **bodyA**: [`RigidBody`](RigidBody.md)
 
-定義: [pair-manager.ts:15](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/pair-manager.ts#L15)
+定義: [pair-manager.ts:15](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/pair-manager.ts#L15)
 
 ***
 
@@ -25,7 +25,7 @@ detection of collision start, update, and end events.
 
 > **bodyB**: [`RigidBody`](RigidBody.md)
 
-定義: [pair-manager.ts:16](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/pair-manager.ts#L16)
+定義: [pair-manager.ts:16](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/pair-manager.ts#L16)
 
 ***
 
@@ -33,7 +33,7 @@ detection of collision start, update, and end events.
 
 > **contactPoints**: `Point`[]
 
-定義: [pair-manager.ts:19](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/pair-manager.ts#L19)
+定義: [pair-manager.ts:19](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/pair-manager.ts#L19)
 
 ***
 
@@ -41,7 +41,7 @@ detection of collision start, update, and end events.
 
 > `optional` **depth**: `number`
 
-定義: [pair-manager.ts:21](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/pair-manager.ts#L21)
+定義: [pair-manager.ts:21](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/pair-manager.ts#L21)
 
 ***
 
@@ -49,7 +49,7 @@ detection of collision start, update, and end events.
 
 > **frameCreated**: `number`
 
-定義: [pair-manager.ts:22](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/pair-manager.ts#L22)
+定義: [pair-manager.ts:22](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/pair-manager.ts#L22)
 
 ***
 
@@ -57,7 +57,7 @@ detection of collision start, update, and end events.
 
 > **frameUpdated**: `number`
 
-定義: [pair-manager.ts:23](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/pair-manager.ts#L23)
+定義: [pair-manager.ts:23](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/pair-manager.ts#L23)
 
 ***
 
@@ -65,7 +65,7 @@ detection of collision start, update, and end events.
 
 > **id**: `string`
 
-定義: [pair-manager.ts:17](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/pair-manager.ts#L17)
+定義: [pair-manager.ts:17](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/pair-manager.ts#L17)
 
 ***
 
@@ -73,7 +73,7 @@ detection of collision start, update, and end events.
 
 > **isActive**: `boolean`
 
-定義: [pair-manager.ts:18](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/pair-manager.ts#L18)
+定義: [pair-manager.ts:18](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/pair-manager.ts#L18)
 
 ***
 
@@ -81,4 +81,4 @@ detection of collision start, update, and end events.
 
 > `optional` **normal**: `Point`
 
-定義: [pair-manager.ts:20](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/pair-manager.ts#L20)
+定義: [pair-manager.ts:20](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/pair-manager.ts#L20)

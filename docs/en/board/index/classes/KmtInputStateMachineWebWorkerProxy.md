@@ -2,7 +2,7 @@
 
 # Class: KmtInputStateMachineWebWorkerProxy
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:761](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L761)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:761](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L761)
 
 ## Extends
 
@@ -14,7 +14,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **new KmtInputStateMachineWebWorkerProxy**(`webworker`): `KmtInputStateMachineWebWorkerProxy`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:769](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L769)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:769](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L769)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > `protected` **\_context**: [`KmtInputContext`](../interfaces/KmtInputContext.md)
 
-Defined in: packages/being/dist/interface.d.ts:384
+Defined in: packages/being/dist/interface.d.ts:468
 
 #### Inherited from
 
@@ -48,7 +48,7 @@ Defined in: packages/being/dist/interface.d.ts:384
 
 > `protected` **\_currentState**: `"INITIAL"` \| `"TERMINAL"` \| `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`
 
-Defined in: packages/being/dist/interface.d.ts:382
+Defined in: packages/being/dist/interface.d.ts:466
 
 #### Inherited from
 
@@ -56,11 +56,23 @@ Defined in: packages/being/dist/interface.d.ts:382
 
 ***
 
+### \_eventResultCallbacks
+
+> `protected` **\_eventResultCallbacks**: `EventResultCallback`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>[]
+
+Defined in: packages/being/dist/interface.d.ts:472
+
+#### Inherited from
+
+`TemplateStateMachine._eventResultCallbacks`
+
+***
+
 ### \_happensCallbacks
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-Defined in: packages/being/dist/interface.d.ts:387
+Defined in: packages/being/dist/interface.d.ts:471
 
 #### Parameters
 
@@ -86,7 +98,7 @@ Defined in: packages/being/dist/interface.d.ts:387
 
 > `protected` **\_initialState**: `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`
 
-Defined in: packages/being/dist/interface.d.ts:389
+Defined in: packages/being/dist/interface.d.ts:474
 
 #### Inherited from
 
@@ -98,7 +110,7 @@ Defined in: packages/being/dist/interface.d.ts:389
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>[]
 
-Defined in: packages/being/dist/interface.d.ts:386
+Defined in: packages/being/dist/interface.d.ts:470
 
 #### Inherited from
 
@@ -110,7 +122,7 @@ Defined in: packages/being/dist/interface.d.ts:386
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:383
+Defined in: packages/being/dist/interface.d.ts:467
 
 #### Inherited from
 
@@ -122,7 +134,7 @@ Defined in: packages/being/dist/interface.d.ts:383
 
 > `protected` **\_statesArray**: (`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`)[]
 
-Defined in: packages/being/dist/interface.d.ts:385
+Defined in: packages/being/dist/interface.d.ts:469
 
 #### Inherited from
 
@@ -134,7 +146,7 @@ Defined in: packages/being/dist/interface.d.ts:385
 
 > `protected` **\_timeouts**: `number` \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:388
+Defined in: packages/being/dist/interface.d.ts:473
 
 #### Inherited from
 
@@ -142,13 +154,38 @@ Defined in: packages/being/dist/interface.d.ts:388
 
 ## Accessors
 
+### context
+
+#### Get Signature
+
+> **get** **context**(): `Context`
+
+Defined in: packages/being/dist/interface.d.ts:487
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+TemplateStateMachine always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+##### Returns
+
+`Context`
+
+#### Inherited from
+
+`TemplateStateMachine.context`
+
+***
+
 ### currentState
 
 #### Get Signature
 
 > **get** **currentState**(): `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: packages/being/dist/interface.d.ts:399
+Defined in: packages/being/dist/interface.d.ts:485
 
 ##### Returns
 
@@ -166,7 +203,7 @@ Defined in: packages/being/dist/interface.d.ts:399
 
 > **get** **possibleStates**(): `States`[]
 
-Defined in: packages/being/dist/interface.d.ts:401
+Defined in: packages/being/dist/interface.d.ts:488
 
 ##### Returns
 
@@ -184,7 +221,7 @@ Defined in: packages/being/dist/interface.d.ts:401
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:402
+Defined in: packages/being/dist/interface.d.ts:489
 
 ##### Returns
 
@@ -200,7 +237,7 @@ Defined in: packages/being/dist/interface.d.ts:402
 
 > **happens**(...`args`): `EventResult`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:786](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L786)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:786](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L786)
 
 #### Parameters
 
@@ -218,11 +255,50 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 ***
 
+### onEventResult()
+
+> **onEventResult**(`callback`): () => `void`
+
+Defined in: packages/being/dist/interface.d.ts:484
+
+Subscribe to every event result. Optional so existing StateMachine
+implementations remain valid; TemplateStateMachine always
+provides it. Returns a disposer on implementations that support one.
+Disposing during a dispatch takes effect starting with the next
+dispatch, not the one in progress — see EventResultCallback
+for the exact snapshot-iteration semantics.
+
+#### Parameters
+
+##### callback
+
+`EventResultCallback`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>
+
+#### Returns
+
+> (): `void`
+
+##### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateStateMachine.onEventResult`
+
+***
+
 ### onHappens()
 
-> **onHappens**(`callback`): `void`
+> **onHappens**(`callback`): () => `void`
 
-Defined in: packages/being/dist/interface.d.ts:398
+Defined in: packages/being/dist/interface.d.ts:483
+
+Subscribe to every `happens()` call, before the state handles it.
+Returns a disposer on implementations that support one. Disposing
+during a dispatch takes effect starting with the next dispatch, not
+the one in progress — see EventResultCallback for the exact
+snapshot-iteration semantics.
 
 #### Parameters
 
@@ -231,6 +307,10 @@ Defined in: packages/being/dist/interface.d.ts:398
 (`args`, `context`) => `void`
 
 #### Returns
+
+> (): `void`
+
+##### Returns
 
 `void`
 
@@ -242,9 +322,14 @@ Defined in: packages/being/dist/interface.d.ts:398
 
 ### onStateChange()
 
-> **onStateChange**(`callback`): `void`
+> **onStateChange**(`callback`): () => `void`
 
-Defined in: packages/being/dist/interface.d.ts:397
+Defined in: packages/being/dist/interface.d.ts:482
+
+Subscribe to state changes. Returns a disposer on implementations that
+support one. Disposing during a dispatch takes effect starting with
+the next dispatch, not the one in progress — see
+EventResultCallback for the exact snapshot-iteration semantics.
 
 #### Parameters
 
@@ -253,6 +338,10 @@ Defined in: packages/being/dist/interface.d.ts:397
 `StateChangeCallback`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>
 
 #### Returns
+
+> (): `void`
+
+##### Returns
 
 `void`
 
@@ -266,7 +355,7 @@ Defined in: packages/being/dist/interface.d.ts:397
 
 > **reset**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:391
+Defined in: packages/being/dist/interface.d.ts:476
 
 #### Returns
 
@@ -282,7 +371,7 @@ Defined in: packages/being/dist/interface.d.ts:391
 
 > **setContext**(`context`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:400
+Defined in: packages/being/dist/interface.d.ts:486
 
 #### Parameters
 
@@ -304,7 +393,7 @@ Defined in: packages/being/dist/interface.d.ts:400
 
 > **start**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:392
+Defined in: packages/being/dist/interface.d.ts:477
 
 #### Returns
 
@@ -320,7 +409,7 @@ Defined in: packages/being/dist/interface.d.ts:392
 
 > **switchTo**(`state`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:394
+Defined in: packages/being/dist/interface.d.ts:479
 
 #### Parameters
 
@@ -342,7 +431,7 @@ Defined in: packages/being/dist/interface.d.ts:394
 
 > **wrapup**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:393
+Defined in: packages/being/dist/interface.d.ts:478
 
 #### Returns
 

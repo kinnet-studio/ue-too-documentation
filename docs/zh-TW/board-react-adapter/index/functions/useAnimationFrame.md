@@ -4,7 +4,7 @@
 
 > **useAnimationFrame**(`callback`): `void`
 
-定義於: [hooks/useAnimationFrame.ts:36](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-react-adapter/src/hooks/useAnimationFrame.ts#L36)
+定義於: [hooks/useAnimationFrame.ts:36](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-react-adapter/src/hooks/useAnimationFrame.ts#L36)
 
 Hook to run a callback on every animation frame.
 

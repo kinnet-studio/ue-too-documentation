@@ -4,4 +4,4 @@
 
 > `const` **ZoneComponentSchema**: `ComponentSchema`
 
-定義: [zone-system/zone-component.ts:42](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L42)
+定義: [zone-system/zone-component.ts:42](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L42)

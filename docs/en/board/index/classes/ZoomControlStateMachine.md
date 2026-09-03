@@ -2,7 +2,7 @@
 
 # Class: ZoomControlStateMachine
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:436](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L436)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:436](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L436)
 
 State machine controlling zoom input flow and animations.
 
@@ -49,7 +49,7 @@ stateMachine.notifyZoomToAtWorldInput(2.0, { x: 1000, y: 500 });
 
 > **new ZoomControlStateMachine**(`states`, `initialState`, `context`): `ZoomControlStateMachine`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:442](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L442)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:442](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L442)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > `protected` **\_context**: `BaseContext`
 
-Defined in: packages/being/dist/interface.d.ts:384
+Defined in: packages/being/dist/interface.d.ts:468
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ Defined in: packages/being/dist/interface.d.ts:384
 
 > `protected` **\_currentState**: [`ZoomControlStates`](../type-aliases/ZoomControlStates.md) \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: packages/being/dist/interface.d.ts:382
+Defined in: packages/being/dist/interface.d.ts:466
 
 #### Inherited from
 
@@ -99,11 +99,23 @@ Defined in: packages/being/dist/interface.d.ts:382
 
 ***
 
+### \_eventResultCallbacks
+
+> `protected` **\_eventResultCallbacks**: `EventResultCallback`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), `BaseContext`, [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>[]
+
+Defined in: packages/being/dist/interface.d.ts:472
+
+#### Inherited from
+
+`TemplateStateMachine._eventResultCallbacks`
+
+***
+
 ### \_happensCallbacks
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-Defined in: packages/being/dist/interface.d.ts:387
+Defined in: packages/being/dist/interface.d.ts:471
 
 #### Parameters
 
@@ -129,7 +141,7 @@ Defined in: packages/being/dist/interface.d.ts:387
 
 > `protected` **\_initialState**: [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)
 
-Defined in: packages/being/dist/interface.d.ts:389
+Defined in: packages/being/dist/interface.d.ts:474
 
 #### Inherited from
 
@@ -141,7 +153,7 @@ Defined in: packages/being/dist/interface.d.ts:389
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>[]
 
-Defined in: packages/being/dist/interface.d.ts:386
+Defined in: packages/being/dist/interface.d.ts:470
 
 #### Inherited from
 
@@ -153,7 +165,7 @@ Defined in: packages/being/dist/interface.d.ts:386
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:383
+Defined in: packages/being/dist/interface.d.ts:467
 
 #### Inherited from
 
@@ -165,7 +177,7 @@ Defined in: packages/being/dist/interface.d.ts:383
 
 > `protected` **\_statesArray**: [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)[]
 
-Defined in: packages/being/dist/interface.d.ts:385
+Defined in: packages/being/dist/interface.d.ts:469
 
 #### Inherited from
 
@@ -177,7 +189,7 @@ Defined in: packages/being/dist/interface.d.ts:385
 
 > `protected` **\_timeouts**: `number` \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:388
+Defined in: packages/being/dist/interface.d.ts:473
 
 #### Inherited from
 
@@ -185,13 +197,38 @@ Defined in: packages/being/dist/interface.d.ts:388
 
 ## Accessors
 
+### context
+
+#### Get Signature
+
+> **get** **context**(): `Context`
+
+Defined in: packages/being/dist/interface.d.ts:487
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+TemplateStateMachine always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+##### Returns
+
+`Context`
+
+#### Inherited from
+
+`TemplateStateMachine.context`
+
+***
+
 ### currentState
 
 #### Get Signature
 
 > **get** **currentState**(): `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: packages/being/dist/interface.d.ts:399
+Defined in: packages/being/dist/interface.d.ts:485
 
 ##### Returns
 
@@ -209,7 +246,7 @@ Defined in: packages/being/dist/interface.d.ts:399
 
 > **get** **possibleStates**(): `States`[]
 
-Defined in: packages/being/dist/interface.d.ts:401
+Defined in: packages/being/dist/interface.d.ts:488
 
 ##### Returns
 
@@ -227,7 +264,7 @@ Defined in: packages/being/dist/interface.d.ts:401
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:402
+Defined in: packages/being/dist/interface.d.ts:489
 
 ##### Returns
 
@@ -245,7 +282,7 @@ Defined in: packages/being/dist/interface.d.ts:402
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), `K` *extends* keyof [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md) ? [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-Defined in: packages/being/dist/interface.d.ts:395
+Defined in: packages/being/dist/interface.d.ts:480
 
 ##### Type Parameters
 
@@ -271,7 +308,7 @@ Defined in: packages/being/dist/interface.d.ts:395
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), `unknown`\>
 
-Defined in: packages/being/dist/interface.d.ts:396
+Defined in: packages/being/dist/interface.d.ts:481
 
 ##### Type Parameters
 
@@ -299,7 +336,7 @@ Defined in: packages/being/dist/interface.d.ts:396
 
 > **initateTransition**(): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), `void`\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:533](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L533)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:533](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L533)
 
 Initiates transition to `TRANSITION` state.
 
@@ -318,7 +355,7 @@ Called when starting programmatic camera movements.
 
 > **notifyZoomByAtInput**(`delta`, `at`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:468](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L468)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:468](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L468)
 
 Notifies the state machine of user zoom input around an anchor point.
 
@@ -352,7 +389,7 @@ Dispatches `userZoomByAtInput` event. Accepted in `ACCEPTING_USER_INPUT` and `TR
 
 > **notifyZoomByAtInputAnimation**(`delta`, `at`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:485](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L485)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:485](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L485)
 
 Initiates a zoom animation around an anchor point.
 
@@ -386,7 +423,7 @@ Dispatches `transitionZoomByAtInput` event, starting a zoom animation.
 
 > **notifyZoomToAtCenterInput**(`targetZoom`, `at`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:502](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L502)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:502](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L502)
 
 Initiates a zoom animation to target level around center anchor.
 
@@ -420,7 +457,7 @@ Dispatches `transitionZoomToAtCenterInput` event for center-anchored zoom animat
 
 > **notifyZoomToAtWorldInput**(`targetZoom`, `at`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:519](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L519)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:519](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L519)
 
 Initiates a zoom animation to target level around world anchor.
 
@@ -450,11 +487,50 @@ Dispatches `transitionZoomToAtWorldInput` event for world-anchored zoom animatio
 
 ***
 
+### onEventResult()
+
+> **onEventResult**(`callback`): () => `void`
+
+Defined in: packages/being/dist/interface.d.ts:484
+
+Subscribe to every event result. Optional so existing StateMachine
+implementations remain valid; TemplateStateMachine always
+provides it. Returns a disposer on implementations that support one.
+Disposing during a dispatch takes effect starting with the next
+dispatch, not the one in progress — see EventResultCallback
+for the exact snapshot-iteration semantics.
+
+#### Parameters
+
+##### callback
+
+`EventResultCallback`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), `BaseContext`, [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>
+
+#### Returns
+
+> (): `void`
+
+##### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateStateMachine.onEventResult`
+
+***
+
 ### onHappens()
 
-> **onHappens**(`callback`): `void`
+> **onHappens**(`callback`): () => `void`
 
-Defined in: packages/being/dist/interface.d.ts:398
+Defined in: packages/being/dist/interface.d.ts:483
+
+Subscribe to every `happens()` call, before the state handles it.
+Returns a disposer on implementations that support one. Disposing
+during a dispatch takes effect starting with the next dispatch, not
+the one in progress — see EventResultCallback for the exact
+snapshot-iteration semantics.
 
 #### Parameters
 
@@ -463,6 +539,10 @@ Defined in: packages/being/dist/interface.d.ts:398
 (`args`, `context`) => `void`
 
 #### Returns
+
+> (): `void`
+
+##### Returns
 
 `void`
 
@@ -474,9 +554,14 @@ Defined in: packages/being/dist/interface.d.ts:398
 
 ### onStateChange()
 
-> **onStateChange**(`callback`): `void`
+> **onStateChange**(`callback`): () => `void`
 
-Defined in: packages/being/dist/interface.d.ts:397
+Defined in: packages/being/dist/interface.d.ts:482
+
+Subscribe to state changes. Returns a disposer on implementations that
+support one. Disposing during a dispatch takes effect starting with
+the next dispatch, not the one in progress — see
+EventResultCallback for the exact snapshot-iteration semantics.
 
 #### Parameters
 
@@ -485,6 +570,10 @@ Defined in: packages/being/dist/interface.d.ts:397
 `StateChangeCallback`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>
 
 #### Returns
+
+> (): `void`
+
+##### Returns
 
 `void`
 
@@ -498,7 +587,7 @@ Defined in: packages/being/dist/interface.d.ts:397
 
 > **reset**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:391
+Defined in: packages/being/dist/interface.d.ts:476
 
 #### Returns
 
@@ -514,7 +603,7 @@ Defined in: packages/being/dist/interface.d.ts:391
 
 > **setContext**(`context`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:400
+Defined in: packages/being/dist/interface.d.ts:486
 
 #### Parameters
 
@@ -536,7 +625,7 @@ Defined in: packages/being/dist/interface.d.ts:400
 
 > **start**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:392
+Defined in: packages/being/dist/interface.d.ts:477
 
 #### Returns
 
@@ -552,7 +641,7 @@ Defined in: packages/being/dist/interface.d.ts:392
 
 > **switchTo**(`state`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:394
+Defined in: packages/being/dist/interface.d.ts:479
 
 #### Parameters
 
@@ -574,7 +663,7 @@ Defined in: packages/being/dist/interface.d.ts:394
 
 > **wrapup**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:393
+Defined in: packages/being/dist/interface.d.ts:478
 
 #### Returns
 

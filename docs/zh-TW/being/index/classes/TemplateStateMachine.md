@@ -2,7 +2,7 @@
 
 # 類別: TemplateStateMachine\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-定義於: [interface.ts:561](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L561)
+定義於: [interface.ts:665](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L665)
 
 Concrete implementation of a finite state machine.
 
@@ -111,7 +111,7 @@ Optional mapping of events to their output types
 
 > **new TemplateStateMachine**\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>(`states`, `initialState`, `context`, `autoStart`): `TemplateStateMachine`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義於: [interface.ts:592](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L592)
+定義於: [interface.ts:701](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L701)
 
 #### 參數
 
@@ -141,7 +141,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_context**: `Context`
 
-定義於: [interface.ts:579](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L579)
+定義於: [interface.ts:683](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L683)
 
 ***
 
@@ -149,7 +149,15 @@ Optional mapping of events to their output types
 
 > `protected` **\_currentState**: `"INITIAL"` \| `"TERMINAL"` \| `States`
 
-定義於: [interface.ts:574](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L574)
+定義於: [interface.ts:678](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L678)
+
+***
+
+### \_eventResultCallbacks
+
+> `protected` **\_eventResultCallbacks**: [`EventResultCallback`](../type-aliases/EventResultCallback.md)\<`EventPayloadMapping`, `Context`, `States`\>[]
+
+定義於: [interface.ts:693](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L693)
 
 ***
 
@@ -157,7 +165,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-定義於: [interface.ts:582](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L582)
+定義於: [interface.ts:686](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L686)
 
 #### 參數
 
@@ -179,7 +187,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_initialState**: `States`
 
-定義於: [interface.ts:590](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L590)
+定義於: [interface.ts:699](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L699)
 
 ***
 
@@ -187,7 +195,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_stateChangeCallbacks**: [`StateChangeCallback`](../type-aliases/StateChangeCallback.md)\<`States`\>[]
 
-定義於: [interface.ts:581](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L581)
+定義於: [interface.ts:685](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L685)
 
 ***
 
@@ -195,7 +203,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_states**: `Record`\<`States`, [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義於: [interface.ts:575](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L575)
+定義於: [interface.ts:679](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L679)
 
 ***
 
@@ -203,7 +211,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_statesArray**: `States`[]
 
-定義於: [interface.ts:580](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L580)
+定義於: [interface.ts:684](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L684)
 
 ***
 
@@ -211,9 +219,41 @@ Optional mapping of events to their output types
 
 > `protected` **\_timeouts**: `number` \| `undefined` = `undefined`
 
-定義於: [interface.ts:589](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L589)
+定義於: [interface.ts:698](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L698)
 
 ## 存取器
+
+### context
+
+#### Getter 簽章
+
+> **get** **context**(): `Context`
+
+定義於: [interface.ts:874](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L874)
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+TemplateStateMachine always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+##### 回傳
+
+`Context`
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+TemplateStateMachine always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+#### 實作了
+
+[`StateMachine`](../interfaces/StateMachine.md).[`context`](../interfaces/StateMachine.md#context-1)
+
+***
 
 ### currentState
 
@@ -221,7 +261,7 @@ Optional mapping of events to their output types
 
 > **get** **currentState**(): `"INITIAL"` \| `"TERMINAL"` \| `States`
 
-定義於: [interface.ts:723](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L723)
+定義於: [interface.ts:866](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L866)
 
 ##### 回傳
 
@@ -239,7 +279,7 @@ Optional mapping of events to their output types
 
 > **get** **possibleStates**(): `States`[]
 
-定義於: [interface.ts:731](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L731)
+定義於: [interface.ts:878](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L878)
 
 ##### 回傳
 
@@ -257,7 +297,7 @@ Optional mapping of events to their output types
 
 > **get** **states**(): `Record`\<`States`, [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義於: [interface.ts:735](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L735)
+定義於: [interface.ts:882](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L882)
 
 ##### 回傳
 
@@ -275,7 +315,7 @@ Optional mapping of events to their output types
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義於: [interface.ts:653](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L653)
+定義於: [interface.ts:763](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L763)
 
 ##### 型別參數
 
@@ -301,7 +341,7 @@ Optional mapping of events to their output types
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `unknown`\>
 
-定義於: [interface.ts:659](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L659)
+定義於: [interface.ts:769](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L769)
 
 ##### 型別參數
 
@@ -325,11 +365,50 @@ Optional mapping of events to their output types
 
 ***
 
+### onEventResult()
+
+> **onEventResult**(`callback`): () => `void`
+
+定義於: [interface.ts:854](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L854)
+
+Subscribe to every event result. Optional so existing StateMachine
+implementations remain valid; TemplateStateMachine always
+provides it. Returns a disposer on implementations that support one.
+Disposing during a dispatch takes effect starting with the next
+dispatch, not the one in progress — see [EventResultCallback](../type-aliases/EventResultCallback.md)
+for the exact snapshot-iteration semantics.
+
+#### 參數
+
+##### callback
+
+[`EventResultCallback`](../type-aliases/EventResultCallback.md)\<`EventPayloadMapping`, `Context`, `States`\>
+
+#### 回傳
+
+> (): `void`
+
+##### 回傳
+
+`void`
+
+#### 實作了
+
+[`StateMachine`](../interfaces/StateMachine.md).[`onEventResult`](../interfaces/StateMachine.md#oneventresult)
+
+***
+
 ### onHappens()
 
-> **onHappens**(`callback`): `void`
+> **onHappens**(`callback`): () => `void`
 
-定義於: [interface.ts:711](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L711)
+定義於: [interface.ts:836](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L836)
+
+Subscribe to every `happens()` call, before the state handles it.
+Returns a disposer on implementations that support one. Disposing
+during a dispatch takes effect starting with the next dispatch, not
+the one in progress — see [EventResultCallback](../type-aliases/EventResultCallback.md) for the exact
+snapshot-iteration semantics.
 
 #### 參數
 
@@ -338,6 +417,10 @@ Optional mapping of events to their output types
 (`args`, `context`) => `void`
 
 #### 回傳
+
+> (): `void`
+
+##### 回傳
 
 `void`
 
@@ -349,9 +432,14 @@ Optional mapping of events to their output types
 
 ### onStateChange()
 
-> **onStateChange**(`callback`): `void`
+> **onStateChange**(`callback`): () => `void`
 
-定義於: [interface.ts:707](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L707)
+定義於: [interface.ts:826](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L826)
+
+Subscribe to state changes. Returns a disposer on implementations that
+support one. Disposing during a dispatch takes effect starting with
+the next dispatch, not the one in progress — see
+[EventResultCallback](../type-aliases/EventResultCallback.md) for the exact snapshot-iteration semantics.
 
 #### 參數
 
@@ -360,6 +448,10 @@ Optional mapping of events to their output types
 [`StateChangeCallback`](../type-aliases/StateChangeCallback.md)\<`States`\>
 
 #### 回傳
+
+> (): `void`
+
+##### 回傳
 
 `void`
 
@@ -373,7 +465,7 @@ Optional mapping of events to their output types
 
 > **reset**(): `void`
 
-定義於: [interface.ts:613](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L613)
+定義於: [interface.ts:723](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L723)
 
 #### 回傳
 
@@ -389,7 +481,7 @@ Optional mapping of events to their output types
 
 > **setContext**(`context`): `void`
 
-定義於: [interface.ts:727](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L727)
+定義於: [interface.ts:870](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L870)
 
 #### 參數
 
@@ -411,7 +503,7 @@ Optional mapping of events to their output types
 
 > **start**(): `void`
 
-定義於: [interface.ts:619](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L619)
+定義於: [interface.ts:729](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L729)
 
 #### 回傳
 
@@ -427,7 +519,7 @@ Optional mapping of events to their output types
 
 > **switchTo**(`state`): `void`
 
-定義於: [interface.ts:648](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L648)
+定義於: [interface.ts:758](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L758)
 
 #### 參數
 
@@ -449,7 +541,7 @@ Optional mapping of events to their output types
 
 > **wrapup**(): `void`
 
-定義於: [interface.ts:632](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L632)
+定義於: [interface.ts:742](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L742)
 
 #### 回傳
 

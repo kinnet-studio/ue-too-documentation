@@ -2,7 +2,7 @@
 
 # クラス: RotateControlStateMachine
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:128](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L128)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:128](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L128)
 
 State machine controlling rotation input flow and animations.
 
@@ -49,7 +49,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > **new RotateControlStateMachine**(`states`, `initialState`, `context`): `RotateControlStateMachine`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:134](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L134)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:134](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L134)
 
 #### パラメータ
 
@@ -79,7 +79,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > `protected` **\_context**: `BaseContext`
 
-定義: packages/being/dist/interface.d.ts:384
+定義: packages/being/dist/interface.d.ts:468
 
 #### 継承元
 
@@ -91,7 +91,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > `protected` **\_currentState**: [`RotateControlStates`](../type-aliases/RotateControlStates.md) \| `"INITIAL"` \| `"TERMINAL"`
 
-定義: packages/being/dist/interface.d.ts:382
+定義: packages/being/dist/interface.d.ts:466
 
 #### 継承元
 
@@ -99,11 +99,23 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 ***
 
+### \_eventResultCallbacks
+
+> `protected` **\_eventResultCallbacks**: `EventResultCallback`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), `BaseContext`, [`RotateControlStates`](../type-aliases/RotateControlStates.md)\>[]
+
+定義: packages/being/dist/interface.d.ts:472
+
+#### 継承元
+
+`TemplateStateMachine._eventResultCallbacks`
+
+***
+
 ### \_happensCallbacks
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-定義: packages/being/dist/interface.d.ts:387
+定義: packages/being/dist/interface.d.ts:471
 
 #### パラメータ
 
@@ -129,7 +141,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > `protected` **\_initialState**: [`RotateControlStates`](../type-aliases/RotateControlStates.md)
 
-定義: packages/being/dist/interface.d.ts:389
+定義: packages/being/dist/interface.d.ts:474
 
 #### 継承元
 
@@ -141,7 +153,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md)\>[]
 
-定義: packages/being/dist/interface.d.ts:386
+定義: packages/being/dist/interface.d.ts:470
 
 #### 継承元
 
@@ -153,7 +165,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義: packages/being/dist/interface.d.ts:383
+定義: packages/being/dist/interface.d.ts:467
 
 #### 継承元
 
@@ -165,7 +177,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > `protected` **\_statesArray**: [`RotateControlStates`](../type-aliases/RotateControlStates.md)[]
 
-定義: packages/being/dist/interface.d.ts:385
+定義: packages/being/dist/interface.d.ts:469
 
 #### 継承元
 
@@ -177,7 +189,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > `protected` **\_timeouts**: `number` \| `undefined`
 
-定義: packages/being/dist/interface.d.ts:388
+定義: packages/being/dist/interface.d.ts:473
 
 #### 継承元
 
@@ -185,13 +197,38 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 ## アクセッサー
 
+### context
+
+#### 署名を取得する
+
+> **get** **context**(): `Context`
+
+定義: packages/being/dist/interface.d.ts:487
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+TemplateStateMachine always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+##### 戻り値
+
+`Context`
+
+#### 継承元
+
+`TemplateStateMachine.context`
+
+***
+
 ### currentState
 
 #### 署名を取得する
 
 > **get** **currentState**(): `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-定義: packages/being/dist/interface.d.ts:399
+定義: packages/being/dist/interface.d.ts:485
 
 ##### 戻り値
 
@@ -209,7 +246,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > **get** **possibleStates**(): `States`[]
 
-定義: packages/being/dist/interface.d.ts:401
+定義: packages/being/dist/interface.d.ts:488
 
 ##### 戻り値
 
@@ -227,7 +264,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義: packages/being/dist/interface.d.ts:402
+定義: packages/being/dist/interface.d.ts:489
 
 ##### 戻り値
 
@@ -245,7 +282,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), `K` *extends* keyof [`RotateControlOutputMapping`](../type-aliases/RotateControlOutputMapping.md) ? [`RotateControlOutputMapping`](../type-aliases/RotateControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-定義: packages/being/dist/interface.d.ts:395
+定義: packages/being/dist/interface.d.ts:480
 
 ##### 型パラメーター
 
@@ -271,7 +308,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), `unknown`\>
 
-定義: packages/being/dist/interface.d.ts:396
+定義: packages/being/dist/interface.d.ts:481
 
 ##### 型パラメーター
 
@@ -299,7 +336,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > **initateTransition**(): `void`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:185](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L185)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:185](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L185)
 
 Initiates transition to `TRANSITION` state.
 
@@ -318,7 +355,7 @@ Called when starting programmatic camera movements.
 
 > **notifyRotateByInput**(`diff`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:160](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L160)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:160](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L160)
 
 Notifies the state machine of user rotation input.
 
@@ -347,7 +384,7 @@ where it may transition back to `ACCEPTING_USER_INPUT` (user interrupting animat
 
 > **notifyRotateToAnimationInput**(`target`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:174](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L174)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:174](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L174)
 
 Initiates a rotation animation to a target angle.
 
@@ -372,11 +409,50 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 ***
 
+### onEventResult()
+
+> **onEventResult**(`callback`): () => `void`
+
+定義: packages/being/dist/interface.d.ts:484
+
+Subscribe to every event result. Optional so existing StateMachine
+implementations remain valid; TemplateStateMachine always
+provides it. Returns a disposer on implementations that support one.
+Disposing during a dispatch takes effect starting with the next
+dispatch, not the one in progress — see EventResultCallback
+for the exact snapshot-iteration semantics.
+
+#### パラメータ
+
+##### callback
+
+`EventResultCallback`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), `BaseContext`, [`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
+
+#### 戻り値
+
+> (): `void`
+
+##### 戻り値
+
+`void`
+
+#### 継承元
+
+`TemplateStateMachine.onEventResult`
+
+***
+
 ### onHappens()
 
-> **onHappens**(`callback`): `void`
+> **onHappens**(`callback`): () => `void`
 
-定義: packages/being/dist/interface.d.ts:398
+定義: packages/being/dist/interface.d.ts:483
+
+Subscribe to every `happens()` call, before the state handles it.
+Returns a disposer on implementations that support one. Disposing
+during a dispatch takes effect starting with the next dispatch, not
+the one in progress — see EventResultCallback for the exact
+snapshot-iteration semantics.
 
 #### パラメータ
 
@@ -385,6 +461,10 @@ Transitions to `TRANSITION` state where animation updates occur.
 (`args`, `context`) => `void`
 
 #### 戻り値
+
+> (): `void`
+
+##### 戻り値
 
 `void`
 
@@ -396,9 +476,14 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 ### onStateChange()
 
-> **onStateChange**(`callback`): `void`
+> **onStateChange**(`callback`): () => `void`
 
-定義: packages/being/dist/interface.d.ts:397
+定義: packages/being/dist/interface.d.ts:482
+
+Subscribe to state changes. Returns a disposer on implementations that
+support one. Disposing during a dispatch takes effect starting with
+the next dispatch, not the one in progress — see
+EventResultCallback for the exact snapshot-iteration semantics.
 
 #### パラメータ
 
@@ -407,6 +492,10 @@ Transitions to `TRANSITION` state where animation updates occur.
 `StateChangeCallback`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
 
 #### 戻り値
+
+> (): `void`
+
+##### 戻り値
 
 `void`
 
@@ -420,7 +509,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **reset**(): `void`
 
-定義: packages/being/dist/interface.d.ts:391
+定義: packages/being/dist/interface.d.ts:476
 
 #### 戻り値
 
@@ -436,7 +525,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **setContext**(`context`): `void`
 
-定義: packages/being/dist/interface.d.ts:400
+定義: packages/being/dist/interface.d.ts:486
 
 #### パラメータ
 
@@ -458,7 +547,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **start**(): `void`
 
-定義: packages/being/dist/interface.d.ts:392
+定義: packages/being/dist/interface.d.ts:477
 
 #### 戻り値
 
@@ -474,7 +563,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **switchTo**(`state`): `void`
 
-定義: packages/being/dist/interface.d.ts:394
+定義: packages/being/dist/interface.d.ts:479
 
 #### パラメータ
 
@@ -496,7 +585,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **wrapup**(): `void`
 
-定義: packages/being/dist/interface.d.ts:393
+定義: packages/being/dist/interface.d.ts:478
 
 #### 戻り値
 

@@ -2,7 +2,7 @@
 
 # Class: PixiInputParser
 
-Defined in: [pixi-input-event-parser.ts:17](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L17)
+Defined in: [pixi-input-event-parser.ts:17](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L17)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [pixi-input-event-parser.ts:17](https://github.com/kinnet-studio/ue-
 
 > **new PixiInputParser**(`app`, `kmtInputStateMachine`, `inputOrchestrator`, `camera`): `PixiInputParser`
 
-Defined in: [pixi-input-event-parser.ts:29](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L29)
+Defined in: [pixi-input-event-parser.ts:29](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L29)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [pixi-input-event-parser.ts:29](https://github.com/kinnet-studio/ue-
 
 > **get** **disabled**(): `boolean`
 
-Defined in: [pixi-input-event-parser.ts:352](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L352)
+Defined in: [pixi-input-event-parser.ts:352](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L352)
 
 ##### Returns
 
@@ -54,7 +54,7 @@ Defined in: [pixi-input-event-parser.ts:352](https://github.com/kinnet-studio/ue
 
 > **bindFunctions**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:46](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L46)
+Defined in: [pixi-input-event-parser.ts:46](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L46)
 
 #### Returns
 
@@ -66,7 +66,7 @@ Defined in: [pixi-input-event-parser.ts:46](https://github.com/kinnet-studio/ue-
 
 > **disable**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:344](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L344)
+Defined in: [pixi-input-event-parser.ts:344](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L344)
 
 #### Returns
 
@@ -78,7 +78,7 @@ Defined in: [pixi-input-event-parser.ts:344](https://github.com/kinnet-studio/ue
 
 > **enable**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:348](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L348)
+Defined in: [pixi-input-event-parser.ts:348](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L348)
 
 #### Returns
 
@@ -90,7 +90,7 @@ Defined in: [pixi-input-event-parser.ts:348](https://github.com/kinnet-studio/ue
 
 > **hideHitAreaDebug**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:206](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L206)
+Defined in: [pixi-input-event-parser.ts:206](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L206)
 
 Hides the hitArea debug visualization.
 
@@ -104,7 +104,7 @@ Hides the hitArea debug visualization.
 
 > **keydownHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:319](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L319)
+Defined in: [pixi-input-event-parser.ts:319](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L319)
 
 #### Parameters
 
@@ -122,7 +122,7 @@ Defined in: [pixi-input-event-parser.ts:319](https://github.com/kinnet-studio/ue
 
 > **keyupHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:332](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L332)
+Defined in: [pixi-input-event-parser.ts:332](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L332)
 
 #### Parameters
 
@@ -140,7 +140,7 @@ Defined in: [pixi-input-event-parser.ts:332](https://github.com/kinnet-studio/ue
 
 > **pointerDownHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:233](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L233)
+Defined in: [pixi-input-event-parser.ts:233](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L233)
 
 #### Parameters
 
@@ -158,7 +158,7 @@ Defined in: [pixi-input-event-parser.ts:233](https://github.com/kinnet-studio/ue
 
 > **pointerMoveHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:273](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L273)
+Defined in: [pixi-input-event-parser.ts:273](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L273)
 
 #### Parameters
 
@@ -176,7 +176,7 @@ Defined in: [pixi-input-event-parser.ts:273](https://github.com/kinnet-studio/ue
 
 > **pointerUpHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:253](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L253)
+Defined in: [pixi-input-event-parser.ts:253](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L253)
 
 #### Parameters
 
@@ -194,7 +194,7 @@ Defined in: [pixi-input-event-parser.ts:253](https://github.com/kinnet-studio/ue
 
 > **scrollHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:297](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L297)
+Defined in: [pixi-input-event-parser.ts:297](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L297)
 
 #### Parameters
 
@@ -212,7 +212,7 @@ Defined in: [pixi-input-event-parser.ts:297](https://github.com/kinnet-studio/ue
 
 > **setUp**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:55](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L55)
+Defined in: [pixi-input-event-parser.ts:55](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L55)
 
 #### Returns
 
@@ -224,7 +224,7 @@ Defined in: [pixi-input-event-parser.ts:55](https://github.com/kinnet-studio/ue-
 
 > **showHitAreaDebug**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:193](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L193)
+Defined in: [pixi-input-event-parser.ts:193](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L193)
 
 Shows a visual debug overlay of the hitArea.
 
@@ -244,7 +244,7 @@ automatically updated when `updateHitArea()` is called.
 
 > **tearDown**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:214](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L214)
+Defined in: [pixi-input-event-parser.ts:214](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L214)
 
 #### Returns
 
@@ -256,7 +256,7 @@ Defined in: [pixi-input-event-parser.ts:214](https://github.com/kinnet-studio/ue
 
 > **updateHitArea**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:93](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L93)
+Defined in: [pixi-input-event-parser.ts:93](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L93)
 
 Updates the stage's hitArea to cover the entire viewport in stage local coordinates.
 

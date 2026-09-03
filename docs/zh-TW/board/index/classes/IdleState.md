@@ -2,7 +2,7 @@
 
 # 類別: IdleState
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:109](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L109)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:109](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L109)
 
 IDLE state - waiting for two-finger touch.
 
@@ -39,7 +39,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > `protected` **\_defer**: `Defer`\<[`TouchContext`](../interfaces/TouchContext.md), [`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\> \| `undefined`
 
-定義於: packages/being/dist/interface.d.ts:493
+定義於: packages/being/dist/interface.d.ts:581
 
 #### 繼承自
 
@@ -51,7 +51,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > `protected` **\_delay**: `Delay`\<[`TouchContext`](../interfaces/TouchContext.md), [`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\> \| `undefined`
 
-定義於: packages/being/dist/interface.d.ts:492
+定義於: packages/being/dist/interface.d.ts:580
 
 #### 繼承自
 
@@ -63,7 +63,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchContext`](../interfaces/TouchContext.md), *typeof* [`_guards`](#guards)\>\>
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:137](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L137)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:137](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L137)
 
 #### 覆寫了
 
@@ -71,11 +71,23 @@ This ensures the state machine only handles two-finger gestures.
 
 ***
 
+### \_eventPreconditions
+
+> `protected` **\_eventPreconditions**: `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+定義於: packages/being/dist/interface.d.ts:579
+
+#### 繼承自
+
+`TemplateState._eventPreconditions`
+
+***
+
 ### \_eventReactions
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:115](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L115)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:115](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L115)
 
 #### 覆寫了
 
@@ -87,7 +99,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > `protected` **\_guards**: `Guard`\<[`TouchContext`](../interfaces/TouchContext.md), `"touchPointsCount"`\>
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:131](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L131)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:131](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L131)
 
 #### 覆寫了
 
@@ -101,7 +113,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-定義於: packages/being/dist/interface.d.ts:498
+定義於: packages/being/dist/interface.d.ts:587
 
 ##### 回傳
 
@@ -119,7 +131,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-定義於: packages/being/dist/interface.d.ts:496
+定義於: packages/being/dist/interface.d.ts:584
 
 ##### 回傳
 
@@ -131,13 +143,35 @@ This ensures the state machine only handles two-finger gestures.
 
 ***
 
+### eventPreconditions
+
+#### Getter 簽章
+
+> **get** **eventPreconditions**(): `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+定義於: packages/being/dist/interface.d.ts:585
+
+Pre-action vetoes: named guards that must all pass before this state
+handles an event. Optional so existing State implementations remain
+valid; TemplateState always provides it.
+
+##### 回傳
+
+`Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+#### 繼承自
+
+`TemplateState.eventPreconditions`
+
+***
+
 ### eventReactions
 
 #### Getter 簽章
 
 > **get** **eventReactions**(): `EventReactions`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義於: packages/being/dist/interface.d.ts:497
+定義於: packages/being/dist/interface.d.ts:586
 
 ##### 回傳
 
@@ -155,7 +189,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > **get** **guards**(): `Guard`\<`Context`\>
 
-定義於: packages/being/dist/interface.d.ts:495
+定義於: packages/being/dist/interface.d.ts:583
 
 ##### 回傳
 
@@ -173,7 +207,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-定義於: packages/being/dist/interface.d.ts:494
+定義於: packages/being/dist/interface.d.ts:582
 
 ##### 回傳
 
@@ -189,7 +223,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-定義於: packages/being/dist/interface.d.ts:500
+定義於: packages/being/dist/interface.d.ts:589
 
 #### 參數
 
@@ -219,7 +253,7 @@ keyof `EventPayloadMapping`[]
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventResult`\<[`TouchStates`](../type-aliases/TouchStates.md), `K` *extends* `"touchmove"` ? [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-定義於: packages/being/dist/interface.d.ts:501
+定義於: packages/being/dist/interface.d.ts:590
 
 #### 型別參數
 
@@ -255,7 +289,7 @@ keyof `EventPayloadMapping`[]
 
 > **touchend**(`context`, `payload`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:163](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L163)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:163](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L163)
 
 #### 參數
 
@@ -277,7 +311,7 @@ keyof `EventPayloadMapping`[]
 
 > **touchstart**(`context`, `payload`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:159](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L159)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:159](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L159)
 
 #### 參數
 
@@ -299,7 +333,7 @@ keyof `EventPayloadMapping`[]
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-定義於: packages/being/dist/interface.d.ts:499
+定義於: packages/being/dist/interface.d.ts:588
 
 #### 參數
 

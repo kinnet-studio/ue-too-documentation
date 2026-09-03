@@ -4,7 +4,7 @@
 
 > **getTrueRect**(`rect`, `computedStyle`): `DOMRect`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:599](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/utils/canvas-position-dimension.ts#L599)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:599](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/utils/canvas-position-dimension.ts#L599)
 
 Calculates the actual content rectangle excluding padding and borders.
 

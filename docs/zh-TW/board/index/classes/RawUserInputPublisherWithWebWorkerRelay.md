@@ -2,7 +2,7 @@
 
 # 類別: RawUserInputPublisherWithWebWorkerRelay
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:307](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L307)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:307](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L307)
 
 Interface for publishing raw user input events to observers.
 
@@ -22,7 +22,7 @@ for input event distribution.
 
 > **new RawUserInputPublisherWithWebWorkerRelay**(`webWorker`): `RawUserInputPublisherWithWebWorkerRelay`
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:314](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L314)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:314](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L314)
 
 #### 參數
 
@@ -40,7 +40,7 @@ for input event distribution.
 
 > **notifyPan**(`diff`): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:330](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L330)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:330](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L330)
 
 Notifies subscribers of a pan gesture
 
@@ -64,7 +64,7 @@ Notifies subscribers of a pan gesture
 
 > **notifyRotate**(`deltaRotation`): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:359](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L359)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:359](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L359)
 
 Notifies subscribers of a rotate gesture
 
@@ -88,7 +88,7 @@ Notifies subscribers of a rotate gesture
 
 > **notifyZoom**(`deltaZoomAmount`, `anchorPoint`): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:339](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L339)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:339](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L339)
 
 Notifies subscribers of a zoom gesture
 
@@ -116,7 +116,7 @@ Notifies subscribers of a zoom gesture
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:368](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L368)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:368](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L368)
 
 Subscribes to input events
 

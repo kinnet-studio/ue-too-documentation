@@ -2,7 +2,7 @@
 
 # Class: LocationSystem
 
-Defined in: [zone-system/zone-component.ts:61](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L61)
+Defined in: [zone-system/zone-component.ts:61](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L61)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [zone-system/zone-component.ts:61](https://github.com/kinnet-studio/
 
 > **new LocationSystem**(`coordinator`): `LocationSystem`
 
-Defined in: [zone-system/zone-component.ts:65](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L65)
+Defined in: [zone-system/zone-component.ts:65](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L65)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [zone-system/zone-component.ts:65](https://github.com/kinnet-studio/
 
 > **entities**: `Set`\<`number`\>
 
-Defined in: [zone-system/zone-component.ts:62](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L62)
+Defined in: [zone-system/zone-component.ts:62](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L62)
 
 #### Implementation of
 
@@ -44,7 +44,7 @@ Defined in: [zone-system/zone-component.ts:62](https://github.com/kinnet-studio/
 
 > **addEntityToZone**(`zoneEntity`, `entity`, `direction`): `void`
 
-Defined in: [zone-system/zone-component.ts:178](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L178)
+Defined in: [zone-system/zone-component.ts:178](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L178)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [zone-system/zone-component.ts:178](https://github.com/kinnet-studio
 
 > **getEntitiesInZone**(`zoneEntity`): `number`[]
 
-Defined in: [zone-system/zone-component.ts:86](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L86)
+Defined in: [zone-system/zone-component.ts:86](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L86)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: [zone-system/zone-component.ts:86](https://github.com/kinnet-studio/
 
 > **isZoneEmpty**(`zoneEntity`): `boolean`
 
-Defined in: [zone-system/zone-component.ts:217](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L217)
+Defined in: [zone-system/zone-component.ts:217](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L217)
 
 #### Parameters
 
@@ -106,7 +106,7 @@ Defined in: [zone-system/zone-component.ts:217](https://github.com/kinnet-studio
 
 > **offsetZoneSortIndex**(`zoneEntity`, `offset`): `void`
 
-Defined in: [zone-system/zone-component.ts:120](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L120)
+Defined in: [zone-system/zone-component.ts:120](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L120)
 
 #### Parameters
 
@@ -128,7 +128,7 @@ Defined in: [zone-system/zone-component.ts:120](https://github.com/kinnet-studio
 
 > **organizeZoneSortIndex**(`zoneEntity`): `number`
 
-Defined in: [zone-system/zone-component.ts:136](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L136)
+Defined in: [zone-system/zone-component.ts:136](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L136)
 
 #### Parameters
 
@@ -146,7 +146,7 @@ Defined in: [zone-system/zone-component.ts:136](https://github.com/kinnet-studio
 
 > **shuffleZone**(`zoneEntity`): `void`
 
-Defined in: [zone-system/zone-component.ts:154](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L154)
+Defined in: [zone-system/zone-component.ts:154](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L154)
 
 #### Parameters
 

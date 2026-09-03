@@ -2,7 +2,7 @@
 
 # 類別: KmtInputStateMachineWebWorkerProxy
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:761](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L761)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:761](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L761)
 
 ## Extends
 
@@ -14,7 +14,7 @@
 
 > **new KmtInputStateMachineWebWorkerProxy**(`webworker`): `KmtInputStateMachineWebWorkerProxy`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:769](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L769)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:769](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L769)
 
 #### 參數
 
@@ -36,7 +36,7 @@
 
 > `protected` **\_context**: [`KmtInputContext`](../interfaces/KmtInputContext.md)
 
-定義於: packages/being/dist/interface.d.ts:384
+定義於: packages/being/dist/interface.d.ts:468
 
 #### 繼承自
 
@@ -48,7 +48,7 @@
 
 > `protected` **\_currentState**: `"INITIAL"` \| `"TERMINAL"` \| `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`
 
-定義於: packages/being/dist/interface.d.ts:382
+定義於: packages/being/dist/interface.d.ts:466
 
 #### 繼承自
 
@@ -56,11 +56,23 @@
 
 ***
 
+### \_eventResultCallbacks
+
+> `protected` **\_eventResultCallbacks**: `EventResultCallback`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>[]
+
+定義於: packages/being/dist/interface.d.ts:472
+
+#### 繼承自
+
+`TemplateStateMachine._eventResultCallbacks`
+
+***
+
 ### \_happensCallbacks
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-定義於: packages/being/dist/interface.d.ts:387
+定義於: packages/being/dist/interface.d.ts:471
 
 #### 參數
 
@@ -86,7 +98,7 @@
 
 > `protected` **\_initialState**: `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`
 
-定義於: packages/being/dist/interface.d.ts:389
+定義於: packages/being/dist/interface.d.ts:474
 
 #### 繼承自
 
@@ -98,7 +110,7 @@
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>[]
 
-定義於: packages/being/dist/interface.d.ts:386
+定義於: packages/being/dist/interface.d.ts:470
 
 #### 繼承自
 
@@ -110,7 +122,7 @@
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義於: packages/being/dist/interface.d.ts:383
+定義於: packages/being/dist/interface.d.ts:467
 
 #### 繼承自
 
@@ -122,7 +134,7 @@
 
 > `protected` **\_statesArray**: (`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`)[]
 
-定義於: packages/being/dist/interface.d.ts:385
+定義於: packages/being/dist/interface.d.ts:469
 
 #### 繼承自
 
@@ -134,7 +146,7 @@
 
 > `protected` **\_timeouts**: `number` \| `undefined`
 
-定義於: packages/being/dist/interface.d.ts:388
+定義於: packages/being/dist/interface.d.ts:473
 
 #### 繼承自
 
@@ -142,13 +154,38 @@
 
 ## 存取器
 
+### context
+
+#### Getter 簽章
+
+> **get** **context**(): `Context`
+
+定義於: packages/being/dist/interface.d.ts:487
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+TemplateStateMachine always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+##### 回傳
+
+`Context`
+
+#### 繼承自
+
+`TemplateStateMachine.context`
+
+***
+
 ### currentState
 
 #### Getter 簽章
 
 > **get** **currentState**(): `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-定義於: packages/being/dist/interface.d.ts:399
+定義於: packages/being/dist/interface.d.ts:485
 
 ##### 回傳
 
@@ -166,7 +203,7 @@
 
 > **get** **possibleStates**(): `States`[]
 
-定義於: packages/being/dist/interface.d.ts:401
+定義於: packages/being/dist/interface.d.ts:488
 
 ##### 回傳
 
@@ -184,7 +221,7 @@
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義於: packages/being/dist/interface.d.ts:402
+定義於: packages/being/dist/interface.d.ts:489
 
 ##### 回傳
 
@@ -200,7 +237,7 @@
 
 > **happens**(...`args`): `EventResult`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:786](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L786)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:786](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L786)
 
 #### 參數
 
@@ -218,11 +255,50 @@
 
 ***
 
+### onEventResult()
+
+> **onEventResult**(`callback`): () => `void`
+
+定義於: packages/being/dist/interface.d.ts:484
+
+Subscribe to every event result. Optional so existing StateMachine
+implementations remain valid; TemplateStateMachine always
+provides it. Returns a disposer on implementations that support one.
+Disposing during a dispatch takes effect starting with the next
+dispatch, not the one in progress — see EventResultCallback
+for the exact snapshot-iteration semantics.
+
+#### 參數
+
+##### callback
+
+`EventResultCallback`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>
+
+#### 回傳
+
+> (): `void`
+
+##### 回傳
+
+`void`
+
+#### 繼承自
+
+`TemplateStateMachine.onEventResult`
+
+***
+
 ### onHappens()
 
-> **onHappens**(`callback`): `void`
+> **onHappens**(`callback`): () => `void`
 
-定義於: packages/being/dist/interface.d.ts:398
+定義於: packages/being/dist/interface.d.ts:483
+
+Subscribe to every `happens()` call, before the state handles it.
+Returns a disposer on implementations that support one. Disposing
+during a dispatch takes effect starting with the next dispatch, not
+the one in progress — see EventResultCallback for the exact
+snapshot-iteration semantics.
 
 #### 參數
 
@@ -231,6 +307,10 @@
 (`args`, `context`) => `void`
 
 #### 回傳
+
+> (): `void`
+
+##### 回傳
 
 `void`
 
@@ -242,9 +322,14 @@
 
 ### onStateChange()
 
-> **onStateChange**(`callback`): `void`
+> **onStateChange**(`callback`): () => `void`
 
-定義於: packages/being/dist/interface.d.ts:397
+定義於: packages/being/dist/interface.d.ts:482
+
+Subscribe to state changes. Returns a disposer on implementations that
+support one. Disposing during a dispatch takes effect starting with
+the next dispatch, not the one in progress — see
+EventResultCallback for the exact snapshot-iteration semantics.
 
 #### 參數
 
@@ -253,6 +338,10 @@
 `StateChangeCallback`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>
 
 #### 回傳
+
+> (): `void`
+
+##### 回傳
 
 `void`
 
@@ -266,7 +355,7 @@
 
 > **reset**(): `void`
 
-定義於: packages/being/dist/interface.d.ts:391
+定義於: packages/being/dist/interface.d.ts:476
 
 #### 回傳
 
@@ -282,7 +371,7 @@
 
 > **setContext**(`context`): `void`
 
-定義於: packages/being/dist/interface.d.ts:400
+定義於: packages/being/dist/interface.d.ts:486
 
 #### 參數
 
@@ -304,7 +393,7 @@
 
 > **start**(): `void`
 
-定義於: packages/being/dist/interface.d.ts:392
+定義於: packages/being/dist/interface.d.ts:477
 
 #### 回傳
 
@@ -320,7 +409,7 @@
 
 > **switchTo**(`state`): `void`
 
-定義於: packages/being/dist/interface.d.ts:394
+定義於: packages/being/dist/interface.d.ts:479
 
 #### 參數
 
@@ -342,7 +431,7 @@
 
 > **wrapup**(): `void`
 
-定義於: packages/being/dist/interface.d.ts:393
+定義於: packages/being/dist/interface.d.ts:478
 
 #### 回傳
 

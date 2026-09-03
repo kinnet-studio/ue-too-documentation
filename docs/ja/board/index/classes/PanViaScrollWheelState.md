@@ -2,7 +2,7 @@
 
 # クラス: PanViaScrollWheelState
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:619](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L619)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:619](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L619)
 
 ## Description
 
@@ -32,7 +32,7 @@ The pan via scroll wheel state of the keyboard mouse and trackpad input state ma
 
 > `protected` **\_defer**: `Defer`\<[`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`, [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\> \| `undefined`
 
-定義: packages/being/dist/interface.d.ts:493
+定義: packages/being/dist/interface.d.ts:581
 
 #### 継承元
 
@@ -44,7 +44,7 @@ The pan via scroll wheel state of the keyboard mouse and trackpad input state ma
 
 > `protected` **\_delay**: `Delay`\<[`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`, [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\> \| `undefined`
 
-定義: packages/being/dist/interface.d.ts:492
+定義: packages/being/dist/interface.d.ts:580
 
 #### 継承元
 
@@ -56,7 +56,7 @@ The pan via scroll wheel state of the keyboard mouse and trackpad input state ma
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-定義: packages/being/dist/interface.d.ts:491
+定義: packages/being/dist/interface.d.ts:578
 
 #### 継承元
 
@@ -64,11 +64,23 @@ The pan via scroll wheel state of the keyboard mouse and trackpad input state ma
 
 ***
 
+### \_eventPreconditions
+
+> `protected` **\_eventPreconditions**: `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+定義: packages/being/dist/interface.d.ts:579
+
+#### 継承元
+
+`TemplateState._eventPreconditions`
+
+***
+
 ### \_eventReactions
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:625](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L625)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:625](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L625)
 
 #### 上書き
 
@@ -80,7 +92,7 @@ The pan via scroll wheel state of the keyboard mouse and trackpad input state ma
 
 > `protected` **\_guards**: `Guard`\<`Context`\>
 
-定義: packages/being/dist/interface.d.ts:490
+定義: packages/being/dist/interface.d.ts:577
 
 #### 継承元
 
@@ -94,7 +106,7 @@ The pan via scroll wheel state of the keyboard mouse and trackpad input state ma
 
 > **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-定義: packages/being/dist/interface.d.ts:498
+定義: packages/being/dist/interface.d.ts:587
 
 ##### 戻り値
 
@@ -112,7 +124,7 @@ The pan via scroll wheel state of the keyboard mouse and trackpad input state ma
 
 > **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-定義: packages/being/dist/interface.d.ts:496
+定義: packages/being/dist/interface.d.ts:584
 
 ##### 戻り値
 
@@ -124,13 +136,35 @@ The pan via scroll wheel state of the keyboard mouse and trackpad input state ma
 
 ***
 
+### eventPreconditions
+
+#### 署名を取得する
+
+> **get** **eventPreconditions**(): `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+定義: packages/being/dist/interface.d.ts:585
+
+Pre-action vetoes: named guards that must all pass before this state
+handles an event. Optional so existing State implementations remain
+valid; TemplateState always provides it.
+
+##### 戻り値
+
+`Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+#### 継承元
+
+`TemplateState.eventPreconditions`
+
+***
+
 ### eventReactions
 
 #### 署名を取得する
 
 > **get** **eventReactions**(): `EventReactions`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義: packages/being/dist/interface.d.ts:497
+定義: packages/being/dist/interface.d.ts:586
 
 ##### 戻り値
 
@@ -148,7 +182,7 @@ The pan via scroll wheel state of the keyboard mouse and trackpad input state ma
 
 > **get** **guards**(): `Guard`\<`Context`\>
 
-定義: packages/being/dist/interface.d.ts:495
+定義: packages/being/dist/interface.d.ts:583
 
 ##### 戻り値
 
@@ -166,7 +200,7 @@ The pan via scroll wheel state of the keyboard mouse and trackpad input state ma
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-定義: packages/being/dist/interface.d.ts:494
+定義: packages/being/dist/interface.d.ts:582
 
 ##### 戻り値
 
@@ -182,7 +216,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-定義: packages/being/dist/interface.d.ts:500
+定義: packages/being/dist/interface.d.ts:589
 
 #### パラメータ
 
@@ -212,7 +246,7 @@ keyof `EventPayloadMapping`[]
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventResult`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`, `K` *extends* keyof [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md) ? [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-定義: packages/being/dist/interface.d.ts:501
+定義: packages/being/dist/interface.d.ts:590
 
 #### 型パラメーター
 
@@ -248,7 +282,7 @@ keyof `EventPayloadMapping`[]
 
 > **middlePointerMoveHandler**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:641](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L641)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:641](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L641)
 
 #### パラメータ
 
@@ -270,7 +304,7 @@ keyof `EventPayloadMapping`[]
 
 > **uponEnter**(`context`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:659](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L659)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:659](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L659)
 
 #### パラメータ
 

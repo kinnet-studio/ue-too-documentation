@@ -2,7 +2,7 @@
 
 # 介面: PinJointConstraint
 
-定義於: [constraint.ts:254](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/constraint.ts#L254)
+定義於: [constraint.ts:254](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/constraint.ts#L254)
 
 ## 屬性
 
@@ -10,7 +10,7 @@
 
 > **anchorA**: `Point`
 
-定義於: [constraint.ts:257](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/constraint.ts#L257)
+定義於: [constraint.ts:257](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/constraint.ts#L257)
 
 ***
 
@@ -18,7 +18,7 @@
 
 > **anchorB**: `Point`
 
-定義於: [constraint.ts:258](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/constraint.ts#L258)
+定義於: [constraint.ts:258](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/constraint.ts#L258)
 
 ***
 
@@ -26,7 +26,7 @@
 
 > **bodyA**: [`RigidBody`](RigidBody.md)
 
-定義於: [constraint.ts:255](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/constraint.ts#L255)
+定義於: [constraint.ts:255](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/constraint.ts#L255)
 
 ***
 
@@ -34,4 +34,4 @@
 
 > **bodyB**: [`RigidBody`](RigidBody.md)
 
-定義於: [constraint.ts:256](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/constraint.ts#L256)
+定義於: [constraint.ts:256](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/constraint.ts#L256)

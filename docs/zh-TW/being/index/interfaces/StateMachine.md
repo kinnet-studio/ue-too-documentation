@@ -2,7 +2,7 @@
 
 # 介面: StateMachine\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-定義於: [interface.ts:212](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L212)
+定義於: [interface.ts:212](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L212)
 
 ## Description
 
@@ -42,11 +42,26 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 ## 屬性
 
+### context?
+
+> `readonly` `optional` **context**: `Context`
+
+定義於: [interface.ts:229](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L229)
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+[TemplateStateMachine](../classes/TemplateStateMachine.md) always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+***
+
 ### currentState
 
 > **currentState**: `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-定義於: [interface.ts:256](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L256)
+定義於: [interface.ts:289](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L289)
 
 ***
 
@@ -54,7 +69,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **possibleStates**: `States`[]
 
-定義於: [interface.ts:243](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L243)
+定義於: [interface.ts:258](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L258)
 
 ***
 
@@ -62,7 +77,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **states**: `Record`\<`States`, [`State`](State.md)\<`EventPayloadMapping`, `Context`, `string` *extends* `States` ? `string` : `States`, `EventOutputMapping`\>\>
 
-定義於: [interface.ts:233](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L233)
+定義於: [interface.ts:242](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L242)
 
 ## 方法
 
@@ -72,7 +87,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義於: [interface.ts:222](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L222)
+定義於: [interface.ts:231](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L231)
 
 ##### 型別參數
 
@@ -94,7 +109,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `unknown`\>
 
-定義於: [interface.ts:229](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L229)
+定義於: [interface.ts:238](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L238)
 
 ##### 型別參數
 
@@ -114,11 +129,42 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 ***
 
+### onEventResult()?
+
+> `optional` **onEventResult**(`callback`): `void` \| () => `void`
+
+定義於: [interface.ts:283](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L283)
+
+Subscribe to every event result. Optional so existing StateMachine
+implementations remain valid; [TemplateStateMachine](../classes/TemplateStateMachine.md) always
+provides it. Returns a disposer on implementations that support one.
+Disposing during a dispatch takes effect starting with the next
+dispatch, not the one in progress — see [EventResultCallback](../type-aliases/EventResultCallback.md)
+for the exact snapshot-iteration semantics.
+
+#### 參數
+
+##### callback
+
+[`EventResultCallback`](../type-aliases/EventResultCallback.md)\<`EventPayloadMapping`, `Context`, `States`\>
+
+#### 回傳
+
+`void` \| () => `void`
+
+***
+
 ### onHappens()
 
-> **onHappens**(`callback`): `void`
+> **onHappens**(`callback`): `void` \| () => `void`
 
-定義於: [interface.ts:244](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L244)
+定義於: [interface.ts:266](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L266)
+
+Subscribe to every `happens()` call, before the state handles it.
+Returns a disposer on implementations that support one. Disposing
+during a dispatch takes effect starting with the next dispatch, not
+the one in progress — see [EventResultCallback](../type-aliases/EventResultCallback.md) for the exact
+snapshot-iteration semantics.
 
 #### 參數
 
@@ -128,15 +174,20 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 #### 回傳
 
-`void`
+`void` \| () => `void`
 
 ***
 
 ### onStateChange()
 
-> **onStateChange**(`callback`): `void`
+> **onStateChange**(`callback`): `void` \| () => `void`
 
-定義於: [interface.ts:242](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L242)
+定義於: [interface.ts:257](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L257)
+
+Subscribe to state changes. Returns a disposer on implementations that
+support one. Disposing during a dispatch takes effect starting with
+the next dispatch, not the one in progress — see
+[EventResultCallback](../type-aliases/EventResultCallback.md) for the exact snapshot-iteration semantics.
 
 #### 參數
 
@@ -146,7 +197,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 #### 回傳
 
-`void`
+`void` \| () => `void`
 
 ***
 
@@ -154,7 +205,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **reset**(): `void`
 
-定義於: [interface.ts:253](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L253)
+定義於: [interface.ts:286](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L286)
 
 #### 回傳
 
@@ -166,7 +217,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **setContext**(`context`): `void`
 
-定義於: [interface.ts:232](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L232)
+定義於: [interface.ts:241](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L241)
 
 #### 參數
 
@@ -184,7 +235,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **start**(): `void`
 
-定義於: [interface.ts:254](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L254)
+定義於: [interface.ts:287](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L287)
 
 #### 回傳
 
@@ -196,7 +247,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **switchTo**(`state`): `void`
 
-定義於: [interface.ts:220](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L220)
+定義於: [interface.ts:220](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L220)
 
 #### 參數
 
@@ -214,7 +265,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **wrapup**(): `void`
 
-定義於: [interface.ts:255](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L255)
+定義於: [interface.ts:288](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L288)
 
 #### 回傳
 

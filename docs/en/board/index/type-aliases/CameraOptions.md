@@ -4,7 +4,7 @@
 
 > **CameraOptions** = `object`
 
-Defined in: [packages/board/src/camera/base.ts:27](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L27)
+Defined in: [packages/board/src/camera/base.ts:27](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L27)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [packages/board/src/camera/base.ts:27](https://github.com/kinnet-stu
 
 > `optional` **boundaries**: [`Boundaries`](Boundaries.md)
 
-Defined in: [packages/board/src/camera/base.ts:33](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L33)
+Defined in: [packages/board/src/camera/base.ts:33](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L33)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [packages/board/src/camera/base.ts:33](https://github.com/kinnet-stu
 
 > `optional` **position**: `Point`
 
-Defined in: [packages/board/src/camera/base.ts:30](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L30)
+Defined in: [packages/board/src/camera/base.ts:30](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L30)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [packages/board/src/camera/base.ts:30](https://github.com/kinnet-stu
 
 > `optional` **rotation**: `number`
 
-Defined in: [packages/board/src/camera/base.ts:31](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L31)
+Defined in: [packages/board/src/camera/base.ts:31](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L31)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [packages/board/src/camera/base.ts:31](https://github.com/kinnet-stu
 
 > `optional` **rotationBoundaries**: [`RotationLimits`](RotationLimits.md)
 
-Defined in: [packages/board/src/camera/base.ts:35](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L35)
+Defined in: [packages/board/src/camera/base.ts:35](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L35)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [packages/board/src/camera/base.ts:35](https://github.com/kinnet-stu
 
 > `optional` **viewPortHeight**: `number`
 
-Defined in: [packages/board/src/camera/base.ts:29](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L29)
+Defined in: [packages/board/src/camera/base.ts:29](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L29)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [packages/board/src/camera/base.ts:29](https://github.com/kinnet-stu
 
 > `optional` **viewPortWidth**: `number`
 
-Defined in: [packages/board/src/camera/base.ts:28](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L28)
+Defined in: [packages/board/src/camera/base.ts:28](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L28)
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [packages/board/src/camera/base.ts:28](https://github.com/kinnet-stu
 
 > `optional` **zoomLevel**: `number`
 
-Defined in: [packages/board/src/camera/base.ts:32](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L32)
+Defined in: [packages/board/src/camera/base.ts:32](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L32)
 
 ***
 
@@ -68,4 +68,4 @@ Defined in: [packages/board/src/camera/base.ts:32](https://github.com/kinnet-stu
 
 > `optional` **zoomLevelBoundaries**: [`ZoomLevelLimits`](ZoomLevelLimits.md)
 
-Defined in: [packages/board/src/camera/base.ts:34](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L34)
+Defined in: [packages/board/src/camera/base.ts:34](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L34)

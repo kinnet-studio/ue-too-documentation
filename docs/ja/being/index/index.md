@@ -128,7 +128,9 @@ timer.happens("stop");
 - [StateMachine](interfaces/StateMachine.md)
 - [DefaultOutputMapping](type-aliases/DefaultOutputMapping.md)
 - [EventGuards](type-aliases/EventGuards.md)
+- [EventPreconditions](type-aliases/EventPreconditions.md)
 - [EventReactions](type-aliases/EventReactions.md)
+- [EventResultCallback](type-aliases/EventResultCallback.md)
 - [Guard](type-aliases/Guard.md)
 - [GuardEvaluation](type-aliases/GuardEvaluation.md)
 - [GuardMapping](type-aliases/GuardMapping.md)
@@ -139,6 +141,17 @@ timer.happens("stop");
 - [CreateStateType](type-aliases/CreateStateType.md)
 - [EventArgs](type-aliases/EventArgs.md)
 - [createStateGuard](functions/createStateGuard.md)
+
+## Examples
+
+- [createVendingMachine](functions/createVendingMachine.md)
+
+## Introspection
+
+- [MachineGraph](type-aliases/MachineGraph.md)
+- [MachineGraphEdge](type-aliases/MachineGraphEdge.md)
+- [MachineGraphNode](type-aliases/MachineGraphNode.md)
+- [extractMachineGraph](functions/extractMachineGraph.md)
 
 ## Other
 
@@ -157,6 +170,8 @@ timer.happens("stop");
 - [GuardFunction](type-aliases/GuardFunction.md)
 - [HierarchicalStatePath](type-aliases/HierarchicalStatePath.md)
 - [TransitionDefinitionUnion](type-aliases/TransitionDefinitionUnion.md)
+- [VendingMachineEvents](type-aliases/VendingMachineEvents.md)
+- [VendingMachineStates](type-aliases/VendingMachineStates.md)
 - [createStateMachineSchemaWithInferredStates](functions/createStateMachineSchemaWithInferredStates.md)
 
 ## Runtime Factory

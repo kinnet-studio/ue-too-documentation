@@ -2,7 +2,7 @@
 
 # 類別: PanControlStateMachine
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:129](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L129)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:129](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L129)
 
 State machine controlling pan input flow and animations.
 
@@ -49,7 +49,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **new PanControlStateMachine**(`states`, `initialState`, `context`): `PanControlStateMachine`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:135](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L135)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:135](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L135)
 
 #### 參數
 
@@ -79,7 +79,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > `protected` **\_context**: `BaseContext`
 
-定義於: packages/being/dist/interface.d.ts:384
+定義於: packages/being/dist/interface.d.ts:468
 
 #### 繼承自
 
@@ -91,7 +91,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > `protected` **\_currentState**: [`PanControlStates`](../type-aliases/PanControlStates.md) \| `"INITIAL"` \| `"TERMINAL"`
 
-定義於: packages/being/dist/interface.d.ts:382
+定義於: packages/being/dist/interface.d.ts:466
 
 #### 繼承自
 
@@ -99,11 +99,23 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 ***
 
+### \_eventResultCallbacks
+
+> `protected` **\_eventResultCallbacks**: `EventResultCallback`\<[`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), `BaseContext`, [`PanControlStates`](../type-aliases/PanControlStates.md)\>[]
+
+定義於: packages/being/dist/interface.d.ts:472
+
+#### 繼承自
+
+`TemplateStateMachine._eventResultCallbacks`
+
+***
+
 ### \_happensCallbacks
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-定義於: packages/being/dist/interface.d.ts:387
+定義於: packages/being/dist/interface.d.ts:471
 
 #### 參數
 
@@ -129,7 +141,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > `protected` **\_initialState**: [`PanControlStates`](../type-aliases/PanControlStates.md)
 
-定義於: packages/being/dist/interface.d.ts:389
+定義於: packages/being/dist/interface.d.ts:474
 
 #### 繼承自
 
@@ -141,7 +153,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<[`PanControlStates`](../type-aliases/PanControlStates.md)\>[]
 
-定義於: packages/being/dist/interface.d.ts:386
+定義於: packages/being/dist/interface.d.ts:470
 
 #### 繼承自
 
@@ -153,7 +165,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義於: packages/being/dist/interface.d.ts:383
+定義於: packages/being/dist/interface.d.ts:467
 
 #### 繼承自
 
@@ -165,7 +177,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > `protected` **\_statesArray**: [`PanControlStates`](../type-aliases/PanControlStates.md)[]
 
-定義於: packages/being/dist/interface.d.ts:385
+定義於: packages/being/dist/interface.d.ts:469
 
 #### 繼承自
 
@@ -177,7 +189,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > `protected` **\_timeouts**: `number` \| `undefined`
 
-定義於: packages/being/dist/interface.d.ts:388
+定義於: packages/being/dist/interface.d.ts:473
 
 #### 繼承自
 
@@ -185,13 +197,38 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 ## 存取器
 
+### context
+
+#### Getter 簽章
+
+> **get** **context**(): `Context`
+
+定義於: packages/being/dist/interface.d.ts:487
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+TemplateStateMachine always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+##### 回傳
+
+`Context`
+
+#### 繼承自
+
+`TemplateStateMachine.context`
+
+***
+
 ### currentState
 
 #### Getter 簽章
 
 > **get** **currentState**(): `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-定義於: packages/being/dist/interface.d.ts:399
+定義於: packages/being/dist/interface.d.ts:485
 
 ##### 回傳
 
@@ -209,7 +246,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **get** **possibleStates**(): `States`[]
 
-定義於: packages/being/dist/interface.d.ts:401
+定義於: packages/being/dist/interface.d.ts:488
 
 ##### 回傳
 
@@ -227,7 +264,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義於: packages/being/dist/interface.d.ts:402
+定義於: packages/being/dist/interface.d.ts:489
 
 ##### 回傳
 
@@ -245,7 +282,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `K` *extends* keyof [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md) ? [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-定義於: packages/being/dist/interface.d.ts:395
+定義於: packages/being/dist/interface.d.ts:480
 
 ##### 型別參數
 
@@ -271,7 +308,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `unknown`\>
 
-定義於: packages/being/dist/interface.d.ts:396
+定義於: packages/being/dist/interface.d.ts:481
 
 ##### 型別參數
 
@@ -299,7 +336,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **initateTransition**(): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `void`\>
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:186](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L186)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:186](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L186)
 
 Initiates transition to `TRANSITION` state.
 
@@ -318,7 +355,7 @@ Called when starting programmatic camera movements.
 
 > **notifyPanInput**(`diff`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)\>
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:161](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L161)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:161](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L161)
 
 Notifies the state machine of user pan input.
 
@@ -347,7 +384,7 @@ where it may transition back to `ACCEPTING_USER_INPUT` (user interrupting animat
 
 > **notifyPanToAnimationInput**(`target`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)\>
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:175](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L175)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:175](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L175)
 
 Initiates a pan animation to a target position.
 
@@ -372,11 +409,50 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 ***
 
+### onEventResult()
+
+> **onEventResult**(`callback`): () => `void`
+
+定義於: packages/being/dist/interface.d.ts:484
+
+Subscribe to every event result. Optional so existing StateMachine
+implementations remain valid; TemplateStateMachine always
+provides it. Returns a disposer on implementations that support one.
+Disposing during a dispatch takes effect starting with the next
+dispatch, not the one in progress — see EventResultCallback
+for the exact snapshot-iteration semantics.
+
+#### 參數
+
+##### callback
+
+`EventResultCallback`\<[`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), `BaseContext`, [`PanControlStates`](../type-aliases/PanControlStates.md)\>
+
+#### 回傳
+
+> (): `void`
+
+##### 回傳
+
+`void`
+
+#### 繼承自
+
+`TemplateStateMachine.onEventResult`
+
+***
+
 ### onHappens()
 
-> **onHappens**(`callback`): `void`
+> **onHappens**(`callback`): () => `void`
 
-定義於: packages/being/dist/interface.d.ts:398
+定義於: packages/being/dist/interface.d.ts:483
+
+Subscribe to every `happens()` call, before the state handles it.
+Returns a disposer on implementations that support one. Disposing
+during a dispatch takes effect starting with the next dispatch, not
+the one in progress — see EventResultCallback for the exact
+snapshot-iteration semantics.
 
 #### 參數
 
@@ -385,6 +461,10 @@ Transitions to `TRANSITION` state where animation updates occur.
 (`args`, `context`) => `void`
 
 #### 回傳
+
+> (): `void`
+
+##### 回傳
 
 `void`
 
@@ -396,9 +476,14 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 ### onStateChange()
 
-> **onStateChange**(`callback`): `void`
+> **onStateChange**(`callback`): () => `void`
 
-定義於: packages/being/dist/interface.d.ts:397
+定義於: packages/being/dist/interface.d.ts:482
+
+Subscribe to state changes. Returns a disposer on implementations that
+support one. Disposing during a dispatch takes effect starting with
+the next dispatch, not the one in progress — see
+EventResultCallback for the exact snapshot-iteration semantics.
 
 #### 參數
 
@@ -407,6 +492,10 @@ Transitions to `TRANSITION` state where animation updates occur.
 `StateChangeCallback`\<[`PanControlStates`](../type-aliases/PanControlStates.md)\>
 
 #### 回傳
+
+> (): `void`
+
+##### 回傳
 
 `void`
 
@@ -420,7 +509,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **reset**(): `void`
 
-定義於: packages/being/dist/interface.d.ts:391
+定義於: packages/being/dist/interface.d.ts:476
 
 #### 回傳
 
@@ -436,7 +525,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **setContext**(`context`): `void`
 
-定義於: packages/being/dist/interface.d.ts:400
+定義於: packages/being/dist/interface.d.ts:486
 
 #### 參數
 
@@ -458,7 +547,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **start**(): `void`
 
-定義於: packages/being/dist/interface.d.ts:392
+定義於: packages/being/dist/interface.d.ts:477
 
 #### 回傳
 
@@ -474,7 +563,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **switchTo**(`state`): `void`
 
-定義於: packages/being/dist/interface.d.ts:394
+定義於: packages/being/dist/interface.d.ts:479
 
 #### 參數
 
@@ -496,7 +585,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **wrapup**(): `void`
 
-定義於: packages/being/dist/interface.d.ts:393
+定義於: packages/being/dist/interface.d.ts:478
 
 #### 回傳
 

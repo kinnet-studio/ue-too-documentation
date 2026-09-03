@@ -2,7 +2,7 @@
 
 # インターフェイス: BaseContext
 
-定義: [interface.ts:29](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L29)
+定義: [interface.ts:29](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L29)
 
 Base context interface for state machines.
 
@@ -37,7 +37,7 @@ interface MyContext extends BaseContext {
 
 > **cleanup**(): `void`
 
-定義: [interface.ts:31](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L31)
+定義: [interface.ts:31](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L31)
 
 #### 戻り値
 
@@ -49,7 +49,7 @@ interface MyContext extends BaseContext {
 
 > **setup**(): `void`
 
-定義: [interface.ts:30](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L30)
+定義: [interface.ts:30](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L30)
 
 #### 戻り値
 

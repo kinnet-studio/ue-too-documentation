@@ -4,7 +4,7 @@
 
 > **inverseMercatorProjection**(`point`, `centerLongitude`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-定義於: [projection.ts:85](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/border/src/projection.ts#L85)
+定義於: [projection.ts:85](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/border/src/projection.ts#L85)
 
 Converts a Mercator projection point back to geographic coordinates.
 

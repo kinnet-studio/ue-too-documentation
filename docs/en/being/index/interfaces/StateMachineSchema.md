@@ -2,7 +2,7 @@
 
 # Interface: StateMachineSchema\<Context, EventPayloadMapping, StateNames, EventOutputMapping\>
 
-Defined in: [schema-factory.ts:290](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/schema-factory.ts#L290)
+Defined in: [schema-factory.ts:290](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/schema-factory.ts#L290)
 
 Complete schema definition for a state machine.
 
@@ -38,7 +38,7 @@ Optional mapping of events to their output types
 
 > **events**: `EventPayloadMapping`
 
-Defined in: [schema-factory.ts:301](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/schema-factory.ts#L301)
+Defined in: [schema-factory.ts:301](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/schema-factory.ts#L301)
 
 Mapping of event names to their payload types
 
@@ -48,7 +48,7 @@ Mapping of event names to their payload types
 
 > **initialState**: `StateNames`
 
-Defined in: [schema-factory.ts:310](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/schema-factory.ts#L310)
+Defined in: [schema-factory.ts:310](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/schema-factory.ts#L310)
 
 Initial state name
 
@@ -58,7 +58,7 @@ Initial state name
 
 > **stateDefinitions**: [`StateDefinition`](StateDefinition.md)\<`Context`, `EventPayloadMapping`, `StateNames`, `EventOutputMapping`\>[]
 
-Defined in: [schema-factory.ts:303](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/schema-factory.ts#L303)
+Defined in: [schema-factory.ts:303](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/schema-factory.ts#L303)
 
 Array of state definitions
 
@@ -68,6 +68,6 @@ Array of state definitions
 
 > **states**: readonly `StateNames`[] \| `StateNames`[]
 
-Defined in: [schema-factory.ts:299](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/schema-factory.ts#L299)
+Defined in: [schema-factory.ts:299](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/schema-factory.ts#L299)
 
 Array of all possible state names
