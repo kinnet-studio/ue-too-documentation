@@ -2,7 +2,7 @@
 
 # Class: PlayerSystem
 
-Defined in: [player-system/player-component.ts:20](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L20)
+Defined in: [player-system/player-component.ts:20](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L20)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [player-system/player-component.ts:20](https://github.com/kinnet-stu
 
 > **new PlayerSystem**(`_coordinator`, `_playerCount`): `PlayerSystem`
 
-Defined in: [player-system/player-component.ts:23](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L23)
+Defined in: [player-system/player-component.ts:23](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L23)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [player-system/player-component.ts:23](https://github.com/kinnet-stu
 
 > **entities**: `Set`\<`number`\>
 
-Defined in: [player-system/player-component.ts:21](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L21)
+Defined in: [player-system/player-component.ts:21](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L21)
 
 #### Implementation of
 
@@ -48,7 +48,7 @@ Defined in: [player-system/player-component.ts:21](https://github.com/kinnet-stu
 
 > **addPlayer**(`name`): `number` \| `null`
 
-Defined in: [player-system/player-component.ts:41](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L41)
+Defined in: [player-system/player-component.ts:41](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L41)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [player-system/player-component.ts:41](https://github.com/kinnet-stu
 
 > **getPlayerOrder**(): `number`[]
 
-Defined in: [player-system/player-component.ts:155](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L155)
+Defined in: [player-system/player-component.ts:155](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L155)
 
 #### Returns
 
@@ -78,7 +78,7 @@ Defined in: [player-system/player-component.ts:155](https://github.com/kinnet-st
 
 > **getPlayers**(): `number`[]
 
-Defined in: [player-system/player-component.ts:70](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L70)
+Defined in: [player-system/player-component.ts:70](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L70)
 
 #### Returns
 
@@ -90,7 +90,7 @@ Defined in: [player-system/player-component.ts:70](https://github.com/kinnet-stu
 
 > **organizePlayerOrder**(): `void`
 
-Defined in: [player-system/player-component.ts:123](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L123)
+Defined in: [player-system/player-component.ts:123](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L123)
 
 #### Returns
 
@@ -102,7 +102,7 @@ Defined in: [player-system/player-component.ts:123](https://github.com/kinnet-st
 
 > **playerCount**(): `number`
 
-Defined in: [player-system/player-component.ts:66](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L66)
+Defined in: [player-system/player-component.ts:66](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L66)
 
 #### Returns
 
@@ -114,7 +114,7 @@ Defined in: [player-system/player-component.ts:66](https://github.com/kinnet-stu
 
 > **removePlayer**(`player`): `void`
 
-Defined in: [player-system/player-component.ts:54](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L54)
+Defined in: [player-system/player-component.ts:54](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L54)
 
 #### Parameters
 
@@ -132,7 +132,7 @@ Defined in: [player-system/player-component.ts:54](https://github.com/kinnet-stu
 
 > **setPlayerOrder**(`players`): `void`
 
-Defined in: [player-system/player-component.ts:103](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L103)
+Defined in: [player-system/player-component.ts:103](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L103)
 
 #### Parameters
 
@@ -150,7 +150,7 @@ Defined in: [player-system/player-component.ts:103](https://github.com/kinnet-st
 
 > **shufflePlayerOrder**(): `void`
 
-Defined in: [player-system/player-component.ts:86](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L86)
+Defined in: [player-system/player-component.ts:86](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L86)
 
 #### Returns
 

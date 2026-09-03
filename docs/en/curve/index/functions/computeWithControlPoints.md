@@ -4,7 +4,7 @@
 
 > **computeWithControlPoints**(`tVal`, `controlPoints`): [`Point`](../type-aliases/Point.md)
 
-Defined in: [packages/curve/src/b-curve.ts:2244](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/curve/src/b-curve.ts#L2244)
+Defined in: [packages/curve/src/b-curve.ts:2244](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L2244)
 
 Computes point on curve using De Casteljau's algorithm.
 

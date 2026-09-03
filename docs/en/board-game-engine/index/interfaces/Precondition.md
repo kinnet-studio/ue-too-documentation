@@ -2,7 +2,7 @@
 
 # Interface: Precondition
 
-Defined in: [action-system/precondition.ts:3](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/action-system/precondition.ts#L3)
+Defined in: [action-system/precondition.ts:3](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/action-system/precondition.ts#L3)
 
 ## Methods
 
@@ -10,7 +10,7 @@ Defined in: [action-system/precondition.ts:3](https://github.com/kinnet-studio/u
 
 > **check**(): `boolean`
 
-Defined in: [action-system/precondition.ts:4](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/action-system/precondition.ts#L4)
+Defined in: [action-system/precondition.ts:4](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/action-system/precondition.ts#L4)
 
 #### Returns
 

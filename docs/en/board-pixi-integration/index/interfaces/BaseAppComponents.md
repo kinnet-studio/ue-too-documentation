@@ -2,7 +2,7 @@
 
 # Interface: BaseAppComponents
 
-Defined in: [init-app.ts:30](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L30)
+Defined in: [init-app.ts:30](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L30)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [init-app.ts:30](https://github.com/kinnet-studio/ue-too/blob/11b722
 
 > **app**: `Application`
 
-Defined in: [init-app.ts:31](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L31)
+Defined in: [init-app.ts:31](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L31)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [init-app.ts:31](https://github.com/kinnet-studio/ue-too/blob/11b722
 
 > **camera**: `DefaultBoardCamera`
 
-Defined in: [init-app.ts:32](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L32)
+Defined in: [init-app.ts:32](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L32)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [init-app.ts:32](https://github.com/kinnet-studio/ue-too/blob/11b722
 
 > **cameraRig**: `CameraRig`
 
-Defined in: [init-app.ts:34](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L34)
+Defined in: [init-app.ts:34](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L34)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [init-app.ts:34](https://github.com/kinnet-studio/ue-too/blob/11b722
 
 > **canvasProxy**: `CanvasProxy`
 
-Defined in: [init-app.ts:33](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L33)
+Defined in: [init-app.ts:33](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L33)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [init-app.ts:33](https://github.com/kinnet-studio/ue-too/blob/11b722
 
 > **cleanup**: () => `void`
 
-Defined in: [init-app.ts:40](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L40)
+Defined in: [init-app.ts:40](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L40)
 
 #### Returns
 
@@ -54,7 +54,7 @@ Defined in: [init-app.ts:40](https://github.com/kinnet-studio/ue-too/blob/11b722
 
 > **cleanups**: () => `void`[]
 
-Defined in: [init-app.ts:41](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L41)
+Defined in: [init-app.ts:41](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L41)
 
 #### Returns
 
@@ -66,7 +66,7 @@ Defined in: [init-app.ts:41](https://github.com/kinnet-studio/ue-too/blob/11b722
 
 > **inputOrchestrator**: `InputOrchestrator`
 
-Defined in: [init-app.ts:35](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L35)
+Defined in: [init-app.ts:35](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L35)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [init-app.ts:35](https://github.com/kinnet-studio/ue-too/blob/11b722
 
 > **kmtInputStateMachine**: `StateMachine`
 
-Defined in: [init-app.ts:37](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L37)
+Defined in: [init-app.ts:37](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L37)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [init-app.ts:37](https://github.com/kinnet-studio/ue-too/blob/11b722
 
 > **kmtParser**: `VanillaKMTEventParser`
 
-Defined in: [init-app.ts:38](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L38)
+Defined in: [init-app.ts:38](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L38)
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: [init-app.ts:38](https://github.com/kinnet-studio/ue-too/blob/11b722
 
 > **observableInputTracker**: `ObservableInputTracker`
 
-Defined in: [init-app.ts:36](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L36)
+Defined in: [init-app.ts:36](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L36)
 
 ***
 
@@ -98,4 +98,4 @@ Defined in: [init-app.ts:36](https://github.com/kinnet-studio/ue-too/blob/11b722
 
 > **touchParser**: `TouchEventParser`
 
-Defined in: [init-app.ts:39](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-pixi-integration/src/init-app.ts#L39)
+Defined in: [init-app.ts:39](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L39)

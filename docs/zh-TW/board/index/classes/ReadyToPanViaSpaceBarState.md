@@ -2,7 +2,7 @@
 
 # 類別: ReadyToPanViaSpaceBarState
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:408](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L408)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:408](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L408)
 
 ## Description
 
@@ -18,7 +18,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > **new ReadyToPanViaSpaceBarState**(): `ReadyToPanViaSpaceBarState`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:414](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L414)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:414](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L414)
 
 #### 回傳
 
@@ -34,7 +34,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > `protected` **\_defer**: `Defer`\<[`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`, [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\> \| `undefined`
 
-定義於: packages/being/dist/interface.d.ts:493
+定義於: packages/being/dist/interface.d.ts:581
 
 #### 繼承自
 
@@ -46,7 +46,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > `protected` **\_delay**: `Delay`\<[`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`, [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\> \| `undefined`
 
-定義於: packages/being/dist/interface.d.ts:492
+定義於: packages/being/dist/interface.d.ts:580
 
 #### 繼承自
 
@@ -58,7 +58,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-定義於: packages/being/dist/interface.d.ts:491
+定義於: packages/being/dist/interface.d.ts:578
 
 #### 繼承自
 
@@ -66,11 +66,23 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 ***
 
+### \_eventPreconditions
+
+> `protected` **\_eventPreconditions**: `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+定義於: packages/being/dist/interface.d.ts:579
+
+#### 繼承自
+
+`TemplateState._eventPreconditions`
+
+***
+
 ### \_eventReactions
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\>
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:418](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L418)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:418](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L418)
 
 #### 覆寫了
 
@@ -82,7 +94,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > `protected` **\_guards**: `Guard`\<`Context`\>
 
-定義於: packages/being/dist/interface.d.ts:490
+定義於: packages/being/dist/interface.d.ts:577
 
 #### 繼承自
 
@@ -96,7 +108,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-定義於: packages/being/dist/interface.d.ts:498
+定義於: packages/being/dist/interface.d.ts:587
 
 ##### 回傳
 
@@ -114,7 +126,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-定義於: packages/being/dist/interface.d.ts:496
+定義於: packages/being/dist/interface.d.ts:584
 
 ##### 回傳
 
@@ -126,13 +138,35 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 ***
 
+### eventPreconditions
+
+#### Getter 簽章
+
+> **get** **eventPreconditions**(): `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+定義於: packages/being/dist/interface.d.ts:585
+
+Pre-action vetoes: named guards that must all pass before this state
+handles an event. Optional so existing State implementations remain
+valid; TemplateState always provides it.
+
+##### 回傳
+
+`Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+#### 繼承自
+
+`TemplateState.eventPreconditions`
+
+***
+
 ### eventReactions
 
 #### Getter 簽章
 
 > **get** **eventReactions**(): `EventReactions`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義於: packages/being/dist/interface.d.ts:497
+定義於: packages/being/dist/interface.d.ts:586
 
 ##### 回傳
 
@@ -150,7 +184,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > **get** **guards**(): `Guard`\<`Context`\>
 
-定義於: packages/being/dist/interface.d.ts:495
+定義於: packages/being/dist/interface.d.ts:583
 
 ##### 回傳
 
@@ -168,7 +202,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-定義於: packages/being/dist/interface.d.ts:494
+定義於: packages/being/dist/interface.d.ts:582
 
 ##### 回傳
 
@@ -184,7 +218,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-定義於: packages/being/dist/interface.d.ts:500
+定義於: packages/being/dist/interface.d.ts:589
 
 #### 參數
 
@@ -214,7 +248,7 @@ keyof `EventPayloadMapping`[]
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventResult`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`, `K` *extends* keyof [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md) ? [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-定義於: packages/being/dist/interface.d.ts:501
+定義於: packages/being/dist/interface.d.ts:590
 
 #### 型別參數
 
@@ -250,7 +284,7 @@ keyof `EventPayloadMapping`[]
 
 > **leftPointerDownHandler**(`context`, `payload`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:446](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L446)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:446](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L446)
 
 #### 參數
 
@@ -272,7 +306,7 @@ keyof `EventPayloadMapping`[]
 
 > **uponEnter**(`context`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:442](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L442)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:442](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L442)
 
 #### 參數
 

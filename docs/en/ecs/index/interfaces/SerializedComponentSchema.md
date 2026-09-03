@@ -2,7 +2,7 @@
 
 # Interface: SerializedComponentSchema
 
-Defined in: [index.ts:350](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/ecs/src/index.ts#L350)
+Defined in: [index.ts:350](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L350)
 
 Serialized representation of a component schema for JSON storage.
 Component names are stored as strings (using Symbol.for keys for global symbols).
@@ -13,7 +13,7 @@ Component names are stored as strings (using Symbol.for keys for global symbols)
 
 > **componentName**: `string`
 
-Defined in: [index.ts:351](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/ecs/src/index.ts#L351)
+Defined in: [index.ts:351](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L351)
 
 ***
 
@@ -21,4 +21,4 @@ Defined in: [index.ts:351](https://github.com/kinnet-studio/ue-too/blob/11b72200
 
 > **fields**: `SerializedComponentField`[]
 
-Defined in: [index.ts:352](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/ecs/src/index.ts#L352)
+Defined in: [index.ts:352](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L352)

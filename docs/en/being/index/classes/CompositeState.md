@@ -2,7 +2,7 @@
 
 # Abstract Class: CompositeState\<EventPayloadMapping, Context, ParentStates, ChildStates, EventOutputMapping\>
 
-Defined in: [hierarchical.ts:106](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L106)
+Defined in: [hierarchical.ts:106](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L106)
 
 Composite state that contains a child state machine.
 
@@ -93,7 +93,7 @@ Event output mapping
 
 > `protected` **\_childStateMachineConfig**: [`ChildStateMachineConfig`](../interfaces/ChildStateMachineConfig.md)\<`EventPayloadMapping`, `Context`, `ChildStates`, `EventOutputMapping`\> \| `null` = `null`
 
-Defined in: [hierarchical.ts:120](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L120)
+Defined in: [hierarchical.ts:120](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L120)
 
 ***
 
@@ -101,7 +101,7 @@ Defined in: [hierarchical.ts:120](https://github.com/kinnet-studio/ue-too/blob/1
 
 > `protected` **\_context**: `Context` \| `null` = `null`
 
-Defined in: [hierarchical.ts:127](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L127)
+Defined in: [hierarchical.ts:127](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L127)
 
 ***
 
@@ -109,7 +109,7 @@ Defined in: [hierarchical.ts:127](https://github.com/kinnet-studio/ue-too/blob/1
 
 > `protected` **\_defer**: [`Defer`](../type-aliases/Defer.md)\<`Context`, `EventPayloadMapping`, `ParentStates`, `EventOutputMapping`\> \| `undefined` = `undefined`
 
-Defined in: [interface.ts:855](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L855)
+Defined in: [interface.ts:1007](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L1007)
 
 #### Inherited from
 
@@ -121,7 +121,7 @@ Defined in: [interface.ts:855](https://github.com/kinnet-studio/ue-too/blob/11b7
 
 > `protected` **\_delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `ParentStates`, `EventOutputMapping`\> \| `undefined` = `undefined`
 
-Defined in: [interface.ts:851](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L851)
+Defined in: [interface.ts:1003](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L1003)
 
 #### Inherited from
 
@@ -133,7 +133,7 @@ Defined in: [interface.ts:851](https://github.com/kinnet-studio/ue-too/blob/11b7
 
 > `protected` **\_eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:846](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L846)
+Defined in: [interface.ts:993](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L993)
 
 #### Inherited from
 
@@ -141,11 +141,23 @@ Defined in: [interface.ts:846](https://github.com/kinnet-studio/ue-too/blob/11b7
 
 ***
 
+### \_eventPreconditions
+
+> `protected` **\_eventPreconditions**: `Partial`\<[`EventPreconditions`](../type-aliases/EventPreconditions.md)\<`EventPayloadMapping`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
+
+Defined in: [interface.ts:998](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L998)
+
+#### Inherited from
+
+[`TemplateState`](TemplateState.md).[`_eventPreconditions`](TemplateState.md#eventpreconditions)
+
+***
+
 ### \_eventReactions
 
 > `protected` **\_eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:834](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L834)
+Defined in: [interface.ts:981](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L981)
 
 #### Inherited from
 
@@ -157,7 +169,7 @@ Defined in: [interface.ts:834](https://github.com/kinnet-studio/ue-too/blob/11b7
 
 > `protected` **\_guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:845](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L845)
+Defined in: [interface.ts:992](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L992)
 
 #### Inherited from
 
@@ -169,7 +181,7 @@ Defined in: [interface.ts:845](https://github.com/kinnet-studio/ue-too/blob/11b7
 
 > `protected` **\_historyState**: `ChildStates` \| `null` = `null`
 
-Defined in: [hierarchical.ts:126](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L126)
+Defined in: [hierarchical.ts:126](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L126)
 
 ## Accessors
 
@@ -179,7 +191,7 @@ Defined in: [hierarchical.ts:126](https://github.com/kinnet-studio/ue-too/blob/1
 
 > **get** **delay**(): [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-Defined in: [interface.ts:884](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L884)
+Defined in: [interface.ts:1042](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L1042)
 
 ##### Returns
 
@@ -197,7 +209,7 @@ Defined in: [interface.ts:884](https://github.com/kinnet-studio/ue-too/blob/11b7
 
 > **get** **eventGuards**(): `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:869](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L869)
+Defined in: [interface.ts:1021](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L1021)
 
 ##### Returns
 
@@ -209,13 +221,39 @@ Defined in: [interface.ts:869](https://github.com/kinnet-studio/ue-too/blob/11b7
 
 ***
 
+### eventPreconditions
+
+#### Get Signature
+
+> **get** **eventPreconditions**(): `Partial`\<[`EventPreconditions`](../type-aliases/EventPreconditions.md)\<`EventPayloadMapping`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
+
+Defined in: [interface.ts:1027](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L1027)
+
+Pre-action vetoes: named guards that must all pass before this state
+handles an event. Optional so existing State implementations remain
+valid; [TemplateState](TemplateState.md) always provides it.
+
+##### Returns
+
+`Partial`\<[`EventPreconditions`](../type-aliases/EventPreconditions.md)\<`EventPayloadMapping`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
+
+Pre-action vetoes: named guards that must all pass before this state
+handles an event. Optional so existing State implementations remain
+valid; [TemplateState](TemplateState.md) always provides it.
+
+#### Inherited from
+
+[`TemplateState`](TemplateState.md).[`eventPreconditions`](TemplateState.md#eventpreconditions)
+
+***
+
 ### eventReactions
 
 #### Get Signature
 
 > **get** **eventReactions**(): [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:875](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L875)
+Defined in: [interface.ts:1033](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L1033)
 
 ##### Returns
 
@@ -233,7 +271,7 @@ Defined in: [interface.ts:875](https://github.com/kinnet-studio/ue-too/blob/11b7
 
 > **get** **guards**(): [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:865](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L865)
+Defined in: [interface.ts:1017](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L1017)
 
 ##### Returns
 
@@ -251,7 +289,7 @@ Defined in: [interface.ts:865](https://github.com/kinnet-studio/ue-too/blob/11b7
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-Defined in: [interface.ts:859](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L859)
+Defined in: [interface.ts:1011](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L1011)
 
 ##### Returns
 
@@ -267,7 +305,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: [hierarchical.ts:217](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L217)
+Defined in: [hierarchical.ts:217](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L217)
 
 #### Parameters
 
@@ -297,7 +335,7 @@ Defined in: [hierarchical.ts:217](https://github.com/kinnet-studio/ue-too/blob/1
 
 > `abstract` `protected` **getChildStateMachine**(): [`ChildStateMachineConfig`](../interfaces/ChildStateMachineConfig.md)\<`EventPayloadMapping`, `Context`, `ChildStates`, `EventOutputMapping`\>
 
-Defined in: [hierarchical.ts:133](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L133)
+Defined in: [hierarchical.ts:133](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L133)
 
 Returns the configuration for the child state machine.
 Override this method to provide child state machine setup.
@@ -312,7 +350,7 @@ Override this method to provide child state machine setup.
 
 > **getCurrentChildState**(): `ChildStates` \| `null`
 
-Defined in: [hierarchical.ts:143](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L143)
+Defined in: [hierarchical.ts:143](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L143)
 
 Gets the current child state, or null if no child state machine is active.
 
@@ -326,7 +364,7 @@ Gets the current child state, or null if no child state machine is active.
 
 > **getStatePath**(`parentState`): [`HierarchicalStatePath`](../type-aliases/HierarchicalStatePath.md)\<`ParentStates`, `ChildStates`\>
 
-Defined in: [hierarchical.ts:164](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L164)
+Defined in: [hierarchical.ts:164](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L164)
 
 Gets the full hierarchical path of the current state.
 
@@ -346,7 +384,7 @@ Gets the full hierarchical path of the current state.
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`ParentStates`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [hierarchical.ts:255](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L255)
+Defined in: [hierarchical.ts:255](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L255)
 
 #### Type Parameters
 
@@ -382,7 +420,7 @@ Defined in: [hierarchical.ts:255](https://github.com/kinnet-studio/ue-too/blob/1
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-Defined in: [hierarchical.ts:177](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L177)
+Defined in: [hierarchical.ts:177](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L177)
 
 #### Parameters
 

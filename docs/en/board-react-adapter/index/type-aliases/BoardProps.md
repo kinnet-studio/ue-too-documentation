@@ -4,7 +4,7 @@
 
 > **BoardProps** = `object`
 
-Defined in: [components/Board.tsx:30](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-react-adapter/src/components/Board.tsx#L30)
+Defined in: [components/Board.tsx:30](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-react-adapter/src/components/Board.tsx#L30)
 
 Props for the Board component.
 
@@ -14,7 +14,7 @@ Props for the Board component.
 
 > `optional` **animationCallback**: (`timestamp`, `ctx`) => `void`
 
-Defined in: [components/Board.tsx:38](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-react-adapter/src/components/Board.tsx#L38)
+Defined in: [components/Board.tsx:38](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-react-adapter/src/components/Board.tsx#L38)
 
 Callback function for drawing on each animation frame
 
@@ -38,7 +38,7 @@ Callback function for drawing on each animation frame
 
 > `optional` **children**: `React.ReactNode`
 
-Defined in: [components/Board.tsx:43](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-react-adapter/src/components/Board.tsx#L43)
+Defined in: [components/Board.tsx:43](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-react-adapter/src/components/Board.tsx#L43)
 
 Child components that can access the board via hooks
 
@@ -48,7 +48,7 @@ Child components that can access the board via hooks
 
 > `optional` **fullScreen**: `boolean`
 
-Defined in: [components/Board.tsx:32](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-react-adapter/src/components/Board.tsx#L32)
+Defined in: [components/Board.tsx:32](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-react-adapter/src/components/Board.tsx#L32)
 
 Enable fullscreen mode (canvas resizes with window)
 
@@ -58,7 +58,7 @@ Enable fullscreen mode (canvas resizes with window)
 
 > `optional` **height**: `number`
 
-Defined in: [components/Board.tsx:36](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-react-adapter/src/components/Board.tsx#L36)
+Defined in: [components/Board.tsx:36](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-react-adapter/src/components/Board.tsx#L36)
 
 Canvas height in pixels
 
@@ -68,6 +68,6 @@ Canvas height in pixels
 
 > `optional` **width**: `number`
 
-Defined in: [components/Board.tsx:34](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-react-adapter/src/components/Board.tsx#L34)
+Defined in: [components/Board.tsx:34](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-react-adapter/src/components/Board.tsx#L34)
 
 Canvas width in pixels

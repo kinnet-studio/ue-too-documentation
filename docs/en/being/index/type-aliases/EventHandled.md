@@ -4,7 +4,7 @@
 
 > **EventHandled**\<`States`, `Output`\> = `object` & `WithOutput`\<`Output`\>
 
-Defined in: [interface.ts:139](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L139)
+Defined in: [interface.ts:139](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L139)
 
 Result type when an event is successfully handled by a state.
 

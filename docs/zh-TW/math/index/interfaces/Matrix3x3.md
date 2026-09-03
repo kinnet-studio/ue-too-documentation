@@ -2,7 +2,7 @@
 
 # 介面: Matrix3x3
 
-定義於: [matrix.ts:31](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/matrix.ts#L31)
+定義於: [matrix.ts:31](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/matrix.ts#L31)
 
 ## 屬性
 
@@ -10,7 +10,7 @@
 
 > **a**: `number`
 
-定義於: [matrix.ts:32](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/matrix.ts#L32)
+定義於: [matrix.ts:32](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/matrix.ts#L32)
 
 ***
 
@@ -18,7 +18,7 @@
 
 > **b**: `number`
 
-定義於: [matrix.ts:35](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/matrix.ts#L35)
+定義於: [matrix.ts:35](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/matrix.ts#L35)
 
 ***
 
@@ -26,7 +26,7 @@
 
 > **c**: `number`
 
-定義於: [matrix.ts:33](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/matrix.ts#L33)
+定義於: [matrix.ts:33](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/matrix.ts#L33)
 
 ***
 
@@ -34,7 +34,7 @@
 
 > **d**: `number`
 
-定義於: [matrix.ts:36](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/matrix.ts#L36)
+定義於: [matrix.ts:36](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/matrix.ts#L36)
 
 ***
 
@@ -42,7 +42,7 @@
 
 > **e**: `number`
 
-定義於: [matrix.ts:34](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/matrix.ts#L34)
+定義於: [matrix.ts:34](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/matrix.ts#L34)
 
 ***
 
@@ -50,7 +50,7 @@
 
 > **f**: `number`
 
-定義於: [matrix.ts:37](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/matrix.ts#L37)
+定義於: [matrix.ts:37](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/matrix.ts#L37)
 
 ***
 
@@ -58,7 +58,7 @@
 
 > **g**: `number`
 
-定義於: [matrix.ts:38](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/matrix.ts#L38)
+定義於: [matrix.ts:38](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/matrix.ts#L38)
 
 ***
 
@@ -66,7 +66,7 @@
 
 > **h**: `number`
 
-定義於: [matrix.ts:39](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/matrix.ts#L39)
+定義於: [matrix.ts:39](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/matrix.ts#L39)
 
 ***
 
@@ -74,4 +74,4 @@
 
 > **i**: `number`
 
-定義於: [matrix.ts:40](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/math/src/matrix.ts#L40)
+定義於: [matrix.ts:40](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/matrix.ts#L40)

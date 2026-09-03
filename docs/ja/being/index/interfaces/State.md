@@ -2,7 +2,7 @@
 
 # インターフェイス: State\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-定義: [interface.ts:286](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L286)
+定義: [interface.ts:349](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L349)
 
 ## Description
 
@@ -46,7 +46,7 @@ This allows for a state to be reusable across different state machines.
 
 > **delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-定義: [interface.ts:332](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L332)
+定義: [interface.ts:403](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L403)
 
 ***
 
@@ -54,7 +54,19 @@ This allows for a state to be reusable across different state machines.
 
 > **eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-定義: [interface.ts:329](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L329)
+定義: [interface.ts:392](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L392)
+
+***
+
+### eventPreconditions?
+
+> `optional` **eventPreconditions**: `Partial`\<[`EventPreconditions`](../type-aliases/EventPreconditions.md)\<`EventPayloadMapping`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`, `string`\>\>\>
+
+定義: [interface.ts:400](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L400)
+
+Pre-action vetoes: named guards that must all pass before this state
+handles an event. Optional so existing State implementations remain
+valid; [TemplateState](../classes/TemplateState.md) always provides it.
 
 ***
 
@@ -62,7 +74,7 @@ This allows for a state to be reusable across different state machines.
 
 > **eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義: [interface.ts:335](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L335)
+定義: [interface.ts:406](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L406)
 
 ***
 
@@ -70,7 +82,7 @@ This allows for a state to be reusable across different state machines.
 
 > **guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-定義: [interface.ts:328](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L328)
+定義: [interface.ts:391](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L391)
 
 ## メソッド
 
@@ -78,7 +90,7 @@ This allows for a state to be reusable across different state machines.
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-定義: [interface.ts:304](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L304)
+定義: [interface.ts:367](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L367)
 
 #### パラメータ
 
@@ -104,7 +116,7 @@ This allows for a state to be reusable across different state machines.
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義: [interface.ts:314](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L314)
+定義: [interface.ts:377](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L377)
 
 #### 型パラメーター
 
@@ -136,7 +148,7 @@ This allows for a state to be reusable across different state machines.
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-定義: [interface.ts:294](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L294)
+定義: [interface.ts:357](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L357)
 
 #### パラメータ
 

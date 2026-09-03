@@ -4,7 +4,7 @@
 
 > **CameraOptions** = `object`
 
-定義於: [packages/board/src/camera/base.ts:27](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L27)
+定義於: [packages/board/src/camera/base.ts:27](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L27)
 
 ## 屬性
 
@@ -12,7 +12,7 @@
 
 > `optional` **boundaries**: [`Boundaries`](Boundaries.md)
 
-定義於: [packages/board/src/camera/base.ts:33](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L33)
+定義於: [packages/board/src/camera/base.ts:33](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L33)
 
 ***
 
@@ -20,7 +20,7 @@
 
 > `optional` **position**: `Point`
 
-定義於: [packages/board/src/camera/base.ts:30](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L30)
+定義於: [packages/board/src/camera/base.ts:30](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L30)
 
 ***
 
@@ -28,7 +28,7 @@
 
 > `optional` **rotation**: `number`
 
-定義於: [packages/board/src/camera/base.ts:31](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L31)
+定義於: [packages/board/src/camera/base.ts:31](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L31)
 
 ***
 
@@ -36,7 +36,7 @@
 
 > `optional` **rotationBoundaries**: [`RotationLimits`](RotationLimits.md)
 
-定義於: [packages/board/src/camera/base.ts:35](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L35)
+定義於: [packages/board/src/camera/base.ts:35](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L35)
 
 ***
 
@@ -44,7 +44,7 @@
 
 > `optional` **viewPortHeight**: `number`
 
-定義於: [packages/board/src/camera/base.ts:29](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L29)
+定義於: [packages/board/src/camera/base.ts:29](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L29)
 
 ***
 
@@ -52,7 +52,7 @@
 
 > `optional` **viewPortWidth**: `number`
 
-定義於: [packages/board/src/camera/base.ts:28](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L28)
+定義於: [packages/board/src/camera/base.ts:28](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L28)
 
 ***
 
@@ -60,7 +60,7 @@
 
 > `optional` **zoomLevel**: `number`
 
-定義於: [packages/board/src/camera/base.ts:32](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L32)
+定義於: [packages/board/src/camera/base.ts:32](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L32)
 
 ***
 
@@ -68,4 +68,4 @@
 
 > `optional` **zoomLevelBoundaries**: [`ZoomLevelLimits`](ZoomLevelLimits.md)
 
-定義於: [packages/board/src/camera/base.ts:34](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/base.ts#L34)
+定義於: [packages/board/src/camera/base.ts:34](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/base.ts#L34)

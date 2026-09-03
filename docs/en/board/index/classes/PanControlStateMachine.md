@@ -2,7 +2,7 @@
 
 # Class: PanControlStateMachine
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:129](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L129)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:129](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L129)
 
 State machine controlling pan input flow and animations.
 
@@ -49,7 +49,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **new PanControlStateMachine**(`states`, `initialState`, `context`): `PanControlStateMachine`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:135](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L135)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:135](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L135)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > `protected` **\_context**: `BaseContext`
 
-Defined in: packages/being/dist/interface.d.ts:384
+Defined in: packages/being/dist/interface.d.ts:468
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ Defined in: packages/being/dist/interface.d.ts:384
 
 > `protected` **\_currentState**: [`PanControlStates`](../type-aliases/PanControlStates.md) \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: packages/being/dist/interface.d.ts:382
+Defined in: packages/being/dist/interface.d.ts:466
 
 #### Inherited from
 
@@ -99,11 +99,23 @@ Defined in: packages/being/dist/interface.d.ts:382
 
 ***
 
+### \_eventResultCallbacks
+
+> `protected` **\_eventResultCallbacks**: `EventResultCallback`\<[`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), `BaseContext`, [`PanControlStates`](../type-aliases/PanControlStates.md)\>[]
+
+Defined in: packages/being/dist/interface.d.ts:472
+
+#### Inherited from
+
+`TemplateStateMachine._eventResultCallbacks`
+
+***
+
 ### \_happensCallbacks
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-Defined in: packages/being/dist/interface.d.ts:387
+Defined in: packages/being/dist/interface.d.ts:471
 
 #### Parameters
 
@@ -129,7 +141,7 @@ Defined in: packages/being/dist/interface.d.ts:387
 
 > `protected` **\_initialState**: [`PanControlStates`](../type-aliases/PanControlStates.md)
 
-Defined in: packages/being/dist/interface.d.ts:389
+Defined in: packages/being/dist/interface.d.ts:474
 
 #### Inherited from
 
@@ -141,7 +153,7 @@ Defined in: packages/being/dist/interface.d.ts:389
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<[`PanControlStates`](../type-aliases/PanControlStates.md)\>[]
 
-Defined in: packages/being/dist/interface.d.ts:386
+Defined in: packages/being/dist/interface.d.ts:470
 
 #### Inherited from
 
@@ -153,7 +165,7 @@ Defined in: packages/being/dist/interface.d.ts:386
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:383
+Defined in: packages/being/dist/interface.d.ts:467
 
 #### Inherited from
 
@@ -165,7 +177,7 @@ Defined in: packages/being/dist/interface.d.ts:383
 
 > `protected` **\_statesArray**: [`PanControlStates`](../type-aliases/PanControlStates.md)[]
 
-Defined in: packages/being/dist/interface.d.ts:385
+Defined in: packages/being/dist/interface.d.ts:469
 
 #### Inherited from
 
@@ -177,7 +189,7 @@ Defined in: packages/being/dist/interface.d.ts:385
 
 > `protected` **\_timeouts**: `number` \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:388
+Defined in: packages/being/dist/interface.d.ts:473
 
 #### Inherited from
 
@@ -185,13 +197,38 @@ Defined in: packages/being/dist/interface.d.ts:388
 
 ## Accessors
 
+### context
+
+#### Get Signature
+
+> **get** **context**(): `Context`
+
+Defined in: packages/being/dist/interface.d.ts:487
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+TemplateStateMachine always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+##### Returns
+
+`Context`
+
+#### Inherited from
+
+`TemplateStateMachine.context`
+
+***
+
 ### currentState
 
 #### Get Signature
 
 > **get** **currentState**(): `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: packages/being/dist/interface.d.ts:399
+Defined in: packages/being/dist/interface.d.ts:485
 
 ##### Returns
 
@@ -209,7 +246,7 @@ Defined in: packages/being/dist/interface.d.ts:399
 
 > **get** **possibleStates**(): `States`[]
 
-Defined in: packages/being/dist/interface.d.ts:401
+Defined in: packages/being/dist/interface.d.ts:488
 
 ##### Returns
 
@@ -227,7 +264,7 @@ Defined in: packages/being/dist/interface.d.ts:401
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:402
+Defined in: packages/being/dist/interface.d.ts:489
 
 ##### Returns
 
@@ -245,7 +282,7 @@ Defined in: packages/being/dist/interface.d.ts:402
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `K` *extends* keyof [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md) ? [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-Defined in: packages/being/dist/interface.d.ts:395
+Defined in: packages/being/dist/interface.d.ts:480
 
 ##### Type Parameters
 
@@ -271,7 +308,7 @@ Defined in: packages/being/dist/interface.d.ts:395
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `unknown`\>
 
-Defined in: packages/being/dist/interface.d.ts:396
+Defined in: packages/being/dist/interface.d.ts:481
 
 ##### Type Parameters
 
@@ -299,7 +336,7 @@ Defined in: packages/being/dist/interface.d.ts:396
 
 > **initateTransition**(): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `void`\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:186](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L186)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:186](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L186)
 
 Initiates transition to `TRANSITION` state.
 
@@ -318,7 +355,7 @@ Called when starting programmatic camera movements.
 
 > **notifyPanInput**(`diff`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:161](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L161)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:161](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L161)
 
 Notifies the state machine of user pan input.
 
@@ -347,7 +384,7 @@ where it may transition back to `ACCEPTING_USER_INPUT` (user interrupting animat
 
 > **notifyPanToAnimationInput**(`target`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:175](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L175)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:175](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L175)
 
 Initiates a pan animation to a target position.
 
@@ -372,11 +409,50 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 ***
 
+### onEventResult()
+
+> **onEventResult**(`callback`): () => `void`
+
+Defined in: packages/being/dist/interface.d.ts:484
+
+Subscribe to every event result. Optional so existing StateMachine
+implementations remain valid; TemplateStateMachine always
+provides it. Returns a disposer on implementations that support one.
+Disposing during a dispatch takes effect starting with the next
+dispatch, not the one in progress — see EventResultCallback
+for the exact snapshot-iteration semantics.
+
+#### Parameters
+
+##### callback
+
+`EventResultCallback`\<[`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), `BaseContext`, [`PanControlStates`](../type-aliases/PanControlStates.md)\>
+
+#### Returns
+
+> (): `void`
+
+##### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateStateMachine.onEventResult`
+
+***
+
 ### onHappens()
 
-> **onHappens**(`callback`): `void`
+> **onHappens**(`callback`): () => `void`
 
-Defined in: packages/being/dist/interface.d.ts:398
+Defined in: packages/being/dist/interface.d.ts:483
+
+Subscribe to every `happens()` call, before the state handles it.
+Returns a disposer on implementations that support one. Disposing
+during a dispatch takes effect starting with the next dispatch, not
+the one in progress — see EventResultCallback for the exact
+snapshot-iteration semantics.
 
 #### Parameters
 
@@ -385,6 +461,10 @@ Defined in: packages/being/dist/interface.d.ts:398
 (`args`, `context`) => `void`
 
 #### Returns
+
+> (): `void`
+
+##### Returns
 
 `void`
 
@@ -396,9 +476,14 @@ Defined in: packages/being/dist/interface.d.ts:398
 
 ### onStateChange()
 
-> **onStateChange**(`callback`): `void`
+> **onStateChange**(`callback`): () => `void`
 
-Defined in: packages/being/dist/interface.d.ts:397
+Defined in: packages/being/dist/interface.d.ts:482
+
+Subscribe to state changes. Returns a disposer on implementations that
+support one. Disposing during a dispatch takes effect starting with
+the next dispatch, not the one in progress — see
+EventResultCallback for the exact snapshot-iteration semantics.
 
 #### Parameters
 
@@ -407,6 +492,10 @@ Defined in: packages/being/dist/interface.d.ts:397
 `StateChangeCallback`\<[`PanControlStates`](../type-aliases/PanControlStates.md)\>
 
 #### Returns
+
+> (): `void`
+
+##### Returns
 
 `void`
 
@@ -420,7 +509,7 @@ Defined in: packages/being/dist/interface.d.ts:397
 
 > **reset**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:391
+Defined in: packages/being/dist/interface.d.ts:476
 
 #### Returns
 
@@ -436,7 +525,7 @@ Defined in: packages/being/dist/interface.d.ts:391
 
 > **setContext**(`context`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:400
+Defined in: packages/being/dist/interface.d.ts:486
 
 #### Parameters
 
@@ -458,7 +547,7 @@ Defined in: packages/being/dist/interface.d.ts:400
 
 > **start**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:392
+Defined in: packages/being/dist/interface.d.ts:477
 
 #### Returns
 
@@ -474,7 +563,7 @@ Defined in: packages/being/dist/interface.d.ts:392
 
 > **switchTo**(`state`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:394
+Defined in: packages/being/dist/interface.d.ts:479
 
 #### Parameters
 
@@ -496,7 +585,7 @@ Defined in: packages/being/dist/interface.d.ts:394
 
 > **wrapup**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:393
+Defined in: packages/being/dist/interface.d.ts:478
 
 #### Returns
 

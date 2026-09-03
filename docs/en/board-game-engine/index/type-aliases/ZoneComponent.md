@@ -4,7 +4,7 @@
 
 > **ZoneComponent** = `object`
 
-Defined in: [zone-system/zone-component.ts:35](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L35)
+Defined in: [zone-system/zone-component.ts:35](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L35)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [zone-system/zone-component.ts:35](https://github.com/kinnet-studio/
 
 > **ordered**: `boolean`
 
-Defined in: [zone-system/zone-component.ts:39](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L39)
+Defined in: [zone-system/zone-component.ts:39](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L39)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [zone-system/zone-component.ts:39](https://github.com/kinnet-studio/
 
 > **owner**: `Entity` \| `null`
 
-Defined in: [zone-system/zone-component.ts:37](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L37)
+Defined in: [zone-system/zone-component.ts:37](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L37)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [zone-system/zone-component.ts:37](https://github.com/kinnet-studio/
 
 > **visibility**: `"public"` \| `"private"` \| `"owner-only"`
 
-Defined in: [zone-system/zone-component.ts:38](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L38)
+Defined in: [zone-system/zone-component.ts:38](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L38)
 
 ***
 
@@ -36,4 +36,4 @@ Defined in: [zone-system/zone-component.ts:38](https://github.com/kinnet-studio/
 
 > **zone**: `string`
 
-Defined in: [zone-system/zone-component.ts:36](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/zone-system/zone-component.ts#L36)
+Defined in: [zone-system/zone-component.ts:36](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L36)

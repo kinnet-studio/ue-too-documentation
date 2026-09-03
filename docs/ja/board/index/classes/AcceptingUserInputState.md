@@ -2,7 +2,7 @@
 
 # クラス: AcceptingUserInputState
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:196](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L196)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:196](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L196)
 
 State implementation for accepting user pan input (idle/normal state).
 Accepts user pan input and can transition to animation or locked states.
@@ -17,7 +17,7 @@ Accepts user pan input and can transition to animation or locked states.
 
 > **new AcceptingUserInputState**(): `AcceptingUserInputState`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:202](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L202)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:202](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L202)
 
 #### 戻り値
 
@@ -33,7 +33,7 @@ Accepts user pan input and can transition to animation or locked states.
 
 > `protected` **\_defer**: `Defer`\<`BaseContext`, [`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), [`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\> \| `undefined`
 
-定義: packages/being/dist/interface.d.ts:493
+定義: packages/being/dist/interface.d.ts:581
 
 #### 継承元
 
@@ -45,7 +45,7 @@ Accepts user pan input and can transition to animation or locked states.
 
 > `protected` **\_delay**: `Delay`\<`BaseContext`, [`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), [`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\> \| `undefined`
 
-定義: packages/being/dist/interface.d.ts:492
+定義: packages/being/dist/interface.d.ts:580
 
 #### 継承元
 
@@ -57,7 +57,7 @@ Accepts user pan input and can transition to animation or locked states.
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-定義: packages/being/dist/interface.d.ts:491
+定義: packages/being/dist/interface.d.ts:578
 
 #### 継承元
 
@@ -65,11 +65,23 @@ Accepts user pan input and can transition to animation or locked states.
 
 ***
 
+### \_eventPreconditions
+
+> `protected` **\_eventPreconditions**: `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+定義: packages/being/dist/interface.d.ts:579
+
+#### 継承元
+
+`TemplateState._eventPreconditions`
+
+***
+
 ### \_eventReactions
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), `BaseContext`, [`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:206](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L206)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:206](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L206)
 
 #### 上書き
 
@@ -81,7 +93,7 @@ Accepts user pan input and can transition to animation or locked states.
 
 > `protected` **\_guards**: `Guard`\<`Context`\>
 
-定義: packages/being/dist/interface.d.ts:490
+定義: packages/being/dist/interface.d.ts:577
 
 #### 継承元
 
@@ -95,7 +107,7 @@ Accepts user pan input and can transition to animation or locked states.
 
 > **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-定義: packages/being/dist/interface.d.ts:498
+定義: packages/being/dist/interface.d.ts:587
 
 ##### 戻り値
 
@@ -113,7 +125,7 @@ Accepts user pan input and can transition to animation or locked states.
 
 > **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-定義: packages/being/dist/interface.d.ts:496
+定義: packages/being/dist/interface.d.ts:584
 
 ##### 戻り値
 
@@ -125,13 +137,35 @@ Accepts user pan input and can transition to animation or locked states.
 
 ***
 
+### eventPreconditions
+
+#### 署名を取得する
+
+> **get** **eventPreconditions**(): `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+定義: packages/being/dist/interface.d.ts:585
+
+Pre-action vetoes: named guards that must all pass before this state
+handles an event. Optional so existing State implementations remain
+valid; TemplateState always provides it.
+
+##### 戻り値
+
+`Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+#### 継承元
+
+`TemplateState.eventPreconditions`
+
+***
+
 ### eventReactions
 
 #### 署名を取得する
 
 > **get** **eventReactions**(): `EventReactions`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義: packages/being/dist/interface.d.ts:497
+定義: packages/being/dist/interface.d.ts:586
 
 ##### 戻り値
 
@@ -149,7 +183,7 @@ Accepts user pan input and can transition to animation or locked states.
 
 > **get** **guards**(): `Guard`\<`Context`\>
 
-定義: packages/being/dist/interface.d.ts:495
+定義: packages/being/dist/interface.d.ts:583
 
 ##### 戻り値
 
@@ -167,7 +201,7 @@ Accepts user pan input and can transition to animation or locked states.
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-定義: packages/being/dist/interface.d.ts:494
+定義: packages/being/dist/interface.d.ts:582
 
 ##### 戻り値
 
@@ -183,7 +217,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-定義: packages/being/dist/interface.d.ts:500
+定義: packages/being/dist/interface.d.ts:589
 
 #### パラメータ
 
@@ -213,7 +247,7 @@ keyof `EventPayloadMapping`[]
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `K` *extends* keyof [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md) ? [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-定義: packages/being/dist/interface.d.ts:501
+定義: packages/being/dist/interface.d.ts:590
 
 #### 型パラメーター
 
@@ -249,7 +283,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectPanByInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:245](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L245)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:245](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L245)
 
 #### パラメータ
 
@@ -271,7 +305,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectPanToInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:252](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L252)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:252](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L252)
 
 #### パラメータ
 
@@ -293,7 +327,7 @@ keyof `EventPayloadMapping`[]
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-定義: packages/being/dist/interface.d.ts:499
+定義: packages/being/dist/interface.d.ts:588
 
 #### パラメータ
 
@@ -323,7 +357,7 @@ keyof `EventPayloadMapping`[]
 
 > **userPanByInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:231](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L231)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:231](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L231)
 
 #### パラメータ
 
@@ -345,7 +379,7 @@ keyof `EventPayloadMapping`[]
 
 > **userPanToInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:238](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L238)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:238](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L238)
 
 #### パラメータ
 

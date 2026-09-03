@@ -2,7 +2,7 @@
 
 # クラス: HierarchicalStateMachine\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-定義: [hierarchical.ts:306](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L306)
+定義: [hierarchical.ts:306](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L306)
 
 Extended state machine that supports hierarchical state paths.
 
@@ -47,7 +47,7 @@ Event output mapping
 
 > **new HierarchicalStateMachine**\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>(`states`, `initialState`, `context`, `autoStart`): `HierarchicalStateMachine`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義: [interface.ts:592](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L592)
+定義: [interface.ts:701](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L701)
 
 #### パラメータ
 
@@ -81,7 +81,7 @@ Event output mapping
 
 > `protected` **\_context**: `Context`
 
-定義: [interface.ts:579](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L579)
+定義: [interface.ts:683](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L683)
 
 #### 継承元
 
@@ -93,7 +93,7 @@ Event output mapping
 
 > `protected` **\_currentState**: `"INITIAL"` \| `"TERMINAL"` \| `States`
 
-定義: [interface.ts:574](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L574)
+定義: [interface.ts:678](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L678)
 
 #### 継承元
 
@@ -101,11 +101,23 @@ Event output mapping
 
 ***
 
+### \_eventResultCallbacks
+
+> `protected` **\_eventResultCallbacks**: [`EventResultCallback`](../type-aliases/EventResultCallback.md)\<`EventPayloadMapping`, `Context`, `States`\>[]
+
+定義: [interface.ts:693](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L693)
+
+#### 継承元
+
+[`TemplateStateMachine`](TemplateStateMachine.md).[`_eventResultCallbacks`](TemplateStateMachine.md#eventresultcallbacks)
+
+***
+
 ### \_happensCallbacks
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-定義: [interface.ts:582](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L582)
+定義: [interface.ts:686](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L686)
 
 #### パラメータ
 
@@ -131,7 +143,7 @@ Event output mapping
 
 > `protected` **\_initialState**: `States`
 
-定義: [interface.ts:590](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L590)
+定義: [interface.ts:699](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L699)
 
 #### 継承元
 
@@ -143,7 +155,7 @@ Event output mapping
 
 > `protected` **\_stateChangeCallbacks**: [`StateChangeCallback`](../type-aliases/StateChangeCallback.md)\<`States`\>[]
 
-定義: [interface.ts:581](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L581)
+定義: [interface.ts:685](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L685)
 
 #### 継承元
 
@@ -155,7 +167,7 @@ Event output mapping
 
 > `protected` **\_states**: `Record`\<`States`, [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義: [interface.ts:575](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L575)
+定義: [interface.ts:679](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L679)
 
 #### 継承元
 
@@ -167,7 +179,7 @@ Event output mapping
 
 > `protected` **\_statesArray**: `States`[]
 
-定義: [interface.ts:580](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L580)
+定義: [interface.ts:684](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L684)
 
 #### 継承元
 
@@ -179,7 +191,7 @@ Event output mapping
 
 > `protected` **\_timeouts**: `number` \| `undefined` = `undefined`
 
-定義: [interface.ts:589](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L589)
+定義: [interface.ts:698](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L698)
 
 #### 継承元
 
@@ -187,13 +199,45 @@ Event output mapping
 
 ## アクセッサー
 
+### context
+
+#### 署名を取得する
+
+> **get** **context**(): `Context`
+
+定義: [interface.ts:874](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L874)
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+[TemplateStateMachine](TemplateStateMachine.md) always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+##### 戻り値
+
+`Context`
+
+Read-only access to the machine's live context object. Optional so
+existing StateMachine implementations remain valid;
+[TemplateStateMachine](TemplateStateMachine.md) always provides it. Intended for
+tooling/introspection (e.g. visualizers evaluating guards against
+the current context) — mutate state through events, not through
+this reference.
+
+#### 継承元
+
+[`TemplateStateMachine`](TemplateStateMachine.md).[`context`](TemplateStateMachine.md#context-1)
+
+***
+
 ### currentState
 
 #### 署名を取得する
 
 > **get** **currentState**(): `"INITIAL"` \| `"TERMINAL"` \| `States`
 
-定義: [interface.ts:723](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L723)
+定義: [interface.ts:866](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L866)
 
 ##### 戻り値
 
@@ -211,7 +255,7 @@ Event output mapping
 
 > **get** **possibleStates**(): `States`[]
 
-定義: [interface.ts:731](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L731)
+定義: [interface.ts:878](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L878)
 
 ##### 戻り値
 
@@ -229,7 +273,7 @@ Event output mapping
 
 > **get** **states**(): `Record`\<`States`, [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義: [interface.ts:735](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L735)
+定義: [interface.ts:882](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L882)
 
 ##### 戻り値
 
@@ -245,7 +289,7 @@ Event output mapping
 
 > **getActiveStatePath**(): `string`[]
 
-定義: [hierarchical.ts:343](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L343)
+定義: [hierarchical.ts:343](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L343)
 
 Gets all active states in the hierarchy.
 Returns an array where the first element is the top-level state,
@@ -261,7 +305,7 @@ and subsequent elements are nested child states.
 
 > **getCurrentStatePath**(): `string`
 
-定義: [hierarchical.ts:324](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L324)
+定義: [hierarchical.ts:324](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L324)
 
 Gets the current hierarchical state path.
 Returns a simple state name for non-composite states,
@@ -279,7 +323,7 @@ or a dot-notation path for composite states (e.g., "PARENT.CHILD").
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義: [interface.ts:653](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L653)
+定義: [interface.ts:763](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L763)
 
 ##### 型パラメーター
 
@@ -305,7 +349,7 @@ or a dot-notation path for composite states (e.g., "PARENT.CHILD").
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `unknown`\>
 
-定義: [interface.ts:659](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L659)
+定義: [interface.ts:769](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L769)
 
 ##### 型パラメーター
 
@@ -333,7 +377,7 @@ or a dot-notation path for composite states (e.g., "PARENT.CHILD").
 
 > **isInStatePath**(`path`): `boolean`
 
-定義: [hierarchical.ts:368](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/hierarchical.ts#L368)
+定義: [hierarchical.ts:368](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/hierarchical.ts#L368)
 
 Checks if the state machine is currently in a specific hierarchical path.
 Supports both simple state names and dot-notation paths.
@@ -352,11 +396,50 @@ State path to check (e.g., "PARENT" or "PARENT.CHILD")
 
 ***
 
+### onEventResult()
+
+> **onEventResult**(`callback`): () => `void`
+
+定義: [interface.ts:854](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L854)
+
+Subscribe to every event result. Optional so existing StateMachine
+implementations remain valid; [TemplateStateMachine](TemplateStateMachine.md) always
+provides it. Returns a disposer on implementations that support one.
+Disposing during a dispatch takes effect starting with the next
+dispatch, not the one in progress — see [EventResultCallback](../type-aliases/EventResultCallback.md)
+for the exact snapshot-iteration semantics.
+
+#### パラメータ
+
+##### callback
+
+[`EventResultCallback`](../type-aliases/EventResultCallback.md)\<`EventPayloadMapping`, `Context`, `States`\>
+
+#### 戻り値
+
+> (): `void`
+
+##### 戻り値
+
+`void`
+
+#### 継承元
+
+[`TemplateStateMachine`](TemplateStateMachine.md).[`onEventResult`](TemplateStateMachine.md#oneventresult)
+
+***
+
 ### onHappens()
 
-> **onHappens**(`callback`): `void`
+> **onHappens**(`callback`): () => `void`
 
-定義: [interface.ts:711](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L711)
+定義: [interface.ts:836](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L836)
+
+Subscribe to every `happens()` call, before the state handles it.
+Returns a disposer on implementations that support one. Disposing
+during a dispatch takes effect starting with the next dispatch, not
+the one in progress — see [EventResultCallback](../type-aliases/EventResultCallback.md) for the exact
+snapshot-iteration semantics.
 
 #### パラメータ
 
@@ -365,6 +448,10 @@ State path to check (e.g., "PARENT" or "PARENT.CHILD")
 (`args`, `context`) => `void`
 
 #### 戻り値
+
+> (): `void`
+
+##### 戻り値
 
 `void`
 
@@ -376,9 +463,14 @@ State path to check (e.g., "PARENT" or "PARENT.CHILD")
 
 ### onStateChange()
 
-> **onStateChange**(`callback`): `void`
+> **onStateChange**(`callback`): () => `void`
 
-定義: [interface.ts:707](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L707)
+定義: [interface.ts:826](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L826)
+
+Subscribe to state changes. Returns a disposer on implementations that
+support one. Disposing during a dispatch takes effect starting with
+the next dispatch, not the one in progress — see
+[EventResultCallback](../type-aliases/EventResultCallback.md) for the exact snapshot-iteration semantics.
 
 #### パラメータ
 
@@ -387,6 +479,10 @@ State path to check (e.g., "PARENT" or "PARENT.CHILD")
 [`StateChangeCallback`](../type-aliases/StateChangeCallback.md)\<`States`\>
 
 #### 戻り値
+
+> (): `void`
+
+##### 戻り値
 
 `void`
 
@@ -400,7 +496,7 @@ State path to check (e.g., "PARENT" or "PARENT.CHILD")
 
 > **reset**(): `void`
 
-定義: [interface.ts:613](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L613)
+定義: [interface.ts:723](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L723)
 
 #### 戻り値
 
@@ -416,7 +512,7 @@ State path to check (e.g., "PARENT" or "PARENT.CHILD")
 
 > **setContext**(`context`): `void`
 
-定義: [interface.ts:727](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L727)
+定義: [interface.ts:870](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L870)
 
 #### パラメータ
 
@@ -438,7 +534,7 @@ State path to check (e.g., "PARENT" or "PARENT.CHILD")
 
 > **start**(): `void`
 
-定義: [interface.ts:619](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L619)
+定義: [interface.ts:729](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L729)
 
 #### 戻り値
 
@@ -454,7 +550,7 @@ State path to check (e.g., "PARENT" or "PARENT.CHILD")
 
 > **switchTo**(`state`): `void`
 
-定義: [interface.ts:648](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L648)
+定義: [interface.ts:758](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L758)
 
 #### パラメータ
 
@@ -476,7 +572,7 @@ State path to check (e.g., "PARENT" or "PARENT.CHILD")
 
 > **wrapup**(): `void`
 
-定義: [interface.ts:632](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/being/src/interface.ts#L632)
+定義: [interface.ts:742](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L742)
 
 #### 戻り値
 

@@ -4,7 +4,7 @@
 
 > **Boundaries** = `object`
 
-定義: [packages/board/src/camera/utils/position.ts:45](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/utils/position.ts#L45)
+定義: [packages/board/src/camera/utils/position.ts:45](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/utils/position.ts#L45)
 
 Position boundaries for camera movement in world space.
 Allows optional constraints on x and y axes independently.
@@ -48,7 +48,7 @@ const floor: Boundaries = {
 
 > `optional` **max**: `object`
 
-定義: [packages/board/src/camera/utils/position.ts:47](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/utils/position.ts#L47)
+定義: [packages/board/src/camera/utils/position.ts:47](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/utils/position.ts#L47)
 
 Maximum position constraints (both x and y are optional)
 
@@ -66,7 +66,7 @@ Maximum position constraints (both x and y are optional)
 
 > `optional` **min**: `object`
 
-定義: [packages/board/src/camera/utils/position.ts:46](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/utils/position.ts#L46)
+定義: [packages/board/src/camera/utils/position.ts:46](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/utils/position.ts#L46)
 
 Minimum position constraints (both x and y are optional)
 

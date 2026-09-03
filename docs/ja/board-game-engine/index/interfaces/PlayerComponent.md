@@ -2,7 +2,7 @@
 
 # インターフェイス: PlayerComponent
 
-定義: [player-system/player-component.ts:14](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L14)
+定義: [player-system/player-component.ts:14](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L14)
 
 ## プロパティ
 
@@ -10,7 +10,7 @@
 
 > **inPlay**: `boolean`
 
-定義: [player-system/player-component.ts:17](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L17)
+定義: [player-system/player-component.ts:17](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L17)
 
 ***
 
@@ -18,7 +18,7 @@
 
 > **name**: `string`
 
-定義: [player-system/player-component.ts:15](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L15)
+定義: [player-system/player-component.ts:15](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L15)
 
 ***
 
@@ -26,4 +26,4 @@
 
 > **playerNumber**: `number`
 
-定義: [player-system/player-component.ts:16](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-game-engine/src/player-system/player-component.ts#L16)
+定義: [player-system/player-component.ts:16](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/player-system/player-component.ts#L16)

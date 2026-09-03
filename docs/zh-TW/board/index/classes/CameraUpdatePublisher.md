@@ -2,7 +2,7 @@
 
 # 類別: CameraUpdatePublisher
 
-定義於: [packages/board/src/camera/update-publisher.ts:212](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/update-publisher.ts#L212)
+定義於: [packages/board/src/camera/update-publisher.ts:212](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/update-publisher.ts#L212)
 
 Event publisher for camera state changes using the Observable pattern.
 Manages subscriptions and notifications for pan, zoom, and rotate events.
@@ -42,7 +42,7 @@ publisher.notifyPan(
 
 > **new CameraUpdatePublisher**(): `CameraUpdatePublisher`
 
-定義於: [packages/board/src/camera/update-publisher.ts:221](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/update-publisher.ts#L221)
+定義於: [packages/board/src/camera/update-publisher.ts:221](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/update-publisher.ts#L221)
 
 Creates a new camera event publisher with async observables for each event type.
 
@@ -56,7 +56,7 @@ Creates a new camera event publisher with async observables for each event type.
 
 > **notifyPan**(`event`, `cameraState`): `void`
 
-定義於: [packages/board/src/camera/update-publisher.ts:235](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/update-publisher.ts#L235)
+定義於: [packages/board/src/camera/update-publisher.ts:235](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/update-publisher.ts#L235)
 
 Notifies all pan event subscribers.
 Also triggers the 'all' event with type discrimination.
@@ -85,7 +85,7 @@ Current camera state snapshot
 
 > **notifyRotate**(`event`, `cameraState`): `void`
 
-定義於: [packages/board/src/camera/update-publisher.ts:262](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/update-publisher.ts#L262)
+定義於: [packages/board/src/camera/update-publisher.ts:262](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/update-publisher.ts#L262)
 
 Notifies all rotation event subscribers.
 Also triggers the 'all' event with type discrimination.
@@ -114,7 +114,7 @@ Current camera state snapshot
 
 > **notifyZoom**(`event`, `cameraState`): `void`
 
-定義於: [packages/board/src/camera/update-publisher.ts:247](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/update-publisher.ts#L247)
+定義於: [packages/board/src/camera/update-publisher.ts:247](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/update-publisher.ts#L247)
 
 Notifies all zoom event subscribers.
 Also triggers the 'all' event with type discrimination.
@@ -143,7 +143,7 @@ Current camera state snapshot
 
 > **on**\<`K`\>(`eventName`, `callback`, `options?`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-定義於: [packages/board/src/camera/update-publisher.ts:321](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/camera/update-publisher.ts#L321)
+定義於: [packages/board/src/camera/update-publisher.ts:321](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/update-publisher.ts#L321)
 
 Subscribes to camera events with type-safe callbacks and optional AbortController support.
 

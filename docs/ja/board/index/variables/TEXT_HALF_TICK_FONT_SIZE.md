@@ -4,6 +4,6 @@
 
 > `const` **TEXT\_HALF\_TICK\_FONT\_SIZE**: `10` = `10`
 
-定義: [packages/board/src/utils/drawing.ts:128](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/utils/drawing.ts#L128)
+定義: [packages/board/src/utils/drawing.ts:128](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/utils/drawing.ts#L128)
 
 Font size for half-step tick labels in pixels (viewport space).

@@ -4,7 +4,7 @@
 
 > **useAnimationFrameWithBoard**(`callback?`): `void`
 
-定義: [useBoard.ts:89](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board-vue-adapter/src/useBoard.ts#L89)
+定義: [useBoard.ts:89](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-vue-adapter/src/useBoard.ts#L89)
 
 Hook to run an animation loop integrated with the Board's step function.
 

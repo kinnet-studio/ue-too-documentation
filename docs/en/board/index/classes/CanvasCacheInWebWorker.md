@@ -2,7 +2,7 @@
 
 # Class: CanvasCacheInWebWorker
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:112](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L112)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:112](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L112)
 
 Abstraction interface for canvas element access and manipulation.
 
@@ -32,7 +32,7 @@ The abstraction enables:
 
 > **new CanvasCacheInWebWorker**(`postMessageFunction`): `CanvasCacheInWebWorker`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:118](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L118)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:118](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L118)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **get** **detached**(): `boolean`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:163](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L163)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:163](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L163)
 
 Whether the canvas is currently detached from the DOM
 
@@ -74,7 +74,7 @@ Whether the canvas is currently detached from the DOM
 
 > **get** **dimensions**(): `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:125](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L125)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:125](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L125)
 
 Combined dimensions and position information
 
@@ -108,7 +108,7 @@ Combined dimensions and position information
 
 > **get** **height**(): `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:151](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L151)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:151](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L151)
 
 The canvas height in CSS pixels
 
@@ -120,7 +120,7 @@ The canvas height in CSS pixels
 
 > **set** **height**(`height`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:139](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L139)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:139](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L139)
 
 The canvas height in CSS pixels
 
@@ -148,7 +148,7 @@ The canvas height in CSS pixels
 
 > **get** **position**(): `Point`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:155](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L155)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:155](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L155)
 
 The top-left position of the canvas in window coordinates
 
@@ -160,7 +160,7 @@ The top-left position of the canvas in window coordinates
 
 > **set** **position**(`position`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:143](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L143)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:143](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L143)
 
 The top-left position of the canvas in window coordinates
 
@@ -188,7 +188,7 @@ The top-left position of the canvas in window coordinates
 
 > **get** **width**(): `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:147](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L147)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:147](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L147)
 
 The canvas width in CSS pixels
 
@@ -200,7 +200,7 @@ The canvas width in CSS pixels
 
 > **set** **width**(`width`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:135](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L135)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:135](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L135)
 
 The canvas width in CSS pixels
 
@@ -226,7 +226,7 @@ The canvas width in CSS pixels
 
 > **setCursor**(`style`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:159](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L159)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:159](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L159)
 
 Sets the CSS cursor style for visual feedback
 
@@ -250,7 +250,7 @@ Sets the CSS cursor style for visual feedback
 
 > **tearDown**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:133](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L133)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:133](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L133)
 
 Cleanup method to dispose of resources and event listeners
 

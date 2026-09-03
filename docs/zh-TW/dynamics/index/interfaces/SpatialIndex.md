@@ -2,7 +2,7 @@
 
 # 介面: SpatialIndex\<T\>
 
-定義於: [dynamic-tree.ts:15](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/dynamic-tree.ts#L15)
+定義於: [dynamic-tree.ts:15](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/dynamic-tree.ts#L15)
 
 Interface for spatial indexing data structures.
 
@@ -18,7 +18,7 @@ Interface for spatial indexing data structures.
 
 > **clear**(): `void`
 
-定義於: [dynamic-tree.ts:16](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/dynamic-tree.ts#L16)
+定義於: [dynamic-tree.ts:16](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/dynamic-tree.ts#L16)
 
 #### 回傳
 
@@ -30,7 +30,7 @@ Interface for spatial indexing data structures.
 
 > `optional` **draw**(`context`): `void`
 
-定義於: [dynamic-tree.ts:19](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/dynamic-tree.ts#L19)
+定義於: [dynamic-tree.ts:19](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/dynamic-tree.ts#L19)
 
 #### 參數
 
@@ -48,7 +48,7 @@ Interface for spatial indexing data structures.
 
 > **insert**(`object`): `void`
 
-定義於: [dynamic-tree.ts:17](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/dynamic-tree.ts#L17)
+定義於: [dynamic-tree.ts:17](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/dynamic-tree.ts#L17)
 
 #### 參數
 
@@ -66,7 +66,7 @@ Interface for spatial indexing data structures.
 
 > **retrieve**(`object`): `T`[]
 
-定義於: [dynamic-tree.ts:18](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/dynamic-tree.ts#L18)
+定義於: [dynamic-tree.ts:18](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/dynamic-tree.ts#L18)
 
 #### 參數
 

@@ -2,7 +2,7 @@
 
 # Interface: Animator
 
-Defined in: [composite-animation.ts:29](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L29)
+Defined in: [composite-animation.ts:29](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L29)
 
 Core interface for all animators in the animation system.
 
@@ -22,7 +22,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **delay**: `number`
 
-Defined in: [composite-animation.ts:32](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L32)
+Defined in: [composite-animation.ts:32](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L32)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [composite-animation.ts:32](https://github.com/kinnet-studio/ue-too/
 
 > **drag**: `number`
 
-Defined in: [composite-animation.ts:33](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L33)
+Defined in: [composite-animation.ts:33](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L33)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [composite-animation.ts:33](https://github.com/kinnet-studio/ue-too/
 
 > **duration**: `number`
 
-Defined in: [composite-animation.ts:31](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L31)
+Defined in: [composite-animation.ts:31](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L31)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [composite-animation.ts:31](https://github.com/kinnet-studio/ue-too/
 
 > **loops**: `boolean`
 
-Defined in: [composite-animation.ts:30](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L30)
+Defined in: [composite-animation.ts:30](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L30)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [composite-animation.ts:30](https://github.com/kinnet-studio/ue-too/
 
 > **maxLoopCount**: `number` \| `undefined`
 
-Defined in: [composite-animation.ts:50](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L50)
+Defined in: [composite-animation.ts:50](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L50)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [composite-animation.ts:50](https://github.com/kinnet-studio/ue-too/
 
 > **playing**: `boolean`
 
-Defined in: [composite-animation.ts:51](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L51)
+Defined in: [composite-animation.ts:51](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L51)
 
 ## Methods
 
@@ -70,7 +70,7 @@ Defined in: [composite-animation.ts:51](https://github.com/kinnet-studio/ue-too/
 
 > **animate**(`deltaTime`): `void`
 
-Defined in: [composite-animation.ts:39](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L39)
+Defined in: [composite-animation.ts:39](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L39)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: [composite-animation.ts:39](https://github.com/kinnet-studio/ue-too/
 
 > **clearOnEnd**(): `void`
 
-Defined in: [composite-animation.ts:49](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L49)
+Defined in: [composite-animation.ts:49](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L49)
 
 #### Returns
 
@@ -100,7 +100,7 @@ Defined in: [composite-animation.ts:49](https://github.com/kinnet-studio/ue-too/
 
 > **clearOnStart**(): `void`
 
-Defined in: [composite-animation.ts:48](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L48)
+Defined in: [composite-animation.ts:48](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L48)
 
 #### Returns
 
@@ -112,7 +112,7 @@ Defined in: [composite-animation.ts:48](https://github.com/kinnet-studio/ue-too/
 
 > **detachParent**(): `void`
 
-Defined in: [composite-animation.ts:44](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L44)
+Defined in: [composite-animation.ts:44](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L44)
 
 #### Returns
 
@@ -124,7 +124,7 @@ Defined in: [composite-animation.ts:44](https://github.com/kinnet-studio/ue-too/
 
 > **nonCascadingDuration**(`newDuration`): `void`
 
-Defined in: [composite-animation.ts:34](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L34)
+Defined in: [composite-animation.ts:34](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L34)
 
 #### Parameters
 
@@ -142,7 +142,7 @@ Defined in: [composite-animation.ts:34](https://github.com/kinnet-studio/ue-too/
 
 > **onEnd**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: [composite-animation.ts:46](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L46)
+Defined in: [composite-animation.ts:46](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L46)
 
 #### Parameters
 
@@ -160,7 +160,7 @@ Defined in: [composite-animation.ts:46](https://github.com/kinnet-studio/ue-too/
 
 > **onStart**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: [composite-animation.ts:47](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L47)
+Defined in: [composite-animation.ts:47](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L47)
 
 #### Parameters
 
@@ -178,7 +178,7 @@ Defined in: [composite-animation.ts:47](https://github.com/kinnet-studio/ue-too/
 
 > **pause**(): `void`
 
-Defined in: [composite-animation.ts:37](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L37)
+Defined in: [composite-animation.ts:37](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L37)
 
 #### Returns
 
@@ -190,7 +190,7 @@ Defined in: [composite-animation.ts:37](https://github.com/kinnet-studio/ue-too/
 
 > **resetAnimationState**(): `void`
 
-Defined in: [composite-animation.ts:41](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L41)
+Defined in: [composite-animation.ts:41](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L41)
 
 #### Returns
 
@@ -202,7 +202,7 @@ Defined in: [composite-animation.ts:41](https://github.com/kinnet-studio/ue-too/
 
 > **resume**(): `void`
 
-Defined in: [composite-animation.ts:38](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L38)
+Defined in: [composite-animation.ts:38](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L38)
 
 #### Returns
 
@@ -214,7 +214,7 @@ Defined in: [composite-animation.ts:38](https://github.com/kinnet-studio/ue-too/
 
 > **setParent**(`parent`): `void`
 
-Defined in: [composite-animation.ts:43](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L43)
+Defined in: [composite-animation.ts:43](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L43)
 
 #### Parameters
 
@@ -232,7 +232,7 @@ Defined in: [composite-animation.ts:43](https://github.com/kinnet-studio/ue-too/
 
 > **setUp**(): `void`
 
-Defined in: [composite-animation.ts:40](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L40)
+Defined in: [composite-animation.ts:40](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L40)
 
 #### Returns
 
@@ -244,7 +244,7 @@ Defined in: [composite-animation.ts:40](https://github.com/kinnet-studio/ue-too/
 
 > **start**(): `void`
 
-Defined in: [composite-animation.ts:35](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L35)
+Defined in: [composite-animation.ts:35](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L35)
 
 #### Returns
 
@@ -256,7 +256,7 @@ Defined in: [composite-animation.ts:35](https://github.com/kinnet-studio/ue-too/
 
 > **stop**(): `void`
 
-Defined in: [composite-animation.ts:36](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L36)
+Defined in: [composite-animation.ts:36](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L36)
 
 #### Returns
 
@@ -268,7 +268,7 @@ Defined in: [composite-animation.ts:36](https://github.com/kinnet-studio/ue-too/
 
 > **tearDown**(): `void`
 
-Defined in: [composite-animation.ts:42](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L42)
+Defined in: [composite-animation.ts:42](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L42)
 
 #### Returns
 
@@ -280,7 +280,7 @@ Defined in: [composite-animation.ts:42](https://github.com/kinnet-studio/ue-too/
 
 > **toggleReverse**(`reverse`): `void`
 
-Defined in: [composite-animation.ts:45](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/animate/src/composite-animation.ts#L45)
+Defined in: [composite-animation.ts:45](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L45)
 
 #### Parameters
 

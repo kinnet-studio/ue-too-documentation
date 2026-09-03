@@ -4,7 +4,7 @@
 
 > **resolveCollision**(`bodyA`, `bodyB`, `normal`): `void`
 
-定義: [collision.ts:7](https://github.com/kinnet-studio/ue-too/blob/11b72200b1b18016a77852cb2769e3d421704115/packages/dynamics/src/collision.ts#L7)
+定義: [collision.ts:7](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/collision.ts#L7)
 
 ## パラメータ
 
