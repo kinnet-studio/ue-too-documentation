@@ -4,7 +4,7 @@
 
 > **RawUserRotateInputEventPayload** = `object`
 
-定義: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:72](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L72)
+定義: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:72](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L72)
 
 Payload for rotate input events.
 
@@ -14,6 +14,6 @@ Payload for rotate input events.
 
 > **deltaRotation**: `number`
 
-定義: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:73](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L73)
+定義: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:73](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L73)
 
 The rotation delta in radians

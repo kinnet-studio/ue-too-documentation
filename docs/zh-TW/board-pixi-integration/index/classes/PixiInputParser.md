@@ -2,7 +2,7 @@
 
 # 類別: PixiInputParser
 
-定義於: [pixi-input-event-parser.ts:17](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L17)
+定義於: [pixi-input-event-parser.ts:17](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L17)
 
 ## 建構函式
 
@@ -10,7 +10,7 @@
 
 > **new PixiInputParser**(`app`, `kmtInputStateMachine`, `inputOrchestrator`, `camera`): `PixiInputParser`
 
-定義於: [pixi-input-event-parser.ts:29](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L29)
+定義於: [pixi-input-event-parser.ts:29](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L29)
 
 #### 參數
 
@@ -42,7 +42,7 @@
 
 > **get** **disabled**(): `boolean`
 
-定義於: [pixi-input-event-parser.ts:352](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L352)
+定義於: [pixi-input-event-parser.ts:352](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L352)
 
 ##### 回傳
 
@@ -54,7 +54,7 @@
 
 > **bindFunctions**(): `void`
 
-定義於: [pixi-input-event-parser.ts:46](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L46)
+定義於: [pixi-input-event-parser.ts:46](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L46)
 
 #### 回傳
 
@@ -66,7 +66,7 @@
 
 > **disable**(): `void`
 
-定義於: [pixi-input-event-parser.ts:344](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L344)
+定義於: [pixi-input-event-parser.ts:344](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L344)
 
 #### 回傳
 
@@ -78,7 +78,7 @@
 
 > **enable**(): `void`
 
-定義於: [pixi-input-event-parser.ts:348](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L348)
+定義於: [pixi-input-event-parser.ts:348](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L348)
 
 #### 回傳
 
@@ -90,7 +90,7 @@
 
 > **hideHitAreaDebug**(): `void`
 
-定義於: [pixi-input-event-parser.ts:206](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L206)
+定義於: [pixi-input-event-parser.ts:206](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L206)
 
 Hides the hitArea debug visualization.
 
@@ -104,7 +104,7 @@ Hides the hitArea debug visualization.
 
 > **keydownHandler**(`event`): `void`
 
-定義於: [pixi-input-event-parser.ts:319](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L319)
+定義於: [pixi-input-event-parser.ts:319](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L319)
 
 #### 參數
 
@@ -122,7 +122,7 @@ Hides the hitArea debug visualization.
 
 > **keyupHandler**(`event`): `void`
 
-定義於: [pixi-input-event-parser.ts:332](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L332)
+定義於: [pixi-input-event-parser.ts:332](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L332)
 
 #### 參數
 
@@ -140,7 +140,7 @@ Hides the hitArea debug visualization.
 
 > **pointerDownHandler**(`event`): `void`
 
-定義於: [pixi-input-event-parser.ts:233](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L233)
+定義於: [pixi-input-event-parser.ts:233](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L233)
 
 #### 參數
 
@@ -158,7 +158,7 @@ Hides the hitArea debug visualization.
 
 > **pointerMoveHandler**(`event`): `void`
 
-定義於: [pixi-input-event-parser.ts:273](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L273)
+定義於: [pixi-input-event-parser.ts:273](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L273)
 
 #### 參數
 
@@ -176,7 +176,7 @@ Hides the hitArea debug visualization.
 
 > **pointerUpHandler**(`event`): `void`
 
-定義於: [pixi-input-event-parser.ts:253](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L253)
+定義於: [pixi-input-event-parser.ts:253](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L253)
 
 #### 參數
 
@@ -194,7 +194,7 @@ Hides the hitArea debug visualization.
 
 > **scrollHandler**(`event`): `void`
 
-定義於: [pixi-input-event-parser.ts:297](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L297)
+定義於: [pixi-input-event-parser.ts:297](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L297)
 
 #### 參數
 
@@ -212,7 +212,7 @@ Hides the hitArea debug visualization.
 
 > **setUp**(): `void`
 
-定義於: [pixi-input-event-parser.ts:55](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L55)
+定義於: [pixi-input-event-parser.ts:55](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L55)
 
 #### 回傳
 
@@ -224,7 +224,7 @@ Hides the hitArea debug visualization.
 
 > **showHitAreaDebug**(): `void`
 
-定義於: [pixi-input-event-parser.ts:193](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L193)
+定義於: [pixi-input-event-parser.ts:193](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L193)
 
 Shows a visual debug overlay of the hitArea.
 
@@ -244,7 +244,7 @@ automatically updated when `updateHitArea()` is called.
 
 > **tearDown**(): `void`
 
-定義於: [pixi-input-event-parser.ts:214](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L214)
+定義於: [pixi-input-event-parser.ts:214](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L214)
 
 #### 回傳
 
@@ -256,7 +256,7 @@ automatically updated when `updateHitArea()` is called.
 
 > **updateHitArea**(): `void`
 
-定義於: [pixi-input-event-parser.ts:93](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L93)
+定義於: [pixi-input-event-parser.ts:93](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L93)
 
 Updates the stage's hitArea to cover the entire viewport in stage local coordinates.
 

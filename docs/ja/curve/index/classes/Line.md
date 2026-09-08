@@ -2,7 +2,7 @@
 
 # クラス: Line
 
-定義: [packages/curve/src/line.ts:32](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/line.ts#L32)
+定義: [packages/curve/src/line.ts:32](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/line.ts#L32)
 
 Line segment class with geometric utilities.
 
@@ -38,7 +38,7 @@ if (result.within) {
 
 > **new Line**(`startPoint`, `endPoint`): `Line`
 
-定義: [packages/curve/src/line.ts:36](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/line.ts#L36)
+定義: [packages/curve/src/line.ts:36](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/line.ts#L36)
 
 #### パラメータ
 
@@ -60,7 +60,7 @@ if (result.within) {
 
 > **getEndPoint**(): `Point`
 
-定義: [packages/curve/src/line.ts:45](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/line.ts#L45)
+定義: [packages/curve/src/line.ts:45](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/line.ts#L45)
 
 #### 戻り値
 
@@ -72,7 +72,7 @@ if (result.within) {
 
 > **getStartPoint**(): `Point`
 
-定義: [packages/curve/src/line.ts:41](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/line.ts#L41)
+定義: [packages/curve/src/line.ts:41](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/line.ts#L41)
 
 #### 戻り値
 
@@ -84,7 +84,7 @@ if (result.within) {
 
 > **getTranslationRotationToAlginXAxis**(): `object`
 
-定義: [packages/curve/src/line.ts:70](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/line.ts#L70)
+定義: [packages/curve/src/line.ts:70](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/line.ts#L70)
 
 #### 戻り値
 
@@ -104,7 +104,7 @@ if (result.within) {
 
 > **intersectionWithAnotherLine**(`lineToIntersect`): `object`
 
-定義: [packages/curve/src/line.ts:49](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/line.ts#L49)
+定義: [packages/curve/src/line.ts:49](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/line.ts#L49)
 
 #### パラメータ
 
@@ -134,7 +134,7 @@ if (result.within) {
 
 > **length**(): `number`
 
-定義: [packages/curve/src/line.ts:66](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/line.ts#L66)
+定義: [packages/curve/src/line.ts:66](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/line.ts#L66)
 
 #### 戻り値
 
@@ -146,7 +146,7 @@ if (result.within) {
 
 > **lerp**(`ratio`): `Point`
 
-定義: [packages/curve/src/line.ts:103](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/line.ts#L103)
+定義: [packages/curve/src/line.ts:103](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/line.ts#L103)
 
 #### パラメータ
 
@@ -164,7 +164,7 @@ if (result.within) {
 
 > **pointInLine**(`point`): `boolean`
 
-定義: [packages/curve/src/line.ts:80](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/line.ts#L80)
+定義: [packages/curve/src/line.ts:80](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/line.ts#L80)
 
 #### パラメータ
 
@@ -182,7 +182,7 @@ if (result.within) {
 
 > **projectPoint**(`point`): `object`
 
-定義: [packages/curve/src/line.ts:58](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/line.ts#L58)
+定義: [packages/curve/src/line.ts:58](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/line.ts#L58)
 
 #### パラメータ
 

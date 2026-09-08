@@ -2,7 +2,7 @@
 
 # インターフェイス: BaseAppComponents
 
-定義: [init-app.ts:30](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L30)
+定義: [init-app.ts:30](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L30)
 
 ## プロパティ
 
@@ -10,7 +10,7 @@
 
 > **app**: `Application`
 
-定義: [init-app.ts:31](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L31)
+定義: [init-app.ts:31](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L31)
 
 ***
 
@@ -18,7 +18,7 @@
 
 > **camera**: `DefaultBoardCamera`
 
-定義: [init-app.ts:32](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L32)
+定義: [init-app.ts:32](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L32)
 
 ***
 
@@ -26,7 +26,7 @@
 
 > **cameraRig**: `CameraRig`
 
-定義: [init-app.ts:34](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L34)
+定義: [init-app.ts:34](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L34)
 
 ***
 
@@ -34,7 +34,7 @@
 
 > **canvasProxy**: `CanvasProxy`
 
-定義: [init-app.ts:33](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L33)
+定義: [init-app.ts:33](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L33)
 
 ***
 
@@ -42,7 +42,7 @@
 
 > **cleanup**: () => `void`
 
-定義: [init-app.ts:40](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L40)
+定義: [init-app.ts:40](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L40)
 
 #### 戻り値
 
@@ -54,7 +54,7 @@
 
 > **cleanups**: () => `void`[]
 
-定義: [init-app.ts:41](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L41)
+定義: [init-app.ts:41](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L41)
 
 #### 戻り値
 
@@ -66,7 +66,7 @@
 
 > **inputOrchestrator**: `InputOrchestrator`
 
-定義: [init-app.ts:35](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L35)
+定義: [init-app.ts:35](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L35)
 
 ***
 
@@ -74,7 +74,7 @@
 
 > **kmtInputStateMachine**: `StateMachine`
 
-定義: [init-app.ts:37](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L37)
+定義: [init-app.ts:37](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L37)
 
 ***
 
@@ -82,7 +82,7 @@
 
 > **kmtParser**: `VanillaKMTEventParser`
 
-定義: [init-app.ts:38](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L38)
+定義: [init-app.ts:38](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L38)
 
 ***
 
@@ -90,7 +90,7 @@
 
 > **observableInputTracker**: `ObservableInputTracker`
 
-定義: [init-app.ts:36](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L36)
+定義: [init-app.ts:36](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L36)
 
 ***
 
@@ -98,4 +98,4 @@
 
 > **touchParser**: `TouchEventParser`
 
-定義: [init-app.ts:39](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-integration/src/init-app.ts#L39)
+定義: [init-app.ts:39](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-integration/src/init-app.ts#L39)

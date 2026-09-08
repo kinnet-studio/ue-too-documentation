@@ -2,7 +2,7 @@
 
 # 類別: Coordinator
 
-定義於: [index.ts:1274](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1274)
+定義於: [index.ts:1274](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1274)
 
 Main ECS coordinator that manages entities, components, and systems.
 
@@ -51,7 +51,7 @@ ecs.destroyEntity(entity);
 
 > **new Coordinator**(): `Coordinator`
 
-定義於: [index.ts:1279](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1279)
+定義於: [index.ts:1279](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1279)
 
 #### 回傳
 
@@ -63,7 +63,7 @@ ecs.destroyEntity(entity);
 
 > **addComponentToEntity**\<`T`\>(`componentName`, `entity`, `component`): `void`
 
-定義於: [index.ts:1299](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1299)
+定義於: [index.ts:1299](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1299)
 
 #### 型別參數
 
@@ -95,7 +95,7 @@ ecs.destroyEntity(entity);
 
 > **addComponentToEntityWithSchema**(`componentName`, `entity`, `component`, `validate`): `void`
 
-定義於: [index.ts:1558](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1558)
+定義於: [index.ts:1558](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1558)
 
 Add a component to an entity with schema validation.
 
@@ -139,7 +139,7 @@ Error if validation fails
 
 > **createComponentFromSchema**(`componentName`, `overrides`): `Record`\<`string`, `unknown`\>
 
-定義於: [index.ts:1522](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1522)
+定義於: [index.ts:1522](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1522)
 
 Create a component instance from a schema with default values.
 
@@ -186,7 +186,7 @@ const component2 = coordinator.createComponentFromSchema('PlayerStats', {
 
 > **createEntity**(): `number`
 
-定義於: [index.ts:1285](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1285)
+定義於: [index.ts:1285](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1285)
 
 #### 回傳
 
@@ -198,7 +198,7 @@ const component2 = coordinator.createComponentFromSchema('PlayerStats', {
 
 > **deserialize**(`serialized`, `options`): `void`
 
-定義於: [index.ts:1780](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1780)
+定義於: [index.ts:1780](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1780)
 
 Deserialize an ECS state from a JSON-compatible format.
 This will restore all entities and their components.
@@ -243,7 +243,7 @@ coordinator.deserialize(serialized, { clearExisting: true });
 
 > **destroyEntity**(`entity`): `void`
 
-定義於: [index.ts:1289](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1289)
+定義於: [index.ts:1289](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1289)
 
 #### 參數
 
@@ -261,7 +261,7 @@ coordinator.deserialize(serialized, { clearExisting: true });
 
 > **entityExists**(`entity`): `boolean`
 
-定義於: [index.ts:1619](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1619)
+定義於: [index.ts:1619](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1619)
 
 Check if an entity exists in the coordinator.
 
@@ -299,7 +299,7 @@ if (!coordinator.entityExists(entity)) {
 
 > **getAllComponentSchemas**(): [`ComponentSchema`](../interfaces/ComponentSchema.md)[]
 
-定義於: [index.ts:1498](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1498)
+定義於: [index.ts:1498](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1498)
 
 Get all registered component schemas.
 
@@ -315,7 +315,7 @@ Array of all component schemas
 
 > **getAllEntities**(): `number`[]
 
-定義於: [index.ts:1597](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1597)
+定義於: [index.ts:1597](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1597)
 
 Get all living entities in the ECS.
 
@@ -338,7 +338,7 @@ console.log(`Total entities: ${entities.length}`);
 
 > **getComponentFromEntity**\<`T`\>(`componentName`, `entity`): `T` \| `null`
 
-定義於: [index.ts:1348](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1348)
+定義於: [index.ts:1348](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1348)
 
 #### 型別參數
 
@@ -366,7 +366,7 @@ console.log(`Total entities: ${entities.length}`);
 
 > **getComponentPropertyNames**(`componentName`): `string`[]
 
-定義於: [index.ts:1458](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1458)
+定義於: [index.ts:1458](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1458)
 
 Get the property field names of a component.
 
@@ -424,7 +424,7 @@ console.log(fieldNames2); // ['location', 'sortIndex']
 
 > **getComponentSchema**(`componentName`): [`ComponentSchema`](../interfaces/ComponentSchema.md) \| `null`
 
-定義於: [index.ts:1415](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1415)
+定義於: [index.ts:1415](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1415)
 
 Get the schema for a component type, if it was registered with a schema.
 
@@ -448,7 +448,7 @@ The component schema or null if not found
 
 > **getComponentType**(`componentName`): `number` \| `null`
 
-定義於: [index.ts:1358](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1358)
+定義於: [index.ts:1358](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1358)
 
 #### 參數
 
@@ -466,7 +466,7 @@ The component schema or null if not found
 
 > **getEntityComponents**(`entity`): `Map`\<`symbol`, `unknown`\> \| `null`
 
-定義於: [index.ts:1636](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1636)
+定義於: [index.ts:1636](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1636)
 
 Get all components for a specific entity.
 
@@ -499,7 +499,7 @@ if (components) {
 
 > **getFullState**(): `object`
 
-定義於: [index.ts:1682](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1682)
+定義於: [index.ts:1682](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1682)
 
 Get the entire state of the ECS: all entities with all their component values.
 
@@ -529,7 +529,7 @@ state.entities.forEach(entityData => {
 
 > **getSystem**\<`T`\>(`systemName`): `T` \| `null`
 
-定義於: [index.ts:1373](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1373)
+定義於: [index.ts:1373](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1373)
 
 #### 型別參數
 
@@ -553,7 +553,7 @@ state.entities.forEach(entityData => {
 
 > **registerComponent**\<`T`\>(`componentName`): `void`
 
-定義於: [index.ts:1295](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1295)
+定義於: [index.ts:1295](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1295)
 
 #### 型別參數
 
@@ -577,7 +577,7 @@ state.entities.forEach(entityData => {
 
 > **registerComponentWithSchema**(`schema`): `void`
 
-定義於: [index.ts:1405](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1405)
+定義於: [index.ts:1405](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1405)
 
 Register a component with a runtime-defined schema.
 This allows components to be defined dynamically (e.g., through a GUI).
@@ -626,7 +626,7 @@ coordinator.addComponentToEntityWithSchema('PlayerStats', entity, component);
 
 > **registerSystem**(`systemName`, `system`): `void`
 
-定義於: [index.ts:1362](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1362)
+定義於: [index.ts:1362](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1362)
 
 #### 參數
 
@@ -648,7 +648,7 @@ coordinator.addComponentToEntityWithSchema('PlayerStats', entity, component);
 
 > **removeComponentFromEntity**\<`T`\>(`componentName`, `entity`): `void`
 
-定義於: [index.ts:1326](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1326)
+定義於: [index.ts:1326](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1326)
 
 #### 型別參數
 
@@ -676,7 +676,7 @@ coordinator.addComponentToEntityWithSchema('PlayerStats', entity, component);
 
 > **serialize**(): [`SerializedECSState`](../interfaces/SerializedECSState.md)
 
-定義於: [index.ts:1713](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1713)
+定義於: [index.ts:1713](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1713)
 
 Serialize the entire ECS state to a JSON-compatible format.
 Note: Only works with global symbols (created via Symbol.for or createGlobalComponentName).
@@ -705,7 +705,7 @@ const json = JSON.stringify(serialized);
 
 > **setSystemSignature**(`systemName`, `signature`): `void`
 
-定義於: [index.ts:1366](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1366)
+定義於: [index.ts:1366](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1366)
 
 #### 參數
 
@@ -727,7 +727,7 @@ const json = JSON.stringify(serialized);
 
 > **validateComponentData**(`componentName`, `data`): `boolean`
 
-定義於: [index.ts:1539](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/ecs/src/index.ts#L1539)
+定義於: [index.ts:1539](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1539)
 
 Validate component data against its schema.
 

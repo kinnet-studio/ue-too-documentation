@@ -4,7 +4,7 @@
 
 > **addVector**(`a`, `b`): \{ `x`: `number`; `y`: `number`; `z?`: `undefined`; \} \| \{ `x`: `number`; `y`: `number`; `z`: `number`; \}
 
-定義於: [2dVector.ts:26](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/math/src/2dVector.ts#L26)
+定義於: [2dVector.ts:26](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/math/src/2dVector.ts#L26)
 
 ## 參數
 

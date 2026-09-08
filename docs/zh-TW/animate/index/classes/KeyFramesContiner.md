@@ -2,7 +2,7 @@
 
 # 類別: KeyFramesContiner\<T\>
 
-定義於: [composite-animation.ts:1213](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1213)
+定義於: [composite-animation.ts:1213](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1213)
 
 ## 型別參數
 
@@ -16,7 +16,7 @@
 
 > **new KeyFramesContiner**\<`T`\>(): `KeyFramesContiner`\<`T`\>
 
-定義於: [composite-animation.ts:1216](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1216)
+定義於: [composite-animation.ts:1216](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1216)
 
 #### 回傳
 
@@ -30,7 +30,7 @@
 
 > **get** **keyframes**(): [`Keyframe`](../type-aliases/Keyframe.md)\<`T`\>[]
 
-定義於: [composite-animation.ts:1220](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1220)
+定義於: [composite-animation.ts:1220](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1220)
 
 ##### 回傳
 
@@ -42,7 +42,7 @@
 
 > **clearFrames**(): `void`
 
-定義於: [composite-animation.ts:1254](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1254)
+定義於: [composite-animation.ts:1254](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1254)
 
 #### 回傳
 
@@ -54,7 +54,7 @@
 
 > **from**(`value`): [`Keyframes`](../interfaces/Keyframes.md)\<`T`\>
 
-定義於: [composite-animation.ts:1224](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1224)
+定義於: [composite-animation.ts:1224](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1224)
 
 #### 參數
 
@@ -72,7 +72,7 @@
 
 > **insertAt**(`percentage`, `value`): `void`
 
-定義於: [composite-animation.ts:1250](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1250)
+定義於: [composite-animation.ts:1250](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1250)
 
 #### 參數
 
@@ -94,7 +94,7 @@
 
 > **to**(`value`): [`Keyframes`](../interfaces/Keyframes.md)\<`T`\>
 
-定義於: [composite-animation.ts:1237](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1237)
+定義於: [composite-animation.ts:1237](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1237)
 
 #### 參數
 

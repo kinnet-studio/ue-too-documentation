@@ -610,4 +610,4 @@ This is useful when you also need the array at runtime (e.g., for iteration or v
 
 ## API Reference
 
-For full API details (all classes, interfaces, types, and functions), see the [API Reference](./globals.md).
+For full API details (all classes, interfaces, types, and functions), see the [API Reference](./index/index.md).

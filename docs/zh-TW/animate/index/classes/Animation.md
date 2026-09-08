@@ -2,7 +2,7 @@
 
 # 類別: Animation\<T\>
 
-定義於: [composite-animation.ts:740](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L740)
+定義於: [composite-animation.ts:740](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L740)
 
 Keyframe-based animation for a single value.
 
@@ -67,7 +67,7 @@ The type of value being animated
 
 > **new Animation**\<`T`\>(`keyFrames`, `applyAnimationValue`, `animatableAttributeHelper`, `duration`, `loop`, `parent`, `setUpFn`, `tearDownFn`, `easeFn`): `Animation`\<`T`\>
 
-定義於: [composite-animation.ts:766](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L766)
+定義於: [composite-animation.ts:766](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L766)
 
 #### 參數
 
@@ -119,7 +119,7 @@ The type of value being animated
 
 > **get** **delay**(): `number`
 
-定義於: [composite-animation.ts:1102](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1102)
+定義於: [composite-animation.ts:1102](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1102)
 
 ##### 回傳
 
@@ -129,7 +129,7 @@ The type of value being animated
 
 > **set** **delay**(`delayTime`): `void`
 
-定義於: [composite-animation.ts:1106](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1106)
+定義於: [composite-animation.ts:1106](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1106)
 
 ##### 參數
 
@@ -153,7 +153,7 @@ The type of value being animated
 
 > **get** **drag**(): `number`
 
-定義於: [composite-animation.ts:1113](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1113)
+定義於: [composite-animation.ts:1113](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1113)
 
 ##### 回傳
 
@@ -163,7 +163,7 @@ The type of value being animated
 
 > **set** **drag**(`dragTime`): `void`
 
-定義於: [composite-animation.ts:1117](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1117)
+定義於: [composite-animation.ts:1117](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1117)
 
 ##### 參數
 
@@ -187,7 +187,7 @@ The type of value being animated
 
 > **get** **duration**(): `number`
 
-定義於: [composite-animation.ts:1054](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1054)
+定義於: [composite-animation.ts:1054](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1054)
 
 ##### 回傳
 
@@ -197,7 +197,7 @@ The type of value being animated
 
 > **set** **duration**(`duration`): `void`
 
-定義於: [composite-animation.ts:1058](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1058)
+定義於: [composite-animation.ts:1058](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1058)
 
 ##### 參數
 
@@ -221,7 +221,7 @@ The type of value being animated
 
 > **get** **easeFunction**(): (`percentage`) => `number`
 
-定義於: [composite-animation.ts:1156](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1156)
+定義於: [composite-animation.ts:1156](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1156)
 
 ##### 回傳
 
@@ -241,7 +241,7 @@ The type of value being animated
 
 > **set** **easeFunction**(`easeFn`): `void`
 
-定義於: [composite-animation.ts:1160](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1160)
+定義於: [composite-animation.ts:1160](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1160)
 
 ##### 參數
 
@@ -261,7 +261,7 @@ The type of value being animated
 
 > **get** **keyFrames**(): [`Keyframe`](../type-aliases/Keyframe.md)\<`T`\>[]
 
-定義於: [composite-animation.ts:1152](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1152)
+定義於: [composite-animation.ts:1152](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1152)
 
 ##### 回傳
 
@@ -271,7 +271,7 @@ The type of value being animated
 
 > **set** **keyFrames**(`keyFrames`): `void`
 
-定義於: [composite-animation.ts:1143](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1143)
+定義於: [composite-animation.ts:1143](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1143)
 
 ##### 參數
 
@@ -291,7 +291,7 @@ The type of value being animated
 
 > **get** **loops**(): `boolean`
 
-定義於: [composite-animation.ts:1046](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1046)
+定義於: [composite-animation.ts:1046](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1046)
 
 ##### 回傳
 
@@ -301,7 +301,7 @@ The type of value being animated
 
 > **set** **loops**(`loop`): `void`
 
-定義於: [composite-animation.ts:1050](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1050)
+定義於: [composite-animation.ts:1050](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1050)
 
 ##### 參數
 
@@ -325,7 +325,7 @@ The type of value being animated
 
 > **get** **maxLoopCount**(): `number` \| `undefined`
 
-定義於: [composite-animation.ts:1196](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1196)
+定義於: [composite-animation.ts:1196](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1196)
 
 ##### 回傳
 
@@ -335,7 +335,7 @@ The type of value being animated
 
 > **set** **maxLoopCount**(`maxLoopCount`): `void`
 
-定義於: [composite-animation.ts:1200](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1200)
+定義於: [composite-animation.ts:1200](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1200)
 
 ##### 參數
 
@@ -359,7 +359,7 @@ The type of value being animated
 
 > **get** **playing**(): `boolean`
 
-定義於: [composite-animation.ts:824](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L824)
+定義於: [composite-animation.ts:824](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L824)
 
 ##### 回傳
 
@@ -377,7 +377,7 @@ The type of value being animated
 
 > **get** **trueDuration**(): `number`
 
-定義於: [composite-animation.ts:1124](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1124)
+定義於: [composite-animation.ts:1124](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1124)
 
 ##### 回傳
 
@@ -387,7 +387,7 @@ The type of value being animated
 
 > **set** **trueDuration**(`duration`): `void`
 
-定義於: [composite-animation.ts:1128](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1128)
+定義於: [composite-animation.ts:1128](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1128)
 
 ##### 參數
 
@@ -405,7 +405,7 @@ The type of value being animated
 
 > **animate**(`deltaTime`): `void`
 
-定義於: [composite-animation.ts:828](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L828)
+定義於: [composite-animation.ts:828](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L828)
 
 #### 參數
 
@@ -427,7 +427,7 @@ The type of value being animated
 
 > **clearOnEnd**(): `void`
 
-定義於: [composite-animation.ts:1188](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1188)
+定義於: [composite-animation.ts:1188](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1188)
 
 #### 回傳
 
@@ -443,7 +443,7 @@ The type of value being animated
 
 > **clearOnStart**(): `void`
 
-定義於: [composite-animation.ts:1192](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1192)
+定義於: [composite-animation.ts:1192](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1192)
 
 #### 回傳
 
@@ -459,7 +459,7 @@ The type of value being animated
 
 > **detachParent**(): `void`
 
-定義於: [composite-animation.ts:1139](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1139)
+定義於: [composite-animation.ts:1139](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1139)
 
 #### 回傳
 
@@ -475,7 +475,7 @@ The type of value being animated
 
 > **findValue**(`valuePercentage`, `keyframes`, `animatableAttributeHelper`): `T`
 
-定義於: [composite-animation.ts:957](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L957)
+定義於: [composite-animation.ts:957](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L957)
 
 #### 參數
 
@@ -501,7 +501,7 @@ The type of value being animated
 
 > **nonCascadingDuration**(`newDuration`): `void`
 
-定義於: [composite-animation.ts:1075](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1075)
+定義於: [composite-animation.ts:1075](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1075)
 
 #### 參數
 
@@ -523,7 +523,7 @@ The type of value being animated
 
 > **onEnd**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-定義於: [composite-animation.ts:1164](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1164)
+定義於: [composite-animation.ts:1164](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1164)
 
 #### 參數
 
@@ -545,7 +545,7 @@ The type of value being animated
 
 > **onStart**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-定義於: [composite-animation.ts:1171](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1171)
+定義於: [composite-animation.ts:1171](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1171)
 
 #### 參數
 
@@ -567,7 +567,7 @@ The type of value being animated
 
 > **onStartAfterDelay**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-定義於: [composite-animation.ts:1180](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1180)
+定義於: [composite-animation.ts:1180](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1180)
 
 #### 參數
 
@@ -585,7 +585,7 @@ The type of value being animated
 
 > **pause**(): `void`
 
-定義於: [composite-animation.ts:816](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L816)
+定義於: [composite-animation.ts:816](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L816)
 
 #### 回傳
 
@@ -601,7 +601,7 @@ The type of value being animated
 
 > **resetAnimationState**(): `void`
 
-定義於: [composite-animation.ts:1089](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1089)
+定義於: [composite-animation.ts:1089](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1089)
 
 #### 回傳
 
@@ -617,7 +617,7 @@ The type of value being animated
 
 > **resume**(): `void`
 
-定義於: [composite-animation.ts:820](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L820)
+定義於: [composite-animation.ts:820](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L820)
 
 #### 回傳
 
@@ -633,7 +633,7 @@ The type of value being animated
 
 > **setParent**(`parent`): `void`
 
-定義於: [composite-animation.ts:1135](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1135)
+定義於: [composite-animation.ts:1135](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1135)
 
 #### 參數
 
@@ -655,7 +655,7 @@ The type of value being animated
 
 > **setUp**(): `void`
 
-定義於: [composite-animation.ts:1037](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1037)
+定義於: [composite-animation.ts:1037](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1037)
 
 #### 回傳
 
@@ -671,7 +671,7 @@ The type of value being animated
 
 > **start**(): `void`
 
-定義於: [composite-animation.ts:801](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L801)
+定義於: [composite-animation.ts:801](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L801)
 
 #### 回傳
 
@@ -687,7 +687,7 @@ The type of value being animated
 
 > **stop**(): `void`
 
-定義於: [composite-animation.ts:809](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L809)
+定義於: [composite-animation.ts:809](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L809)
 
 #### 回傳
 
@@ -703,7 +703,7 @@ The type of value being animated
 
 > **tearDown**(): `void`
 
-定義於: [composite-animation.ts:1042](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1042)
+定義於: [composite-animation.ts:1042](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1042)
 
 #### 回傳
 
@@ -719,7 +719,7 @@ The type of value being animated
 
 > **toggleReverse**(`reverse`): `void`
 
-定義於: [composite-animation.ts:797](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L797)
+定義於: [composite-animation.ts:797](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L797)
 
 #### 參數
 
@@ -741,7 +741,7 @@ The type of value being animated
 
 > **wrapUp**(): `void`
 
-定義於: [composite-animation.ts:1096](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L1096)
+定義於: [composite-animation.ts:1096](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L1096)
 
 #### 回傳
 

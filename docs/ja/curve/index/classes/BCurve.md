@@ -2,7 +2,7 @@
 
 # クラス: BCurve
 
-定義: [packages/curve/src/b-curve.ts:134](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L134)
+定義: [packages/curve/src/b-curve.ts:134](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L134)
 
 Bezier curve class supporting quadratic (3 points) and cubic (4 points) curves.
 
@@ -55,7 +55,7 @@ const tangent = curve.derivative(0.5);
 
 > **new BCurve**(`controlPoints`): `BCurve`
 
-定義: [packages/curve/src/b-curve.ts:171](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L171)
+定義: [packages/curve/src/b-curve.ts:171](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L171)
 
 #### パラメータ
 
@@ -75,7 +75,7 @@ const tangent = curve.derivative(0.5);
 
 > **get** **AABB**(): `object`
 
-定義: [packages/curve/src/b-curve.ts:1469](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1469)
+定義: [packages/curve/src/b-curve.ts:1469](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1469)
 
 ##### 戻り値
 
@@ -97,7 +97,7 @@ const tangent = curve.derivative(0.5);
 
 > **get** **fullLength**(): `number`
 
-定義: [packages/curve/src/b-curve.ts:423](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L423)
+定義: [packages/curve/src/b-curve.ts:423](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L423)
 
 ##### 戻り値
 
@@ -109,7 +109,7 @@ const tangent = curve.derivative(0.5);
 
 > **advanceAtTWithLength**(`tVal`, `length`): `AdvanceAtTWithLengthRes`
 
-定義: [packages/curve/src/b-curve.ts:1218](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1218)
+定義: [packages/curve/src/b-curve.ts:1218](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1218)
 
 #### パラメータ
 
@@ -131,7 +131,7 @@ const tangent = curve.derivative(0.5);
 
 > **advanceByDistance**(`startT`, `distance`): `AdvanceAtTWithLengthRes`
 
-定義: [packages/curve/src/b-curve.ts:1306](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1306)
+定義: [packages/curve/src/b-curve.ts:1306](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1306)
 
 #### パラメータ
 
@@ -153,7 +153,7 @@ const tangent = curve.derivative(0.5);
 
 > **compute**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-定義: [packages/curve/src/b-curve.ts:327](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L327)
+定義: [packages/curve/src/b-curve.ts:327](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L327)
 
 #### パラメータ
 
@@ -171,7 +171,7 @@ const tangent = curve.derivative(0.5);
 
 > **curvature**(`tVal`): `number`
 
-定義: [packages/curve/src/b-curve.ts:937](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L937)
+定義: [packages/curve/src/b-curve.ts:937](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L937)
 
 #### パラメータ
 
@@ -189,7 +189,7 @@ const tangent = curve.derivative(0.5);
 
 > **derivative**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-定義: [packages/curve/src/b-curve.ts:459](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L459)
+定義: [packages/curve/src/b-curve.ts:459](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L459)
 
 #### パラメータ
 
@@ -207,7 +207,7 @@ const tangent = curve.derivative(0.5);
 
 > **derivativeByPercentage**(`percentage`): [`Point`](../type-aliases/Point.md)
 
-定義: [packages/curve/src/b-curve.ts:236](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L236)
+定義: [packages/curve/src/b-curve.ts:236](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L236)
 
 Gets the derivative (tangent vector) at a given percentage of the curve length.
 
@@ -245,7 +245,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **derivativeNormalized**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-定義: [packages/curve/src/b-curve.ts:463](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L463)
+定義: [packages/curve/src/b-curve.ts:463](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L463)
 
 #### パラメータ
 
@@ -263,7 +263,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **determinant3by3**(`matrix`): `number`
 
-定義: [packages/curve/src/b-curve.ts:924](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L924)
+定義: [packages/curve/src/b-curve.ts:924](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L924)
 
 #### パラメータ
 
@@ -281,7 +281,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **findArcs**(`errorThreshold`): `object`[]
 
-定義: [packages/curve/src/b-curve.ts:737](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L737)
+定義: [packages/curve/src/b-curve.ts:737](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L737)
 
 #### パラメータ
 
@@ -299,7 +299,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **findArcStartingAt**(`errorThreshold`, `low`): \{ `arc?`: \{ `center`: [`Point`](../type-aliases/Point.md); `endPoint`: [`Point`](../type-aliases/Point.md); `endT`: `number`; `radius`: `number`; `startPoint`: [`Point`](../type-aliases/Point.md); `startT`: `number`; \}; `good`: `boolean`; \} \| `null`
 
-定義: [packages/curve/src/b-curve.ts:772](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L772)
+定義: [packages/curve/src/b-curve.ts:772](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L772)
 
 #### パラメータ
 
@@ -321,7 +321,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **findClosest**(`x`, `y`, `LUT`, `circleRadius`, `distanceEpsilon`, `pd2?`, `pd1?`): `number`
 
-定義: [packages/curve/src/b-curve.ts:1415](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1415)
+定義: [packages/curve/src/b-curve.ts:1415](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1415)
 
 #### パラメータ
 
@@ -363,7 +363,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **fitArc**(`startPoint`, `endPoint`, `midPoint`): `object`
 
-定義: [packages/curve/src/b-curve.ts:851](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L851)
+定義: [packages/curve/src/b-curve.ts:851](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L851)
 
 #### パラメータ
 
@@ -409,7 +409,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **get**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-定義: [packages/curve/src/b-curve.ts:343](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L343)
+定義: [packages/curve/src/b-curve.ts:343](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L343)
 
 #### パラメータ
 
@@ -427,7 +427,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **getArcLengthLUT**(`steps`): `object`
 
-定義: [packages/curve/src/b-curve.ts:469](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L469)
+定義: [packages/curve/src/b-curve.ts:469](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L469)
 
 #### パラメータ
 
@@ -453,7 +453,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **getArcs**(`errorThreshold`): `object`[]
 
-定義: [packages/curve/src/b-curve.ts:768](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L768)
+定義: [packages/curve/src/b-curve.ts:768](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L768)
 
 Get a sequence of circular arcs that approximate the curve.
 
@@ -477,7 +477,7 @@ A list of arcs that cover the curve from \(t=0\) to \(t=1\).
 
 > **getCacheStats**(): `object`
 
-定義: [packages/curve/src/b-curve.ts:149](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L149)
+定義: [packages/curve/src/b-curve.ts:149](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L149)
 
 Gets cache statistics for performance monitoring
 
@@ -501,7 +501,7 @@ Object containing cache size and hit rate information
 
 > **getCircleIntersections**(`circleCenter`, `circleRadius`): `object`[]
 
-定義: [packages/curve/src/b-curve.ts:1161](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1161)
+定義: [packages/curve/src/b-curve.ts:1161](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1161)
 
 #### パラメータ
 
@@ -523,7 +523,7 @@ Object containing cache size and hit rate information
 
 > **getCoefficientOfTTerms**(): [`Point`](../type-aliases/Point.md)[]
 
-定義: [packages/curve/src/b-curve.ts:961](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L961)
+定義: [packages/curve/src/b-curve.ts:961](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L961)
 
 #### 戻り値
 
@@ -535,7 +535,7 @@ Object containing cache size and hit rate information
 
 > **getCoefficientOfTTermsWithControlPoints**(`controlPoints`): [`Point`](../type-aliases/Point.md)[]
 
-定義: [packages/curve/src/b-curve.ts:971](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L971)
+定義: [packages/curve/src/b-curve.ts:971](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L971)
 
 #### パラメータ
 
@@ -553,7 +553,7 @@ Object containing cache size and hit rate information
 
 > **getControlPoints**(): [`Point`](../type-aliases/Point.md)[]
 
-定義: [packages/curve/src/b-curve.ts:297](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L297)
+定義: [packages/curve/src/b-curve.ts:297](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L297)
 
 #### 戻り値
 
@@ -565,7 +565,7 @@ Object containing cache size and hit rate information
 
 > **getControlPointsAlignedWithXAxis**(): `object`[]
 
-定義: [packages/curve/src/b-curve.ts:1013](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1013)
+定義: [packages/curve/src/b-curve.ts:1013](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1013)
 
 #### 戻り値
 
@@ -577,7 +577,7 @@ Object containing cache size and hit rate information
 
 > **getCurveIntersections**(`curve`, `deduplicationTolerance?`): `object`[]
 
-定義: [packages/curve/src/b-curve.ts:1458](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1458)
+定義: [packages/curve/src/b-curve.ts:1458](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1458)
 
 #### パラメータ
 
@@ -599,7 +599,7 @@ Object containing cache size and hit rate information
 
 > **getDerivativeCoefficients**(): [`Point`](../type-aliases/Point.md)[]
 
-定義: [packages/curve/src/b-curve.ts:965](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L965)
+定義: [packages/curve/src/b-curve.ts:965](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L965)
 
 #### 戻り値
 
@@ -611,7 +611,7 @@ Object containing cache size and hit rate information
 
 > **getDerivativeControlPoints**(`controlPoints`): [`Point`](../type-aliases/Point.md)[]
 
-定義: [packages/curve/src/b-curve.ts:273](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L273)
+定義: [packages/curve/src/b-curve.ts:273](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L273)
 
 #### パラメータ
 
@@ -629,7 +629,7 @@ Object containing cache size and hit rate information
 
 > **getExtrema**(): `object`
 
-定義: [packages/curve/src/b-curve.ts:1032](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1032)
+定義: [packages/curve/src/b-curve.ts:1032](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1032)
 
 #### 戻り値
 
@@ -649,7 +649,7 @@ Object containing cache size and hit rate information
 
 > **getLineIntersections**(`line`): `number`[]
 
-定義: [packages/curve/src/b-curve.ts:1116](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1116)
+定義: [packages/curve/src/b-curve.ts:1116](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1116)
 
 #### パラメータ
 
@@ -667,7 +667,7 @@ Object containing cache size and hit rate information
 
 > **getLUT**(`steps`): [`Point`](../type-aliases/Point.md)[]
 
-定義: [packages/curve/src/b-curve.ts:390](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L390)
+定義: [packages/curve/src/b-curve.ts:390](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L390)
 
 #### パラメータ
 
@@ -685,7 +685,7 @@ Object containing cache size and hit rate information
 
 > **getLUTWithTVal**(`steps?`): `object`[]
 
-定義: [packages/curve/src/b-curve.ts:405](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L405)
+定義: [packages/curve/src/b-curve.ts:405](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L405)
 
 #### パラメータ
 
@@ -703,7 +703,7 @@ Object containing cache size and hit rate information
 
 > **getPointbyPercentage**(`percentage`): [`Point`](../type-aliases/Point.md)
 
-定義: [packages/curve/src/b-curve.ts:182](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L182)
+定義: [packages/curve/src/b-curve.ts:182](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L182)
 
 #### パラメータ
 
@@ -721,7 +721,7 @@ Object containing cache size and hit rate information
 
 > **getProjection**(`point`): `object`
 
-定義: [packages/curve/src/b-curve.ts:666](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L666)
+定義: [packages/curve/src/b-curve.ts:666](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L666)
 
 #### パラメータ
 
@@ -747,7 +747,7 @@ Object containing cache size and hit rate information
 
 > **getSelfIntersections**(): `object`[]
 
-定義: [packages/curve/src/b-curve.ts:1147](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1147)
+定義: [packages/curve/src/b-curve.ts:1147](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1147)
 
 #### 戻り値
 
@@ -759,7 +759,7 @@ Object containing cache size and hit rate information
 
 > **lengthAtT**(`tVal`): `number`
 
-定義: [packages/curve/src/b-curve.ts:431](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L431)
+定義: [packages/curve/src/b-curve.ts:431](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L431)
 
 #### パラメータ
 
@@ -777,7 +777,7 @@ Object containing cache size and hit rate information
 
 > **normal**(`tVal`): `object`
 
-定義: [packages/curve/src/b-curve.ts:1491](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1491)
+定義: [packages/curve/src/b-curve.ts:1491](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1491)
 
 #### パラメータ
 
@@ -803,7 +803,7 @@ Object containing cache size and hit rate information
 
 > **preWarmCache**(`steps`): `void`
 
-定義: [packages/curve/src/b-curve.ts:160](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L160)
+定義: [packages/curve/src/b-curve.ts:160](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L160)
 
 Pre-warms the cache with commonly used t values for better performance
 
@@ -825,7 +825,7 @@ Number of steps to pre-cache (default: 100)
 
 > **refineBinary**(`curve`, `x`, `y`, `LUT`, `i`, `targetDistance`, `epsilon`): \{ `distance`: `number`; `point`: [`Point`](../type-aliases/Point.md); `tVal`: `number`; \} \| `undefined`
 
-定義: [packages/curve/src/b-curve.ts:1354](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1354)
+定義: [packages/curve/src/b-curve.ts:1354](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1354)
 
 #### パラメータ
 
@@ -867,7 +867,7 @@ Number of steps to pre-cache (default: 100)
 
 > **secondDerivative**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-定義: [packages/curve/src/b-curve.ts:954](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L954)
+定義: [packages/curve/src/b-curve.ts:954](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L954)
 
 #### パラメータ
 
@@ -885,7 +885,7 @@ Number of steps to pre-cache (default: 100)
 
 > **setControlPointAtIndex**(`index`, `newPoint`): `boolean`
 
-定義: [packages/curve/src/b-curve.ts:312](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L312)
+定義: [packages/curve/src/b-curve.ts:312](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L312)
 
 #### パラメータ
 
@@ -907,7 +907,7 @@ Number of steps to pre-cache (default: 100)
 
 > **setControlPoints**(`controlPoints`): `void`
 
-定義: [packages/curve/src/b-curve.ts:301](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L301)
+定義: [packages/curve/src/b-curve.ts:301](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L301)
 
 #### パラメータ
 
@@ -925,7 +925,7 @@ Number of steps to pre-cache (default: 100)
 
 > **split**(`tVal`): \[[`Point`](../type-aliases/Point.md)[], [`Point`](../type-aliases/Point.md)[]\]
 
-定義: [packages/curve/src/b-curve.ts:507](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L507)
+定義: [packages/curve/src/b-curve.ts:507](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L507)
 
 #### パラメータ
 
@@ -943,7 +943,7 @@ Number of steps to pre-cache (default: 100)
 
 > **splitAndTakeMidCurve**(`tVal`, `tVal2`): `BCurve`
 
-定義: [packages/curve/src/b-curve.ts:658](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L658)
+定義: [packages/curve/src/b-curve.ts:658](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L658)
 
 #### パラメータ
 
@@ -965,7 +965,7 @@ Number of steps to pre-cache (default: 100)
 
 > **splitIn3Curves**(`tVal`, `tVal2`): \[`BCurve`, `BCurve`, `BCurve`\]
 
-定義: [packages/curve/src/b-curve.ts:638](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L638)
+定義: [packages/curve/src/b-curve.ts:638](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L638)
 
 #### パラメータ
 
@@ -987,7 +987,7 @@ Number of steps to pre-cache (default: 100)
 
 > **splitIn3WithControlPoints**(`tVal`, `tVal2`): \[[`Point`](../type-aliases/Point.md)[], [`Point`](../type-aliases/Point.md)[], [`Point`](../type-aliases/Point.md)[]\]
 
-定義: [packages/curve/src/b-curve.ts:618](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L618)
+定義: [packages/curve/src/b-curve.ts:618](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L618)
 
 #### パラメータ
 
@@ -1009,7 +1009,7 @@ Number of steps to pre-cache (default: 100)
 
 > **splitIntoCurves**(`tVal`): \[`BCurve`, `BCurve`\]
 
-定義: [packages/curve/src/b-curve.ts:502](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L502)
+定義: [packages/curve/src/b-curve.ts:502](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L502)
 
 #### パラメータ
 
@@ -1027,7 +1027,7 @@ Number of steps to pre-cache (default: 100)
 
 > **translateRotateControlPoints**(`translation`, `rotationAngle`): [`Point`](../type-aliases/Point.md)[]
 
-定義: [packages/curve/src/b-curve.ts:1102](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/curve/src/b-curve.ts#L1102)
+定義: [packages/curve/src/b-curve.ts:1102](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1102)
 
 #### パラメータ
 

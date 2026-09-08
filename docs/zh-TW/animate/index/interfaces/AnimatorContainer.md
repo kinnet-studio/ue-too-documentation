@@ -2,7 +2,7 @@
 
 # 介面: AnimatorContainer
 
-定義於: [composite-animation.ts:70](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L70)
+定義於: [composite-animation.ts:70](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L70)
 
 Interface for containers that hold and manage child animators.
 
@@ -17,7 +17,7 @@ Handles duration updates and prevents cyclic dependencies.
 
 > **checkCyclicChildren**(): `boolean`
 
-定義於: [composite-animation.ts:72](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L72)
+定義於: [composite-animation.ts:72](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L72)
 
 #### 回傳
 
@@ -29,7 +29,7 @@ Handles duration updates and prevents cyclic dependencies.
 
 > **containsAnimation**(`animationInInterest`): `boolean`
 
-定義於: [composite-animation.ts:73](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L73)
+定義於: [composite-animation.ts:73](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L73)
 
 #### 參數
 
@@ -47,7 +47,7 @@ Handles duration updates and prevents cyclic dependencies.
 
 > **updateDuration**(): `void`
 
-定義於: [composite-animation.ts:71](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/animate/src/composite-animation.ts#L71)
+定義於: [composite-animation.ts:71](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/animate/src/composite-animation.ts#L71)
 
 #### 回傳
 

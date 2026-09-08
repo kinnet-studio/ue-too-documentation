@@ -2,7 +2,7 @@
 
 # インターフェイス: StateMachine\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-定義: [interface.ts:212](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L212)
+定義: [interface.ts:212](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L212)
 
 ## Description
 
@@ -46,7 +46,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > `readonly` `optional` **context**: `Context`
 
-定義: [interface.ts:229](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L229)
+定義: [interface.ts:229](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L229)
 
 Read-only access to the machine's live context object. Optional so
 existing StateMachine implementations remain valid;
@@ -61,7 +61,7 @@ this reference.
 
 > **currentState**: `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-定義: [interface.ts:289](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L289)
+定義: [interface.ts:289](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L289)
 
 ***
 
@@ -69,7 +69,7 @@ this reference.
 
 > **possibleStates**: `States`[]
 
-定義: [interface.ts:258](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L258)
+定義: [interface.ts:258](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L258)
 
 ***
 
@@ -77,7 +77,7 @@ this reference.
 
 > **states**: `Record`\<`States`, [`State`](State.md)\<`EventPayloadMapping`, `Context`, `string` *extends* `States` ? `string` : `States`, `EventOutputMapping`\>\>
 
-定義: [interface.ts:242](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L242)
+定義: [interface.ts:242](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L242)
 
 ## メソッド
 
@@ -87,7 +87,7 @@ this reference.
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義: [interface.ts:231](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L231)
+定義: [interface.ts:231](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L231)
 
 ##### 型パラメーター
 
@@ -109,7 +109,7 @@ this reference.
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `unknown`\>
 
-定義: [interface.ts:238](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L238)
+定義: [interface.ts:238](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L238)
 
 ##### 型パラメーター
 
@@ -133,7 +133,7 @@ this reference.
 
 > `optional` **onEventResult**(`callback`): `void` \| () => `void`
 
-定義: [interface.ts:283](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L283)
+定義: [interface.ts:283](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L283)
 
 Subscribe to every event result. Optional so existing StateMachine
 implementations remain valid; [TemplateStateMachine](../classes/TemplateStateMachine.md) always
@@ -158,7 +158,7 @@ for the exact snapshot-iteration semantics.
 
 > **onHappens**(`callback`): `void` \| () => `void`
 
-定義: [interface.ts:266](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L266)
+定義: [interface.ts:266](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L266)
 
 Subscribe to every `happens()` call, before the state handles it.
 Returns a disposer on implementations that support one. Disposing
@@ -182,7 +182,7 @@ snapshot-iteration semantics.
 
 > **onStateChange**(`callback`): `void` \| () => `void`
 
-定義: [interface.ts:257](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L257)
+定義: [interface.ts:257](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L257)
 
 Subscribe to state changes. Returns a disposer on implementations that
 support one. Disposing during a dispatch takes effect starting with
@@ -205,7 +205,7 @@ the next dispatch, not the one in progress — see
 
 > **reset**(): `void`
 
-定義: [interface.ts:286](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L286)
+定義: [interface.ts:286](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L286)
 
 #### 戻り値
 
@@ -217,7 +217,7 @@ the next dispatch, not the one in progress — see
 
 > **setContext**(`context`): `void`
 
-定義: [interface.ts:241](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L241)
+定義: [interface.ts:241](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L241)
 
 #### パラメータ
 
@@ -235,7 +235,7 @@ the next dispatch, not the one in progress — see
 
 > **start**(): `void`
 
-定義: [interface.ts:287](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L287)
+定義: [interface.ts:287](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L287)
 
 #### 戻り値
 
@@ -247,7 +247,7 @@ the next dispatch, not the one in progress — see
 
 > **switchTo**(`state`): `void`
 
-定義: [interface.ts:220](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L220)
+定義: [interface.ts:220](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L220)
 
 #### パラメータ
 
@@ -265,7 +265,7 @@ the next dispatch, not the one in progress — see
 
 > **wrapup**(): `void`
 
-定義: [interface.ts:288](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/being/src/interface.ts#L288)
+定義: [interface.ts:288](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/interface.ts#L288)
 
 #### 戻り値
 

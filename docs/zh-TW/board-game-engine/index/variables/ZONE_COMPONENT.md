@@ -4,4 +4,4 @@
 
 > `const` **ZONE\_COMPONENT**: `ComponentName`
 
-定義於: [zone-system/zone-component.ts:14](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/zone-system/zone-component.ts#L14)
+定義於: [zone-system/zone-component.ts:14](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/zone-system/zone-component.ts#L14)

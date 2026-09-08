@@ -4,7 +4,7 @@
 
 > **usePixiCanvas**\<`C`\>(): `PixiCanvasContextType`\<`C`\>
 
-定義於: [board-pixi-react-integration/src/contexts/pixi/index.tsx:68](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-pixi-react-integration/src/contexts/pixi/index.tsx#L68)
+定義於: [board-pixi-react-integration/src/contexts/pixi/index.tsx:68](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-react-integration/src/contexts/pixi/index.tsx#L68)
 
 Access the PixiJS canvas context with typed components.
 
