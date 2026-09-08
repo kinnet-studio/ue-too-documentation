@@ -11,7 +11,7 @@ This guide walks through the pattern end-to-end, using the [`banana`](https://gi
 
 ## Why extend instead of replace
 
-The built-in KMT state machine is a finite-state machine with these states (see [`KmtIdleState`](./classes/KmtIdleState.md) and friends):
+The built-in KMT state machine is a finite-state machine with these states (see [`KmtIdleState`](./index/classes/KmtIdleState.md) and friends):
 
 ```
 IDLE
@@ -428,7 +428,7 @@ For a full-featured example that wires multiple such tools together through a si
 
 The touch machine is smaller — three states and three events — but the recipe is identical.
 
-Built-in states (see [`touch-input-state-machine.ts`](./globals.md)):
+Built-in states (see [`touch-input-state-machine.ts`](./index/index.md)):
 
 ```
 IDLE ──▶ PENDING ──▶ IN_PROGRESS
@@ -478,7 +478,7 @@ Symbols you will touch when following this guide:
 
 | Symbol | Package | Purpose |
 |---|---|---|
-| [`KmtIdleState`](./classes/KmtIdleState.md), [`PanState`](./classes/PanState.md), [`InitialPanState`](./classes/InitialPanState.md), [`ReadyToPanViaSpaceBarState`](./classes/ReadyToPanViaSpaceBarState.md), [`ReadyToPanViaScrollWheelState`](./classes/ReadyToPanViaScrollWheelState.md), [`PanViaScrollWheelState`](./classes/PanViaScrollWheelState.md), [`DisabledState`](./classes/DisabledState.md) | `@ue-too/board` | Built-in KMT states to compose with |
+| [`KmtIdleState`](./index/classes/KmtIdleState.md), [`PanState`](./index/classes/PanState.md), [`InitialPanState`](./index/classes/InitialPanState.md), [`ReadyToPanViaSpaceBarState`](./index/classes/ReadyToPanViaSpaceBarState.md), [`ReadyToPanViaScrollWheelState`](./index/classes/ReadyToPanViaScrollWheelState.md), [`PanViaScrollWheelState`](./index/classes/PanViaScrollWheelState.md), [`DisabledState`](./index/classes/DisabledState.md) | `@ue-too/board` | Built-in KMT states to compose with |
 | `KmtInputEventMapping`, `KmtInputContext`, `KmtInputStates`, `KmtInputEventOutputMapping` | `@ue-too/board` | KMT type parameters to widen |
 | `TouchEventMapping`, `TouchContext`, `TouchInputStates`, `TouchInputEventOutputMapping` | `@ue-too/board` | Touch type parameters to widen |
 | `TemplateState`, `TemplateStateMachine`, `EventReactions`, `Defer`, `Guard`, `State`, `NO_OP`, `BaseContext` | `@ue-too/being` | Generic FSM primitives |

@@ -2,7 +2,7 @@
 
 # 類別: KonvaInputParser
 
-定義於: [konva-input-event-parser.ts:10](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-konva-integration/src/konva-input-event-parser.ts#L10)
+定義於: [konva-input-event-parser.ts:10](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-konva-integration/src/konva-input-event-parser.ts#L10)
 
 ## 建構函式
 
@@ -10,7 +10,7 @@
 
 > **new KonvaInputParser**(`stage`, `kmtInputStateMachine`, `inputOrchestrator`): `KonvaInputParser`
 
-定義於: [konva-input-event-parser.ts:17](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-konva-integration/src/konva-input-event-parser.ts#L17)
+定義於: [konva-input-event-parser.ts:17](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-konva-integration/src/konva-input-event-parser.ts#L17)
 
 #### 參數
 
@@ -36,7 +36,7 @@
 
 > **bindFunctions**(): `void`
 
-定義於: [konva-input-event-parser.ts:30](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-konva-integration/src/konva-input-event-parser.ts#L30)
+定義於: [konva-input-event-parser.ts:30](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-konva-integration/src/konva-input-event-parser.ts#L30)
 
 #### 回傳
 
@@ -48,7 +48,7 @@
 
 > **keydownHandler**(`event`): `void`
 
-定義於: [konva-input-event-parser.ts:141](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-konva-integration/src/konva-input-event-parser.ts#L141)
+定義於: [konva-input-event-parser.ts:141](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-konva-integration/src/konva-input-event-parser.ts#L141)
 
 #### 參數
 
@@ -66,7 +66,7 @@
 
 > **keyupHandler**(`event`): `void`
 
-定義於: [konva-input-event-parser.ts:151](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-konva-integration/src/konva-input-event-parser.ts#L151)
+定義於: [konva-input-event-parser.ts:151](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-konva-integration/src/konva-input-event-parser.ts#L151)
 
 #### 參數
 
@@ -84,7 +84,7 @@
 
 > **pointerDownHandler**(`eventObject`): `void`
 
-定義於: [konva-input-event-parser.ts:70](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-konva-integration/src/konva-input-event-parser.ts#L70)
+定義於: [konva-input-event-parser.ts:70](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-konva-integration/src/konva-input-event-parser.ts#L70)
 
 #### 參數
 
@@ -102,7 +102,7 @@
 
 > **pointerMoveHandler**(`eventObject`): `void`
 
-定義於: [konva-input-event-parser.ts:103](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-konva-integration/src/konva-input-event-parser.ts#L103)
+定義於: [konva-input-event-parser.ts:103](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-konva-integration/src/konva-input-event-parser.ts#L103)
 
 #### 參數
 
@@ -120,7 +120,7 @@
 
 > **pointerUpHandler**(`eventObject`): `void`
 
-定義於: [konva-input-event-parser.ts:88](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-konva-integration/src/konva-input-event-parser.ts#L88)
+定義於: [konva-input-event-parser.ts:88](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-konva-integration/src/konva-input-event-parser.ts#L88)
 
 #### 參數
 
@@ -138,7 +138,7 @@
 
 > **scrollHandler**(`eventObject`): `void`
 
-定義於: [konva-input-event-parser.ts:122](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-konva-integration/src/konva-input-event-parser.ts#L122)
+定義於: [konva-input-event-parser.ts:122](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-konva-integration/src/konva-input-event-parser.ts#L122)
 
 #### 參數
 
@@ -156,7 +156,7 @@
 
 > **setUp**(): `void`
 
-定義於: [konva-input-event-parser.ts:39](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-konva-integration/src/konva-input-event-parser.ts#L39)
+定義於: [konva-input-event-parser.ts:39](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-konva-integration/src/konva-input-event-parser.ts#L39)
 
 #### 回傳
 
@@ -168,7 +168,7 @@
 
 > **tearDown**(): `void`
 
-定義於: [konva-input-event-parser.ts:52](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-konva-integration/src/konva-input-event-parser.ts#L52)
+定義於: [konva-input-event-parser.ts:52](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-konva-integration/src/konva-input-event-parser.ts#L52)
 
 #### 回傳
 

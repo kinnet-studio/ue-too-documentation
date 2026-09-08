@@ -610,4 +610,4 @@ type ToolStates = CreateStateType<typeof TOOL_STATES>;
 
 ## API 參考
 
-完整的 API 細節（所有類別、介面、型別和函式），請參閱 [API 參考](./globals.md)。
+完整的 API 細節（所有類別、介面、型別和函式），請參閱 [API 參考](./index/index.md)。

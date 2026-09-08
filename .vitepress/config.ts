@@ -7,7 +7,7 @@ const packages = [
   'math', 'board', 'animate', 'being', 'dynamics', 'curve', 'border', 'ecs',
   'board-react-adapter', 'board-vue-adapter', 'board-fabric-integration',
   'board-game-engine', 'board-konva-integration', 'board-pixi-integration',
-  'board-pixi-react-integration', 'board-integration',
+  'board-pixi-react-integration', 'board-integration', 'being-devtools',
 ] as const
 
 type Locale = 'en' | 'zh-TW' | 'ja'

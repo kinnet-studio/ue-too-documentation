@@ -4,7 +4,7 @@
 
 > **angleSpan**(`from`, `to`): `number`
 
-定義: [packages/board/src/camera/utils/rotation.ts:273](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/utils/rotation.ts#L273)
+定義: [packages/board/src/camera/utils/rotation.ts:273](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/utils/rotation.ts#L273)
 
 Calculates the signed angular distance between two angles, taking the shorter path.
 

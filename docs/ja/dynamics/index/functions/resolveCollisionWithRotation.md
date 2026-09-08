@@ -4,7 +4,7 @@
 
 > **resolveCollisionWithRotation**(`bodyA`, `bodyB`, `contactManifold`): `void`
 
-定義: [collision.ts:55](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/dynamics/src/collision.ts#L55)
+定義: [collision.ts:55](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/collision.ts#L55)
 
 ## パラメータ
 

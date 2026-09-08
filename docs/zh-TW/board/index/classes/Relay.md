@@ -2,7 +2,7 @@
 
 # 類別: Relay
 
-定義於: [packages/board/src/camera/camera-mux/relay.ts:48](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/relay.ts#L48)
+定義於: [packages/board/src/camera/camera-mux/relay.ts:48](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-mux/relay.ts#L48)
 
 Stateless camera input multiplexer that always allows inputs to pass through.
 This is the simplest [CameraMux](../interfaces/CameraMux.md) implementation with no filtering or state management.
@@ -54,7 +54,7 @@ const rotateResult = relay.notifyRotationInput(0.1);
 
 > **new Relay**(): `Relay`
 
-定義於: [packages/board/src/camera/camera-mux/relay.ts:52](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/relay.ts#L52)
+定義於: [packages/board/src/camera/camera-mux/relay.ts:52](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-mux/relay.ts#L52)
 
 Creates a new stateless relay multiplexer.
 
@@ -68,7 +68,7 @@ Creates a new stateless relay multiplexer.
 
 > **notifyPanInput**(`diff`): [`CameraMuxPanOutput`](../type-aliases/CameraMuxPanOutput.md)
 
-定義於: [packages/board/src/camera/camera-mux/relay.ts:60](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/relay.ts#L60)
+定義於: [packages/board/src/camera/camera-mux/relay.ts:60](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-mux/relay.ts#L60)
 
 Processes pan input by always allowing it through unchanged.
 
@@ -96,7 +96,7 @@ Output allowing passthrough with the original delta
 
 > **notifyRotationInput**(`deltaRotation`): [`CameraMuxRotationOutput`](../type-aliases/CameraMuxRotationOutput.md)
 
-定義於: [packages/board/src/camera/camera-mux/relay.ts:88](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/relay.ts#L88)
+定義於: [packages/board/src/camera/camera-mux/relay.ts:88](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-mux/relay.ts#L88)
 
 Processes rotation input by always allowing it through unchanged.
 
@@ -124,7 +124,7 @@ Output allowing passthrough with the original delta
 
 > **notifyZoomInput**(`deltaZoomAmount`, `anchorPoint`): [`CameraMuxZoomOutput`](../type-aliases/CameraMuxZoomOutput.md)
 
-定義於: [packages/board/src/camera/camera-mux/relay.ts:71](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/camera/camera-mux/relay.ts#L71)
+定義於: [packages/board/src/camera/camera-mux/relay.ts:71](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-mux/relay.ts#L71)
 
 Processes zoom input by always allowing it through unchanged.
 

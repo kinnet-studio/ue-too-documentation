@@ -2,7 +2,7 @@
 
 # クラス: TouchInputTracker
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:99](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L99)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:99](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L99)
 
 Production implementation of TouchContext that tracks multi-touch state.
 
@@ -48,7 +48,7 @@ console.log(context.getCurrentTouchPointsCount()); // 2
 
 > **new TouchInputTracker**(`canvas`): `TouchInputTracker`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:107](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L107)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:107](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L107)
 
 #### パラメータ
 
@@ -68,7 +68,7 @@ console.log(context.getCurrentTouchPointsCount()); // 2
 
 > **get** **alignCoordinateSystem**(): `boolean`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:151](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L151)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:151](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L151)
 
 Whether to use standard screen coordinate system (vs inverted Y-axis)
 
@@ -80,7 +80,7 @@ Whether to use standard screen coordinate system (vs inverted Y-axis)
 
 > **set** **alignCoordinateSystem**(`value`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:155](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L155)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:155](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L155)
 
 Whether to use standard screen coordinate system (vs inverted Y-axis)
 
@@ -108,7 +108,7 @@ Whether to use standard screen coordinate system (vs inverted Y-axis)
 
 > **get** **canvas**(): [`Canvas`](../interfaces/Canvas.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:159](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L159)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:159](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L159)
 
 Canvas accessor for dimensions and coordinate transformations
 
@@ -128,7 +128,7 @@ Canvas accessor for dimensions and coordinate transformations
 
 > **addTouchPoints**(`points`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:112](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L112)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:112](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L112)
 
 Adds new touch points to tracking
 
@@ -152,7 +152,7 @@ Adds new touch points to tracking
 
 > **cleanup**(): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:163](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L163)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:163](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L163)
 
 #### 戻り値
 
@@ -168,7 +168,7 @@ Adds new touch points to tracking
 
 > **getCurrentTouchPointsCount**(): `number`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:126](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L126)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:126](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L126)
 
 Returns the current number of active touch points
 
@@ -186,7 +186,7 @@ Returns the current number of active touch points
 
 > **getInitialTouchPointsPositions**(`idents`): [`TouchPoints`](../type-aliases/TouchPoints.md)[]
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:130](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L130)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:130](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L130)
 
 Retrieves the initial positions of specific touch points
 
@@ -210,7 +210,7 @@ Retrieves the initial positions of specific touch points
 
 > **removeTouchPoints**(`identifiers`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:118](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L118)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:118](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L118)
 
 Removes touch points from tracking by identifier
 
@@ -234,7 +234,7 @@ Removes touch points from tracking by identifier
 
 > **setup**(): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:165](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L165)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:165](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L165)
 
 #### 戻り値
 
@@ -250,7 +250,7 @@ Removes touch points from tracking by identifier
 
 > **updateTouchPoints**(`pointsMoved`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:143](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L143)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:143](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L143)
 
 Updates the current positions of touch points
 

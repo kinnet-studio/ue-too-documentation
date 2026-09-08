@@ -2,7 +2,7 @@
 
 # クラス: SvgPositionDimensionPublisher
 
-定義: [packages/board/src/utils/canvas-position-dimension.ts:40](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/utils/canvas-position-dimension.ts#L40)
+定義: [packages/board/src/utils/canvas-position-dimension.ts:40](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/utils/canvas-position-dimension.ts#L40)
 
 Monitors and publishes position and dimension changes for SVG elements.
 
@@ -42,7 +42,7 @@ publisher.dispose();
 
 > **new SvgPositionDimensionPublisher**(`canvas?`): `SvgPositionDimensionPublisher`
 
-定義: [packages/board/src/utils/canvas-position-dimension.ts:58](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/utils/canvas-position-dimension.ts#L58)
+定義: [packages/board/src/utils/canvas-position-dimension.ts:58](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/utils/canvas-position-dimension.ts#L58)
 
 Creates a new SVG position/dimension publisher.
 
@@ -69,7 +69,7 @@ Otherwise, call [attach](#attach) later to begin monitoring.
 
 > **attach**(`canvas`): `void`
 
-定義: [packages/board/src/utils/canvas-position-dimension.ts:138](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/utils/canvas-position-dimension.ts#L138)
+定義: [packages/board/src/utils/canvas-position-dimension.ts:138](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/utils/canvas-position-dimension.ts#L138)
 
 Attaches observers to an SVG element and begins monitoring.
 
@@ -99,7 +99,7 @@ is sent to observers for this initial state.
 
 > **dispose**(): `void`
 
-定義: [packages/board/src/utils/canvas-position-dimension.ts:114](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/utils/canvas-position-dimension.ts#L114)
+定義: [packages/board/src/utils/canvas-position-dimension.ts:114](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/utils/canvas-position-dimension.ts#L114)
 
 Cleans up all observers and event listeners.
 
@@ -119,7 +119,7 @@ when the publisher is no longer needed to prevent memory leaks.
 
 > **onPositionUpdate**(`observer`, `options?`): () => `void`
 
-定義: [packages/board/src/utils/canvas-position-dimension.ts:215](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board/src/utils/canvas-position-dimension.ts#L215)
+定義: [packages/board/src/utils/canvas-position-dimension.ts:215](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/utils/canvas-position-dimension.ts#L215)
 
 Subscribes to position and dimension updates.
 

@@ -4,7 +4,7 @@
 
 > **OrthoGridComponent** = `object`
 
-定義: [grid-system/ortho-grid.ts:17](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L17)
+定義: [grid-system/ortho-grid.ts:17](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/ortho-grid.ts#L17)
 
 ## プロパティ
 
@@ -12,7 +12,7 @@
 
 > **columns**: `number`
 
-定義: [grid-system/ortho-grid.ts:20](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L20)
+定義: [grid-system/ortho-grid.ts:20](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/ortho-grid.ts#L20)
 
 ***
 
@@ -20,7 +20,7 @@
 
 > **name**: `string`
 
-定義: [grid-system/ortho-grid.ts:18](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L18)
+定義: [grid-system/ortho-grid.ts:18](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/ortho-grid.ts#L18)
 
 ***
 
@@ -28,4 +28,4 @@
 
 > **rows**: `number`
 
-定義: [grid-system/ortho-grid.ts:19](https://github.com/kinnet-studio/ue-too/blob/123d9a09420f76e5c89682b78b72a33f0d4c9daf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L19)
+定義: [grid-system/ortho-grid.ts:19](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/ortho-grid.ts#L19)
