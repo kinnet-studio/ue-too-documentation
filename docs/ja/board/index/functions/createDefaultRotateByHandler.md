@@ -4,7 +4,7 @@
 
 > **createDefaultRotateByHandler**(): [`RotateByHandlerFunction`](../type-aliases/RotateByHandlerFunction.md)
 
-定義: [packages/board/src/camera/camera-rig/rotation-handler.ts:429](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/rotation-handler.ts#L429)
+定義: [packages/board/src/camera/camera-rig/rotation-handler.ts:429](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/rotation-handler.ts#L429)
 
 Creates a default "rotate by" handler pipeline for relative rotation operations.
 

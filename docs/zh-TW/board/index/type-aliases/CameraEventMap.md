@@ -4,7 +4,7 @@
 
 > **CameraEventMap** = `object`
 
-定義於: [packages/board/src/camera/update-publisher.ts:52](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/update-publisher.ts#L52)
+定義於: [packages/board/src/camera/update-publisher.ts:52](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/update-publisher.ts#L52)
 
 Mapping of camera event names to their payload types.
 Used for type-safe event subscription.
@@ -15,7 +15,7 @@ Used for type-safe event subscription.
 
 > **all**: [`AllCameraEventPayload`](AllCameraEventPayload.md)
 
-定義於: [packages/board/src/camera/update-publisher.ts:60](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/update-publisher.ts#L60)
+定義於: [packages/board/src/camera/update-publisher.ts:60](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/update-publisher.ts#L60)
 
 Any camera change event (union of pan, zoom, rotate)
 
@@ -25,7 +25,7 @@ Any camera change event (union of pan, zoom, rotate)
 
 > **pan**: [`CameraPanEventPayload`](CameraPanEventPayload.md)
 
-定義於: [packages/board/src/camera/update-publisher.ts:54](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/update-publisher.ts#L54)
+定義於: [packages/board/src/camera/update-publisher.ts:54](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/update-publisher.ts#L54)
 
 Position change event
 
@@ -35,7 +35,7 @@ Position change event
 
 > **rotate**: [`CameraRotateEventPayload`](CameraRotateEventPayload.md)
 
-定義於: [packages/board/src/camera/update-publisher.ts:58](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/update-publisher.ts#L58)
+定義於: [packages/board/src/camera/update-publisher.ts:58](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/update-publisher.ts#L58)
 
 Rotation change event
 
@@ -45,6 +45,6 @@ Rotation change event
 
 > **zoom**: [`CameraZoomEventPayload`](CameraZoomEventPayload.md)
 
-定義於: [packages/board/src/camera/update-publisher.ts:56](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/update-publisher.ts#L56)
+定義於: [packages/board/src/camera/update-publisher.ts:56](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/update-publisher.ts#L56)
 
 Zoom level change event

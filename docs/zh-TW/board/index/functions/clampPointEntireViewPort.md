@@ -4,7 +4,7 @@
 
 > **clampPointEntireViewPort**(`point`, `viewPortWidth`, `viewPortHeight`, `boundaries`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-定義於: [packages/board/src/camera/utils/position.ts:456](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/utils/position.ts#L456)
+定義於: [packages/board/src/camera/utils/position.ts:456](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/utils/position.ts#L456)
 
 Clamps camera position to ensure the entire viewport stays within boundaries.
 More restrictive than [clampPoint](clampPoint.md) as it considers viewport size and rotation.

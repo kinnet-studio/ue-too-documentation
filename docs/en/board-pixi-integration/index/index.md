@@ -11,6 +11,7 @@ Board integration package for uē-tôo.
 ## Interfaces
 
 - [BaseAppComponents](interfaces/BaseAppComponents.md)
+- [BaseTeardownTarget](interfaces/BaseTeardownTarget.md)
 
 ## Type Aliases
 
@@ -18,4 +19,5 @@ Board integration package for uē-tôo.
 
 ## Functions
 
+- [attachBaseTeardown](functions/attachBaseTeardown.md)
 - [baseInitApp](functions/baseInitApp.md)

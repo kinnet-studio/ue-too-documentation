@@ -2,7 +2,7 @@
 
 # 類別: SystemManager
 
-定義於: [index.ts:1175](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1175)
+定義於: [index.ts:1175](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1175)
 
 Manages system registration and entity-system matching.
 
@@ -35,7 +35,7 @@ required by the system's signature.
 
 > **entityDestroyed**(`entity`): `void`
 
-定義於: [index.ts:1206](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1206)
+定義於: [index.ts:1206](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1206)
 
 #### 參數
 
@@ -53,7 +53,7 @@ required by the system's signature.
 
 > **entitySignatureChanged**(`entity`, `signature`): `void`
 
-定義於: [index.ts:1212](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1212)
+定義於: [index.ts:1212](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1212)
 
 #### 參數
 
@@ -75,7 +75,7 @@ required by the system's signature.
 
 > **getSystem**\<`T`\>(`systemName`): `T` \| `null`
 
-定義於: [index.ts:1223](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1223)
+定義於: [index.ts:1223](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1223)
 
 #### 型別參數
 
@@ -99,7 +99,7 @@ required by the system's signature.
 
 > **registerSystem**(`systemName`, `system`): `void`
 
-定義於: [index.ts:1181](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1181)
+定義於: [index.ts:1181](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1181)
 
 #### 參數
 
@@ -121,7 +121,7 @@ required by the system's signature.
 
 > **setSignature**(`systemName`, `signature`): `void`
 
-定義於: [index.ts:1189](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1189)
+定義於: [index.ts:1189](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1189)
 
 #### 參數
 

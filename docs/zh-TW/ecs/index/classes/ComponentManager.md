@@ -2,7 +2,7 @@
 
 # 類別: ComponentManager
 
-定義於: [index.ts:720](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L720)
+定義於: [index.ts:720](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L720)
 
 Manages component registration and component data storage.
 
@@ -33,7 +33,7 @@ for efficient storage and retrieval.
 
 > **addComponentToEntity**\<`T`\>(`componentName`, `entity`, `component`): `void`
 
-定義於: [index.ts:784](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L784)
+定義於: [index.ts:784](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L784)
 
 #### 型別參數
 
@@ -65,7 +65,7 @@ for efficient storage and retrieval.
 
 > **addComponentToEntityWithSchema**(`componentName`, `entity`, `component`, `validate`): `void`
 
-定義於: [index.ts:1101](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1101)
+定義於: [index.ts:1101](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1101)
 
 Add a component to an entity with schema validation.
 
@@ -109,7 +109,7 @@ Error if validation fails
 
 > **componentIsCustomSchema**(`componentName`): `boolean`
 
-定義於: [index.ts:834](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L834)
+定義於: [index.ts:834](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L834)
 
 #### 參數
 
@@ -127,7 +127,7 @@ Error if validation fails
 
 > **createComponentFromSchema**(`componentName`, `overrides`): `Record`\<`string`, `unknown`\>
 
-定義於: [index.ts:899](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L899)
+定義於: [index.ts:899](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L899)
 
 Create a component instance from a schema with default values.
 
@@ -161,7 +161,7 @@ Error if component is not registered with a schema
 
 > **entityDestroyed**(`entity`): `void`
 
-定義於: [index.ts:815](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L815)
+定義於: [index.ts:815](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L815)
 
 #### 參數
 
@@ -179,7 +179,7 @@ Error if component is not registered with a schema
 
 > **getAllComponentSchemas**(): [`ComponentSchema`](../interfaces/ComponentSchema.md)[]
 
-定義於: [index.ts:760](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L760)
+定義於: [index.ts:760](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L760)
 
 Get all registered component schemas.
 
@@ -195,7 +195,7 @@ Array of all component schemas
 
 > **getAllEntitiesWithComponent**(`componentName`): `number`[]
 
-定義於: [index.ts:737](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L737)
+定義於: [index.ts:737](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L737)
 
 Get all entities that have a specific component.
 
@@ -219,7 +219,7 @@ Array of entity IDs that have this component, or empty array if component not re
 
 > **getComponentFromEntity**\<`T`\>(`componentName`, `entity`): `T` \| `null`
 
-定義於: [index.ts:804](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L804)
+定義於: [index.ts:804](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L804)
 
 #### 型別參數
 
@@ -247,7 +247,7 @@ Array of entity IDs that have this component, or empty array if component not re
 
 > **getComponentSchema**(`componentName`): [`ComponentSchema`](../interfaces/ComponentSchema.md) \| `null`
 
-定義於: [index.ts:752](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L752)
+定義於: [index.ts:752](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L752)
 
 Get the schema for a component type, if it was registered with a schema.
 
@@ -271,7 +271,7 @@ The component schema or null if not found
 
 > **getComponentType**(`componentName`): `number` \| `null`
 
-定義於: [index.ts:777](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L777)
+定義於: [index.ts:777](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L777)
 
 #### 參數
 
@@ -289,7 +289,7 @@ The component schema or null if not found
 
 > **getRegisteredComponentNames**(): `symbol`[]
 
-定義於: [index.ts:728](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L728)
+定義於: [index.ts:728](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L728)
 
 #### 回傳
 
@@ -301,7 +301,7 @@ The component schema or null if not found
 
 > **registerComponent**\<`T`\>(`componentName`): `void`
 
-定義於: [index.ts:764](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L764)
+定義於: [index.ts:764](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L764)
 
 #### 型別參數
 
@@ -325,7 +325,7 @@ The component schema or null if not found
 
 > **registerComponentWithSchema**(`schema`): `void`
 
-定義於: [index.ts:845](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L845)
+定義於: [index.ts:845](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L845)
 
 Register a component with a runtime-defined schema.
 This allows components to be defined dynamically (e.g., through a GUI).
@@ -352,7 +352,7 @@ Error if schema validation fails
 
 > **removeComponentFromEntity**\<`T`\>(`componentName`, `entity`): `void`
 
-定義於: [index.ts:796](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L796)
+定義於: [index.ts:796](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L796)
 
 #### 型別參數
 
@@ -380,7 +380,7 @@ Error if schema validation fails
 
 > **validateComponentData**(`componentName`, `data`): `boolean`
 
-定義於: [index.ts:943](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L943)
+定義於: [index.ts:943](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L943)
 
 Validate component data against its schema.
 

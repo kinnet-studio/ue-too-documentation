@@ -2,7 +2,7 @@
 
 # クラス: PlayerSystem
 
-定義: [player-system/player-component.ts:20](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/player-system/player-component.ts#L20)
+定義: [player-system/player-component.ts:20](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/player-system/player-component.ts#L20)
 
 ## 実装
 
@@ -14,7 +14,7 @@
 
 > **new PlayerSystem**(`_coordinator`, `_playerCount`): `PlayerSystem`
 
-定義: [player-system/player-component.ts:23](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/player-system/player-component.ts#L23)
+定義: [player-system/player-component.ts:23](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/player-system/player-component.ts#L23)
 
 #### パラメータ
 
@@ -36,7 +36,7 @@
 
 > **entities**: `Set`\<`number`\>
 
-定義: [player-system/player-component.ts:21](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/player-system/player-component.ts#L21)
+定義: [player-system/player-component.ts:21](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/player-system/player-component.ts#L21)
 
 #### の実装
 
@@ -48,7 +48,7 @@
 
 > **addPlayer**(`name`): `number` \| `null`
 
-定義: [player-system/player-component.ts:41](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/player-system/player-component.ts#L41)
+定義: [player-system/player-component.ts:41](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/player-system/player-component.ts#L41)
 
 #### パラメータ
 
@@ -66,7 +66,7 @@
 
 > **getPlayerOrder**(): `number`[]
 
-定義: [player-system/player-component.ts:155](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/player-system/player-component.ts#L155)
+定義: [player-system/player-component.ts:155](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/player-system/player-component.ts#L155)
 
 #### 戻り値
 
@@ -78,7 +78,7 @@
 
 > **getPlayers**(): `number`[]
 
-定義: [player-system/player-component.ts:70](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/player-system/player-component.ts#L70)
+定義: [player-system/player-component.ts:70](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/player-system/player-component.ts#L70)
 
 #### 戻り値
 
@@ -90,7 +90,7 @@
 
 > **organizePlayerOrder**(): `void`
 
-定義: [player-system/player-component.ts:123](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/player-system/player-component.ts#L123)
+定義: [player-system/player-component.ts:123](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/player-system/player-component.ts#L123)
 
 #### 戻り値
 
@@ -102,7 +102,7 @@
 
 > **playerCount**(): `number`
 
-定義: [player-system/player-component.ts:66](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/player-system/player-component.ts#L66)
+定義: [player-system/player-component.ts:66](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/player-system/player-component.ts#L66)
 
 #### 戻り値
 
@@ -114,7 +114,7 @@
 
 > **removePlayer**(`player`): `void`
 
-定義: [player-system/player-component.ts:54](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/player-system/player-component.ts#L54)
+定義: [player-system/player-component.ts:54](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/player-system/player-component.ts#L54)
 
 #### パラメータ
 
@@ -132,7 +132,7 @@
 
 > **setPlayerOrder**(`players`): `void`
 
-定義: [player-system/player-component.ts:103](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/player-system/player-component.ts#L103)
+定義: [player-system/player-component.ts:103](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/player-system/player-component.ts#L103)
 
 #### パラメータ
 
@@ -150,7 +150,7 @@
 
 > **shufflePlayerOrder**(): `void`
 
-定義: [player-system/player-component.ts:86](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/player-system/player-component.ts#L86)
+定義: [player-system/player-component.ts:86](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/player-system/player-component.ts#L86)
 
 #### 戻り値
 

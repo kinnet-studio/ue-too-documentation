@@ -4,7 +4,7 @@
 
 > **translationWidthOf**(`boundaries`): `number` \| `undefined`
 
-定義: [packages/board/src/camera/utils/position.ts:300](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/utils/position.ts#L300)
+定義: [packages/board/src/camera/utils/position.ts:300](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/utils/position.ts#L300)
 
 Calculates the width (x-axis span) of the boundaries.
 

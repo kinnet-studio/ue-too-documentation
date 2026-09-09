@@ -4,7 +4,7 @@
 
 > **useCanvasSize**(): `object`
 
-Defined in: [board-pixi-react-integration/src/hooks/pixi/utils.ts:12](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-pixi-react-integration/src/hooks/pixi/utils.ts#L12)
+Defined in: [board-pixi-react-integration/src/hooks/pixi/utils.ts:12](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-pixi-react-integration/src/hooks/pixi/utils.ts#L12)
 
 ## Returns
 

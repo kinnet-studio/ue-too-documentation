@@ -4,7 +4,7 @@
 
 > **ComponentName** = `symbol`
 
-Defined in: [index.ts:132](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L132)
+Defined in: [index.ts:132](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L132)
 
 Component name identifier using Symbol for type safety and uniqueness.
 Use [createComponentName](../functions/createComponentName.md) to create component names, or Symbol.for for global symbols.

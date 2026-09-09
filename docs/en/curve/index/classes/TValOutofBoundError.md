@@ -2,7 +2,7 @@
 
 # Class: TValOutofBoundError
 
-Defined in: [packages/curve/src/b-curve.ts:1841](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1841)
+Defined in: [packages/curve/src/b-curve.ts:1841](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/curve/src/b-curve.ts#L1841)
 
 Error thrown when t-value is out of valid range [0, 1].
 
@@ -16,7 +16,7 @@ Error thrown when t-value is out of valid range [0, 1].
 
 > **new TValOutofBoundError**(`message`): `TValOutofBoundError`
 
-Defined in: [packages/curve/src/b-curve.ts:1842](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/curve/src/b-curve.ts#L1842)
+Defined in: [packages/curve/src/b-curve.ts:1842](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/curve/src/b-curve.ts#L1842)
 
 #### Parameters
 

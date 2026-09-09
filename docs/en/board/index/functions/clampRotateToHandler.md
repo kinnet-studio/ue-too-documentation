@@ -4,7 +4,7 @@
 
 > **clampRotateToHandler**(`targetRotation`, `camera`, `config`): `number`
 
-Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:336](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/rotation-handler.ts#L336)
+Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:336](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/rotation-handler.ts#L336)
 
 Handler pipeline step that clamps "rotate to" targets to camera rotation boundaries.
 
