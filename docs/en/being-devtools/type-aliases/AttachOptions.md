@@ -4,7 +4,7 @@
 
 > **AttachOptions** = `object`
 
-Defined in: [registry.ts:35](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being-devtools/src/registry.ts#L35)
+Defined in: [registry.ts:35](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/registry.ts#L35)
 
 Options for attaching one machine.
 
@@ -14,7 +14,7 @@ Options for attaching one machine.
 
 > `optional` **name**: `string`
 
-Defined in: [registry.ts:37](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being-devtools/src/registry.ts#L37)
+Defined in: [registry.ts:37](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/registry.ts#L37)
 
 Tab label. Must be unique within a panel; a collision throws.
 
@@ -24,6 +24,6 @@ Tab label. Must be unique within a panel; a collision throws.
 
 > `optional` **samplePayloads**: `Record`\<`string`, `unknown`\>
 
-Defined in: [registry.ts:39](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being-devtools/src/registry.ts#L39)
+Defined in: [registry.ts:39](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/registry.ts#L39)
 
 Default payload JSON shown under each event's fire button.

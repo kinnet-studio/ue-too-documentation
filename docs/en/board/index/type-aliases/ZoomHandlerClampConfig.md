@@ -4,7 +4,7 @@
 
 > **ZoomHandlerClampConfig** = `object`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:44](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/zoom-handler.ts#L44)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:44](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/zoom-handler.ts#L44)
 
 Configuration for zoom level boundary clamping.
 
@@ -32,6 +32,6 @@ camera.zoomBoundaries = { min: 0.5, max: 4.0 };
 
 > **clampZoom**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:48](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/zoom-handler.ts#L48)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:48](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/zoom-handler.ts#L48)
 
 Whether to enforce zoom level boundaries.

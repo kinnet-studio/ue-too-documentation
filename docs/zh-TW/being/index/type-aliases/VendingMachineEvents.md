@@ -4,7 +4,7 @@
 
 > **VendingMachineEvents** = `object`
 
-定義於: [vending-machine-example.ts:9](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/vending-machine-example.ts#L9)
+定義於: [vending-machine-example.ts:9](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/vending-machine-example.ts#L9)
 
 Events accepted by the [createVendingMachine](../functions/createVendingMachine.md) demo machine.
 
@@ -14,7 +14,7 @@ Events accepted by the [createVendingMachine](../functions/createVendingMachine.
 
 > **cancelTransaction**: `object`
 
-定義於: [vending-machine-example.ts:14](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/vending-machine-example.ts#L14)
+定義於: [vending-machine-example.ts:14](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/vending-machine-example.ts#L14)
 
 ***
 
@@ -22,7 +22,7 @@ Events accepted by the [createVendingMachine](../functions/createVendingMachine.
 
 > **insertBills**: `object`
 
-定義於: [vending-machine-example.ts:10](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/vending-machine-example.ts#L10)
+定義於: [vending-machine-example.ts:10](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/vending-machine-example.ts#L10)
 
 ***
 
@@ -30,7 +30,7 @@ Events accepted by the [createVendingMachine](../functions/createVendingMachine.
 
 > **selectCoke**: `object`
 
-定義於: [vending-machine-example.ts:11](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/vending-machine-example.ts#L11)
+定義於: [vending-machine-example.ts:11](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/vending-machine-example.ts#L11)
 
 ***
 
@@ -38,7 +38,7 @@ Events accepted by the [createVendingMachine](../functions/createVendingMachine.
 
 > **selectRedBull**: `object`
 
-定義於: [vending-machine-example.ts:12](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/vending-machine-example.ts#L12)
+定義於: [vending-machine-example.ts:12](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/vending-machine-example.ts#L12)
 
 ***
 
@@ -46,4 +46,4 @@ Events accepted by the [createVendingMachine](../functions/createVendingMachine.
 
 > **selectWater**: `object`
 
-定義於: [vending-machine-example.ts:13](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/vending-machine-example.ts#L13)
+定義於: [vending-machine-example.ts:13](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/vending-machine-example.ts#L13)

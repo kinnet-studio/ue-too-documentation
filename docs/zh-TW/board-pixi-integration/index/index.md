@@ -11,6 +11,7 @@ Board integration package for uē-tôo.
 ## 介面
 
 - [BaseAppComponents](interfaces/BaseAppComponents.md)
+- [BaseTeardownTarget](interfaces/BaseTeardownTarget.md)
 
 ## 型別別名
 
@@ -18,4 +19,5 @@ Board integration package for uē-tôo.
 
 ## 函式
 
+- [attachBaseTeardown](functions/attachBaseTeardown.md)
 - [baseInitApp](functions/baseInitApp.md)

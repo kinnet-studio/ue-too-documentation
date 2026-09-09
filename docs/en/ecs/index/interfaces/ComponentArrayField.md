@@ -2,7 +2,7 @@
 
 # Interface: ComponentArrayField
 
-Defined in: [index.ts:188](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L188)
+Defined in: [index.ts:188](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L188)
 
 Definition for an array field in a component schema.
 
@@ -16,7 +16,7 @@ Definition for an array field in a component schema.
 
 > **arrayElementType**: [`ArrayElementType`](../type-aliases/ArrayElementType.md)
 
-Defined in: [index.ts:196](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L196)
+Defined in: [index.ts:196](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L196)
 
 The element type for array fields (required).
 Specifies what type each element in the array should be.
@@ -28,7 +28,7 @@ Can be a built-in type or a custom component type name.
 
 > `optional` **defaultValue**: `unknown`
 
-Defined in: [index.ts:172](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L172)
+Defined in: [index.ts:172](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L172)
 
 Default value for the field (used when creating new instances)
 
@@ -42,7 +42,7 @@ Default value for the field (used when creating new instances)
 
 > **name**: `string`
 
-Defined in: [index.ts:168](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L168)
+Defined in: [index.ts:168](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L168)
 
 The name of the field
 
@@ -56,7 +56,7 @@ The name of the field
 
 > `optional` **optional**: `boolean`
 
-Defined in: [index.ts:170](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L170)
+Defined in: [index.ts:170](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L170)
 
 Whether the field is optional (default: false)
 
@@ -70,6 +70,6 @@ Whether the field is optional (default: false)
 
 > **type**: `"array"`
 
-Defined in: [index.ts:190](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L190)
+Defined in: [index.ts:190](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L190)
 
 Discriminator for the union type

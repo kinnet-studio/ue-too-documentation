@@ -2,7 +2,7 @@
 
 # Class: Polygon
 
-Defined in: [rigidbody.ts:729](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L729)
+Defined in: [rigidbody.ts:729](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L729)
 
 Rigid body interface for 2D physics simulation.
 
@@ -24,7 +24,7 @@ Implemented by [Circle](Circle.md) and Polygon classes.
 
 > **new Polygon**(`center`, `vertices`, `_orientationAngle`, `mass`, `isStatic`, `frictionEnabled`): `Polygon`
 
-Defined in: [rigidbody.ts:733](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L733)
+Defined in: [rigidbody.ts:733](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L733)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [rigidbody.ts:733](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > `protected` **\_angularVelocity**: `number`
 
-Defined in: [rigidbody.ts:74](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L74)
+Defined in: [rigidbody.ts:74](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L74)
 
 #### Inherited from
 
@@ -78,7 +78,7 @@ Defined in: [rigidbody.ts:74](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > `protected` **\_center**: `Point`
 
-Defined in: [rigidbody.ts:71](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L71)
+Defined in: [rigidbody.ts:71](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L71)
 
 #### Inherited from
 
@@ -90,7 +90,7 @@ Defined in: [rigidbody.ts:71](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > `protected` **\_linearVelocity**: `Point`
 
-Defined in: [rigidbody.ts:73](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L73)
+Defined in: [rigidbody.ts:73](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L73)
 
 #### Inherited from
 
@@ -102,7 +102,7 @@ Defined in: [rigidbody.ts:73](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > `protected` **\_mass**: `number` = `50`
 
-Defined in: [rigidbody.ts:72](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L72)
+Defined in: [rigidbody.ts:72](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L72)
 
 #### Inherited from
 
@@ -114,7 +114,7 @@ Defined in: [rigidbody.ts:72](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > `protected` **\_orientationAngle**: `number` = `0`
 
-Defined in: [rigidbody.ts:75](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L75)
+Defined in: [rigidbody.ts:75](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L75)
 
 #### Inherited from
 
@@ -126,7 +126,7 @@ Defined in: [rigidbody.ts:75](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > `protected` **\_staticFrictionCoeff**: `number` = `0.3`
 
-Defined in: [rigidbody.ts:79](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L79)
+Defined in: [rigidbody.ts:79](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L79)
 
 #### Inherited from
 
@@ -138,7 +138,7 @@ Defined in: [rigidbody.ts:79](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > `protected` **angularDampingFactor**: `number` = `0.005`
 
-Defined in: [rigidbody.ts:83](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L83)
+Defined in: [rigidbody.ts:83](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L83)
 
 #### Inherited from
 
@@ -150,7 +150,7 @@ Defined in: [rigidbody.ts:83](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > **collisionFilter**: [`CollisionFilter`](../interfaces/CollisionFilter.md)
 
-Defined in: [rigidbody.ts:86](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L86)
+Defined in: [rigidbody.ts:86](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L86)
 
 Collision filtering configuration
 
@@ -164,7 +164,7 @@ Collision filtering configuration
 
 > `protected` **dynamicFrictionCoeff**: `number` = `0.3`
 
-Defined in: [rigidbody.ts:80](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L80)
+Defined in: [rigidbody.ts:80](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L80)
 
 #### Inherited from
 
@@ -176,7 +176,7 @@ Defined in: [rigidbody.ts:80](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > `protected` **force**: `Point`
 
-Defined in: [rigidbody.ts:77](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L77)
+Defined in: [rigidbody.ts:77](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L77)
 
 #### Inherited from
 
@@ -188,7 +188,7 @@ Defined in: [rigidbody.ts:77](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > `protected` **frictionEnabled**: `boolean` = `false`
 
-Defined in: [rigidbody.ts:81](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L81)
+Defined in: [rigidbody.ts:81](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L81)
 
 #### Inherited from
 
@@ -200,7 +200,7 @@ Defined in: [rigidbody.ts:81](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > `protected` **isMovingStaticBody**: `boolean` = `false`
 
-Defined in: [rigidbody.ts:82](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L82)
+Defined in: [rigidbody.ts:82](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L82)
 
 #### Inherited from
 
@@ -212,7 +212,7 @@ Defined in: [rigidbody.ts:82](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > **isSleeping**: `boolean` = `false`
 
-Defined in: [rigidbody.ts:89](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L89)
+Defined in: [rigidbody.ts:89](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L89)
 
 #### Inherited from
 
@@ -224,7 +224,7 @@ Defined in: [rigidbody.ts:89](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > `protected` **isStaticBody**: `boolean` = `false`
 
-Defined in: [rigidbody.ts:78](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L78)
+Defined in: [rigidbody.ts:78](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L78)
 
 #### Inherited from
 
@@ -236,7 +236,7 @@ Defined in: [rigidbody.ts:78](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > `protected` **linearAcceleartion**: `Point`
 
-Defined in: [rigidbody.ts:76](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L76)
+Defined in: [rigidbody.ts:76](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L76)
 
 #### Inherited from
 
@@ -248,7 +248,7 @@ Defined in: [rigidbody.ts:76](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > **sleepThreshold**: `number` = `0.01`
 
-Defined in: [rigidbody.ts:90](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L90)
+Defined in: [rigidbody.ts:90](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L90)
 
 #### Inherited from
 
@@ -260,7 +260,7 @@ Defined in: [rigidbody.ts:90](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > **sleepTime**: `number` = `0.5`
 
-Defined in: [rigidbody.ts:91](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L91)
+Defined in: [rigidbody.ts:91](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L91)
 
 #### Inherited from
 
@@ -272,7 +272,7 @@ Defined in: [rigidbody.ts:91](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > **timeAtRest**: `number` = `0`
 
-Defined in: [rigidbody.ts:92](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L92)
+Defined in: [rigidbody.ts:92](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L92)
 
 #### Inherited from
 
@@ -286,7 +286,7 @@ Defined in: [rigidbody.ts:92](https://github.com/kinnet-studio/ue-too/blob/f9369
 
 > **get** **AABB**(): `object`
 
-Defined in: [rigidbody.ts:810](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L810)
+Defined in: [rigidbody.ts:810](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L810)
 
 Axis-Aligned Bounding Box for broad phase collision
 
@@ -316,7 +316,7 @@ Axis-Aligned Bounding Box for broad phase collision
 
 > **get** **angularVelocity**(): `number`
 
-Defined in: [rigidbody.ts:130](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L130)
+Defined in: [rigidbody.ts:130](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L130)
 
 Angular velocity (radians/second)
 
@@ -328,7 +328,7 @@ Angular velocity (radians/second)
 
 > **set** **angularVelocity**(`angularVelocity`): `void`
 
-Defined in: [rigidbody.ts:134](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L134)
+Defined in: [rigidbody.ts:134](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L134)
 
 Angular velocity (radians/second)
 
@@ -356,7 +356,7 @@ Angular velocity (radians/second)
 
 > **get** **center**(): `Point`
 
-Defined in: [rigidbody.ts:290](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L290)
+Defined in: [rigidbody.ts:290](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L290)
 
 Center position in world coordinates
 
@@ -368,7 +368,7 @@ Center position in world coordinates
 
 > **set** **center**(`dest`): `void`
 
-Defined in: [rigidbody.ts:294](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L294)
+Defined in: [rigidbody.ts:294](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L294)
 
 Center position in world coordinates
 
@@ -396,7 +396,7 @@ Center position in world coordinates
 
 > **get** **linearVelocity**(): `Point`
 
-Defined in: [rigidbody.ts:298](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L298)
+Defined in: [rigidbody.ts:298](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L298)
 
 Linear velocity (pixels/second)
 
@@ -408,7 +408,7 @@ Linear velocity (pixels/second)
 
 > **set** **linearVelocity**(`dest`): `void`
 
-Defined in: [rigidbody.ts:302](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L302)
+Defined in: [rigidbody.ts:302](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L302)
 
 Linear velocity (pixels/second)
 
@@ -436,7 +436,7 @@ Linear velocity (pixels/second)
 
 > **get** **mass**(): `number`
 
-Defined in: [rigidbody.ts:306](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L306)
+Defined in: [rigidbody.ts:306](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L306)
 
 Mass in arbitrary units (affects force response)
 
@@ -458,7 +458,7 @@ Mass in arbitrary units (affects force response)
 
 > **get** **momentOfInertia**(): `number`
 
-Defined in: [rigidbody.ts:944](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L944)
+Defined in: [rigidbody.ts:944](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L944)
 
 Moment of inertia (rotational mass)
 
@@ -480,7 +480,7 @@ Moment of inertia (rotational mass)
 
 > **get** **orientationAngle**(): `number`
 
-Defined in: [rigidbody.ts:138](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L138)
+Defined in: [rigidbody.ts:138](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L138)
 
 Rotation angle in radians
 
@@ -502,7 +502,7 @@ Rotation angle in radians
 
 > **get** **staticFrictionCoeff**(): `number`
 
-Defined in: [rigidbody.ts:310](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L310)
+Defined in: [rigidbody.ts:310](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L310)
 
 Static friction coefficient (0-1)
 
@@ -514,7 +514,7 @@ Static friction coefficient (0-1)
 
 > **set** **staticFrictionCoeff**(`coeff`): `void`
 
-Defined in: [rigidbody.ts:314](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L314)
+Defined in: [rigidbody.ts:314](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L314)
 
 Static friction coefficient (0-1)
 
@@ -540,7 +540,7 @@ Static friction coefficient (0-1)
 
 > **applyForce**(`force`): `void`
 
-Defined in: [rigidbody.ts:162](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L162)
+Defined in: [rigidbody.ts:162](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L162)
 
 #### Parameters
 
@@ -562,7 +562,7 @@ Defined in: [rigidbody.ts:162](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **applyForceInOrientation**(`force`): `void`
 
-Defined in: [rigidbody.ts:170](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L170)
+Defined in: [rigidbody.ts:170](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L170)
 
 #### Parameters
 
@@ -584,7 +584,7 @@ Defined in: [rigidbody.ts:170](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **getAdjacentFaces**(`collisionNormal`): `object`[]
 
-Defined in: [rigidbody.ts:865](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L865)
+Defined in: [rigidbody.ts:865](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L865)
 
 #### Parameters
 
@@ -606,7 +606,7 @@ Defined in: [rigidbody.ts:865](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **getCenter**(): `Point`
 
-Defined in: [rigidbody.ts:122](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L122)
+Defined in: [rigidbody.ts:122](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L122)
 
 #### Returns
 
@@ -622,7 +622,7 @@ Defined in: [rigidbody.ts:122](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **getCollisionAxes**(`relativeBody`): `Point`[]
 
-Defined in: [rigidbody.ts:785](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L785)
+Defined in: [rigidbody.ts:785](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L785)
 
 #### Parameters
 
@@ -644,7 +644,7 @@ Defined in: [rigidbody.ts:785](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **getMinMaxProjection**(`unitvector`): `object`
 
-Defined in: [rigidbody.ts:800](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L800)
+Defined in: [rigidbody.ts:800](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L800)
 
 #### Parameters
 
@@ -674,7 +674,7 @@ Defined in: [rigidbody.ts:800](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **getNormalOfSignificantFace**(`collisionNormal`): `Point`
 
-Defined in: [rigidbody.ts:859](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L859)
+Defined in: [rigidbody.ts:859](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L859)
 
 #### Parameters
 
@@ -696,7 +696,7 @@ Defined in: [rigidbody.ts:859](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **getOrientationAngle**(): `number`
 
-Defined in: [rigidbody.ts:126](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L126)
+Defined in: [rigidbody.ts:126](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L126)
 
 #### Returns
 
@@ -712,7 +712,7 @@ Defined in: [rigidbody.ts:126](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **getSignificantVertices**(`collisionNormal`): `Point`[]
 
-Defined in: [rigidbody.ts:831](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L831)
+Defined in: [rigidbody.ts:831](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L831)
 
 #### Parameters
 
@@ -734,7 +734,7 @@ Defined in: [rigidbody.ts:831](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **getVerticesAbsCoord**(): `Point`[]
 
-Defined in: [rigidbody.ts:776](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L776)
+Defined in: [rigidbody.ts:776](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L776)
 
 #### Returns
 
@@ -746,7 +746,7 @@ Defined in: [rigidbody.ts:776](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **isMovingStatic**(): `boolean`
 
-Defined in: [rigidbody.ts:146](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L146)
+Defined in: [rigidbody.ts:146](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L146)
 
 #### Returns
 
@@ -762,7 +762,7 @@ Defined in: [rigidbody.ts:146](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **isStatic**(): `boolean`
 
-Defined in: [rigidbody.ts:142](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L142)
+Defined in: [rigidbody.ts:142](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L142)
 
 #### Returns
 
@@ -778,7 +778,7 @@ Defined in: [rigidbody.ts:142](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **move**(`delta`): `void`
 
-Defined in: [rigidbody.ts:112](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L112)
+Defined in: [rigidbody.ts:112](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L112)
 
 #### Parameters
 
@@ -800,7 +800,7 @@ Defined in: [rigidbody.ts:112](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **rotateRadians**(`angle`): `void`
 
-Defined in: [rigidbody.ts:118](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L118)
+Defined in: [rigidbody.ts:118](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L118)
 
 #### Parameters
 
@@ -822,7 +822,7 @@ Defined in: [rigidbody.ts:118](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **setLinearVelocity**(`linearVelocity`): `void`
 
-Defined in: [rigidbody.ts:150](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L150)
+Defined in: [rigidbody.ts:150](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L150)
 
 #### Parameters
 
@@ -844,7 +844,7 @@ Defined in: [rigidbody.ts:150](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **setMovingStatic**(`movingStatic`): `void`
 
-Defined in: [rigidbody.ts:154](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L154)
+Defined in: [rigidbody.ts:154](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L154)
 
 #### Parameters
 
@@ -866,7 +866,7 @@ Defined in: [rigidbody.ts:154](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **setOrientationAngle**(`angle`): `void`
 
-Defined in: [rigidbody.ts:158](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L158)
+Defined in: [rigidbody.ts:158](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L158)
 
 #### Parameters
 
@@ -888,7 +888,7 @@ Defined in: [rigidbody.ts:158](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **setSleeping**(`sleeping`): `void`
 
-Defined in: [rigidbody.ts:334](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L334)
+Defined in: [rigidbody.ts:334](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L334)
 
 #### Parameters
 
@@ -910,7 +910,7 @@ Defined in: [rigidbody.ts:334](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **significantVertex**(`collisionNormal`): `Point`
 
-Defined in: [rigidbody.ts:820](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L820)
+Defined in: [rigidbody.ts:820](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L820)
 
 #### Parameters
 
@@ -932,7 +932,7 @@ Defined in: [rigidbody.ts:820](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **step**(`deltaTime`): `void`
 
-Defined in: [rigidbody.ts:186](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L186)
+Defined in: [rigidbody.ts:186](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L186)
 
 #### Parameters
 
@@ -954,7 +954,7 @@ Defined in: [rigidbody.ts:186](https://github.com/kinnet-studio/ue-too/blob/f936
 
 > **updateSleeping**(`deltaTime`): `void`
 
-Defined in: [rigidbody.ts:345](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/dynamics/src/rigidbody.ts#L345)
+Defined in: [rigidbody.ts:345](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/rigidbody.ts#L345)
 
 #### Parameters
 

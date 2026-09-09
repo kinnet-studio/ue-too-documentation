@@ -4,7 +4,7 @@
 
 > **pointIsInViewPort**(`point`, `viewPortWidth`, `viewPortHeight`, `cameraPosition`, `cameraZoomLevel`, `cameraRotation`): `boolean`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:314](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/utils/coordinate-conversion.ts#L314)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:314](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/utils/coordinate-conversion.ts#L314)
 
 Checks if a world point is currently visible in the viewport.
 

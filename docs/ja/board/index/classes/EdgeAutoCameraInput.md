@@ -2,7 +2,7 @@
 
 # クラス: EdgeAutoCameraInput
 
-定義: [packages/board/src/camera/camera-edge-auto-input.ts:53](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-edge-auto-input.ts#L53)
+定義: [packages/board/src/camera/camera-edge-auto-input.ts:53](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-edge-auto-input.ts#L53)
 
 Automatic camera panning triggered by cursor proximity to viewport edges.
 Commonly used in strategy games, map editors, and design tools.
@@ -60,7 +60,7 @@ function render(deltaTime: number) {
 
 > **new EdgeAutoCameraInput**(`cameraMux`): `EdgeAutoCameraInput`
 
-定義: [packages/board/src/camera/camera-edge-auto-input.ts:66](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-edge-auto-input.ts#L66)
+定義: [packages/board/src/camera/camera-edge-auto-input.ts:66](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-edge-auto-input.ts#L66)
 
 Creates a new edge auto-scroll input controller.
 
@@ -82,7 +82,7 @@ The camera multiplexer to send pan inputs to
 
 > **setDirection**(`horizontalDirection`, `verticalDirection`): `void`
 
-定義: [packages/board/src/camera/camera-edge-auto-input.ts:103](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-edge-auto-input.ts#L103)
+定義: [packages/board/src/camera/camera-edge-auto-input.ts:103](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-edge-auto-input.ts#L103)
 
 Sets the scrolling direction based on cursor position relative to edges.
 
@@ -123,7 +123,7 @@ edgeScroll.setDirection('none', 'none');  // Stop scrolling
 
 > **toggleOff**(): `void`
 
-定義: [packages/board/src/camera/camera-edge-auto-input.ts:74](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-edge-auto-input.ts#L74)
+定義: [packages/board/src/camera/camera-edge-auto-input.ts:74](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-edge-auto-input.ts#L74)
 
 Disables edge scrolling.
 The camera will stop panning even if direction is set.
@@ -138,7 +138,7 @@ The camera will stop panning even if direction is set.
 
 > **toggleOn**(): `void`
 
-定義: [packages/board/src/camera/camera-edge-auto-input.ts:82](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-edge-auto-input.ts#L82)
+定義: [packages/board/src/camera/camera-edge-auto-input.ts:82](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-edge-auto-input.ts#L82)
 
 Enables edge scrolling.
 The camera will pan according to the current direction setting.
@@ -153,7 +153,7 @@ The camera will pan according to the current direction setting.
 
 > **update**(`deltaTime`): `void`
 
-定義: [packages/board/src/camera/camera-edge-auto-input.ts:138](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-edge-auto-input.ts#L138)
+定義: [packages/board/src/camera/camera-edge-auto-input.ts:138](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-edge-auto-input.ts#L138)
 
 Updates the camera position based on elapsed time and current direction.
 Call this in your render loop or update tick.

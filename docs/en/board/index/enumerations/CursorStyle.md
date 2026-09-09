@@ -2,7 +2,7 @@
 
 # Enumeration: CursorStyle
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:25](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L25)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:25](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L25)
 
 Cursor styles used to provide visual feedback for different input states.
 
@@ -19,7 +19,7 @@ These cursor styles indicate the current interaction mode to users:
 
 > **DEFAULT**: `"default"`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **GRAB**: `"grab"`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:26](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L26)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:26](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L26)
 
 ***
 
@@ -35,4 +35,4 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **GRABBING**: `"grabbing"`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:28](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L28)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:28](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L28)

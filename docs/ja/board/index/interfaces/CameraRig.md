@@ -2,7 +2,7 @@
 
 # インターフェイス: CameraRig
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:72](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L72)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:72](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L72)
 
 High-level camera control interface providing intuitive methods for pan, zoom, and rotation.
 The camera rig acts as a facade over the camera, handling coordinate conversions and constraints.
@@ -33,7 +33,7 @@ The rig ensures correct transformation order when combining operations
 
 > **camera**: [`ObservableBoardCamera`](ObservableBoardCamera.md)
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:74](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L74)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:74](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L74)
 
 The underlying observable camera being controlled
 
@@ -43,7 +43,7 @@ The underlying observable camera being controlled
 
 > **config**: [`CameraRigConfig`](../type-aliases/CameraRigConfig.md)
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:77](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L77)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:77](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L77)
 
 Current configuration for all camera operations
 
@@ -53,7 +53,7 @@ Current configuration for all camera operations
 
 > **panByViewPort**: (`delta`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:94](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L94)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:94](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L94)
 
 Pans the camera by a delta in viewport coordinates.
 
@@ -75,7 +75,7 @@ Movement delta in viewport space (CSS pixels, origin at center)
 
 > **panByWorld**: (`delta`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:106](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L106)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:106](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L106)
 
 Pans the camera by a delta in world coordinates.
 
@@ -97,7 +97,7 @@ Movement delta in world space
 
 > **panToViewPort**: (`target`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:100](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L100)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:100](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L100)
 
 Pans the camera to a target position in viewport coordinates.
 
@@ -119,7 +119,7 @@ Target position in viewport space
 
 > **panToWorld**: (`target`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:112](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L112)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:112](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L112)
 
 Pans the camera to a target position in world coordinates.
 
@@ -141,7 +141,7 @@ Target position in world space
 
 > **rotateBy**: (`delta`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:118](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L118)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:118](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L118)
 
 Rotates the camera by a delta angle.
 
@@ -163,7 +163,7 @@ Rotation delta in radians
 
 > **rotateTo**: (`target`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:124](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L124)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:124](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L124)
 
 Rotates the camera to a target angle.
 
@@ -185,7 +185,7 @@ Target rotation in radians
 
 > **zoomBy**: (`delta`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:150](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L150)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:150](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L150)
 
 Zooms by a delta at viewport center.
 
@@ -207,7 +207,7 @@ Zoom delta
 
 > **zoomByAt**: (`delta`, `at`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:138](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L138)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:138](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L138)
 
 Zooms by a delta, keeping a viewport point stationary.
 
@@ -235,7 +235,7 @@ Anchor point in viewport coordinates
 
 > **zoomByAtWorld**: (`delta`, `at`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:164](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L164)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:164](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L164)
 
 Zooms by a delta, keeping a world point stationary.
 
@@ -263,7 +263,7 @@ Anchor point in world coordinates
 
 > **zoomTo**: (`targetZoom`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:144](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L144)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:144](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L144)
 
 Zooms to a target level at viewport center.
 
@@ -285,7 +285,7 @@ Target zoom level
 
 > **zoomToAt**: (`targetZoom`, `at`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:131](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L131)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:131](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L131)
 
 Zooms to a target level, keeping a viewport point stationary.
 
@@ -313,7 +313,7 @@ Anchor point in viewport coordinates
 
 > **zoomToAtWorld**: (`targetZoom`, `at`) => `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:157](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L157)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:157](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L157)
 
 Zooms to a target level, keeping a world point stationary.
 
@@ -357,7 +357,7 @@ Anchor point in world coordinates
 
 > **configure**(`config`): `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:83](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L83)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:83](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L83)
 
 Updates the camera rig configuration.
 
@@ -395,7 +395,7 @@ Partial configuration to merge with current config
 
 > **update**(): `void`
 
-定義: [packages/board/src/camera/camera-rig/camera-rig.ts:88](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/camera-rig.ts#L88)
+定義: [packages/board/src/camera/camera-rig/camera-rig.ts:88](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L88)
 
 Updates the camera rig state (called per frame if needed).
 

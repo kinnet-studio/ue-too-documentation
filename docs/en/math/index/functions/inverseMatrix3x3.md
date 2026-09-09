@@ -4,7 +4,7 @@
 
 > **inverseMatrix3x3**(`m`): [`Matrix3x3`](../interfaces/Matrix3x3.md) \| `null`
 
-Defined in: [matrix.ts:43](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/math/src/matrix.ts#L43)
+Defined in: [matrix.ts:43](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/matrix.ts#L43)
 
 ## Parameters
 

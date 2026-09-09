@@ -4,7 +4,7 @@
 
 > **point** = `object`
 
-Defined in: [index.ts:62](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/math/src/index.ts#L62)
+Defined in: [index.ts:62](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/index.ts#L62)
 
 Represents a 2D or 3D point with optional z-coordinate.
 
@@ -23,7 +23,7 @@ Use [Point](Point-1.md) instead for better TypeScript conventions.
 
 > **x**: `number`
 
-Defined in: [index.ts:64](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/math/src/index.ts#L64)
+Defined in: [index.ts:64](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/index.ts#L64)
 
 X-coordinate
 
@@ -33,7 +33,7 @@ X-coordinate
 
 > **y**: `number`
 
-Defined in: [index.ts:66](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/math/src/index.ts#L66)
+Defined in: [index.ts:66](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/index.ts#L66)
 
 Y-coordinate
 
@@ -43,6 +43,6 @@ Y-coordinate
 
 > `optional` **z**: `number`
 
-Defined in: [index.ts:68](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/math/src/index.ts#L68)
+Defined in: [index.ts:68](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/index.ts#L68)
 
 Optional Z-coordinate for 3D operations

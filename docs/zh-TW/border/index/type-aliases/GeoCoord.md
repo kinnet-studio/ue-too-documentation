@@ -4,7 +4,7 @@
 
 > **GeoCoord** = `object`
 
-定義於: [projection.ts:13](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/border/src/projection.ts#L13)
+定義於: [projection.ts:13](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/border/src/projection.ts#L13)
 
 Geographic coordinate representing a location on Earth's surface.
 
@@ -20,7 +20,7 @@ Coordinates use the WGS84 standard:
 
 > **latitude**: `number`
 
-定義於: [projection.ts:17](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/border/src/projection.ts#L17)
+定義於: [projection.ts:17](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/border/src/projection.ts#L17)
 
 Latitude in degrees (-90 to 90)
 
@@ -30,6 +30,6 @@ Latitude in degrees (-90 to 90)
 
 > **longitude**: `number`
 
-定義於: [projection.ts:15](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/border/src/projection.ts#L15)
+定義於: [projection.ts:15](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/border/src/projection.ts#L15)
 
 Longitude in degrees (-180 to 180)

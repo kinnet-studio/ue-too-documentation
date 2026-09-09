@@ -4,6 +4,6 @@
 
 > `const` **TEXT\_MAJOR\_TICK\_FONT\_SIZE**: `20` = `20`
 
-Defined in: [packages/board/src/utils/drawing.ts:122](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/utils/drawing.ts#L122)
+Defined in: [packages/board/src/utils/drawing.ts:122](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/utils/drawing.ts#L122)
 
 Font size for major tick labels in pixels (viewport space).

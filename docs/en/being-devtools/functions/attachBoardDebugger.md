@@ -4,7 +4,7 @@
 
 > **attachBoardDebugger**(`board`, `options?`): [`AttachHandle`](../type-aliases/AttachHandle.md)
 
-Defined in: [attach.ts:112](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being-devtools/src/attach.ts#L112)
+Defined in: [attach.ts:112](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/attach.ts#L112)
 
 Attaches every `being` machine a `Board` exposes — keyboard/mouse input,
 touch input, pan, zoom, and rotation control — to the shared panel.

@@ -4,7 +4,7 @@
 
 > **CameraZoomEventPayload** = `object`
 
-定義於: [packages/board/src/camera/update-publisher.ts:29](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/update-publisher.ts#L29)
+定義於: [packages/board/src/camera/update-publisher.ts:29](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/update-publisher.ts#L29)
 
 Payload for camera zoom (scale change) events.
 
@@ -14,6 +14,6 @@ Payload for camera zoom (scale change) events.
 
 > **deltaZoomAmount**: `number`
 
-定義於: [packages/board/src/camera/update-publisher.ts:31](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/update-publisher.ts#L31)
+定義於: [packages/board/src/camera/update-publisher.ts:31](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/update-publisher.ts#L31)
 
 Change in zoom level (positive = zoom in, negative = zoom out)

@@ -4,7 +4,7 @@
 
 > **OrthoGridComponent** = `object`
 
-Defined in: [grid-system/ortho-grid.ts:17](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/ortho-grid.ts#L17)
+Defined in: [grid-system/ortho-grid.ts:17](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/grid-system/ortho-grid.ts#L17)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [grid-system/ortho-grid.ts:17](https://github.com/kinnet-studio/ue-t
 
 > **columns**: `number`
 
-Defined in: [grid-system/ortho-grid.ts:20](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/ortho-grid.ts#L20)
+Defined in: [grid-system/ortho-grid.ts:20](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/grid-system/ortho-grid.ts#L20)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [grid-system/ortho-grid.ts:20](https://github.com/kinnet-studio/ue-t
 
 > **name**: `string`
 
-Defined in: [grid-system/ortho-grid.ts:18](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/ortho-grid.ts#L18)
+Defined in: [grid-system/ortho-grid.ts:18](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/grid-system/ortho-grid.ts#L18)
 
 ***
 
@@ -28,4 +28,4 @@ Defined in: [grid-system/ortho-grid.ts:18](https://github.com/kinnet-studio/ue-t
 
 > **rows**: `number`
 
-Defined in: [grid-system/ortho-grid.ts:19](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/ortho-grid.ts#L19)
+Defined in: [grid-system/ortho-grid.ts:19](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/grid-system/ortho-grid.ts#L19)

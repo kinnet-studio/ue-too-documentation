@@ -2,7 +2,7 @@
 
 # 類別: InputOrchestrator
 
-定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:75](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-orchestrator.ts#L75)
+定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:75](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/input-interpretation/input-orchestrator.ts#L75)
 
 Central orchestrator that coordinates input interpretation and camera control for the infinite canvas.
 
@@ -59,7 +59,7 @@ publisher.on("pan", (event) => {
 
 > **new InputOrchestrator**(`cameraMux`, `cameraRig`, `publisher?`): `InputOrchestrator`
 
-定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:91](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-orchestrator.ts#L91)
+定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:91](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/input-interpretation/input-orchestrator.ts#L91)
 
 Creates a new InputOrchestrator instance.
 
@@ -100,7 +100,7 @@ When provided, all input events are broadcast in parallel to camera control exec
 
 > **get** **cameraMux**(): [`CameraMux`](../interfaces/CameraMux.md)
 
-定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:288](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-orchestrator.ts#L288)
+定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:288](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/input-interpretation/input-orchestrator.ts#L288)
 
 Gets the CameraMux instance for direct access to permission control.
 
@@ -114,7 +114,7 @@ The camera multiplexer instance
 
 > **set** **cameraMux**(`cameraMux`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:300](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-orchestrator.ts#L300)
+定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:300](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/input-interpretation/input-orchestrator.ts#L300)
 
 Sets a new CameraMux instance.
 
@@ -142,7 +142,7 @@ The new camera multiplexer to use for permission control
 
 > **get** **publisher**(): [`UserInputPublisher`](../interfaces/UserInputPublisher.md) \| `undefined`
 
-定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:279](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-orchestrator.ts#L279)
+定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:279](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/input-interpretation/input-orchestrator.ts#L279)
 
 Gets the UserInputPublisher for direct access to event subscription.
 
@@ -162,7 +162,7 @@ The publisher instance, or undefined if not configured
 
 > **processInputEvent**(`input`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:136](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-orchestrator.ts#L136)
+定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:136](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/input-interpretation/input-orchestrator.ts#L136)
 
 #### 參數
 
@@ -180,7 +180,7 @@ The publisher instance, or undefined if not configured
 
 > **processInputEventOutput**(`output`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:122](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-orchestrator.ts#L122)
+定義於: [packages/board/src/input-interpretation/input-orchestrator.ts:122](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/input-interpretation/input-orchestrator.ts#L122)
 
 Processes output events from state machines and routes them to camera control and observers.
 

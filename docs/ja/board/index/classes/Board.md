@@ -2,7 +2,7 @@
 
 # クラス: Board
 
-定義: [packages/board/src/boardify/index.ts:233](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L233)
+定義: [packages/board/src/boardify/index.ts:233](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L233)
 
 Main user-facing API class that provides an infinite canvas with pan, zoom, and rotate capabilities.
 
@@ -160,7 +160,7 @@ board.attach(canvasElement);
 
 > **get** **alignCoordinateSystem**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:558](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L558)
+定義: [packages/board/src/boardify/index.ts:558](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L558)
 
 ##### 戻り値
 
@@ -170,7 +170,7 @@ board.attach(canvasElement);
 
 > **set** **alignCoordinateSystem**(`align`): `void`
 
-定義: [packages/board/src/boardify/index.ts:552](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L552)
+定義: [packages/board/src/boardify/index.ts:552](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L552)
 
 ##### Description
 
@@ -196,7 +196,7 @@ If you change this value during runtime, you should update the context to be ali
 
 > **get** **camera**(): [`ObservableBoardCamera`](../interfaces/ObservableBoardCamera.md)
 
-定義: [packages/board/src/boardify/index.ts:707](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L707)
+定義: [packages/board/src/boardify/index.ts:707](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L707)
 
 ##### Description
 
@@ -211,7 +211,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **set** **camera**(`camera`): `void`
 
-定義: [packages/board/src/boardify/index.ts:711](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L711)
+定義: [packages/board/src/boardify/index.ts:711](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L711)
 
 ##### パラメータ
 
@@ -231,7 +231,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **get** **cameraMux**(): [`CameraMux`](../interfaces/CameraMux.md)
 
-定義: [packages/board/src/boardify/index.ts:721](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L721)
+定義: [packages/board/src/boardify/index.ts:721](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L721)
 
 ##### 戻り値
 
@@ -241,7 +241,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **set** **cameraMux**(`cameraMux`): `void`
 
-定義: [packages/board/src/boardify/index.ts:725](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L725)
+定義: [packages/board/src/boardify/index.ts:725](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L725)
 
 ##### パラメータ
 
@@ -261,7 +261,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **get** **canvasDimensions**(): [`CanvasDimensions`](../type-aliases/CanvasDimensions.md)
 
-定義: [packages/board/src/boardify/index.ts:1069](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1069)
+定義: [packages/board/src/boardify/index.ts:1069](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1069)
 
 ##### 戻り値
 
@@ -275,7 +275,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **get** **clampRotation**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:1014](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1014)
+定義: [packages/board/src/boardify/index.ts:1014](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1014)
 
 ##### 戻り値
 
@@ -285,7 +285,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **set** **clampRotation**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:1018](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1018)
+定義: [packages/board/src/boardify/index.ts:1018](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1018)
 
 ##### パラメータ
 
@@ -305,7 +305,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **get** **clampTranslation**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:998](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L998)
+定義: [packages/board/src/boardify/index.ts:998](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L998)
 
 ##### 戻り値
 
@@ -315,7 +315,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **set** **clampTranslation**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:1002](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1002)
+定義: [packages/board/src/boardify/index.ts:1002](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1002)
 
 ##### パラメータ
 
@@ -335,7 +335,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **get** **clampZoom**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:1006](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1006)
+定義: [packages/board/src/boardify/index.ts:1006](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1006)
 
 ##### 戻り値
 
@@ -345,7 +345,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **set** **clampZoom**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:1010](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1010)
+定義: [packages/board/src/boardify/index.ts:1010](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1010)
 
 ##### パラメータ
 
@@ -365,7 +365,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **get** **context**(): `CanvasRenderingContext2D` \| `undefined`
 
-定義: [packages/board/src/boardify/index.ts:582](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L582)
+定義: [packages/board/src/boardify/index.ts:582](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L582)
 
 ##### Description
 
@@ -384,7 +384,7 @@ If alignCoordinateSystem is false, this returns a proxy that automatically negat
 
 > **get** **fullScreen**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:566](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L566)
+定義: [packages/board/src/boardify/index.ts:566](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L566)
 
 ##### Description
 
@@ -399,7 +399,7 @@ and the width and height of the board will resize with the window.
 
 > **set** **fullScreen**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:570](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L570)
+定義: [packages/board/src/boardify/index.ts:570](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L570)
 
 ##### パラメータ
 
@@ -419,7 +419,7 @@ and the width and height of the board will resize with the window.
 
 > **get** **height**(): `number`
 
-定義: [packages/board/src/boardify/index.ts:543](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L543)
+定義: [packages/board/src/boardify/index.ts:543](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L543)
 
 ##### 戻り値
 
@@ -433,7 +433,7 @@ and the width and height of the board will resize with the window.
 
 > **get** **inputMode**(): `"kmt"` \| `"trackpad"` \| `"TBD"`
 
-定義: [packages/board/src/boardify/index.ts:1036](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1036)
+定義: [packages/board/src/boardify/index.ts:1036](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1036)
 
 The current input modality.
 
@@ -452,7 +452,7 @@ auto-detection is active and has not yet committed to a mode.
 
 > **get** **inputOrchestrator**(): [`InputOrchestrator`](InputOrchestrator.md)
 
-定義: [packages/board/src/boardify/index.ts:518](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L518)
+定義: [packages/board/src/boardify/index.ts:518](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L518)
 
 ##### 戻り値
 
@@ -466,7 +466,7 @@ auto-detection is active and has not yet committed to a mode.
 
 > **get** **kmtInputStateMachine**(): [`KmtInputStateMachine`](../type-aliases/KmtInputStateMachine.md) \| `undefined`
 
-定義: [packages/board/src/boardify/index.ts:648](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L648)
+定義: [packages/board/src/boardify/index.ts:648](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L648)
 
 The keyboard/mouse/trackpad input state machine currently driving the
 board, read from the active parser so it stays correct after a
@@ -503,7 +503,7 @@ expose one.
 
 > **get** **kmtParser**(): [`KMTEventParser`](../interfaces/KMTEventParser.md)
 
-定義: [packages/board/src/boardify/index.ts:621](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L621)
+定義: [packages/board/src/boardify/index.ts:621](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L621)
 
 ##### 戻り値
 
@@ -513,7 +513,7 @@ expose one.
 
 > **set** **kmtParser**(`parser`): `void`
 
-定義: [packages/board/src/boardify/index.ts:611](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L611)
+定義: [packages/board/src/boardify/index.ts:611](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L611)
 
 ##### Description
 
@@ -538,7 +538,7 @@ You can implement your own strategy by implementing the BoardKMTStrategy interfa
 
 > **get** **limitEntireViewPort**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:603](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L603)
+定義: [packages/board/src/boardify/index.ts:603](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L603)
 
 ##### 戻り値
 
@@ -548,7 +548,7 @@ You can implement your own strategy by implementing the BoardKMTStrategy interfa
 
 > **set** **limitEntireViewPort**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:593](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L593)
+定義: [packages/board/src/boardify/index.ts:593](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L593)
 
 ##### Description
 
@@ -573,7 +573,7 @@ If set to false, only the center of the camera is bounded by the boundaries.
 
 > **get** **maxHalfTransHeight**(): `number` \| `undefined`
 
-定義: [packages/board/src/boardify/index.ts:849](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L849)
+定義: [packages/board/src/boardify/index.ts:849](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L849)
 
 ##### Description
 
@@ -591,7 +591,7 @@ The max translation height of the camera. This is the maximum distance the camer
 
 > **get** **maxHalfTransWidth**(): `number` \| `undefined`
 
-定義: [packages/board/src/boardify/index.ts:856](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L856)
+定義: [packages/board/src/boardify/index.ts:856](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L856)
 
 ##### Description
 
@@ -609,7 +609,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **get** **restrictRelativeXTranslation**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:950](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L950)
+定義: [packages/board/src/boardify/index.ts:950](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L950)
 
 ##### 戻り値
 
@@ -619,7 +619,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **set** **restrictRelativeXTranslation**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:966](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L966)
+定義: [packages/board/src/boardify/index.ts:966](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L966)
 
 ##### パラメータ
 
@@ -639,7 +639,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **get** **restrictRelativeYTranslation**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:954](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L954)
+定義: [packages/board/src/boardify/index.ts:954](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L954)
 
 ##### 戻り値
 
@@ -649,7 +649,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **set** **restrictRelativeYTranslation**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:970](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L970)
+定義: [packages/board/src/boardify/index.ts:970](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L970)
 
 ##### パラメータ
 
@@ -669,7 +669,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **get** **restrictRotation**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:990](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L990)
+定義: [packages/board/src/boardify/index.ts:990](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L990)
 
 ##### 戻り値
 
@@ -679,7 +679,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **set** **restrictRotation**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:994](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L994)
+定義: [packages/board/src/boardify/index.ts:994](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L994)
 
 ##### パラメータ
 
@@ -699,7 +699,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **get** **restrictXTranslation**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:958](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L958)
+定義: [packages/board/src/boardify/index.ts:958](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L958)
 
 ##### 戻り値
 
@@ -709,7 +709,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **set** **restrictXTranslation**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:974](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L974)
+定義: [packages/board/src/boardify/index.ts:974](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L974)
 
 ##### パラメータ
 
@@ -729,7 +729,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **get** **restrictYTranslation**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:962](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L962)
+定義: [packages/board/src/boardify/index.ts:962](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L962)
 
 ##### 戻り値
 
@@ -739,7 +739,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **set** **restrictYTranslation**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:978](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L978)
+定義: [packages/board/src/boardify/index.ts:978](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L978)
 
 ##### パラメータ
 
@@ -759,7 +759,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **get** **restrictZoom**(): `boolean`
 
-定義: [packages/board/src/boardify/index.ts:982](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L982)
+定義: [packages/board/src/boardify/index.ts:982](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L982)
 
 ##### 戻り値
 
@@ -769,7 +769,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **set** **restrictZoom**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:986](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L986)
+定義: [packages/board/src/boardify/index.ts:986](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L986)
 
 ##### パラメータ
 
@@ -789,7 +789,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **get** **touchInputStateMachine**(): [`TouchInputStateMachine`](../type-aliases/TouchInputStateMachine.md) \| `undefined`
 
-定義: [packages/board/src/boardify/index.ts:696](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L696)
+定義: [packages/board/src/boardify/index.ts:696](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L696)
 
 The touch input state machine currently driving the board, read from
 the active parser so it stays correct after a [touchParser](#touchparser) swap.
@@ -826,7 +826,7 @@ expose one.
 
 > **get** **touchParser**(): [`TouchEventParser`](../interfaces/TouchEventParser.md)
 
-定義: [packages/board/src/boardify/index.ts:669](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L669)
+定義: [packages/board/src/boardify/index.ts:669](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L669)
 
 ##### 戻り値
 
@@ -836,7 +836,7 @@ expose one.
 
 > **set** **touchParser**(`parser`): `void`
 
-定義: [packages/board/src/boardify/index.ts:659](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L659)
+定義: [packages/board/src/boardify/index.ts:659](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L659)
 
 ##### Description
 
@@ -861,7 +861,7 @@ You can have your own parser by implementing the BoardTouchParser interface.
 
 > **get** **width**(): `number`
 
-定義: [packages/board/src/boardify/index.ts:539](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L539)
+定義: [packages/board/src/boardify/index.ts:539](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L539)
 
 ##### 戻り値
 
@@ -873,7 +873,7 @@ You can have your own parser by implementing the BoardTouchParser interface.
 
 > **convertWindowPoint2WorldCoord**(`clickPointInWindow`): `Point`
 
-定義: [packages/board/src/boardify/index.ts:801](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L801)
+定義: [packages/board/src/boardify/index.ts:801](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L801)
 
 TODO add the option to make the camera position to be at the top left corner of the canvas; or better yet any point in the viewport (within the viewport boundaries)
 
@@ -901,7 +901,7 @@ Converts a point from window coordinates to world coordinates.
 
 > **disableEventListeners**(): `void`
 
-定義: [packages/board/src/boardify/index.ts:508](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L508)
+定義: [packages/board/src/boardify/index.ts:508](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L508)
 
 #### 戻り値
 
@@ -913,7 +913,7 @@ Converts a point from window coordinates to world coordinates.
 
 > **enableAutoInputMode**(): `void`
 
-定義: [packages/board/src/boardify/index.ts:1061](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1061)
+定義: [packages/board/src/boardify/index.ts:1061](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1061)
 
 Returns the board to auto-detection of input modality after a manual lock
 set via [setInputMode](#setinputmode) or [toggleInputMode](#toggleinputmode).
@@ -930,7 +930,7 @@ The mode reverts to `'TBD'` until auto-detection commits to a mode.
 
 > **enableEventListeners**(): `void`
 
-定義: [packages/board/src/boardify/index.ts:513](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L513)
+定義: [packages/board/src/boardify/index.ts:513](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L513)
 
 #### 戻り値
 
@@ -942,7 +942,7 @@ The mode reverts to `'TBD'` until auto-detection commits to a mode.
 
 > **getCameraRig**(): [`CameraRig`](../interfaces/CameraRig.md)
 
-定義: [packages/board/src/boardify/index.ts:1022](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1022)
+定義: [packages/board/src/boardify/index.ts:1022](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1022)
 
 #### 戻り値
 
@@ -954,7 +954,7 @@ The mode reverts to `'TBD'` until auto-detection commits to a mode.
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-定義: [packages/board/src/boardify/index.ts:824](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L824)
+定義: [packages/board/src/boardify/index.ts:824](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L824)
 
 #### 型パラメーター
 
@@ -993,7 +993,7 @@ There's also an "all" event that will be triggered when any of the above events 
 
 > **onCanvasDimensionChange**(`callback`): () => `void`
 
-定義: [packages/board/src/boardify/index.ts:1065](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1065)
+定義: [packages/board/src/boardify/index.ts:1065](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1065)
 
 #### パラメータ
 
@@ -1015,7 +1015,7 @@ There's also an "all" event that will be triggered when any of the above events 
 
 > **onInput**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-定義: [packages/board/src/boardify/index.ts:839](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L839)
+定義: [packages/board/src/boardify/index.ts:839](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L839)
 
 #### 型パラメーター
 
@@ -1049,7 +1049,7 @@ Input event does not necesarily mean that the camera will move. The input events
 
 > **setInputMode**(`mode`): `void`
 
-定義: [packages/board/src/boardify/index.ts:1026](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1026)
+定義: [packages/board/src/boardify/index.ts:1026](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1026)
 
 #### パラメータ
 
@@ -1067,7 +1067,7 @@ Input event does not necesarily mean that the camera will move. The input events
 
 > **step**(`timestamp`): `void`
 
-定義: [packages/board/src/boardify/index.ts:738](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L738)
+定義: [packages/board/src/boardify/index.ts:738](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L738)
 
 #### パラメータ
 
@@ -1089,7 +1089,7 @@ This is the step function that is called in the animation frame. This function i
 
 > **toggleInputMode**(): `void`
 
-定義: [packages/board/src/boardify/index.ts:1051](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L1051)
+定義: [packages/board/src/boardify/index.ts:1051](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L1051)
 
 Flips the input mode between keyboard-mouse and trackpad and locks it,
 disabling auto-detection.
@@ -1113,7 +1113,7 @@ natural "other" mode to toggle into is `'kmt'`.)
 
 > **setMaxTransWidthWithFixedMaxBoundary**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:919](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L919)
+定義: [packages/board/src/boardify/index.ts:919](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L919)
 
 #### パラメータ
 
@@ -1135,7 +1135,7 @@ This function sets the max translation width of the camera while fixing the mini
 
 > **setMaxTransWidthWithFixedMinBoundary**(`value`): `void`
 
-定義: [packages/board/src/boardify/index.ts:884](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L884)
+定義: [packages/board/src/boardify/index.ts:884](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L884)
 
 #### パラメータ
 
@@ -1157,7 +1157,7 @@ This function sets the max translation width of the camera while fixing the mini
 
 > **new Board**(`canvas?`, `debug?`): `Board`
 
-定義: [packages/board/src/boardify/index.ts:337](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L337)
+定義: [packages/board/src/boardify/index.ts:337](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L337)
 
 Creates a new Board instance with an optional canvas element.
 
@@ -1258,7 +1258,7 @@ const board = new Board(canvas, true);
 
 > **attach**(`canvas`, `debug`): `void`
 
-定義: [packages/board/src/boardify/index.ts:487](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L487)
+定義: [packages/board/src/boardify/index.ts:487](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L487)
 
 Attaches a canvas element to the board, enabling rendering and input handling.
 
@@ -1350,7 +1350,7 @@ board.attach(canvas2);
 
 > **tearDown**(): `void`
 
-定義: [packages/board/src/boardify/index.ts:526](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/boardify/index.ts#L526)
+定義: [packages/board/src/boardify/index.ts:526](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/boardify/index.ts#L526)
 
 #### 戻り値
 

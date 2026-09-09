@@ -4,7 +4,7 @@
 
 > **RotationHandlerClampConfig** = `object`
 
-定義於: [packages/board/src/camera/camera-rig/rotation-handler.ts:89](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/rotation-handler.ts#L89)
+定義於: [packages/board/src/camera/camera-rig/rotation-handler.ts:89](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/rotation-handler.ts#L89)
 
 Configuration for rotation angle boundary clamping.
 
@@ -38,6 +38,6 @@ camera.rotationBoundaries = { min: 0, max: Math.PI / 2 };
 
 > **clampRotation**: `boolean`
 
-定義於: [packages/board/src/camera/camera-rig/rotation-handler.ts:93](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-rig/rotation-handler.ts#L93)
+定義於: [packages/board/src/camera/camera-rig/rotation-handler.ts:93](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/rotation-handler.ts#L93)
 
 Whether to enforce rotation angle boundaries.
