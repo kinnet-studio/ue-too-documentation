@@ -4,7 +4,7 @@
 
 > **teardownComponents**(`components`): `void`
 
-定義: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:18](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L18)
+定義: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:18](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L18)
 
 Tears down an initialized app: every registered cleanup, then the Pixi
  application.

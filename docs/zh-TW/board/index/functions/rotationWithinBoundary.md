@@ -4,7 +4,7 @@
 
 > **rotationWithinBoundary**(`rotation`, `rotationBoundary`): `boolean`
 
-定義於: [packages/board/src/camera/utils/rotation.ts:179](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/utils/rotation.ts#L179)
+定義於: [packages/board/src/camera/utils/rotation.ts:179](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/rotation.ts#L179)
 
 Checks if a rotation angle is within an experimental rotation boundary.
 

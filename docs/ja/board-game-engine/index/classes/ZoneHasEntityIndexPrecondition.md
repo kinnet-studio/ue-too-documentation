@@ -2,7 +2,7 @@
 
 # クラス: ZoneHasEntityIndexPrecondition
 
-定義: [zone-system/precondition.ts:71](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/zone-system/precondition.ts#L71)
+定義: [zone-system/precondition.ts:71](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/zone-system/precondition.ts#L71)
 
 ## 実装
 
@@ -14,7 +14,7 @@
 
 > **new ZoneHasEntityIndexPrecondition**(`_coordinator`, `_zoneEntity`, `_entity`, `_index`): `ZoneHasEntityIndexPrecondition`
 
-定義: [zone-system/precondition.ts:72](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/zone-system/precondition.ts#L72)
+定義: [zone-system/precondition.ts:72](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/zone-system/precondition.ts#L72)
 
 #### パラメータ
 
@@ -44,7 +44,7 @@
 
 > **check**(): `boolean`
 
-定義: [zone-system/precondition.ts:79](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/zone-system/precondition.ts#L79)
+定義: [zone-system/precondition.ts:79](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/zone-system/precondition.ts#L79)
 
 #### 戻り値
 

@@ -2,7 +2,7 @@
 
 # Class: Coordinator
 
-Defined in: [index.ts:1274](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1274)
+Defined in: [index.ts:1274](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1274)
 
 Main ECS coordinator that manages entities, components, and systems.
 
@@ -51,7 +51,7 @@ ecs.destroyEntity(entity);
 
 > **new Coordinator**(): `Coordinator`
 
-Defined in: [index.ts:1279](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1279)
+Defined in: [index.ts:1279](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1279)
 
 #### Returns
 
@@ -63,7 +63,7 @@ Defined in: [index.ts:1279](https://github.com/kinnet-studio/ue-too/blob/d1c63f7
 
 > **addComponentToEntity**\<`T`\>(`componentName`, `entity`, `component`): `void`
 
-Defined in: [index.ts:1299](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1299)
+Defined in: [index.ts:1299](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1299)
 
 #### Type Parameters
 
@@ -95,7 +95,7 @@ Defined in: [index.ts:1299](https://github.com/kinnet-studio/ue-too/blob/d1c63f7
 
 > **addComponentToEntityWithSchema**(`componentName`, `entity`, `component`, `validate`): `void`
 
-Defined in: [index.ts:1558](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1558)
+Defined in: [index.ts:1558](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1558)
 
 Add a component to an entity with schema validation.
 
@@ -139,7 +139,7 @@ Error if validation fails
 
 > **createComponentFromSchema**(`componentName`, `overrides`): `Record`\<`string`, `unknown`\>
 
-Defined in: [index.ts:1522](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1522)
+Defined in: [index.ts:1522](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1522)
 
 Create a component instance from a schema with default values.
 
@@ -186,7 +186,7 @@ const component2 = coordinator.createComponentFromSchema('PlayerStats', {
 
 > **createEntity**(): `number`
 
-Defined in: [index.ts:1285](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1285)
+Defined in: [index.ts:1285](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1285)
 
 #### Returns
 
@@ -198,7 +198,7 @@ Defined in: [index.ts:1285](https://github.com/kinnet-studio/ue-too/blob/d1c63f7
 
 > **deserialize**(`serialized`, `options`): `void`
 
-Defined in: [index.ts:1780](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1780)
+Defined in: [index.ts:1780](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1780)
 
 Deserialize an ECS state from a JSON-compatible format.
 This will restore all entities and their components.
@@ -243,7 +243,7 @@ coordinator.deserialize(serialized, { clearExisting: true });
 
 > **destroyEntity**(`entity`): `void`
 
-Defined in: [index.ts:1289](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1289)
+Defined in: [index.ts:1289](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1289)
 
 #### Parameters
 
@@ -261,7 +261,7 @@ Defined in: [index.ts:1289](https://github.com/kinnet-studio/ue-too/blob/d1c63f7
 
 > **entityExists**(`entity`): `boolean`
 
-Defined in: [index.ts:1619](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1619)
+Defined in: [index.ts:1619](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1619)
 
 Check if an entity exists in the coordinator.
 
@@ -299,7 +299,7 @@ if (!coordinator.entityExists(entity)) {
 
 > **getAllComponentSchemas**(): [`ComponentSchema`](../interfaces/ComponentSchema.md)[]
 
-Defined in: [index.ts:1498](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1498)
+Defined in: [index.ts:1498](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1498)
 
 Get all registered component schemas.
 
@@ -315,7 +315,7 @@ Array of all component schemas
 
 > **getAllEntities**(): `number`[]
 
-Defined in: [index.ts:1597](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1597)
+Defined in: [index.ts:1597](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1597)
 
 Get all living entities in the ECS.
 
@@ -338,7 +338,7 @@ console.log(`Total entities: ${entities.length}`);
 
 > **getComponentFromEntity**\<`T`\>(`componentName`, `entity`): `T` \| `null`
 
-Defined in: [index.ts:1348](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1348)
+Defined in: [index.ts:1348](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1348)
 
 #### Type Parameters
 
@@ -366,7 +366,7 @@ Defined in: [index.ts:1348](https://github.com/kinnet-studio/ue-too/blob/d1c63f7
 
 > **getComponentPropertyNames**(`componentName`): `string`[]
 
-Defined in: [index.ts:1458](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1458)
+Defined in: [index.ts:1458](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1458)
 
 Get the property field names of a component.
 
@@ -424,7 +424,7 @@ console.log(fieldNames2); // ['location', 'sortIndex']
 
 > **getComponentSchema**(`componentName`): [`ComponentSchema`](../interfaces/ComponentSchema.md) \| `null`
 
-Defined in: [index.ts:1415](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1415)
+Defined in: [index.ts:1415](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1415)
 
 Get the schema for a component type, if it was registered with a schema.
 
@@ -448,7 +448,7 @@ The component schema or null if not found
 
 > **getComponentType**(`componentName`): `number` \| `null`
 
-Defined in: [index.ts:1358](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1358)
+Defined in: [index.ts:1358](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1358)
 
 #### Parameters
 
@@ -466,7 +466,7 @@ Defined in: [index.ts:1358](https://github.com/kinnet-studio/ue-too/blob/d1c63f7
 
 > **getEntityComponents**(`entity`): `Map`\<`symbol`, `unknown`\> \| `null`
 
-Defined in: [index.ts:1636](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1636)
+Defined in: [index.ts:1636](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1636)
 
 Get all components for a specific entity.
 
@@ -499,7 +499,7 @@ if (components) {
 
 > **getFullState**(): `object`
 
-Defined in: [index.ts:1682](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1682)
+Defined in: [index.ts:1682](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1682)
 
 Get the entire state of the ECS: all entities with all their component values.
 
@@ -529,7 +529,7 @@ state.entities.forEach(entityData => {
 
 > **getSystem**\<`T`\>(`systemName`): `T` \| `null`
 
-Defined in: [index.ts:1373](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1373)
+Defined in: [index.ts:1373](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1373)
 
 #### Type Parameters
 
@@ -553,7 +553,7 @@ Defined in: [index.ts:1373](https://github.com/kinnet-studio/ue-too/blob/d1c63f7
 
 > **registerComponent**\<`T`\>(`componentName`): `void`
 
-Defined in: [index.ts:1295](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1295)
+Defined in: [index.ts:1295](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1295)
 
 #### Type Parameters
 
@@ -577,7 +577,7 @@ Defined in: [index.ts:1295](https://github.com/kinnet-studio/ue-too/blob/d1c63f7
 
 > **registerComponentWithSchema**(`schema`): `void`
 
-Defined in: [index.ts:1405](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1405)
+Defined in: [index.ts:1405](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1405)
 
 Register a component with a runtime-defined schema.
 This allows components to be defined dynamically (e.g., through a GUI).
@@ -626,7 +626,7 @@ coordinator.addComponentToEntityWithSchema('PlayerStats', entity, component);
 
 > **registerSystem**(`systemName`, `system`): `void`
 
-Defined in: [index.ts:1362](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1362)
+Defined in: [index.ts:1362](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1362)
 
 #### Parameters
 
@@ -648,7 +648,7 @@ Defined in: [index.ts:1362](https://github.com/kinnet-studio/ue-too/blob/d1c63f7
 
 > **removeComponentFromEntity**\<`T`\>(`componentName`, `entity`): `void`
 
-Defined in: [index.ts:1326](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1326)
+Defined in: [index.ts:1326](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1326)
 
 #### Type Parameters
 
@@ -676,7 +676,7 @@ Defined in: [index.ts:1326](https://github.com/kinnet-studio/ue-too/blob/d1c63f7
 
 > **serialize**(): [`SerializedECSState`](../interfaces/SerializedECSState.md)
 
-Defined in: [index.ts:1713](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1713)
+Defined in: [index.ts:1713](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1713)
 
 Serialize the entire ECS state to a JSON-compatible format.
 Note: Only works with global symbols (created via Symbol.for or createGlobalComponentName).
@@ -705,7 +705,7 @@ const json = JSON.stringify(serialized);
 
 > **setSystemSignature**(`systemName`, `signature`): `void`
 
-Defined in: [index.ts:1366](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1366)
+Defined in: [index.ts:1366](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1366)
 
 #### Parameters
 
@@ -727,7 +727,7 @@ Defined in: [index.ts:1366](https://github.com/kinnet-studio/ue-too/blob/d1c63f7
 
 > **validateComponentData**(`componentName`, `data`): `boolean`
 
-Defined in: [index.ts:1539](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1539)
+Defined in: [index.ts:1539](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1539)
 
 Validate component data against its schema.
 

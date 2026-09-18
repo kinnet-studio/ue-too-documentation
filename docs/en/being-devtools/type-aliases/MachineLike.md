@@ -4,7 +4,7 @@
 
 > **MachineLike** = `object`
 
-Defined in: [registry.ts:20](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/registry.ts#L20)
+Defined in: [registry.ts:20](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/registry.ts#L20)
 
 The structural surface a machine must have to be attached.
 
@@ -22,7 +22,7 @@ a cast. The erasure happens once, inside `MachineRegistry.attach`.
 
 > `optional` **context**: `unknown`
 
-Defined in: [registry.ts:25](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/registry.ts#L25)
+Defined in: [registry.ts:25](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/registry.ts#L25)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [registry.ts:25](https://github.com/kinnet-studio/ue-too/blob/d1c63f
 
 > **currentState**: `unknown`
 
-Defined in: [registry.ts:22](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/registry.ts#L22)
+Defined in: [registry.ts:22](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/registry.ts#L22)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [registry.ts:22](https://github.com/kinnet-studio/ue-too/blob/d1c63f
 
 > **possibleStates**: readonly `unknown`[]
 
-Defined in: [registry.ts:24](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/registry.ts#L24)
+Defined in: [registry.ts:24](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/registry.ts#L24)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [registry.ts:24](https://github.com/kinnet-studio/ue-too/blob/d1c63f
 
 > **states**: `object`
 
-Defined in: [registry.ts:23](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/registry.ts#L23)
+Defined in: [registry.ts:23](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/registry.ts#L23)
 
 ## Methods
 
@@ -54,7 +54,7 @@ Defined in: [registry.ts:23](https://github.com/kinnet-studio/ue-too/blob/d1c63f
 
 > **happens**(...`args`): `unknown`
 
-Defined in: [registry.ts:21](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/registry.ts#L21)
+Defined in: [registry.ts:21](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/registry.ts#L21)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: [registry.ts:21](https://github.com/kinnet-studio/ue-too/blob/d1c63f
 
 > `optional` **onEventResult**(`callback`): `void` \| () => `void`
 
-Defined in: [registry.ts:27](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/registry.ts#L27)
+Defined in: [registry.ts:27](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/registry.ts#L27)
 
 #### Parameters
 
@@ -90,7 +90,7 @@ Defined in: [registry.ts:27](https://github.com/kinnet-studio/ue-too/blob/d1c63f
 
 > **reset**(): `void`
 
-Defined in: [registry.ts:26](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/registry.ts#L26)
+Defined in: [registry.ts:26](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/registry.ts#L26)
 
 #### Returns
 

@@ -2,7 +2,7 @@
 
 # インターフェイス: Animator
 
-定義: [composite-animation.ts:29](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L29)
+定義: [composite-animation.ts:29](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L29)
 
 Core interface for all animators in the animation system.
 
@@ -22,7 +22,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **delay**: `number`
 
-定義: [composite-animation.ts:32](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L32)
+定義: [composite-animation.ts:32](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L32)
 
 ***
 
@@ -30,7 +30,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **drag**: `number`
 
-定義: [composite-animation.ts:33](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L33)
+定義: [composite-animation.ts:33](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L33)
 
 ***
 
@@ -38,7 +38,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **duration**: `number`
 
-定義: [composite-animation.ts:31](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L31)
+定義: [composite-animation.ts:31](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L31)
 
 ***
 
@@ -46,7 +46,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **loops**: `boolean`
 
-定義: [composite-animation.ts:30](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L30)
+定義: [composite-animation.ts:30](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L30)
 
 ***
 
@@ -54,7 +54,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **maxLoopCount**: `number` \| `undefined`
 
-定義: [composite-animation.ts:50](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L50)
+定義: [composite-animation.ts:50](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L50)
 
 ***
 
@@ -62,7 +62,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **playing**: `boolean`
 
-定義: [composite-animation.ts:51](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L51)
+定義: [composite-animation.ts:51](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L51)
 
 ## メソッド
 
@@ -70,7 +70,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **animate**(`deltaTime`): `void`
 
-定義: [composite-animation.ts:39](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L39)
+定義: [composite-animation.ts:39](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L39)
 
 #### パラメータ
 
@@ -88,7 +88,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **clearOnEnd**(): `void`
 
-定義: [composite-animation.ts:49](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L49)
+定義: [composite-animation.ts:49](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L49)
 
 #### 戻り値
 
@@ -100,7 +100,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **clearOnStart**(): `void`
 
-定義: [composite-animation.ts:48](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L48)
+定義: [composite-animation.ts:48](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L48)
 
 #### 戻り値
 
@@ -112,7 +112,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **detachParent**(): `void`
 
-定義: [composite-animation.ts:44](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L44)
+定義: [composite-animation.ts:44](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L44)
 
 #### 戻り値
 
@@ -124,7 +124,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **nonCascadingDuration**(`newDuration`): `void`
 
-定義: [composite-animation.ts:34](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L34)
+定義: [composite-animation.ts:34](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L34)
 
 #### パラメータ
 
@@ -142,7 +142,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **onEnd**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-定義: [composite-animation.ts:46](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L46)
+定義: [composite-animation.ts:46](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L46)
 
 #### パラメータ
 
@@ -160,7 +160,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **onStart**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-定義: [composite-animation.ts:47](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L47)
+定義: [composite-animation.ts:47](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L47)
 
 #### パラメータ
 
@@ -178,7 +178,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **pause**(): `void`
 
-定義: [composite-animation.ts:37](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L37)
+定義: [composite-animation.ts:37](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L37)
 
 #### 戻り値
 
@@ -190,7 +190,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **resetAnimationState**(): `void`
 
-定義: [composite-animation.ts:41](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L41)
+定義: [composite-animation.ts:41](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L41)
 
 #### 戻り値
 
@@ -202,7 +202,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **resume**(): `void`
 
-定義: [composite-animation.ts:38](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L38)
+定義: [composite-animation.ts:38](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L38)
 
 #### 戻り値
 
@@ -214,7 +214,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **setParent**(`parent`): `void`
 
-定義: [composite-animation.ts:43](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L43)
+定義: [composite-animation.ts:43](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L43)
 
 #### パラメータ
 
@@ -232,7 +232,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **setUp**(): `void`
 
-定義: [composite-animation.ts:40](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L40)
+定義: [composite-animation.ts:40](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L40)
 
 #### 戻り値
 
@@ -244,7 +244,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **start**(): `void`
 
-定義: [composite-animation.ts:35](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L35)
+定義: [composite-animation.ts:35](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L35)
 
 #### 戻り値
 
@@ -256,7 +256,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **stop**(): `void`
 
-定義: [composite-animation.ts:36](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L36)
+定義: [composite-animation.ts:36](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L36)
 
 #### 戻り値
 
@@ -268,7 +268,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **tearDown**(): `void`
 
-定義: [composite-animation.ts:42](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L42)
+定義: [composite-animation.ts:42](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L42)
 
 #### 戻り値
 
@@ -280,7 +280,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **toggleReverse**(`reverse`): `void`
 
-定義: [composite-animation.ts:45](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/animate/src/composite-animation.ts#L45)
+定義: [composite-animation.ts:45](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L45)
 
 #### パラメータ
 

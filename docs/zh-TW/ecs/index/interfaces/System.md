@@ -2,7 +2,7 @@
 
 # 介面: System
 
-定義於: [index.ts:1154](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1154)
+定義於: [index.ts:1154](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1154)
 
 System interface for processing entities with specific component combinations.
 
@@ -43,4 +43,4 @@ function updateMovement(deltaTime: number) {
 
 > **entities**: `Set`\<`number`\>
 
-定義於: [index.ts:1155](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L1155)
+定義於: [index.ts:1155](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L1155)

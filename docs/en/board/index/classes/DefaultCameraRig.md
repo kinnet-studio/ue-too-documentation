@@ -2,7 +2,7 @@
 
 # Class: DefaultCameraRig
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:207](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L207)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:207](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L207)
 
 Default implementation of the camera rig providing comprehensive camera control.
 Composes pan, zoom, and rotation handlers into a unified, easy-to-use API.
@@ -56,7 +56,7 @@ rig.rotateBy(Math.PI / 4);
 
 > **new DefaultCameraRig**(`config`, `camera`): `DefaultCameraRig`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:241](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L241)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:241](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L241)
 
 Creates a new DefaultCameraRig with specified configuration and camera.
 
@@ -106,7 +106,7 @@ const rig = new DefaultCameraRig({
 
 > **get** **camera**(): [`ObservableBoardCamera`](../interfaces/ObservableBoardCamera.md)
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:796](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L796)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:796](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L796)
 
 Gets the underlying observable camera instance.
 
@@ -120,7 +120,7 @@ The camera being controlled by this rig
 
 > **set** **camera**(`camera`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:809](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L809)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:809](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L809)
 
 Sets the underlying camera instance.
 
@@ -155,7 +155,7 @@ The underlying observable camera being controlled
 
 > **get** **config**(): [`CameraRigConfig`](../type-aliases/CameraRigConfig.md)
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:822](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L822)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:822](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L822)
 
 Gets the current camera rig configuration.
 
@@ -174,7 +174,7 @@ Current configuration object
 
 > **set** **config**(`config`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:835](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L835)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:835](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L835)
 
 Sets the camera rig configuration.
 
@@ -209,7 +209,7 @@ Current configuration for all camera operations
 
 > **get** **limitEntireViewPort**(): `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:787](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L787)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:787](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L787)
 
 Gets whether the entire viewport must remain within boundaries.
 
@@ -223,7 +223,7 @@ True if entire viewport is constrained, false if only center is constrained
 
 > **set** **limitEntireViewPort**(`limit`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:778](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L778)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:778](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L778)
 
 Sets whether the entire viewport must remain within boundaries.
 
@@ -250,7 +250,7 @@ This is a convenience setter for [CameraRigConfig](../type-aliases/CameraRigConf
 
 > **cleanup**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:871](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L871)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:871](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L871)
 
 Cleans up resources used by the camera rig.
 
@@ -273,7 +273,7 @@ Implements BaseContext interface for consistency with other systems.
 
 > **configure**(`config`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:860](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L860)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:860](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L860)
 
 Updates camera rig configuration with partial settings.
 
@@ -317,7 +317,7 @@ rig.configure({ clampTranslation: false });
 
 > **panByViewPort**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:562](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L562)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:562](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L562)
 
 Pans the camera by a delta in viewport coordinates.
 
@@ -370,7 +370,7 @@ canvas.addEventListener('mousemove', (e) => {
 
 > **panByWorld**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:596](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L596)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:596](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L596)
 
 Pans the camera by a delta in world coordinates.
 
@@ -421,7 +421,7 @@ rig.panByWorld(objectMovement);
 
 > **panToViewPort**(`target`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:661](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L661)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:661](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L661)
 
 Pans the camera to position a viewport point at a specific location.
 
@@ -465,7 +465,7 @@ rig.panToViewPort({ x: -400, y: -300 });
 
 > **panToWorld**(`target`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:633](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L633)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:633](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L633)
 
 Pans the camera to an absolute position in world coordinates.
 
@@ -520,7 +520,7 @@ rig.panToWorld(landmark);
 
 > **rotateBy**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:692](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L692)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:692](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L692)
 
 Rotates the camera by a delta angle.
 
@@ -570,7 +570,7 @@ rig.rotateBy(-Math.PI / 2);
 
 > **rotateTo**(`target`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:743](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L743)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:743](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L743)
 
 Rotates the camera to an absolute angle.
 
@@ -620,7 +620,7 @@ rig.rotateTo(Math.PI / 2);
 
 > **setup**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:880](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L880)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:880](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L880)
 
 Sets up the camera rig.
 
@@ -643,7 +643,7 @@ Implements BaseContext interface for consistency with other systems.
 
 > **update**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:894](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L894)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:894](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L894)
 
 Updates the camera rig state.
 
@@ -671,7 +671,7 @@ In stateful rig implementations, this might handle:
 
 > **zoomBy**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:414](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L414)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:414](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L414)
 
 Zooms by a relative delta with the viewport center as the anchor point.
 
@@ -718,7 +718,7 @@ rig.zoomBy(-0.2);
 
 > **zoomByAt**(`delta`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:337](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L337)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:337](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L337)
 
 Zooms by a relative delta while keeping a viewport point stationary.
 
@@ -774,7 +774,7 @@ rig.zoomByAt(-0.1, cursorPosition);
 
 > **zoomByAtWorld**(`delta`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:504](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L504)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:504](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L504)
 
 Zooms by a delta while keeping a world-space point stationary.
 
@@ -825,7 +825,7 @@ rig.zoomByAtWorld(0.5, landmarkPos);
 
 > **zoomTo**(`targetZoom`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:383](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L383)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:383](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L383)
 
 Zooms to a target level with the viewport center as the anchor point.
 
@@ -874,7 +874,7 @@ rig.zoomTo(1.0);
 
 > **zoomToAt**(`targetZoom`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:283](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L283)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:283](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L283)
 
 Zooms to a target level while keeping a viewport point stationary (zoom-to-cursor).
 
@@ -926,7 +926,7 @@ rig.zoomToAt(2.0, { x: mouseX, y: mouseY });
 
 > **zoomToAtWorld**(`targetZoom`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:450](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/camera-rig.ts#L450)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:450](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/camera-rig.ts#L450)
 
 Zooms to a target level while keeping a world-space point stationary.
 

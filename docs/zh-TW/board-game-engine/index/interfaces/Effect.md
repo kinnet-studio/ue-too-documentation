@@ -2,7 +2,7 @@
 
 # 介面: Effect
 
-定義於: [action-system/effect.ts:3](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/action-system/effect.ts#L3)
+定義於: [action-system/effect.ts:3](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/effect.ts#L3)
 
 ## 方法
 
@@ -10,7 +10,7 @@
 
 > **apply**(): `void`
 
-定義於: [action-system/effect.ts:4](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/action-system/effect.ts#L4)
+定義於: [action-system/effect.ts:4](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/effect.ts#L4)
 
 #### 回傳
 

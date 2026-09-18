@@ -2,7 +2,7 @@
 
 # クラス: EntityManager
 
-定義: [index.ts:480](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L480)
+定義: [index.ts:480](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L480)
 
 Manages entity lifecycle and signatures.
 
@@ -22,7 +22,7 @@ a signature (bit field) for each entity indicating which components it has.
 
 > **new EntityManager**(`maxEntities`): `EntityManager`
 
-定義: [index.ts:487](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L487)
+定義: [index.ts:487](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L487)
 
 #### パラメータ
 
@@ -40,7 +40,7 @@ a signature (bit field) for each entity indicating which components it has.
 
 > **createEntity**(): `number`
 
-定義: [index.ts:495](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L495)
+定義: [index.ts:495](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L495)
 
 #### 戻り値
 
@@ -52,7 +52,7 @@ a signature (bit field) for each entity indicating which components it has.
 
 > **destroyEntity**(`entity`): `void`
 
-定義: [index.ts:508](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L508)
+定義: [index.ts:508](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L508)
 
 #### パラメータ
 
@@ -70,7 +70,7 @@ a signature (bit field) for each entity indicating which components it has.
 
 > **entityExists**(`entity`): `boolean`
 
-定義: [index.ts:553](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L553)
+定義: [index.ts:553](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L553)
 
 Check if an entity exists (is currently active, not in the available pool).
 
@@ -94,7 +94,7 @@ true if the entity exists, false otherwise
 
 > **getAllLivingEntities**(): `number`[]
 
-定義: [index.ts:535](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L535)
+定義: [index.ts:535](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L535)
 
 Get all living entities (entities that are currently active, not in the available pool).
 
@@ -110,7 +110,7 @@ Array of all living entity IDs
 
 > **getSignature**(`entity`): `number` \| `null`
 
-定義: [index.ts:524](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L524)
+定義: [index.ts:524](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L524)
 
 #### パラメータ
 
@@ -128,7 +128,7 @@ Array of all living entity IDs
 
 > **setSignature**(`entity`, `signature`): `void`
 
-定義: [index.ts:517](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/ecs/src/index.ts#L517)
+定義: [index.ts:517](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L517)
 
 #### パラメータ
 

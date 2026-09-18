@@ -2,7 +2,7 @@
 
 # Interface: Matrix3x3
 
-Defined in: [matrix.ts:31](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/matrix.ts#L31)
+Defined in: [matrix.ts:31](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L31)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [matrix.ts:31](https://github.com/kinnet-studio/ue-too/blob/d1c63f78
 
 > **a**: `number`
 
-Defined in: [matrix.ts:32](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/matrix.ts#L32)
+Defined in: [matrix.ts:32](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L32)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [matrix.ts:32](https://github.com/kinnet-studio/ue-too/blob/d1c63f78
 
 > **b**: `number`
 
-Defined in: [matrix.ts:35](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/matrix.ts#L35)
+Defined in: [matrix.ts:35](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L35)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [matrix.ts:35](https://github.com/kinnet-studio/ue-too/blob/d1c63f78
 
 > **c**: `number`
 
-Defined in: [matrix.ts:33](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/matrix.ts#L33)
+Defined in: [matrix.ts:33](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L33)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [matrix.ts:33](https://github.com/kinnet-studio/ue-too/blob/d1c63f78
 
 > **d**: `number`
 
-Defined in: [matrix.ts:36](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/matrix.ts#L36)
+Defined in: [matrix.ts:36](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L36)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [matrix.ts:36](https://github.com/kinnet-studio/ue-too/blob/d1c63f78
 
 > **e**: `number`
 
-Defined in: [matrix.ts:34](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/matrix.ts#L34)
+Defined in: [matrix.ts:34](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L34)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [matrix.ts:34](https://github.com/kinnet-studio/ue-too/blob/d1c63f78
 
 > **f**: `number`
 
-Defined in: [matrix.ts:37](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/matrix.ts#L37)
+Defined in: [matrix.ts:37](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L37)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [matrix.ts:37](https://github.com/kinnet-studio/ue-too/blob/d1c63f78
 
 > **g**: `number`
 
-Defined in: [matrix.ts:38](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/matrix.ts#L38)
+Defined in: [matrix.ts:38](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L38)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [matrix.ts:38](https://github.com/kinnet-studio/ue-too/blob/d1c63f78
 
 > **h**: `number`
 
-Defined in: [matrix.ts:39](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/matrix.ts#L39)
+Defined in: [matrix.ts:39](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L39)
 
 ***
 
@@ -74,4 +74,4 @@ Defined in: [matrix.ts:39](https://github.com/kinnet-studio/ue-too/blob/d1c63f78
 
 > **i**: `number`
 
-Defined in: [matrix.ts:40](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/matrix.ts#L40)
+Defined in: [matrix.ts:40](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L40)

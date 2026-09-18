@@ -2,7 +2,7 @@
 
 # Class: PairManager
 
-Defined in: [pair-manager.ts:59](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/pair-manager.ts#L59)
+Defined in: [pair-manager.ts:59](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L59)
 
 Manages collision pairs across frames.
 
@@ -36,7 +36,7 @@ events.forEach(pair => {
 
 > **new PairManager**(): `PairManager`
 
-Defined in: [pair-manager.ts:64](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/pair-manager.ts#L64)
+Defined in: [pair-manager.ts:64](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L64)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [pair-manager.ts:64](https://github.com/kinnet-studio/ue-too/blob/d1
 
 > **clear**(): `void`
 
-Defined in: [pair-manager.ts:164](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/pair-manager.ts#L164)
+Defined in: [pair-manager.ts:164](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L164)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [pair-manager.ts:164](https://github.com/kinnet-studio/ue-too/blob/d
 
 > **getActivePairs**(): [`CollisionPair`](../interfaces/CollisionPair.md)[]
 
-Defined in: [pair-manager.ts:153](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/pair-manager.ts#L153)
+Defined in: [pair-manager.ts:153](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L153)
 
 #### Returns
 
@@ -72,7 +72,7 @@ Defined in: [pair-manager.ts:153](https://github.com/kinnet-studio/ue-too/blob/d
 
 > **getPair**(`bodyA`, `bodyB`): [`CollisionPair`](../interfaces/CollisionPair.md) \| `undefined`
 
-Defined in: [pair-manager.ts:158](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/pair-manager.ts#L158)
+Defined in: [pair-manager.ts:158](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L158)
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: [pair-manager.ts:158](https://github.com/kinnet-studio/ue-too/blob/d
 
 > **getStats**(): `object`
 
-Defined in: [pair-manager.ts:170](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/pair-manager.ts#L170)
+Defined in: [pair-manager.ts:170](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L170)
 
 #### Returns
 
@@ -118,7 +118,7 @@ Defined in: [pair-manager.ts:170](https://github.com/kinnet-studio/ue-too/blob/d
 
 > **updatePairs**(`newCollisions`): [`PairEvents`](../interfaces/PairEvents.md)
 
-Defined in: [pair-manager.ts:80](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/pair-manager.ts#L80)
+Defined in: [pair-manager.ts:80](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L80)
 
 #### Parameters
 

@@ -4,6 +4,6 @@
 
 > `const` **DEFAULT\_BOARD\_CAMERA\_VIEWPORT\_WIDTH**: `1000` = `1000`
 
-Defined in: [packages/board/src/camera/default-camera.ts:18](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/default-camera.ts#L18)
+Defined in: [packages/board/src/camera/default-camera.ts:18](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L18)
 
 Default viewport width in CSS pixels

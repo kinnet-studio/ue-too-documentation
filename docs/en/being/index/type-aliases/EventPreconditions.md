@@ -4,7 +4,7 @@
 
 > **EventPreconditions**\<`EventPayloadMapping`, `Context`, `T`\> = `{ [K in keyof EventPayloadMapping]: (T extends Guard<Context, infer G> ? G : never)[] }`
 
-Defined in: [interface.ts:585](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L585)
+Defined in: [interface.ts:585](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L585)
 
 ## Type Parameters
 

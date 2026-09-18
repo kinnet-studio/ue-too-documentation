@@ -4,7 +4,7 @@
 
 > **MachineGraphNode** = `object`
 
-定義: [introspect.ts:11](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/introspect.ts#L11)
+定義: [introspect.ts:11](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L11)
 
 A node in an extracted machine graph — one per possible state.
 
@@ -14,4 +14,4 @@ A node in an extracted machine graph — one per possible state.
 
 > **id**: `string`
 
-定義: [introspect.ts:11](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/introspect.ts#L11)
+定義: [introspect.ts:11](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L11)

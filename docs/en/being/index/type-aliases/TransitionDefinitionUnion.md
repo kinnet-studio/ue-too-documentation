@@ -4,7 +4,7 @@
 
 > **TransitionDefinitionUnion**\<`Context`, `EventPayloadMapping`, `StateNames`, `EventOutputMapping`\> = `{ [K in keyof EventPayloadMapping]: TransitionDefinition<Context, EventPayloadMapping, K, StateNames, EventOutputMapping> }`\[keyof `EventPayloadMapping`\]
 
-Defined in: [schema-factory.ts:117](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/schema-factory.ts#L117)
+Defined in: [schema-factory.ts:117](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L117)
 
 Union type of all possible transition definitions for a given event payload mapping.
 This ensures each transition's action payload is typed based on its specific event.

@@ -4,7 +4,7 @@
 
 > **convert2WorldSpaceWRT**(`targetPosition`, `interestPoint`, `viewPortWidth`, `viewPortHeight`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:48](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/utils/coordinate-conversion.ts#L48)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:48](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/coordinate-conversion.ts#L48)
 
 Converts a viewport point to world space with respect to a hypothetical camera position.
 "WRT" = "With Respect To" - calculates where a viewport point would be in world space

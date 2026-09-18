@@ -2,7 +2,7 @@
 
 # クラス: AcceptingUserInputState
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:196](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L196)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:196](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L196)
 
 State implementation for accepting user pan input (idle/normal state).
 Accepts user pan input and can transition to animation or locked states.
@@ -17,7 +17,7 @@ Accepts user pan input and can transition to animation or locked states.
 
 > **new AcceptingUserInputState**(): `AcceptingUserInputState`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:202](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L202)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:202](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L202)
 
 #### 戻り値
 
@@ -81,7 +81,7 @@ Accepts user pan input and can transition to animation or locked states.
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), `BaseContext`, [`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:206](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L206)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:206](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L206)
 
 #### 上書き
 
@@ -283,7 +283,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectPanByInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:245](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L245)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:245](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L245)
 
 #### パラメータ
 
@@ -305,7 +305,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectPanToInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:252](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L252)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:252](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L252)
 
 #### パラメータ
 
@@ -357,7 +357,7 @@ keyof `EventPayloadMapping`[]
 
 > **userPanByInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:231](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L231)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:231](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L231)
 
 #### パラメータ
 
@@ -379,7 +379,7 @@ keyof `EventPayloadMapping`[]
 
 > **userPanToInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:238](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L238)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:238](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L238)
 
 #### パラメータ
 
