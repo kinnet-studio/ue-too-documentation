@@ -2,7 +2,7 @@
 
 # Interface: WorldPinJointConstraint
 
-Defined in: [constraint.ts:335](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/constraint.ts#L335)
+Defined in: [constraint.ts:335](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/constraint.ts#L335)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [constraint.ts:335](https://github.com/kinnet-studio/ue-too/blob/d1c
 
 > **body**: [`RigidBody`](RigidBody.md)
 
-Defined in: [constraint.ts:336](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/constraint.ts#L336)
+Defined in: [constraint.ts:336](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/constraint.ts#L336)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [constraint.ts:336](https://github.com/kinnet-studio/ue-too/blob/d1c
 
 > **localAnchor**: `Point`
 
-Defined in: [constraint.ts:337](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/constraint.ts#L337)
+Defined in: [constraint.ts:337](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/constraint.ts#L337)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [constraint.ts:337](https://github.com/kinnet-studio/ue-too/blob/d1c
 
 > **worldAnchor**: `Point`
 
-Defined in: [constraint.ts:338](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/constraint.ts#L338)
+Defined in: [constraint.ts:338](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/constraint.ts#L338)

@@ -2,7 +2,7 @@
 
 # 介面: BoardCamera
 
-定義於: [packages/board/src/camera/interface.ts:85](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L85)
+定義於: [packages/board/src/camera/interface.ts:85](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L85)
 
 Core camera interface for the infinite canvas board system.
 Manages camera position, rotation, zoom, and coordinate transformations between viewport and world space.
@@ -36,7 +36,7 @@ const worldPos = camera.convertFromViewPort2WorldSpace(mousePos);
 
 > `optional` **boundaries**: [`Boundaries`](../type-aliases/Boundaries.md)
 
-定義於: [packages/board/src/camera/interface.ts:102](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L102)
+定義於: [packages/board/src/camera/interface.ts:102](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L102)
 
 Optional position boundaries for the camera in world coordinates
 
@@ -46,7 +46,7 @@ Optional position boundaries for the camera in world coordinates
 
 > **position**: `Point`
 
-定義於: [packages/board/src/camera/interface.ts:87](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L87)
+定義於: [packages/board/src/camera/interface.ts:87](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L87)
 
 Current camera position in world coordinates (center of viewport)
 
@@ -56,7 +56,7 @@ Current camera position in world coordinates (center of viewport)
 
 > **rotation**: `number`
 
-定義於: [packages/board/src/camera/interface.ts:90](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L90)
+定義於: [packages/board/src/camera/interface.ts:90](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L90)
 
 Current rotation in radians (0 to 2π), normalized
 
@@ -66,7 +66,7 @@ Current rotation in radians (0 to 2π), normalized
 
 > `optional` **rotationBoundaries**: [`RotationLimits`](../type-aliases/RotationLimits.md)
 
-定義於: [packages/board/src/camera/interface.ts:108](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L108)
+定義於: [packages/board/src/camera/interface.ts:108](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L108)
 
 Optional rotation constraints (start and end angles)
 
@@ -76,7 +76,7 @@ Optional rotation constraints (start and end angles)
 
 > **viewPortHeight**: `number`
 
-定義於: [packages/board/src/camera/interface.ts:99](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L99)
+定義於: [packages/board/src/camera/interface.ts:99](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L99)
 
 Height of the viewport in CSS pixels
 
@@ -86,7 +86,7 @@ Height of the viewport in CSS pixels
 
 > **viewPortWidth**: `number`
 
-定義於: [packages/board/src/camera/interface.ts:96](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L96)
+定義於: [packages/board/src/camera/interface.ts:96](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L96)
 
 Width of the viewport in CSS pixels
 
@@ -96,7 +96,7 @@ Width of the viewport in CSS pixels
 
 > `optional` **zoomBoundaries**: [`ZoomLevelLimits`](../type-aliases/ZoomLevelLimits.md)
 
-定義於: [packages/board/src/camera/interface.ts:105](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L105)
+定義於: [packages/board/src/camera/interface.ts:105](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L105)
 
 Optional zoom level constraints (min and max zoom)
 
@@ -106,7 +106,7 @@ Optional zoom level constraints (min and max zoom)
 
 > **zoomLevel**: `number`
 
-定義於: [packages/board/src/camera/interface.ts:93](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L93)
+定義於: [packages/board/src/camera/interface.ts:93](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L93)
 
 Current zoom level (1.0 = 100%, 2.0 = 200%, etc.)
 
@@ -116,7 +116,7 @@ Current zoom level (1.0 = 100%, 2.0 = 200%, etc.)
 
 > **convertFromViewPort2WorldSpace**(`point`): `Point`
 
-定義於: [packages/board/src/camera/interface.ts:221](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L221)
+定義於: [packages/board/src/camera/interface.ts:221](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L221)
 
 Converts a point from viewport coordinates to world coordinates.
 
@@ -148,7 +148,7 @@ const worldPos = camera.convertFromViewPort2WorldSpace(mouseViewport);
 
 > **convertFromWorld2ViewPort**(`point`): `Point`
 
-定義於: [packages/board/src/camera/interface.ts:235](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L235)
+定義於: [packages/board/src/camera/interface.ts:235](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L235)
 
 Converts a point from world coordinates to viewport coordinates.
 
@@ -179,7 +179,7 @@ const viewportPos = camera.convertFromWorld2ViewPort(objectWorldPos);
 
 > **getTransform**(`devicePixelRatio`, `alignCoordinateSystem`): `object`
 
-定義於: [packages/board/src/camera/interface.ts:272](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L272)
+定義於: [packages/board/src/camera/interface.ts:272](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L272)
 
 Calculates the complete transformation matrix for rendering.
 This matrix transforms from world space to canvas pixel space.
@@ -247,7 +247,7 @@ ctx.setTransform(transform.a, transform.b, transform.c, transform.d, transform.e
 
 > **getTRS**(`devicePixelRatio`, `alignCoordinateSystem`): `object`
 
-定義於: [packages/board/src/camera/interface.ts:244](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L244)
+定義於: [packages/board/src/camera/interface.ts:244](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L244)
 
 Decomposes the camera transformation into Translation, Rotation, and Scale components.
 
@@ -305,7 +305,7 @@ Object containing separate scale, rotation, and translation values
 
 > **setHorizontalBoundaries**(`min`, `max`): `void`
 
-定義於: [packages/board/src/camera/interface.ts:195](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L195)
+定義於: [packages/board/src/camera/interface.ts:195](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L195)
 
 Sets horizontal (x-axis) movement boundaries for the camera.
 
@@ -337,7 +337,7 @@ If min > max, values are automatically swapped.
 
 > **setMaxZoomLevel**(`maxZoomLevel`): `void`
 
-定義於: [packages/board/src/camera/interface.ts:184](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L184)
+定義於: [packages/board/src/camera/interface.ts:184](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L184)
 
 Updates the maximum allowed zoom level.
 
@@ -359,7 +359,7 @@ Maximum zoom level constraint
 
 > **setMinZoomLevel**(`minZoomLevel`): `void`
 
-定義於: [packages/board/src/camera/interface.ts:177](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L177)
+定義於: [packages/board/src/camera/interface.ts:177](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L177)
 
 Updates the minimum allowed zoom level.
 
@@ -385,7 +385,7 @@ If current zoom is below the new minimum, camera will zoom in to match the minim
 
 > **setPosition**(`destination`): `boolean`
 
-定義於: [packages/board/src/camera/interface.ts:145](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L145)
+定義於: [packages/board/src/camera/interface.ts:145](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L145)
 
 Sets the camera position in world coordinates.
 
@@ -414,7 +414,7 @@ Position is clamped to boundaries if set.
 
 > **setRotation**(`rotation`): `boolean`
 
-定義於: [packages/board/src/camera/interface.ts:167](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L167)
+定義於: [packages/board/src/camera/interface.ts:167](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L167)
 
 Sets the camera rotation in radians.
 
@@ -442,7 +442,7 @@ Rotation is automatically normalized to 0-2π range. Clamped to rotationBoundari
 
 > **setVerticalBoundaries**(`min`, `max`): `void`
 
-定義於: [packages/board/src/camera/interface.ts:206](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L206)
+定義於: [packages/board/src/camera/interface.ts:206](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L206)
 
 Sets vertical (y-axis) movement boundaries for the camera.
 
@@ -474,7 +474,7 @@ If min > max, values are automatically swapped.
 
 > **setZoomLevel**(`zoomLevel`): `boolean`
 
-定義於: [packages/board/src/camera/interface.ts:156](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L156)
+定義於: [packages/board/src/camera/interface.ts:156](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L156)
 
 Sets the camera zoom level.
 
@@ -502,7 +502,7 @@ Zoom is clamped to zoomBoundaries if set. Values are clamped, not rejected.
 
 > **viewPortAABB**(`alignCoordinate?`): `object`
 
-定義於: [packages/board/src/camera/interface.ts:119](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L119)
+定義於: [packages/board/src/camera/interface.ts:119](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L119)
 
 Calculates the axis-aligned bounding box (AABB) of the viewport in world space.
 
@@ -538,7 +538,7 @@ Useful for culling and determining which objects are visible in the current view
 
 > **viewPortInWorldSpace**(`alignCoordinate?`): `object`
 
-定義於: [packages/board/src/camera/interface.ts:130](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/interface.ts#L130)
+定義於: [packages/board/src/camera/interface.ts:130](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/interface.ts#L130)
 
 Calculates the four corners of the viewport in world space, accounting for rotation.
 

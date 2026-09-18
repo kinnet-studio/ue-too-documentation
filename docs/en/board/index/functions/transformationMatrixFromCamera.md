@@ -4,7 +4,7 @@
 
 > **transformationMatrixFromCamera**(`cameraPosition`, `cameraZoomLevel`, `cameraRotation`): [`TransformationMatrix`](../type-aliases/TransformationMatrix.md)
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:499](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/utils/coordinate-conversion.ts#L499)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:499](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/coordinate-conversion.ts#L499)
 
 Creates a transformation matrix from camera parameters.
 Combines position, zoom, and rotation into a single transform.

@@ -2,7 +2,7 @@
 
 # クラス: CameraMuxWithAnimationAndLock
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:79](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L79)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:79](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L79)
 
 Advanced camera input multiplexer with animation support and input locking via state machines.
 
@@ -67,7 +67,7 @@ const result = mux.notifyPanInput({ x: 50, y: 30 });
 
 > **new CameraMuxWithAnimationAndLock**(`panStateMachine`, `zoomStateMachine`, `rotateStateMachine`): `CameraMuxWithAnimationAndLock`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:95](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L95)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:95](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L95)
 
 Creates a new camera mux with animation and locking capabilities.
 
@@ -108,7 +108,7 @@ rather than direct instantiation.
 
 > **get** **panStateMachine**(): [`PanControlStateMachine`](PanControlStateMachine.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:375](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L375)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:375](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L375)
 
 Gets the pan state machine.
 
@@ -131,7 +131,7 @@ The pan state machine instance
 
 > **get** **rotateStateMachine**(): [`RotateControlStateMachine`](RotateControlStateMachine.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:362](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L362)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:362](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L362)
 
 Gets the rotation state machine.
 
@@ -154,7 +154,7 @@ The rotation state machine instance
 
 > **get** **zoomStateMachine**(): [`ZoomControlStateMachine`](ZoomControlStateMachine.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:388](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L388)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:388](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L388)
 
 Gets the zoom state machine.
 
@@ -175,7 +175,7 @@ The zoom state machine instance
 
 > **initatePanTransition**(): `void`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:327](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L327)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:327](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L327)
 
 Initiates a transition in the pan state machine.
 
@@ -194,7 +194,7 @@ Can be used to interrupt animations or force state changes.
 
 > **initateRotateTransition**(): `void`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:349](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L349)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:349](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L349)
 
 Initiates a transition in the rotation state machine.
 
@@ -213,7 +213,7 @@ Can be used to interrupt animations or force state changes.
 
 > **initateZoomTransition**(): `void`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:338](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L338)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:338](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L338)
 
 Initiates a transition in the zoom state machine.
 
@@ -232,7 +232,7 @@ Can be used to interrupt animations or force state changes.
 
 > **notifyPanInput**(`delta`): [`CameraMuxPanOutput`](../type-aliases/CameraMuxPanOutput.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:167](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L167)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:167](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L167)
 
 Processes user pan input (implements [CameraMux](../interfaces/CameraMux.md)).
 
@@ -278,7 +278,7 @@ if (result.allowPassThrough) {
 
 > **notifyPanToAnimationInput**(`target`): [`CameraMuxPanOutput`](../type-aliases/CameraMuxPanOutput.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:126](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L126)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:126](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L126)
 
 Initiates a pan animation to a target position.
 
@@ -319,7 +319,7 @@ mux.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **notifyRotateByInput**(`delta`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:233](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L233)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:233](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L233)
 
 Processes user rotation input (rotate-by variant).
 
@@ -348,7 +348,7 @@ The state machine determines whether to allow rotation based on current state.
 
 > **notifyRotateToAnimationInput**(`target`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:247](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L247)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:247](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L247)
 
 Initiates a rotation animation to a target angle.
 
@@ -377,7 +377,7 @@ User input will be blocked during the animation.
 
 > **notifyRotationInput**(`delta`): [`CameraMuxRotationOutput`](../type-aliases/CameraMuxRotationOutput.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:307](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L307)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:307](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L307)
 
 Processes user rotation input (implements [CameraMux](../interfaces/CameraMux.md)).
 
@@ -422,7 +422,7 @@ if (result.allowPassThrough) {
 
 > **notifyZoomInput**(`delta`, `at`): [`CameraMuxZoomOutput`](../type-aliases/CameraMuxZoomOutput.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:203](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L203)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:203](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L203)
 
 Processes user zoom input (implements [CameraMux](../interfaces/CameraMux.md)).
 
@@ -474,7 +474,7 @@ if (result.allowPassThrough) {
 
 > **notifyZoomInputAnimation**(`targetZoom`, `at`): `void`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:262](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L262)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:262](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L262)
 
 Initiates a zoom animation to a target level at a viewport position.
 
@@ -508,7 +508,7 @@ User input will be blocked during the animation.
 
 > **notifyZoomInputAnimationWorld**(`targetZoom`, `at`): `void`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:279](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L279)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:279](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L279)
 
 Initiates a zoom animation to a target level at a world position.
 

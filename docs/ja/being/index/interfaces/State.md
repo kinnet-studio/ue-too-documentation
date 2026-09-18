@@ -2,7 +2,7 @@
 
 # インターフェイス: State\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-定義: [interface.ts:349](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L349)
+定義: [interface.ts:349](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L349)
 
 ## Description
 
@@ -46,7 +46,7 @@ This allows for a state to be reusable across different state machines.
 
 > **delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-定義: [interface.ts:403](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L403)
+定義: [interface.ts:403](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L403)
 
 ***
 
@@ -54,7 +54,7 @@ This allows for a state to be reusable across different state machines.
 
 > **eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-定義: [interface.ts:392](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L392)
+定義: [interface.ts:392](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L392)
 
 ***
 
@@ -62,7 +62,7 @@ This allows for a state to be reusable across different state machines.
 
 > `optional` **eventPreconditions**: `Partial`\<[`EventPreconditions`](../type-aliases/EventPreconditions.md)\<`EventPayloadMapping`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`, `string`\>\>\>
 
-定義: [interface.ts:400](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L400)
+定義: [interface.ts:400](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L400)
 
 Pre-action vetoes: named guards that must all pass before this state
 handles an event. Optional so existing State implementations remain
@@ -74,7 +74,7 @@ valid; [TemplateState](../classes/TemplateState.md) always provides it.
 
 > **eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義: [interface.ts:406](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L406)
+定義: [interface.ts:406](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L406)
 
 ***
 
@@ -82,7 +82,7 @@ valid; [TemplateState](../classes/TemplateState.md) always provides it.
 
 > **guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-定義: [interface.ts:391](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L391)
+定義: [interface.ts:391](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L391)
 
 ## メソッド
 
@@ -90,7 +90,7 @@ valid; [TemplateState](../classes/TemplateState.md) always provides it.
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-定義: [interface.ts:367](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L367)
+定義: [interface.ts:367](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L367)
 
 #### パラメータ
 
@@ -116,7 +116,7 @@ valid; [TemplateState](../classes/TemplateState.md) always provides it.
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義: [interface.ts:377](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L377)
+定義: [interface.ts:377](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L377)
 
 #### 型パラメーター
 
@@ -148,7 +148,7 @@ valid; [TemplateState](../classes/TemplateState.md) always provides it.
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-定義: [interface.ts:357](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L357)
+定義: [interface.ts:357](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L357)
 
 #### パラメータ
 

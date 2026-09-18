@@ -2,7 +2,7 @@
 
 # クラス: Path
 
-定義: [packages/curve/src/path.ts:53](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/curve/src/path.ts#L53)
+定義: [packages/curve/src/path.ts:53](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/path.ts#L53)
 
 Path made of sequential line segments.
 
@@ -12,7 +12,7 @@ Path made of sequential line segments.
 
 > **new Path**(`lines`): `Path`
 
-定義: [packages/curve/src/path.ts:56](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/curve/src/path.ts#L56)
+定義: [packages/curve/src/path.ts:56](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/path.ts#L56)
 
 #### パラメータ
 
@@ -30,7 +30,7 @@ Path made of sequential line segments.
 
 > **append**(`line`): `void`
 
-定義: [packages/curve/src/path.ts:60](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/curve/src/path.ts#L60)
+定義: [packages/curve/src/path.ts:60](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/path.ts#L60)
 
 #### パラメータ
 
@@ -48,7 +48,7 @@ Path made of sequential line segments.
 
 > **clear**(): `void`
 
-定義: [packages/curve/src/path.ts:64](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/curve/src/path.ts#L64)
+定義: [packages/curve/src/path.ts:64](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/path.ts#L64)
 
 #### 戻り値
 
@@ -60,7 +60,7 @@ Path made of sequential line segments.
 
 > **getLength**(): `number`
 
-定義: [packages/curve/src/path.ts:76](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/curve/src/path.ts#L76)
+定義: [packages/curve/src/path.ts:76](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/path.ts#L76)
 
 #### 戻り値
 
@@ -72,7 +72,7 @@ Path made of sequential line segments.
 
 > **getLines**(): [`Line`](Line.md)[]
 
-定義: [packages/curve/src/path.ts:72](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/curve/src/path.ts#L72)
+定義: [packages/curve/src/path.ts:72](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/path.ts#L72)
 
 #### 戻り値
 
@@ -84,7 +84,7 @@ Path made of sequential line segments.
 
 > **getPercentages**(): `object`[]
 
-定義: [packages/curve/src/path.ts:86](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/curve/src/path.ts#L86)
+定義: [packages/curve/src/path.ts:86](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/path.ts#L86)
 
 #### 戻り値
 
@@ -96,7 +96,7 @@ Path made of sequential line segments.
 
 > **getPointByPercentage**(`percentage`): `Point`
 
-定義: [packages/curve/src/path.ts:102](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/curve/src/path.ts#L102)
+定義: [packages/curve/src/path.ts:102](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/path.ts#L102)
 
 #### パラメータ
 
@@ -114,7 +114,7 @@ Path made of sequential line segments.
 
 > **prepend**(`line`): `void`
 
-定義: [packages/curve/src/path.ts:68](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/curve/src/path.ts#L68)
+定義: [packages/curve/src/path.ts:68](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/path.ts#L68)
 
 #### パラメータ
 

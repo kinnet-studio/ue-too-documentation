@@ -4,7 +4,7 @@
 
 > **InitAppOptions** = `object`
 
-Defined in: [init-app.ts:51](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-pixi-integration/src/init-app.ts#L51)
+Defined in: [init-app.ts:51](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-integration/src/init-app.ts#L51)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [init-app.ts:51](https://github.com/kinnet-studio/ue-too/blob/d1c63f
 
 > **boundaries**: `object`
 
-Defined in: [init-app.ts:55](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-pixi-integration/src/init-app.ts#L55)
+Defined in: [init-app.ts:55](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-integration/src/init-app.ts#L55)
 
 #### max
 
@@ -44,7 +44,7 @@ Defined in: [init-app.ts:55](https://github.com/kinnet-studio/ue-too/blob/d1c63f
 
 > **camera**: `DefaultBoardCamera`
 
-Defined in: [init-app.ts:54](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-pixi-integration/src/init-app.ts#L54)
+Defined in: [init-app.ts:54](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-integration/src/init-app.ts#L54)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [init-app.ts:54](https://github.com/kinnet-studio/ue-too/blob/d1c63f
 
 > **fullScreen**: `boolean`
 
-Defined in: [init-app.ts:52](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-pixi-integration/src/init-app.ts#L52)
+Defined in: [init-app.ts:52](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-integration/src/init-app.ts#L52)
 
 ***
 
@@ -60,4 +60,4 @@ Defined in: [init-app.ts:52](https://github.com/kinnet-studio/ue-too/blob/d1c63f
 
 > **limitEntireViewPort**: `boolean`
 
-Defined in: [init-app.ts:53](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-pixi-integration/src/init-app.ts#L53)
+Defined in: [init-app.ts:53](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-integration/src/init-app.ts#L53)

@@ -4,7 +4,7 @@
 
 > `const` **CollisionCategory**: `object`
 
-定義於: [collision-filter.ts:146](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/dynamics/src/collision-filter.ts#L146)
+定義於: [collision-filter.ts:146](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/collision-filter.ts#L146)
 
 Predefined collision categories for common game entities.
 

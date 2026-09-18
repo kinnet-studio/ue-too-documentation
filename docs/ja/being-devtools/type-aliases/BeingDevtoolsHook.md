@@ -4,7 +4,7 @@
 
 > **BeingDevtoolsHook** = `object`
 
-定義: [hook.ts:24](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/hook.ts#L24)
+定義: [hook.ts:24](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/hook.ts#L24)
 
 The console hook at `window.__UE_TOO_BEING__`, present while at least
 one panel is alive.
@@ -21,7 +21,7 @@ overlay panel, exactly like `attachMachineDebugger`.
 
 > `readonly` **machines**: `ReadonlyMap`\<`string`, [`MachineLike`](MachineLike.md)\>
 
-定義: [hook.ts:25](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/hook.ts#L25)
+定義: [hook.ts:25](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/hook.ts#L25)
 
 ## メソッド
 
@@ -29,7 +29,7 @@ overlay panel, exactly like `attachMachineDebugger`.
 
 > **attach**(`machine`, `options?`): [`AttachHandle`](AttachHandle.md)
 
-定義: [hook.ts:28](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/hook.ts#L28)
+定義: [hook.ts:28](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/hook.ts#L28)
 
 #### パラメータ
 
@@ -51,7 +51,7 @@ overlay panel, exactly like `attachMachineDebugger`.
 
 > **close**(): `void`
 
-定義: [hook.ts:27](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/hook.ts#L27)
+定義: [hook.ts:27](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/hook.ts#L27)
 
 #### 戻り値
 
@@ -63,7 +63,7 @@ overlay panel, exactly like `attachMachineDebugger`.
 
 > **open**(): `void`
 
-定義: [hook.ts:26](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being-devtools/src/hook.ts#L26)
+定義: [hook.ts:26](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/hook.ts#L26)
 
 #### 戻り値
 

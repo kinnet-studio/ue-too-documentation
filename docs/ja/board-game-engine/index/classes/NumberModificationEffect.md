@@ -2,7 +2,7 @@
 
 # クラス: NumberModificationEffect\<T\>
 
-定義: [action-system/effect.ts:26](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/action-system/effect.ts#L26)
+定義: [action-system/effect.ts:26](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/effect.ts#L26)
 
 Unified number modification effect that works with both custom schema components
 and typed components. Automatically detects which approach to use based on whether
@@ -39,7 +39,7 @@ const effect2 = new NumberModificationEffect<HealthComponent>(
 
 > **new NumberModificationEffect**\<`T`\>(`coordinator`, `componentName`, `entity`, `valuePath`, `amount`, `operation?`): `NumberModificationEffect`\<`T`\>
 
-定義: [action-system/effect.ts:38](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/action-system/effect.ts#L38)
+定義: [action-system/effect.ts:38](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/effect.ts#L38)
 
 #### パラメータ
 
@@ -75,7 +75,7 @@ keyof `T`
 
 > **new NumberModificationEffect**\<`T`\>(`coordinator`, `amount`, `componentName`, `entity`, `valuePath`, `operation?`): `NumberModificationEffect`\<`T`\>
 
-定義: [action-system/effect.ts:47](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/action-system/effect.ts#L47)
+定義: [action-system/effect.ts:47](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/effect.ts#L47)
 
 #### パラメータ
 
@@ -113,7 +113,7 @@ keyof `T`
 
 > **apply**(): `void`
 
-定義: [action-system/effect.ts:89](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board-game-engine/src/action-system/effect.ts#L89)
+定義: [action-system/effect.ts:89](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/effect.ts#L89)
 
 #### 戻り値
 

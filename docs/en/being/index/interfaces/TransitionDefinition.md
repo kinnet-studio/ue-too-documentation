@@ -2,7 +2,7 @@
 
 # Interface: TransitionDefinition\<Context, EventPayloadMapping, EventName, StateNames, EventOutputMapping\>
 
-Defined in: [schema-factory.ts:74](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/schema-factory.ts#L74)
+Defined in: [schema-factory.ts:74](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L74)
 
 Definition of a single state transition.
 
@@ -44,7 +44,7 @@ Optional mapping of events to their output types
 
 > `optional` **action**: [`ActionFunction`](../type-aliases/ActionFunction.md)\<`Context`, `EventPayloadMapping`, `EventName`, `EventOutputMapping`\>
 
-Defined in: [schema-factory.ts:88](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/schema-factory.ts#L88)
+Defined in: [schema-factory.ts:88](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L88)
 
 Optional action to execute when this transition occurs. Can return a value that will be included in the event result.
 
@@ -54,7 +54,7 @@ Optional action to execute when this transition occurs. Can return a value that 
 
 > **event**: `EventName`
 
-Defined in: [schema-factory.ts:84](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/schema-factory.ts#L84)
+Defined in: [schema-factory.ts:84](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L84)
 
 The event that triggers this transition
 
@@ -64,7 +64,7 @@ The event that triggers this transition
 
 > `optional` **guards**: `object`[]
 
-Defined in: [schema-factory.ts:100](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/schema-factory.ts#L100)
+Defined in: [schema-factory.ts:100](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L100)
 
 Optional guard conditions (evaluated in order, first true guard wins).
 Guards can be either:
@@ -89,6 +89,6 @@ Target state if this guard evaluates to true
 
 > **targetState**: `StateNames`
 
-Defined in: [schema-factory.ts:86](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/schema-factory.ts#L86)
+Defined in: [schema-factory.ts:86](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L86)
 
 The target state after this transition

@@ -4,7 +4,7 @@
 
 > **normalizeAngleZero2TwoPI**(`angle`): `number`
 
-Defined in: [index.ts:688](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/math/src/index.ts#L688)
+Defined in: [index.ts:688](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/index.ts#L688)
 
 Normalizes an angle to the range [0, 2π).
 

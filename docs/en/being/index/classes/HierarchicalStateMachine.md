@@ -2,7 +2,7 @@
 
 # Class: HierarchicalStateMachine\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-Defined in: [hierarchical.ts:306](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/hierarchical.ts#L306)
+Defined in: [hierarchical.ts:306](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L306)
 
 Extended state machine that supports hierarchical state paths.
 
@@ -47,7 +47,7 @@ Event output mapping
 
 > **new HierarchicalStateMachine**\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>(`states`, `initialState`, `context`, `autoStart`): `HierarchicalStateMachine`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:701](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L701)
+Defined in: [interface.ts:701](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L701)
 
 #### Parameters
 
@@ -81,7 +81,7 @@ Defined in: [interface.ts:701](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > `protected` **\_context**: `Context`
 
-Defined in: [interface.ts:683](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L683)
+Defined in: [interface.ts:683](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L683)
 
 #### Inherited from
 
@@ -93,7 +93,7 @@ Defined in: [interface.ts:683](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > `protected` **\_currentState**: `"INITIAL"` \| `"TERMINAL"` \| `States`
 
-Defined in: [interface.ts:678](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L678)
+Defined in: [interface.ts:678](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L678)
 
 #### Inherited from
 
@@ -105,7 +105,7 @@ Defined in: [interface.ts:678](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > `protected` **\_eventResultCallbacks**: [`EventResultCallback`](../type-aliases/EventResultCallback.md)\<`EventPayloadMapping`, `Context`, `States`\>[]
 
-Defined in: [interface.ts:693](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L693)
+Defined in: [interface.ts:693](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L693)
 
 #### Inherited from
 
@@ -117,7 +117,7 @@ Defined in: [interface.ts:693](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-Defined in: [interface.ts:686](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L686)
+Defined in: [interface.ts:686](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L686)
 
 #### Parameters
 
@@ -143,7 +143,7 @@ Defined in: [interface.ts:686](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > `protected` **\_initialState**: `States`
 
-Defined in: [interface.ts:699](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L699)
+Defined in: [interface.ts:699](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L699)
 
 #### Inherited from
 
@@ -155,7 +155,7 @@ Defined in: [interface.ts:699](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > `protected` **\_stateChangeCallbacks**: [`StateChangeCallback`](../type-aliases/StateChangeCallback.md)\<`States`\>[]
 
-Defined in: [interface.ts:685](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L685)
+Defined in: [interface.ts:685](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L685)
 
 #### Inherited from
 
@@ -167,7 +167,7 @@ Defined in: [interface.ts:685](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > `protected` **\_states**: `Record`\<`States`, [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: [interface.ts:679](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L679)
+Defined in: [interface.ts:679](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L679)
 
 #### Inherited from
 
@@ -179,7 +179,7 @@ Defined in: [interface.ts:679](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > `protected` **\_statesArray**: `States`[]
 
-Defined in: [interface.ts:684](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L684)
+Defined in: [interface.ts:684](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L684)
 
 #### Inherited from
 
@@ -191,7 +191,7 @@ Defined in: [interface.ts:684](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > `protected` **\_timeouts**: `number` \| `undefined` = `undefined`
 
-Defined in: [interface.ts:698](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L698)
+Defined in: [interface.ts:698](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L698)
 
 #### Inherited from
 
@@ -205,7 +205,7 @@ Defined in: [interface.ts:698](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > **get** **context**(): `Context`
 
-Defined in: [interface.ts:874](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L874)
+Defined in: [interface.ts:874](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L874)
 
 Read-only access to the machine's live context object. Optional so
 existing StateMachine implementations remain valid;
@@ -237,7 +237,7 @@ this reference.
 
 > **get** **currentState**(): `"INITIAL"` \| `"TERMINAL"` \| `States`
 
-Defined in: [interface.ts:866](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L866)
+Defined in: [interface.ts:866](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L866)
 
 ##### Returns
 
@@ -255,7 +255,7 @@ Defined in: [interface.ts:866](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > **get** **possibleStates**(): `States`[]
 
-Defined in: [interface.ts:878](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L878)
+Defined in: [interface.ts:878](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L878)
 
 ##### Returns
 
@@ -273,7 +273,7 @@ Defined in: [interface.ts:878](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > **get** **states**(): `Record`\<`States`, [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: [interface.ts:882](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L882)
+Defined in: [interface.ts:882](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L882)
 
 ##### Returns
 
@@ -289,7 +289,7 @@ Defined in: [interface.ts:882](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > **getActiveStatePath**(): `string`[]
 
-Defined in: [hierarchical.ts:343](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/hierarchical.ts#L343)
+Defined in: [hierarchical.ts:343](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L343)
 
 Gets all active states in the hierarchy.
 Returns an array where the first element is the top-level state,
@@ -305,7 +305,7 @@ and subsequent elements are nested child states.
 
 > **getCurrentStatePath**(): `string`
 
-Defined in: [hierarchical.ts:324](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/hierarchical.ts#L324)
+Defined in: [hierarchical.ts:324](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L324)
 
 Gets the current hierarchical state path.
 Returns a simple state name for non-composite states,
@@ -323,7 +323,7 @@ or a dot-notation path for composite states (e.g., "PARENT.CHILD").
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [interface.ts:763](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L763)
+Defined in: [interface.ts:763](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L763)
 
 ##### Type Parameters
 
@@ -349,7 +349,7 @@ Defined in: [interface.ts:763](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `unknown`\>
 
-Defined in: [interface.ts:769](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L769)
+Defined in: [interface.ts:769](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L769)
 
 ##### Type Parameters
 
@@ -377,7 +377,7 @@ Defined in: [interface.ts:769](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > **isInStatePath**(`path`): `boolean`
 
-Defined in: [hierarchical.ts:368](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/hierarchical.ts#L368)
+Defined in: [hierarchical.ts:368](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L368)
 
 Checks if the state machine is currently in a specific hierarchical path.
 Supports both simple state names and dot-notation paths.
@@ -400,7 +400,7 @@ State path to check (e.g., "PARENT" or "PARENT.CHILD")
 
 > **onEventResult**(`callback`): () => `void`
 
-Defined in: [interface.ts:854](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L854)
+Defined in: [interface.ts:854](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L854)
 
 Subscribe to every event result. Optional so existing StateMachine
 implementations remain valid; [TemplateStateMachine](TemplateStateMachine.md) always
@@ -433,7 +433,7 @@ for the exact snapshot-iteration semantics.
 
 > **onHappens**(`callback`): () => `void`
 
-Defined in: [interface.ts:836](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L836)
+Defined in: [interface.ts:836](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L836)
 
 Subscribe to every `happens()` call, before the state handles it.
 Returns a disposer on implementations that support one. Disposing
@@ -465,7 +465,7 @@ snapshot-iteration semantics.
 
 > **onStateChange**(`callback`): () => `void`
 
-Defined in: [interface.ts:826](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L826)
+Defined in: [interface.ts:826](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L826)
 
 Subscribe to state changes. Returns a disposer on implementations that
 support one. Disposing during a dispatch takes effect starting with
@@ -496,7 +496,7 @@ the next dispatch, not the one in progress — see
 
 > **reset**(): `void`
 
-Defined in: [interface.ts:723](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L723)
+Defined in: [interface.ts:723](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L723)
 
 #### Returns
 
@@ -512,7 +512,7 @@ Defined in: [interface.ts:723](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > **setContext**(`context`): `void`
 
-Defined in: [interface.ts:870](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L870)
+Defined in: [interface.ts:870](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L870)
 
 #### Parameters
 
@@ -534,7 +534,7 @@ Defined in: [interface.ts:870](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > **start**(): `void`
 
-Defined in: [interface.ts:729](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L729)
+Defined in: [interface.ts:729](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L729)
 
 #### Returns
 
@@ -550,7 +550,7 @@ Defined in: [interface.ts:729](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > **switchTo**(`state`): `void`
 
-Defined in: [interface.ts:758](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L758)
+Defined in: [interface.ts:758](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L758)
 
 #### Parameters
 
@@ -572,7 +572,7 @@ Defined in: [interface.ts:758](https://github.com/kinnet-studio/ue-too/blob/d1c6
 
 > **wrapup**(): `void`
 
-Defined in: [interface.ts:742](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/being/src/interface.ts#L742)
+Defined in: [interface.ts:742](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L742)
 
 #### Returns
 

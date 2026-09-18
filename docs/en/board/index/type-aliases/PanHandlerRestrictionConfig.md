@@ -4,7 +4,7 @@
 
 > **PanHandlerRestrictionConfig** = `object`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:102](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/pan-handler.ts#L102)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:102](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/pan-handler.ts#L102)
 
 Configuration for restricting camera movement along specific axes.
 
@@ -53,7 +53,7 @@ const screenConfig: PanHandlerRestrictionConfig = {
 
 > **restrictRelativeXTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:115](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/pan-handler.ts#L115)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:115](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/pan-handler.ts#L115)
 
 Whether to prevent horizontal movement in viewport/screen space.
 Accounts for camera rotation - locks movement perpendicular to screen's vertical direction.
@@ -64,7 +64,7 @@ Accounts for camera rotation - locks movement perpendicular to screen's vertical
 
 > **restrictRelativeYTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:120](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/pan-handler.ts#L120)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:120](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/pan-handler.ts#L120)
 
 Whether to prevent vertical movement in viewport/screen space.
 Accounts for camera rotation - locks movement perpendicular to screen's horizontal direction.
@@ -75,7 +75,7 @@ Accounts for camera rotation - locks movement perpendicular to screen's horizont
 
 > **restrictXTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:106](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/pan-handler.ts#L106)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:106](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/pan-handler.ts#L106)
 
 Whether to prevent movement along the world X axis.
 
@@ -85,6 +85,6 @@ Whether to prevent movement along the world X axis.
 
 > **restrictYTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:110](https://github.com/kinnet-studio/ue-too/blob/d1c63f78f12acd4d34b5d406b57fe083e6d58b38/packages/board/src/camera/camera-rig/pan-handler.ts#L110)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:110](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/pan-handler.ts#L110)
 
 Whether to prevent movement along the world Y axis.
