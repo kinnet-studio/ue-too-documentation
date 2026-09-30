@@ -2,7 +2,7 @@
 
 # Class: CompositeBCurve
 
-Defined in: [packages/curve/src/composite-curve.ts:358](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/composite-curve.ts#L358)
+Defined in: [packages/curve/src/composite-curve.ts:358](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/curve/src/composite-curve.ts#L358)
 
 Composite Bezier curve made of multiple control points with handles.
 
@@ -12,7 +12,7 @@ Composite Bezier curve made of multiple control points with handles.
 
 > **new CompositeBCurve**(`controlPoints`): `CompositeBCurve`
 
-Defined in: [packages/curve/src/composite-curve.ts:361](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/composite-curve.ts#L361)
+Defined in: [packages/curve/src/composite-curve.ts:361](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/curve/src/composite-curve.ts#L361)
 
 #### Parameters
 
@@ -30,7 +30,7 @@ Defined in: [packages/curve/src/composite-curve.ts:361](https://github.com/kinne
 
 > **appendControlPoint**(`position`): `void`
 
-Defined in: [packages/curve/src/composite-curve.ts:369](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/composite-curve.ts#L369)
+Defined in: [packages/curve/src/composite-curve.ts:369](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/curve/src/composite-curve.ts#L369)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/curve/src/composite-curve.ts:369](https://github.com/kinne
 
 > **getControlPoints**(): [`ControlPoint`](ControlPoint.md)[]
 
-Defined in: [packages/curve/src/composite-curve.ts:365](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/composite-curve.ts#L365)
+Defined in: [packages/curve/src/composite-curve.ts:365](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/curve/src/composite-curve.ts#L365)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [packages/curve/src/composite-curve.ts:365](https://github.com/kinne
 
 > **setLeftHandlePositionOfControlPoint**(`controlPointIndex`, `destPos`): `void`
 
-Defined in: [packages/curve/src/composite-curve.ts:395](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/composite-curve.ts#L395)
+Defined in: [packages/curve/src/composite-curve.ts:395](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/curve/src/composite-curve.ts#L395)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [packages/curve/src/composite-curve.ts:395](https://github.com/kinne
 
 > **setPositionOfControlPoint**(`controlPointIndex`, `destPos`): `void`
 
-Defined in: [packages/curve/src/composite-curve.ts:421](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/composite-curve.ts#L421)
+Defined in: [packages/curve/src/composite-curve.ts:421](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/curve/src/composite-curve.ts#L421)
 
 #### Parameters
 
@@ -104,7 +104,7 @@ Defined in: [packages/curve/src/composite-curve.ts:421](https://github.com/kinne
 
 > **setRightHandlePositionOfControlPoint**(`controlPointIndex`, `destPos`): `void`
 
-Defined in: [packages/curve/src/composite-curve.ts:408](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/composite-curve.ts#L408)
+Defined in: [packages/curve/src/composite-curve.ts:408](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/curve/src/composite-curve.ts#L408)
 
 #### Parameters
 

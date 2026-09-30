@@ -2,7 +2,7 @@
 
 # Class: DummyKmtInputContext
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:620](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L620)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:647](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L647)
 
 No-op implementation of KmtInputContext for web worker relay scenarios.
 
@@ -28,7 +28,7 @@ All methods are no-ops and all properties return default values.
 
 > **new DummyKmtInputContext**(): `DummyKmtInputContext`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:625](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L625)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:652](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L652)
 
 #### Returns
 
@@ -40,7 +40,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **alignCoordinateSystem**: `boolean` = `false`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:621](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L621)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:648](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L648)
 
 Whether to use standard screen coordinate system (vs inverted Y-axis)
 
@@ -54,7 +54,7 @@ Whether to use standard screen coordinate system (vs inverted Y-axis)
 
 > **canvas**: [`Canvas`](../interfaces/Canvas.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:622](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L622)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:649](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L649)
 
 Canvas accessor for dimensions and cursor control
 
@@ -68,7 +68,7 @@ Canvas accessor for dimensions and cursor control
 
 > **initialCursorPosition**: `Point`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:623](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L623)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:650](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L650)
 
 The cursor position when a pan gesture started
 
@@ -82,7 +82,7 @@ The cursor position when a pan gesture started
 
 > **setCursorPosition**: (`position`) => `void` = `NO_OP`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:629](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L629)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:656](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L656)
 
 #### Parameters
 
@@ -100,7 +100,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **toggleOffEdgeAutoCameraInput**: () => `void` = `NO_OP`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:628](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L628)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:655](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L655)
 
 #### Returns
 
@@ -112,7 +112,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **toggleOnEdgeAutoCameraInput**: () => `void` = `NO_OP`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:627](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L627)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:654](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L654)
 
 #### Returns
 
@@ -126,7 +126,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **get** **kmtTrackpadTrackScore**(): `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:637](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L637)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:664](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L664)
 
 Score tracking input modality: >0 for mouse, <0 for trackpad, 0 for undetermined
 
@@ -148,7 +148,7 @@ Score tracking input modality: >0 for mouse, <0 for trackpad, 0 for undetermined
 
 > **get** **mode**(): `"kmt"` \| `"trackpad"` \| `"TBD"`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:647](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L647)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:674](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L674)
 
 The current input modality: 'kmt' (mouse), 'trackpad', or 'TBD' (to be determined)
 
@@ -168,7 +168,7 @@ The current input modality: 'kmt' (mouse), 'trackpad', or 'TBD' (to be determine
 
 > **addKmtTrackpadTrackScore**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:643](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L643)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:670](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L670)
 
 Increases the score toward mouse
 
@@ -186,7 +186,7 @@ Increases the score toward mouse
 
 > **cancelCurrentAction**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:651](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L651)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:678](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L678)
 
 Cancels the current action and resets cursor position
 
@@ -204,7 +204,7 @@ Cancels the current action and resets cursor position
 
 > **cleanup**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:633](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L633)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:660](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L660)
 
 #### Returns
 
@@ -220,7 +220,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **setInitialCursorPosition**(`position`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:631](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L631)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:658](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L658)
 
 Sets the initial cursor position when starting a pan gesture
 
@@ -244,7 +244,7 @@ Sets the initial cursor position when starting a pan gesture
 
 > **setMode**(`mode`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:645](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L645)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:672](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L672)
 
 Sets the determined input modality
 
@@ -268,7 +268,7 @@ Sets the determined input modality
 
 > **setup**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:635](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L635)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:662](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L662)
 
 #### Returns
 
@@ -284,7 +284,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **subtractKmtTrackpadTrackScore**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:641](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L641)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:668](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L668)
 
 Decreases the score toward trackpad
 

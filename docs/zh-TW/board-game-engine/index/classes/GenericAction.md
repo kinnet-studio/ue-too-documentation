@@ -2,7 +2,7 @@
 
 # 類別: GenericAction
 
-定義於: [action-system/action.ts:11](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/action.ts#L11)
+定義於: [action-system/action.ts:11](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/action.ts#L11)
 
 ## 實作
 
@@ -14,7 +14,7 @@
 
 > **new GenericAction**(`type`, `actor`, `targets`, `parameters`, `preconditions`, `costs`, `effects`): `GenericAction`
 
-定義於: [action-system/action.ts:21](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/action.ts#L21)
+定義於: [action-system/action.ts:21](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/action.ts#L21)
 
 #### 參數
 
@@ -56,7 +56,7 @@
 
 > **actor**: `number`
 
-定義於: [action-system/action.ts:13](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/action.ts#L13)
+定義於: [action-system/action.ts:13](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/action.ts#L13)
 
 ***
 
@@ -64,7 +64,7 @@
 
 > **costs**: [`Effect`](../interfaces/Effect.md)[] = `[]`
 
-定義於: [action-system/action.ts:17](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/action.ts#L17)
+定義於: [action-system/action.ts:17](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/action.ts#L17)
 
 ***
 
@@ -72,7 +72,7 @@
 
 > **effects**: [`Effect`](../interfaces/Effect.md)[] = `[]`
 
-定義於: [action-system/action.ts:18](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/action.ts#L18)
+定義於: [action-system/action.ts:18](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/action.ts#L18)
 
 ***
 
@@ -80,7 +80,7 @@
 
 > **parameters**: `Record`\<`string`, `unknown`\>
 
-定義於: [action-system/action.ts:15](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/action.ts#L15)
+定義於: [action-system/action.ts:15](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/action.ts#L15)
 
 ***
 
@@ -88,7 +88,7 @@
 
 > **preconditions**: [`Precondition`](../interfaces/Precondition.md)[]
 
-定義於: [action-system/action.ts:16](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/action.ts#L16)
+定義於: [action-system/action.ts:16](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/action.ts#L16)
 
 ***
 
@@ -96,7 +96,7 @@
 
 > **targets**: `number`[]
 
-定義於: [action-system/action.ts:14](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/action.ts#L14)
+定義於: [action-system/action.ts:14](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/action.ts#L14)
 
 ***
 
@@ -104,7 +104,7 @@
 
 > **type**: `string`
 
-定義於: [action-system/action.ts:12](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/action.ts#L12)
+定義於: [action-system/action.ts:12](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/action.ts#L12)
 
 #### 實作了
 
@@ -116,7 +116,7 @@
 
 > **canExecute**(): `boolean`
 
-定義於: [action-system/action.ts:39](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/action.ts#L39)
+定義於: [action-system/action.ts:39](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/action.ts#L39)
 
 #### 回傳
 
@@ -128,7 +128,7 @@
 
 > **execute**(): [`Event`](../interfaces/Event.md)[]
 
-定義於: [action-system/action.ts:43](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/action-system/action.ts#L43)
+定義於: [action-system/action.ts:43](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/action.ts#L43)
 
 #### 回傳
 

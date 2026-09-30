@@ -2,7 +2,7 @@
 
 # クラス: Matrix
 
-定義: [matrix.ts:3](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L3)
+定義: [matrix.ts:3](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/math/src/matrix.ts#L3)
 
 ## コンストラクター
 
@@ -10,7 +10,7 @@
 
 > **new Matrix**(`_matrix`): `Matrix`
 
-定義: [matrix.ts:6](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L6)
+定義: [matrix.ts:6](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/math/src/matrix.ts#L6)
 
 #### パラメータ
 
@@ -30,7 +30,7 @@
 
 > **get** **inverse**(): [`Matrix3x3`](../interfaces/Matrix3x3.md) \| `null`
 
-定義: [matrix.ts:10](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L10)
+定義: [matrix.ts:10](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/math/src/matrix.ts#L10)
 
 ##### 戻り値
 
@@ -42,7 +42,7 @@
 
 > **invertPoint**(`point`): [`Point`](../type-aliases/Point-1.md) \| `null`
 
-定義: [matrix.ts:23](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L23)
+定義: [matrix.ts:23](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/math/src/matrix.ts#L23)
 
 #### パラメータ
 
@@ -60,7 +60,7 @@
 
 > **setMatrix**(`matrix`): `void`
 
-定義: [matrix.ts:14](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L14)
+定義: [matrix.ts:14](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/math/src/matrix.ts#L14)
 
 #### パラメータ
 
@@ -78,7 +78,7 @@
 
 > **transformPoint**(`point`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [matrix.ts:19](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/matrix.ts#L19)
+定義: [matrix.ts:19](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/math/src/matrix.ts#L19)
 
 #### パラメータ
 

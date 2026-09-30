@@ -4,7 +4,7 @@
 
 > **rotationWithinLimits**(`rotation`, `rotationLimits?`): `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:130](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/rotation.ts#L130)
+Defined in: [packages/board/src/camera/utils/rotation.ts:130](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/utils/rotation.ts#L130)
 
 Checks if a rotation angle is within specified angular limits.
 

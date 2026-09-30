@@ -2,7 +2,7 @@
 
 # Class: World
 
-Defined in: [world.ts:65](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L65)
+Defined in: [world.ts:65](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L65)
 
 Main physics world managing rigid body simulation.
 
@@ -49,7 +49,7 @@ function update(dt: number) {
 
 > **new World**(`maxTransWidth`, `maxTransHeight`, `spatialIndexType`): `World`
 
-Defined in: [world.ts:82](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L82)
+Defined in: [world.ts:82](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L82)
 
 #### Parameters
 
@@ -75,7 +75,7 @@ Defined in: [world.ts:82](https://github.com/kinnet-studio/ue-too/blob/694dd991b
 
 > **\_context**: `CanvasRenderingContext2D` \| `null` = `null`
 
-Defined in: [world.ts:80](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L80)
+Defined in: [world.ts:80](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L80)
 
 ## Accessors
 
@@ -85,7 +85,7 @@ Defined in: [world.ts:80](https://github.com/kinnet-studio/ue-too/blob/694dd991b
 
 > **get** **currentSpatialIndexType**(): [`SpatialIndexType`](../type-aliases/SpatialIndexType.md)
 
-Defined in: [world.ts:284](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L284)
+Defined in: [world.ts:284](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L284)
 
 ##### Returns
 
@@ -99,7 +99,7 @@ Defined in: [world.ts:284](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **get** **resolveCollision**(): `boolean`
 
-Defined in: [world.ts:231](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L231)
+Defined in: [world.ts:231](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L231)
 
 ##### Returns
 
@@ -109,7 +109,7 @@ Defined in: [world.ts:231](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **set** **resolveCollision**(`resolveCollision`): `void`
 
-Defined in: [world.ts:235](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L235)
+Defined in: [world.ts:235](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L235)
 
 ##### Parameters
 
@@ -129,7 +129,7 @@ Defined in: [world.ts:235](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **get** **sleepingEnabled**(): `boolean`
 
-Defined in: [world.ts:314](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L314)
+Defined in: [world.ts:314](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L314)
 
 ##### Returns
 
@@ -139,7 +139,7 @@ Defined in: [world.ts:314](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **set** **sleepingEnabled**(`enabled`): `void`
 
-Defined in: [world.ts:318](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L318)
+Defined in: [world.ts:318](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L318)
 
 ##### Parameters
 
@@ -159,7 +159,7 @@ Defined in: [world.ts:318](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **get** **useLinearCollisionResolution**(): `boolean`
 
-Defined in: [world.ts:239](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L239)
+Defined in: [world.ts:239](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L239)
 
 ##### Returns
 
@@ -169,7 +169,7 @@ Defined in: [world.ts:239](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **set** **useLinearCollisionResolution**(`value`): `void`
 
-Defined in: [world.ts:243](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L243)
+Defined in: [world.ts:243](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L243)
 
 ##### Parameters
 
@@ -187,7 +187,7 @@ Defined in: [world.ts:243](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **addConstraint**(`constraint`): `void`
 
-Defined in: [world.ts:267](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L267)
+Defined in: [world.ts:267](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L267)
 
 #### Parameters
 
@@ -205,7 +205,7 @@ Defined in: [world.ts:267](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **addPinJoint**(`bodyA`, `bodyB`, `anchorA`, `anchorB`): `void`
 
-Defined in: [world.ts:275](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L275)
+Defined in: [world.ts:275](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L275)
 
 #### Parameters
 
@@ -235,7 +235,7 @@ Defined in: [world.ts:275](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **addRigidBody**(`ident`, `body`): `void`
 
-Defined in: [world.ts:112](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L112)
+Defined in: [world.ts:112](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L112)
 
 #### Parameters
 
@@ -257,7 +257,7 @@ Defined in: [world.ts:112](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **getCollisionStats**(): `object`
 
-Defined in: [world.ts:336](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L336)
+Defined in: [world.ts:336](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L336)
 
 #### Returns
 
@@ -289,7 +289,7 @@ Defined in: [world.ts:336](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **getConstraints**(): [`Constraint`](../interfaces/Constraint.md)[]
 
-Defined in: [world.ts:271](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L271)
+Defined in: [world.ts:271](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L271)
 
 #### Returns
 
@@ -301,7 +301,7 @@ Defined in: [world.ts:271](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **getPairManager**(): [`PairManager`](PairManager.md)
 
-Defined in: [world.ts:331](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L331)
+Defined in: [world.ts:331](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L331)
 
 #### Returns
 
@@ -313,7 +313,7 @@ Defined in: [world.ts:331](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **getRigidBodyList**(): [`RigidBody`](../interfaces/RigidBody.md)[]
 
-Defined in: [world.ts:247](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L247)
+Defined in: [world.ts:247](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L247)
 
 #### Returns
 
@@ -325,7 +325,7 @@ Defined in: [world.ts:247](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **getRigidBodyMap**(): `Map`\<`string`, [`RigidBody`](../interfaces/RigidBody.md)\>
 
-Defined in: [world.ts:255](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L255)
+Defined in: [world.ts:255](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L255)
 
 #### Returns
 
@@ -337,7 +337,7 @@ Defined in: [world.ts:255](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **getSpatialIndexStats**(): `any`
 
-Defined in: [world.ts:301](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L301)
+Defined in: [world.ts:301](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L301)
 
 #### Returns
 
@@ -349,7 +349,7 @@ Defined in: [world.ts:301](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **removeRigidBody**(`ident`): `void`
 
-Defined in: [world.ts:122](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L122)
+Defined in: [world.ts:122](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L122)
 
 #### Parameters
 
@@ -367,7 +367,7 @@ Defined in: [world.ts:122](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **resolveCollisionPhase**(): `Point`[]
 
-Defined in: [world.ts:175](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L175)
+Defined in: [world.ts:175](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L175)
 
 #### Returns
 
@@ -379,7 +379,7 @@ Defined in: [world.ts:175](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **setMaxTransHeight**(`height`): `void`
 
-Defined in: [world.ts:259](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L259)
+Defined in: [world.ts:259](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L259)
 
 #### Parameters
 
@@ -397,7 +397,7 @@ Defined in: [world.ts:259](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **setMaxTransWidth**(`width`): `void`
 
-Defined in: [world.ts:263](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L263)
+Defined in: [world.ts:263](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L263)
 
 #### Parameters
 
@@ -415,7 +415,7 @@ Defined in: [world.ts:263](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **setSpatialIndexType**(`type`): `void`
 
-Defined in: [world.ts:288](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L288)
+Defined in: [world.ts:288](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L288)
 
 #### Parameters
 
@@ -433,7 +433,7 @@ Defined in: [world.ts:288](https://github.com/kinnet-studio/ue-too/blob/694dd991
 
 > **step**(`deltaTime`): `void`
 
-Defined in: [world.ts:144](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/world.ts#L144)
+Defined in: [world.ts:144](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/world.ts#L144)
 
 #### Parameters
 

@@ -2,7 +2,7 @@
 
 # クラス: DummyCanvas
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:98](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L98)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:98](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L98)
 
 No-op implementation of Canvas interface for web worker relay contexts.
 
@@ -39,7 +39,7 @@ All properties return default/empty values and all methods are no-ops.
 
 > **detached**: `boolean` = `false`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:108](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L108)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:108](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L108)
 
 Whether the canvas is currently detached from the DOM
 
@@ -53,7 +53,7 @@ Whether the canvas is currently detached from the DOM
 
 > **dimensions**: `object`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:103](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L103)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:103](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L103)
 
 Combined dimensions and position information
 
@@ -79,7 +79,7 @@ Combined dimensions and position information
 
 > **height**: `number` = `0`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:100](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L100)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:100](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L100)
 
 The canvas height in CSS pixels
 
@@ -93,7 +93,7 @@ The canvas height in CSS pixels
 
 > **position**: `Point`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:101](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L101)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:101](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L101)
 
 The top-left position of the canvas in window coordinates
 
@@ -107,7 +107,7 @@ The top-left position of the canvas in window coordinates
 
 > **setCursor**: (`style`) => `void` = `NO_OP`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:102](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L102)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:102](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L102)
 
 Sets the CSS cursor style for visual feedback
 
@@ -131,7 +131,7 @@ Sets the CSS cursor style for visual feedback
 
 > **tearDown**: () => `void` = `NO_OP`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:109](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L109)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:109](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L109)
 
 Cleanup method to dispose of resources and event listeners
 
@@ -149,7 +149,7 @@ Cleanup method to dispose of resources and event listeners
 
 > **width**: `number` = `0`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:99](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L99)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:99](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L99)
 
 The canvas width in CSS pixels
 

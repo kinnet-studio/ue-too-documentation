@@ -4,7 +4,7 @@
 
 > **MachineGraphEdge** = `object`
 
-Defined in: [introspect.ts:29](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L29)
+Defined in: [introspect.ts:29](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L29)
 
 A directed edge in an extracted machine graph.
 
@@ -26,7 +26,7 @@ without declared preconditions.
 
 > **event**: `string`
 
-Defined in: [introspect.ts:32](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L32)
+Defined in: [introspect.ts:32](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L32)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [introspect.ts:32](https://github.com/kinnet-studio/ue-too/blob/694d
 
 > **from**: `string`
 
-Defined in: [introspect.ts:30](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L30)
+Defined in: [introspect.ts:30](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L30)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [introspect.ts:30](https://github.com/kinnet-studio/ue-too/blob/694d
 
 > `optional` **guard**: `string`
 
-Defined in: [introspect.ts:33](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L33)
+Defined in: [introspect.ts:33](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L33)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [introspect.ts:33](https://github.com/kinnet-studio/ue-too/blob/694d
 
 > `optional` **preconditions**: `string`[]
 
-Defined in: [introspect.ts:34](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L34)
+Defined in: [introspect.ts:34](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L34)
 
 ***
 
@@ -58,4 +58,4 @@ Defined in: [introspect.ts:34](https://github.com/kinnet-studio/ue-too/blob/694d
 
 > **to**: `string`
 
-Defined in: [introspect.ts:31](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L31)
+Defined in: [introspect.ts:31](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L31)

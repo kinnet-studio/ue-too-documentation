@@ -4,7 +4,7 @@
 
 > **useViewportScrollBar**(): `object`
 
-Defined in: [board-pixi-react-integration/src/hooks/pixi/utils.ts:68](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-react-integration/src/hooks/pixi/utils.ts#L68)
+Defined in: [board-pixi-react-integration/src/hooks/pixi/utils.ts:68](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-pixi-react-integration/src/hooks/pixi/utils.ts#L68)
 
 ## Returns
 

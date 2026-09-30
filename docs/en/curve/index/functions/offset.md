@@ -6,7 +6,7 @@
 
 > **offset**(`curve`, `t`): [`BCurve`](../classes/BCurve.md)[]
 
-Defined in: [packages/curve/src/b-curve.ts:1579](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/b-curve.ts#L1579)
+Defined in: [packages/curve/src/b-curve.ts:1579](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/curve/src/b-curve.ts#L1579)
 
 Creates offset curves at a specified distance from the original curve.
 
@@ -28,7 +28,7 @@ Creates offset curves at a specified distance from the original curve.
 
 > **offset**(`curve`, `t`, `d`): `object`
 
-Defined in: [packages/curve/src/b-curve.ts:1580](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/curve/src/b-curve.ts#L1580)
+Defined in: [packages/curve/src/b-curve.ts:1580](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/curve/src/b-curve.ts#L1580)
 
 Creates offset curves at a specified distance from the original curve.
 

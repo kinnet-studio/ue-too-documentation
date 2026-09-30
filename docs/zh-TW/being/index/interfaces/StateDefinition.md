@@ -2,7 +2,7 @@
 
 # 介面: StateDefinition\<Context, EventPayloadMapping, StateNames, EventOutputMapping\>
 
-定義於: [schema-factory.ts:163](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L163)
+定義於: [schema-factory.ts:163](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/schema-factory.ts#L163)
 
 Definition of a single state in the state machine.
 
@@ -60,7 +60,7 @@ Optional mapping of events to their output types
 
 > `optional` **guards**: `Record`\<`string`, [`GuardFunction`](../type-aliases/GuardFunction.md)\<`Context`\>\>
 
-定義於: [schema-factory.ts:188](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L188)
+定義於: [schema-factory.ts:188](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/schema-factory.ts#L188)
 
 Optional mapping of guard names to guard functions.
 Guards defined here can be reused across multiple transitions within this state
@@ -75,7 +75,7 @@ not BaseContext, so you get full type safety for your context properties.
 
 > **name**: `StateNames`
 
-定義於: [schema-factory.ts:172](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L172)
+定義於: [schema-factory.ts:172](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/schema-factory.ts#L172)
 
 Name of this state
 
@@ -85,7 +85,7 @@ Name of this state
 
 > `optional` **onEnter**: (`context`, `fromState`) => `void`
 
-定義於: [schema-factory.ts:190](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L190)
+定義於: [schema-factory.ts:190](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/schema-factory.ts#L190)
 
 Optional callback when entering this state
 
@@ -109,7 +109,7 @@ Optional callback when entering this state
 
 > `optional` **onExit**: (`context`, `toState`) => `void`
 
-定義於: [schema-factory.ts:192](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L192)
+定義於: [schema-factory.ts:192](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/schema-factory.ts#L192)
 
 Optional callback when exiting this state
 
@@ -133,6 +133,6 @@ Optional callback when exiting this state
 
 > **transitions**: [`TransitionDefinitionUnion`](../type-aliases/TransitionDefinitionUnion.md)\<`Context`, `EventPayloadMapping`, `StateNames`, `EventOutputMapping`\>[]
 
-定義於: [schema-factory.ts:174](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L174)
+定義於: [schema-factory.ts:174](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/schema-factory.ts#L174)
 
 Transitions available from this state

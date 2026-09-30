@@ -4,7 +4,7 @@
 
 > **zoomLevelBoundariesShouldUpdate**(`zoomLevelBoundaries`, `targetMinZoomLevel`): `targetMinZoomLevel is number`
 
-Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:141](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/utils/zoomlevel-adjustment.ts#L141)
+Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:141](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/utils/zoomlevel-adjustment.ts#L141)
 
 Determines if zoom level boundaries should be updated.
 

@@ -2,7 +2,7 @@
 
 # 類別: FabricInputEventParser
 
-定義於: [fabric-input-event-parser.ts:9](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L9)
+定義於: [fabric-input-event-parser.ts:9](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L9)
 
 ## 建構函式
 
@@ -10,7 +10,7 @@
 
 > **new FabricInputEventParser**(`fabricCanvas`, `kmtInputStateMachine`, `inputOrchestrator`): `FabricInputEventParser`
 
-定義於: [fabric-input-event-parser.ts:17](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L17)
+定義於: [fabric-input-event-parser.ts:17](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L17)
 
 #### 參數
 
@@ -38,7 +38,7 @@
 
 > **get** **disabled**(): `boolean`
 
-定義於: [fabric-input-event-parser.ts:104](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L104)
+定義於: [fabric-input-event-parser.ts:104](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L104)
 
 ##### 回傳
 
@@ -50,7 +50,7 @@
 
 > **bindFunctions**(): `void`
 
-定義於: [fabric-input-event-parser.ts:30](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L30)
+定義於: [fabric-input-event-parser.ts:30](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L30)
 
 #### 回傳
 
@@ -62,7 +62,7 @@
 
 > **disable**(): `void`
 
-定義於: [fabric-input-event-parser.ts:96](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L96)
+定義於: [fabric-input-event-parser.ts:96](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L96)
 
 #### 回傳
 
@@ -74,7 +74,7 @@
 
 > **enable**(): `void`
 
-定義於: [fabric-input-event-parser.ts:100](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L100)
+定義於: [fabric-input-event-parser.ts:100](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L100)
 
 #### 回傳
 
@@ -86,7 +86,7 @@
 
 > **keydownHandler**(`event`): `void`
 
-定義於: [fabric-input-event-parser.ts:184](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L184)
+定義於: [fabric-input-event-parser.ts:184](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L184)
 
 #### 參數
 
@@ -104,7 +104,7 @@
 
 > **keyupHandler**(`event`): `void`
 
-定義於: [fabric-input-event-parser.ts:197](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L197)
+定義於: [fabric-input-event-parser.ts:197](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L197)
 
 #### 參數
 
@@ -122,7 +122,7 @@
 
 > **pointerDownHandler**(`event`): `void`
 
-定義於: [fabric-input-event-parser.ts:70](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L70)
+定義於: [fabric-input-event-parser.ts:70](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L70)
 
 #### 參數
 
@@ -140,7 +140,7 @@
 
 > **pointerMoveHandler**(`event`): `void`
 
-定義於: [fabric-input-event-parser.ts:133](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L133)
+定義於: [fabric-input-event-parser.ts:133](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L133)
 
 #### 參數
 
@@ -158,7 +158,7 @@
 
 > **pointerUpHandler**(`event`): `void`
 
-定義於: [fabric-input-event-parser.ts:108](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L108)
+定義於: [fabric-input-event-parser.ts:108](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L108)
 
 #### 參數
 
@@ -176,7 +176,7 @@
 
 > **scrollHandler**(`event`): `void`
 
-定義於: [fabric-input-event-parser.ts:162](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L162)
+定義於: [fabric-input-event-parser.ts:162](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L162)
 
 #### 參數
 
@@ -194,7 +194,7 @@
 
 > **setUp**(): `void`
 
-定義於: [fabric-input-event-parser.ts:39](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L39)
+定義於: [fabric-input-event-parser.ts:39](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L39)
 
 #### 回傳
 
@@ -206,7 +206,7 @@
 
 > **tearDown**(): `void`
 
-定義於: [fabric-input-event-parser.ts:52](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L52)
+定義於: [fabric-input-event-parser.ts:52](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L52)
 
 #### 回傳
 

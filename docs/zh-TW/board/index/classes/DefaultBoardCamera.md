@@ -2,7 +2,7 @@
 
 # 類別: DefaultBoardCamera
 
-定義於: [packages/board/src/camera/default-camera.ts:89](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L89)
+定義於: [packages/board/src/camera/default-camera.ts:89](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L89)
 
 Observable camera implementation that extends BaseCamera with event notification.
 This is the recommended camera class for most applications.
@@ -54,7 +54,7 @@ camera.setPosition({ x: 100, y: 200 });
 
 > **new DefaultBoardCamera**(`options`): `DefaultBoardCamera`
 
-定義於: [packages/board/src/camera/default-camera.ts:124](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L124)
+定義於: [packages/board/src/camera/default-camera.ts:124](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L124)
 
 Creates a new observable camera with event notification capabilities.
 
@@ -97,7 +97,7 @@ const camera3 = new DefaultBoardCamera(
 
 > **get** **boundaries**(): [`Boundaries`](../type-aliases/Boundaries.md) \| `undefined`
 
-定義於: [packages/board/src/camera/default-camera.ts:154](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L154)
+定義於: [packages/board/src/camera/default-camera.ts:154](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L154)
 
 ##### Description
 
@@ -111,7 +111,7 @@ The boundaries of the camera in the world coordinate system.
 
 > **set** **boundaries**(`boundaries`): `void`
 
-定義於: [packages/board/src/camera/default-camera.ts:158](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L158)
+定義於: [packages/board/src/camera/default-camera.ts:158](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L158)
 
 Optional position boundaries for the camera in world coordinates
 
@@ -139,7 +139,7 @@ Optional position boundaries for the camera in world coordinates
 
 > **get** **position**(): `Point`
 
-定義於: [packages/board/src/camera/default-camera.ts:193](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L193)
+定義於: [packages/board/src/camera/default-camera.ts:193](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L193)
 
 ##### Description
 
@@ -163,7 +163,7 @@ Current camera position in world coordinates (center of viewport)
 
 > **get** **rotationBoundaries**(): [`RotationLimits`](../type-aliases/RotationLimits.md) \| `undefined`
 
-定義於: [packages/board/src/camera/default-camera.ts:327](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L327)
+定義於: [packages/board/src/camera/default-camera.ts:327](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L327)
 
 ##### Description
 
@@ -177,7 +177,7 @@ The boundaries of the rotation of the camera.
 
 > **set** **rotationBoundaries**(`rotationBoundaries`): `void`
 
-定義於: [packages/board/src/camera/default-camera.ts:331](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L331)
+定義於: [packages/board/src/camera/default-camera.ts:331](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L331)
 
 Optional rotation constraints (start and end angles)
 
@@ -205,7 +205,7 @@ Optional rotation constraints (start and end angles)
 
 > **get** **viewPortHeight**(): `number`
 
-定義於: [packages/board/src/camera/default-camera.ts:180](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L180)
+定義於: [packages/board/src/camera/default-camera.ts:180](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L180)
 
 ##### Description
 
@@ -219,7 +219,7 @@ The height of the viewport. (The height of the canvas in css pixels)
 
 > **set** **viewPortHeight**(`height`): `void`
 
-定義於: [packages/board/src/camera/default-camera.ts:184](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L184)
+定義於: [packages/board/src/camera/default-camera.ts:184](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L184)
 
 Height of the viewport in CSS pixels
 
@@ -247,7 +247,7 @@ Height of the viewport in CSS pixels
 
 > **get** **viewPortWidth**(): `number`
 
-定義於: [packages/board/src/camera/default-camera.ts:167](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L167)
+定義於: [packages/board/src/camera/default-camera.ts:167](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L167)
 
 ##### Description
 
@@ -261,7 +261,7 @@ The width of the viewport. (The width of the canvas in css pixels)
 
 > **set** **viewPortWidth**(`width`): `void`
 
-定義於: [packages/board/src/camera/default-camera.ts:171](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L171)
+定義於: [packages/board/src/camera/default-camera.ts:171](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L171)
 
 Width of the viewport in CSS pixels
 
@@ -289,7 +289,7 @@ Width of the viewport in CSS pixels
 
 > **get** **zoomBoundaries**(): [`ZoomLevelLimits`](../type-aliases/ZoomLevelLimits.md) \| `undefined`
 
-定義於: [packages/board/src/camera/default-camera.ts:246](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L246)
+定義於: [packages/board/src/camera/default-camera.ts:246](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L246)
 
 ##### Description
 
@@ -303,7 +303,7 @@ The boundaries of the zoom level of the camera.
 
 > **set** **zoomBoundaries**(`zoomBoundaries`): `void`
 
-定義於: [packages/board/src/camera/default-camera.ts:250](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L250)
+定義於: [packages/board/src/camera/default-camera.ts:250](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L250)
 
 Optional zoom level constraints (min and max zoom)
 
@@ -331,7 +331,7 @@ Optional zoom level constraints (min and max zoom)
 
 > **get** **zoomLevel**(): `number`
 
-定義於: [packages/board/src/camera/default-camera.ts:237](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L237)
+定義於: [packages/board/src/camera/default-camera.ts:237](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L237)
 
 ##### Description
 
@@ -355,7 +355,7 @@ Current zoom level (1.0 = 100%, 2.0 = 200%, etc.)
 
 > **get** **rotation**(): `number`
 
-定義於: [packages/board/src/camera/default-camera.ts:318](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L318)
+定義於: [packages/board/src/camera/default-camera.ts:318](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L318)
 
 Gets the current camera rotation in radians.
 
@@ -377,7 +377,7 @@ Current rotation in radians (0 to 2π), normalized
 
 > **convertFromViewPort2WorldSpace**(`point`): `Point`
 
-定義於: [packages/board/src/camera/default-camera.ts:407](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L407)
+定義於: [packages/board/src/camera/default-camera.ts:407](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L407)
 
 #### 參數
 
@@ -407,7 +407,7 @@ Converts a point from the viewport coordinate system to the world coordinate sys
 
 > **convertFromWorld2ViewPort**(`point`): `Point`
 
-定義於: [packages/board/src/camera/default-camera.ts:422](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L422)
+定義於: [packages/board/src/camera/default-camera.ts:422](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L422)
 
 #### 參數
 
@@ -437,7 +437,7 @@ Converts a point from the world coordinate system to the viewport coordinate sys
 
 > **getCameraOriginInWindow**(`centerInWindow`): `Point`
 
-定義於: [packages/board/src/camera/default-camera.ts:397](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L397)
+定義於: [packages/board/src/camera/default-camera.ts:397](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L397)
 
 #### 參數
 
@@ -465,7 +465,7 @@ The origin of the camera in the window coordinate system.
 
 > **getTransform**(`devicePixelRatio`, `alignCoorindate`): [`TransformationMatrix`](../type-aliases/TransformationMatrix.md)
 
-定義於: [packages/board/src/camera/default-camera.ts:347](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L347)
+定義於: [packages/board/src/camera/default-camera.ts:347](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L347)
 
 #### 參數
 
@@ -506,7 +506,7 @@ The order of the transformation is as follows:
 
 > **getTRS**(`devicePixelRatio`, `alignCoordinateSystem`): `object`
 
-定義於: [packages/board/src/camera/default-camera.ts:554](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L554)
+定義於: [packages/board/src/camera/default-camera.ts:554](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L554)
 
 Decomposes the camera transformation into Translation, Rotation, and Scale components.
 
@@ -572,7 +572,7 @@ Object containing separate scale, rotation, and translation values
 
 > **invertFromWorldSpace2ViewPort**(`point`): `Point`
 
-定義於: [packages/board/src/camera/default-camera.ts:437](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L437)
+定義於: [packages/board/src/camera/default-camera.ts:437](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L437)
 
 #### 參數
 
@@ -598,7 +598,7 @@ Inverts a point from the world coordinate system to the viewport coordinate syst
 
 > **on**\<`K`\>(`eventName`, `callback`, `options?`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-定義於: [packages/board/src/camera/default-camera.ts:546](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L546)
+定義於: [packages/board/src/camera/default-camera.ts:546](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L546)
 
 Subscribes to camera events with optional AbortController for cancellation.
 
@@ -689,7 +689,7 @@ controller.abort();
 
 > **setHorizontalBoundaries**(`min`, `max`): `void`
 
-定義於: [packages/board/src/camera/default-camera.ts:454](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L454)
+定義於: [packages/board/src/camera/default-camera.ts:454](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L454)
 
 Sets horizontal (x-axis) movement boundaries for the camera.
 
@@ -725,7 +725,7 @@ If min > max, values are automatically swapped.
 
 > **setMaxZoomLevel**(`maxZoomLevel`): `boolean`
 
-定義於: [packages/board/src/camera/default-camera.ts:254](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L254)
+定義於: [packages/board/src/camera/default-camera.ts:254](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L254)
 
 Updates the maximum allowed zoom level.
 
@@ -751,7 +751,7 @@ Maximum zoom level constraint
 
 > **setMinZoomLevel**(`minZoomLevel`): `boolean`
 
-定義於: [packages/board/src/camera/default-camera.ts:270](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L270)
+定義於: [packages/board/src/camera/default-camera.ts:270](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L270)
 
 Updates the minimum allowed zoom level.
 
@@ -781,7 +781,7 @@ If current zoom is below the new minimum, camera will zoom in to match the minim
 
 > **setPosition**(`destination`): `boolean`
 
-定義於: [packages/board/src/camera/default-camera.ts:216](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L216)
+定義於: [packages/board/src/camera/default-camera.ts:216](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L216)
 
 Sets the camera position and notifies observers if successful.
 
@@ -824,7 +824,7 @@ camera.setPosition({ x: 100, y: 200 }); // Triggers pan event
 
 > **setRotation**(`rotation`): `boolean`
 
-定義於: [packages/board/src/camera/default-camera.ts:374](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L374)
+定義於: [packages/board/src/camera/default-camera.ts:374](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L374)
 
 Sets the camera rotation and notifies observers if successful.
 
@@ -868,7 +868,7 @@ camera.setRotation(Math.PI / 4); // Triggers rotate event
 
 > **setUsingTransformationMatrix**(`transformationMatrix`, `devicePixelRatio`): `void`
 
-定義於: [packages/board/src/camera/default-camera.ts:566](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L566)
+定義於: [packages/board/src/camera/default-camera.ts:566](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L566)
 
 #### 參數
 
@@ -890,7 +890,7 @@ camera.setRotation(Math.PI / 4); // Triggers rotate event
 
 > **setVerticalBoundaries**(`min`, `max`): `void`
 
-定義於: [packages/board/src/camera/default-camera.ts:477](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L477)
+定義於: [packages/board/src/camera/default-camera.ts:477](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L477)
 
 Sets vertical (y-axis) movement boundaries for the camera.
 
@@ -926,7 +926,7 @@ If min > max, values are automatically swapped.
 
 > **setZoomLevel**(`zoomLevel`): `boolean`
 
-定義於: [packages/board/src/camera/default-camera.ts:297](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L297)
+定義於: [packages/board/src/camera/default-camera.ts:297](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L297)
 
 Sets the camera zoom level and notifies observers if successful.
 
@@ -970,7 +970,7 @@ camera.setZoomLevel(2.0); // Triggers zoom event
 
 > **viewPortAABB**(`alignCoordinate`): `object`
 
-定義於: [packages/board/src/camera/default-camera.ts:583](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L583)
+定義於: [packages/board/src/camera/default-camera.ts:583](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L583)
 
 Calculates the axis-aligned bounding box (AABB) of the viewport in world space.
 
@@ -1010,7 +1010,7 @@ Useful for culling and determining which objects are visible in the current view
 
 > **viewPortInWorldSpace**(`alignCoordinate`): `object`
 
-定義於: [packages/board/src/camera/default-camera.ts:576](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/default-camera.ts#L576)
+定義於: [packages/board/src/camera/default-camera.ts:576](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/default-camera.ts#L576)
 
 Calculates the four corners of the viewport in world space, accounting for rotation.
 

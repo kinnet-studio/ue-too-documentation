@@ -2,7 +2,7 @@
 
 # Class: KmtEmptyState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:664](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L664)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:667](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L667)
 
 ## Extends
 
@@ -14,7 +14,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **new KmtEmptyState**(): `KmtEmptyState`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:670](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L670)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:673](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L673)
 
 #### Returns
 

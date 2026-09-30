@@ -4,7 +4,7 @@
 
 > **appIsReady**\<`C`\>(`result`): \{ `ready`: `false`; \} \| \{ `app`: `Application`; `components`: `C`; `ready`: `true`; \}
 
-定義於: [board-pixi-react-integration/src/utils/pixi/init-app.ts:6](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-react-integration/src/utils/pixi/init-app.ts#L6)
+定義於: [board-pixi-react-integration/src/utils/pixi/init-app.ts:6](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-pixi-react-integration/src/utils/pixi/init-app.ts#L6)
 
 ## 型別參數
 

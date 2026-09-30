@@ -2,7 +2,7 @@
 
 # 介面: ComponentPrimitiveField
 
-定義於: [index.ts:179](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L179)
+定義於: [index.ts:179](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L179)
 
 Definition for a primitive (non-array) field in a component schema.
 
@@ -16,7 +16,7 @@ Definition for a primitive (non-array) field in a component schema.
 
 > `optional` **defaultValue**: `unknown`
 
-定義於: [index.ts:172](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L172)
+定義於: [index.ts:172](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L172)
 
 Default value for the field (used when creating new instances)
 
@@ -30,7 +30,7 @@ Default value for the field (used when creating new instances)
 
 > **name**: `string`
 
-定義於: [index.ts:168](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L168)
+定義於: [index.ts:168](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L168)
 
 The name of the field
 
@@ -44,7 +44,7 @@ The name of the field
 
 > `optional` **optional**: `boolean`
 
-定義於: [index.ts:170](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L170)
+定義於: [index.ts:170](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L170)
 
 Whether the field is optional (default: false)
 
@@ -58,6 +58,6 @@ Whether the field is optional (default: false)
 
 > **type**: `"string"` \| `"number"` \| `"boolean"` \| `"object"` \| `"entity"`
 
-定義於: [index.ts:181](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L181)
+定義於: [index.ts:181](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L181)
 
 Discriminator for the union type

@@ -2,7 +2,7 @@
 
 # 類別: PendingState
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:173](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L173)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:176](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L176)
 
 ## Description
 
@@ -80,7 +80,7 @@ The pending state of the touch input state machine.
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:179](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L179)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:182](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L182)
 
 #### 覆寫了
 
@@ -282,7 +282,7 @@ keyof `EventPayloadMapping`[]
 
 > **touchend**(`context`, `payload`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:203](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L203)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:206](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L206)
 
 #### 參數
 
@@ -304,7 +304,7 @@ keyof `EventPayloadMapping`[]
 
 > **touchmove**(`context`, `payload`): [`TouchOutputEvent`](../type-aliases/TouchOutputEvent.md)
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:207](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L207)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:210](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L210)
 
 #### 參數
 
@@ -326,7 +326,7 @@ keyof `EventPayloadMapping`[]
 
 > **touchstart**(`context`, `payload`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:199](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L199)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:202](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L202)
 
 #### 參數
 

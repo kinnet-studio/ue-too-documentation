@@ -2,7 +2,7 @@
 
 # Interface: KMTEventParser
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:16](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L16)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:16](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L16)
 
 Interface for KMT (Keyboard/Mouse/Trackpad) event parsers.
 
@@ -18,7 +18,7 @@ and coordinate with the orchestrator for output processing.
 
 > **disabled**: `boolean`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:18](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L18)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:18](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L18)
 
 Whether the parser is currently disabled
 
@@ -28,7 +28,7 @@ Whether the parser is currently disabled
 
 > `readonly` `optional` **stateMachine**: [`StateMachine`](StateMachine.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:38](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L38)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:38](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L38)
 
 The state machine this parser dispatches into, when the implementation
 exposes one. Optional so existing external parser implementations
@@ -44,7 +44,7 @@ reference.
 
 > **attach**(`canvas`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:24](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L24)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:24](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L24)
 
 Attaches to a new canvas element
 
@@ -64,7 +64,7 @@ Attaches to a new canvas element
 
 > **disable**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:26](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L26)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:26](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L26)
 
 Disables the parser; the event listeners are still attached just not processing any events
 
@@ -78,7 +78,7 @@ Disables the parser; the event listeners are still attached just not processing 
 
 > **enable**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:28](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L28)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:28](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L28)
 
 Enables the parser
 
@@ -92,7 +92,7 @@ Enables the parser
 
 > **setUp**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:20](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L20)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:20](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L20)
 
 Initializes event listeners
 
@@ -106,7 +106,7 @@ Initializes event listeners
 
 > **tearDown**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:22](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L22)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:22](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L22)
 
 Removes event listeners and cleans up
 

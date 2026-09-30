@@ -4,7 +4,7 @@
 
 > **boundariesFullyDefined**(`boundaries`): `boundaries is { max: { x: number; y: number }; min: { x: number; y: number } }`
 
-定義: [packages/board/src/camera/utils/position.ts:196](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/position.ts#L196)
+定義: [packages/board/src/camera/utils/position.ts:196](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/utils/position.ts#L196)
 
 Checks if boundaries have all four constraints (min/max for both x and y) defined.
 

@@ -270,12 +270,14 @@ requestAnimationFrame(draw);
 - [KmtInputEventMapping](type-aliases/KmtInputEventMapping.md)
 - [KmtInputEventOutputMapping](type-aliases/KmtInputEventOutputMapping.md)
 - [KmtInputStateMachine](type-aliases/KmtInputStateMachine.md)
+- [KmtInputStateMachineExpansion](type-aliases/KmtInputStateMachineExpansion.md)
 - [KmtInputStates](type-aliases/KmtInputStates.md)
 - [KmtOutputEvent](type-aliases/KmtOutputEvent.md)
 - [PointerEventPayload](type-aliases/PointerEventPayload.md)
 - [ScrollEventPayload](type-aliases/ScrollEventPayload.md)
 - [ScrollWithCtrlEventPayload](type-aliases/ScrollWithCtrlEventPayload.md)
 - [createKmtInputStateMachine](functions/createKmtInputStateMachine.md)
+- [expandKmtInputStateMachine](functions/expandKmtInputStateMachine.md)
 
 ## Input State Machine - Touch
 
@@ -286,10 +288,12 @@ requestAnimationFrame(draw);
 - [TouchEventPayload](type-aliases/TouchEventPayload.md)
 - [TouchInputEventOutputMapping](type-aliases/TouchInputEventOutputMapping.md)
 - [TouchInputStateMachine](type-aliases/TouchInputStateMachine.md)
+- [TouchInputStateMachineExpansion](type-aliases/TouchInputStateMachineExpansion.md)
 - [TouchOutputEvent](type-aliases/TouchOutputEvent.md)
 - [TouchPoints](type-aliases/TouchPoints.md)
 - [TouchStates](type-aliases/TouchStates.md)
 - [createTouchInputStateMachine](functions/createTouchInputStateMachine.md)
+- [expandTouchInputStateMachine](functions/expandTouchInputStateMachine.md)
 
 ## Matrix
 

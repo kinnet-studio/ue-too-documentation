@@ -2,7 +2,7 @@
 
 # 類別: MachineDebugger
 
-定義於: [debugger.ts:89](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L89)
+定義於: [debugger.ts:89](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L89)
 
 A debugger panel: a pannable state chart plus a sidebar with one tab per
 attached machine, the current state, a context inspector, fire buttons,
@@ -32,7 +32,7 @@ panel.dispose();
 
 > **new MachineDebugger**(`options`): `MachineDebugger`
 
-定義於: [debugger.ts:102](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L102)
+定義於: [debugger.ts:102](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L102)
 
 #### 參數
 
@@ -52,7 +52,7 @@ panel.dispose();
 
 > **get** **board**(): `Board`
 
-定義於: [debugger.ts:132](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L132)
+定義於: [debugger.ts:144](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L144)
 
 The panel's own graph viewport, so a page can diagram the board it pans.
 
@@ -68,7 +68,7 @@ The panel's own graph viewport, so a page can diagram the board it pans.
 
 > **get** **isOpen**(): `boolean`
 
-定義於: [debugger.ts:136](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L136)
+定義於: [debugger.ts:148](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L148)
 
 ##### 回傳
 
@@ -82,7 +82,7 @@ The panel's own graph viewport, so a page can diagram the board it pans.
 
 > **get** **machines**(): `ReadonlyMap`\<`string`, [`MachineLike`](../type-aliases/MachineLike.md)\>
 
-定義於: [debugger.ts:146](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L146)
+定義於: [debugger.ts:158](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L158)
 
 Name → machine for every attached machine.
 
@@ -98,7 +98,7 @@ Name → machine for every attached machine.
 
 > **get** **size**(): `number`
 
-定義於: [debugger.ts:141](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L141)
+定義於: [debugger.ts:153](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L153)
 
 Number of attached machines.
 
@@ -112,7 +112,7 @@ Number of attached machines.
 
 > **attach**(`machine`, `options`): [`AttachHandle`](../type-aliases/AttachHandle.md)
 
-定義於: [debugger.ts:159](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L159)
+定義於: [debugger.ts:171](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L171)
 
 Attaches a machine as a new tab.
 
@@ -140,7 +140,7 @@ Error when `options.name` is already attached to this panel.
 
 > **attachBoard**(`board`, `options`): [`AttachHandle`](../type-aliases/AttachHandle.md)
 
-定義於: [debugger.ts:182](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L182)
+定義於: [debugger.ts:194](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L194)
 
 Attaches every `being` machine the board exposes (see
 `resolveBoardMachines`). Attaches what it finds; throws only
@@ -168,7 +168,7 @@ when it finds nothing.
 
 > **close**(): `void`
 
-定義於: [debugger.ts:229](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L229)
+定義於: [debugger.ts:241](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L241)
 
 #### 回傳
 
@@ -180,7 +180,7 @@ when it finds nothing.
 
 > **dispose**(): `void`
 
-定義於: [debugger.ts:250](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L250)
+定義於: [debugger.ts:262](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L262)
 
 Detaches every machine, stops the render loop, and removes the panel.
 
@@ -194,7 +194,7 @@ Detaches every machine, stops the render loop, and removes the panel.
 
 > **open**(): `void`
 
-定義於: [debugger.ts:218](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L218)
+定義於: [debugger.ts:230](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L230)
 
 #### 回傳
 
@@ -206,7 +206,7 @@ Detaches every machine, stops the render loop, and removes the panel.
 
 > **toggle**(): `void`
 
-定義於: [debugger.ts:241](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being-devtools/src/debugger.ts#L241)
+定義於: [debugger.ts:253](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-devtools/src/debugger.ts#L253)
 
 #### 回傳
 

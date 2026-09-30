@@ -4,7 +4,7 @@
 
 > **GuardFunction**\<`Context`\> = (`context`) => `boolean`
 
-定義: [schema-factory.ts:61](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/schema-factory.ts#L61)
+定義: [schema-factory.ts:61](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/schema-factory.ts#L61)
 
 Guard function that evaluates whether a transition should occur.
 Returns true if the guard condition is met.

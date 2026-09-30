@@ -2,7 +2,7 @@
 
 # Class: IntegerAnimationHelper
 
-Defined in: [animatable-attribute.ts:239](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L239)
+Defined in: [animatable-attribute.ts:239](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/animatable-attribute.ts#L239)
 
 Interface for type-specific interpolation helpers.
 
@@ -36,7 +36,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **new IntegerAnimationHelper**(): `IntegerAnimationHelper`
 
-Defined in: [animatable-attribute.ts:240](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L240)
+Defined in: [animatable-attribute.ts:240](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/animatable-attribute.ts#L240)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [animatable-attribute.ts:240](https://github.com/kinnet-studio/ue-to
 
 > **lerp**(`ratio`, `start`, `end`): `number`
 
-Defined in: [animatable-attribute.ts:242](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L242)
+Defined in: [animatable-attribute.ts:242](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/animatable-attribute.ts#L242)
 
 Interpolates between two keyframes at a given ratio.
 

@@ -4,7 +4,7 @@
 
 > **createKmtInputStateMachineWithCanvas**(`canvas`): [`KmtInputStateMachine`](../type-aliases/KmtInputStateMachine.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:753](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L753)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:756](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L756)
 
 ## Parameters
 

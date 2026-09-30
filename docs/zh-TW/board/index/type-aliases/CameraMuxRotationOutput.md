@@ -4,7 +4,7 @@
 
 > **CameraMuxRotationOutput** = \{ `allowPassThrough`: `true`; `delta`: `number`; \} \| \{ `allowPassThrough`: `false`; \}
 
-定義於: [packages/board/src/camera/camera-mux/interface.ts:88](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/interface.ts#L88)
+定義於: [packages/board/src/camera/camera-mux/interface.ts:88](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/interface.ts#L88)
 
 Discriminated union type for rotation input results.
 Indicates whether camera rotation is allowed and provides the delta if accepted.

@@ -4,7 +4,7 @@
 
 > **drawRuler**(`context`, `topLeftCorner`, `topRightCorner`, `bottomLeftCorner`, `alignCoordinateSystem`, `cameraZoomLevel`): `void`
 
-Defined in: [packages/board/src/utils/drawing.ts:174](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/utils/drawing.ts#L174)
+Defined in: [packages/board/src/utils/drawing.ts:174](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/utils/drawing.ts#L174)
 
 Draws calibrated rulers along the edges of the viewport.
 

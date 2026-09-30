@@ -2,7 +2,7 @@
 
 # インターフェイス: Event
 
-定義: [event-system/event.ts:1](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/event-system/event.ts#L1)
+定義: [event-system/event.ts:1](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/event-system/event.ts#L1)
 
 ## プロパティ
 
@@ -10,7 +10,7 @@
 
 > **data**: `Record`\<`string`, `unknown`\>
 
-定義: [event-system/event.ts:3](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/event-system/event.ts#L3)
+定義: [event-system/event.ts:3](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/event-system/event.ts#L3)
 
 ***
 
@@ -18,7 +18,7 @@
 
 > **timestamp**: `number`
 
-定義: [event-system/event.ts:4](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/event-system/event.ts#L4)
+定義: [event-system/event.ts:4](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/event-system/event.ts#L4)
 
 ***
 
@@ -26,4 +26,4 @@
 
 > **type**: `string`
 
-定義: [event-system/event.ts:2](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-game-engine/src/event-system/event.ts#L2)
+定義: [event-system/event.ts:2](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/event-system/event.ts#L2)

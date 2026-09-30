@@ -1,4 +1,4 @@
-# @ue-too/board-fabric-integration v0.18.3
+# @ue-too/board-fabric-integration v0.19.0
 
 ## ドキュメント
 

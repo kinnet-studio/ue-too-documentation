@@ -4,7 +4,7 @@
 
 > **InitAppOptions** = `object`
 
-定義: [init-app.ts:51](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-integration/src/init-app.ts#L51)
+定義: [init-app.ts:51](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-pixi-integration/src/init-app.ts#L51)
 
 ## プロパティ
 
@@ -12,7 +12,7 @@
 
 > **boundaries**: `object`
 
-定義: [init-app.ts:55](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-integration/src/init-app.ts#L55)
+定義: [init-app.ts:55](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-pixi-integration/src/init-app.ts#L55)
 
 #### max
 
@@ -44,7 +44,7 @@
 
 > **camera**: `DefaultBoardCamera`
 
-定義: [init-app.ts:54](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-integration/src/init-app.ts#L54)
+定義: [init-app.ts:54](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-pixi-integration/src/init-app.ts#L54)
 
 ***
 
@@ -52,7 +52,7 @@
 
 > **fullScreen**: `boolean`
 
-定義: [init-app.ts:52](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-integration/src/init-app.ts#L52)
+定義: [init-app.ts:52](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-pixi-integration/src/init-app.ts#L52)
 
 ***
 
@@ -60,4 +60,4 @@
 
 > **limitEntireViewPort**: `boolean`
 
-定義: [init-app.ts:53](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-integration/src/init-app.ts#L53)
+定義: [init-app.ts:53](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-pixi-integration/src/init-app.ts#L53)

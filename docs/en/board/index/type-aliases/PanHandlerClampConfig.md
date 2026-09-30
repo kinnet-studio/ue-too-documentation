@@ -4,7 +4,7 @@
 
 > **PanHandlerClampConfig** = `object`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:49](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/pan-handler.ts#L49)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:49](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-rig/pan-handler.ts#L49)
 
 Configuration for boundary clamping behavior during camera panning.
 
@@ -27,7 +27,7 @@ const config: PanHandlerClampConfig = {
 
 > **clampTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:57](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/pan-handler.ts#L57)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:57](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-rig/pan-handler.ts#L57)
 
 When true, enforces boundary constraints on pan operations.
                              When false, camera can pan freely outside boundaries.
@@ -38,7 +38,7 @@ When true, enforces boundary constraints on pan operations.
 
 > **limitEntireViewPort**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:53](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/pan-handler.ts#L53)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:53](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-rig/pan-handler.ts#L53)
 
 When true, ensures the entire viewport rectangle stays within boundaries.
                                 When false, only the camera center point (position) is constrained.
