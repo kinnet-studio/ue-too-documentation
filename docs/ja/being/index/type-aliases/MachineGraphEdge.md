@@ -4,7 +4,7 @@
 
 > **MachineGraphEdge** = `object`
 
-定義: [introspect.ts:29](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L29)
+定義: [introspect.ts:29](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L29)
 
 A directed edge in an extracted machine graph.
 
@@ -26,7 +26,7 @@ without declared preconditions.
 
 > **event**: `string`
 
-定義: [introspect.ts:32](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L32)
+定義: [introspect.ts:32](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L32)
 
 ***
 
@@ -34,7 +34,7 @@ without declared preconditions.
 
 > **from**: `string`
 
-定義: [introspect.ts:30](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L30)
+定義: [introspect.ts:30](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L30)
 
 ***
 
@@ -42,7 +42,7 @@ without declared preconditions.
 
 > `optional` **guard**: `string`
 
-定義: [introspect.ts:33](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L33)
+定義: [introspect.ts:33](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L33)
 
 ***
 
@@ -50,7 +50,7 @@ without declared preconditions.
 
 > `optional` **preconditions**: `string`[]
 
-定義: [introspect.ts:34](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L34)
+定義: [introspect.ts:34](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L34)
 
 ***
 
@@ -58,4 +58,4 @@ without declared preconditions.
 
 > **to**: `string`
 
-定義: [introspect.ts:31](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/introspect.ts#L31)
+定義: [introspect.ts:31](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/introspect.ts#L31)

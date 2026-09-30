@@ -4,7 +4,7 @@
 
 > **Point** = `object`
 
-定義於: [2dVector.ts:17](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/2dVector.ts#L17)
+定義於: [2dVector.ts:17](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/math/src/2dVector.ts#L17)
 
 Represents a 2D or 3D point with optional z-coordinate.
 
@@ -29,7 +29,7 @@ const p3d: Point = { x: 10, y: 20, z: 30 };
 
 > **x**: `number`
 
-定義於: [2dVector.ts:19](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/2dVector.ts#L19)
+定義於: [2dVector.ts:19](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/math/src/2dVector.ts#L19)
 
 X-coordinate
 
@@ -39,7 +39,7 @@ X-coordinate
 
 > **y**: `number`
 
-定義於: [2dVector.ts:21](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/2dVector.ts#L21)
+定義於: [2dVector.ts:21](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/math/src/2dVector.ts#L21)
 
 Y-coordinate
 
@@ -49,6 +49,6 @@ Y-coordinate
 
 > `optional` **z**: `number`
 
-定義於: [2dVector.ts:23](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/math/src/2dVector.ts#L23)
+定義於: [2dVector.ts:23](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/math/src/2dVector.ts#L23)
 
 Optional Z-coordinate for 3D operations

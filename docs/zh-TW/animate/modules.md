@@ -1,4 +1,4 @@
-# @ue-too/animate v0.18.3
+# @ue-too/animate v0.19.0
 
 ## 文件
 

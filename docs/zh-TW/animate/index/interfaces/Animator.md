@@ -2,7 +2,7 @@
 
 # 介面: Animator
 
-定義於: [composite-animation.ts:29](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L29)
+定義於: [composite-animation.ts:29](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L29)
 
 Core interface for all animators in the animation system.
 
@@ -22,7 +22,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **delay**: `number`
 
-定義於: [composite-animation.ts:32](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L32)
+定義於: [composite-animation.ts:32](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L32)
 
 ***
 
@@ -30,7 +30,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **drag**: `number`
 
-定義於: [composite-animation.ts:33](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L33)
+定義於: [composite-animation.ts:33](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L33)
 
 ***
 
@@ -38,7 +38,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **duration**: `number`
 
-定義於: [composite-animation.ts:31](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L31)
+定義於: [composite-animation.ts:31](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L31)
 
 ***
 
@@ -46,7 +46,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **loops**: `boolean`
 
-定義於: [composite-animation.ts:30](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L30)
+定義於: [composite-animation.ts:30](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L30)
 
 ***
 
@@ -54,7 +54,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **maxLoopCount**: `number` \| `undefined`
 
-定義於: [composite-animation.ts:50](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L50)
+定義於: [composite-animation.ts:50](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L50)
 
 ***
 
@@ -62,7 +62,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **playing**: `boolean`
 
-定義於: [composite-animation.ts:51](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L51)
+定義於: [composite-animation.ts:51](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L51)
 
 ## 方法
 
@@ -70,7 +70,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **animate**(`deltaTime`): `void`
 
-定義於: [composite-animation.ts:39](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L39)
+定義於: [composite-animation.ts:39](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L39)
 
 #### 參數
 
@@ -88,7 +88,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **clearOnEnd**(): `void`
 
-定義於: [composite-animation.ts:49](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L49)
+定義於: [composite-animation.ts:49](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L49)
 
 #### 回傳
 
@@ -100,7 +100,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **clearOnStart**(): `void`
 
-定義於: [composite-animation.ts:48](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L48)
+定義於: [composite-animation.ts:48](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L48)
 
 #### 回傳
 
@@ -112,7 +112,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **detachParent**(): `void`
 
-定義於: [composite-animation.ts:44](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L44)
+定義於: [composite-animation.ts:44](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L44)
 
 #### 回傳
 
@@ -124,7 +124,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **nonCascadingDuration**(`newDuration`): `void`
 
-定義於: [composite-animation.ts:34](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L34)
+定義於: [composite-animation.ts:34](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L34)
 
 #### 參數
 
@@ -142,7 +142,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **onEnd**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-定義於: [composite-animation.ts:46](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L46)
+定義於: [composite-animation.ts:46](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L46)
 
 #### 參數
 
@@ -160,7 +160,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **onStart**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-定義於: [composite-animation.ts:47](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L47)
+定義於: [composite-animation.ts:47](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L47)
 
 #### 參數
 
@@ -178,7 +178,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **pause**(): `void`
 
-定義於: [composite-animation.ts:37](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L37)
+定義於: [composite-animation.ts:37](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L37)
 
 #### 回傳
 
@@ -190,7 +190,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **resetAnimationState**(): `void`
 
-定義於: [composite-animation.ts:41](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L41)
+定義於: [composite-animation.ts:41](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L41)
 
 #### 回傳
 
@@ -202,7 +202,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **resume**(): `void`
 
-定義於: [composite-animation.ts:38](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L38)
+定義於: [composite-animation.ts:38](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L38)
 
 #### 回傳
 
@@ -214,7 +214,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **setParent**(`parent`): `void`
 
-定義於: [composite-animation.ts:43](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L43)
+定義於: [composite-animation.ts:43](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L43)
 
 #### 參數
 
@@ -232,7 +232,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **setUp**(): `void`
 
-定義於: [composite-animation.ts:40](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L40)
+定義於: [composite-animation.ts:40](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L40)
 
 #### 回傳
 
@@ -244,7 +244,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **start**(): `void`
 
-定義於: [composite-animation.ts:35](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L35)
+定義於: [composite-animation.ts:35](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L35)
 
 #### 回傳
 
@@ -256,7 +256,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **stop**(): `void`
 
-定義於: [composite-animation.ts:36](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L36)
+定義於: [composite-animation.ts:36](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L36)
 
 #### 回傳
 
@@ -268,7 +268,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **tearDown**(): `void`
 
-定義於: [composite-animation.ts:42](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L42)
+定義於: [composite-animation.ts:42](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L42)
 
 #### 回傳
 
@@ -280,7 +280,7 @@ and composite animations ([CompositeAnimation](../classes/CompositeAnimation.md)
 
 > **toggleReverse**(`reverse`): `void`
 
-定義於: [composite-animation.ts:45](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/composite-animation.ts#L45)
+定義於: [composite-animation.ts:45](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/composite-animation.ts#L45)
 
 #### 參數
 

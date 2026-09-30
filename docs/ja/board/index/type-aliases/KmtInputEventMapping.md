@@ -4,7 +4,7 @@
 
 > **KmtInputEventMapping** = `object`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:115](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L115)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:118](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L118)
 
 Event mapping for the KMT input state machine.
 
@@ -27,7 +27,7 @@ Key events:
 
 > **arrowDown**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:133](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L133)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:136](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L136)
 
 ***
 
@@ -35,7 +35,7 @@ Key events:
 
 > **arrowUp**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:132](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L132)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:135](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L135)
 
 ***
 
@@ -43,7 +43,7 @@ Key events:
 
 > **cursorOnElement**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:123](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L123)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:126](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L126)
 
 ***
 
@@ -51,7 +51,7 @@ Key events:
 
 > **disable**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:129](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L129)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:132](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L132)
 
 ***
 
@@ -59,7 +59,7 @@ Key events:
 
 > **enable**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:130](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L130)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:133](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L133)
 
 ***
 
@@ -67,7 +67,7 @@ Key events:
 
 > **escapeKey**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:121](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L121)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:124](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L124)
 
 ***
 
@@ -75,7 +75,7 @@ Key events:
 
 > **F**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:134](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L134)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:137](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L137)
 
 ***
 
@@ -83,7 +83,7 @@ Key events:
 
 > **G**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:135](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L135)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:138](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L138)
 
 ***
 
@@ -91,7 +91,7 @@ Key events:
 
 > **leftPointerDown**: [`PointerEventPayload`](PointerEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:116](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L116)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:119](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L119)
 
 ***
 
@@ -99,7 +99,7 @@ Key events:
 
 > **leftPointerMove**: [`PointerEventPayload`](PointerEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:118](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L118)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:121](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L121)
 
 ***
 
@@ -107,7 +107,7 @@ Key events:
 
 > **leftPointerUp**: [`PointerEventPayload`](PointerEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:117](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L117)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:120](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L120)
 
 ***
 
@@ -115,7 +115,7 @@ Key events:
 
 > **middlePointerDown**: [`PointerEventPayload`](PointerEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:126](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L126)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:129](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L129)
 
 ***
 
@@ -123,7 +123,7 @@ Key events:
 
 > **middlePointerMove**: [`PointerEventPayload`](PointerEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:128](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L128)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:131](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L131)
 
 ***
 
@@ -131,7 +131,7 @@ Key events:
 
 > **middlePointerUp**: [`PointerEventPayload`](PointerEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:127](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L127)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:130](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L130)
 
 ***
 
@@ -139,7 +139,7 @@ Key events:
 
 > **pointerMove**: [`PointerEventPayload`](PointerEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:131](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L131)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:134](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L134)
 
 ***
 
@@ -147,7 +147,7 @@ Key events:
 
 > **Q**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:136](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L136)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:139](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L139)
 
 ***
 
@@ -155,7 +155,7 @@ Key events:
 
 > **scroll**: [`ScrollWithCtrlEventPayload`](ScrollWithCtrlEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:124](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L124)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:127](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L127)
 
 ***
 
@@ -163,7 +163,7 @@ Key events:
 
 > **scrollWithCtrl**: [`ScrollWithCtrlEventPayload`](ScrollWithCtrlEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:125](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L125)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:128](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L128)
 
 ***
 
@@ -171,7 +171,7 @@ Key events:
 
 > **spacebarDown**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:119](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L119)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:122](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L122)
 
 ***
 
@@ -179,7 +179,7 @@ Key events:
 
 > **spacebarUp**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:120](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L120)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:123](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L123)
 
 ***
 
@@ -187,4 +187,4 @@ Key events:
 
 > **stayIdle**: `EmptyPayload`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:122](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L122)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:125](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L125)

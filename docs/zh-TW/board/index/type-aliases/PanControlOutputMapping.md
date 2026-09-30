@@ -4,7 +4,7 @@
 
 > **PanControlOutputMapping** = `object`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:87](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L87)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:87](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L87)
 
 Output event type mapping for pan control events.
 Maps input event names to their corresponding output event types.
@@ -15,7 +15,7 @@ Maps input event names to their corresponding output event types.
 
 > **lockedOnObjectPanByInput**: [`PanControlOutputEvent`](PanControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:92](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L92)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:92](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L92)
 
 ***
 
@@ -23,7 +23,7 @@ Maps input event names to their corresponding output event types.
 
 > **lockedOnObjectPanToInput**: [`PanControlOutputEvent`](PanControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:93](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L93)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:93](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L93)
 
 ***
 
@@ -31,7 +31,7 @@ Maps input event names to their corresponding output event types.
 
 > **transitionPanByInput**: [`PanControlOutputEvent`](PanControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:90](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L90)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:90](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L90)
 
 ***
 
@@ -39,7 +39,7 @@ Maps input event names to their corresponding output event types.
 
 > **transitionPanToInput**: [`PanControlOutputEvent`](PanControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:91](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L91)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:91](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L91)
 
 ***
 
@@ -47,7 +47,7 @@ Maps input event names to their corresponding output event types.
 
 > **userPanByInput**: [`PanControlOutputEvent`](PanControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:88](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L88)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:88](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L88)
 
 ***
 
@@ -55,4 +55,4 @@ Maps input event names to their corresponding output event types.
 
 > **userPanToInput**: [`PanControlOutputEvent`](PanControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:89](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L89)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:89](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L89)

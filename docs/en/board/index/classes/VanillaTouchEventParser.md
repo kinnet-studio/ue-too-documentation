@@ -2,7 +2,7 @@
 
 # Class: VanillaTouchEventParser
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:95](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L95)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:95](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L95)
 
 DOM event parser for touch input.
 
@@ -63,7 +63,7 @@ parser.tearDown();
 
 > **new VanillaTouchEventParser**(`touchInputStateMachine`, `orchestrator`, `canvas?`): `VanillaTouchEventParser`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:107](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L107)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:107](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L107)
 
 #### Parameters
 
@@ -91,7 +91,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **get** **disabled**(): `boolean`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:179](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L179)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:179](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L179)
 
 Whether all touch input is disabled
 
@@ -113,7 +113,7 @@ Whether all touch input is disabled
 
 > **get** **orchestrator**(): [`InputOrchestrator`](InputOrchestrator.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:121](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L121)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:121](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L121)
 
 ##### Returns
 
@@ -127,7 +127,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **get** **stateMachine**(): [`TouchInputStateMachine`](../type-aliases/TouchInputStateMachine.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:125](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L125)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:125](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L125)
 
 The state machine this parser dispatches into, when the implementation
 exposes one. Optional so existing external parser implementations
@@ -161,7 +161,7 @@ dispatch through the parser, not through this reference.
 
 > **attach**(`canvas`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:267](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L267)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:267](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L267)
 
 Attaches to a new canvas element
 
@@ -185,7 +185,7 @@ Attaches to a new canvas element
 
 > **bindListeners**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:129](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L129)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:129](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L129)
 
 #### Returns
 
@@ -197,7 +197,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **disable**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:183](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L183)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:183](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L183)
 
 Disables the parser; the event listeners are still attached just not processing any events
 
@@ -215,7 +215,7 @@ Disables the parser; the event listeners are still attached just not processing 
 
 > **disableStrategy**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:140](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L140)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:140](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L140)
 
 #### Returns
 
@@ -227,7 +227,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **enable**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:187](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L187)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:187](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L187)
 
 Enables the parser
 
@@ -245,7 +245,7 @@ Enables the parser
 
 > **enableStrategy**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:136](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L136)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:136](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L136)
 
 #### Returns
 
@@ -257,7 +257,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **setUp**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:144](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L144)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:144](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L144)
 
 Initializes event listeners
 
@@ -275,7 +275,7 @@ Initializes event listeners
 
 > **tearDown**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:173](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L173)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:173](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L173)
 
 Removes event listeners and cleans up
 
@@ -293,7 +293,7 @@ Removes event listeners and cleans up
 
 > **touchcancelHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:221](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L221)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:221](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L221)
 
 #### Parameters
 
@@ -311,7 +311,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **touchendHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:236](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L236)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:236](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L236)
 
 #### Parameters
 
@@ -329,7 +329,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **touchmoveHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:251](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L251)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:251](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L251)
 
 #### Parameters
 
@@ -347,7 +347,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **touchstartHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:204](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L204)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:204](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L204)
 
 #### Parameters
 

@@ -2,7 +2,7 @@
 
 # Abstract Class: TemplateState\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-Defined in: [interface.ts:973](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L973)
+Defined in: [interface.ts:973](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L973)
 
 Abstract base class for state machine states.
 
@@ -86,7 +86,7 @@ class PaymentState extends TemplateState<Events, VendingContext, States> {
 
 ## Extended by
 
-- [`CompositeState`](CompositeState.md)
+- [`DelegatingState`](DelegatingState.md)
 
 ## Type Parameters
 
@@ -134,7 +134,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_defer**: [`Defer`](../type-aliases/Defer.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined` = `undefined`
 
-Defined in: [interface.ts:1007](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1007)
+Defined in: [interface.ts:1007](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1007)
 
 ***
 
@@ -142,7 +142,7 @@ Defined in: [interface.ts:1007](https://github.com/kinnet-studio/ue-too/blob/694
 
 > `protected` **\_delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined` = `undefined`
 
-Defined in: [interface.ts:1003](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1003)
+Defined in: [interface.ts:1003](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1003)
 
 ***
 
@@ -150,7 +150,7 @@ Defined in: [interface.ts:1003](https://github.com/kinnet-studio/ue-too/blob/694
 
 > `protected` **\_eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:993](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L993)
+Defined in: [interface.ts:993](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L993)
 
 ***
 
@@ -158,7 +158,7 @@ Defined in: [interface.ts:993](https://github.com/kinnet-studio/ue-too/blob/694d
 
 > `protected` **\_eventPreconditions**: `Partial`\<[`EventPreconditions`](../type-aliases/EventPreconditions.md)\<`EventPayloadMapping`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:998](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L998)
+Defined in: [interface.ts:998](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L998)
 
 ***
 
@@ -166,7 +166,7 @@ Defined in: [interface.ts:998](https://github.com/kinnet-studio/ue-too/blob/694d
 
 > `protected` **\_eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:981](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L981)
+Defined in: [interface.ts:981](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L981)
 
 ***
 
@@ -174,7 +174,7 @@ Defined in: [interface.ts:981](https://github.com/kinnet-studio/ue-too/blob/694d
 
 > `protected` **\_guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:992](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L992)
+Defined in: [interface.ts:992](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L992)
 
 ## Accessors
 
@@ -184,7 +184,7 @@ Defined in: [interface.ts:992](https://github.com/kinnet-studio/ue-too/blob/694d
 
 > **get** **delay**(): [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-Defined in: [interface.ts:1042](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1042)
+Defined in: [interface.ts:1042](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1042)
 
 ##### Returns
 
@@ -202,7 +202,7 @@ Defined in: [interface.ts:1042](https://github.com/kinnet-studio/ue-too/blob/694
 
 > **get** **eventGuards**(): `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:1021](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1021)
+Defined in: [interface.ts:1021](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1021)
 
 ##### Returns
 
@@ -220,7 +220,7 @@ Defined in: [interface.ts:1021](https://github.com/kinnet-studio/ue-too/blob/694
 
 > **get** **eventPreconditions**(): `Partial`\<[`EventPreconditions`](../type-aliases/EventPreconditions.md)\<`EventPayloadMapping`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:1027](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1027)
+Defined in: [interface.ts:1027](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1027)
 
 Pre-action vetoes: named guards that must all pass before this state
 handles an event. Optional so existing State implementations remain
@@ -246,7 +246,7 @@ valid; TemplateState always provides it.
 
 > **get** **eventReactions**(): [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:1033](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1033)
+Defined in: [interface.ts:1033](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1033)
 
 ##### Returns
 
@@ -264,7 +264,7 @@ Defined in: [interface.ts:1033](https://github.com/kinnet-studio/ue-too/blob/694
 
 > **get** **guards**(): [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:1017](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1017)
+Defined in: [interface.ts:1017](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1017)
 
 ##### Returns
 
@@ -282,7 +282,7 @@ Defined in: [interface.ts:1017](https://github.com/kinnet-studio/ue-too/blob/694
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-Defined in: [interface.ts:1011](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1011)
+Defined in: [interface.ts:1011](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1011)
 
 ##### Returns
 
@@ -294,7 +294,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: [interface.ts:1061](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1061)
+Defined in: [interface.ts:1061](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1061)
 
 #### Parameters
 
@@ -324,7 +324,7 @@ Defined in: [interface.ts:1061](https://github.com/kinnet-studio/ue-too/blob/694
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [interface.ts:1074](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1074)
+Defined in: [interface.ts:1074](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1074)
 
 #### Type Parameters
 
@@ -360,7 +360,7 @@ Defined in: [interface.ts:1074](https://github.com/kinnet-studio/ue-too/blob/694
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-Defined in: [interface.ts:1048](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1048)
+Defined in: [interface.ts:1048](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1048)
 
 #### Parameters
 

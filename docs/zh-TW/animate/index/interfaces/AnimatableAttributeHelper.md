@@ -2,7 +2,7 @@
 
 # 介面: AnimatableAttributeHelper\<T\>
 
-定義於: [animatable-attribute.ts:59](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L59)
+定義於: [animatable-attribute.ts:59](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/animatable-attribute.ts#L59)
 
 Interface for type-specific interpolation helpers.
 
@@ -40,7 +40,7 @@ The type of value being interpolated
 
 > **lerp**(`ratio`, `start`, `end`): `T`
 
-定義於: [animatable-attribute.ts:68](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L68)
+定義於: [animatable-attribute.ts:68](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/animatable-attribute.ts#L68)
 
 Interpolates between two keyframes at a given ratio.
 

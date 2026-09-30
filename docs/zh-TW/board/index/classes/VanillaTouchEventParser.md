@@ -2,7 +2,7 @@
 
 # 類別: VanillaTouchEventParser
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:95](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L95)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:95](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L95)
 
 DOM event parser for touch input.
 
@@ -63,7 +63,7 @@ parser.tearDown();
 
 > **new VanillaTouchEventParser**(`touchInputStateMachine`, `orchestrator`, `canvas?`): `VanillaTouchEventParser`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:107](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L107)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:107](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L107)
 
 #### 參數
 
@@ -91,7 +91,7 @@ parser.tearDown();
 
 > **get** **disabled**(): `boolean`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:179](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L179)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:179](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L179)
 
 Whether all touch input is disabled
 
@@ -113,7 +113,7 @@ Whether all touch input is disabled
 
 > **get** **orchestrator**(): [`InputOrchestrator`](InputOrchestrator.md)
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:121](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L121)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:121](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L121)
 
 ##### 回傳
 
@@ -127,7 +127,7 @@ Whether all touch input is disabled
 
 > **get** **stateMachine**(): [`TouchInputStateMachine`](../type-aliases/TouchInputStateMachine.md)
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:125](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L125)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:125](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L125)
 
 The state machine this parser dispatches into, when the implementation
 exposes one. Optional so existing external parser implementations
@@ -161,7 +161,7 @@ dispatch through the parser, not through this reference.
 
 > **attach**(`canvas`): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:267](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L267)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:267](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L267)
 
 Attaches to a new canvas element
 
@@ -185,7 +185,7 @@ Attaches to a new canvas element
 
 > **bindListeners**(): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:129](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L129)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:129](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L129)
 
 #### 回傳
 
@@ -197,7 +197,7 @@ Attaches to a new canvas element
 
 > **disable**(): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:183](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L183)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:183](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L183)
 
 Disables the parser; the event listeners are still attached just not processing any events
 
@@ -215,7 +215,7 @@ Disables the parser; the event listeners are still attached just not processing 
 
 > **disableStrategy**(): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:140](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L140)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:140](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L140)
 
 #### 回傳
 
@@ -227,7 +227,7 @@ Disables the parser; the event listeners are still attached just not processing 
 
 > **enable**(): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:187](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L187)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:187](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L187)
 
 Enables the parser
 
@@ -245,7 +245,7 @@ Enables the parser
 
 > **enableStrategy**(): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:136](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L136)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:136](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L136)
 
 #### 回傳
 
@@ -257,7 +257,7 @@ Enables the parser
 
 > **setUp**(): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:144](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L144)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:144](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L144)
 
 Initializes event listeners
 
@@ -275,7 +275,7 @@ Initializes event listeners
 
 > **tearDown**(): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:173](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L173)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:173](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L173)
 
 Removes event listeners and cleans up
 
@@ -293,7 +293,7 @@ Removes event listeners and cleans up
 
 > **touchcancelHandler**(`e`): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:221](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L221)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:221](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L221)
 
 #### 參數
 
@@ -311,7 +311,7 @@ Removes event listeners and cleans up
 
 > **touchendHandler**(`e`): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:236](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L236)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:236](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L236)
 
 #### 參數
 
@@ -329,7 +329,7 @@ Removes event listeners and cleans up
 
 > **touchmoveHandler**(`e`): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:251](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L251)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:251](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L251)
 
 #### 參數
 
@@ -347,7 +347,7 @@ Removes event listeners and cleans up
 
 > **touchstartHandler**(`e`): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:204](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L204)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:204](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L204)
 
 #### 參數
 

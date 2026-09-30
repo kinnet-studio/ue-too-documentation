@@ -2,7 +2,7 @@
 
 # 介面: RigidBody
 
-定義於: [rigidbody.ts:17](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L17)
+定義於: [rigidbody.ts:17](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L17)
 
 Rigid body interface for 2D physics simulation.
 
@@ -20,7 +20,7 @@ Implemented by [Circle](../classes/Circle.md) and [Polygon](../classes/Polygon.m
 
 > **AABB**: `object`
 
-定義於: [rigidbody.ts:27](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L27)
+定義於: [rigidbody.ts:27](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L27)
 
 Axis-Aligned Bounding Box for broad phase collision
 
@@ -38,7 +38,7 @@ Axis-Aligned Bounding Box for broad phase collision
 
 > **angularVelocity**: `number`
 
-定義於: [rigidbody.ts:25](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L25)
+定義於: [rigidbody.ts:25](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L25)
 
 Angular velocity (radians/second)
 
@@ -48,7 +48,7 @@ Angular velocity (radians/second)
 
 > **center**: `Point`
 
-定義於: [rigidbody.ts:19](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L19)
+定義於: [rigidbody.ts:19](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L19)
 
 Center position in world coordinates
 
@@ -58,7 +58,7 @@ Center position in world coordinates
 
 > **collisionFilter**: [`CollisionFilter`](CollisionFilter.md)
 
-定義於: [rigidbody.ts:36](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L36)
+定義於: [rigidbody.ts:36](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L36)
 
 Collision filtering configuration
 
@@ -68,7 +68,7 @@ Collision filtering configuration
 
 > **isSleeping**: `boolean`
 
-定義於: [rigidbody.ts:39](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L39)
+定義於: [rigidbody.ts:39](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L39)
 
 ***
 
@@ -76,7 +76,7 @@ Collision filtering configuration
 
 > **linearVelocity**: `Point`
 
-定義於: [rigidbody.ts:23](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L23)
+定義於: [rigidbody.ts:23](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L23)
 
 Linear velocity (pixels/second)
 
@@ -86,7 +86,7 @@ Linear velocity (pixels/second)
 
 > **mass**: `number`
 
-定義於: [rigidbody.ts:29](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L29)
+定義於: [rigidbody.ts:29](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L29)
 
 Mass in arbitrary units (affects force response)
 
@@ -96,7 +96,7 @@ Mass in arbitrary units (affects force response)
 
 > **momentOfInertia**: `number`
 
-定義於: [rigidbody.ts:33](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L33)
+定義於: [rigidbody.ts:33](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L33)
 
 Moment of inertia (rotational mass)
 
@@ -106,7 +106,7 @@ Moment of inertia (rotational mass)
 
 > **orientationAngle**: `number`
 
-定義於: [rigidbody.ts:21](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L21)
+定義於: [rigidbody.ts:21](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L21)
 
 Rotation angle in radians
 
@@ -116,7 +116,7 @@ Rotation angle in radians
 
 > **sleepThreshold**: `number`
 
-定義於: [rigidbody.ts:40](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L40)
+定義於: [rigidbody.ts:40](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L40)
 
 ***
 
@@ -124,7 +124,7 @@ Rotation angle in radians
 
 > **sleepTime**: `number`
 
-定義於: [rigidbody.ts:41](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L41)
+定義於: [rigidbody.ts:41](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L41)
 
 ***
 
@@ -132,7 +132,7 @@ Rotation angle in radians
 
 > **staticFrictionCoeff**: `number`
 
-定義於: [rigidbody.ts:31](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L31)
+定義於: [rigidbody.ts:31](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L31)
 
 Static friction coefficient (0-1)
 
@@ -142,7 +142,7 @@ Static friction coefficient (0-1)
 
 > **timeAtRest**: `number`
 
-定義於: [rigidbody.ts:42](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L42)
+定義於: [rigidbody.ts:42](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L42)
 
 ## 方法
 
@@ -150,7 +150,7 @@ Static friction coefficient (0-1)
 
 > **applyForce**(`force`): `void`
 
-定義於: [rigidbody.ts:49](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L49)
+定義於: [rigidbody.ts:49](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L49)
 
 #### 參數
 
@@ -168,7 +168,7 @@ Static friction coefficient (0-1)
 
 > **applyForceInOrientation**(`force`): `void`
 
-定義於: [rigidbody.ts:50](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L50)
+定義於: [rigidbody.ts:50](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L50)
 
 #### 參數
 
@@ -186,7 +186,7 @@ Static friction coefficient (0-1)
 
 > **getAdjacentFaces**(`collisionNormal`): `object`[]
 
-定義於: [rigidbody.ts:56](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L56)
+定義於: [rigidbody.ts:56](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L56)
 
 #### 參數
 
@@ -204,7 +204,7 @@ Static friction coefficient (0-1)
 
 > **getCollisionAxes**(`relativeBody`): `Point`[]
 
-定義於: [rigidbody.ts:48](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L48)
+定義於: [rigidbody.ts:48](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L48)
 
 #### 參數
 
@@ -222,7 +222,7 @@ Static friction coefficient (0-1)
 
 > **getMinMaxProjection**(`unitvector`): `object`
 
-定義於: [rigidbody.ts:47](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L47)
+定義於: [rigidbody.ts:47](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L47)
 
 #### 參數
 
@@ -248,7 +248,7 @@ Static friction coefficient (0-1)
 
 > **getNormalOfSignificantFace**(`collisionNormal`): `Point`
 
-定義於: [rigidbody.ts:55](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L55)
+定義於: [rigidbody.ts:55](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L55)
 
 #### 參數
 
@@ -266,7 +266,7 @@ Static friction coefficient (0-1)
 
 > **getSignificantVertices**(`collisionNormal`): `Point`[]
 
-定義於: [rigidbody.ts:54](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L54)
+定義於: [rigidbody.ts:54](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L54)
 
 #### 參數
 
@@ -284,7 +284,7 @@ Static friction coefficient (0-1)
 
 > **isMovingStatic**(): `boolean`
 
-定義於: [rigidbody.ts:46](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L46)
+定義於: [rigidbody.ts:46](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L46)
 
 #### 回傳
 
@@ -296,7 +296,7 @@ Static friction coefficient (0-1)
 
 > **isStatic**(): `boolean`
 
-定義於: [rigidbody.ts:45](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L45)
+定義於: [rigidbody.ts:45](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L45)
 
 #### 回傳
 
@@ -308,7 +308,7 @@ Static friction coefficient (0-1)
 
 > **move**(`delta`): `void`
 
-定義於: [rigidbody.ts:52](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L52)
+定義於: [rigidbody.ts:52](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L52)
 
 #### 參數
 
@@ -326,7 +326,7 @@ Static friction coefficient (0-1)
 
 > **setSleeping**(`sleeping`): `void`
 
-定義於: [rigidbody.ts:62](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L62)
+定義於: [rigidbody.ts:62](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L62)
 
 #### 參數
 
@@ -344,7 +344,7 @@ Static friction coefficient (0-1)
 
 > **significantVertex**(`collisionNormal`): `Point`
 
-定義於: [rigidbody.ts:53](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L53)
+定義於: [rigidbody.ts:53](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L53)
 
 #### 參數
 
@@ -362,7 +362,7 @@ Static friction coefficient (0-1)
 
 > **step**(`deltaTime`): `void`
 
-定義於: [rigidbody.ts:44](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L44)
+定義於: [rigidbody.ts:44](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L44)
 
 #### 參數
 
@@ -380,7 +380,7 @@ Static friction coefficient (0-1)
 
 > **updateSleeping**(`deltaTime`): `void`
 
-定義於: [rigidbody.ts:63](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/rigidbody.ts#L63)
+定義於: [rigidbody.ts:63](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/rigidbody.ts#L63)
 
 #### 參數
 

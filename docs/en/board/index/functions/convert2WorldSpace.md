@@ -4,7 +4,7 @@
 
 > **convert2WorldSpace**(`point`, `viewPortWidth`, `viewPortHeight`, `cameraPosition`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:102](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/coordinate-conversion.ts#L102)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:102](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/utils/coordinate-conversion.ts#L102)
 
 Converts a canvas point to world space using current camera state.
 

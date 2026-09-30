@@ -4,7 +4,7 @@
 
 > **RotationLimits** = `object`
 
-定義於: [packages/board/src/camera/utils/rotation.ts:19](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/rotation.ts#L19)
+定義於: [packages/board/src/camera/utils/rotation.ts:19](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/utils/rotation.ts#L19)
 
 Constraints for camera rotation defining an angular range with direction.
 
@@ -23,7 +23,7 @@ For example:
 
 > **ccw**: `boolean`
 
-定義於: [packages/board/src/camera/utils/rotation.ts:22](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/rotation.ts#L22)
+定義於: [packages/board/src/camera/utils/rotation.ts:22](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/utils/rotation.ts#L22)
 
 If true, the range is measured counter-clockwise from start to end. If false, clockwise
 
@@ -33,7 +33,7 @@ If true, the range is measured counter-clockwise from start to end. If false, cl
 
 > **end**: `number`
 
-定義於: [packages/board/src/camera/utils/rotation.ts:21](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/rotation.ts#L21)
+定義於: [packages/board/src/camera/utils/rotation.ts:21](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/utils/rotation.ts#L21)
 
 Ending angle of the allowed range in radians
 
@@ -43,7 +43,7 @@ Ending angle of the allowed range in radians
 
 > **start**: `number`
 
-定義於: [packages/board/src/camera/utils/rotation.ts:20](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/rotation.ts#L20)
+定義於: [packages/board/src/camera/utils/rotation.ts:20](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/utils/rotation.ts#L20)
 
 Starting angle of the allowed range in radians
 
@@ -53,6 +53,6 @@ Starting angle of the allowed range in radians
 
 > **startAsTieBreaker**: `boolean`
 
-定義於: [packages/board/src/camera/utils/rotation.ts:23](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/rotation.ts#L23)
+定義於: [packages/board/src/camera/utils/rotation.ts:23](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/utils/rotation.ts#L23)
 
 When clamping and distance to start equals distance to end, clamp to start if true, end if false

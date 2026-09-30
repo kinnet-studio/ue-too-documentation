@@ -2,7 +2,7 @@
 
 # Interface: CollisionPair
 
-Defined in: [pair-manager.ts:14](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L14)
+Defined in: [pair-manager.ts:14](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/pair-manager.ts#L14)
 
 Represents a collision pair between two bodies.
 
@@ -17,7 +17,7 @@ detection of collision start, update, and end events.
 
 > **bodyA**: [`RigidBody`](RigidBody.md)
 
-Defined in: [pair-manager.ts:15](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L15)
+Defined in: [pair-manager.ts:15](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/pair-manager.ts#L15)
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: [pair-manager.ts:15](https://github.com/kinnet-studio/ue-too/blob/69
 
 > **bodyB**: [`RigidBody`](RigidBody.md)
 
-Defined in: [pair-manager.ts:16](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L16)
+Defined in: [pair-manager.ts:16](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/pair-manager.ts#L16)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [pair-manager.ts:16](https://github.com/kinnet-studio/ue-too/blob/69
 
 > **contactPoints**: `Point`[]
 
-Defined in: [pair-manager.ts:19](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L19)
+Defined in: [pair-manager.ts:19](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/pair-manager.ts#L19)
 
 ***
 
@@ -41,7 +41,7 @@ Defined in: [pair-manager.ts:19](https://github.com/kinnet-studio/ue-too/blob/69
 
 > `optional` **depth**: `number`
 
-Defined in: [pair-manager.ts:21](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L21)
+Defined in: [pair-manager.ts:21](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/pair-manager.ts#L21)
 
 ***
 
@@ -49,7 +49,7 @@ Defined in: [pair-manager.ts:21](https://github.com/kinnet-studio/ue-too/blob/69
 
 > **frameCreated**: `number`
 
-Defined in: [pair-manager.ts:22](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L22)
+Defined in: [pair-manager.ts:22](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/pair-manager.ts#L22)
 
 ***
 
@@ -57,7 +57,7 @@ Defined in: [pair-manager.ts:22](https://github.com/kinnet-studio/ue-too/blob/69
 
 > **frameUpdated**: `number`
 
-Defined in: [pair-manager.ts:23](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L23)
+Defined in: [pair-manager.ts:23](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/pair-manager.ts#L23)
 
 ***
 
@@ -65,7 +65,7 @@ Defined in: [pair-manager.ts:23](https://github.com/kinnet-studio/ue-too/blob/69
 
 > **id**: `string`
 
-Defined in: [pair-manager.ts:17](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L17)
+Defined in: [pair-manager.ts:17](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/pair-manager.ts#L17)
 
 ***
 
@@ -73,7 +73,7 @@ Defined in: [pair-manager.ts:17](https://github.com/kinnet-studio/ue-too/blob/69
 
 > **isActive**: `boolean`
 
-Defined in: [pair-manager.ts:18](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L18)
+Defined in: [pair-manager.ts:18](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/pair-manager.ts#L18)
 
 ***
 
@@ -81,4 +81,4 @@ Defined in: [pair-manager.ts:18](https://github.com/kinnet-studio/ue-too/blob/69
 
 > `optional` **normal**: `Point`
 
-Defined in: [pair-manager.ts:20](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/pair-manager.ts#L20)
+Defined in: [pair-manager.ts:20](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/pair-manager.ts#L20)

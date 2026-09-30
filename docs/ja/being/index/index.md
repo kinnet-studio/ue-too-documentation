@@ -142,6 +142,18 @@ timer.happens("stop");
 - [EventArgs](type-aliases/EventArgs.md)
 - [createStateGuard](functions/createStateGuard.md)
 
+## Composition
+
+- [DelegatingState](classes/DelegatingState.md)
+- [ExtendableState](type-aliases/ExtendableState.md)
+- [HostableStateMachine](type-aliases/HostableStateMachine.md)
+- [StateExtender](type-aliases/StateExtender.md)
+- [StateExtension](type-aliases/StateExtension.md)
+- [WidenedState](type-aliases/WidenedState.md)
+- [createStateExtender](functions/createStateExtender.md)
+- [createStateWidener](functions/createStateWidener.md)
+- [extendState](functions/extendState.md)
+
 ## Examples
 
 - [createVendingMachine](functions/createVendingMachine.md)
@@ -155,9 +167,6 @@ timer.happens("stop");
 
 ## Other
 
-- [CompositeState](classes/CompositeState.md)
-- [HierarchicalStateMachine](classes/HierarchicalStateMachine.md)
-- [ChildStateMachineConfig](interfaces/ChildStateMachineConfig.md)
 - [StateDefinition](interfaces/StateDefinition.md)
 - [StateMachineSchema](interfaces/StateMachineSchema.md)
 - [TransitionDefinition](interfaces/TransitionDefinition.md)
@@ -168,7 +177,6 @@ timer.happens("stop");
 - [EventPayloadSchema](type-aliases/EventPayloadSchema.md)
 - [ExtractStateNames](type-aliases/ExtractStateNames.md)
 - [GuardFunction](type-aliases/GuardFunction.md)
-- [HierarchicalStatePath](type-aliases/HierarchicalStatePath.md)
 - [TransitionDefinitionUnion](type-aliases/TransitionDefinitionUnion.md)
 - [VendingMachineEvents](type-aliases/VendingMachineEvents.md)
 - [VendingMachineStates](type-aliases/VendingMachineStates.md)

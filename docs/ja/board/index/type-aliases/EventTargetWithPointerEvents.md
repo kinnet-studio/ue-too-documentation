@@ -4,7 +4,7 @@
 
 > **EventTargetWithPointerEvents** = `object`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:112](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L112)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:112](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L112)
 
 Minimal event target interface for framework interoperability.
 
@@ -19,7 +19,7 @@ types of event targets (HTMLElement, Canvas, PixiJS Container, etc.).
 
 > **addEventListener**: (`type`, `listener`, `options?`) => `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:113](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L113)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:113](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L113)
 
 #### パラメータ
 
@@ -47,7 +47,7 @@ types of event targets (HTMLElement, Canvas, PixiJS Container, etc.).
 
 > **removeEventListener**: (`type`, `listener`) => `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:118](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L118)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:118](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L118)
 
 #### パラメータ
 

@@ -2,7 +2,7 @@
 
 # クラス: AsyncObservable\<T\>
 
-定義: [packages/board/src/utils/observable.ts:113](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/utils/observable.ts#L113)
+定義: [packages/board/src/utils/observable.ts:113](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/utils/observable.ts#L113)
 
 Asynchronous Observable implementation that notifies observers via microtasks.
 
@@ -69,7 +69,7 @@ Tuple type of data emitted to observers
 
 > **notify**(...`data`): `void`
 
-定義: [packages/board/src/utils/observable.ts:165](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/utils/observable.ts#L165)
+定義: [packages/board/src/utils/observable.ts:165](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/utils/observable.ts#L165)
 
 Notifies all observers with the provided data asynchronously.
 
@@ -100,7 +100,7 @@ This method returns immediately; observers run later in the event loop.
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-定義: [packages/board/src/utils/observable.ts:127](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/utils/observable.ts#L127)
+定義: [packages/board/src/utils/observable.ts:127](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/utils/observable.ts#L127)
 
 Subscribes an observer to receive notifications.
 

@@ -2,7 +2,7 @@
 
 # クラス: SynchronousObservable\<T\>
 
-定義: [packages/board/src/utils/observable.ts:210](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/utils/observable.ts#L210)
+定義: [packages/board/src/utils/observable.ts:210](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/utils/observable.ts#L210)
 
 Synchronous Observable implementation that notifies observers immediately.
 
@@ -70,7 +70,7 @@ Tuple type of data emitted to observers
 
 > **notify**(...`data`): `void`
 
-定義: [packages/board/src/utils/observable.ts:262](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/utils/observable.ts#L262)
+定義: [packages/board/src/utils/observable.ts:262](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/utils/observable.ts#L262)
 
 Notifies all observers with the provided data synchronously.
 
@@ -101,7 +101,7 @@ all observers have completed execution.
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-定義: [packages/board/src/utils/observable.ts:224](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/utils/observable.ts#L224)
+定義: [packages/board/src/utils/observable.ts:224](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/utils/observable.ts#L224)
 
 Subscribes an observer to receive notifications.
 

@@ -4,6 +4,6 @@
 
 > `const` **MAX\_COMPONENTS**: `32` = `32`
 
-定義: [index.ts:107](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L107)
+定義: [index.ts:107](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L107)
 
 Maximum number of component types that can be registered.

@@ -2,7 +2,7 @@
 
 # 類別: ZoomLockedOnObjectState
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:324](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L324)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:324](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L324)
 
 State implementation for camera locked to follow an object with zoom.
 Accepts locked object zoom events and user input to unlock.
@@ -17,7 +17,7 @@ Accepts locked object zoom events and user input to unlock.
 
 > **new ZoomLockedOnObjectState**(): `ZoomLockedOnObjectState`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:330](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L330)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:330](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L330)
 
 #### 回傳
 
@@ -81,7 +81,7 @@ Accepts locked object zoom events and user input to unlock.
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), `BaseContext`, [`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\>
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:334](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L334)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:334](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L334)
 
 #### 覆寫了
 
@@ -283,7 +283,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectZoomByAtInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:358](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L358)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:358](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L358)
 
 #### 參數
 
@@ -305,7 +305,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectZoomToAtInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:369](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L369)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:369](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L369)
 
 #### 參數
 
@@ -357,7 +357,7 @@ keyof `EventPayloadMapping`[]
 
 > **userZoomByAtInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:380](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L380)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:380](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L380)
 
 #### 參數
 
@@ -379,7 +379,7 @@ keyof `EventPayloadMapping`[]
 
 > **userZoomToAtInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:391](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L391)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:391](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L391)
 
 #### 參數
 

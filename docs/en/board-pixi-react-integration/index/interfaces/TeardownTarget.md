@@ -2,7 +2,7 @@
 
 # Interface: TeardownTarget
 
-Defined in: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:3](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L3)
+Defined in: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:3](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L3)
 
 The slice of `BaseAppComponents` the teardown needs. Structural so it can
  be unit-tested without a Pixi renderer.
@@ -13,7 +13,7 @@ The slice of `BaseAppComponents` the teardown needs. Structural so it can
 
 > **app**: `object`
 
-Defined in: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:6](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L6)
+Defined in: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:6](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L6)
 
 #### destroy()
 
@@ -43,7 +43,7 @@ Defined in: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:6](https://
 
 > **cleanup**: () => `void`
 
-Defined in: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:4](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L4)
+Defined in: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:4](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L4)
 
 #### Returns
 
@@ -55,7 +55,7 @@ Defined in: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:4](https://
 
 > **cleanups**: () => `void`[]
 
-Defined in: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:5](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L5)
+Defined in: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:5](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L5)
 
 #### Returns
 

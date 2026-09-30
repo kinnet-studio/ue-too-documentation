@@ -4,7 +4,7 @@
 
 > **RawUserPanInputEventPayload** = `object`
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:22](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L22)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:22](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L22)
 
 Payload for pan input events.
 
@@ -14,6 +14,6 @@ Payload for pan input events.
 
 > **diff**: `Point`
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:23](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L23)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:23](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L23)
 
 The pan delta in viewport pixels

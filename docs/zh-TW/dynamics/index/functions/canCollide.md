@@ -4,7 +4,7 @@
 
 > **canCollide**(`filterA`, `filterB`): `boolean`
 
-定義於: [collision-filter.ts:103](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/collision-filter.ts#L103)
+定義於: [collision-filter.ts:103](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/dynamics/src/collision-filter.ts#L103)
 
 Determines if two bodies can collide based on their collision filters.
 

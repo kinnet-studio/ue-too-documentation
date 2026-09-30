@@ -4,7 +4,7 @@
 
 > **useCustomTouchEventParser**(`eventParser`): `void`
 
-Defined in: [hooks/useBoardify.tsx:488](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-react-adapter/src/hooks/useBoardify.tsx#L488)
+Defined in: [hooks/useBoardify.tsx:488](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-react-adapter/src/hooks/useBoardify.tsx#L488)
 
 ## Parameters
 

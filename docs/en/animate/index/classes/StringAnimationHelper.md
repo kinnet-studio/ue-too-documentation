@@ -2,7 +2,7 @@
 
 # Class: StringAnimationHelper
 
-Defined in: [animatable-attribute.ts:194](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L194)
+Defined in: [animatable-attribute.ts:194](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/animatable-attribute.ts#L194)
 
 Interface for type-specific interpolation helpers.
 
@@ -36,7 +36,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **new StringAnimationHelper**(): `StringAnimationHelper`
 
-Defined in: [animatable-attribute.ts:195](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L195)
+Defined in: [animatable-attribute.ts:195](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/animatable-attribute.ts#L195)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [animatable-attribute.ts:195](https://github.com/kinnet-studio/ue-to
 
 > **lerp**(`ratio`, `start`, `end`): `string`
 
-Defined in: [animatable-attribute.ts:197](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L197)
+Defined in: [animatable-attribute.ts:197](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/animate/src/animatable-attribute.ts#L197)
 
 Interpolates between two keyframes at a given ratio.
 
