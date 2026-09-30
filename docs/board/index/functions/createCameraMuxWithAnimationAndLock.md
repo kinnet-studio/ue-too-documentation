@@ -4,7 +4,7 @@
 
 > **createCameraMuxWithAnimationAndLock**(): [`CameraMuxWithAnimationAndLock`](../classes/CameraMuxWithAnimationAndLock.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:433](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L433)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:433](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L433)
 
 Creates a camera mux with animation and locking capabilities from a camera instance.
 

@@ -4,7 +4,7 @@
 
 > **ScrollEventPayload** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:76](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L76)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:79](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L79)
 
 Payload for scroll wheel events.
 
@@ -14,7 +14,7 @@ Payload for scroll wheel events.
 
 > **deltaX**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:77](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L77)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:80](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L80)
 
 Horizontal scroll delta
 
@@ -24,6 +24,6 @@ Horizontal scroll delta
 
 > **deltaY**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:78](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L78)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:81](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L81)
 
 Vertical scroll delta

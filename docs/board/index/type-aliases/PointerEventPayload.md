@@ -4,7 +4,7 @@
 
 > **PointerEventPayload** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:58](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L58)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:61](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L61)
 
 Payload for pointer events (mouse button press/release/move).
 
@@ -14,7 +14,7 @@ Payload for pointer events (mouse button press/release/move).
 
 > **x**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:59](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L59)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:62](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L62)
 
 X coordinate in window space
 
@@ -24,6 +24,6 @@ X coordinate in window space
 
 > **y**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:60](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L60)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:63](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L63)
 
 Y coordinate in window space

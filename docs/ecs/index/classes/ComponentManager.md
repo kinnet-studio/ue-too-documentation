@@ -2,7 +2,7 @@
 
 # Class: ComponentManager
 
-Defined in: [index.ts:720](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L720)
+Defined in: [index.ts:720](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L720)
 
 Manages component registration and component data storage.
 
@@ -33,7 +33,7 @@ for efficient storage and retrieval.
 
 > **addComponentToEntity**\<`T`\>(`componentName`, `entity`, `component`): `void`
 
-Defined in: [index.ts:784](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L784)
+Defined in: [index.ts:784](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L784)
 
 #### Type Parameters
 
@@ -65,7 +65,7 @@ Defined in: [index.ts:784](https://github.com/kinnet-studio/ue-too/blob/f9369bff
 
 > **addComponentToEntityWithSchema**(`componentName`, `entity`, `component`, `validate`): `void`
 
-Defined in: [index.ts:1101](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1101)
+Defined in: [index.ts:1101](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L1101)
 
 Add a component to an entity with schema validation.
 
@@ -109,7 +109,7 @@ Error if validation fails
 
 > **componentIsCustomSchema**(`componentName`): `boolean`
 
-Defined in: [index.ts:834](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L834)
+Defined in: [index.ts:834](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L834)
 
 #### Parameters
 
@@ -127,7 +127,7 @@ Defined in: [index.ts:834](https://github.com/kinnet-studio/ue-too/blob/f9369bff
 
 > **createComponentFromSchema**(`componentName`, `overrides`): `Record`\<`string`, `unknown`\>
 
-Defined in: [index.ts:899](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L899)
+Defined in: [index.ts:899](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L899)
 
 Create a component instance from a schema with default values.
 
@@ -161,7 +161,7 @@ Error if component is not registered with a schema
 
 > **entityDestroyed**(`entity`): `void`
 
-Defined in: [index.ts:815](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L815)
+Defined in: [index.ts:815](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L815)
 
 #### Parameters
 
@@ -179,7 +179,7 @@ Defined in: [index.ts:815](https://github.com/kinnet-studio/ue-too/blob/f9369bff
 
 > **getAllComponentSchemas**(): [`ComponentSchema`](../interfaces/ComponentSchema.md)[]
 
-Defined in: [index.ts:760](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L760)
+Defined in: [index.ts:760](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L760)
 
 Get all registered component schemas.
 
@@ -195,7 +195,7 @@ Array of all component schemas
 
 > **getAllEntitiesWithComponent**(`componentName`): `number`[]
 
-Defined in: [index.ts:737](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L737)
+Defined in: [index.ts:737](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L737)
 
 Get all entities that have a specific component.
 
@@ -219,7 +219,7 @@ Array of entity IDs that have this component, or empty array if component not re
 
 > **getComponentFromEntity**\<`T`\>(`componentName`, `entity`): `T` \| `null`
 
-Defined in: [index.ts:804](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L804)
+Defined in: [index.ts:804](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L804)
 
 #### Type Parameters
 
@@ -247,7 +247,7 @@ Defined in: [index.ts:804](https://github.com/kinnet-studio/ue-too/blob/f9369bff
 
 > **getComponentSchema**(`componentName`): [`ComponentSchema`](../interfaces/ComponentSchema.md) \| `null`
 
-Defined in: [index.ts:752](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L752)
+Defined in: [index.ts:752](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L752)
 
 Get the schema for a component type, if it was registered with a schema.
 
@@ -271,7 +271,7 @@ The component schema or null if not found
 
 > **getComponentType**(`componentName`): `number` \| `null`
 
-Defined in: [index.ts:777](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L777)
+Defined in: [index.ts:777](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L777)
 
 #### Parameters
 
@@ -289,7 +289,7 @@ Defined in: [index.ts:777](https://github.com/kinnet-studio/ue-too/blob/f9369bff
 
 > **getRegisteredComponentNames**(): `symbol`[]
 
-Defined in: [index.ts:728](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L728)
+Defined in: [index.ts:728](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L728)
 
 #### Returns
 
@@ -301,7 +301,7 @@ Defined in: [index.ts:728](https://github.com/kinnet-studio/ue-too/blob/f9369bff
 
 > **registerComponent**\<`T`\>(`componentName`): `void`
 
-Defined in: [index.ts:764](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L764)
+Defined in: [index.ts:764](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L764)
 
 #### Type Parameters
 
@@ -325,7 +325,7 @@ Defined in: [index.ts:764](https://github.com/kinnet-studio/ue-too/blob/f9369bff
 
 > **registerComponentWithSchema**(`schema`): `void`
 
-Defined in: [index.ts:845](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L845)
+Defined in: [index.ts:845](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L845)
 
 Register a component with a runtime-defined schema.
 This allows components to be defined dynamically (e.g., through a GUI).
@@ -352,7 +352,7 @@ Error if schema validation fails
 
 > **removeComponentFromEntity**\<`T`\>(`componentName`, `entity`): `void`
 
-Defined in: [index.ts:796](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L796)
+Defined in: [index.ts:796](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L796)
 
 #### Type Parameters
 
@@ -380,7 +380,7 @@ Defined in: [index.ts:796](https://github.com/kinnet-studio/ue-too/blob/f9369bff
 
 > **validateComponentData**(`componentName`, `data`): `boolean`
 
-Defined in: [index.ts:943](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L943)
+Defined in: [index.ts:943](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L943)
 
 Validate component data against its schema.
 

@@ -4,7 +4,7 @@
 
 > **isValidZoomLevelLimits**(`zoomLevelLimits`): `boolean`
 
-Defined in: [packages/board/src/camera/utils/zoom.ts:37](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/camera/utils/zoom.ts#L37)
+Defined in: [packages/board/src/camera/utils/zoom.ts:37](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/utils/zoom.ts#L37)
 
 Validates that zoom level limits are logically consistent.
 

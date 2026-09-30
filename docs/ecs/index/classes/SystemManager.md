@@ -2,7 +2,7 @@
 
 # Class: SystemManager
 
-Defined in: [index.ts:1175](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1175)
+Defined in: [index.ts:1175](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L1175)
 
 Manages system registration and entity-system matching.
 
@@ -35,7 +35,7 @@ required by the system's signature.
 
 > **entityDestroyed**(`entity`): `void`
 
-Defined in: [index.ts:1206](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1206)
+Defined in: [index.ts:1206](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L1206)
 
 #### Parameters
 
@@ -53,7 +53,7 @@ Defined in: [index.ts:1206](https://github.com/kinnet-studio/ue-too/blob/f9369bf
 
 > **entitySignatureChanged**(`entity`, `signature`): `void`
 
-Defined in: [index.ts:1212](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1212)
+Defined in: [index.ts:1212](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L1212)
 
 #### Parameters
 
@@ -75,7 +75,7 @@ Defined in: [index.ts:1212](https://github.com/kinnet-studio/ue-too/blob/f9369bf
 
 > **getSystem**\<`T`\>(`systemName`): `T` \| `null`
 
-Defined in: [index.ts:1223](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1223)
+Defined in: [index.ts:1223](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L1223)
 
 #### Type Parameters
 
@@ -99,7 +99,7 @@ Defined in: [index.ts:1223](https://github.com/kinnet-studio/ue-too/blob/f9369bf
 
 > **registerSystem**(`systemName`, `system`): `void`
 
-Defined in: [index.ts:1181](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1181)
+Defined in: [index.ts:1181](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L1181)
 
 #### Parameters
 
@@ -121,7 +121,7 @@ Defined in: [index.ts:1181](https://github.com/kinnet-studio/ue-too/blob/f9369bf
 
 > **setSignature**(`systemName`, `signature`): `void`
 
-Defined in: [index.ts:1189](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L1189)
+Defined in: [index.ts:1189](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L1189)
 
 #### Parameters
 

@@ -4,7 +4,7 @@
 
 > **HexGridComponent** = `object`
 
-Defined in: [grid-system/hex-grid.ts:19](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/hex-grid.ts#L19)
+Defined in: [grid-system/hex-grid.ts:19](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/grid-system/hex-grid.ts#L19)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [grid-system/hex-grid.ts:19](https://github.com/kinnet-studio/ue-too
 
 > **height**: `number`
 
-Defined in: [grid-system/hex-grid.ts:22](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/hex-grid.ts#L22)
+Defined in: [grid-system/hex-grid.ts:22](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/grid-system/hex-grid.ts#L22)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [grid-system/hex-grid.ts:22](https://github.com/kinnet-studio/ue-too
 
 > **name**: `string`
 
-Defined in: [grid-system/hex-grid.ts:20](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/hex-grid.ts#L20)
+Defined in: [grid-system/hex-grid.ts:20](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/grid-system/hex-grid.ts#L20)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [grid-system/hex-grid.ts:20](https://github.com/kinnet-studio/ue-too
 
 > **variant**: [`HexGridVariant`](HexGridVariant.md)
 
-Defined in: [grid-system/hex-grid.ts:23](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/hex-grid.ts#L23)
+Defined in: [grid-system/hex-grid.ts:23](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/grid-system/hex-grid.ts#L23)
 
 ***
 
@@ -36,4 +36,4 @@ Defined in: [grid-system/hex-grid.ts:23](https://github.com/kinnet-studio/ue-too
 
 > **width**: `number`
 
-Defined in: [grid-system/hex-grid.ts:21](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/grid-system/hex-grid.ts#L21)
+Defined in: [grid-system/hex-grid.ts:21](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/grid-system/hex-grid.ts#L21)

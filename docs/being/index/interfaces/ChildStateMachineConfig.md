@@ -2,7 +2,7 @@
 
 # Interface: ChildStateMachineConfig\<EventPayloadMapping, Context, ChildStates, EventOutputMapping\>
 
-Defined in: [hierarchical.ts:47](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/hierarchical.ts#L47)
+Defined in: [hierarchical.ts:47](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L47)
 
 Configuration for a composite state's child state machine.
 
@@ -38,7 +38,7 @@ Event output mapping
 
 > **defaultChildState**: `ChildStates`
 
-Defined in: [hierarchical.ts:63](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/hierarchical.ts#L63)
+Defined in: [hierarchical.ts:63](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L63)
 
 Default child state to enter when parent state is entered
 
@@ -48,7 +48,7 @@ Default child state to enter when parent state is entered
 
 > `optional` **rememberHistory**: `boolean`
 
-Defined in: [hierarchical.ts:65](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/hierarchical.ts#L65)
+Defined in: [hierarchical.ts:65](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L65)
 
 Whether to remember the last active child state (history state)
 
@@ -58,6 +58,6 @@ Whether to remember the last active child state (history state)
 
 > **stateMachine**: [`StateMachine`](StateMachine.md)\<`EventPayloadMapping`, `Context`, `ChildStates`, `EventOutputMapping`\>
 
-Defined in: [hierarchical.ts:56](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/being/src/hierarchical.ts#L56)
+Defined in: [hierarchical.ts:56](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L56)
 
 The child state machine instance

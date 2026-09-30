@@ -2,7 +2,7 @@
 
 # Class: NumberModificationEffect\<T\>
 
-Defined in: [action-system/effect.ts:26](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/action-system/effect.ts#L26)
+Defined in: [action-system/effect.ts:26](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/effect.ts#L26)
 
 Unified number modification effect that works with both custom schema components
 and typed components. Automatically detects which approach to use based on whether
@@ -39,7 +39,7 @@ const effect2 = new NumberModificationEffect<HealthComponent>(
 
 > **new NumberModificationEffect**\<`T`\>(`coordinator`, `componentName`, `entity`, `valuePath`, `amount`, `operation?`): `NumberModificationEffect`\<`T`\>
 
-Defined in: [action-system/effect.ts:38](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/action-system/effect.ts#L38)
+Defined in: [action-system/effect.ts:38](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/effect.ts#L38)
 
 #### Parameters
 
@@ -75,7 +75,7 @@ keyof `T`
 
 > **new NumberModificationEffect**\<`T`\>(`coordinator`, `amount`, `componentName`, `entity`, `valuePath`, `operation?`): `NumberModificationEffect`\<`T`\>
 
-Defined in: [action-system/effect.ts:47](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/action-system/effect.ts#L47)
+Defined in: [action-system/effect.ts:47](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/effect.ts#L47)
 
 #### Parameters
 
@@ -113,7 +113,7 @@ Defined in: [action-system/effect.ts:47](https://github.com/kinnet-studio/ue-too
 
 > **apply**(): `void`
 
-Defined in: [action-system/effect.ts:89](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board-game-engine/src/action-system/effect.ts#L89)
+Defined in: [action-system/effect.ts:89](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/effect.ts#L89)
 
 #### Returns
 

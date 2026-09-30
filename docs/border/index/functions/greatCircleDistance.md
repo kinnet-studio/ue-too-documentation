@@ -4,7 +4,7 @@
 
 > **greatCircleDistance**(`startCoord`, `endCoord`): `number`
 
-Defined in: [greateCircle.ts:155](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/border/src/greateCircle.ts#L155)
+Defined in: [greateCircle.ts:155](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/border/src/greateCircle.ts#L155)
 
 Calculates the great circle distance between two points on Earth.
 

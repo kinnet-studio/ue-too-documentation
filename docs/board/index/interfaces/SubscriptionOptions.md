@@ -2,7 +2,7 @@
 
 # Interface: SubscriptionOptions
 
-Defined in: [packages/board/src/utils/observable.ts:52](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/utils/observable.ts#L52)
+Defined in: [packages/board/src/utils/observable.ts:52](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/utils/observable.ts#L52)
 
 Options for subscribing to an Observable.
 
@@ -32,6 +32,6 @@ controller.abort();
 
 > `optional` **signal**: `AbortSignal`
 
-Defined in: [packages/board/src/utils/observable.ts:53](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/board/src/utils/observable.ts#L53)
+Defined in: [packages/board/src/utils/observable.ts:53](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/utils/observable.ts#L53)
 
 Optional AbortSignal for automatic unsubscription

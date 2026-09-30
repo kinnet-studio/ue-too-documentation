@@ -4,7 +4,7 @@
 
 > **createGlobalSystemName**(`key`): `symbol`
 
-Defined in: [index.ts:321](https://github.com/kinnet-studio/ue-too/blob/f9369bfff28ecea2c285556271a8eb3145e74ec2/packages/ecs/src/index.ts#L321)
+Defined in: [index.ts:321](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L321)
 
 Helper function to create a system name using Symbol.for().
 This creates a global symbol that can be looked up by string key,

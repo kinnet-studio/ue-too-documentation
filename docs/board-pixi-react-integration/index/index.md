@@ -7,6 +7,7 @@ Board pixi react integration package for uē-tôo.
 ## Interfaces
 
 - [PixiCanvasRegistry](interfaces/PixiCanvasRegistry.md)
+- [TeardownTarget](interfaces/TeardownTarget.md)
 
 ## Type Aliases
 
@@ -21,6 +22,7 @@ Board pixi react integration package for uē-tôo.
 - [PixiCanvasApp](functions/PixiCanvasApp.md)
 - [PixiCanvasProvider](functions/PixiCanvasProvider.md)
 - [ScrollBarDisplay](functions/ScrollBarDisplay.md)
+- [teardownComponents](functions/teardownComponents.md)
 - [useAllBoardCameraState](functions/useAllBoardCameraState.md)
 - [useAppTicker](functions/useAppTicker.md)
 - [useBoardCameraState](functions/useBoardCameraState.md)
