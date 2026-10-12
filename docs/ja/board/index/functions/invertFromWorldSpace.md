@@ -4,7 +4,7 @@
 
 > **invertFromWorldSpace**(`point`, `viewPortWidth`, `viewPortHeight`, `cameraPosition`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-定義: [packages/board/src/camera/utils/coordinate-conversion.ts:263](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/utils/coordinate-conversion.ts#L263)
+定義: [packages/board/src/camera/utils/coordinate-conversion.ts:263](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/coordinate-conversion.ts#L263)
 
 Converts a world point to canvas coordinates (bottom-left origin).
 

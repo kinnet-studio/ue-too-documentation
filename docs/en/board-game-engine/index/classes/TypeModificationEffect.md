@@ -2,7 +2,7 @@
 
 # Class: TypeModificationEffect\<T\>
 
-Defined in: [action-system/effect.ts:156](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/effect.ts#L156)
+Defined in: [action-system/effect.ts:156](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L156)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [action-system/effect.ts:156](https://github.com/kinnet-studio/ue-to
 
 > **new TypeModificationEffect**\<`T`\>(`coordinator`, `componentName`, `entity`, `valuePath`, `newType`, `allowedValues?`): `TypeModificationEffect`\<`T`\>
 
-Defined in: [action-system/effect.ts:164](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/effect.ts#L164)
+Defined in: [action-system/effect.ts:164](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L164)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ readonly `T`[]
 
 > **apply**(): `void`
 
-Defined in: [action-system/effect.ts:180](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/effect.ts#L180)
+Defined in: [action-system/effect.ts:180](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L180)
 
 #### Returns
 

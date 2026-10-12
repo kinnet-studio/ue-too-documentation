@@ -4,7 +4,7 @@
 
 > **useCanvasProxy**(): `CanvasProxy`
 
-Defined in: [hooks/useCanvasProxy.ts:4](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-react-adapter/src/hooks/useCanvasProxy.ts#L4)
+Defined in: [hooks/useCanvasProxy.ts:4](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-react-adapter/src/hooks/useCanvasProxy.ts#L4)
 
 ## Returns
 

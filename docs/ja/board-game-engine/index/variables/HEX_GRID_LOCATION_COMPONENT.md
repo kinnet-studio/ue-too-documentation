@@ -4,4 +4,4 @@
 
 > `const` **HEX\_GRID\_LOCATION\_COMPONENT**: `symbol`
 
-定義: [grid-system/hex-grid.ts:34](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/grid-system/hex-grid.ts#L34)
+定義: [grid-system/hex-grid.ts:34](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/grid-system/hex-grid.ts#L34)

@@ -4,7 +4,7 @@
 
 > **MachineBody** = `object`
 
-Defined in: [being-portable/src/format/types.ts:155](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/format/types.ts#L155)
+Defined in: [being-portable/src/format/types.ts:155](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L155)
 
 The parts every machine has, root or child.
 
@@ -14,7 +14,7 @@ The parts every machine has, root or child.
 
 > `readonly` **context**: `Readonly`\<`Record`\<`string`, [`ContextFieldDefinition`](ContextFieldDefinition.md)\>\>
 
-Defined in: [being-portable/src/format/types.ts:156](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/format/types.ts#L156)
+Defined in: [being-portable/src/format/types.ts:156](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L156)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [being-portable/src/format/types.ts:156](https://github.com/kinnet-s
 
 > `readonly` **events**: `Readonly`\<`Record`\<`string`, `Readonly`\<`Record`\<`string`, [`TypeSpec`](TypeSpec.md)\>\>\>\>
 
-Defined in: [being-portable/src/format/types.ts:157](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/format/types.ts#L157)
+Defined in: [being-portable/src/format/types.ts:157](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L157)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [being-portable/src/format/types.ts:157](https://github.com/kinnet-s
 
 > `readonly` **initialState**: `string`
 
-Defined in: [being-portable/src/format/types.ts:161](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/format/types.ts#L161)
+Defined in: [being-portable/src/format/types.ts:161](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L161)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [being-portable/src/format/types.ts:161](https://github.com/kinnet-s
 
 > `readonly` `optional` **outputs**: `Readonly`\<`Record`\<`string`, [`TypeSpec`](TypeSpec.md)\>\>
 
-Defined in: [being-portable/src/format/types.ts:160](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/format/types.ts#L160)
+Defined in: [being-portable/src/format/types.ts:160](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L160)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [being-portable/src/format/types.ts:160](https://github.com/kinnet-s
 
 > `readonly` **states**: `Readonly`\<`Record`\<`string`, [`StateDefinition`](StateDefinition.md)\>\>
 
-Defined in: [being-portable/src/format/types.ts:162](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/format/types.ts#L162)
+Defined in: [being-portable/src/format/types.ts:162](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L162)

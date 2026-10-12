@@ -2,7 +2,7 @@
 
 # 抽象 類別: DelegatingState\<EventPayloadMapping, Context, States, Child, EventOutputMapping\>
 
-定義於: [delegating-state.ts:65](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L65)
+定義於: [delegating-state.ts:65](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L65)
 
 A state that hosts a complete child state machine and forwards events to it.
 
@@ -75,7 +75,7 @@ The parent machine's output mapping
 
 > **new DelegatingState**\<`EventPayloadMapping`, `Context`, `States`, `Child`, `EventOutputMapping`\>(`child`): `DelegatingState`\<`EventPayloadMapping`, `Context`, `States`, `Child`, `EventOutputMapping`\>
 
-定義於: [delegating-state.ts:81](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L81)
+定義於: [delegating-state.ts:81](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L81)
 
 #### 參數
 
@@ -97,7 +97,7 @@ The parent machine's output mapping
 
 > `protected` **\_defer**: [`Defer`](../type-aliases/Defer.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\>
 
-定義於: [delegating-state.ts:91](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L91)
+定義於: [delegating-state.ts:91](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L91)
 
 #### 覆寫了
 
@@ -109,7 +109,7 @@ The parent machine's output mapping
 
 > `protected` **\_delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined` = `undefined`
 
-定義於: [interface.ts:1003](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1003)
+定義於: [interface.ts:1003](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L1003)
 
 #### 繼承自
 
@@ -121,7 +121,7 @@ The parent machine's output mapping
 
 > `protected` **\_eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-定義於: [interface.ts:993](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L993)
+定義於: [interface.ts:993](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L993)
 
 #### 繼承自
 
@@ -133,7 +133,7 @@ The parent machine's output mapping
 
 > `protected` **\_eventPreconditions**: `Partial`\<[`EventPreconditions`](../type-aliases/EventPreconditions.md)\<`EventPayloadMapping`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-定義於: [interface.ts:998](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L998)
+定義於: [interface.ts:998](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L998)
 
 #### 繼承自
 
@@ -145,7 +145,7 @@ The parent machine's output mapping
 
 > `protected` **\_eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義於: [interface.ts:981](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L981)
+定義於: [interface.ts:981](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L981)
 
 #### 繼承自
 
@@ -157,7 +157,7 @@ The parent machine's output mapping
 
 > `protected` **\_guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-定義於: [interface.ts:992](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L992)
+定義於: [interface.ts:992](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L992)
 
 #### 繼承自
 
@@ -171,7 +171,7 @@ The parent machine's output mapping
 
 > **get** **child**(): `Child`
 
-定義於: [delegating-state.ts:87](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L87)
+定義於: [delegating-state.ts:87](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L87)
 
 The hosted child machine, for introspection and tests.
 
@@ -187,7 +187,7 @@ The hosted child machine, for introspection and tests.
 
 > **get** **delay**(): [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-定義於: [interface.ts:1042](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1042)
+定義於: [interface.ts:1042](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L1042)
 
 ##### 回傳
 
@@ -205,7 +205,7 @@ The hosted child machine, for introspection and tests.
 
 > **get** **eventGuards**(): `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-定義於: [interface.ts:1021](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1021)
+定義於: [interface.ts:1021](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L1021)
 
 ##### 回傳
 
@@ -223,7 +223,7 @@ The hosted child machine, for introspection and tests.
 
 > **get** **eventPreconditions**(): `Partial`\<[`EventPreconditions`](../type-aliases/EventPreconditions.md)\<`EventPayloadMapping`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-定義於: [interface.ts:1027](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1027)
+定義於: [interface.ts:1027](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L1027)
 
 Pre-action vetoes: named guards that must all pass before this state
 handles an event. Optional so existing State implementations remain
@@ -249,7 +249,7 @@ valid; [TemplateState](TemplateState.md) always provides it.
 
 > **get** **eventReactions**(): [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義於: [interface.ts:1033](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1033)
+定義於: [interface.ts:1033](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L1033)
 
 ##### 回傳
 
@@ -267,7 +267,7 @@ valid; [TemplateState](TemplateState.md) always provides it.
 
 > **get** **guards**(): [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-定義於: [interface.ts:1017](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1017)
+定義於: [interface.ts:1017](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L1017)
 
 ##### 回傳
 
@@ -285,7 +285,7 @@ valid; [TemplateState](TemplateState.md) always provides it.
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-定義於: [interface.ts:1011](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1011)
+定義於: [interface.ts:1011](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L1011)
 
 ##### 回傳
 
@@ -301,7 +301,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`_context`, `_stateMachine`, `_to`): `void`
 
-定義於: [delegating-state.ts:129](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L129)
+定義於: [delegating-state.ts:129](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L129)
 
 #### 參數
 
@@ -331,7 +331,7 @@ keyof `EventPayloadMapping`[]
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義於: [interface.ts:1074](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1074)
+定義於: [interface.ts:1074](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L1074)
 
 #### 型別參數
 
@@ -367,7 +367,7 @@ keyof `EventPayloadMapping`[]
 
 > **uponEnter**(`_context`, `_stateMachine`, `_from`): `void`
 
-定義於: [delegating-state.ts:112](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L112)
+定義於: [delegating-state.ts:112](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L112)
 
 #### 參數
 

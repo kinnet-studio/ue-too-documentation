@@ -4,7 +4,7 @@
 
 > **HostDefinition** = `object`
 
-Defined in: [being-portable/src/host.ts:44](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/host.ts#L44)
+Defined in: [being-portable/src/host.ts:44](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/host.ts#L44)
 
 What a host passes to [defineHost](../functions/defineHost.md).
 
@@ -14,7 +14,7 @@ What a host passes to [defineHost](../functions/defineHost.md).
 
 > `readonly` `optional` **effects**: `Readonly`\<`Record`\<`string`, [`EffectImplementation`](EffectImplementation.md)\>\>
 
-Defined in: [being-portable/src/host.ts:45](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/host.ts#L45)
+Defined in: [being-portable/src/host.ts:45](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/host.ts#L45)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [being-portable/src/host.ts:45](https://github.com/kinnet-studio/ue-
 
 > `readonly` `optional` **limits**: `Partial`\<[`Limits`](Limits.md)\>
 
-Defined in: [being-portable/src/host.ts:48](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/host.ts#L48)
+Defined in: [being-portable/src/host.ts:48](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/host.ts#L48)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [being-portable/src/host.ts:48](https://github.com/kinnet-studio/ue-
 
 > `readonly` `optional` **onError**: (`error`) => `void`
 
-Defined in: [being-portable/src/host.ts:50](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/host.ts#L50)
+Defined in: [being-portable/src/host.ts:50](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/host.ts#L50)
 
 Receives every runtime failure. Defaults to `console.error`.
 
@@ -50,6 +50,6 @@ Receives every runtime failure. Defaults to `console.error`.
 
 > `readonly` `optional` **services**: `Partial`\<[`Services`](Services.md)\>
 
-Defined in: [being-portable/src/host.ts:47](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/host.ts#L47)
+Defined in: [being-portable/src/host.ts:47](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/host.ts#L47)
 
 Defaults to `Math.random` and `Date.now`.

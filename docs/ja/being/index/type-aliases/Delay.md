@@ -4,7 +4,7 @@
 
 > **Delay**\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> = `object`
 
-定義: [interface.ts:502](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L502)
+定義: [interface.ts:502](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L502)
 
 ## 型パラメーター
 
@@ -30,7 +30,7 @@
 
 > **action**: [`Action`](Action.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\>
 
-定義: [interface.ts:511](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L511)
+定義: [interface.ts:511](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L511)
 
 ***
 
@@ -38,4 +38,4 @@
 
 > **time**: `number`
 
-定義: [interface.ts:510](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L510)
+定義: [interface.ts:510](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L510)
