@@ -2,7 +2,7 @@
 
 # インターフェイス: Effect
 
-定義: [action-system/effect.ts:3](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/effect.ts#L3)
+定義: [action-system/effect.ts:3](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L3)
 
 ## メソッド
 
@@ -10,7 +10,7 @@
 
 > **apply**(): `void`
 
-定義: [action-system/effect.ts:4](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board-game-engine/src/action-system/effect.ts#L4)
+定義: [action-system/effect.ts:4](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L4)
 
 #### 戻り値
 

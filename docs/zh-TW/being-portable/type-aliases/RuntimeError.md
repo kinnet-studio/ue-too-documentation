@@ -4,7 +4,7 @@
 
 > **RuntimeError** = `object`
 
-定義於: [being-portable/src/errors.ts:77](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/errors.ts#L77)
+定義於: [being-portable/src/errors.ts:77](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/errors.ts#L77)
 
 A failure reported to the host's `onError`. The machine tree has already
 been rolled back when this is reported.
@@ -15,7 +15,7 @@ been rolled back when this is reported.
 
 > `readonly` **code**: [`RuntimeErrorCode`](RuntimeErrorCode.md)
 
-定義於: [being-portable/src/errors.ts:78](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/errors.ts#L78)
+定義於: [being-portable/src/errors.ts:78](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/errors.ts#L78)
 
 ***
 
@@ -23,7 +23,7 @@ been rolled back when this is reported.
 
 > `readonly` **effectsCalled**: readonly `string`[]
 
-定義於: [being-portable/src/errors.ts:85](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/errors.ts#L85)
+定義於: [being-portable/src/errors.ts:85](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/errors.ts#L85)
 
 Effects that ran before the failure. They are not undone.
 
@@ -33,7 +33,7 @@ Effects that ran before the failure. They are not undone.
 
 > `readonly` **event**: `string` \| `null`
 
-定義於: [being-portable/src/errors.ts:83](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/errors.ts#L83)
+定義於: [being-portable/src/errors.ts:83](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/errors.ts#L83)
 
 The event being handled, or `null` for start, reset and wrapup.
 
@@ -43,7 +43,7 @@ The event being handled, or `null` for start, reset and wrapup.
 
 > `readonly` **message**: `string`
 
-定義於: [being-portable/src/errors.ts:79](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/errors.ts#L79)
+定義於: [being-portable/src/errors.ts:79](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/errors.ts#L79)
 
 ***
 
@@ -51,6 +51,6 @@ The event being handled, or `null` for start, reset and wrapup.
 
 > `readonly` **path**: `string`
 
-定義於: [being-portable/src/errors.ts:81](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/errors.ts#L81)
+定義於: [being-portable/src/errors.ts:81](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/errors.ts#L81)
 
 JSON path of the statement or guard that failed.

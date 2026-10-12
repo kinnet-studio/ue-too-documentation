@@ -2,7 +2,7 @@
 
 # Interface: PortableMachine
 
-Defined in: [being-portable/src/api-types.ts:63](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/api-types.ts#L63)
+Defined in: [being-portable/src/api-types.ts:63](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/api-types.ts#L63)
 
 A loaded machine: an ordinary `being` state machine plus its definition,
 snapshot and restore.
@@ -17,7 +17,7 @@ snapshot and restore.
 
 > `readonly` **context**: [`PortableContext`](PortableContext.md)
 
-Defined in: [being-portable/src/api-types.ts:71](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/api-types.ts#L71)
+Defined in: [being-portable/src/api-types.ts:71](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/api-types.ts#L71)
 
 Read-only access to the machine's live context object. Optional so
 existing StateMachine implementations remain valid;
@@ -48,7 +48,7 @@ Defined in: being/dist/interface.d.ts:220
 
 > `readonly` **definition**: [`MachineDefinition`](../type-aliases/MachineDefinition.md)
 
-Defined in: [being-portable/src/api-types.ts:70](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/api-types.ts#L70)
+Defined in: [being-portable/src/api-types.ts:70](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/api-types.ts#L70)
 
 The upgraded, normalized document, frozen.
 
@@ -238,7 +238,7 @@ Defined in: being/dist/interface.d.ts:217
 
 > **restore**(`snapshot`, `options?`): [`RestoreResult`](../type-aliases/RestoreResult.md)
 
-Defined in: [being-portable/src/api-types.ts:74](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/api-types.ts#L74)
+Defined in: [being-portable/src/api-types.ts:74](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/api-types.ts#L74)
 
 #### Parameters
 
@@ -284,7 +284,7 @@ Defined in: being/dist/interface.d.ts:190
 
 > **snapshot**(): [`MachineSnapshot`](../type-aliases/MachineSnapshot.md)
 
-Defined in: [being-portable/src/api-types.ts:73](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/api-types.ts#L73)
+Defined in: [being-portable/src/api-types.ts:73](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/api-types.ts#L73)
 
 Throws while the machine is handling an event.
 

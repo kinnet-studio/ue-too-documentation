@@ -4,7 +4,7 @@
 
 > **EffectDeclaration** = `object`
 
-Defined in: [being-portable/src/format/types.ts:145](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/format/types.ts#L145)
+Defined in: [being-portable/src/format/types.ts:145](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L145)
 
 A host capability a document calls.
 
@@ -14,7 +14,7 @@ A host capability a document calls.
 
 > `readonly` **args**: `Readonly`\<`Record`\<`string`, [`TypeSpec`](TypeSpec.md)\>\>
 
-Defined in: [being-portable/src/format/types.ts:146](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/format/types.ts#L146)
+Defined in: [being-portable/src/format/types.ts:146](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L146)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [being-portable/src/format/types.ts:146](https://github.com/kinnet-s
 
 > `readonly` `optional` **returns**: [`TypeSpec`](TypeSpec.md)
 
-Defined in: [being-portable/src/format/types.ts:147](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/format/types.ts#L147)
+Defined in: [being-portable/src/format/types.ts:147](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L147)

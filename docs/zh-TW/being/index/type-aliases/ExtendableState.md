@@ -4,7 +4,7 @@
 
 > **ExtendableState** = `object`
 
-定義於: [expansion.ts:81](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L81)
+定義於: [expansion.ts:81](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/expansion.ts#L81)
 
 The part of a state [extendState](../functions/extendState.md) reads from the original.
 
@@ -19,7 +19,7 @@ not assignable to `State<any, any, any, any>`. Every `State` satisfies it.
 
 > **beforeExit**: (...`args`) => `void`
 
-定義於: [expansion.ts:88](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L88)
+定義於: [expansion.ts:88](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/expansion.ts#L88)
 
 #### 參數
 
@@ -37,7 +37,7 @@ not assignable to `State<any, any, any, any>`. Every `State` satisfies it.
 
 > `readonly` **delay**: `unknown`
 
-定義於: [expansion.ts:86](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L86)
+定義於: [expansion.ts:86](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/expansion.ts#L86)
 
 ***
 
@@ -45,7 +45,7 @@ not assignable to `State<any, any, any, any>`. Every `State` satisfies it.
 
 > `readonly` **eventGuards**: `object`
 
-定義於: [expansion.ts:84](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L84)
+定義於: [expansion.ts:84](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/expansion.ts#L84)
 
 ***
 
@@ -53,7 +53,7 @@ not assignable to `State<any, any, any, any>`. Every `State` satisfies it.
 
 > `readonly` `optional` **eventPreconditions**: `object`
 
-定義於: [expansion.ts:85](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L85)
+定義於: [expansion.ts:85](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/expansion.ts#L85)
 
 ***
 
@@ -61,7 +61,7 @@ not assignable to `State<any, any, any, any>`. Every `State` satisfies it.
 
 > `readonly` **eventReactions**: `object`
 
-定義於: [expansion.ts:82](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L82)
+定義於: [expansion.ts:82](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/expansion.ts#L82)
 
 ***
 
@@ -69,7 +69,7 @@ not assignable to `State<any, any, any, any>`. Every `State` satisfies it.
 
 > `readonly` **guards**: `object`
 
-定義於: [expansion.ts:83](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L83)
+定義於: [expansion.ts:83](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/expansion.ts#L83)
 
 ***
 
@@ -77,7 +77,7 @@ not assignable to `State<any, any, any, any>`. Every `State` satisfies it.
 
 > **uponEnter**: (...`args`) => `void`
 
-定義於: [expansion.ts:87](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L87)
+定義於: [expansion.ts:87](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/expansion.ts#L87)
 
 #### 參數
 

@@ -4,7 +4,7 @@
 
 > **EffectImplementation** = `object`
 
-定義於: [being-portable/src/host.ts:18](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/host.ts#L18)
+定義於: [being-portable/src/host.ts:18](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/host.ts#L18)
 
 One host capability, as the host writes it.
 
@@ -14,7 +14,7 @@ One host capability, as the host writes it.
 
 > `readonly` **args**: `Readonly`\<`Record`\<`string`, [`TypeSpec`](TypeSpec.md)\>\>
 
-定義於: [being-portable/src/host.ts:20](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/host.ts#L20)
+定義於: [being-portable/src/host.ts:20](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/host.ts#L20)
 
 Argument names and types; must match the document's declaration exactly.
 
@@ -24,7 +24,7 @@ Argument names and types; must match the document's declaration exactly.
 
 > `readonly` `optional` **returns**: [`TypeSpec`](TypeSpec.md)
 
-定義於: [being-portable/src/host.ts:22](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/host.ts#L22)
+定義於: [being-portable/src/host.ts:22](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/host.ts#L22)
 
 Return type; must match the document's declaration exactly.
 
@@ -34,7 +34,7 @@ Return type; must match the document's declaration exactly.
 
 > `readonly` **run**: (`args`) => [`Value`](Value.md) \| `void`
 
-定義於: [being-portable/src/host.ts:24](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/host.ts#L24)
+定義於: [being-portable/src/host.ts:24](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/host.ts#L24)
 
 Receives validated, frozen arguments.
 

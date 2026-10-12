@@ -4,7 +4,7 @@
 
 > **createStateExtender**\<`E`, `C`, `S`, `O`\>(): [`StateExtender`](../type-aliases/StateExtender.md)\<`E`, `C`, `S`, `O`\>
 
-定義於: [expansion.ts:271](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L271)
+定義於: [expansion.ts:271](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/expansion.ts#L271)
 
 Binds the target generics of [extendState](extendState.md) once so several states can
 be extended without repeating them. Mirrors [createStateWidener](createStateWidener.md).

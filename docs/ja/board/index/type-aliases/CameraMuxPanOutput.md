@@ -4,7 +4,7 @@
 
 > **CameraMuxPanOutput** = \{ `allowPassThrough`: `true`; `delta`: `Point`; \} \| \{ `allowPassThrough`: `false`; \}
 
-定義: [packages/board/src/camera/camera-mux/interface.ts:30](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-mux/interface.ts#L30)
+定義: [packages/board/src/camera/camera-mux/interface.ts:30](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/interface.ts#L30)
 
 Discriminated union type for pan input results.
 Indicates whether camera panning is allowed and provides the delta if accepted.

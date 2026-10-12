@@ -4,7 +4,7 @@
 
 > **Limits** = `object`
 
-Defined in: [being-portable/src/limits.ts:6](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L6)
+Defined in: [being-portable/src/limits.ts:6](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L6)
 
 Caps that keep a document from a stranger from exhausting memory or time.
 
@@ -14,7 +14,7 @@ Caps that keep a document from a stranger from exhausting memory or time.
 
 > `readonly` **maxEventWork**: `number`
 
-Defined in: [being-portable/src/limits.ts:32](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L32)
+Defined in: [being-portable/src/limits.ts:32](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L32)
 
 Work units one event, start, reset or wrapup may use. Each evaluated
 expression node and statement costs one unit, plus the length of any
@@ -26,7 +26,7 @@ list or string an operation copies or scans.
 
 > `readonly` **maxExpressionDepth**: `number`
 
-Defined in: [being-portable/src/limits.ts:18](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L18)
+Defined in: [being-portable/src/limits.ts:18](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L18)
 
 Expression nesting depth.
 
@@ -36,7 +36,7 @@ Expression nesting depth.
 
 > `readonly` **maxListLength**: `number`
 
-Defined in: [being-portable/src/limits.ts:24](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L24)
+Defined in: [being-portable/src/limits.ts:24](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L24)
 
 Items in any list value.
 
@@ -46,7 +46,7 @@ Items in any list value.
 
 > `readonly` **maxMachineInstances**: `number`
 
-Defined in: [being-portable/src/limits.ts:22](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L22)
+Defined in: [being-portable/src/limits.ts:22](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L22)
 
 Machine instances the tree builds.
 
@@ -56,7 +56,7 @@ Machine instances the tree builds.
 
 > `readonly` **maxMachines**: `number`
 
-Defined in: [being-portable/src/limits.ts:10](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L10)
+Defined in: [being-portable/src/limits.ts:10](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L10)
 
 Machines in `machines` plus the root.
 
@@ -66,7 +66,7 @@ Machines in `machines` plus the root.
 
 > `readonly` **maxNestingDepth**: `number`
 
-Defined in: [being-portable/src/limits.ts:20](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L20)
+Defined in: [being-portable/src/limits.ts:20](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L20)
 
 Child-machine nesting depth.
 
@@ -76,7 +76,7 @@ Child-machine nesting depth.
 
 > `readonly` **maxNodes**: `number`
 
-Defined in: [being-portable/src/limits.ts:8](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L8)
+Defined in: [being-portable/src/limits.ts:8](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L8)
 
 Total JSON values in a document or snapshot.
 
@@ -86,7 +86,7 @@ Total JSON values in a document or snapshot.
 
 > `readonly` **maxStatementDepth**: `number`
 
-Defined in: [being-portable/src/limits.ts:16](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L16)
+Defined in: [being-portable/src/limits.ts:16](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L16)
 
 Nested `if` depth.
 
@@ -96,7 +96,7 @@ Nested `if` depth.
 
 > `readonly` **maxStatements**: `number`
 
-Defined in: [being-portable/src/limits.ts:14](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L14)
+Defined in: [being-portable/src/limits.ts:14](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L14)
 
 Statements per list.
 
@@ -106,7 +106,7 @@ Statements per list.
 
 > `readonly` **maxStates**: `number`
 
-Defined in: [being-portable/src/limits.ts:12](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L12)
+Defined in: [being-portable/src/limits.ts:12](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L12)
 
 States per machine.
 
@@ -116,6 +116,6 @@ States per machine.
 
 > `readonly` **maxStringLength**: `number`
 
-Defined in: [being-portable/src/limits.ts:26](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/limits.ts#L26)
+Defined in: [being-portable/src/limits.ts:26](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/limits.ts#L26)
 
 Characters in any string value.

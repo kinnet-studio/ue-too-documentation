@@ -4,7 +4,7 @@
 
 > **ZoomHandlerRestrictConfig** = `object`
 
-定義: [packages/board/src/camera/camera-rig/zoom-handler.ts:77](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-rig/zoom-handler.ts#L77)
+定義: [packages/board/src/camera/camera-rig/zoom-handler.ts:77](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/zoom-handler.ts#L77)
 
 Configuration for completely disabling zoom operations.
 
@@ -37,6 +37,6 @@ const config: ZoomHandlerRestrictConfig = {
 
 > **restrictZoom**: `boolean`
 
-定義: [packages/board/src/camera/camera-rig/zoom-handler.ts:81](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/camera/camera-rig/zoom-handler.ts#L81)
+定義: [packages/board/src/camera/camera-rig/zoom-handler.ts:81](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/zoom-handler.ts#L81)
 
 Whether to completely prevent zoom operations.
