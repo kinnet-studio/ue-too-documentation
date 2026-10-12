@@ -4,7 +4,7 @@
 
 > **getScrollBarDimension**(`boardCamera`): `object`
 
-Defined in: [packages/board/src/utils/scrollbar/scrollbar.ts:8](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/scrollbar/scrollbar.ts#L8)
+Defined in: [packages/board/src/utils/scrollbar/scrollbar.ts:8](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/scrollbar/scrollbar.ts#L8)
 
 ## Parameters
 

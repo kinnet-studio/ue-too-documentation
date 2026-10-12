@@ -4,7 +4,7 @@
 
 > **createTRSMatrix**(`translation`, `rotation`, `scale`): [`TransformationMatrix`](../type-aliases/TransformationMatrix.md)
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:464](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/matrix.ts#L464)
+Defined in: [packages/board/src/camera/utils/matrix.ts:464](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/utils/matrix.ts#L464)
 
 Creates a transformation matrix from Translation, Rotation, and Scale components.
 Inverse of [decomposeTRS](decomposeTRS.md).

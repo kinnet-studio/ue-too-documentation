@@ -4,7 +4,7 @@
 
 > **PanHandlerRestrictionConfig** = `object`
 
-定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:102](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/pan-handler.ts#L102)
+定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:102](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-rig/pan-handler.ts#L102)
 
 Configuration for restricting camera movement along specific axes.
 
@@ -53,7 +53,7 @@ const screenConfig: PanHandlerRestrictionConfig = {
 
 > **restrictRelativeXTranslation**: `boolean`
 
-定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:115](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/pan-handler.ts#L115)
+定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:115](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-rig/pan-handler.ts#L115)
 
 Whether to prevent horizontal movement in viewport/screen space.
 Accounts for camera rotation - locks movement perpendicular to screen's vertical direction.
@@ -64,7 +64,7 @@ Accounts for camera rotation - locks movement perpendicular to screen's vertical
 
 > **restrictRelativeYTranslation**: `boolean`
 
-定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:120](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/pan-handler.ts#L120)
+定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:120](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-rig/pan-handler.ts#L120)
 
 Whether to prevent vertical movement in viewport/screen space.
 Accounts for camera rotation - locks movement perpendicular to screen's horizontal direction.
@@ -75,7 +75,7 @@ Accounts for camera rotation - locks movement perpendicular to screen's horizont
 
 > **restrictXTranslation**: `boolean`
 
-定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:106](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/pan-handler.ts#L106)
+定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:106](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-rig/pan-handler.ts#L106)
 
 Whether to prevent movement along the world X axis.
 
@@ -85,6 +85,6 @@ Whether to prevent movement along the world X axis.
 
 > **restrictYTranslation**: `boolean`
 
-定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:110](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/pan-handler.ts#L110)
+定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:110](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-rig/pan-handler.ts#L110)
 
 Whether to prevent movement along the world Y axis.

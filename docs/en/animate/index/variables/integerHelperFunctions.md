@@ -4,7 +4,7 @@
 
 > `const` **integerHelperFunctions**: [`AnimatableAttributeHelper`](../interfaces/AnimatableAttributeHelper.md)\<`number`\>
 
-Defined in: [animatable-attribute.ts:222](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L222)
+Defined in: [animatable-attribute.ts:222](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/animate/src/animatable-attribute.ts#L222)
 
 Built-in interpolation helper for animating integer values.
 

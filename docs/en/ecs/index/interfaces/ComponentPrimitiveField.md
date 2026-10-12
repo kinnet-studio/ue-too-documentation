@@ -2,7 +2,7 @@
 
 # Interface: ComponentPrimitiveField
 
-Defined in: [index.ts:179](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L179)
+Defined in: [index.ts:179](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/ecs/src/index.ts#L179)
 
 Definition for a primitive (non-array) field in a component schema.
 
@@ -16,7 +16,7 @@ Definition for a primitive (non-array) field in a component schema.
 
 > `optional` **defaultValue**: `unknown`
 
-Defined in: [index.ts:172](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L172)
+Defined in: [index.ts:172](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/ecs/src/index.ts#L172)
 
 Default value for the field (used when creating new instances)
 
@@ -30,7 +30,7 @@ Default value for the field (used when creating new instances)
 
 > **name**: `string`
 
-Defined in: [index.ts:168](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L168)
+Defined in: [index.ts:168](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/ecs/src/index.ts#L168)
 
 The name of the field
 
@@ -44,7 +44,7 @@ The name of the field
 
 > `optional` **optional**: `boolean`
 
-Defined in: [index.ts:170](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L170)
+Defined in: [index.ts:170](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/ecs/src/index.ts#L170)
 
 Whether the field is optional (default: false)
 
@@ -58,6 +58,6 @@ Whether the field is optional (default: false)
 
 > **type**: `"string"` \| `"number"` \| `"boolean"` \| `"object"` \| `"entity"`
 
-Defined in: [index.ts:181](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L181)
+Defined in: [index.ts:181](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/ecs/src/index.ts#L181)
 
 Discriminator for the union type

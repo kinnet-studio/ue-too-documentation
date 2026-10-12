@@ -4,7 +4,7 @@
 
 > **baseInitApp**(`canvasElement`, `option`): `Promise`\<[`BaseAppComponents`](../interfaces/BaseAppComponents.md)\>
 
-定義於: [init-app.ts:58](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-pixi-integration/src/init-app.ts#L58)
+定義於: [init-app.ts:58](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-pixi-integration/src/init-app.ts#L58)
 
 ## 參數
 

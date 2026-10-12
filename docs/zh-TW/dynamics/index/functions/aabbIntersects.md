@@ -4,7 +4,7 @@
 
 > **aabbIntersects**(`aabbA`, `aabbB`): `boolean`
 
-定義於: [collision.ts:172](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/collision.ts#L172)
+定義於: [collision.ts:172](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/collision.ts#L172)
 
 ## 參數
 

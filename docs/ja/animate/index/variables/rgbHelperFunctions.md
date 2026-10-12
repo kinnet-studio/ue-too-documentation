@@ -4,7 +4,7 @@
 
 > `const` **rgbHelperFunctions**: [`AnimatableAttributeHelper`](../interfaces/AnimatableAttributeHelper.md)\<[`RGB`](../type-aliases/RGB.md)\>
 
-定義: [animatable-attribute.ts:276](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L276)
+定義: [animatable-attribute.ts:276](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/animate/src/animatable-attribute.ts#L276)
 
 Built-in interpolation helper for animating RGB color values.
 

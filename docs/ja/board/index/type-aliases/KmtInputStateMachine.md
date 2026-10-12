@@ -4,6 +4,6 @@
 
 > **KmtInputStateMachine** = `TemplateStateMachine`\<[`KmtInputEventMapping`](KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](KmtInputStates.md), [`KmtInputEventOutputMapping`](KmtInputEventOutputMapping.md)\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:683](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L683)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:680](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L680)
 
 Type alias for the KMT input state machine.

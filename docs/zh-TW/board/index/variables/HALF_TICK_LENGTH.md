@@ -4,6 +4,6 @@
 
 > `const` **HALF\_TICK\_LENGTH**: `number`
 
-定義於: [packages/board/src/utils/drawing.ts:104](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/drawing.ts#L104)
+定義於: [packages/board/src/utils/drawing.ts:104](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/drawing.ts#L104)
 
 Length of half-step tick marks in pixels (viewport space).

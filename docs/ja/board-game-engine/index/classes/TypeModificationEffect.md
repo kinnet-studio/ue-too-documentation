@@ -2,7 +2,7 @@
 
 # クラス: TypeModificationEffect\<T\>
 
-定義: [action-system/effect.ts:156](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L156)
+定義: [action-system/effect.ts:156](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/action-system/effect.ts#L156)
 
 ## 型パラメーター
 
@@ -20,7 +20,7 @@
 
 > **new TypeModificationEffect**\<`T`\>(`coordinator`, `componentName`, `entity`, `valuePath`, `newType`, `allowedValues?`): `TypeModificationEffect`\<`T`\>
 
-定義: [action-system/effect.ts:164](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L164)
+定義: [action-system/effect.ts:164](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/action-system/effect.ts#L164)
 
 #### パラメータ
 
@@ -58,7 +58,7 @@ readonly `T`[]
 
 > **apply**(): `void`
 
-定義: [action-system/effect.ts:180](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L180)
+定義: [action-system/effect.ts:180](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/action-system/effect.ts#L180)
 
 #### 戻り値
 

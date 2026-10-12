@@ -6,7 +6,7 @@
 
 > **offset**(`curve`, `t`): [`BCurve`](../classes/BCurve.md)[]
 
-定義: [packages/curve/src/b-curve.ts:1579](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/curve/src/b-curve.ts#L1579)
+定義: [packages/curve/src/b-curve.ts:1579](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/curve/src/b-curve.ts#L1579)
 
 Creates offset curves at a specified distance from the original curve.
 
@@ -28,7 +28,7 @@ Creates offset curves at a specified distance from the original curve.
 
 > **offset**(`curve`, `t`, `d`): `object`
 
-定義: [packages/curve/src/b-curve.ts:1580](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/curve/src/b-curve.ts#L1580)
+定義: [packages/curve/src/b-curve.ts:1580](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/curve/src/b-curve.ts#L1580)
 
 Creates offset curves at a specified distance from the original curve.
 

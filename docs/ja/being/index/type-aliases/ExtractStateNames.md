@@ -4,7 +4,7 @@
 
 > **ExtractStateNames**\<`StatesArray`\> = `StatesArray` *extends* readonly infer S[] ? `S` *extends* `string` ? `S` : `string` : `StatesArray` *extends* infer S[] ? `S` *extends* `string` ? `S` : `string` : `string`
 
-定義: [schema-factory.ts:202](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/schema-factory.ts#L202)
+定義: [schema-factory.ts:202](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/being/src/schema-factory.ts#L202)
 
 Helper type to extract state names from a states array.
 If the array is a readonly tuple of string literals, it extracts the union type.

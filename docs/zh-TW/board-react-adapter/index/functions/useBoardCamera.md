@@ -4,7 +4,7 @@
 
 > **useBoardCamera**(): `ObservableBoardCamera`
 
-定義於: [hooks/useBoardify.tsx:454](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-react-adapter/src/hooks/useBoardify.tsx#L454)
+定義於: [hooks/useBoardify.tsx:454](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-react-adapter/src/hooks/useBoardify.tsx#L454)
 
 Hook to access the camera instance from the Board context.
 

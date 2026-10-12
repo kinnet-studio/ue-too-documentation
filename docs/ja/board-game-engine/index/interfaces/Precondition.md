@@ -2,7 +2,7 @@
 
 # インターフェイス: Precondition
 
-定義: [action-system/precondition.ts:3](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/precondition.ts#L3)
+定義: [action-system/precondition.ts:3](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/action-system/precondition.ts#L3)
 
 ## メソッド
 
@@ -10,7 +10,7 @@
 
 > **check**(): `boolean`
 
-定義: [action-system/precondition.ts:4](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/precondition.ts#L4)
+定義: [action-system/precondition.ts:4](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/action-system/precondition.ts#L4)
 
 #### 戻り値
 

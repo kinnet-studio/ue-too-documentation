@@ -4,7 +4,7 @@
 
 > **RotateControlOutputMapping** = `object`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:86](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L86)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:86](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L86)
 
 Output event type mapping for rotation control events.
 Maps input event names to their corresponding output event types.
@@ -15,7 +15,7 @@ Maps input event names to their corresponding output event types.
 
 > **lockedOnObjectRotateByInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:91](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L91)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:91](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L91)
 
 ***
 
@@ -23,7 +23,7 @@ Maps input event names to their corresponding output event types.
 
 > **lockedOnObjectRotateToInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:92](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L92)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:92](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L92)
 
 ***
 
@@ -31,7 +31,7 @@ Maps input event names to their corresponding output event types.
 
 > **transitionRotateByInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:89](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L89)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:89](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L89)
 
 ***
 
@@ -39,7 +39,7 @@ Maps input event names to their corresponding output event types.
 
 > **transitionRotateToInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:90](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L90)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:90](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L90)
 
 ***
 
@@ -47,7 +47,7 @@ Maps input event names to their corresponding output event types.
 
 > **userRotateByInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:87](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L87)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:87](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L87)
 
 ***
 
@@ -55,4 +55,4 @@ Maps input event names to their corresponding output event types.
 
 > **userRotateToInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:88](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L88)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:88](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L88)

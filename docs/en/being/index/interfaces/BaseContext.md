@@ -2,7 +2,7 @@
 
 # Interface: BaseContext
 
-Defined in: [interface.ts:29](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L29)
+Defined in: [interface.ts:29](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/being/src/interface.ts#L29)
 
 Base context interface for state machines.
 
@@ -37,7 +37,7 @@ interface MyContext extends BaseContext {
 
 > **cleanup**(): `void`
 
-Defined in: [interface.ts:31](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L31)
+Defined in: [interface.ts:31](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/being/src/interface.ts#L31)
 
 #### Returns
 
@@ -49,7 +49,7 @@ Defined in: [interface.ts:31](https://github.com/kinnet-studio/ue-too/blob/02bd0
 
 > **setup**(): `void`
 
-Defined in: [interface.ts:30](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L30)
+Defined in: [interface.ts:30](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/being/src/interface.ts#L30)
 
 #### Returns
 

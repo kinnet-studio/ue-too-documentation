@@ -2,7 +2,7 @@
 
 # 類別: CanvasPositionDimensionPublisher
 
-定義於: [packages/board/src/utils/canvas-position-dimension.ts:304](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/canvas-position-dimension.ts#L304)
+定義於: [packages/board/src/utils/canvas-position-dimension.ts:304](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/canvas-position-dimension.ts#L304)
 
 Monitors and publishes position and dimension changes for HTML Canvas elements.
 
@@ -49,7 +49,7 @@ publisher.dispose();
 
 > **new CanvasPositionDimensionPublisher**(`canvas?`): `CanvasPositionDimensionPublisher`
 
-定義於: [packages/board/src/utils/canvas-position-dimension.ts:326](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/canvas-position-dimension.ts#L326)
+定義於: [packages/board/src/utils/canvas-position-dimension.ts:326](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/canvas-position-dimension.ts#L326)
 
 Creates a new Canvas position/dimension publisher.
 
@@ -76,7 +76,7 @@ The canvas dimensions are automatically adjusted for devicePixelRatio.
 
 > **attach**(`canvas`): `void`
 
-定義於: [packages/board/src/utils/canvas-position-dimension.ts:401](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/canvas-position-dimension.ts#L401)
+定義於: [packages/board/src/utils/canvas-position-dimension.ts:401](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/canvas-position-dimension.ts#L401)
 
 Attaches observers to a canvas element and begins monitoring.
 
@@ -104,7 +104,7 @@ and records the initial position/dimensions.
 
 > **dispose**(): `void`
 
-定義於: [packages/board/src/utils/canvas-position-dimension.ts:383](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/canvas-position-dimension.ts#L383)
+定義於: [packages/board/src/utils/canvas-position-dimension.ts:383](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/canvas-position-dimension.ts#L383)
 
 Cleans up all observers and event listeners.
 
@@ -123,7 +123,7 @@ Always call this method when the publisher is no longer needed to prevent memory
 
 > **onPositionUpdate**(`observer`, `options?`): () => `void`
 
-定義於: [packages/board/src/utils/canvas-position-dimension.ts:493](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/canvas-position-dimension.ts#L493)
+定義於: [packages/board/src/utils/canvas-position-dimension.ts:493](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/canvas-position-dimension.ts#L493)
 
 Subscribes to position and dimension updates.
 

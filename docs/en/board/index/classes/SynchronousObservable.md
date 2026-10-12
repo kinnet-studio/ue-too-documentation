@@ -2,7 +2,7 @@
 
 # Class: SynchronousObservable\<T\>
 
-Defined in: [packages/board/src/utils/observable.ts:210](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/observable.ts#L210)
+Defined in: [packages/board/src/utils/observable.ts:210](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/observable.ts#L210)
 
 Synchronous Observable implementation that notifies observers immediately.
 
@@ -70,7 +70,7 @@ Tuple type of data emitted to observers
 
 > **notify**(...`data`): `void`
 
-Defined in: [packages/board/src/utils/observable.ts:262](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/observable.ts#L262)
+Defined in: [packages/board/src/utils/observable.ts:262](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/observable.ts#L262)
 
 Notifies all observers with the provided data synchronously.
 
@@ -101,7 +101,7 @@ all observers have completed execution.
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/observable.ts:224](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/observable.ts#L224)
+Defined in: [packages/board/src/utils/observable.ts:224](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/observable.ts#L224)
 
 Subscribes an observer to receive notifications.
 

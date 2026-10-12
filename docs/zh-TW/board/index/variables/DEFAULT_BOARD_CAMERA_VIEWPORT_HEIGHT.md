@@ -4,6 +4,6 @@
 
 > `const` **DEFAULT\_BOARD\_CAMERA\_VIEWPORT\_HEIGHT**: `1000` = `1000`
 
-定義於: [packages/board/src/camera/default-camera.ts:21](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/default-camera.ts#L21)
+定義於: [packages/board/src/camera/default-camera.ts:21](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/default-camera.ts#L21)
 
 Default viewport height in CSS pixels

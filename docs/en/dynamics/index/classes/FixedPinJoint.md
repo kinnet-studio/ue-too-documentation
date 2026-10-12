@@ -2,7 +2,7 @@
 
 # Class: FixedPinJoint
 
-Defined in: [constraint.ts:50](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/constraint.ts#L50)
+Defined in: [constraint.ts:50](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/constraint.ts#L50)
 
 Pin joint connecting a body to a fixed world point.
 
@@ -37,7 +37,7 @@ world.addConstraint(joint);
 
 > **new FixedPinJoint**(`bodyA`, `anchorA`, `worldAnchorA`): `FixedPinJoint`
 
-Defined in: [constraint.ts:55](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/constraint.ts#L55)
+Defined in: [constraint.ts:55](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/constraint.ts#L55)
 
 #### Parameters
 
@@ -63,7 +63,7 @@ Defined in: [constraint.ts:55](https://github.com/kinnet-studio/ue-too/blob/02bd
 
 > **enforce**(`dt`): `void`
 
-Defined in: [constraint.ts:61](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/constraint.ts#L61)
+Defined in: [constraint.ts:61](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/constraint.ts#L61)
 
 Enforces the constraint for one timestep.
 
@@ -89,7 +89,7 @@ Timestep in seconds
 
 > **solveWorldPinJointConstraint**(`dt`): `void`
 
-Defined in: [constraint.ts:65](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/constraint.ts#L65)
+Defined in: [constraint.ts:65](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/constraint.ts#L65)
 
 #### Parameters
 

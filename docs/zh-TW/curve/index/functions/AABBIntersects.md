@@ -4,7 +4,7 @@
 
 > **AABBIntersects**(`AABB1`, `AABB2`): `boolean`
 
-定義於: [packages/curve/src/b-curve.ts:1861](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/curve/src/b-curve.ts#L1861)
+定義於: [packages/curve/src/b-curve.ts:1861](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/curve/src/b-curve.ts#L1861)
 
 Tests if two axis-aligned bounding boxes intersect.
 

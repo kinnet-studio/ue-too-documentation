@@ -2,7 +2,7 @@
 
 # 類別: PairManager
 
-定義於: [pair-manager.ts:59](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/pair-manager.ts#L59)
+定義於: [pair-manager.ts:59](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/pair-manager.ts#L59)
 
 Manages collision pairs across frames.
 
@@ -36,7 +36,7 @@ events.forEach(pair => {
 
 > **new PairManager**(): `PairManager`
 
-定義於: [pair-manager.ts:64](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/pair-manager.ts#L64)
+定義於: [pair-manager.ts:64](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/pair-manager.ts#L64)
 
 #### 回傳
 
@@ -48,7 +48,7 @@ events.forEach(pair => {
 
 > **clear**(): `void`
 
-定義於: [pair-manager.ts:164](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/pair-manager.ts#L164)
+定義於: [pair-manager.ts:164](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/pair-manager.ts#L164)
 
 #### 回傳
 
@@ -60,7 +60,7 @@ events.forEach(pair => {
 
 > **getActivePairs**(): [`CollisionPair`](../interfaces/CollisionPair.md)[]
 
-定義於: [pair-manager.ts:153](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/pair-manager.ts#L153)
+定義於: [pair-manager.ts:153](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/pair-manager.ts#L153)
 
 #### 回傳
 
@@ -72,7 +72,7 @@ events.forEach(pair => {
 
 > **getPair**(`bodyA`, `bodyB`): [`CollisionPair`](../interfaces/CollisionPair.md) \| `undefined`
 
-定義於: [pair-manager.ts:158](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/pair-manager.ts#L158)
+定義於: [pair-manager.ts:158](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/pair-manager.ts#L158)
 
 #### 參數
 
@@ -94,7 +94,7 @@ events.forEach(pair => {
 
 > **getStats**(): `object`
 
-定義於: [pair-manager.ts:170](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/pair-manager.ts#L170)
+定義於: [pair-manager.ts:170](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/pair-manager.ts#L170)
 
 #### 回傳
 
@@ -118,7 +118,7 @@ events.forEach(pair => {
 
 > **updatePairs**(`newCollisions`): [`PairEvents`](../interfaces/PairEvents.md)
 
-定義於: [pair-manager.ts:80](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/pair-manager.ts#L80)
+定義於: [pair-manager.ts:80](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/dynamics/src/pair-manager.ts#L80)
 
 #### 參數
 

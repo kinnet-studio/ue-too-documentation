@@ -2,7 +2,7 @@
 
 # Interface: Observable\<T\>
 
-Defined in: [packages/board/src/utils/observable.ts:71](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/observable.ts#L71)
+Defined in: [packages/board/src/utils/observable.ts:71](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/observable.ts#L71)
 
 Interface for the Observable pattern implementation.
 
@@ -29,7 +29,7 @@ Tuple type of data emitted to observers
 
 > **notify**(...`data`): `void`
 
-Defined in: [packages/board/src/utils/observable.ts:73](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/observable.ts#L73)
+Defined in: [packages/board/src/utils/observable.ts:73](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/observable.ts#L73)
 
 #### Parameters
 
@@ -47,7 +47,7 @@ Defined in: [packages/board/src/utils/observable.ts:73](https://github.com/kinne
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/observable.ts:72](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/observable.ts#L72)
+Defined in: [packages/board/src/utils/observable.ts:72](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/observable.ts#L72)
 
 #### Parameters
 

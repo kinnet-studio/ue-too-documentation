@@ -4,7 +4,7 @@
 
 > **createDefaultCameraMux**(): [`CameraMux`](../interfaces/CameraMux.md)
 
-定義: [packages/board/src/camera/camera-mux/relay.ts:114](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/relay.ts#L114)
+定義: [packages/board/src/camera/camera-mux/relay.ts:114](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/relay.ts#L114)
 
 Factory function to create a default camera input multiplexer.
 Returns a [Relay](../classes/Relay.md) instance that allows all inputs to pass through.

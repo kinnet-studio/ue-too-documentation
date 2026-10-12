@@ -4,7 +4,7 @@
 
 > **clampZoomToHandler**(`destination`, `camera`, `config`): `number`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:207](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/zoom-handler.ts#L207)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:207](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-rig/zoom-handler.ts#L207)
 
 Handler pipeline step that clamps "zoom to" targets to camera zoom boundaries.
 

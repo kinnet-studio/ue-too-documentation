@@ -4,7 +4,7 @@
 
 > **RawUserZoomInputEventPayload** = `object`
 
-定義: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:47](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L47)
+定義: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:47](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L47)
 
 Payload for zoom input events.
 
@@ -14,7 +14,7 @@ Payload for zoom input events.
 
 > **anchorPoint**: `Point`
 
-定義: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:49](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L49)
+定義: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:49](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L49)
 
 The zoom anchor point in viewport coordinates
 
@@ -24,6 +24,6 @@ The zoom anchor point in viewport coordinates
 
 > **deltaZoomAmount**: `number`
 
-定義: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:48](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L48)
+定義: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:48](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L48)
 
 The zoom delta (scale change)

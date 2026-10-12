@@ -2,7 +2,7 @@
 
 # Interface: CameraMux
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:140](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/interface.ts#L140)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:140](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/interface.ts#L140)
 
 Input multiplexer interface for camera control flow management.
 Acts as a gatekeeper that can allow or block camera inputs based on state.
@@ -60,7 +60,7 @@ class AnimatedMux implements CameraMux {
 
 > **notifyPanInput**(`diff`): [`CameraMuxPanOutput`](../type-aliases/CameraMuxPanOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:147](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/interface.ts#L147)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:147](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/interface.ts#L147)
 
 Processes a pan input request.
 
@@ -84,7 +84,7 @@ Output indicating if pan is allowed and the delta to apply
 
 > **notifyRotationInput**(`deltaRotation`): [`CameraMuxRotationOutput`](../type-aliases/CameraMuxRotationOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:167](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/interface.ts#L167)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:167](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/interface.ts#L167)
 
 Processes a rotation input request.
 
@@ -108,7 +108,7 @@ Output indicating if rotation is allowed and the delta to apply
 
 > **notifyZoomInput**(`deltaZoomAmount`, `anchorPoint`): [`CameraMuxZoomOutput`](../type-aliases/CameraMuxZoomOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:156](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/interface.ts#L156)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:156](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/camera-mux/interface.ts#L156)
 
 Processes a zoom input request.
 

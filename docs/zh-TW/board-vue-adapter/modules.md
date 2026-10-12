@@ -1,4 +1,4 @@
-# @ue-too/board-vue-adapter v0.19.1
+# @ue-too/board-vue-adapter v0.18.4
 
 ## 文件
 

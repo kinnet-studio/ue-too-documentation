@@ -4,7 +4,7 @@
 
 > **createComponentName**(`name`): `symbol`
 
-Defined in: [index.ts:234](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L234)
+Defined in: [index.ts:234](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/ecs/src/index.ts#L234)
 
 Helper function to create a component name from a string.
 This creates a unique symbol for the component name.

@@ -4,7 +4,7 @@
 
 > **convertFromWindow2Canvas**(`pointInWindow`, `canvas`): `Point`
 
-Defined in: [packages/board/src/utils/coordinate-conversions/window-canvas.ts:48](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/utils/coordinate-conversions/window-canvas.ts#L48)
+Defined in: [packages/board/src/utils/coordinate-conversions/window-canvas.ts:48](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/utils/coordinate-conversions/window-canvas.ts#L48)
 
 Converts a point from browser window coordinates to canvas coordinates.
 

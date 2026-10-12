@@ -4,7 +4,7 @@
 
 > **halfTranslationHeightOf**(`boundaries`): `number` \| `undefined`
 
-定義於: [packages/board/src/camera/utils/position.ts:400](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/position.ts#L400)
+定義於: [packages/board/src/camera/utils/position.ts:400](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/camera/utils/position.ts#L400)
 
 Calculates half the height (y-axis half-span) of the boundaries.
 

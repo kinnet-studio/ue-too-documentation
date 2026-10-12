@@ -4,7 +4,7 @@
 
 > **MinimumKeyboardEvent** = `object`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:96](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L96)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:96](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L96)
 
 Minimal keyboard event interface for framework interoperability.
 
@@ -19,7 +19,7 @@ both vanilla JavaScript KeyboardEvents and framework-wrapped events.
 
 > **key**: `string`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:100](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L100)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:100](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L100)
 
 The key that was pressed
 
@@ -29,7 +29,7 @@ The key that was pressed
 
 > **preventDefault**: () => `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:98](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L98)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:98](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L98)
 
 Prevents default keyboard behavior
 

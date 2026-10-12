@@ -2,7 +2,7 @@
 
 # Interface: Event
 
-Defined in: [event-system/event.ts:1](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/event-system/event.ts#L1)
+Defined in: [event-system/event.ts:1](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/event-system/event.ts#L1)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [event-system/event.ts:1](https://github.com/kinnet-studio/ue-too/bl
 
 > **data**: `Record`\<`string`, `unknown`\>
 
-Defined in: [event-system/event.ts:3](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/event-system/event.ts#L3)
+Defined in: [event-system/event.ts:3](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/event-system/event.ts#L3)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [event-system/event.ts:3](https://github.com/kinnet-studio/ue-too/bl
 
 > **timestamp**: `number`
 
-Defined in: [event-system/event.ts:4](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/event-system/event.ts#L4)
+Defined in: [event-system/event.ts:4](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/event-system/event.ts#L4)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [event-system/event.ts:4](https://github.com/kinnet-studio/ue-too/bl
 
 > **type**: `string`
 
-Defined in: [event-system/event.ts:2](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/event-system/event.ts#L2)
+Defined in: [event-system/event.ts:2](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/event-system/event.ts#L2)

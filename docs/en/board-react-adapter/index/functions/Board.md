@@ -4,7 +4,7 @@
 
 > **Board**(`props`): `Element`
 
-Defined in: [components/Board.tsx:185](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-react-adapter/src/components/Board.tsx#L185)
+Defined in: [components/Board.tsx:185](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-react-adapter/src/components/Board.tsx#L185)
 
 Main Board component with provider wrapper for React applications.
 

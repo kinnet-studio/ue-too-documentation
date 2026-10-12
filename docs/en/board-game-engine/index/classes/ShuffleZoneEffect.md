@@ -2,7 +2,7 @@
 
 # Class: ShuffleZoneEffect
 
-Defined in: [zone-system/effect.ts:45](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/zone-system/effect.ts#L45)
+Defined in: [zone-system/effect.ts:45](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/zone-system/effect.ts#L45)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [zone-system/effect.ts:45](https://github.com/kinnet-studio/ue-too/b
 
 > **new ShuffleZoneEffect**(`_locationSystem`, `_zoneEntity`): `ShuffleZoneEffect`
 
-Defined in: [zone-system/effect.ts:46](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/zone-system/effect.ts#L46)
+Defined in: [zone-system/effect.ts:46](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/zone-system/effect.ts#L46)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [zone-system/effect.ts:46](https://github.com/kinnet-studio/ue-too/b
 
 > **apply**(): `void`
 
-Defined in: [zone-system/effect.ts:51](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/zone-system/effect.ts#L51)
+Defined in: [zone-system/effect.ts:51](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/zone-system/effect.ts#L51)
 
 #### Returns
 

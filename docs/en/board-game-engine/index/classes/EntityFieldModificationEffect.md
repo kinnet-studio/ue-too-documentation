@@ -2,7 +2,7 @@
 
 # Class: EntityFieldModificationEffect
 
-Defined in: [action-system/effect.ts:219](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L219)
+Defined in: [action-system/effect.ts:219](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/action-system/effect.ts#L219)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [action-system/effect.ts:219](https://github.com/kinnet-studio/ue-to
 
 > **new EntityFieldModificationEffect**(`coordinator`, `componentName`, `entity`, `valuePath`, `newEntityValue`): `EntityFieldModificationEffect`
 
-Defined in: [action-system/effect.ts:226](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L226)
+Defined in: [action-system/effect.ts:226](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/action-system/effect.ts#L226)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [action-system/effect.ts:226](https://github.com/kinnet-studio/ue-to
 
 > **apply**(): `void`
 
-Defined in: [action-system/effect.ts:240](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L240)
+Defined in: [action-system/effect.ts:240](https://github.com/kinnet-studio/ue-too/blob/c904ff4e862cacf9f57c33ab487edde188a7d671/packages/board-game-engine/src/action-system/effect.ts#L240)
 
 #### Returns
 
