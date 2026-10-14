@@ -4,4 +4,4 @@
 
 > `const` **ORTHO\_GRID\_LOCATION\_COMPONENT**: `symbol`
 
-Defined in: [grid-system/ortho-grid.ts:32](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/grid-system/ortho-grid.ts#L32)
+Defined in: [grid-system/ortho-grid.ts:32](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-game-engine/src/grid-system/ortho-grid.ts#L32)

@@ -4,7 +4,7 @@
 
 > **serializeComponentSchema**(`schema`): [`SerializedComponentSchema`](../interfaces/SerializedComponentSchema.md)
 
-定義於: [index.ts:387](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L387)
+定義於: [index.ts:387](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/ecs/src/index.ts#L387)
 
 Serialize a component schema to a JSON-compatible format.
 Note: Only works with global symbols (created via Symbol.for).

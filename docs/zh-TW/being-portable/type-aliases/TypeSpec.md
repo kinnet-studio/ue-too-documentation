@@ -4,7 +4,7 @@
 
 > **TypeSpec** = [`Scalar`](Scalar.md) \| \{ `type`: [`Scalar`](Scalar.md); \} \| \{ `of`: [`Scalar`](Scalar.md); `type`: `"list"`; \}
 
-定義於: [being-portable/src/format/types.ts:14](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L14)
+定義於: [being-portable/src/format/types.ts:14](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L14)
 
 A type written in a document: a bare scalar name, `{ "type": scalar }`, or
 `{ "type": "list", "of": scalar }`.

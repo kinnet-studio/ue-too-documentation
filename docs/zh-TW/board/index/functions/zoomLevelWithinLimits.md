@@ -4,7 +4,7 @@
 
 > **zoomLevelWithinLimits**(`zoomLevel`, `zoomLevelLimits?`): `boolean`
 
-定義於: [packages/board/src/camera/utils/zoom.ts:124](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/zoom.ts#L124)
+定義於: [packages/board/src/camera/utils/zoom.ts:124](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/utils/zoom.ts#L124)
 
 Checks if a zoom level is within specified limits.
 

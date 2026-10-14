@@ -4,7 +4,7 @@
 
 > **angleSpan**(`from`, `to`): `number`
 
-定義: [index.ts:722](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/math/src/index.ts#L722)
+定義: [index.ts:722](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/math/src/index.ts#L722)
 
 Calculates the smallest angular difference between two angles.
 

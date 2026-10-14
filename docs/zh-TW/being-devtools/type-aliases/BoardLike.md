@@ -4,7 +4,7 @@
 
 > **BoardLike** = `object`
 
-定義於: [board.ts:10](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/board.ts#L10)
+定義於: [board.ts:10](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/board.ts#L10)
 
 The slice of a `Board` this helper reads. Typed loosely so tests can
 stub it and so a `Board` from a second copy of `@ue-too/board` still
@@ -16,7 +16,7 @@ fits; every value is checked structurally before use.
 
 > **cameraMux**: `unknown`
 
-定義於: [board.ts:13](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/board.ts#L13)
+定義於: [board.ts:13](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/board.ts#L13)
 
 ***
 
@@ -24,7 +24,7 @@ fits; every value is checked structurally before use.
 
 > `optional` **kmtInputStateMachine**: `unknown`
 
-定義於: [board.ts:11](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/board.ts#L11)
+定義於: [board.ts:11](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/board.ts#L11)
 
 ***
 
@@ -32,4 +32,4 @@ fits; every value is checked structurally before use.
 
 > `optional` **touchInputStateMachine**: `unknown`
 
-定義於: [board.ts:12](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/board.ts#L12)
+定義於: [board.ts:12](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/board.ts#L12)

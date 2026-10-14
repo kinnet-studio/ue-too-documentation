@@ -1,4 +1,4 @@
-# @ue-too/being-devtools v0.19.1
+# @ue-too/being-devtools v0.19.2
 
 Attachable devtools for `@ue-too/being` state machines.
 

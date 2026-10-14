@@ -4,7 +4,7 @@
 
 > **ScrollBarDisplay**(): `Element`
 
-定義: [board-pixi-react-integration/src/components/canvas/scrollbar.tsx:10](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-pixi-react-integration/src/components/canvas/scrollbar.tsx#L10)
+定義: [board-pixi-react-integration/src/components/canvas/scrollbar.tsx:10](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-pixi-react-integration/src/components/canvas/scrollbar.tsx#L10)
 
 ## 戻り値
 

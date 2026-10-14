@@ -4,7 +4,7 @@
 
 > **Keyframe**\<`T`\> = `object`
 
-定義: [animatable-attribute.ts:25](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L25)
+定義: [animatable-attribute.ts:25](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/animate/src/animatable-attribute.ts#L25)
 
 Represents a keyframe in an animation timeline.
 
@@ -39,7 +39,7 @@ The type of value being animated (number, Point, RGB, etc.)
 
 > `optional` **easingFn**: (`percentage`) => `number`
 
-定義: [animatable-attribute.ts:31](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L31)
+定義: [animatable-attribute.ts:31](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/animate/src/animatable-attribute.ts#L31)
 
 Optional easing function for interpolation to next keyframe
 
@@ -59,7 +59,7 @@ Optional easing function for interpolation to next keyframe
 
 > **percentage**: `number`
 
-定義: [animatable-attribute.ts:27](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L27)
+定義: [animatable-attribute.ts:27](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/animate/src/animatable-attribute.ts#L27)
 
 Animation progress from 0.0 (start) to 1.0 (end)
 
@@ -69,6 +69,6 @@ Animation progress from 0.0 (start) to 1.0 (end)
 
 > **value**: `T`
 
-定義: [animatable-attribute.ts:29](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L29)
+定義: [animatable-attribute.ts:29](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/animate/src/animatable-attribute.ts#L29)
 
 Value at this keyframe

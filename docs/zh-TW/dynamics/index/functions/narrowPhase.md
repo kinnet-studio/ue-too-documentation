@@ -4,7 +4,7 @@
 
 > **narrowPhase**(`bodies`, `combinationsToCheck`, `resolveCollisionFlag`): `void`
 
-定義於: [collision.ts:442](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/collision.ts#L442)
+定義於: [collision.ts:442](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/dynamics/src/collision.ts#L442)
 
 ## 參數
 

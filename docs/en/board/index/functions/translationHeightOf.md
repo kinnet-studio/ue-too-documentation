@@ -4,7 +4,7 @@
 
 > **translationHeightOf**(`boundaries`): `number` \| `undefined`
 
-Defined in: [packages/board/src/camera/utils/position.ts:365](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/position.ts#L365)
+Defined in: [packages/board/src/camera/utils/position.ts:365](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/utils/position.ts#L365)
 
 Calculates the height (y-axis span) of the boundaries.
 

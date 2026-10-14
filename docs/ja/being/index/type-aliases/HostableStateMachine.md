@@ -4,7 +4,7 @@
 
 > **HostableStateMachine** = `object`
 
-定義: [delegating-state.ts:21](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L21)
+定義: [delegating-state.ts:21](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L21)
 
 The part of a state machine a [DelegatingState](../classes/DelegatingState.md) drives.
 
@@ -21,7 +21,7 @@ so the host is typed against just the members it calls. Every
 
 > `readonly` **currentState**: `string`
 
-定義: [delegating-state.ts:22](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L22)
+定義: [delegating-state.ts:22](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L22)
 
 ***
 
@@ -29,7 +29,7 @@ so the host is typed against just the members it calls. Every
 
 > **happens**: (...`args`) => [`EventResult`](EventResult.md)\<`any`, `any`\>
 
-定義: [delegating-state.ts:23](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L23)
+定義: [delegating-state.ts:23](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L23)
 
 #### パラメータ
 
@@ -47,7 +47,7 @@ so the host is typed against just the members it calls. Every
 
 > **reset**(): `void`
 
-定義: [delegating-state.ts:25](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L25)
+定義: [delegating-state.ts:25](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L25)
 
 #### 戻り値
 
@@ -59,7 +59,7 @@ so the host is typed against just the members it calls. Every
 
 > **start**(): `void`
 
-定義: [delegating-state.ts:24](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L24)
+定義: [delegating-state.ts:24](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L24)
 
 #### 戻り値
 
@@ -71,7 +71,7 @@ so the host is typed against just the members it calls. Every
 
 > **wrapup**(): `void`
 
-定義: [delegating-state.ts:26](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/delegating-state.ts#L26)
+定義: [delegating-state.ts:26](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L26)
 
 #### 戻り値
 

@@ -4,7 +4,7 @@
 
 > **CameraState** = `object`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:102](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/update-publisher.ts#L102)
+Defined in: [packages/board/src/camera/update-publisher.ts:102](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/update-publisher.ts#L102)
 
 Snapshot of camera state at the time an event occurs.
 Passed to all event callbacks alongside the event payload.
@@ -15,7 +15,7 @@ Passed to all event callbacks alongside the event payload.
 
 > **position**: `Point`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:104](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/update-publisher.ts#L104)
+Defined in: [packages/board/src/camera/update-publisher.ts:104](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/update-publisher.ts#L104)
 
 Camera position in world coordinates
 
@@ -25,7 +25,7 @@ Camera position in world coordinates
 
 > **rotation**: `number`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:108](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/update-publisher.ts#L108)
+Defined in: [packages/board/src/camera/update-publisher.ts:108](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/update-publisher.ts#L108)
 
 Current rotation in radians
 
@@ -35,6 +35,6 @@ Current rotation in radians
 
 > **zoomLevel**: `number`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:106](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/update-publisher.ts#L106)
+Defined in: [packages/board/src/camera/update-publisher.ts:106](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/update-publisher.ts#L106)
 
 Current zoom level

@@ -4,7 +4,7 @@
 
 > **sameDirection**(`a`, `b`, `precision`): `boolean`
 
-定義: [index.ts:791](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/math/src/index.ts#L791)
+定義: [index.ts:791](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/math/src/index.ts#L791)
 
 Checks if two vectors point in the same direction.
 

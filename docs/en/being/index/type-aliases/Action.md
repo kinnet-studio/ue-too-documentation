@@ -4,7 +4,7 @@
 
 > **Action**\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`, `Output`\> = `object`
 
-Defined in: [interface.ts:480](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L480)
+Defined in: [interface.ts:480](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L480)
 
 ## Type Parameters
 
@@ -34,7 +34,7 @@ Defined in: [interface.ts:480](https://github.com/kinnet-studio/ue-too/blob/02bd
 
 > **action**: (`context`, `event`, `stateMachine`) => `Output` \| `void`
 
-Defined in: [interface.ts:489](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L489)
+Defined in: [interface.ts:489](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L489)
 
 #### Parameters
 
@@ -60,4 +60,4 @@ Defined in: [interface.ts:489](https://github.com/kinnet-studio/ue-too/blob/02bd
 
 > `optional` **defaultTargetState**: `States`
 
-Defined in: [interface.ts:499](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L499)
+Defined in: [interface.ts:499](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L499)

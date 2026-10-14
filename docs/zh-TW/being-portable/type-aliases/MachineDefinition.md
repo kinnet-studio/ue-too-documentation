@@ -4,7 +4,7 @@
 
 > **MachineDefinition** = [`MachineBody`](MachineBody.md) & `object`
 
-定義於: [being-portable/src/format/types.ts:170](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L170)
+定義於: [being-portable/src/format/types.ts:170](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L170)
 
 A complete portable machine definition document.
 

@@ -4,7 +4,7 @@
 
 > **PanByHandlerFunction** = (`delta`, `camera`, `config`) => `Point`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:205](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/pan-handler.ts#L205)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:205](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/camera-rig/pan-handler.ts#L205)
 
 Handler function type for relative "pan by" camera operations.
 

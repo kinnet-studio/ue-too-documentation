@@ -4,7 +4,7 @@
 
 > **attachBaseTeardown**\<`T`\>(`components`): `T` & `object`
 
-Defined in: [base-teardown.ts:26](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-pixi-integration/src/base-teardown.ts#L26)
+Defined in: [base-teardown.ts:26](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-pixi-integration/src/base-teardown.ts#L26)
 
 Attaches the base teardown to a components object and returns THAT SAME
  object with `cleanup` set.

@@ -4,7 +4,7 @@
 
 > **getLineIntersection**(`startPoint`, `endPoint`, `startPoint2`, `endPoint2`): `object`
 
-定義於: [2dVector.ts:163](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/math/src/2dVector.ts#L163)
+定義於: [2dVector.ts:163](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/math/src/2dVector.ts#L163)
 
 ## 參數
 

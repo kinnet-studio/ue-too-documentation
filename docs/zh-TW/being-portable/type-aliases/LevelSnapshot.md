@@ -4,7 +4,7 @@
 
 > **LevelSnapshot** = `object`
 
-定義於: [being-portable/src/format/types.ts:183](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L183)
+定義於: [being-portable/src/format/types.ts:183](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L183)
 
 The running state of one machine level inside a snapshot.
 
@@ -14,7 +14,7 @@ The running state of one machine level inside a snapshot.
 
 > `readonly` `optional` **child**: `LevelSnapshot`
 
-定義於: [being-portable/src/format/types.ts:186](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L186)
+定義於: [being-portable/src/format/types.ts:186](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L186)
 
 ***
 
@@ -22,7 +22,7 @@ The running state of one machine level inside a snapshot.
 
 > `readonly` **context**: `Readonly`\<`Record`\<`string`, [`Value`](Value.md)\>\>
 
-定義於: [being-portable/src/format/types.ts:185](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L185)
+定義於: [being-portable/src/format/types.ts:185](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L185)
 
 ***
 
@@ -30,4 +30,4 @@ The running state of one machine level inside a snapshot.
 
 > `readonly` **state**: `string`
 
-定義於: [being-portable/src/format/types.ts:184](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L184)
+定義於: [being-portable/src/format/types.ts:184](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L184)

@@ -2,7 +2,7 @@
 
 # Class: MachineDebugger
 
-Defined in: [debugger.ts:89](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L89)
+Defined in: [debugger.ts:89](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L89)
 
 A debugger panel: a pannable state chart plus a sidebar with one tab per
 attached machine, the current state, a context inspector, fire buttons,
@@ -32,7 +32,7 @@ panel.dispose();
 
 > **new MachineDebugger**(`options`): `MachineDebugger`
 
-Defined in: [debugger.ts:102](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L102)
+Defined in: [debugger.ts:102](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L102)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [debugger.ts:102](https://github.com/kinnet-studio/ue-too/blob/02bd0
 
 > **get** **board**(): `Board`
 
-Defined in: [debugger.ts:144](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L144)
+Defined in: [debugger.ts:144](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L144)
 
 The panel's own graph viewport, so a page can diagram the board it pans.
 
@@ -68,7 +68,7 @@ The panel's own graph viewport, so a page can diagram the board it pans.
 
 > **get** **isOpen**(): `boolean`
 
-Defined in: [debugger.ts:148](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L148)
+Defined in: [debugger.ts:148](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L148)
 
 ##### Returns
 
@@ -82,7 +82,7 @@ Defined in: [debugger.ts:148](https://github.com/kinnet-studio/ue-too/blob/02bd0
 
 > **get** **machines**(): `ReadonlyMap`\<`string`, [`MachineLike`](../type-aliases/MachineLike.md)\>
 
-Defined in: [debugger.ts:158](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L158)
+Defined in: [debugger.ts:158](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L158)
 
 Name → machine for every attached machine.
 
@@ -98,7 +98,7 @@ Name → machine for every attached machine.
 
 > **get** **size**(): `number`
 
-Defined in: [debugger.ts:153](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L153)
+Defined in: [debugger.ts:153](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L153)
 
 Number of attached machines.
 
@@ -112,7 +112,7 @@ Number of attached machines.
 
 > **attach**(`machine`, `options`): [`AttachHandle`](../type-aliases/AttachHandle.md)
 
-Defined in: [debugger.ts:171](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L171)
+Defined in: [debugger.ts:171](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L171)
 
 Attaches a machine as a new tab.
 
@@ -140,7 +140,7 @@ Error when `options.name` is already attached to this panel.
 
 > **attachBoard**(`board`, `options`): [`AttachHandle`](../type-aliases/AttachHandle.md)
 
-Defined in: [debugger.ts:194](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L194)
+Defined in: [debugger.ts:194](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L194)
 
 Attaches every `being` machine the board exposes (see
 `resolveBoardMachines`). Attaches what it finds; throws only
@@ -168,7 +168,7 @@ when it finds nothing.
 
 > **close**(): `void`
 
-Defined in: [debugger.ts:241](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L241)
+Defined in: [debugger.ts:241](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L241)
 
 #### Returns
 
@@ -180,7 +180,7 @@ Defined in: [debugger.ts:241](https://github.com/kinnet-studio/ue-too/blob/02bd0
 
 > **dispose**(): `void`
 
-Defined in: [debugger.ts:262](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L262)
+Defined in: [debugger.ts:262](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L262)
 
 Detaches every machine, stops the render loop, and removes the panel.
 
@@ -194,7 +194,7 @@ Detaches every machine, stops the render loop, and removes the panel.
 
 > **open**(): `void`
 
-Defined in: [debugger.ts:230](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L230)
+Defined in: [debugger.ts:230](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L230)
 
 #### Returns
 
@@ -206,7 +206,7 @@ Defined in: [debugger.ts:230](https://github.com/kinnet-studio/ue-too/blob/02bd0
 
 > **toggle**(): `void`
 
-Defined in: [debugger.ts:253](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L253)
+Defined in: [debugger.ts:253](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L253)
 
 #### Returns
 

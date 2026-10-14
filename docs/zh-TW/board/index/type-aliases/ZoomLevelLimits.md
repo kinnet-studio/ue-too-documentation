@@ -4,7 +4,7 @@
 
 > **ZoomLevelLimits** = `object`
 
-定義於: [packages/board/src/camera/utils/zoom.ts:13](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/zoom.ts#L13)
+定義於: [packages/board/src/camera/utils/zoom.ts:13](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/utils/zoom.ts#L13)
 
 Constraints for camera zoom level with optional minimum and maximum bounds.
 
@@ -19,7 +19,7 @@ If both min and max are undefined, no constraints are applied.
 
 > `optional` **max**: `number`
 
-定義於: [packages/board/src/camera/utils/zoom.ts:13](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/zoom.ts#L13)
+定義於: [packages/board/src/camera/utils/zoom.ts:13](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/utils/zoom.ts#L13)
 
 Maximum allowed zoom level (optional, e.g., 10 for 1000% zoom)
 
@@ -29,6 +29,6 @@ Maximum allowed zoom level (optional, e.g., 10 for 1000% zoom)
 
 > `optional` **min**: `number`
 
-定義於: [packages/board/src/camera/utils/zoom.ts:13](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/zoom.ts#L13)
+定義於: [packages/board/src/camera/utils/zoom.ts:13](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/utils/zoom.ts#L13)
 
 Minimum allowed zoom level (optional, e.g., 0.1 for 10% zoom)

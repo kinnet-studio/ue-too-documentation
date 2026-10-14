@@ -4,7 +4,7 @@
 
 > **EventNotHandled** = `object`
 
-Defined in: [interface.ts:99](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L99)
+Defined in: [interface.ts:99](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L99)
 
 Result type indicating an event was not handled by the current state.
 
@@ -19,4 +19,4 @@ The state machine will not transition and the event is effectively ignored.
 
 > **handled**: `false`
 
-Defined in: [interface.ts:100](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L100)
+Defined in: [interface.ts:100](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L100)

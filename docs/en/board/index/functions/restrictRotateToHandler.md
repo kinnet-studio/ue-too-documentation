@@ -4,7 +4,7 @@
 
 > **restrictRotateToHandler**(`targetRotation`, `camera`, `config`): `number`
 
-Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:382](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/rotation-handler.ts#L382)
+Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:382](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/camera-rig/rotation-handler.ts#L382)
 
 Handler pipeline step that prevents "rotate to" operations when rotation is locked.
 
