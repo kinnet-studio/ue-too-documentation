@@ -4,7 +4,7 @@
 
 > **PanHandlerConfig** = [`PanHandlerRestrictionConfig`](PanHandlerRestrictionConfig.md) & [`PanHandlerClampConfig`](PanHandlerClampConfig.md)
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:23](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/pan-handler.ts#L23)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:23](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/camera-rig/pan-handler.ts#L23)
 
 Combined configuration for pan handler behavior, merging restriction and clamping settings.
 

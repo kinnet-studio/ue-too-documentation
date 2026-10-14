@@ -4,7 +4,7 @@
 
 > **ZoomHandlerConfig** = [`ZoomHandlerClampConfig`](ZoomHandlerClampConfig.md) & [`ZoomHandlerRestrictConfig`](ZoomHandlerRestrictConfig.md)
 
-定義於: [packages/board/src/camera/camera-rig/zoom-handler.ts:20](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/zoom-handler.ts#L20)
+定義於: [packages/board/src/camera/camera-rig/zoom-handler.ts:20](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/camera-rig/zoom-handler.ts#L20)
 
 Combined configuration for zoom handler behavior, merging restriction and clamping settings.
 

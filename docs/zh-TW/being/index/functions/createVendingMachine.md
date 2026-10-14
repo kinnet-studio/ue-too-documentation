@@ -4,7 +4,7 @@
 
 > **createVendingMachine**(): [`TemplateStateMachine`](../classes/TemplateStateMachine.md)\<[`VendingMachineEvents`](../type-aliases/VendingMachineEvents.md), [`BaseContext`](../interfaces/BaseContext.md), [`VendingMachineStates`](../type-aliases/VendingMachineStates.md), [`DefaultOutputMapping`](../type-aliases/DefaultOutputMapping.md)\<[`VendingMachineEvents`](../type-aliases/VendingMachineEvents.md)\>\>
 
-定義於: [vending-machine-example.ts:193](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/vending-machine-example.ts#L193)
+定義於: [vending-machine-example.ts:193](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being/src/vending-machine-example.ts#L193)
 
 Creates a demo vending machine used by tests and the examples visualizer.
 

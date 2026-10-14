@@ -4,7 +4,7 @@
 
 > **GuardMapping**\<`Context`, `G`, `States`\> = `object`
 
-Defined in: [interface.ts:528](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L528)
+Defined in: [interface.ts:528](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being/src/interface.ts#L528)
 
 ## Description
 
@@ -41,7 +41,7 @@ You probably don't need to use this type directly.
 
 > **guard**: `G` *extends* [`Guard`](Guard.md)\<`Context`, infer K\> ? `K` : `never`
 
-Defined in: [interface.ts:533](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L533)
+Defined in: [interface.ts:533](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being/src/interface.ts#L533)
 
 ***
 
@@ -49,4 +49,4 @@ Defined in: [interface.ts:533](https://github.com/kinnet-studio/ue-too/blob/02bd
 
 > **target**: `States`
 
-Defined in: [interface.ts:534](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L534)
+Defined in: [interface.ts:534](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being/src/interface.ts#L534)

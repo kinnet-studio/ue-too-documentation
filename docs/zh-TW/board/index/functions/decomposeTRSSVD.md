@@ -4,7 +4,7 @@
 
 > **decomposeTRSSVD**(`matrix`): `object`
 
-定義於: [packages/board/src/camera/utils/matrix.ts:491](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/matrix.ts#L491)
+定義於: [packages/board/src/camera/utils/matrix.ts:491](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/utils/matrix.ts#L491)
 
 Decomposes a matrix using SVD (Singular Value Decomposition) approach
 This is an alternative method that can handle more complex transformations

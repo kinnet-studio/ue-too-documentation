@@ -4,6 +4,6 @@
 
 > **TouchInputStateMachine** = `TemplateStateMachine`\<[`TouchEventMapping`](TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](TouchStates.md), [`TouchInputEventOutputMapping`](TouchInputEventOutputMapping.md)\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:383](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L383)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:380](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L380)
 
 Type alias for the touch input state machine.

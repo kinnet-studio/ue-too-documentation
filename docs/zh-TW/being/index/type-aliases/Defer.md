@@ -4,7 +4,7 @@
 
 > **Defer**\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> = `object`
 
-定義於: [interface.ts:173](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L173)
+定義於: [interface.ts:173](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being/src/interface.ts#L173)
 
 ## 型別參數
 
@@ -30,7 +30,7 @@
 
 > **action**: (`context`, `event`, `eventKey`, `stateMachine`) => [`EventResult`](EventResult.md)\<`States`, `any`\>
 
-定義於: [interface.ts:181](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L181)
+定義於: [interface.ts:181](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being/src/interface.ts#L181)
 
 #### 參數
 
@@ -60,4 +60,4 @@ keyof `EventPayloadMapping`
 
 > `optional` **defaultTargetState**: `States`
 
-定義於: [interface.ts:192](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L192)
+定義於: [interface.ts:192](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being/src/interface.ts#L192)

@@ -2,7 +2,7 @@
 
 # Class: PointAnimationHelper
 
-Defined in: [animatable-attribute.ts:103](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L103)
+Defined in: [animatable-attribute.ts:103](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/animate/src/animatable-attribute.ts#L103)
 
 Interface for type-specific interpolation helpers.
 
@@ -36,7 +36,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **new PointAnimationHelper**(): `PointAnimationHelper`
 
-Defined in: [animatable-attribute.ts:104](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L104)
+Defined in: [animatable-attribute.ts:104](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/animate/src/animatable-attribute.ts#L104)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [animatable-attribute.ts:104](https://github.com/kinnet-studio/ue-to
 
 > **lerp**(`ratio`, `start`, `end`): `Point`
 
-Defined in: [animatable-attribute.ts:106](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L106)
+Defined in: [animatable-attribute.ts:106](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/animate/src/animatable-attribute.ts#L106)
 
 Interpolates between two keyframes at a given ratio.
 

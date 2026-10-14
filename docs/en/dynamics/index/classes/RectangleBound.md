@@ -2,7 +2,7 @@
 
 # Class: RectangleBound
 
-Defined in: [quadtree.ts:6](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/quadtree.ts#L6)
+Defined in: [quadtree.ts:6](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/dynamics/src/quadtree.ts#L6)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [quadtree.ts:6](https://github.com/kinnet-studio/ue-too/blob/02bd04b
 
 > **new RectangleBound**(`bottomLeft`, `width`, `height`): `RectangleBound`
 
-Defined in: [quadtree.ts:11](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/quadtree.ts#L11)
+Defined in: [quadtree.ts:11](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/dynamics/src/quadtree.ts#L11)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [quadtree.ts:11](https://github.com/kinnet-studio/ue-too/blob/02bd04
 
 > **getbottomLeft**(): `Point`
 
-Defined in: [quadtree.ts:25](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/quadtree.ts#L25)
+Defined in: [quadtree.ts:25](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/dynamics/src/quadtree.ts#L25)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [quadtree.ts:25](https://github.com/kinnet-studio/ue-too/blob/02bd04
 
 > **getHeight**(): `number`
 
-Defined in: [quadtree.ts:21](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/quadtree.ts#L21)
+Defined in: [quadtree.ts:21](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/dynamics/src/quadtree.ts#L21)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [quadtree.ts:21](https://github.com/kinnet-studio/ue-too/blob/02bd04
 
 > **getWidth**(): `number`
 
-Defined in: [quadtree.ts:17](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/quadtree.ts#L17)
+Defined in: [quadtree.ts:17](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/dynamics/src/quadtree.ts#L17)
 
 #### Returns
 

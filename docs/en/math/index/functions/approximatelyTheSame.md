@@ -4,7 +4,7 @@
 
 > **approximatelyTheSame**(`a`, `b`, `precision?`): `boolean`
 
-Defined in: [index.ts:758](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/math/src/index.ts#L758)
+Defined in: [index.ts:758](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/math/src/index.ts#L758)
 
 Checks if two numbers are approximately equal within a tolerance.
 

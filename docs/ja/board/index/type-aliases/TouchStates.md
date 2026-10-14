@@ -4,7 +4,7 @@
 
 > **TouchStates** = `"IDLE"` \| `"PENDING"` \| `"IN_PROGRESS"`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:30](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L30)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:27](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L27)
 
 Possible states of the touch input state machine.
 

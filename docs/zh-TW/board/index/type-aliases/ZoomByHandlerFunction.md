@@ -4,7 +4,7 @@
 
 > **ZoomByHandlerFunction** = (`delta`, `camera`, `config`) => `number`
 
-定義於: [packages/board/src/camera/camera-rig/zoom-handler.ts:161](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/zoom-handler.ts#L161)
+定義於: [packages/board/src/camera/camera-rig/zoom-handler.ts:161](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/camera-rig/zoom-handler.ts#L161)
 
 Handler function type for relative "zoom by" camera operations.
 

@@ -2,7 +2,7 @@
 
 # 類別: NumberAnimationHelper
 
-定義於: [animatable-attribute.ts:149](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L149)
+定義於: [animatable-attribute.ts:149](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/animate/src/animatable-attribute.ts#L149)
 
 Interface for type-specific interpolation helpers.
 
@@ -36,7 +36,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **new NumberAnimationHelper**(): `NumberAnimationHelper`
 
-定義於: [animatable-attribute.ts:150](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L150)
+定義於: [animatable-attribute.ts:150](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/animate/src/animatable-attribute.ts#L150)
 
 #### 回傳
 
@@ -48,7 +48,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **lerp**(`ratio`, `start`, `end`): `number`
 
-定義於: [animatable-attribute.ts:152](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L152)
+定義於: [animatable-attribute.ts:152](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/animate/src/animatable-attribute.ts#L152)
 
 Interpolates between two keyframes at a given ratio.
 

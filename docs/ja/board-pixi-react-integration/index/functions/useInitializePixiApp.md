@@ -4,7 +4,7 @@
 
 > **useInitializePixiApp**\<`T`\>(`option`, `initFunction`, `className?`): `object`
 
-定義: [board-pixi-react-integration/src/hooks/pixi/initialization.ts:33](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-pixi-react-integration/src/hooks/pixi/initialization.ts#L33)
+定義: [board-pixi-react-integration/src/hooks/pixi/initialization.ts:33](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board-pixi-react-integration/src/hooks/pixi/initialization.ts#L33)
 
 Initializes a Pixi application into a container element and tears it down on
 unmount. Attach the returned `containerRef` to a wrapping element; a fresh

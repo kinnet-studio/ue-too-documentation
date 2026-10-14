@@ -2,7 +2,7 @@
 
 # クラス: KmtIdleState
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:236](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L236)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:252](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L252)
 
 IDLE state - default state waiting for user input.
 
@@ -36,7 +36,7 @@ from mice (which typically only produce deltaY). This affects zoom behavior.
 
 > **new KmtIdleState**(): `KmtIdleState`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:242](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L242)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:258](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L258)
 
 #### 戻り値
 
@@ -76,7 +76,7 @@ from mice (which typically only produce deltaY). This affects zoom behavior.
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), `Guard`\<[`KmtInputContext`](../interfaces/KmtInputContext.md)\>\>\> = `{}`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:250](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L250)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:266](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L266)
 
 #### 上書き
 
@@ -100,7 +100,7 @@ from mice (which typically only produce deltaY). This affects zoom behavior.
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:321](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L321)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:340](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L340)
 
 #### 上書き
 
@@ -112,7 +112,7 @@ from mice (which typically only produce deltaY). This affects zoom behavior.
 
 > `protected` **\_guards**: `Guard`\<[`KmtInputContext`](../interfaces/KmtInputContext.md), `"isIdle"`\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:246](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L246)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:262](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L262)
 
 #### 上書き
 
@@ -302,7 +302,7 @@ keyof `EventPayloadMapping`[]
 
 > **middlePointerDownHandler**(`context`, `payload`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:361](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L361)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:380](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L380)
 
 #### パラメータ
 
@@ -324,7 +324,7 @@ keyof `EventPayloadMapping`[]
 
 > **scrollHandler**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:298](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L298)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:317](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L317)
 
 #### パラメータ
 
@@ -346,7 +346,7 @@ keyof `EventPayloadMapping`[]
 
 > **scrollPan**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:260](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L260)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:276](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L276)
 
 #### パラメータ
 
@@ -368,7 +368,7 @@ keyof `EventPayloadMapping`[]
 
 > **scrollWithCtrlHandler**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:314](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L314)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:333](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L333)
 
 #### パラメータ
 
@@ -390,7 +390,7 @@ keyof `EventPayloadMapping`[]
 
 > **scrollZoom**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:274](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L274)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:290](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L290)
 
 #### パラメータ
 
@@ -412,7 +412,7 @@ keyof `EventPayloadMapping`[]
 
 > **spacebarDownHandler**(`context`, `payload`): `number`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:353](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L353)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:372](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L372)
 
 #### パラメータ
 
@@ -434,7 +434,7 @@ keyof `EventPayloadMapping`[]
 
 > **uponEnter**(`context`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:349](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L349)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:368](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L368)
 
 #### パラメータ
 

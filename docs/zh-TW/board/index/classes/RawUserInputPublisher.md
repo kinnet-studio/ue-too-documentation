@@ -2,7 +2,7 @@
 
 # 類別: RawUserInputPublisher
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:214](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L214)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:214](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L214)
 
 Publisher for broadcasting raw user input events to observers.
 
@@ -73,7 +73,7 @@ unsubscribe();
 
 > **new RawUserInputPublisher**(): `RawUserInputPublisher`
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:220](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L220)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:220](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L220)
 
 #### 回傳
 
@@ -85,7 +85,7 @@ unsubscribe();
 
 > **notifyPan**(`diff`): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:235](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L235)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:235](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L235)
 
 Notifies subscribers of a pan gesture
 
@@ -109,7 +109,7 @@ Notifies subscribers of a pan gesture
 
 > **notifyRotate**(`deltaRotation`): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:252](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L252)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:252](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L252)
 
 Notifies subscribers of a rotate gesture
 
@@ -133,7 +133,7 @@ Notifies subscribers of a rotate gesture
 
 > **notifyZoom**(`deltaZoomAmount`, `anchorPoint`): `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:240](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L240)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:240](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L240)
 
 Notifies subscribers of a zoom gesture
 
@@ -161,7 +161,7 @@ Notifies subscribers of a zoom gesture
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:257](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L257)
+定義於: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:257](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L257)
 
 Subscribes to input events
 

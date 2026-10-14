@@ -4,7 +4,7 @@
 
 > **TouchInputEventOutputMapping** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:95](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L95)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:92](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L92)
 
 Mapping of events to their output types.
 
@@ -19,4 +19,4 @@ touchstart and touchend only manage state transitions.
 
 > **touchmove**: [`TouchOutputEvent`](TouchOutputEvent.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:96](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L96)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:93](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L93)

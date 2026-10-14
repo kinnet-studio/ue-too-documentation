@@ -2,7 +2,7 @@
 
 # 介面: Precondition
 
-定義於: [action-system/precondition.ts:3](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/precondition.ts#L3)
+定義於: [action-system/precondition.ts:3](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board-game-engine/src/action-system/precondition.ts#L3)
 
 ## 方法
 
@@ -10,7 +10,7 @@
 
 > **check**(): `boolean`
 
-定義於: [action-system/precondition.ts:4](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/precondition.ts#L4)
+定義於: [action-system/precondition.ts:4](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board-game-engine/src/action-system/precondition.ts#L4)
 
 #### 回傳
 

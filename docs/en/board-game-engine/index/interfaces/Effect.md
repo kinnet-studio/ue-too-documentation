@@ -2,7 +2,7 @@
 
 # Interface: Effect
 
-Defined in: [action-system/effect.ts:3](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L3)
+Defined in: [action-system/effect.ts:3](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board-game-engine/src/action-system/effect.ts#L3)
 
 ## Methods
 
@@ -10,7 +10,7 @@ Defined in: [action-system/effect.ts:3](https://github.com/kinnet-studio/ue-too/
 
 > **apply**(): `void`
 
-Defined in: [action-system/effect.ts:4](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/action-system/effect.ts#L4)
+Defined in: [action-system/effect.ts:4](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board-game-engine/src/action-system/effect.ts#L4)
 
 #### Returns
 

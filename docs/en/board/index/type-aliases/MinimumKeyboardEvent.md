@@ -4,7 +4,7 @@
 
 > **MinimumKeyboardEvent** = `object`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:96](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L96)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:96](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L96)
 
 Minimal keyboard event interface for framework interoperability.
 
@@ -19,7 +19,7 @@ both vanilla JavaScript KeyboardEvents and framework-wrapped events.
 
 > **key**: `string`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:100](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L100)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:100](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L100)
 
 The key that was pressed
 
@@ -29,7 +29,7 @@ The key that was pressed
 
 > **preventDefault**: () => `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:98](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L98)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:98](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L98)
 
 Prevents default keyboard behavior
 

@@ -4,7 +4,7 @@
 
 > **useAllBoardCameraState**(): `object`
 
-Defined in: [hooks/useBoardify.tsx:226](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-react-adapter/src/hooks/useBoardify.tsx#L226)
+Defined in: [hooks/useBoardify.tsx:226](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board-react-adapter/src/hooks/useBoardify.tsx#L226)
 
 Hook to subscribe to all camera state properties with automatic re-rendering.
 

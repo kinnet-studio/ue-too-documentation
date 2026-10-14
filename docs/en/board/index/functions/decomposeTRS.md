@@ -4,7 +4,7 @@
 
 > **decomposeTRS**(`matrix`): `object`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:368](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/matrix.ts#L368)
+Defined in: [packages/board/src/camera/utils/matrix.ts:368](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/utils/matrix.ts#L368)
 
 Decomposes a 2D transformation matrix into Translation, Rotation, and Scale (TRS)
 

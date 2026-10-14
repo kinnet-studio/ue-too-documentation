@@ -2,7 +2,7 @@
 
 # 類別: WorkerRelayCanvas
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:508](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L508)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:481](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L481)
 
 ## Description
 
@@ -20,7 +20,7 @@ This class only serves as a relay of the updated canvas dimensions and position 
 
 > **new WorkerRelayCanvas**(`canvas`, `webWorker`, `canvasDiemsionPublisher`): `WorkerRelayCanvas`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:516](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L516)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:489](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L489)
 
 #### 參數
 
@@ -48,7 +48,7 @@ This class only serves as a relay of the updated canvas dimensions and position 
 
 > **get** **detached**(): `boolean`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:575](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L575)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:548](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L548)
 
 Whether the canvas is currently detached from the DOM
 
@@ -70,7 +70,7 @@ Whether the canvas is currently detached from the DOM
 
 > **get** **dimensions**(): `object`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:567](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L567)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:540](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L540)
 
 Combined dimensions and position information
 
@@ -104,7 +104,7 @@ Combined dimensions and position information
 
 > **get** **height**(): `number`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:555](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L555)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:528](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L528)
 
 The canvas height in CSS pixels
 
@@ -126,7 +126,7 @@ The canvas height in CSS pixels
 
 > **get** **position**(): `Point`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:563](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L563)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:536](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L536)
 
 The top-left position of the canvas in window coordinates
 
@@ -148,7 +148,7 @@ The top-left position of the canvas in window coordinates
 
 > **get** **width**(): `number`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:551](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L551)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:524](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L524)
 
 The canvas width in CSS pixels
 
@@ -168,7 +168,7 @@ The canvas width in CSS pixels
 
 > **setCursor**(`style`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:579](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L579)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:552](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L552)
 
 Sets the CSS cursor style for visual feedback
 
@@ -192,7 +192,7 @@ Sets the CSS cursor style for visual feedback
 
 > **tearDown**(): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:559](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L559)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:532](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L532)
 
 Cleanup method to dispose of resources and event listeners
 

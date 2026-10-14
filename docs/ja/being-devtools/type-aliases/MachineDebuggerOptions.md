@@ -4,7 +4,7 @@
 
 > **MachineDebuggerOptions** = `object`
 
-定義: [debugger.ts:26](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L26)
+定義: [debugger.ts:26](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being-devtools/src/debugger.ts#L26)
 
 Options for a [MachineDebugger](../classes/MachineDebugger.md) panel.
 
@@ -14,7 +14,7 @@ Options for a [MachineDebugger](../classes/MachineDebugger.md) panel.
 
 > `optional` **container**: `HTMLElement`
 
-定義: [debugger.ts:28](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L28)
+定義: [debugger.ts:28](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being-devtools/src/debugger.ts#L28)
 
 Render inline into this element instead of as a floating overlay.
 
@@ -24,7 +24,7 @@ Render inline into this element instead of as a floating overlay.
 
 > `optional` **hotkey**: `string` \| `false`
 
-定義: [debugger.ts:30](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L30)
+定義: [debugger.ts:30](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being-devtools/src/debugger.ts#L30)
 
 Toggle shortcut (default [DEFAULT\_HOTKEY](../variables/DEFAULT_HOTKEY.md)). `false` disables it.
 
@@ -34,6 +34,6 @@ Toggle shortcut (default [DEFAULT\_HOTKEY](../variables/DEFAULT_HOTKEY.md)). `fa
 
 > `optional` **openByDefault**: `boolean`
 
-定義: [debugger.ts:32](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-devtools/src/debugger.ts#L32)
+定義: [debugger.ts:32](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being-devtools/src/debugger.ts#L32)
 
 Start expanded. Defaults to `false` for the overlay, `true` with a container.

@@ -4,6 +4,6 @@
 
 > **AllObserver** = [`Callback`](Callback.md)\<`"all"`\>
 
-定義: [packages/board/src/camera/update-publisher.ts:180](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/update-publisher.ts#L180)
+定義: [packages/board/src/camera/update-publisher.ts:180](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/update-publisher.ts#L180)
 
 Callback type for the 'all' event that fires on any camera change.

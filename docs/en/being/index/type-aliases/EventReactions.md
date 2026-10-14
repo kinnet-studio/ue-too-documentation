@@ -4,7 +4,7 @@
 
 > **EventReactions**\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\> = \{ \[K in keyof Partial\<EventPayloadMapping\>\]: \{ action: (context: Context, event: EventPayloadMapping\[K\], stateMachine: StateMachine\<EventPayloadMapping, Context, States, EventOutputMapping\>) =\> K extends keyof EventOutputMapping ? EventOutputMapping\[K\] \| void : void; defaultTargetState?: States \} \}
 
-Defined in: [interface.ts:427](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L427)
+Defined in: [interface.ts:427](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/being/src/interface.ts#L427)
 
 ## Type Parameters
 

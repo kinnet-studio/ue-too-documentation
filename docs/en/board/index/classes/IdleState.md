@@ -2,7 +2,7 @@
 
 # Class: IdleState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:112](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L112)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:109](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L109)
 
 IDLE state - waiting for two-finger touch.
 
@@ -63,7 +63,7 @@ Defined in: packages/being/dist/interface.d.ts:580
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchContext`](../interfaces/TouchContext.md), *typeof* [`_guards`](#guards)\>\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:140](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L140)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:137](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L137)
 
 #### Overrides
 
@@ -87,7 +87,7 @@ Defined in: packages/being/dist/interface.d.ts:579
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:118](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L118)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:115](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L115)
 
 #### Overrides
 
@@ -99,7 +99,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > `protected` **\_guards**: `Guard`\<[`TouchContext`](../interfaces/TouchContext.md), `"touchPointsCount"`\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:134](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L134)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:131](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L131)
 
 #### Overrides
 
@@ -289,7 +289,7 @@ Defined in: packages/being/dist/interface.d.ts:590
 
 > **touchend**(`context`, `payload`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:166](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L166)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:163](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L163)
 
 #### Parameters
 
@@ -311,7 +311,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **touchstart**(`context`, `payload`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:162](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L162)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:159](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L159)
 
 #### Parameters
 

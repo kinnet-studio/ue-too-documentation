@@ -4,7 +4,7 @@
 
 > **destinationFromOriginOnRhumbLine**(`startCoord`, `bearing`, `distance`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-定義於: [rhumbLine.ts:131](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/border/src/rhumbLine.ts#L131)
+定義於: [rhumbLine.ts:131](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/border/src/rhumbLine.ts#L131)
 
 Calculates the destination point given a start point, constant bearing, and distance on a rhumb line.
 

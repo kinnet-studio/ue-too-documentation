@@ -4,7 +4,7 @@
 
 > **RotationBoundary** = `object`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:39](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/rotation.ts#L39)
+Defined in: [packages/board/src/camera/utils/rotation.ts:39](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/utils/rotation.ts#L39)
 
 Experimental rotation boundary type with positive/negative direction semantics.
 
@@ -18,7 +18,7 @@ This is an experimental alternative to [RotationLimits](RotationLimits.md) with 
 
 > **end**: `number`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:41](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/rotation.ts#L41)
+Defined in: [packages/board/src/camera/utils/rotation.ts:41](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/utils/rotation.ts#L41)
 
 Ending angle of the boundary in radians
 
@@ -28,7 +28,7 @@ Ending angle of the boundary in radians
 
 > **positiveDirection**: `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:42](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/rotation.ts#L42)
+Defined in: [packages/board/src/camera/utils/rotation.ts:42](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/utils/rotation.ts#L42)
 
 If true, range extends in positive angle direction. If false, negative direction
 
@@ -38,7 +38,7 @@ If true, range extends in positive angle direction. If false, negative direction
 
 > **start**: `number`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:40](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/rotation.ts#L40)
+Defined in: [packages/board/src/camera/utils/rotation.ts:40](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/utils/rotation.ts#L40)
 
 Starting angle of the boundary in radians
 
@@ -48,6 +48,6 @@ Starting angle of the boundary in radians
 
 > **startAsTieBreaker**: `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:43](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/utils/rotation.ts#L43)
+Defined in: [packages/board/src/camera/utils/rotation.ts:43](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/utils/rotation.ts#L43)
 
 When equidistant from start and end, prefer start if true, end if false

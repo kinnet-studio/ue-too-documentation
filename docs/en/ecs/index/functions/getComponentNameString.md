@@ -4,7 +4,7 @@
 
 > **getComponentNameString**(`componentName`): `string`
 
-Defined in: [index.ts:247](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L247)
+Defined in: [index.ts:247](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/ecs/src/index.ts#L247)
 
 Helper function to get the string description from a component name symbol.
 Useful for debugging and serialization.

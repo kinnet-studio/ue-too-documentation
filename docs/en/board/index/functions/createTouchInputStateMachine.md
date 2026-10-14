@@ -4,7 +4,7 @@
 
 > **createTouchInputStateMachine**(`context`): [`TouchInputStateMachine`](../type-aliases/TouchInputStateMachine.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:437](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L437)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:434](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L434)
 
 Creates a new touch input state machine for multi-touch gesture recognition.
 
