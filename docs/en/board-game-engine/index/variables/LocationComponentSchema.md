@@ -4,4 +4,4 @@
 
 > `const` **LocationComponentSchema**: `ComponentSchema`
 
-Defined in: [zone-system/zone-component.ts:27](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/zone-system/zone-component.ts#L27)
+Defined in: [zone-system/zone-component.ts:27](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-game-engine/src/zone-system/zone-component.ts#L27)

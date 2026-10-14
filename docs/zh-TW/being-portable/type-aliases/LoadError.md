@@ -4,7 +4,7 @@
 
 > **LoadError** = `object`
 
-定義於: [being-portable/src/errors.ts:47](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/errors.ts#L47)
+定義於: [being-portable/src/errors.ts:47](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/errors.ts#L47)
 
 One problem found while loading a definition or restoring a snapshot.
 
@@ -14,7 +14,7 @@ One problem found while loading a definition or restoring a snapshot.
 
 > `readonly` **code**: [`LoadErrorCode`](LoadErrorCode.md)
 
-定義於: [being-portable/src/errors.ts:48](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/errors.ts#L48)
+定義於: [being-portable/src/errors.ts:48](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/errors.ts#L48)
 
 ***
 
@@ -22,7 +22,7 @@ One problem found while loading a definition or restoring a snapshot.
 
 > `readonly` **message**: `string`
 
-定義於: [being-portable/src/errors.ts:49](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/errors.ts#L49)
+定義於: [being-portable/src/errors.ts:49](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/errors.ts#L49)
 
 ***
 
@@ -30,6 +30,6 @@ One problem found while loading a definition or restoring a snapshot.
 
 > `readonly` **path**: `string`
 
-定義於: [being-portable/src/errors.ts:51](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/errors.ts#L51)
+定義於: [being-portable/src/errors.ts:51](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/errors.ts#L51)
 
 JSON path into the document, e.g. `states.READY.on.select.do[1]`.

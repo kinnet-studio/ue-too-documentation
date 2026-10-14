@@ -1,4 +1,4 @@
-# @ue-too/ecs v0.19.1
+# @ue-too/ecs v0.19.2
 
 ## 文件
 

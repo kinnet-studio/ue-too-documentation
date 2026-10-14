@@ -4,7 +4,7 @@
 
 > **offset2**(`curve`, `d`): `object`
 
-定義: [packages/curve/src/b-curve.ts:1630](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/curve/src/b-curve.ts#L1630)
+定義: [packages/curve/src/b-curve.ts:1630](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/curve/src/b-curve.ts#L1630)
 
 Alternative offset implementation using LUT-based approach.
 

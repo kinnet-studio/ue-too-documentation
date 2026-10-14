@@ -4,7 +4,7 @@
 
 > **RotateToInputEventPayload** = `object`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:33](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L33)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:33](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L33)
 
 Payload for rotate-to input events (absolute rotation).
 
@@ -14,6 +14,6 @@ Payload for rotate-to input events (absolute rotation).
 
 > **target**: `number`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:35](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L35)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:35](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L35)
 
 Target rotation angle in radians

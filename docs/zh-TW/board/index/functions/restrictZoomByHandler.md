@@ -4,7 +4,7 @@
 
 > **restrictZoomByHandler**(`delta`, `camera`, `config`): `number`
 
-定義於: [packages/board/src/camera/camera-rig/zoom-handler.ts:362](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-rig/zoom-handler.ts#L362)
+定義於: [packages/board/src/camera/camera-rig/zoom-handler.ts:362](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/camera-rig/zoom-handler.ts#L362)
 
 Handler pipeline step that prevents "zoom by" operations when zoom is locked.
 

@@ -4,7 +4,7 @@
 
 > **createStateWidener**\<`E2`, `C2`, `S2`, `O2`\>(): \<`E1`, `C1`, `S1`, `O1`\>(`state`) => [`WidenedState`](../type-aliases/WidenedState.md)\<`E1`, `C1`, `S1`, `O1`, `E2`, `C2`, `S2`, `O2`\>
 
-定義於: [expansion.ts:55](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/expansion.ts#L55)
+定義於: [expansion.ts:55](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/expansion.ts#L55)
 
 Creates a function that retypes a state for a machine with a superset of its
 events, states, context and outputs.

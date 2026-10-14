@@ -2,7 +2,7 @@
 
 # 類別: ComponentArray\<T\>
 
-定義於: [index.ts:601](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L601)
+定義於: [index.ts:601](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/ecs/src/index.ts#L601)
 
 Efficient sparse-set data structure for storing component data.
 
@@ -37,7 +37,7 @@ The component data type
 
 > **new ComponentArray**\<`T`\>(`maxEntities`): `ComponentArray`\<`T`\>
 
-定義於: [index.ts:607](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L607)
+定義於: [index.ts:607](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/ecs/src/index.ts#L607)
 
 #### 參數
 
@@ -55,7 +55,7 @@ The component data type
 
 > **entityDestroyed**(`entity`): `void`
 
-定義於: [index.ts:677](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L677)
+定義於: [index.ts:677](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/ecs/src/index.ts#L677)
 
 #### 參數
 
@@ -77,7 +77,7 @@ The component data type
 
 > **getAllEntities**(): `number`[]
 
-定義於: [index.ts:685](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L685)
+定義於: [index.ts:685](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/ecs/src/index.ts#L685)
 
 Get all entities that have this component.
 
@@ -93,7 +93,7 @@ Array of entity IDs that have this component
 
 > **getCount**(): `number`
 
-定義於: [index.ts:700](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L700)
+定義於: [index.ts:700](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/ecs/src/index.ts#L700)
 
 Get the count of entities with this component.
 
@@ -109,7 +109,7 @@ Number of entities with this component
 
 > **getData**(`entity`): `T` \| `null`
 
-定義於: [index.ts:632](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L632)
+定義於: [index.ts:632](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/ecs/src/index.ts#L632)
 
 #### 參數
 
@@ -127,7 +127,7 @@ Number of entities with this component
 
 > **insertData**(`entity`, `data`): `void`
 
-定義於: [index.ts:614](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L614)
+定義於: [index.ts:614](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/ecs/src/index.ts#L614)
 
 #### 參數
 
@@ -149,7 +149,7 @@ Number of entities with this component
 
 > **removeData**(`entity`): `void`
 
-定義於: [index.ts:653](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/ecs/src/index.ts#L653)
+定義於: [index.ts:653](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/ecs/src/index.ts#L653)
 
 #### 參數
 

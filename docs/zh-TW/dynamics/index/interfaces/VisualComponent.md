@@ -2,7 +2,7 @@
 
 # 介面: VisualComponent
 
-定義於: [rigidbody.ts:66](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/rigidbody.ts#L66)
+定義於: [rigidbody.ts:66](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/dynamics/src/rigidbody.ts#L66)
 
 ## 方法
 
@@ -10,7 +10,7 @@
 
 > **draw**(`ctx`): `void`
 
-定義於: [rigidbody.ts:67](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/rigidbody.ts#L67)
+定義於: [rigidbody.ts:67](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/dynamics/src/rigidbody.ts#L67)
 
 #### 參數
 

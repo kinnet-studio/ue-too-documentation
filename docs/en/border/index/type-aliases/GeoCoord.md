@@ -4,7 +4,7 @@
 
 > **GeoCoord** = `object`
 
-Defined in: [projection.ts:13](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/border/src/projection.ts#L13)
+Defined in: [projection.ts:13](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/border/src/projection.ts#L13)
 
 Geographic coordinate representing a location on Earth's surface.
 
@@ -20,7 +20,7 @@ Coordinates use the WGS84 standard:
 
 > **latitude**: `number`
 
-Defined in: [projection.ts:17](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/border/src/projection.ts#L17)
+Defined in: [projection.ts:17](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/border/src/projection.ts#L17)
 
 Latitude in degrees (-90 to 90)
 
@@ -30,6 +30,6 @@ Latitude in degrees (-90 to 90)
 
 > **longitude**: `number`
 
-Defined in: [projection.ts:15](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/border/src/projection.ts#L15)
+Defined in: [projection.ts:15](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/border/src/projection.ts#L15)
 
 Longitude in degrees (-180 to 180)

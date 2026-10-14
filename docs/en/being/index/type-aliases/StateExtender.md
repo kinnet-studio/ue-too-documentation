@@ -4,7 +4,7 @@
 
 > **StateExtender**\<`E`, `C`, `S`, `O`\> = (`original`, `extension`) => [`State`](../interfaces/State.md)\<`E`, `C`, `S`, `O`\>
 
-Defined in: [expansion.ts:249](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/expansion.ts#L249)
+Defined in: [expansion.ts:249](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/expansion.ts#L249)
 
 The function [createStateExtender](../functions/createStateExtender.md) returns: [extendState](../functions/extendState.md) with the
 target generics already bound.

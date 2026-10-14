@@ -4,7 +4,7 @@
 
 > **Reaction** = `object`
 
-定義於: [being-portable/src/format/types.ts:88](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L88)
+定義於: [being-portable/src/format/types.ts:88](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L88)
 
 What a state does when it receives one event.
 
@@ -14,7 +14,7 @@ What a state does when it receives one event.
 
 > `readonly` `optional` **branches**: readonly [`Branch`](Branch.md)[]
 
-定義於: [being-portable/src/format/types.ts:91](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L91)
+定義於: [being-portable/src/format/types.ts:91](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L91)
 
 ***
 
@@ -22,7 +22,7 @@ What a state does when it receives one event.
 
 > `readonly` `optional` **do**: readonly [`Stmt`](Stmt.md)[]
 
-定義於: [being-portable/src/format/types.ts:90](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L90)
+定義於: [being-portable/src/format/types.ts:90](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L90)
 
 ***
 
@@ -30,7 +30,7 @@ What a state does when it receives one event.
 
 > `readonly` `optional` **require**: readonly [`GuardRef`](GuardRef.md)[]
 
-定義於: [being-portable/src/format/types.ts:89](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L89)
+定義於: [being-portable/src/format/types.ts:89](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L89)
 
 ***
 
@@ -38,4 +38,4 @@ What a state does when it receives one event.
 
 > `readonly` `optional` **target**: `string`
 
-定義於: [being-portable/src/format/types.ts:92](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/format/types.ts#L92)
+定義於: [being-portable/src/format/types.ts:92](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L92)

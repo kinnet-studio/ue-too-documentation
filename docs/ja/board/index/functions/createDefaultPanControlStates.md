@@ -4,7 +4,7 @@
 
 > **createDefaultPanControlStates**(): `Record`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `State`\<[`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), `BaseContext`, [`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\>\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:402](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L402)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:402](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L402)
 
 Creates the default set of pan control states.
 

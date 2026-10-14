@@ -2,7 +2,7 @@
 
 # インターフェイス: PortableMachine
 
-定義: [being-portable/src/api-types.ts:63](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/api-types.ts#L63)
+定義: [being-portable/src/api-types.ts:63](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/api-types.ts#L63)
 
 A loaded machine: an ordinary `being` state machine plus its definition,
 snapshot and restore.
@@ -17,7 +17,7 @@ snapshot and restore.
 
 > `readonly` **context**: [`PortableContext`](PortableContext.md)
 
-定義: [being-portable/src/api-types.ts:71](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/api-types.ts#L71)
+定義: [being-portable/src/api-types.ts:71](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/api-types.ts#L71)
 
 Read-only access to the machine's live context object. Optional so
 existing StateMachine implementations remain valid;
@@ -48,7 +48,7 @@ this reference.
 
 > `readonly` **definition**: [`MachineDefinition`](../type-aliases/MachineDefinition.md)
 
-定義: [being-portable/src/api-types.ts:70](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/api-types.ts#L70)
+定義: [being-portable/src/api-types.ts:70](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/api-types.ts#L70)
 
 The upgraded, normalized document, frozen.
 
@@ -238,7 +238,7 @@ EventResultCallback for the exact snapshot-iteration semantics.
 
 > **restore**(`snapshot`, `options?`): [`RestoreResult`](../type-aliases/RestoreResult.md)
 
-定義: [being-portable/src/api-types.ts:74](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/api-types.ts#L74)
+定義: [being-portable/src/api-types.ts:74](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/api-types.ts#L74)
 
 #### パラメータ
 
@@ -284,7 +284,7 @@ EventResultCallback for the exact snapshot-iteration semantics.
 
 > **snapshot**(): [`MachineSnapshot`](../type-aliases/MachineSnapshot.md)
 
-定義: [being-portable/src/api-types.ts:73](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being-portable/src/api-types.ts#L73)
+定義: [being-portable/src/api-types.ts:73](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/api-types.ts#L73)
 
 Throws while the machine is handling an event.
 

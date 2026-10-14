@@ -2,7 +2,7 @@
 
 # クラス: RGBAnimationHelper
 
-定義: [animatable-attribute.ts:299](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L299)
+定義: [animatable-attribute.ts:299](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/animate/src/animatable-attribute.ts#L299)
 
 Interface for type-specific interpolation helpers.
 
@@ -36,7 +36,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **new RGBAnimationHelper**(): `RGBAnimationHelper`
 
-定義: [animatable-attribute.ts:300](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L300)
+定義: [animatable-attribute.ts:300](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/animate/src/animatable-attribute.ts#L300)
 
 #### 戻り値
 
@@ -48,7 +48,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **lerp**(`ratio`, `start`, `end`): [`RGB`](../type-aliases/RGB.md)
 
-定義: [animatable-attribute.ts:302](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/animate/src/animatable-attribute.ts#L302)
+定義: [animatable-attribute.ts:302](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/animate/src/animatable-attribute.ts#L302)
 
 Interpolates between two keyframes at a given ratio.
 

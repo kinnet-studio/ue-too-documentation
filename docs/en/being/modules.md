@@ -1,4 +1,4 @@
-# @ue-too/being v0.19.1
+# @ue-too/being v0.19.2
 
 ## Documents
 

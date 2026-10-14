@@ -4,7 +4,7 @@
 
 > **Guard**\<`Context`, `K`\> = `{ [P in K]: GuardEvaluation<Context> }`
 
-定義於: [interface.ts:476](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/interface.ts#L476)
+定義於: [interface.ts:476](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L476)
 
 ## 型別參數
 

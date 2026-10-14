@@ -276,6 +276,7 @@ requestAnimationFrame(draw);
 - [PointerEventPayload](type-aliases/PointerEventPayload.md)
 - [ScrollEventPayload](type-aliases/ScrollEventPayload.md)
 - [ScrollWithCtrlEventPayload](type-aliases/ScrollWithCtrlEventPayload.md)
+- [MAX\_WHEEL\_ZOOM\_FACTOR](variables/MAX_WHEEL_ZOOM_FACTOR.md)
 - [createKmtInputStateMachine](functions/createKmtInputStateMachine.md)
 - [expandKmtInputStateMachine](functions/expandKmtInputStateMachine.md)
 

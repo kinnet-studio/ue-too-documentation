@@ -4,7 +4,7 @@
 
 > **PointerEventPayload** = `object`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:61](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L61)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:61](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L61)
 
 Payload for pointer events (mouse button press/release/move).
 
@@ -14,7 +14,7 @@ Payload for pointer events (mouse button press/release/move).
 
 > **x**: `number`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:62](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L62)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:62](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L62)
 
 X coordinate in window space
 
@@ -24,6 +24,6 @@ X coordinate in window space
 
 > **y**: `number`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:63](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L63)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:63](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L63)
 
 Y coordinate in window space

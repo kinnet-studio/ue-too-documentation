@@ -2,7 +2,7 @@
 
 # インターフェイス: Constraint
 
-定義: [constraint.ts:17](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/constraint.ts#L17)
+定義: [constraint.ts:17](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/dynamics/src/constraint.ts#L17)
 
 Physics constraint interface.
 
@@ -20,7 +20,7 @@ to prevent drift over time.
 
 > **enforce**(`dt`): `void`
 
-定義: [constraint.ts:23](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/constraint.ts#L23)
+定義: [constraint.ts:23](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/dynamics/src/constraint.ts#L23)
 
 Enforces the constraint for one timestep.
 

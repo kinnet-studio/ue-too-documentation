@@ -2,7 +2,7 @@
 
 # インターフェイス: WorldPinJointConstraint
 
-定義: [constraint.ts:335](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/constraint.ts#L335)
+定義: [constraint.ts:335](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/dynamics/src/constraint.ts#L335)
 
 ## プロパティ
 
@@ -10,7 +10,7 @@
 
 > **body**: [`RigidBody`](RigidBody.md)
 
-定義: [constraint.ts:336](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/constraint.ts#L336)
+定義: [constraint.ts:336](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/dynamics/src/constraint.ts#L336)
 
 ***
 
@@ -18,7 +18,7 @@
 
 > **localAnchor**: `Point`
 
-定義: [constraint.ts:337](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/constraint.ts#L337)
+定義: [constraint.ts:337](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/dynamics/src/constraint.ts#L337)
 
 ***
 
@@ -26,4 +26,4 @@
 
 > **worldAnchor**: `Point`
 
-定義: [constraint.ts:338](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/dynamics/src/constraint.ts#L338)
+定義: [constraint.ts:338](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/dynamics/src/constraint.ts#L338)

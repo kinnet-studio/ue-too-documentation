@@ -4,4 +4,4 @@
 
 > `const` **LOCATION\_SYSTEM**: `SystemName`
 
-定義於: [zone-system/zone-component.ts:19](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/zone-system/zone-component.ts#L19)
+定義於: [zone-system/zone-component.ts:19](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-game-engine/src/zone-system/zone-component.ts#L19)

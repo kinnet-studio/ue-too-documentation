@@ -4,7 +4,7 @@
 
 > **ZoneComponent** = `object`
 
-定義: [zone-system/zone-component.ts:35](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/zone-system/zone-component.ts#L35)
+定義: [zone-system/zone-component.ts:35](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-game-engine/src/zone-system/zone-component.ts#L35)
 
 ## プロパティ
 
@@ -12,7 +12,7 @@
 
 > **ordered**: `boolean`
 
-定義: [zone-system/zone-component.ts:39](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/zone-system/zone-component.ts#L39)
+定義: [zone-system/zone-component.ts:39](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-game-engine/src/zone-system/zone-component.ts#L39)
 
 ***
 
@@ -20,7 +20,7 @@
 
 > **owner**: `Entity` \| `null`
 
-定義: [zone-system/zone-component.ts:37](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/zone-system/zone-component.ts#L37)
+定義: [zone-system/zone-component.ts:37](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-game-engine/src/zone-system/zone-component.ts#L37)
 
 ***
 
@@ -28,7 +28,7 @@
 
 > **visibility**: `"public"` \| `"private"` \| `"owner-only"`
 
-定義: [zone-system/zone-component.ts:38](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/zone-system/zone-component.ts#L38)
+定義: [zone-system/zone-component.ts:38](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-game-engine/src/zone-system/zone-component.ts#L38)
 
 ***
 
@@ -36,4 +36,4 @@
 
 > **zone**: `string`
 
-定義: [zone-system/zone-component.ts:36](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/board-game-engine/src/zone-system/zone-component.ts#L36)
+定義: [zone-system/zone-component.ts:36](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-game-engine/src/zone-system/zone-component.ts#L36)

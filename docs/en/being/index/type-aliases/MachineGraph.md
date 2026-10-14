@@ -4,7 +4,7 @@
 
 > **MachineGraph** = `object`
 
-Defined in: [introspect.ts:42](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/introspect.ts#L42)
+Defined in: [introspect.ts:42](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/introspect.ts#L42)
 
 A state machine's structure as a directed graph.
 
@@ -14,7 +14,7 @@ A state machine's structure as a directed graph.
 
 > **edges**: [`MachineGraphEdge`](MachineGraphEdge.md)[]
 
-Defined in: [introspect.ts:44](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/introspect.ts#L44)
+Defined in: [introspect.ts:44](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/introspect.ts#L44)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [introspect.ts:44](https://github.com/kinnet-studio/ue-too/blob/02bd
 
 > **nodes**: [`MachineGraphNode`](MachineGraphNode.md)[]
 
-Defined in: [introspect.ts:43](https://github.com/kinnet-studio/ue-too/blob/02bd04b7f474a7bcbee02ce00c03406bde363b51/packages/being/src/introspect.ts#L43)
+Defined in: [introspect.ts:43](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/introspect.ts#L43)
