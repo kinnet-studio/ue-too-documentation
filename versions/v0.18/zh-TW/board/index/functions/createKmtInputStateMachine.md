@@ -4,7 +4,7 @@
 
 > **createKmtInputStateMachine**(`context`): [`KmtInputStateMachine`](../type-aliases/KmtInputStateMachine.md)
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:733](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L733)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:755](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L755)
 
 Creates a new KMT (Keyboard/Mouse/Trackpad) input state machine.
 

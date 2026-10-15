@@ -4,7 +4,7 @@
 
 > **rhumbDistance**(`startCoord`, `endCoord`): `number`
 
-Defined in: [rhumbLine.ts:42](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/border/src/rhumbLine.ts#L42)
+Defined in: [rhumbLine.ts:42](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/border/src/rhumbLine.ts#L42)
 
 Calculates the distance along a rhumb line between two points.
 

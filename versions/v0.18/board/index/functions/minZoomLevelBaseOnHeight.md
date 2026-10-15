@@ -4,7 +4,7 @@
 
 > **minZoomLevelBaseOnHeight**(`boundaries`, `canvasWidth`, `canvasHeight`, `cameraRotation`): `number` \| `undefined`
 
-Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:258](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/utils/zoomlevel-adjustment.ts#L258)
+Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:258](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/utils/zoomlevel-adjustment.ts#L258)
 
 Calculates minimum zoom level based only on boundary height.
 

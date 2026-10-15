@@ -4,7 +4,7 @@
 
 > **deserializeComponentSchema**(`serialized`): [`ComponentSchema`](../interfaces/ComponentSchema.md)
 
-定義: [index.ts:437](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/ecs/src/index.ts#L437)
+定義: [index.ts:437](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/ecs/src/index.ts#L437)
 
 Deserialize a component schema from a JSON-compatible format.
 
