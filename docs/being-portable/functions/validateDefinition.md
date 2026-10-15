@@ -4,7 +4,7 @@
 
 > **validateDefinition**(`document`, `options`): [`ValidationResult`](../type-aliases/ValidationResult.md)
 
-Defined in: [being-portable/src/api.ts:18](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/api.ts#L18)
+Defined in: [being-portable/src/api.ts:18](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/api.ts#L18)
 
 Checks an untrusted document without building a machine. With a host, also
 checks that the host supplies every declared effect with matching types.

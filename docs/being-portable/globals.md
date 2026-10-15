@@ -1,4 +1,4 @@
-# @ue-too/being-portable v0.19.0
+# @ue-too/being-portable v0.19.2
 
 Portable, serializable definitions for `@ue-too/being` state machines.
 

@@ -2,7 +2,7 @@
 
 # Abstract Class: DelegatingState\<EventPayloadMapping, Context, States, Child, EventOutputMapping\>
 
-Defined in: [delegating-state.ts:65](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L65)
+Defined in: [delegating-state.ts:65](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L65)
 
 A state that hosts a complete child state machine and forwards events to it.
 
@@ -75,7 +75,7 @@ The parent machine's output mapping
 
 > **new DelegatingState**\<`EventPayloadMapping`, `Context`, `States`, `Child`, `EventOutputMapping`\>(`child`): `DelegatingState`\<`EventPayloadMapping`, `Context`, `States`, `Child`, `EventOutputMapping`\>
 
-Defined in: [delegating-state.ts:81](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L81)
+Defined in: [delegating-state.ts:81](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L81)
 
 #### Parameters
 
@@ -97,7 +97,7 @@ Defined in: [delegating-state.ts:81](https://github.com/kinnet-studio/ue-too/blo
 
 > `protected` **\_defer**: [`Defer`](../type-aliases/Defer.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\>
 
-Defined in: [delegating-state.ts:91](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L91)
+Defined in: [delegating-state.ts:91](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L91)
 
 #### Overrides
 
@@ -109,7 +109,7 @@ Defined in: [delegating-state.ts:91](https://github.com/kinnet-studio/ue-too/blo
 
 > `protected` **\_delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined` = `undefined`
 
-Defined in: [interface.ts:1003](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1003)
+Defined in: [interface.ts:1003](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L1003)
 
 #### Inherited from
 
@@ -121,7 +121,7 @@ Defined in: [interface.ts:1003](https://github.com/kinnet-studio/ue-too/blob/d99
 
 > `protected` **\_eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:993](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L993)
+Defined in: [interface.ts:993](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L993)
 
 #### Inherited from
 
@@ -133,7 +133,7 @@ Defined in: [interface.ts:993](https://github.com/kinnet-studio/ue-too/blob/d999
 
 > `protected` **\_eventPreconditions**: `Partial`\<[`EventPreconditions`](../type-aliases/EventPreconditions.md)\<`EventPayloadMapping`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:998](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L998)
+Defined in: [interface.ts:998](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L998)
 
 #### Inherited from
 
@@ -145,7 +145,7 @@ Defined in: [interface.ts:998](https://github.com/kinnet-studio/ue-too/blob/d999
 
 > `protected` **\_eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:981](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L981)
+Defined in: [interface.ts:981](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L981)
 
 #### Inherited from
 
@@ -157,7 +157,7 @@ Defined in: [interface.ts:981](https://github.com/kinnet-studio/ue-too/blob/d999
 
 > `protected` **\_guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:992](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L992)
+Defined in: [interface.ts:992](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L992)
 
 #### Inherited from
 
@@ -171,7 +171,7 @@ Defined in: [interface.ts:992](https://github.com/kinnet-studio/ue-too/blob/d999
 
 > **get** **child**(): `Child`
 
-Defined in: [delegating-state.ts:87](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L87)
+Defined in: [delegating-state.ts:87](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L87)
 
 The hosted child machine, for introspection and tests.
 
@@ -187,7 +187,7 @@ The hosted child machine, for introspection and tests.
 
 > **get** **delay**(): [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-Defined in: [interface.ts:1042](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1042)
+Defined in: [interface.ts:1042](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L1042)
 
 ##### Returns
 
@@ -205,7 +205,7 @@ Defined in: [interface.ts:1042](https://github.com/kinnet-studio/ue-too/blob/d99
 
 > **get** **eventGuards**(): `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:1021](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1021)
+Defined in: [interface.ts:1021](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L1021)
 
 ##### Returns
 
@@ -223,7 +223,7 @@ Defined in: [interface.ts:1021](https://github.com/kinnet-studio/ue-too/blob/d99
 
 > **get** **eventPreconditions**(): `Partial`\<[`EventPreconditions`](../type-aliases/EventPreconditions.md)\<`EventPayloadMapping`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:1027](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1027)
+Defined in: [interface.ts:1027](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L1027)
 
 Pre-action vetoes: named guards that must all pass before this state
 handles an event. Optional so existing State implementations remain
@@ -249,7 +249,7 @@ valid; [TemplateState](TemplateState.md) always provides it.
 
 > **get** **eventReactions**(): [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:1033](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1033)
+Defined in: [interface.ts:1033](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L1033)
 
 ##### Returns
 
@@ -267,7 +267,7 @@ Defined in: [interface.ts:1033](https://github.com/kinnet-studio/ue-too/blob/d99
 
 > **get** **guards**(): [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:1017](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1017)
+Defined in: [interface.ts:1017](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L1017)
 
 ##### Returns
 
@@ -285,7 +285,7 @@ Defined in: [interface.ts:1017](https://github.com/kinnet-studio/ue-too/blob/d99
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-Defined in: [interface.ts:1011](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1011)
+Defined in: [interface.ts:1011](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L1011)
 
 ##### Returns
 
@@ -301,7 +301,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`_context`, `_stateMachine`, `_to`): `void`
 
-Defined in: [delegating-state.ts:129](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L129)
+Defined in: [delegating-state.ts:129](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L129)
 
 #### Parameters
 
@@ -331,7 +331,7 @@ Defined in: [delegating-state.ts:129](https://github.com/kinnet-studio/ue-too/bl
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [interface.ts:1074](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/interface.ts#L1074)
+Defined in: [interface.ts:1074](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/interface.ts#L1074)
 
 #### Type Parameters
 
@@ -367,7 +367,7 @@ Defined in: [interface.ts:1074](https://github.com/kinnet-studio/ue-too/blob/d99
 
 > **uponEnter**(`_context`, `_stateMachine`, `_from`): `void`
 
-Defined in: [delegating-state.ts:112](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L112)
+Defined in: [delegating-state.ts:112](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L112)
 
 #### Parameters
 

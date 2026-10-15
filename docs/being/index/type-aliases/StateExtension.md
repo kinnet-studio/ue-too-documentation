@@ -4,7 +4,7 @@
 
 > **StateExtension**\<`E`, `C`, `S`, `O`\> = `object`
 
-Defined in: [expansion.ts:96](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L96)
+Defined in: [expansion.ts:96](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/expansion.ts#L96)
 
 What [extendState](../functions/extendState.md) may add to or wrap on an existing state.
 
@@ -32,7 +32,7 @@ What [extendState](../functions/extendState.md) may add to or wrap on an existin
 
 > `optional` **beforeExit**: (`context`, `stateMachine`, `to`, `inherited`) => `void`
 
-Defined in: [expansion.ts:124](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L124)
+Defined in: [expansion.ts:124](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/expansion.ts#L124)
 
 Wraps the inherited `beforeExit`; call `inherited()` to run the original.
 
@@ -64,7 +64,7 @@ Wraps the inherited `beforeExit`; call `inherited()` to run the original.
 
 > `optional` **eventGuards**: `Partial`\<[`EventGuards`](EventGuards.md)\<`E`, `S`, `C`, [`Guard`](Guard.md)\<`C`\>\>\>
 
-Defined in: [expansion.ts:115](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L115)
+Defined in: [expansion.ts:115](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/expansion.ts#L115)
 
 Event guards to add; merged over the inherited event guards.
 
@@ -74,7 +74,7 @@ Event guards to add; merged over the inherited event guards.
 
 > `optional` **eventReactions**: `Partial`\<[`EventReactions`](EventReactions.md)\<`E`, `C`, `S`, `O`\>\> \| (`inherited`) => `Partial`\<[`EventReactions`](EventReactions.md)\<`E`, `C`, `S`, `O`\>\>
 
-Defined in: [expansion.ts:107](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L107)
+Defined in: [expansion.ts:107](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/expansion.ts#L107)
 
 Reactions to add or override. Pass an object to merge over the inherited
 reactions, or a function that receives the inherited reactions so an
@@ -86,7 +86,7 @@ override can wrap the original action.
 
 > `optional` **guards**: [`Guard`](Guard.md)\<`C`\>
 
-Defined in: [expansion.ts:113](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L113)
+Defined in: [expansion.ts:113](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/expansion.ts#L113)
 
 Guards to add; merged over the inherited guards.
 
@@ -96,7 +96,7 @@ Guards to add; merged over the inherited guards.
 
 > `optional` **uponEnter**: (`context`, `stateMachine`, `from`, `inherited`) => `void`
 
-Defined in: [expansion.ts:117](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/expansion.ts#L117)
+Defined in: [expansion.ts:117](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/expansion.ts#L117)
 
 Wraps the inherited `uponEnter`; call `inherited()` to run the original.
 
