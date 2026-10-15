@@ -1,0 +1,51 @@
+[@ue-too/board](../../modules.md) / [index](../index.md) / decomposeTRS
+
+# 函式: decomposeTRS()
+
+> **decomposeTRS**(`matrix`): `object`
+
+定義於: [packages/board/src/camera/utils/matrix.ts:368](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/utils/matrix.ts#L368)
+
+Decomposes a 2D transformation matrix into Translation, Rotation, and Scale (TRS)
+
+## 參數
+
+### matrix
+
+[`TransformationMatrix`](../type-aliases/TransformationMatrix.md)
+
+The transformation matrix to decompose
+
+## 回傳
+
+`object`
+
+Object containing translation, rotation (in radians), and scale components
+
+### rotation
+
+> **rotation**: `number`
+
+### scale
+
+> **scale**: `object`
+
+#### scale.x
+
+> **x**: `number`
+
+#### scale.y
+
+> **y**: `number`
+
+### translation
+
+> **translation**: `object`
+
+#### translation.x
+
+> **x**: `number`
+
+#### translation.y
+
+> **y**: `number`
