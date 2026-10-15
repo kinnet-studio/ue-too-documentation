@@ -8,13 +8,11 @@
  * .vitepress/config.ts), so each has its own sidebar, locales and search index.
  */
 
-import { loadVersions } from './versions'
-
-const versions = loadVersions()
+import { loadVersions, siteLines } from './versions'
 
 // The latest goes first: every build empties its own outDir, and the
 // archived builds are nested inside the latest one's.
-for (const line of [versions.latest, ...versions.archived]) {
+for (const { line } of siteLines(loadVersions())) {
   console.log(`Building docs for v${line}`)
   const proc = Bun.spawnSync(['bunx', 'vitepress', 'build'], {
     env: { ...process.env, DOCS_VERSION: line },

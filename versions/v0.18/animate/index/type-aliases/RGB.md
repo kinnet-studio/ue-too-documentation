@@ -4,7 +4,7 @@
 
 > **RGB** = `object`
 
-Defined in: [animatable-attribute.ts:266](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L266)
+Defined in: [animatable-attribute.ts:266](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/animate/src/animatable-attribute.ts#L266)
 
 RGB color type for color animations.
 
@@ -18,7 +18,7 @@ Represents a color with red, green, and blue components (0-255).
 
 > **b**: `number`
 
-Defined in: [animatable-attribute.ts:266](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L266)
+Defined in: [animatable-attribute.ts:266](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/animate/src/animatable-attribute.ts#L266)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [animatable-attribute.ts:266](https://github.com/kinnet-studio/ue-to
 
 > **g**: `number`
 
-Defined in: [animatable-attribute.ts:266](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L266)
+Defined in: [animatable-attribute.ts:266](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/animate/src/animatable-attribute.ts#L266)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [animatable-attribute.ts:266](https://github.com/kinnet-studio/ue-to
 
 > **r**: `number`
 
-Defined in: [animatable-attribute.ts:266](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/animate/src/animatable-attribute.ts#L266)
+Defined in: [animatable-attribute.ts:266](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/animate/src/animatable-attribute.ts#L266)

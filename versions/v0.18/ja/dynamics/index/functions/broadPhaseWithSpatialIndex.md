@@ -4,7 +4,7 @@
 
 > **broadPhaseWithSpatialIndex**(`spatialIndex`, `bodies`): `object`[]
 
-定義: [collision.ts:509](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/dynamics/src/collision.ts#L509)
+定義: [collision.ts:509](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/dynamics/src/collision.ts#L509)
 
 ## パラメータ
 

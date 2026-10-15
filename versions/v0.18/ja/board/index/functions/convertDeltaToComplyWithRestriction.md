@@ -4,7 +4,7 @@
 
 > **convertDeltaToComplyWithRestriction**(`delta`, `camera`, `config`): `Point`
 
-定義: [packages/board/src/camera/camera-rig/pan-handler.ts:632](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/pan-handler.ts#L632)
+定義: [packages/board/src/camera/camera-rig/pan-handler.ts:632](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board/src/camera/camera-rig/pan-handler.ts#L632)
 
 Transforms a movement delta to comply with axis restriction configuration.
 

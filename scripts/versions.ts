@@ -2,16 +2,24 @@ import { readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
 
 /**
- * The release lines the site serves, stored in versions.json at the repo root.
+ * The releases whose docs the site serves, stored in versions.json at the
+ * repo root.
  *
- * Lines are `major.minor` (e.g. "0.19"): patch releases update their line's
- * docs in place.
+ * The site serves one release per line (`major.minor`, e.g. "0.19"): each
+ * entry is the release that line's docs were last imported from, so a patch
+ * replaces its line's entry.
  */
 export interface Versions {
-  /** The newest line, built from docs/ and served at the site root. */
+  /** The newest release (e.g. "0.19.2"); its line is built from docs/ and served at the site root. */
   latest: string
-  /** Older lines, newest first, each built from versions/v<line>/ and served at /v<line>/. */
+  /** One release per older line, newest first; each line is built from versions/v<line>/ and served at /v<line>/. */
   archived: string[]
+}
+
+/** A release line the site serves, with the release its docs come from. */
+export interface SiteLine {
+  line: string
+  version: string
 }
 
 const versionsFile = join(process.cwd(), 'versions.json')
@@ -40,6 +48,14 @@ export function compareLines(a: string, b: string): number {
   return aMajor - bMajor || aMinor - bMinor
 }
 
+/** Every line the site serves, newest (the latest) first. */
+export function siteLines(versions: Versions): SiteLine[] {
+  return [versions.latest, ...versions.archived].map(version => ({
+    line: releaseLine(version),
+    version,
+  }))
+}
+
 /** Where an archived line's docs live, relative to the repo root. */
 export function archivedSrcDir(line: string): string {
   return `versions/v${line}`
@@ -47,10 +63,10 @@ export function archivedSrcDir(line: string): string {
 
 /** The source directory of a line, relative to the repo root. */
 export function versionSrcDir(versions: Versions, line: string): string {
-  return line === versions.latest ? 'docs' : archivedSrcDir(line)
+  return line === releaseLine(versions.latest) ? 'docs' : archivedSrcDir(line)
 }
 
 /** The path of a line relative to the site root: "" for the latest, "v<line>/" otherwise. */
 export function versionPath(versions: Versions, line: string): string {
-  return line === versions.latest ? '' : `v${line}/`
+  return line === releaseLine(versions.latest) ? '' : `v${line}/`
 }

@@ -4,7 +4,7 @@
 
 > **useAllBoardCameraState**(): `object`
 
-定義: [board-pixi-react-integration/src/hooks/pixi/camera.ts:12](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board-pixi-react-integration/src/hooks/pixi/camera.ts#L12)
+定義: [board-pixi-react-integration/src/hooks/pixi/camera.ts:12](https://github.com/kinnet-studio/ue-too/blob/930a76bbea33e382298c04824ccf0063a87cf0f3/packages/board-pixi-react-integration/src/hooks/pixi/camera.ts#L12)
 
 ## 戻り値
 
