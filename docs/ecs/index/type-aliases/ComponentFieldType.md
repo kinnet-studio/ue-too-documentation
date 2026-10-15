@@ -4,6 +4,6 @@
 
 > **ComponentFieldType** = `"string"` \| `"number"` \| `"boolean"` \| `"object"` \| `"array"` \| `"entity"`
 
-Defined in: [index.ts:145](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/ecs/src/index.ts#L145)
+Defined in: [index.ts:145](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/ecs/src/index.ts#L145)
 
 Supported field types for runtime-defined component schemas.

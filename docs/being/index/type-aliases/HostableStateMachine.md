@@ -4,7 +4,7 @@
 
 > **HostableStateMachine** = `object`
 
-Defined in: [delegating-state.ts:21](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L21)
+Defined in: [delegating-state.ts:21](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L21)
 
 The part of a state machine a [DelegatingState](../classes/DelegatingState.md) drives.
 
@@ -21,7 +21,7 @@ so the host is typed against just the members it calls. Every
 
 > `readonly` **currentState**: `string`
 
-Defined in: [delegating-state.ts:22](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L22)
+Defined in: [delegating-state.ts:22](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L22)
 
 ***
 
@@ -29,7 +29,7 @@ Defined in: [delegating-state.ts:22](https://github.com/kinnet-studio/ue-too/blo
 
 > **happens**: (...`args`) => [`EventResult`](EventResult.md)\<`any`, `any`\>
 
-Defined in: [delegating-state.ts:23](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L23)
+Defined in: [delegating-state.ts:23](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L23)
 
 #### Parameters
 
@@ -47,7 +47,7 @@ Defined in: [delegating-state.ts:23](https://github.com/kinnet-studio/ue-too/blo
 
 > **reset**(): `void`
 
-Defined in: [delegating-state.ts:25](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L25)
+Defined in: [delegating-state.ts:25](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L25)
 
 #### Returns
 
@@ -59,7 +59,7 @@ Defined in: [delegating-state.ts:25](https://github.com/kinnet-studio/ue-too/blo
 
 > **start**(): `void`
 
-Defined in: [delegating-state.ts:24](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L24)
+Defined in: [delegating-state.ts:24](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L24)
 
 #### Returns
 
@@ -71,7 +71,7 @@ Defined in: [delegating-state.ts:24](https://github.com/kinnet-studio/ue-too/blo
 
 > **wrapup**(): `void`
 
-Defined in: [delegating-state.ts:26](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being/src/delegating-state.ts#L26)
+Defined in: [delegating-state.ts:26](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/delegating-state.ts#L26)
 
 #### Returns
 

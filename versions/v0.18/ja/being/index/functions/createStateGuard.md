@@ -1,0 +1,69 @@
+[@ue-too/being](../../modules.md) / [index](../index.md) / createStateGuard
+
+# 関数: createStateGuard()
+
+> **createStateGuard**\<`T`\>(`set`): (`s`) => `s is T`
+
+定義: [interface.ts:1191](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/interface.ts#L1191)
+
+Creates a type guard function for checking if a value belongs to a specific set of states.
+
+## 型パラメーター
+
+### T
+
+`T` *extends* `string`
+
+String literal type to guard for
+
+## パラメータ
+
+### set
+
+readonly `T`[]
+
+Readonly array of string literals defining the valid states
+
+## 戻り値
+
+A type guard function that checks if a string is in the set
+
+> (`s`): `s is T`
+
+### パラメータ
+
+#### s
+
+`string`
+
+### 戻り値
+
+`s is T`
+
+## Remarks
+
+This utility function generates a TypeScript type guard that narrows a string type
+to a specific union of string literals. Useful when you have multiple state types
+and need to distinguish between them at runtime.
+
+## 例
+
+Creating state guards for hierarchical state machines
+```typescript
+type MainStates = "idle" | "active" | "paused";
+type SubStates = "loading" | "processing" | "complete";
+type AllStates = MainStates | SubStates;
+
+const MAIN_STATES = ["idle", "active", "paused"] as const;
+const isMainState = createStateGuard(MAIN_STATES);
+
+function handleState(state: AllStates) {
+  if (isMainState(state)) {
+    // TypeScript knows state is MainStates here
+    console.log('Main state:', state);
+  } else {
+    // TypeScript knows state is SubStates here
+    console.log('Sub state:', state);
+  }
+}
+```

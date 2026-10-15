@@ -4,7 +4,7 @@
 
 > **defineHost**(`definition`): [`Host`](../interfaces/Host.md)
 
-Defined in: [being-portable/src/host.ts:92](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/being-portable/src/host.ts#L92)
+Defined in: [being-portable/src/host.ts:92](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/host.ts#L92)
 
 Validates and freezes a host. Host code is trusted, so a malformed host
 throws instead of returning errors.

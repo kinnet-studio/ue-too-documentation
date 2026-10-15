@@ -1,0 +1,54 @@
+[@ue-too/border](../../modules.md) / [index](../index.md) / rhumbDistance
+
+# 関数: rhumbDistance()
+
+> **rhumbDistance**(`startCoord`, `endCoord`): `number`
+
+定義: [rhumbLine.ts:42](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/border/src/rhumbLine.ts#L42)
+
+Calculates the distance along a rhumb line between two points.
+
+## パラメータ
+
+### startCoord
+
+[`GeoCoord`](../type-aliases/GeoCoord.md)
+
+The starting geographic coordinate
+
+### endCoord
+
+[`GeoCoord`](../type-aliases/GeoCoord.md)
+
+The ending geographic coordinate
+
+## 戻り値
+
+`number`
+
+The distance in meters along the rhumb line
+
+## Remarks
+
+A rhumb line (also called loxodrome) is a path of constant bearing. Unlike great
+circles, rhumb lines appear as straight lines on Mercator projections, making them
+easier for navigation.
+
+Rhumb lines are generally slightly longer than great circle routes, except when
+traveling due east/west along the equator or due north/south.
+
+Uses Earth's mean radius of 6,371,000 meters.
+
+## 例
+
+```typescript
+const start = { latitude: 50.0, longitude: -5.0 };
+const end = { latitude: 58.0, longitude: 3.0 };
+
+const distance = rhumbDistance(start, end);
+console.log('Rhumb distance:', distance / 1000, 'km');
+
+// Compare with great circle distance
+const gcDistance = greatCircleDistance(start, end);
+console.log('Great circle is', (distance - gcDistance) / 1000, 'km shorter');
+```

@@ -1,0 +1,63 @@
+[@ue-too/being](../../modules.md) / [index](../index.md) / ChildStateMachineConfig
+
+# 介面: ChildStateMachineConfig\<EventPayloadMapping, Context, ChildStates, EventOutputMapping\>
+
+定義於: [hierarchical.ts:47](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L47)
+
+Configuration for a composite state's child state machine.
+
+## 型別參數
+
+### EventPayloadMapping
+
+`EventPayloadMapping` = `any`
+
+Event payload mapping
+
+### Context
+
+`Context` *extends* [`BaseContext`](BaseContext.md) = [`BaseContext`](BaseContext.md)
+
+Context type
+
+### ChildStates
+
+`ChildStates` *extends* `string` = `string`
+
+Child state names
+
+### EventOutputMapping
+
+`EventOutputMapping` *extends* `Partial`\<`Record`\<keyof `EventPayloadMapping`, `unknown`\>\> = [`DefaultOutputMapping`](../type-aliases/DefaultOutputMapping.md)\<`EventPayloadMapping`\>
+
+Event output mapping
+
+## 屬性
+
+### defaultChildState
+
+> **defaultChildState**: `ChildStates`
+
+定義於: [hierarchical.ts:63](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L63)
+
+Default child state to enter when parent state is entered
+
+***
+
+### rememberHistory?
+
+> `optional` **rememberHistory**: `boolean`
+
+定義於: [hierarchical.ts:65](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L65)
+
+Whether to remember the last active child state (history state)
+
+***
+
+### stateMachine
+
+> **stateMachine**: [`StateMachine`](StateMachine.md)\<`EventPayloadMapping`, `Context`, `ChildStates`, `EventOutputMapping`\>
+
+定義於: [hierarchical.ts:56](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/being/src/hierarchical.ts#L56)
+
+The child state machine instance

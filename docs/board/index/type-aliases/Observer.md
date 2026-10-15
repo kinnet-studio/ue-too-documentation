@@ -4,7 +4,7 @@
 
 > **Observer**\<`T`\> = (...`data`) => `void`
 
-Defined in: [packages/board/src/utils/observable.ts:25](https://github.com/kinnet-studio/ue-too/blob/d999426417cb36aad1770e44c1f7832705ca5338/packages/board/src/utils/observable.ts#L25)
+Defined in: [packages/board/src/utils/observable.ts:25](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/utils/observable.ts#L25)
 
 Type definition for an observer callback function.
 

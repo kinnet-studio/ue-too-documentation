@@ -1,0 +1,67 @@
+[@ue-too/board](../../modules.md) / [index](../index.md) / restrictZoomByHandler
+
+# 関数: restrictZoomByHandler()
+
+> **restrictZoomByHandler**(`delta`, `camera`, `config`): `number`
+
+定義: [packages/board/src/camera/camera-rig/zoom-handler.ts:362](https://github.com/kinnet-studio/ue-too/blob/694dd991bbd83d600f08cceafc3fdc3d80392829/packages/board/src/camera/camera-rig/zoom-handler.ts#L362)
+
+Handler pipeline step that prevents "zoom by" operations when zoom is locked.
+
+## パラメータ
+
+### delta
+
+`number`
+
+Zoom level change
+
+### camera
+
+[`BoardCamera`](../interfaces/BoardCamera.md)
+
+Current camera instance
+
+### config
+
+[`ZoomHandlerRestrictConfig`](../type-aliases/ZoomHandlerRestrictConfig.md)
+
+Restriction configuration
+
+## 戻り値
+
+`number`
+
+Zero (if locked) or delta (if unlocked)
+
+## Remarks
+
+This handler implements a global zoom lock for relative zoom operations.
+
+Behavior:
+- If `restrictZoom` is true: Returns 0 (prevents any change)
+- If `restrictZoom` is false: Returns delta unchanged
+
+Use this for:
+- Disabling zoom during specific application states
+- Fixed-zoom viewing modes
+- Read-only camera modes
+
+Can be used standalone, but typically composed into a handler pipeline via
+[createDefaultZoomByOnlyHandler](createDefaultZoomByOnlyHandler.md) or [createHandlerChain](createHandlerChain.md).
+
+## 例
+
+```typescript
+const config: ZoomHandlerRestrictConfig = {
+  restrictZoom: true  // Lock zoom
+};
+
+const delta = 0.5;
+const result = restrictZoomByHandler(delta, camera, config);
+// result = 0 (zoom locked, no change allowed)
+```
+
+## 参照
+
+[createDefaultZoomByOnlyHandler](createDefaultZoomByOnlyHandler.md) for default pipeline usage
