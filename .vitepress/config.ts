@@ -1,7 +1,7 @@
 import { defineConfigWithTheme, type DefaultTheme } from 'vitepress'
 import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
-import { loadVersions, versionPath, versionSrcDir } from '../scripts/versions'
+import { loadVersions, releaseLine, siteLines, versionPath, versionSrcDir } from '../scripts/versions'
 
 // Default theme config plus the archived-version notice rendered by the custom theme
 export interface ThemeConfig extends DefaultTheme.Config {
@@ -14,13 +14,31 @@ export interface ThemeConfig extends DefaultTheme.Config {
 const siteUrl = (process.env.DOCS_SITE_URL ?? 'https://kinnet-studio.github.io/ue-too-documentation/').replace(/\/?$/, '/')
 
 const versions = loadVersions()
+const lines = siteLines(versions)
+const latestLine = releaseLine(versions.latest)
 
 // The release line this build is for (set per build by scripts/build-versions.ts)
-const docsVersion = process.env.DOCS_VERSION ?? versions.latest
-if (docsVersion !== versions.latest && !versions.archived.includes(docsVersion)) {
+const docsVersion = process.env.DOCS_VERSION ?? latestLine
+// The release this line's docs were imported from
+const docsRelease = lines.find(({ line }) => line === docsVersion)?.version
+if (!docsRelease) {
   throw new Error(`DOCS_VERSION ${docsVersion} is not listed in versions.json`)
 }
 const srcDir = versionSrcDir(versions, docsVersion)
+
+// Package READMEs carry an npm badge showing the registry's latest release,
+// which is wrong on an archived version, so there it is pinned to the release
+// the docs are for, as a static badge linking to that release on npm
+const NPM_BADGE = /\[!\[npm version\]\(https:\/\/img\.shields\.io\/npm\/v\/(@ue-too\/[\w-]+)\.svg(\?[^)]*)?\)\]\(https:\/\/www\.npmjs\.com\/package\/\1\)/g
+
+function pinNpmBadges(markdown: string, release: string): string {
+  // Same colours as shields' npm badge: orange before 1.0, blue after
+  const color = release.startsWith('0.') ? 'orange' : 'blue'
+  const message = `v${release}`.replace(/-/g, '--')
+  return markdown.replace(NPM_BADGE, (_, pkg: string, query = '') =>
+    `[![npm version](https://img.shields.io/badge/npm-${message}-${color}${query})](https://www.npmjs.com/package/${pkg}/v/${release})`
+  )
+}
 
 // All packages in the project
 const packages = [
@@ -180,8 +198,8 @@ function buildVersionNav(locale: Locale): DefaultTheme.NavItemWithChildren {
 
   return {
     text: `v${docsVersion}`,
-    items: [versions.latest, ...versions.archived].map(line => ({
-      text: line === versions.latest ? `v${line}${latestSuffix[locale]}` : `v${line}`,
+    items: lines.map(({ line }) => ({
+      text: line === latestLine ? `v${line}${latestSuffix[locale]}` : `v${line}`,
       link: versionLocaleUrl(line, locale),
       // Another version is another build, so skip client-side routing
       target: '_self',
@@ -192,24 +210,24 @@ function buildVersionNav(locale: Locale): DefaultTheme.NavItemWithChildren {
 
 // Notice shown on every page of an archived version
 function buildVersionBanner(locale: Locale): ThemeConfig['versionBanner'] {
-  if (docsVersion === versions.latest) return undefined
+  if (docsVersion === latestLine) return undefined
 
   const labels: Record<Locale, { text: string; linkText: string }> = {
     en: {
-      text: `You're viewing the docs for v${docsVersion}. The latest version is v${versions.latest}.`,
+      text: `You're viewing the docs for v${docsVersion}. The latest version is v${latestLine}.`,
       linkText: 'Go to the latest docs',
     },
     'zh-TW': {
-      text: `您正在瀏覽 v${docsVersion} 的文件。最新版本為 v${versions.latest}。`,
+      text: `您正在瀏覽 v${docsVersion} 的文件。最新版本為 v${latestLine}。`,
       linkText: '前往最新文件',
     },
     ja: {
-      text: `v${docsVersion} のドキュメントを表示しています。最新バージョンは v${versions.latest} です。`,
+      text: `v${docsVersion} のドキュメントを表示しています。最新バージョンは v${latestLine} です。`,
       linkText: '最新のドキュメントへ',
     },
   }
 
-  return { ...labels[locale], link: versionLocaleUrl(versions.latest, locale) }
+  return { ...labels[locale], link: versionLocaleUrl(latestLine, locale) }
 }
 
 // VitePress UI theme translations
@@ -272,6 +290,21 @@ export default defineConfigWithTheme<ThemeConfig>({
   srcDir,
   base: `${new URL(siteUrl).pathname}${versionPath(versions, docsVersion)}`,
   outDir: `.vitepress/dist/${versionPath(versions, docsVersion)}`,
+
+  vite: {
+    plugins: [
+      {
+        name: 'pin-archived-npm-badges',
+        // Rewrite the markdown before VitePress compiles it
+        enforce: 'pre',
+        transform(code, id) {
+          if (docsVersion !== latestLine && id.endsWith('.md')) {
+            return pinNpmBadges(code, docsRelease)
+          }
+        },
+      },
+    ],
+  },
 
   title: 'uē-tôo',
   description: 'A modular TypeScript library for HTML canvas applications. Features include infinite canvas with pan/zoom/rotate, animation system, state machines, Bezier curves, 2D physics, geographic projections, and more.',
