@@ -1,6 +1,26 @@
-import { defineConfig } from 'vitepress'
+import { defineConfigWithTheme, type DefaultTheme } from 'vitepress'
 import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
+import { loadVersions, versionPath, versionSrcDir } from '../scripts/versions'
+
+// Default theme config plus the archived-version notice rendered by the custom theme
+export interface ThemeConfig extends DefaultTheme.Config {
+  versionBanner?: { text: string; link: string; linkText: string }
+}
+
+// Where the whole site is served. Each version is a separate build under it,
+// so links between versions are full URLs; set DOCS_SITE_URL to preview a
+// combined build locally (e.g. http://localhost:4173/ue-too-documentation/).
+const siteUrl = (process.env.DOCS_SITE_URL ?? 'https://kinnet-studio.github.io/ue-too-documentation/').replace(/\/?$/, '/')
+
+const versions = loadVersions()
+
+// The release line this build is for (set per build by scripts/build-versions.ts)
+const docsVersion = process.env.DOCS_VERSION ?? versions.latest
+if (docsVersion !== versions.latest && !versions.archived.includes(docsVersion)) {
+  throw new Error(`DOCS_VERSION ${docsVersion} is not listed in versions.json`)
+}
+const srcDir = versionSrcDir(versions, docsVersion)
 
 // All packages in the project
 const packages = [
@@ -16,9 +36,9 @@ type Locale = 'en' | 'zh-TW' | 'ja'
 // Resolve the docs directory for a locale (en is at root, others in subdirectories)
 function localeDocsDir(locale: Locale, packageName: string): string {
   if (locale === 'en') {
-    return join(process.cwd(), 'docs', packageName)
+    return join(process.cwd(), srcDir, packageName)
   }
-  return join(process.cwd(), 'docs', locale, packageName)
+  return join(process.cwd(), srcDir, locale, packageName)
 }
 
 // Helper function to load sidebar JSON for a given locale and package
@@ -141,7 +161,55 @@ function buildNav(locale: Locale) {
       text: `@ue-too/${pkg}`,
       link: `${prefix}/${pkg}/`
     })) },
+    buildVersionNav(locale),
   ]
+}
+
+// Root of a locale within a version, as a full URL
+function versionLocaleUrl(line: string, locale: Locale): string {
+  return `${siteUrl}${versionPath(versions, line)}${locale === 'en' ? '' : `${locale}/`}`
+}
+
+// Version switcher: links to the same locale's home page in each version
+function buildVersionNav(locale: Locale): DefaultTheme.NavItemWithChildren {
+  const latestSuffix: Record<Locale, string> = {
+    en: ' (latest)',
+    'zh-TW': '（最新）',
+    ja: '（最新）',
+  }
+
+  return {
+    text: `v${docsVersion}`,
+    items: [versions.latest, ...versions.archived].map(line => ({
+      text: line === versions.latest ? `v${line}${latestSuffix[locale]}` : `v${line}`,
+      link: versionLocaleUrl(line, locale),
+      // Another version is another build, so skip client-side routing
+      target: '_self',
+      noIcon: true,
+    })),
+  }
+}
+
+// Notice shown on every page of an archived version
+function buildVersionBanner(locale: Locale): ThemeConfig['versionBanner'] {
+  if (docsVersion === versions.latest) return undefined
+
+  const labels: Record<Locale, { text: string; linkText: string }> = {
+    en: {
+      text: `You're viewing the docs for v${docsVersion}. The latest version is v${versions.latest}.`,
+      linkText: 'Go to the latest docs',
+    },
+    'zh-TW': {
+      text: `您正在瀏覽 v${docsVersion} 的文件。最新版本為 v${versions.latest}。`,
+      linkText: '前往最新文件',
+    },
+    ja: {
+      text: `v${docsVersion} のドキュメントを表示しています。最新バージョンは v${versions.latest} です。`,
+      linkText: '最新のドキュメントへ',
+    },
+  }
+
+  return { ...labels[locale], link: versionLocaleUrl(versions.latest, locale) }
 }
 
 // VitePress UI theme translations
@@ -200,9 +268,10 @@ const jaThemeConfig = {
 }
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
-  srcDir: 'docs',
-  base: '/ue-too-documentation/',
+export default defineConfigWithTheme<ThemeConfig>({
+  srcDir,
+  base: `${new URL(siteUrl).pathname}${versionPath(versions, docsVersion)}`,
+  outDir: `.vitepress/dist/${versionPath(versions, docsVersion)}`,
 
   title: 'uē-tôo',
   description: 'A modular TypeScript library for HTML canvas applications. Features include infinite canvas with pan/zoom/rotate, animation system, state machines, Bezier curves, 2D physics, geographic projections, and more.',
@@ -214,6 +283,7 @@ export default defineConfig({
       themeConfig: {
         nav: buildNav('en'),
         sidebar: buildSidebar('en'),
+        versionBanner: buildVersionBanner('en'),
       },
     },
     'zh-TW': {
@@ -224,6 +294,7 @@ export default defineConfig({
       themeConfig: {
         nav: buildNav('zh-TW'),
         sidebar: buildSidebar('zh-TW'),
+        versionBanner: buildVersionBanner('zh-TW'),
         ...zhTWThemeConfig,
       },
     },
@@ -235,6 +306,7 @@ export default defineConfig({
       themeConfig: {
         nav: buildNav('ja'),
         sidebar: buildSidebar('ja'),
+        versionBanner: buildVersionBanner('ja'),
         ...jaThemeConfig,
       },
     },
