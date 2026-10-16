@@ -98,7 +98,7 @@ function onMessage(event: MessageEvent) {
 function select(index: number) {
   if (index === current.value) return
   current.value = index
-  editor?.setCode(tabs[index]!.code)
+  editor?.showTab(tabs[index]!.id, tabs[index]!.code)
   run()
 }
 
@@ -132,6 +132,7 @@ onMounted(async () => {
   const { createEditor } = await import('./editor')
   if (unmounted || !editorHost.value) return
   editor = createEditor(editorHost.value, {
+    tabId: tabs[current.value]!.id,
     code: tabs[current.value]!.code,
     ariaLabel: 'Example code. Press Escape, then Tab, to leave the editor.',
     onChange: code => {

@@ -7,13 +7,16 @@
 import { indentWithTab } from '@codemirror/commands'
 import { javascript } from '@codemirror/lang-javascript'
 import { HighlightStyle, indentUnit, syntaxHighlighting } from '@codemirror/language'
-import { Prec, StateEffect, StateField, type Extension } from '@codemirror/state'
+import { EditorState, Prec, StateEffect, StateField, type Extension } from '@codemirror/state'
 import { Decoration, EditorView, keymap, type DecorationSet } from '@codemirror/view'
 import { tags } from '@lezer/highlight'
 import { basicSetup } from 'codemirror'
 
 export interface EditorHandle {
   getCode(): string
+  /** Switches to a tab's code; each tab keeps its own undo history, starting from `code` on its first visit */
+  showTab(tabId: string, code: string): void
+  /** Replaces the current tab's code (undoable) */
   setCode(code: string): void
   /** Highlights the line (1-based) and scrolls it into view; null clears it */
   setErrorLine(line: number | null): void
@@ -78,6 +81,7 @@ const theme = EditorView.theme({
 export function createEditor(
   parent: HTMLElement,
   opts: {
+    tabId: string
     code: string
     ariaLabel: string
     onChange(code: string): void
@@ -109,10 +113,20 @@ export function createEditor(
     theme,
   ]
 
-  const view = new EditorView({ doc: opts.code, extensions, parent })
+  const view = new EditorView({ state: EditorState.create({ doc: opts.code, extensions }), parent })
+
+  // One editor state per tab, so undo never reaches across tabs
+  const states = new Map<string, EditorState>()
+  let currentTab = opts.tabId
 
   return {
     getCode: () => view.state.doc.toString(),
+    showTab(tabId, code) {
+      if (tabId === currentTab) return
+      states.set(currentTab, view.state)
+      currentTab = tabId
+      view.setState(states.get(tabId) ?? EditorState.create({ doc: code, extensions }))
+    },
     setCode(code) {
       view.dispatch({ changes: { from: 0, to: view.state.doc.length, insert: code } })
       view.scrollDOM.scrollTop = 0

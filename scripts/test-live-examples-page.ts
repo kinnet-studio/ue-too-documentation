@@ -82,6 +82,12 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     await editCode(page, '// edited\n', { prepend: true })
     await page.getByTestId('tab-limits').click()
     await waitForStatus(page, 'Running')
+    // Undo stays within a tab: it must not bring back the previous tab's code
+    await page.locator('.cm-content').click()
+    await page.keyboard.press('Control+z')
+    const afterUndo = await page.locator('.cm-content').innerText()
+    assert(afterUndo.includes('setMinZoomLevel') && !afterUndo.includes('// edited'), 'undo on Zoom limits brought back Pan and zoom code')
+    assert((await page.getByTestId('tab-limits').getByTestId('edited').count()) === 0, 'undo marked Zoom limits as edited')
     await page.getByTestId('tab-pan-zoom').click()
     const text = await page.locator('.cm-content').innerText()
     assert(text.startsWith('// edited'), 'the edit was lost after switching tabs')
