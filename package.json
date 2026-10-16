@@ -15,6 +15,7 @@
     "docs:dev": "vitepress dev",
     "docs:build": "bun run scripts/build-versions.ts",
     "docs:preview": "vitepress preview",
-    "docs:import": "bun run scripts/import-docs.ts"
+    "docs:import": "bun run scripts/import-docs.ts",
+    "test": "bun test ./.vitepress"
   }
 }
