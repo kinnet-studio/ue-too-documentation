@@ -1,0 +1,39 @@
+# Runs the board live examples against their docs release, and drives the
+# built Live examples page. Doesn't block deploys (see deploy.yml).
+name: Live examples
+
+on:
+  # Mainly the release-import PR that ue-too opens on every release
+  pull_request:
+  # Direct fixes land on main too
+  push:
+    branches: ["main"]
+  # Catches breakage from outside, such as a CDN or browser change (Mondays 06:17 UTC)
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: ./.github/actions/setup-bun-env
+
+      - name: Install Chromium
+        run: bunx playwright install --with-deps chromium
+
+      - name: Unit tests
+        run: bun run test
+
+      - name: Run every live example
+        run: bun run test:examples
+
+      - name: Build the latest docs line
+        run: bunx vitepress build
+
+      - name: Check the Live examples page
+        run: bun run test:examples:page

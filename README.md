@@ -31,3 +31,26 @@ Each ue-too release opens a PR here that runs `bun run docs:import <version> <ue
 - a new minor or major copies `docs/` to `versions/v<previous line>/`, archives that line, and puts the new docs in `docs/`
 
 English is the root locale, so English pages live in `docs/<package>/` and other locales in `docs/<locale>/<package>/`. The import copies over existing files and never deletes any, so hand-written guides inside package folders are kept.
+
+## Live examples
+
+The board docs have a Live examples page (`docs/board/live-examples.md`) where readers pan and zoom a real canvas and edit and re-run the code. Each example is a plain JavaScript module in `docs/board/live-examples/`:
+
+- It imports only public `@ue-too/*` entry points and gets its canvas with `document.getElementById('graph')`, so readers can copy it into their own project as is.
+- It runs against the release in `versions.json` for its line (`@ue-too/board@<release>` from jsDelivr). When a new minor archives a line, its examples go with it and keep running that line's release.
+
+To add one, add a file there and an entry (`id`, `title`, `caption`, `code`) to `examples` in the page.
+
+Checks:
+
+```bash
+bun run test                  # unit tests for the playground helpers
+bun run test:examples         # runs every example headless against its line's release
+bunx vitepress build          # then:
+bun run test:examples:page    # drives the built page (running, errors, tabs, theme, phone width)
+```
+
+- `LIVE_EXAMPLES_CDN` replaces jsDelivr (e.g. with a local mirror), for the scripts and for `vitepress build`.
+- `CHROMIUM_EXECUTABLE` points the scripts at a specific Chromium; otherwise run `bunx playwright install chromium` once.
+
+The `Live examples` workflow runs all of these on pull requests (including each release-import PR), on pushes to `main` and weekly. It doesn't block deploys.
