@@ -41,3 +41,12 @@ div[align="center"] {
 .VPHomeHero .text {
   white-space: nowrap;
 }
+
+/* Live examples: room for the playground beside the sidebar, prose kept to a readable width */
+.live-examples-page .VPDoc .content-container {
+  max-width: 1040px;
+}
+
+.live-examples-page .vp-doc > div > :is(p, ul, table) {
+  max-width: 688px;
+}

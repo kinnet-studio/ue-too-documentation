@@ -2,10 +2,13 @@ import { defineConfigWithTheme, type DefaultTheme } from 'vitepress'
 import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
 import { loadVersions, releaseLine, siteLines, versionPath, versionSrcDir } from '../scripts/versions'
+import { DEFAULT_CDN } from './theme/live-playground/preview-doc'
 
 // Default theme config plus the archived-version notice rendered by the custom theme
 export interface ThemeConfig extends DefaultTheme.Config {
   versionBanner?: { text: string; link: string; linkText: string }
+  // The release live examples run against, and where its packages load from
+  livePlayground?: { release: string; cdn: string }
 }
 
 // Where the whole site is served. Each version is a separate build under it,
@@ -106,17 +109,26 @@ function fixSidebarLinks(sidebar: any[], locale: Locale): any[] {
   })
 }
 
-// Custom guide pages per package (keyed by package name)
-const customGuides: Record<string, Record<Locale, { text: string; file: string }>> = {
+// Custom pages per package (keyed by package name), listed after Overview in this order
+const customGuides: Record<string, Record<Locale, { text: string; file: string }[]>> = {
   being: {
-    en: { text: 'Usage Guide', file: 'usage-guide' },
-    'zh-TW': { text: '使用指南', file: 'usage-guide' },
-    ja: { text: '使用ガイド', file: 'usage-guide' },
+    en: [{ text: 'Usage Guide', file: 'usage-guide' }],
+    'zh-TW': [{ text: '使用指南', file: 'usage-guide' }],
+    ja: [{ text: '使用ガイド', file: 'usage-guide' }],
   },
   board: {
-    en: { text: 'Extending Input State Machines', file: 'extending-input-state-machines' },
-    'zh-TW': { text: 'Extending Input State Machines', file: 'extending-input-state-machines' },
-    ja: { text: 'Extending Input State Machines', file: 'extending-input-state-machines' },
+    en: [
+      { text: 'Live examples', file: 'live-examples' },
+      { text: 'Extending Input State Machines', file: 'extending-input-state-machines' },
+    ],
+    'zh-TW': [
+      { text: '即時範例', file: 'live-examples' },
+      { text: 'Extending Input State Machines', file: 'extending-input-state-machines' },
+    ],
+    ja: [
+      { text: 'ライブサンプル', file: 'live-examples' },
+      { text: 'Extending Input State Machines', file: 'extending-input-state-machines' },
+    ],
   },
 }
 
@@ -129,9 +141,8 @@ function addIndexToSidebar(sidebar: any[], locale: Locale, packageName: string):
   }
   const items = [indexItem]
 
-  // Add custom guide pages if they exist for this package
-  const guide = customGuides[packageName]?.[locale]
-  if (guide) {
+  // Add the package's custom pages that exist in this version and locale
+  for (const guide of customGuides[packageName]?.[locale] ?? []) {
     const guidePath = join(localeDocsDir(locale, packageName), `${guide.file}.md`)
     if (existsSync(guidePath)) {
       items.push({
@@ -346,6 +357,10 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
 
   themeConfig: {
+    livePlayground: {
+      release: docsRelease,
+      cdn: process.env.LIVE_EXAMPLES_CDN ?? DEFAULT_CDN,
+    },
     search: {
       provider: 'local',
     },

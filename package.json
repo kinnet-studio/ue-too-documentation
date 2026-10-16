@@ -1,8 +1,17 @@
 {
-  "dependencies": {},
+  "dependencies": {
+    "@codemirror/commands": "^6.11.1",
+    "@codemirror/lang-javascript": "^6.2.5",
+    "@codemirror/language": "^6.13.1",
+    "@codemirror/state": "^6.7.6",
+    "@codemirror/view": "^6.43.14",
+    "@lezer/highlight": "^1.2.5",
+    "codemirror": "^6.0.2"
+  },
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.15",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "playwright": "1.56.0",
+    "vitepress": "^2.0.0-alpha.15"
   },
   "name": "ue-too-doc",
   "module": "index.ts",
@@ -15,6 +24,9 @@
     "docs:dev": "vitepress dev",
     "docs:build": "bun run scripts/build-versions.ts",
     "docs:preview": "vitepress preview",
-    "docs:import": "bun run scripts/import-docs.ts"
+    "docs:import": "bun run scripts/import-docs.ts",
+    "test": "bun test ./.vitepress",
+    "test:examples": "bun run scripts/test-live-examples.ts",
+    "test:examples:page": "bun run scripts/test-live-examples-page.ts"
   }
 }
