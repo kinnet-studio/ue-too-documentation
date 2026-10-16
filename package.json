@@ -1,8 +1,9 @@
 {
   "dependencies": {},
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.15",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "playwright": "1.56.0",
+    "vitepress": "^2.0.0-alpha.15"
   },
   "name": "ue-too-doc",
   "module": "index.ts",
@@ -16,6 +17,7 @@
     "docs:build": "bun run scripts/build-versions.ts",
     "docs:preview": "vitepress preview",
     "docs:import": "bun run scripts/import-docs.ts",
-    "test": "bun test ./.vitepress"
+    "test": "bun test ./.vitepress",
+    "test:examples": "bun run scripts/test-live-examples.ts"
   }
 }
