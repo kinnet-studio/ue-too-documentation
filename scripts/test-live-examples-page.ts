@@ -62,6 +62,22 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     await context.close()
   },
 
+  async 'fly-tab-runs'(browser) {
+    const { context, page } = await openPage(browser)
+    await page.goto(pageUrl)
+    await waitForStatus(page, 'Running')
+    await page.getByTestId('tab-fly').click()
+    await waitForStatus(page, 'Running')
+    const preview = page.frameLocator('iframe')
+    await preview.getByRole('button', { name: 'Fly away' }).click()
+    await page.waitForTimeout(1500)
+    await preview.getByRole('button', { name: 'Back to start' }).click()
+    await page.waitForTimeout(1500)
+    await waitForStatus(page, 'Running')
+    assert((await page.getByTestId('console-row').count()) === 0, 'the Fly back to start example logged errors')
+    await context.close()
+  },
+
   async 'edit-and-error'(browser) {
     const { context, page } = await openPage(browser)
     await page.goto(pageUrl)
