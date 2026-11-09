@@ -45,14 +45,16 @@ runs:
       env:
         NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
 
+    # Inputs reach a composite action as strings, and the string 'false' is
+    # truthy, so compare against 'true' rather than testing the input directly
     - name: Install dependencies
-      if: ${{ inputs.install-deps }}
+      if: ${{ inputs.install-deps == 'true' }}
       shell: bash
       run: |
         bun ci
 
     - name: Build packages
-      if: ${{ inputs.build }}
+      if: ${{ inputs.build == 'true' }}
       shell: bash
       run: 
         bun run docs:build
