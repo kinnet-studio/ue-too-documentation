@@ -1,5 +1,6 @@
 # Runs the board live examples against their docs release, and drives the
-# built Live examples page. Doesn't block deploys (see deploy.yml).
+# built Live examples page and the home page canvas. Doesn't block deploys
+# (see deploy.yml).
 name: Live examples
 
 on:
@@ -37,3 +38,6 @@ jobs:
 
       - name: Check the Live examples page
         run: bun run test:examples:page
+
+      - name: Check the home page canvas
+        run: bun run test:home:page

@@ -28,6 +28,7 @@
     "docs:import": "bun run scripts/import-docs.ts",
     "test": "bun test ./.vitepress",
     "test:examples": "bun run scripts/test-live-examples.ts",
-    "test:examples:page": "bun run scripts/test-live-examples-page.ts"
+    "test:examples:page": "bun run scripts/test-live-examples-page.ts",
+    "test:home:page": "bun run scripts/test-home-page.ts"
   }
 }
