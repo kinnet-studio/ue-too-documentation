@@ -73,19 +73,23 @@ function onFocusOut(event: FocusEvent) {
   if (heroLinks().includes(event.target as HTMLAnchorElement)) handle?.setFocused(-1)
 }
 
+// Shows the HTML hero instead of the canvas (custom.css)
+function fallBack(error: unknown) {
+  console.error(error)
+  handle = null
+  document.documentElement.classList.add('canvas-home-failed')
+}
+
 onMounted(async () => {
-  const root = document.documentElement
-  root.classList.add('canvas-home')
+  document.documentElement.classList.add('canvas-home')
   document.addEventListener('focusin', onFocusIn)
   document.addEventListener('focusout', onFocusOut)
   try {
     const { mountCanvasHome } = await import('./canvas-home')
     if (unmounted || !canvasEl.value) return
-    handle = mountCanvasHome(canvasEl.value, { content: content(), hint: hint(), onActivate: activate })
+    handle = mountCanvasHome(canvasEl.value, { content: content(), hint: hint(), onActivate: activate, onError: fallBack })
   } catch (error) {
-    // Fall back to the HTML hero
-    console.error(error)
-    root.classList.add('canvas-home-failed')
+    fallBack(error)
   }
 })
 
@@ -118,9 +122,5 @@ onBeforeUnmount(() => {
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
-}
-
-:global(html.canvas-home-failed) .canvas-home {
-  display: none;
 }
 </style>

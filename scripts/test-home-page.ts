@@ -9,7 +9,7 @@
  * first) with `vitepress preview` on port 4173.
  */
 
-import type { Browser, BrowserContextOptions, Page } from 'playwright'
+import type { Browser, BrowserContext, BrowserContextOptions, Page } from 'playwright'
 import { launchBrowser } from './browser'
 // For the window.__canvasHome test hook's type
 import type {} from '../.vitepress/theme/canvas-home/canvas-home'
@@ -18,8 +18,9 @@ const TIMEOUT = 20000
 const DEFAULT_URL = 'http://localhost:4173/ue-too-documentation/'
 
 const urlFlag = process.argv.indexOf('--url')
-const siteUrl = (urlFlag === -1 ? DEFAULT_URL : process.argv[urlFlag + 1])?.replace(/\/?$/, '/')
-if (!siteUrl) throw new Error('--url needs the site root URL')
+const urlArg = urlFlag === -1 ? DEFAULT_URL : process.argv[urlFlag + 1]
+if (!urlArg) throw new Error('--url needs the site root URL')
+const siteUrl = urlArg.replace(/\/?$/, '/')
 
 interface Rect {
   x: number
@@ -78,6 +79,34 @@ async function canvasGone(page: Page) {
   assert((await page.locator('canvas.canvas-home').count()) === 0, 'the home canvas outlived the home page')
   const classes = await page.evaluate(() => document.documentElement.className)
   assert(!/\bcanvas-home\b/.test(classes), `<html> still has the canvas-home class: ${classes}`)
+}
+
+const PHONE: BrowserContextOptions = { viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true, deviceScaleFactor: 2 }
+
+// When the canvas can't run, the HTML hero shows and the page scrolls as usual; returns the page errors
+async function expectFallback(context: BrowserContext): Promise<string[]> {
+  const page = await context.newPage()
+  const errors: string[] = []
+  page.on('pageerror', error => errors.push(error.message))
+  page.on('console', message => {
+    if (message.type() === 'error') errors.push(message.text())
+  })
+  await page.goto(siteUrl)
+  await page
+    .waitForFunction(() => document.documentElement.classList.contains('canvas-home-failed'), null, { timeout: TIMEOUT })
+    .catch(() => {
+      throw new Error('the page never fell back to the HTML hero')
+    })
+  await page.waitForTimeout(500)
+  const heading = await page.locator('.VPHomeHero h1').boundingBox()
+  assert(heading && heading.width > 100, `the HTML hero is hidden: ${JSON.stringify(heading)}`)
+  assert(await page.locator('.VPHomeHero .actions a').first().isVisible(), 'the hero link is not visible')
+  assert(await page.locator('.VPNav').isVisible(), 'the top bar is not visible')
+  assert(!(await page.locator('canvas.canvas-home').isVisible()), 'the canvas still shows')
+  const overflow = await page.evaluate(() => getComputedStyle(document.documentElement).overflow)
+  assert(overflow !== 'hidden', 'the page is still scroll-locked')
+  await context.close()
+  return errors
 }
 
 const checks: Record<string, (browser: Browser) => Promise<void>> = {
@@ -159,6 +188,20 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     await page.keyboard.down('Control')
     const [popup] = await Promise.all([context.waitForEvent('page', { timeout: TIMEOUT }), page.mouse.click(x, y)])
     await page.keyboard.up('Control')
+    await popup.waitForLoadState()
+    assert(/\/packages(\.html)?$/.test(new URL(popup.url()).pathname), `new tab opened ${popup.url()}`)
+    assert(page.url() === url, `the home tab navigated to ${page.url()}`)
+    await context.close()
+  },
+
+  async 'middle-click-new-tab'(browser) {
+    const { context, page } = await openHome(browser)
+    const url = page.url()
+    const { x, y } = centre(await buttonRect(page))
+    const [popup] = await Promise.all([
+      context.waitForEvent('page', { timeout: TIMEOUT }),
+      page.mouse.click(x, y, { button: 'middle' }),
+    ])
     await popup.waitForLoadState()
     assert(/\/packages(\.html)?$/.test(new URL(popup.url()).pathname), `new tab opened ${popup.url()}`)
     assert(page.url() === url, `the home tab navigated to ${page.url()}`)
@@ -256,12 +299,7 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
   },
 
   async phone(browser) {
-    const { context, page } = await openHome(browser, '', {
-      viewport: { width: 390, height: 844 },
-      hasTouch: true,
-      isMobile: true,
-      deviceScaleFactor: 2,
-    })
+    const { context, page } = await openHome(browser, '', PHONE)
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
     assert(overflow === 0, `the page scrolls sideways by ${overflow}px`)
     const before = await buttonRect(page)
@@ -269,7 +307,7 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
 
     // One finger drags the canvas
     const cdp = await context.newCDPSession(page)
-    const touch = (type: string, x: number, y: number) =>
+    const touch = (type: 'touchStart' | 'touchMove' | 'touchEnd', x: number, y: number) =>
       cdp.send('Input.dispatchTouchEvent', { type, touchPoints: type === 'touchEnd' ? [] : [{ x, y }] })
     await touch('touchStart', 100, 720)
     for (let i = 1; i <= 6; i++) await touch('touchMove', 100 + i * 10, 720 + i * 10)
@@ -282,6 +320,52 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     await page.touchscreen.tap(x, y)
     await onPackagesPage(page)
     await context.close()
+  },
+
+  async 'second-finger'(browser) {
+    const { context, page } = await openHome(browser, '', PHONE)
+    const camera = () => page.evaluate(() => window.__canvasHome!.camera())
+    const cdp = await context.newCDPSession(page)
+    const touch = (type: 'touchStart' | 'touchMove' | 'touchEnd', points: { x: number; y: number; id: number }[]) =>
+      cdp.send('Input.dispatchTouchEvent', { type, touchPoints: points })
+    // One finger pans 200px, then a second finger lands and both barely move
+    await touch('touchStart', [{ x: 100, y: 600, id: 0 }])
+    for (let i = 1; i <= 10; i++) await touch('touchMove', [{ x: 100 + i * 20, y: 600, id: 0 }])
+    const before = await camera()
+    await touch('touchStart', [{ x: 300, y: 600, id: 0 }, { x: 300, y: 700, id: 1 }])
+    for (let i = 1; i <= 2; i++) await touch('touchMove', [{ x: 300, y: 600 + i, id: 0 }, { x: 300, y: 700 + i, id: 1 }])
+    await touch('touchEnd', [])
+    await page.waitForTimeout(100)
+    const after = await camera()
+    near(after.zoom, before.zoom, 0.05, 'zoom after the second finger landed')
+    assert(Math.hypot(after.x - before.x, after.y - before.y) < 10, `the camera jumped from ${JSON.stringify(before)} to ${JSON.stringify(after)}`)
+    await context.close()
+  },
+
+  async 'failed-import'(browser) {
+    const context = await browser.newContext({ viewport: { width: 1400, height: 1000 } })
+    await context.route(/\/chunks\/canvas-home\.[^/]*\.js$/, route => route.abort())
+    await expectFallback(context)
+  },
+
+  async 'old-browser'(browser) {
+    const context = await browser.newContext({ viewport: { width: 1400, height: 1000 } })
+    // Safari before 18 has no context.reset(), which the board calls every frame
+    await context.addInitScript(() => {
+      delete (CanvasRenderingContext2D.prototype as Partial<CanvasRenderingContext2D>).reset
+    })
+    await expectFallback(context)
+  },
+
+  async 'draw-error'(browser) {
+    const context = await browser.newContext({ viewport: { width: 1400, height: 1000 } })
+    await context.addInitScript(() => {
+      CanvasRenderingContext2D.prototype.fillText = () => {
+        throw new Error('fillText failed')
+      }
+    })
+    const errors = await expectFallback(context)
+    assert(errors.length <= 2, `the failing frame kept running: ${errors.length} errors`)
   },
 
   async 'no-javascript'(browser) {

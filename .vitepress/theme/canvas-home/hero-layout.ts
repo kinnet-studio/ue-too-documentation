@@ -168,13 +168,18 @@ export function layoutHero(content: HeroContent, viewportWidth: number, fontFami
   return { lines, buttons, width, height: y }
 }
 
-// One CJK character, which may break on either side
+// CJK characters, which may break on either side, except that a line never
+// starts with closing punctuation or small kana (NO_START) and never ends with
+// an opening bracket (OPEN); those stick to their neighbour
 const CJK = '\\u2e80-\\u2fff\\u3000-\\u303f\\u3040-\\u30ff\\u3100-\\u31ff\\u3400-\\u4dbf\\u4e00-\\u9fff\\uf900-\\ufaff\\uff00-\\uffef'
-const TOKEN = new RegExp(`[${CJK}]|[^\\s${CJK}]+|\\s+`, 'gu')
+const NO_START = '、。，．・：；？！）」』】〕〉》ー々ゝゞヽヾぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮヵヶ'
+const OPEN = '「『（【〔〈《'
+const TOKEN = new RegExp(`[${OPEN}]*(?:[${CJK}]|[^\\s${CJK}]+)[${NO_START}]*|\\s+`, 'gu')
 
 /**
  * Splits text into lines no wider than `maxWidth`, breaking at spaces and
- * between CJK characters. A word wider than the line gets a line of its own.
+ * between CJK characters (following the basic Japanese line-start and
+ * line-end rules). A word wider than the line gets a line of its own.
  */
 export function wrapText(text: string, maxWidth: number, measure: (s: string) => number): string[] {
   const lines: string[] = []

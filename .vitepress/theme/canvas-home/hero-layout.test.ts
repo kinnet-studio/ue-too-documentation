@@ -100,6 +100,27 @@ describe('wrapText', () => {
     expect(wrapText('無限畫布動畫狀態機', 30, width)).toEqual(['無限畫', '布動畫', '狀態機'])
   })
 
+  test('never starts a line with closing punctuation or small kana', () => {
+    expect(wrapText('あいう。えお', 30, width)).toEqual(['あい', 'う。え', 'お'])
+    expect(wrapText('パッケージ', 20, width)).toEqual(['パッ', 'ケー', 'ジ'])
+    expect(wrapText('Canvas。あ', 60, width)).toEqual(['Canvas。', 'あ'])
+  })
+
+  test('keeps an opening bracket with the character after it', () => {
+    expect(wrapText('あいう「えお」', 30, width)).toEqual(['あいう', '「え', 'お」'])
+  })
+
+  test('Japanese tagline lines start and end cleanly', () => {
+    const tagline =
+      '無限キャンバス、アニメーション、ステートマシン、カーブ、物理エンジンなど。リッチなCanvas アプリケーションを構築するためのモジュラーライブラリ。'
+    for (const max of [40, 50, 70, 90, 130]) {
+      for (const line of wrapText(tagline, max, width)) {
+        expect(line).not.toMatch(/^[、。ーッャュョァィゥェォ）」]/)
+        expect(line).not.toMatch(/[「（]$/)
+      }
+    }
+  })
+
   test('keeps a word longer than the line on its own line', () => {
     expect(wrapText('a verylongword b', 50, width)).toEqual(['a', 'verylongword', 'b'])
   })

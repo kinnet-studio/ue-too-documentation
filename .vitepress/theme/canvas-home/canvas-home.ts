@@ -17,6 +17,8 @@ export interface CanvasHomeOptions {
   hint: string
   /** A hero button was clicked; `newTab` for Ctrl/Cmd/Shift or a middle click */
   onActivate: (index: number, newTab: boolean) => void
+  /** Drawing failed; the canvas has already been torn down */
+  onError: (error: unknown) => void
 }
 
 export interface CanvasHomeHandle {
@@ -100,7 +102,16 @@ function setLetterSpacing(ctx: LetterSpacingContext, px: number) {
   if ('letterSpacing' in ctx) ctx.letterSpacing = `${px}px`
 }
 
+/**
+ * Mounts the canvas. Throws if the browser lacks what the board draws with
+ * (Safari before 18 has no `context.reset()`), so the caller can fall back to
+ * the HTML hero.
+ */
 export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOptions): CanvasHomeHandle {
+  const prototype = CanvasRenderingContext2D.prototype
+  if (!('reset' in prototype) || !('roundRect' in prototype)) {
+    throw new Error('This browser cannot draw the home page canvas')
+  }
   const board = new Board(canvas)
   board.fullScreen = true
   // Bound the camera centre, not the whole viewport, so zooming out isn't limited by the bounds
@@ -172,8 +183,10 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
 
   function onPointerDown(event: PointerEvent) {
     if (event.pointerType === 'mouse' && event.button !== 0 && event.button !== 1) return
-    // Space + drag is the board's own pan; leave it alone
-    if (!boardIdle()) return
+    // Space + drag is the board's own pan; leave it alone. A middle press has
+    // just put the board in its own pan state, but may still be a click
+    const middle = event.pointerType === 'mouse' && event.button === 1
+    if (!middle && !boardIdle()) return
     tracker.down(event.pointerId, { x: event.clientX, y: event.clientY })
     if (!tracker.active) {
       // A second finger: the board's pinch and two-finger pan take over
@@ -218,6 +231,17 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
     hovered = -1
   }
 
+  // The board only records touches while two fingers are down. Keep its record
+  // of a one-finger drag current, so a second finger landing mid-drag isn't
+  // read as a pinch spanning the whole drag
+  function onTouchMove(event: TouchEvent) {
+    const machine = board.touchInputStateMachine
+    if (!machine || machine.currentState !== 'IDLE') return
+    machine.context.updateTouchPoints(
+      [...event.targetTouches].map(touch => ({ ident: touch.identifier, x: touch.clientX, y: touch.clientY }))
+    )
+  }
+
   // The board sizes the canvas to the window once; keep it that way
   function onResize() {
     board.fullScreen = true
@@ -229,6 +253,7 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
   canvas.addEventListener('pointerup', onPointerUp)
   canvas.addEventListener('pointercancel', onPointerCancel)
   canvas.addEventListener('pointerleave', onPointerLeave)
+  canvas.addEventListener('touchmove', onTouchMove, { passive: true })
   window.addEventListener('resize', onResize)
   document.fonts.addEventListener('loadingdone', relayout)
 
@@ -317,8 +342,7 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
     ctx.restore()
   }
 
-  function draw(timestamp: number) {
-    frame = requestAnimationFrame(draw)
+  function render(timestamp: number) {
     board.step(timestamp)
     const ctx = board.context as LetterSpacingContext | undefined
     if (!ctx) return
@@ -326,6 +350,32 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
     drawGrid(ctx, zoom)
     drawHero(ctx, zoom)
     drawHint(ctx)
+  }
+
+  // A frame that throws stops the loop and hands back to the HTML hero
+  function draw(timestamp: number) {
+    try {
+      render(timestamp)
+    } catch (error) {
+      destroy()
+      options.onError(error)
+      return
+    }
+    frame = requestAnimationFrame(draw)
+  }
+
+  function destroy() {
+    cancelAnimationFrame(frame)
+    canvas.removeEventListener('pointerdown', onPointerDown)
+    canvas.removeEventListener('pointermove', onPointerMove)
+    canvas.removeEventListener('pointerup', onPointerUp)
+    canvas.removeEventListener('pointercancel', onPointerCancel)
+    canvas.removeEventListener('pointerleave', onPointerLeave)
+    canvas.removeEventListener('touchmove', onTouchMove)
+    window.removeEventListener('resize', onResize)
+    document.fonts.removeEventListener('loadingdone', relayout)
+    board.tearDown()
+    if (window.__canvasHome === handle) delete window.__canvasHome
   }
 
   frameHero()
@@ -351,18 +401,7 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
         rect.left >= 0 && rect.right <= window.innerWidth && rect.top >= navHeight() && rect.bottom <= window.innerHeight
       if (!inView) rig.panToWorld({ x: button.x + button.width / 2, y: button.y + button.height / 2 })
     },
-    destroy() {
-      cancelAnimationFrame(frame)
-      canvas.removeEventListener('pointerdown', onPointerDown)
-      canvas.removeEventListener('pointermove', onPointerMove)
-      canvas.removeEventListener('pointerup', onPointerUp)
-      canvas.removeEventListener('pointercancel', onPointerCancel)
-      canvas.removeEventListener('pointerleave', onPointerLeave)
-      window.removeEventListener('resize', onResize)
-      document.fonts.removeEventListener('loadingdone', relayout)
-      board.tearDown()
-      if (window.__canvasHome === handle) delete window.__canvasHome
-    },
+    destroy,
     buttonRects() {
       return layout.buttons.map(windowRect)
     },
