@@ -32,6 +32,16 @@ Each ue-too release opens a PR here that runs `bun run docs:import <version> <ue
 
 English is the root locale, so English pages live in `docs/<package>/` and other locales in `docs/<locale>/<package>/`. The import copies over existing files and never deletes any, so hand-written guides inside package folders are kept.
 
+## Home page
+
+Each home page (every locale and version) is a full-window `@ue-too/board` canvas with the hero drawn on it: drag to pan, Ctrl + scroll or pinch to zoom, click the button to follow it. The code is in `.vitepress/theme/canvas-home/`:
+
+- The text comes from the `hero` frontmatter of each `index.md`, so editing it there changes the canvas too.
+- The stock VitePress hero stays in the page, visually hidden, for screen readers, search engines and keyboard users. Clicking a button on the canvas activates its hidden link, and tabbing to that link draws a focus ring on the canvas. If the canvas can't load, or JavaScript is off, the HTML hero shows instead.
+- The board version is pinned in `package.json` and bundled with the site; it doesn't follow the docs release on its own.
+
+Check it with `bunx vitepress build`, then `bun run test:home:page`. It runs in the `Live examples` workflow too.
+
 ## Live examples
 
 The board docs have a Live examples page (`docs/board/live-examples.md`) where readers pan and zoom a real canvas and edit and re-run the code. Each example is a plain JavaScript module in `docs/board/live-examples/`:

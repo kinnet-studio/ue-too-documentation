@@ -317,6 +317,15 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
   },
 
+  head: [
+    // Without JavaScript there's no home page canvas: show the HTML hero instead
+    [
+      'noscript',
+      {},
+      '<style>.canvas-home{display:none!important}.VPContent.is-home .VPHomeHero{position:static!important;width:auto!important;height:auto!important;overflow:visible!important;clip-path:none!important;white-space:normal!important}</style>',
+    ],
+  ],
+
   title: 'uē-tôo',
   description: 'A modular TypeScript library for HTML canvas applications. Features include infinite canvas with pan/zoom/rotate, animation system, state machines, Bezier curves, 2D physics, geographic projections, and more.',
 

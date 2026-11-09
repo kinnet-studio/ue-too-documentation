@@ -37,6 +37,9 @@ const { theme } = useData<ThemeConfig>()
 }
 
 .home {
+  /* Above the home page canvas */
+  position: relative;
+  z-index: 1;
   padding: 24px 24px 0;
 }
 
