@@ -4,7 +4,7 @@
 
 > **useCoordinateConversion**(): (`event`) => `Point`
 
-Defined in: [board-pixi-react-integration/src/hooks/pixi/utils.ts:95](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-pixi-react-integration/src/hooks/pixi/utils.ts#L95)
+Defined in: [board-pixi-react-integration/src/hooks/pixi/utils.ts:95](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-pixi-react-integration/src/hooks/pixi/utils.ts#L95)
 
 ## Returns
 

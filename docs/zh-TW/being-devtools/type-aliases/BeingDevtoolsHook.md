@@ -4,7 +4,7 @@
 
 > **BeingDevtoolsHook** = `object`
 
-定義於: [hook.ts:24](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/hook.ts#L24)
+定義於: [hook.ts:24](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/hook.ts#L24)
 
 The console hook at `window.__UE_TOO_BEING__`, present while at least
 one panel is alive.
@@ -21,7 +21,7 @@ overlay panel, exactly like `attachMachineDebugger`.
 
 > `readonly` **machines**: `ReadonlyMap`\<`string`, [`MachineLike`](MachineLike.md)\>
 
-定義於: [hook.ts:25](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/hook.ts#L25)
+定義於: [hook.ts:25](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/hook.ts#L25)
 
 ## 方法
 
@@ -29,7 +29,7 @@ overlay panel, exactly like `attachMachineDebugger`.
 
 > **attach**(`machine`, `options?`): [`AttachHandle`](AttachHandle.md)
 
-定義於: [hook.ts:28](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/hook.ts#L28)
+定義於: [hook.ts:28](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/hook.ts#L28)
 
 #### 參數
 
@@ -51,7 +51,7 @@ overlay panel, exactly like `attachMachineDebugger`.
 
 > **close**(): `void`
 
-定義於: [hook.ts:27](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/hook.ts#L27)
+定義於: [hook.ts:27](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/hook.ts#L27)
 
 #### 回傳
 
@@ -63,7 +63,7 @@ overlay panel, exactly like `attachMachineDebugger`.
 
 > **open**(): `void`
 
-定義於: [hook.ts:26](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/hook.ts#L26)
+定義於: [hook.ts:26](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/hook.ts#L26)
 
 #### 回傳
 

@@ -4,7 +4,7 @@
 
 > **extendState**\<`E`, `C`, `S`, `O`\>(`original`, `extension`): [`State`](../interfaces/State.md)\<`E`, `C`, `S`, `O`\>
 
-定義: [expansion.ts:231](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/expansion.ts#L231)
+定義: [expansion.ts:231](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/expansion.ts#L231)
 
 Builds a state for a wider machine out of an existing state plus additions.
 

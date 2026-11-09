@@ -4,4 +4,4 @@
 
 > `const` **DEFAULT\_HOTKEY**: `"ctrl+shift+m"` = `'ctrl+shift+m'`
 
-定義: [debugger.ts:36](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/debugger.ts#L36)
+定義: [debugger.ts:36](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/debugger.ts#L36)

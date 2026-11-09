@@ -4,7 +4,7 @@
 
 > **TouchEventMapping** = `object`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:80](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L80)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:80](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L80)
 
 Event mapping for the touch input state machine.
 
@@ -19,7 +19,7 @@ the three core touch events: touchstart, touchmove, and touchend.
 
 > **touchend**: [`TouchEventPayload`](TouchEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:83](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L83)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:83](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L83)
 
 ***
 
@@ -27,7 +27,7 @@ the three core touch events: touchstart, touchmove, and touchend.
 
 > **touchmove**: [`TouchEventPayload`](TouchEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:82](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L82)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:82](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L82)
 
 ***
 
@@ -35,4 +35,4 @@ the three core touch events: touchstart, touchmove, and touchend.
 
 > **touchstart**: [`TouchEventPayload`](TouchEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:81](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L81)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:81](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L81)

@@ -4,7 +4,7 @@
 
 > **destinationFromOriginOnGreatCircle**(`startCoord`, `bearing`, `distance`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-定義: [greateCircle.ts:200](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/border/src/greateCircle.ts#L200)
+定義: [greateCircle.ts:200](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/border/src/greateCircle.ts#L200)
 
 Calculates the destination point given a start point, bearing, and distance on a great circle.
 

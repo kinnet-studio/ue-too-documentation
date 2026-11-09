@@ -2,7 +2,7 @@
 
 # インターフェイス: TeardownTarget
 
-定義: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:3](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L3)
+定義: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:3](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L3)
 
 The slice of `BaseAppComponents` the teardown needs. Structural so it can
  be unit-tested without a Pixi renderer.
@@ -13,7 +13,7 @@ The slice of `BaseAppComponents` the teardown needs. Structural so it can
 
 > **app**: `object`
 
-定義: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:6](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L6)
+定義: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:6](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L6)
 
 #### destroy()
 
@@ -43,7 +43,7 @@ The slice of `BaseAppComponents` the teardown needs. Structural so it can
 
 > **cleanup**: () => `void`
 
-定義: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:4](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L4)
+定義: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:4](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L4)
 
 #### 戻り値
 
@@ -55,7 +55,7 @@ The slice of `BaseAppComponents` the teardown needs. Structural so it can
 
 > **cleanups**: () => `void`[]
 
-定義: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:5](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L5)
+定義: [board-pixi-react-integration/src/hooks/pixi/teardown.ts:5](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-pixi-react-integration/src/hooks/pixi/teardown.ts#L5)
 
 #### 戻り値
 

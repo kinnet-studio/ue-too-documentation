@@ -4,7 +4,7 @@
 
 > **expandKmtInputStateMachine**\<`E`, `C`, `S`, `O`\>(`context`, `define`, `initialState`): `TemplateStateMachine`\<`E`, `C`, `S`, `O`\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:884](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L884)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:884](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L884)
 
 Builds a KMT input state machine with more events, states, context or outputs
 than the stock one, reusing every built-in state.

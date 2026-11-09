@@ -4,7 +4,7 @@
 
 > **samePoint**(`a`, `b`, `precision?`): `boolean`
 
-Defined in: [index.ts:864](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/math/src/index.ts#L864)
+Defined in: [index.ts:864](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/math/src/index.ts#L864)
 
 Checks if two points are approximately at the same location.
 

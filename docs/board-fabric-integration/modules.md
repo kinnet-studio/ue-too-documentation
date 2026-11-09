@@ -1,4 +1,4 @@
-# @ue-too/board-fabric-integration v0.19.2
+# @ue-too/board-fabric-integration v0.20.0
 
 ## Documents
 
