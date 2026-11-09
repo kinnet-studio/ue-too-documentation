@@ -254,7 +254,10 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     await page.mouse.move(x, y)
     assert((await cursor()) === 'pointer', `cursor over Back to start is ${await cursor()}`)
     await page.mouse.click(x, y)
-    await page.waitForTimeout(1500)
+    await page.waitForTimeout(200)
+    // The pill hides during the flight, so the cursor over the now empty canvas is a hand again
+    assert((await cursor()) === 'grab', `cursor during the flight is ${await cursor()}`)
+    await page.waitForTimeout(1300)
     const end = await camera(page)
     assert(end.x === start.x && end.y === start.y && end.zoom === start.zoom, `landed at ${JSON.stringify(end)}, start was ${JSON.stringify(start)}`)
     assert((await backRect(page)) === null, 'Back to start still shows at the start view')
@@ -293,6 +296,34 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     const end = await camera(page)
     assert(end.x === afterDrag.x && end.y === afterDrag.y && end.zoom === afterDrag.zoom, `the flight kept going after the drag: ${JSON.stringify(afterDrag)} → ${JSON.stringify(end)}`)
     assert(end.x !== start.x || end.y !== start.y, 'the camera still reached the start view')
+    await context.close()
+  },
+
+  async 'back-to-start-two-fingers'(browser) {
+    const { context, page } = await openHome(browser, '', PHONE)
+    const cdp = await context.newCDPSession(page)
+    const touch = (type: 'touchStart' | 'touchMove' | 'touchEnd', points: { x: number; y: number; id: number }[]) =>
+      cdp.send('Input.dispatchTouchEvent', { type, touchPoints: points })
+    const swipe = async (dx: number) => {
+      await touch('touchStart', [{ x: 100, y: 400, id: 0 }])
+      for (let i = 1; i <= 6; i++) await touch('touchMove', [{ x: 100 + (i * dx) / 6, y: 400, id: 0 }])
+      await touch('touchEnd', [])
+      await page.waitForTimeout(100)
+    }
+    await swipe(120)
+    const rect = await backRect(page)
+    assert(rect, 'Back to start did not show after panning')
+    const pill = centre(rect)
+    // A finger on the canvas, then a second on the pill. touchEnd lifts them in
+    // the order they went down, so the canvas finger lifts while the pill is pressed
+    await touch('touchStart', [{ x: 100, y: 300, id: 0 }])
+    await touch('touchStart', [{ x: 100, y: 300, id: 0 }, { x: pill.x, y: pill.y, id: 1 }])
+    await touch('touchEnd', [])
+    await page.waitForTimeout(1300)
+    const before = await camera(page)
+    await swipe(60)
+    const after = await camera(page)
+    assert(after.x !== before.x, `one finger no longer pans after a two-finger press on Back to start: ${JSON.stringify(before)} → ${JSON.stringify(after)}`)
     await context.close()
   },
 

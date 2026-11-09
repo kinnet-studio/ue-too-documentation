@@ -35,10 +35,7 @@ export function isAway(camera: View, home: View): boolean {
   return Math.hypot(dx, dy) * camera.zoomLevel > AWAY_PX || Math.abs(Math.log(camera.zoomLevel / home.zoomLevel)) > AWAY_ZOOM
 }
 
-/**
- * Where the pill sits, in window coordinates: centred, just above `bottom`
- * (the top of the hint, or the screen's bottom margin when there's no hint).
- */
+/** Where the pill sits, in window coordinates: centred, just above `bottom` (the top of the hint). */
 export function backPillRect(labelWidth: number, windowWidth: number, bottom: number): Rect {
   const width = Math.min(labelWidth + PILL_PADDING, windowWidth - GUTTER * 2)
   return {

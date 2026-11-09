@@ -242,20 +242,17 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
     // just put the board in its own pan state, but may still be a click
     const middle = event.pointerType === 'mouse' && event.button === 1
     if (!middle && !boardIdle()) return
-    // A press on Back to start is a click on it, never a pan
-    if (!middle && backRect && inRect(backRect, { x: event.clientX, y: event.clientY })) {
-      backPressed = true
-      canvas.setPointerCapture?.(event.pointerId)
-      return
-    }
     tracker.down(event.pointerId, { x: event.clientX, y: event.clientY })
     if (!tracker.active) {
       // A second finger: the board's pinch and two-finger pan take over
       pressed = -1
+      backPressed = false
       return
     }
     pressButton = event.button
-    pressed = hitButton(layout, worldAt(event))
+    // Like a hero button, Back to start is clicked by a press that doesn't drag
+    backPressed = !middle && !!backRect && inRect(backRect, { x: event.clientX, y: event.clientY })
+    pressed = backPressed ? -1 : hitButton(layout, worldAt(event))
     canvas.setPointerCapture?.(event.pointerId)
   }
 
@@ -263,6 +260,7 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
     const delta = tracker.move(event.pointerId, { x: event.clientX, y: event.clientY })
     if (delta) {
       pressed = -1
+      backPressed = false
       // The middle button's drag is the board's own pan
       if (pressButton === 0 && boardIdle()) {
         // Dragging takes the camera back from a flight
@@ -272,25 +270,26 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
     }
     if (!tracker.active) {
       const mouse = event.pointerType === 'mouse'
-      hovered = mouse ? hitButton(layout, worldAt(event)) : -1
+      // The pill is drawn over the hero, so it wins the hover
       backHovered = mouse && !!backRect && inRect(backRect, { x: event.clientX, y: event.clientY })
+      hovered = mouse && !backHovered ? hitButton(layout, worldAt(event)) : -1
     }
     updateCursor()
   }
 
   function onPointerUp(event: PointerEvent) {
-    if (backPressed) {
-      backPressed = false
-      if (backRect && inRect(backRect, { x: event.clientX, y: event.clientY })) goBack()
-      updateCursor()
-      return
-    }
     const press = tracker.up(event.pointerId, { x: event.clientX, y: event.clientY })
     const target = pressed
+    const back = backPressed
     pressed = -1
-    if (press && !press.dragged && target >= 0 && hitButton(layout, worldAt(event)) === target) {
-      const newTab = event.ctrlKey || event.metaKey || event.shiftKey || event.button === 1
-      options.onActivate(target, newTab)
+    backPressed = false
+    if (press && !press.dragged) {
+      if (back && backRect && inRect(backRect, { x: event.clientX, y: event.clientY })) {
+        goBack()
+      } else if (target >= 0 && hitButton(layout, worldAt(event)) === target) {
+        const newTab = event.ctrlKey || event.metaKey || event.shiftKey || event.button === 1
+        options.onActivate(target, newTab)
+      }
     }
     updateCursor()
   }
@@ -423,7 +422,11 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
   function drawBack(ctx: LetterSpacingContext) {
     if (!showBack()) {
       backRect = null
-      backHovered = false
+      if (backHovered) {
+        // The pill vanished under a still mouse: it's over empty canvas now
+        backHovered = false
+        updateCursor()
+      }
       return
     }
     ctx.save()
