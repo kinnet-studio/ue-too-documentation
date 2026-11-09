@@ -4,7 +4,7 @@
 
 > **createCameraMatrix**(`cameraPos`, `zoom`, `rotation`, `devicePixelRatio`, `canvasWidth`, `canvasHeight`): `object`
 
-定義: [packages/board/src/camera/utils/matrix.ts:221](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/board/src/camera/utils/matrix.ts#L221)
+定義: [packages/board/src/camera/utils/matrix.ts:221](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/utils/matrix.ts#L221)
 
 Creates a camera transformation matrix from camera parameters.
 This matrix transforms world coordinates to canvas pixel coordinates.

@@ -1,4 +1,4 @@
-# @ue-too/board-react-adapter v0.19.2
+# @ue-too/board-react-adapter v0.20.0
 
 ## Documents
 

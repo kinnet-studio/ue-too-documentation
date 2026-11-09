@@ -4,7 +4,7 @@
 
 > **Branch** = `object`
 
-定義: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L81)
+定義: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/format/types.ts#L81)
 
 A conditional transition, checked after `do`.
 
@@ -14,7 +14,7 @@ A conditional transition, checked after `do`.
 
 > `readonly` **if**: [`GuardRef`](GuardRef.md)
 
-定義: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L81)
+定義: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/format/types.ts#L81)
 
 ***
 
@@ -22,4 +22,4 @@ A conditional transition, checked after `do`.
 
 > `readonly` **target**: `string`
 
-定義: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-portable/src/format/types.ts#L81)
+定義: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/format/types.ts#L81)

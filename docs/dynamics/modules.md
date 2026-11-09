@@ -1,4 +1,4 @@
-# @ue-too/dynamics v0.19.2
+# @ue-too/dynamics v0.20.0
 
 ## Documents
 

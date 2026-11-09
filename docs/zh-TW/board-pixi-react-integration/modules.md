@@ -1,4 +1,4 @@
-# @ue-too/board-pixi-react-integration v0.19.2
+# @ue-too/board-pixi-react-integration v0.20.0
 
 ## 文件
 

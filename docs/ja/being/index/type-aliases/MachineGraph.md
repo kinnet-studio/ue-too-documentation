@@ -4,7 +4,7 @@
 
 > **MachineGraph** = `object`
 
-定義: [introspect.ts:42](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/introspect.ts#L42)
+定義: [introspect.ts:42](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/introspect.ts#L42)
 
 A state machine's structure as a directed graph.
 
@@ -14,7 +14,7 @@ A state machine's structure as a directed graph.
 
 > **edges**: [`MachineGraphEdge`](MachineGraphEdge.md)[]
 
-定義: [introspect.ts:44](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/introspect.ts#L44)
+定義: [introspect.ts:44](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/introspect.ts#L44)
 
 ***
 
@@ -22,4 +22,4 @@ A state machine's structure as a directed graph.
 
 > **nodes**: [`MachineGraphNode`](MachineGraphNode.md)[]
 
-定義: [introspect.ts:43](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being/src/introspect.ts#L43)
+定義: [introspect.ts:43](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/introspect.ts#L43)

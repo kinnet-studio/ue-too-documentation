@@ -4,7 +4,7 @@
 
 > `const` **DEFAULT\_COLLISION\_FILTER**: [`CollisionFilter`](../interfaces/CollisionFilter.md)
 
-定義: [collision-filter.ts:67](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/dynamics/src/collision-filter.ts#L67)
+定義: [collision-filter.ts:67](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/dynamics/src/collision-filter.ts#L67)
 
 Default collision filter that collides with everything.
 

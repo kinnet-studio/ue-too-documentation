@@ -4,7 +4,7 @@
 
 > **AttachHandle** = `object`
 
-定義於: [registry.ts:48](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/registry.ts#L48)
+定義於: [registry.ts:48](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/registry.ts#L48)
 
 Returned by every attach call. `dispose()` detaches the machine(s) and
 releases their subscriptions. Safe to call more than once.
@@ -15,7 +15,7 @@ releases their subscriptions. Safe to call more than once.
 
 > **dispose**(): `void`
 
-定義於: [registry.ts:48](https://github.com/kinnet-studio/ue-too/blob/fb7f3aecc96e31228ff551a8a152367c13d7c04e/packages/being-devtools/src/registry.ts#L48)
+定義於: [registry.ts:48](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/registry.ts#L48)
 
 #### 回傳
 
