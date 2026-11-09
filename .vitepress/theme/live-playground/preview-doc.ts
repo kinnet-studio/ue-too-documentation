@@ -33,12 +33,17 @@ export interface PreviewDoc {
 }
 
 // The frame is transparent so the preview sits on the site's own background;
-// `output` styles the readout the Zoom limits example adds
+// `output` styles the readout the Zoom limits example adds, `nav` and `button`
+// the buttons the Fly back to start example adds
 const PREVIEW_STYLE =
   'html,body{margin:0;height:100%;overflow:hidden;background:transparent}' +
   'canvas{display:block;width:100%;height:100%;touch-action:none}' +
   'output{position:fixed;top:10px;right:10px;font:500 12px/1.4 ui-monospace,Menlo,Consolas,monospace;' +
-  'background:rgba(255,255,255,.85);color:#3c3c43;border:1px solid #e2e2e3;border-radius:999px;padding:3px 10px}'
+  'background:rgba(255,255,255,.85);color:#3c3c43;border:1px solid #e2e2e3;border-radius:999px;padding:3px 10px}' +
+  'nav{position:fixed;top:10px;left:10px;display:flex;gap:6px}' +
+  'button{font:500 12px/1.4 system-ui,sans-serif;background:rgba(255,255,255,.85);color:#3c3c43;' +
+  'border:1px solid #e2e2e3;border-radius:999px;padding:3px 10px;cursor:pointer}' +
+  'button:hover{background:#fff;border-color:#c2c2c4}'
 
 export function buildPreviewDoc(code: string, opts: { release: string; runId: number; cdn?: string }): PreviewDoc {
   const head = [
