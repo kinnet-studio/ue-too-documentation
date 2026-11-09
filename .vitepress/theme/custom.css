@@ -50,3 +50,23 @@ div[align="center"] {
 .live-examples-page .vp-doc > div > :is(p, ul, table) {
   max-width: 688px;
 }
+
+/* Home page: the hero is drawn on a ue-too canvas (canvas-home/). The HTML hero
+   stays for screen readers, search engines and keyboard focus, visually hidden
+   unless the canvas failed to load (or JavaScript is off, see config.ts) */
+html.canvas-home {
+  overflow: hidden;
+}
+
+html:not(.canvas-home-failed) .VPContent.is-home .VPHomeHero {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.VPContent.is-home .VPHome {
+  margin-bottom: 0;
+}
