@@ -9,6 +9,7 @@ import { useData } from 'vitepress'
 import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import type { CanvasHomeHandle } from './canvas-home'
 import type { HeroContent } from './hero-layout'
+import { backLabel, canvasHome } from './state'
 
 interface HeroFrontmatter {
   name?: string
@@ -77,6 +78,7 @@ function onFocusOut(event: FocusEvent) {
 function fallBack(error: unknown) {
   console.error(error)
   handle = null
+  canvasHome.value = null
   document.documentElement.classList.add('canvas-home-failed')
 }
 
@@ -87,19 +89,27 @@ onMounted(async () => {
   try {
     const { mountCanvasHome } = await import('./canvas-home')
     if (unmounted || !canvasEl.value) return
-    handle = mountCanvasHome(canvasEl.value, { content: content(), hint: hint(), onActivate: activate, onError: fallBack })
+    handle = mountCanvasHome(canvasEl.value, {
+      content: content(),
+      hint: hint(),
+      backLabel: backLabel(lang.value),
+      onActivate: activate,
+      onError: fallBack,
+    })
+    canvasHome.value = handle
   } catch (error) {
     fallBack(error)
   }
 })
 
 watch(isDark, () => nextTick(() => handle?.refreshTheme()))
-watch([() => frontmatter.value.hero, lang], () => handle?.setContent(content(), hint()))
+watch([() => frontmatter.value.hero, lang], () => handle?.setContent(content(), hint(), backLabel(lang.value)))
 
 onBeforeUnmount(() => {
   unmounted = true
   handle?.destroy()
   handle = null
+  canvasHome.value = null
   document.removeEventListener('focusin', onFocusIn)
   document.removeEventListener('focusout', onFocusOut)
   document.documentElement.classList.remove('canvas-home', 'canvas-home-failed')
