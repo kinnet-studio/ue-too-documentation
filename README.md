@@ -38,6 +38,7 @@ Each home page (every locale and version) is a full-window `@ue-too/board` canva
 
 - The text comes from the `hero` frontmatter of each `index.md`, so editing it there changes the canvas too.
 - The stock VitePress hero stays in the page, visually hidden, for screen readers, search engines and keyboard users. Clicking a button on the canvas activates its hidden link, and tabbing to that link draws a focus ring on the canvas. If the canvas can't load, or JavaScript is off, the HTML hero shows instead.
+- Once the visitor pans or zooms away, a Back to start pill shows above the hint and flies the camera back to where the page opened, using the board's `createZoomPanPath` (`back-to-start.ts`). Its keyboard and screen reader copy is a hidden button after the hero's links (`BackToStartButton.vue`).
 - The board version is pinned in `package.json` and bundled with the site; it doesn't follow the docs release on its own.
 
 Check it with `bunx vitepress build`, then `bun run test:home:page`. It runs in the `Live examples` workflow too.

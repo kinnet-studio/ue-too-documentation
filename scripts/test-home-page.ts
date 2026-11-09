@@ -59,6 +59,16 @@ async function buttonRect(page: Page): Promise<Rect> {
 
 const centre = (rect: Rect) => ({ x: rect.x + rect.width / 2, y: rect.y + rect.height / 2 })
 
+const camera = (page: Page) => page.evaluate(() => window.__canvasHome!.camera())
+
+// The Back to start pill in window coordinates, or null while it's hidden
+async function backRect(page: Page): Promise<Rect | null> {
+  return page.evaluate(() => {
+    const r = window.__canvasHome!.backButtonRect()
+    return r && { x: r.x, y: r.y, width: r.width, height: r.height }
+  })
+}
+
 async function drag(page: Page, from: { x: number; y: number }, to: { x: number; y: number }) {
   await page.mouse.move(from.x, from.y)
   await page.mouse.down()
@@ -224,6 +234,96 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     assert(back.x >= 0 && back.x + back.width <= 1400 && back.y >= 0 && back.y + back.height <= 1000, `focused button is out of view: ${JSON.stringify(back)}`)
     await page.keyboard.press('Enter')
     await onPackagesPage(page)
+    await context.close()
+  },
+
+  async 'back-to-start'(browser) {
+    const { context, page } = await openHome(browser)
+    const start = await camera(page)
+    assert((await backRect(page)) === null, 'Back to start shows before the camera moved')
+    await drag(page, EMPTY, { x: EMPTY.x + 300, y: EMPTY.y + 150 })
+    await page.mouse.move(700, 400)
+    await page.keyboard.down('Control')
+    await page.mouse.wheel(0, -200)
+    await page.keyboard.up('Control')
+    await page.waitForTimeout(100)
+    const rect = await backRect(page)
+    assert(rect, 'Back to start did not show after panning and zooming')
+    const cursor = () => page.getByTestId('canvas-home').evaluate(el => el.style.cursor)
+    const { x, y } = centre(rect)
+    await page.mouse.move(x, y)
+    assert((await cursor()) === 'pointer', `cursor over Back to start is ${await cursor()}`)
+    await page.mouse.click(x, y)
+    await page.waitForTimeout(200)
+    // The pill hides during the flight, so the cursor over the now empty canvas is a hand again
+    assert((await cursor()) === 'grab', `cursor during the flight is ${await cursor()}`)
+    await page.waitForTimeout(1300)
+    const end = await camera(page)
+    assert(end.x === start.x && end.y === start.y && end.zoom === start.zoom, `landed at ${JSON.stringify(end)}, start was ${JSON.stringify(start)}`)
+    assert((await backRect(page)) === null, 'Back to start still shows at the start view')
+    await context.close()
+  },
+
+  async 'back-to-start-keyboard'(browser) {
+    const { context, page } = await openHome(browser)
+    const start = await camera(page)
+    await drag(page, EMPTY, { x: EMPTY.x + 300, y: EMPTY.y + 150 })
+    let focused = false
+    for (let i = 0; i < 30 && !focused; i++) {
+      await page.keyboard.press('Tab')
+      focused = await page.evaluate(() => document.activeElement?.getAttribute('data-testid') === 'canvas-home-back')
+    }
+    assert(focused, 'Tab never reached Back to start')
+    await page.keyboard.press('Enter')
+    await page.waitForTimeout(1500)
+    const end = await camera(page)
+    assert(end.x === start.x && end.y === start.y && end.zoom === start.zoom, `landed at ${JSON.stringify(end)}, start was ${JSON.stringify(start)}`)
+    await context.close()
+  },
+
+  async 'back-to-start-interrupted'(browser) {
+    const { context, page } = await openHome(browser)
+    const start = await camera(page)
+    await drag(page, EMPTY, { x: EMPTY.x + 400, y: EMPTY.y + 200 })
+    const rect = await backRect(page)
+    assert(rect, 'Back to start did not show after panning')
+    const { x, y } = centre(rect)
+    await page.mouse.click(x, y)
+    await page.waitForTimeout(300)
+    await drag(page, EMPTY, { x: EMPTY.x - 100, y: EMPTY.y })
+    const afterDrag = await camera(page)
+    await page.waitForTimeout(1300)
+    const end = await camera(page)
+    assert(end.x === afterDrag.x && end.y === afterDrag.y && end.zoom === afterDrag.zoom, `the flight kept going after the drag: ${JSON.stringify(afterDrag)} → ${JSON.stringify(end)}`)
+    assert(end.x !== start.x || end.y !== start.y, 'the camera still reached the start view')
+    await context.close()
+  },
+
+  async 'back-to-start-two-fingers'(browser) {
+    const { context, page } = await openHome(browser, '', PHONE)
+    const cdp = await context.newCDPSession(page)
+    const touch = (type: 'touchStart' | 'touchMove' | 'touchEnd', points: { x: number; y: number; id: number }[]) =>
+      cdp.send('Input.dispatchTouchEvent', { type, touchPoints: points })
+    const swipe = async (dx: number) => {
+      await touch('touchStart', [{ x: 100, y: 400, id: 0 }])
+      for (let i = 1; i <= 6; i++) await touch('touchMove', [{ x: 100 + (i * dx) / 6, y: 400, id: 0 }])
+      await touch('touchEnd', [])
+      await page.waitForTimeout(100)
+    }
+    await swipe(120)
+    const rect = await backRect(page)
+    assert(rect, 'Back to start did not show after panning')
+    const pill = centre(rect)
+    // A finger on the canvas, then a second on the pill. touchEnd lifts them in
+    // the order they went down, so the canvas finger lifts while the pill is pressed
+    await touch('touchStart', [{ x: 100, y: 300, id: 0 }])
+    await touch('touchStart', [{ x: 100, y: 300, id: 0 }, { x: pill.x, y: pill.y, id: 1 }])
+    await touch('touchEnd', [])
+    await page.waitForTimeout(1300)
+    const before = await camera(page)
+    await swipe(60)
+    const after = await camera(page)
+    assert(after.x !== before.x, `one finger no longer pans after a two-finger press on Back to start: ${JSON.stringify(before)} → ${JSON.stringify(after)}`)
     await context.close()
   },
 

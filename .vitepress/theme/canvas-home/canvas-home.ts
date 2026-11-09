@@ -7,7 +7,8 @@
  * only the home page downloads the board.
  */
 
-import { Board } from '@ue-too/board'
+import { Board, type CameraMuxWithAnimationAndLock, createZoomPanPath, type ZoomPanPath } from '@ue-too/board'
+import { backPillRect, inRect, isAway, PILL_HEIGHT, type Rect, type View } from './back-to-start'
 import { DragTracker, type Point } from './drag-tracker'
 import { hitButton, layoutHero, type HeroButton, type HeroContent, type HeroLayout, type Measure } from './hero-layout'
 
@@ -15,6 +16,8 @@ export interface CanvasHomeOptions {
   content: HeroContent
   /** How to pan and zoom, drawn at the bottom of the screen */
   hint: string
+  /** The label of the pill that flies the camera back to where the page opened */
+  backLabel: string
   /** A hero button was clicked; `newTab` for Ctrl/Cmd/Shift or a middle click */
   onActivate: (index: number, newTab: boolean) => void
   /** Drawing failed; the canvas has already been torn down */
@@ -22,14 +25,20 @@ export interface CanvasHomeOptions {
 }
 
 export interface CanvasHomeHandle {
-  setContent(content: HeroContent, hint: string): void
+  setContent(content: HeroContent, hint: string, backLabel: string): void
   /** Re-reads the site's colors, after a light/dark switch */
   refreshTheme(): void
   /** Draws a focus ring on a button (-1 clears it) and pans it into view */
   setFocused(index: number): void
+  /** Flies the camera back to the view the page opened with */
+  goBack(): void
+  /** Shows the Back to start pill with a focus ring while its HTML copy has focus */
+  setBackFocused(focused: boolean): void
   destroy(): void
   /** The buttons' boxes in window coordinates (for tests) */
   buttonRects(): DOMRect[]
+  /** The Back to start pill's box in window coordinates, or null while it's hidden (for tests) */
+  backButtonRect(): DOMRect | null
   camera(): { x: number; y: number; zoom: number }
 }
 
@@ -50,6 +59,8 @@ const BUTTON_RADIUS = 20
 const HINT_FONT_SIZE = 13
 const HINT_HEIGHT = 30
 const HINT_MARGIN = 20
+// How long the flight back to the start takes
+const FLIGHT_MS = 1000
 
 interface ButtonColors {
   bg: string
@@ -120,6 +131,7 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
   board.camera.setMinZoomLevel(MIN_ZOOM)
   board.camera.setMaxZoomLevel(MAX_ZOOM)
   const rig = board.getCameraRig()
+  const mux = board.cameraMux as CameraMuxWithAnimationAndLock
 
   const measureContext = document.createElement('canvas').getContext('2d') as LetterSpacingContext
   const measure: Measure = (text, font, letterSpacing) => {
@@ -130,6 +142,7 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
 
   let content = options.content
   let hint = options.hint
+  let backLabel = options.backLabel
   let colors = readColors()
   let fontFamily = getComputedStyle(document.body).fontFamily
   let layout: HeroLayout = layoutHero(content, window.innerWidth, fontFamily, measure)
@@ -140,6 +153,15 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
   const tracker = new DragTracker()
   // Which mouse button started the press: only the primary one pans
   let pressButton = 0
+  // The view the page opened with, set by frameHero()
+  let home: View = currentView()
+  // The flight back to it, while one is under way
+  let flight: { path: ZoomPanPath; start: number } | null = null
+  // The Back to start pill as last drawn (window coordinates), or null while hidden
+  let backRect: Rect | null = null
+  let backHovered = false
+  let backPressed = false
+  let backFocused = false
 
   function relayout() {
     fontFamily = getComputedStyle(document.body).fontFamily
@@ -160,7 +182,40 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
     const zoom = Math.min(1, Math.max(MIN_ZOOM, room / layout.height))
     rig.zoomTo(zoom)
     rig.panToWorld({ x: 0, y: -navHeight() / 2 / zoom })
+    home = currentView()
   }
+
+  function currentView(): View {
+    return { position: { ...board.camera.position }, zoomLevel: board.camera.zoomLevel }
+  }
+
+  // Fly back along a smooth zoom-and-pan path: on a long trip the camera zooms
+  // out, glides across and zooms back in
+  function goBack() {
+    flight = { path: createZoomPanPath(currentView(), home, board.camera.viewPortWidth), start: performance.now() }
+    // Put the mux's pan and zoom into their animation state; the board's own
+    // gestures (Ctrl + scroll, pinch, Space + drag) move them out of it again
+    mux.initatePanTransition()
+    mux.initateZoomTransition()
+  }
+
+  function stepFlight(timestamp: number) {
+    if (!flight) return
+    if (mux.panStateMachine.currentState !== 'TRANSITION' || mux.zoomStateMachine.currentState !== 'TRANSITION') {
+      // The visitor took over
+      flight = null
+      return
+    }
+    const t = Math.min(1, Math.max(0, (timestamp - flight.start) / FLIGHT_MS))
+    const view = flight.path.at((1 - Math.cos(Math.PI * t)) / 2)
+    mux.notifyZoomInputAnimation(view.zoomLevel)
+    rig.zoomTo(view.zoomLevel)
+    mux.notifyPanToAnimationInput(view.position)
+    rig.panToWorld(view.position)
+    if (t >= 1) flight = null
+  }
+
+  const showBack = () => backFocused || (!flight && isAway(currentView(), home))
 
   const worldAt = (event: PointerEvent): Point => board.convertWindowPoint2WorldCoord({ x: event.clientX, y: event.clientY })
   const boardIdle = () => (board.kmtInputStateMachine?.currentState ?? 'IDLE') === 'IDLE'
@@ -178,7 +233,7 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
 
   function updateCursor() {
     if (!boardIdle()) return
-    canvas.style.cursor = tracker.dragging ? 'grabbing' : hovered >= 0 ? 'pointer' : 'grab'
+    canvas.style.cursor = tracker.dragging ? 'grabbing' : hovered >= 0 || backHovered ? 'pointer' : 'grab'
   }
 
   function onPointerDown(event: PointerEvent) {
@@ -191,10 +246,13 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
     if (!tracker.active) {
       // A second finger: the board's pinch and two-finger pan take over
       pressed = -1
+      backPressed = false
       return
     }
     pressButton = event.button
-    pressed = hitButton(layout, worldAt(event))
+    // Like a hero button, Back to start is clicked by a press that doesn't drag
+    backPressed = !middle && !!backRect && inRect(backRect, { x: event.clientX, y: event.clientY })
+    pressed = backPressed ? -1 : hitButton(layout, worldAt(event))
     canvas.setPointerCapture?.(event.pointerId)
   }
 
@@ -202,20 +260,36 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
     const delta = tracker.move(event.pointerId, { x: event.clientX, y: event.clientY })
     if (delta) {
       pressed = -1
+      backPressed = false
       // The middle button's drag is the board's own pan
-      if (pressButton === 0 && boardIdle()) rig.panByViewPort({ x: -delta.x, y: -delta.y })
+      if (pressButton === 0 && boardIdle()) {
+        // Dragging takes the camera back from a flight
+        flight = null
+        rig.panByViewPort({ x: -delta.x, y: -delta.y })
+      }
     }
-    if (!tracker.active) hovered = event.pointerType === 'mouse' ? hitButton(layout, worldAt(event)) : -1
+    if (!tracker.active) {
+      const mouse = event.pointerType === 'mouse'
+      // The pill is drawn over the hero, so it wins the hover
+      backHovered = mouse && !!backRect && inRect(backRect, { x: event.clientX, y: event.clientY })
+      hovered = mouse && !backHovered ? hitButton(layout, worldAt(event)) : -1
+    }
     updateCursor()
   }
 
   function onPointerUp(event: PointerEvent) {
     const press = tracker.up(event.pointerId, { x: event.clientX, y: event.clientY })
     const target = pressed
+    const back = backPressed
     pressed = -1
-    if (press && !press.dragged && target >= 0 && hitButton(layout, worldAt(event)) === target) {
-      const newTab = event.ctrlKey || event.metaKey || event.shiftKey || event.button === 1
-      options.onActivate(target, newTab)
+    backPressed = false
+    if (press && !press.dragged) {
+      if (back && backRect && inRect(backRect, { x: event.clientX, y: event.clientY })) {
+        goBack()
+      } else if (target >= 0 && hitButton(layout, worldAt(event)) === target) {
+        const newTab = event.ctrlKey || event.metaKey || event.shiftKey || event.button === 1
+        options.onActivate(target, newTab)
+      }
     }
     updateCursor()
   }
@@ -223,12 +297,14 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
   function onPointerCancel(event: PointerEvent) {
     tracker.up(event.pointerId, { x: event.clientX, y: event.clientY })
     pressed = -1
+    backPressed = false
     updateCursor()
   }
 
   function onPointerLeave() {
     if (tracker.active) return
     hovered = -1
+    backHovered = false
   }
 
   // The board only records touches while two fingers are down. Keep its record
@@ -342,7 +418,49 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
     ctx.restore()
   }
 
+  // Drawn in screen space just above the hint, while the camera is away from the start
+  function drawBack(ctx: LetterSpacingContext) {
+    if (!showBack()) {
+      backRect = null
+      if (backHovered) {
+        // The pill vanished under a still mouse: it's over empty canvas now
+        backHovered = false
+        updateCursor()
+      }
+      return
+    }
+    ctx.save()
+    ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0)
+    ctx.font = `500 ${HINT_FONT_SIZE}px ${fontFamily}`
+    setLetterSpacing(ctx, 0)
+    const rect = backPillRect(ctx.measureText(backLabel).width, window.innerWidth, window.innerHeight - HINT_MARGIN - HINT_HEIGHT)
+    const palette = colors.brand
+    ctx.beginPath()
+    ctx.roundRect(rect.x, rect.y, rect.width, rect.height, PILL_HEIGHT / 2)
+    ctx.fillStyle = backPressed && backHovered ? palette.active : backHovered ? palette.hover : palette.bg
+    ctx.fill()
+    if (palette.border && palette.border !== 'transparent') {
+      ctx.lineWidth = 1
+      ctx.strokeStyle = palette.border
+      ctx.stroke()
+    }
+    ctx.fillStyle = palette.text
+    ctx.textAlign = 'center'
+    ctx.textBaseline = 'middle'
+    ctx.fillText(backLabel, rect.x + rect.width / 2, rect.y + rect.height / 2, rect.width - 28)
+    if (backFocused) {
+      ctx.beginPath()
+      ctx.roundRect(rect.x - 3, rect.y - 3, rect.width + 6, rect.height + 6, PILL_HEIGHT / 2 + 3)
+      ctx.lineWidth = 2
+      ctx.strokeStyle = colors.ring
+      ctx.stroke()
+    }
+    ctx.restore()
+    backRect = rect
+  }
+
   function render(timestamp: number) {
+    stepFlight(timestamp)
     board.step(timestamp)
     const ctx = board.context as LetterSpacingContext | undefined
     if (!ctx) return
@@ -350,6 +468,7 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
     drawGrid(ctx, zoom)
     drawHero(ctx, zoom)
     drawHint(ctx)
+    drawBack(ctx)
   }
 
   // A frame that throws stops the loop and hands back to the HTML hero
@@ -383,9 +502,10 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
   frame = requestAnimationFrame(draw)
 
   const handle: CanvasHomeHandle = {
-    setContent(next, nextHint) {
+    setContent(next, nextHint, nextBackLabel) {
       content = next
       hint = nextHint
+      backLabel = nextBackLabel
       relayout()
       loadFonts()
     },
@@ -399,11 +519,21 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
       const rect = windowRect(button)
       const inView =
         rect.left >= 0 && rect.right <= window.innerWidth && rect.top >= navHeight() && rect.bottom <= window.innerHeight
-      if (!inView) rig.panToWorld({ x: button.x + button.width / 2, y: button.y + button.height / 2 })
+      if (!inView) {
+        flight = null
+        rig.panToWorld({ x: button.x + button.width / 2, y: button.y + button.height / 2 })
+      }
+    },
+    goBack,
+    setBackFocused(focusedNow) {
+      backFocused = focusedNow
     },
     destroy,
     buttonRects() {
       return layout.buttons.map(windowRect)
+    },
+    backButtonRect() {
+      return backRect && new DOMRect(backRect.x, backRect.y, backRect.width, backRect.height)
     },
     camera() {
       return { x: board.camera.position.x, y: board.camera.position.y, zoom: board.camera.zoomLevel }

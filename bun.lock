@@ -10,7 +10,7 @@
         "@codemirror/state": "^6.7.6",
         "@codemirror/view": "^6.43.14",
         "@lezer/highlight": "^1.2.5",
-        "@ue-too/board": "0.19.2",
+        "@ue-too/board": "0.20.0",
         "codemirror": "^6.0.2",
       },
       "devDependencies": {
@@ -204,11 +204,11 @@
 
     "@types/web-bluetooth": ["@types/web-bluetooth@0.0.21", "", {}, "sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA=="],
 
-    "@ue-too/being": ["@ue-too/being@0.19.2", "", {}, "sha512-FmRmDCL2t6rmxqk4wVd4+JmeCChBLH5kiSjwfF5aHXATrVzVMhPe8BNo9L559v8aZZnMhWE3IDA8kisly8XSOg=="],
+    "@ue-too/being": ["@ue-too/being@0.20.0", "", {}, "sha512-TwQKnTYrgRNfq9sUkhJ2ZSr+Sn+yM59dS1pR4JOX5rPJEfm9x6UKQh5rcyZajRtRShsyij5R1KVadTmWthy5Xg=="],
 
-    "@ue-too/board": ["@ue-too/board@0.19.2", "", { "dependencies": { "@ue-too/being": "^0.19.2", "@ue-too/math": "^0.19.2" } }, "sha512-5txEvtuREI6B0PZyfxC4EqTkcv8iSpKgzKrPgKlgOas8wL47mkmheIcKxggU9jV90Yplm6EQJtrMUf/OLkJkvw=="],
+    "@ue-too/board": ["@ue-too/board@0.20.0", "", { "dependencies": { "@ue-too/being": "^0.20.0", "@ue-too/math": "^0.20.0" } }, "sha512-VZG5paqwaH3sCZ9bySNbLPF+8aURVm0c8vjXwY4VbSfyg7Q65ZTIqpecteJWATPb8vePEGtF2M1jM0T9QJ2h9g=="],
 
-    "@ue-too/math": ["@ue-too/math@0.19.2", "", {}, "sha512-a8BgIlvHWUQONeR8DT25HaktUCMXIqLhf9e4zjwDE1lNYVuhIGZJOjmHNptmUV+Sl8KTzf8+9+qciHOLJy3GDw=="],
+    "@ue-too/math": ["@ue-too/math@0.20.0", "", {}, "sha512-OPDrW9Y23xQqNFrl/1oEscXucoY7T+kAgtMYUiOOaYeLH550u7g1eB8Zn5tBTQ55gP/w8x2ThKBavF3gPXnGWA=="],
 
     "@ungap/structured-clone": ["@ungap/structured-clone@1.3.0", "", {}, "sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g=="],
 
