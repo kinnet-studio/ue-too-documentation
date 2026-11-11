@@ -74,3 +74,9 @@ html:not(.canvas-home-failed) .VPContent.is-home .VPHomeHero {
 .VPContent.is-home .VPHome {
   margin-bottom: 0;
 }
+
+/* The logo's box has empty space above and below its frame, so at the
+   default 24px the mark is too small to read; 40px still fits the 64px nav */
+.VPNavBarTitle .logo {
+  height: 40px;
+}
