@@ -18,6 +18,8 @@ The site serves one set of docs per release line (`major.minor`): the latest at 
 
 Each version is a separate VitePress build (`DOCS_VERSION` in `.vitepress/config.ts`) with its own sidebar, locales and search index. The version menu in the nav links between them, and archived versions show a notice that links to the latest. On archived versions, the npm badge in each package README is pinned to that line's release, since shields' npm badge always shows the registry's latest.
 
+Static files that every version serves, like the logo and favicons, live in `.vitepress/public/` (set as Vite's `publicDir`), so a `public/` folder inside `docs/` or `versions/v<line>/` isn't used.
+
 - Work on an archived version: `DOCS_VERSION=0.18 bun run docs:dev`
 - Try the version menu locally: build with `DOCS_SITE_URL=http://localhost:4173/ue-too-documentation/ bun run docs:build`, then `bun run docs:preview`
 - Drop an old version: delete its folder and remove it from `versions.json`

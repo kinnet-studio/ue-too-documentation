@@ -28,6 +28,8 @@ if (!docsRelease) {
   throw new Error(`DOCS_VERSION ${docsVersion} is not listed in versions.json`)
 }
 const srcDir = versionSrcDir(versions, docsVersion)
+// Where this version is served, e.g. /ue-too-documentation/ or /ue-too-documentation/v0.18/
+const base = `${new URL(siteUrl).pathname}${versionPath(versions, docsVersion)}`
 
 // Package READMEs carry an npm badge showing the registry's latest release,
 // which is wrong on an archived version, so there it is pinned to the release
@@ -299,10 +301,13 @@ const jaThemeConfig = {
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme<ThemeConfig>({
   srcDir,
-  base: `${new URL(siteUrl).pathname}${versionPath(versions, docsVersion)}`,
+  base,
   outDir: `.vitepress/dist/${versionPath(versions, docsVersion)}`,
 
   vite: {
+    // One public folder (logo, favicons) for every version, instead of a
+    // copy in each version's source folder
+    publicDir: join(process.cwd(), '.vitepress/public'),
     plugins: [
       {
         name: 'pin-archived-npm-badges',
@@ -318,6 +323,10 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
 
   head: [
+    // VitePress doesn't add the base to head links, so it's added here
+    ['link', { rel: 'icon', href: `${base}favicon.ico`, sizes: '32x32' }],
+    ['link', { rel: 'icon', href: `${base}favicon.svg`, type: 'image/svg+xml' }],
+    ['link', { rel: 'apple-touch-icon', href: `${base}apple-touch-icon.png` }],
     // Without JavaScript there's no home page canvas: show the HTML hero instead
     [
       'noscript',
@@ -366,6 +375,8 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
 
   themeConfig: {
+    // Decorative: the site title text follows it in the nav
+    logo: { light: '/logo-mark.svg', dark: '/logo-mark-dark.svg', alt: '' },
     livePlayground: {
       release: docsRelease,
       cdn: process.env.LIVE_EXAMPLES_CDN ?? DEFAULT_CDN,
