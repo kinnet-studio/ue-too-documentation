@@ -4,7 +4,7 @@
 
 > **BeingDevtoolsHook** = `object`
 
-Defined in: [hook.ts:24](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/hook.ts#L24)
+Defined in: [hook.ts:24](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/hook.ts#L24)
 
 The console hook at `window.__UE_TOO_BEING__`, present while at least
 one panel is alive.
@@ -21,7 +21,7 @@ overlay panel, exactly like `attachMachineDebugger`.
 
 > `readonly` **machines**: `ReadonlyMap`\<`string`, [`MachineLike`](MachineLike.md)\>
 
-Defined in: [hook.ts:25](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/hook.ts#L25)
+Defined in: [hook.ts:25](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/hook.ts#L25)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Defined in: [hook.ts:25](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b7
 
 > **attach**(`machine`, `options?`): [`AttachHandle`](AttachHandle.md)
 
-Defined in: [hook.ts:28](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/hook.ts#L28)
+Defined in: [hook.ts:28](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/hook.ts#L28)
 
 #### Parameters
 
@@ -51,7 +51,7 @@ Defined in: [hook.ts:28](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b7
 
 > **close**(): `void`
 
-Defined in: [hook.ts:27](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/hook.ts#L27)
+Defined in: [hook.ts:27](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/hook.ts#L27)
 
 #### Returns
 
@@ -63,7 +63,7 @@ Defined in: [hook.ts:27](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b7
 
 > **open**(): `void`
 
-Defined in: [hook.ts:26](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/hook.ts#L26)
+Defined in: [hook.ts:26](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/hook.ts#L26)
 
 #### Returns
 

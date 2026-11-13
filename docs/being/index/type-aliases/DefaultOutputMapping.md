@@ -4,7 +4,7 @@
 
 > **DefaultOutputMapping**\<`EventPayloadMapping`\> = `{ [K in keyof EventPayloadMapping]: void }`
 
-Defined in: [interface.ts:169](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/interface.ts#L169)
+Defined in: [interface.ts:169](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/interface.ts#L169)
 
 ## Type Parameters
 

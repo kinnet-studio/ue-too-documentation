@@ -4,7 +4,7 @@
 
 > **isValidBoundaries**(`boundaries`): `boolean`
 
-定義於: [packages/board/src/camera/utils/position.ts:151](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/utils/position.ts#L151)
+定義於: [packages/board/src/camera/utils/position.ts:151](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/position.ts#L151)
 
 Validates that boundaries are logically consistent.
 

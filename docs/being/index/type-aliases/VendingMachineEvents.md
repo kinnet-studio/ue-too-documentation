@@ -4,7 +4,7 @@
 
 > **VendingMachineEvents** = `object`
 
-Defined in: [vending-machine-example.ts:9](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/vending-machine-example.ts#L9)
+Defined in: [vending-machine-example.ts:9](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/vending-machine-example.ts#L9)
 
 Events accepted by the [createVendingMachine](../functions/createVendingMachine.md) demo machine.
 
@@ -14,7 +14,7 @@ Events accepted by the [createVendingMachine](../functions/createVendingMachine.
 
 > **cancelTransaction**: `object`
 
-Defined in: [vending-machine-example.ts:14](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/vending-machine-example.ts#L14)
+Defined in: [vending-machine-example.ts:14](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/vending-machine-example.ts#L14)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [vending-machine-example.ts:14](https://github.com/kinnet-studio/ue-
 
 > **insertBills**: `object`
 
-Defined in: [vending-machine-example.ts:10](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/vending-machine-example.ts#L10)
+Defined in: [vending-machine-example.ts:10](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/vending-machine-example.ts#L10)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [vending-machine-example.ts:10](https://github.com/kinnet-studio/ue-
 
 > **selectCoke**: `object`
 
-Defined in: [vending-machine-example.ts:11](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/vending-machine-example.ts#L11)
+Defined in: [vending-machine-example.ts:11](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/vending-machine-example.ts#L11)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [vending-machine-example.ts:11](https://github.com/kinnet-studio/ue-
 
 > **selectRedBull**: `object`
 
-Defined in: [vending-machine-example.ts:12](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/vending-machine-example.ts#L12)
+Defined in: [vending-machine-example.ts:12](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/vending-machine-example.ts#L12)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [vending-machine-example.ts:12](https://github.com/kinnet-studio/ue-
 
 > **selectWater**: `object`
 
-Defined in: [vending-machine-example.ts:13](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/vending-machine-example.ts#L13)
+Defined in: [vending-machine-example.ts:13](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/vending-machine-example.ts#L13)

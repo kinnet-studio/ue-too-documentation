@@ -2,7 +2,7 @@
 
 # クラス: PanControlStateMachine
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:129](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L129)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:129](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L129)
 
 State machine controlling pan input flow and animations.
 
@@ -49,7 +49,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **new PanControlStateMachine**(`states`, `initialState`, `context`): `PanControlStateMachine`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:135](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L135)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:135](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L135)
 
 #### パラメータ
 
@@ -336,7 +336,7 @@ this reference.
 
 > **initateTransition**(): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `void`\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:186](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L186)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:186](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L186)
 
 Initiates transition to `TRANSITION` state.
 
@@ -355,7 +355,7 @@ Called when starting programmatic camera movements.
 
 > **notifyPanInput**(`diff`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:161](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L161)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:161](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L161)
 
 Notifies the state machine of user pan input.
 
@@ -384,7 +384,7 @@ where it may transition back to `ACCEPTING_USER_INPUT` (user interrupting animat
 
 > **notifyPanToAnimationInput**(`target`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:175](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L175)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:175](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L175)
 
 Initiates a pan animation to a target position.
 

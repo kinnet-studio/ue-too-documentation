@@ -4,7 +4,7 @@
 
 > **RotateControlOutputMapping** = `object`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:86](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L86)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:86](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L86)
 
 Output event type mapping for rotation control events.
 Maps input event names to their corresponding output event types.
@@ -15,7 +15,7 @@ Maps input event names to their corresponding output event types.
 
 > **lockedOnObjectRotateByInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:91](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L91)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:91](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L91)
 
 ***
 
@@ -23,7 +23,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **lockedOnObjectRotateToInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:92](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L92)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:92](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L92)
 
 ***
 
@@ -31,7 +31,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **transitionRotateByInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:89](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L89)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:89](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L89)
 
 ***
 
@@ -39,7 +39,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **transitionRotateToInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:90](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L90)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:90](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L90)
 
 ***
 
@@ -47,7 +47,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **userRotateByInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:87](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L87)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:87](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L87)
 
 ***
 
@@ -55,4 +55,4 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **userRotateToInput**: [`RotateControlOutputEvent`](RotateControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:88](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L88)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:88](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L88)

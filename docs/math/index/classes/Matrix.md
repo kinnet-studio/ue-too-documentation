@@ -2,7 +2,7 @@
 
 # Class: Matrix
 
-Defined in: [matrix.ts:3](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/math/src/matrix.ts#L3)
+Defined in: [matrix.ts:3](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/math/src/matrix.ts#L3)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [matrix.ts:3](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b
 
 > **new Matrix**(`_matrix`): `Matrix`
 
-Defined in: [matrix.ts:6](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/math/src/matrix.ts#L6)
+Defined in: [matrix.ts:6](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/math/src/matrix.ts#L6)
 
 #### Parameters
 
@@ -30,7 +30,7 @@ Defined in: [matrix.ts:6](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b
 
 > **get** **inverse**(): [`Matrix3x3`](../interfaces/Matrix3x3.md) \| `null`
 
-Defined in: [matrix.ts:10](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/math/src/matrix.ts#L10)
+Defined in: [matrix.ts:10](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/math/src/matrix.ts#L10)
 
 ##### Returns
 
@@ -42,7 +42,7 @@ Defined in: [matrix.ts:10](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55
 
 > **invertPoint**(`point`): [`Point`](../type-aliases/Point-1.md) \| `null`
 
-Defined in: [matrix.ts:23](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/math/src/matrix.ts#L23)
+Defined in: [matrix.ts:23](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/math/src/matrix.ts#L23)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: [matrix.ts:23](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55
 
 > **setMatrix**(`matrix`): `void`
 
-Defined in: [matrix.ts:14](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/math/src/matrix.ts#L14)
+Defined in: [matrix.ts:14](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/math/src/matrix.ts#L14)
 
 #### Parameters
 
@@ -78,7 +78,7 @@ Defined in: [matrix.ts:14](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55
 
 > **transformPoint**(`point`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [matrix.ts:19](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/math/src/matrix.ts#L19)
+Defined in: [matrix.ts:19](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/math/src/matrix.ts#L19)
 
 #### Parameters
 

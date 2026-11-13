@@ -4,6 +4,6 @@
 
 > **ZoomObserver** = [`Callback`](Callback.md)\<`"zoom"`\>
 
-Defined in: [packages/board/src/camera/update-publisher.ts:166](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/update-publisher.ts#L166)
+Defined in: [packages/board/src/camera/update-publisher.ts:166](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/update-publisher.ts#L166)
 
 Callback type for zoom (scale change) events.

@@ -4,7 +4,7 @@
 
 > **WidenedState**\<`E1`, `C1`, `S1`, `O1`, `E2`, `C2`, `S2`, `O2`\> = \[`E2`\] *extends* \[`E1`\] ? \[`C2`\] *extends* \[`C1`\] ? \[`S1`\] *extends* \[`S2`\] ? \[`O2`\] *extends* \[`O1`\] ? [`State`](../interfaces/State.md)\<`E2`, `C2` & [`BaseContext`](../interfaces/BaseContext.md), `S2` & `string`, `O2` & `Partial`\<`Record`\<keyof `E2`, `unknown`\>\>\> : `object` : `object` : `object` : `object`
 
-定義於: [expansion.ts:19](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/expansion.ts#L19)
+定義於: [expansion.ts:19](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/expansion.ts#L19)
 
 Resolves to `State<E2, C2, S2, O2>` when the target generics are a superset of
 the original's, and to a descriptive error object otherwise so the mistake

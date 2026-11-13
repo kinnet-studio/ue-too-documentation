@@ -4,7 +4,7 @@
 
 > **HandlePoint** = `object`
 
-Defined in: [packages/curve/src/composite-curve.ts:13](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/curve/src/composite-curve.ts#L13)
+Defined in: [packages/curve/src/composite-curve.ts:13](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/curve/src/composite-curve.ts#L13)
 
 Handle point with position and type.
 
@@ -14,7 +14,7 @@ Handle point with position and type.
 
 > **position**: `Point`
 
-Defined in: [packages/curve/src/composite-curve.ts:14](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/curve/src/composite-curve.ts#L14)
+Defined in: [packages/curve/src/composite-curve.ts:14](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/curve/src/composite-curve.ts#L14)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [packages/curve/src/composite-curve.ts:14](https://github.com/kinnet
 
 > **type**: [`HandleType`](HandleType.md)
 
-Defined in: [packages/curve/src/composite-curve.ts:15](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/curve/src/composite-curve.ts#L15)
+Defined in: [packages/curve/src/composite-curve.ts:15](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/curve/src/composite-curve.ts#L15)

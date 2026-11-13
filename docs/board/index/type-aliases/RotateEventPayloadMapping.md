@@ -4,7 +4,7 @@
 
 > **RotateEventPayloadMapping** = `object`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:53](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L53)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:53](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L53)
 
 Event payload type mapping for the rotation control state machine.
 
@@ -22,7 +22,7 @@ Maps event names to their payload types. Events include:
 
 > **initateTransition**: `EmptyPayload`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:61](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L61)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:61](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L61)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **lockedOnObjectRotateByInput**: [`RotateByInputEventPayload`](RotateByInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:58](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L58)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:58](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L58)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **lockedOnObjectRotateToInput**: [`RotateToInputEventPayload`](RotateToInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:59](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L59)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:59](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L59)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **transitionRotateByInput**: [`RotateByInputEventPayload`](RotateByInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:56](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L56)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:56](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L56)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **transitionRotateToInput**: [`RotateToInputEventPayload`](RotateToInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:57](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L57)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:57](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L57)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **unlock**: `EmptyPayload`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:60](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L60)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:60](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L60)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **userRotateByInput**: [`RotateByInputEventPayload`](RotateByInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:54](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L54)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:54](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L54)
 
 ***
 
@@ -78,4 +78,4 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **userRotateToInput**: [`RotateToInputEventPayload`](RotateToInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:55](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L55)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:55](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L55)

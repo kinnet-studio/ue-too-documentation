@@ -2,7 +2,7 @@
 
 # クラス: RotationAcceptingUserInputState
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:195](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L195)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:195](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L195)
 
 State implementation for accepting user rotation input (idle/normal state).
 Accepts user rotation input and can transition to animation or locked states.
@@ -17,7 +17,7 @@ Accepts user rotation input and can transition to animation or locked states.
 
 > **new RotationAcceptingUserInputState**(): `RotationAcceptingUserInputState`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:201](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L201)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:201](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L201)
 
 #### 戻り値
 
@@ -81,7 +81,7 @@ Accepts user rotation input and can transition to animation or locked states.
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), `BaseContext`, [`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputMapping`](../type-aliases/RotateControlOutputMapping.md)\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:205](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L205)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:205](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L205)
 
 #### 上書き
 
@@ -283,7 +283,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectRotateByInputHandler**(`context`, `payload`): [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:244](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L244)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:244](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L244)
 
 #### パラメータ
 
@@ -305,7 +305,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectRotateToInputHandler**(`context`, `payload`): [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:251](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L251)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:251](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L251)
 
 #### パラメータ
 
@@ -357,7 +357,7 @@ keyof `EventPayloadMapping`[]
 
 > **userRotateByInputHandler**(`context`, `payload`): [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:230](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L230)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:230](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L230)
 
 #### パラメータ
 
@@ -379,7 +379,7 @@ keyof `EventPayloadMapping`[]
 
 > **userRotateToInputHandler**(`context`, `payload`): [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:237](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L237)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:237](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L237)
 
 #### パラメータ
 

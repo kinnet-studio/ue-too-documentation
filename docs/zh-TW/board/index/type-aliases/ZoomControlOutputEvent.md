@@ -4,7 +4,7 @@
 
 > **ZoomControlOutputEvent** = \{ `anchorPoint`: `Point`; `deltaZoom`: `number`; `type`: `"zoomByAt"`; \} \| \{ `anchorPoint`: `Point`; `targetZoom`: `number`; `type`: `"zoomToAt"`; \} \| \{ `deltaZoom`: `number`; `type`: `"zoomBy"`; \} \| \{ `targetZoom`: `number`; `type`: `"zoomTo"`; \} \| \{ `anchorPoint`: `Point`; `deltaZoom`: `number`; `type`: `"zoomByAtWorld"`; \} \| \{ `anchorPoint`: `Point`; `targetZoom`: `number`; `type`: `"zoomToAtWorld"`; \} \| \{ `type`: `"none"`; \}
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:102](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L102)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:102](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L102)
 
 Discriminated union of output events from zoom control state machine.
 

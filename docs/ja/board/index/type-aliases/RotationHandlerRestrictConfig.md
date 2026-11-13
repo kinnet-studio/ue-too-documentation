@@ -4,7 +4,7 @@
 
 > **RotationHandlerRestrictConfig** = `object`
 
-定義: [packages/board/src/camera/camera-rig/rotation-handler.ts:55](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-rig/rotation-handler.ts#L55)
+定義: [packages/board/src/camera/camera-rig/rotation-handler.ts:55](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-rig/rotation-handler.ts#L55)
 
 Configuration for completely disabling rotation operations.
 
@@ -37,6 +37,6 @@ const config: RotationHandlerRestrictConfig = {
 
 > **restrictRotation**: `boolean`
 
-定義: [packages/board/src/camera/camera-rig/rotation-handler.ts:59](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-rig/rotation-handler.ts#L59)
+定義: [packages/board/src/camera/camera-rig/rotation-handler.ts:59](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-rig/rotation-handler.ts#L59)
 
 Whether to completely prevent rotation operations.

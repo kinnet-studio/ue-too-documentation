@@ -4,7 +4,7 @@
 
 > **OrthoGridComponent** = `object`
 
-定義於: [grid-system/ortho-grid.ts:17](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/grid-system/ortho-grid.ts#L17)
+定義於: [grid-system/ortho-grid.ts:17](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/grid-system/ortho-grid.ts#L17)
 
 ## 屬性
 
@@ -12,7 +12,7 @@
 
 > **columns**: `number`
 
-定義於: [grid-system/ortho-grid.ts:20](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/grid-system/ortho-grid.ts#L20)
+定義於: [grid-system/ortho-grid.ts:20](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/grid-system/ortho-grid.ts#L20)
 
 ***
 
@@ -20,7 +20,7 @@
 
 > **name**: `string`
 
-定義於: [grid-system/ortho-grid.ts:18](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/grid-system/ortho-grid.ts#L18)
+定義於: [grid-system/ortho-grid.ts:18](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/grid-system/ortho-grid.ts#L18)
 
 ***
 
@@ -28,4 +28,4 @@
 
 > **rows**: `number`
 
-定義於: [grid-system/ortho-grid.ts:19](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/grid-system/ortho-grid.ts#L19)
+定義於: [grid-system/ortho-grid.ts:19](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/grid-system/ortho-grid.ts#L19)

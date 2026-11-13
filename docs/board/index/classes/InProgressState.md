@@ -2,7 +2,7 @@
 
 # Class: InProgressState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:278](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L278)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:295](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L295)
 
 ## Description
 
@@ -80,7 +80,7 @@ Defined in: packages/being/dist/interface.d.ts:579
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:284](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L284)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:301](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L301)
 
 #### Overrides
 
@@ -282,7 +282,7 @@ Defined in: packages/being/dist/interface.d.ts:590
 
 > **touchend**(`context`, `payload`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:373](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L373)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:328](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L328)
 
 #### Parameters
 
@@ -304,7 +304,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **touchmove**(`context`, `payload`): [`TouchOutputEvent`](../type-aliases/TouchOutputEvent.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:304](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L304)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:321](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L321)
 
 #### Parameters
 

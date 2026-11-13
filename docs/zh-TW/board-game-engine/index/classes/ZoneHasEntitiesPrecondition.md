@@ -2,7 +2,7 @@
 
 # 類別: ZoneHasEntitiesPrecondition
 
-定義於: [zone-system/precondition.ts:11](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/zone-system/precondition.ts#L11)
+定義於: [zone-system/precondition.ts:11](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/zone-system/precondition.ts#L11)
 
 ## 實作
 
@@ -14,7 +14,7 @@
 
 > **new ZoneHasEntitiesPrecondition**(`_coordinator`, `_zoneEntity`, `_entity`): `ZoneHasEntitiesPrecondition`
 
-定義於: [zone-system/precondition.ts:12](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/zone-system/precondition.ts#L12)
+定義於: [zone-system/precondition.ts:12](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/zone-system/precondition.ts#L12)
 
 #### 參數
 
@@ -40,7 +40,7 @@
 
 > **check**(): `boolean`
 
-定義於: [zone-system/precondition.ts:18](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/zone-system/precondition.ts#L18)
+定義於: [zone-system/precondition.ts:18](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/zone-system/precondition.ts#L18)
 
 #### 回傳
 

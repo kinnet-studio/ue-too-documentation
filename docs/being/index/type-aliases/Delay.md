@@ -4,7 +4,7 @@
 
 > **Delay**\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> = `object`
 
-Defined in: [interface.ts:502](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/interface.ts#L502)
+Defined in: [interface.ts:502](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/interface.ts#L502)
 
 ## Type Parameters
 
@@ -30,7 +30,7 @@ Defined in: [interface.ts:502](https://github.com/kinnet-studio/ue-too/blob/0b8c
 
 > **action**: [`Action`](Action.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:511](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/interface.ts#L511)
+Defined in: [interface.ts:511](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/interface.ts#L511)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [interface.ts:511](https://github.com/kinnet-studio/ue-too/blob/0b8c
 
 > **time**: `number`
 
-Defined in: [interface.ts:510](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/interface.ts#L510)
+Defined in: [interface.ts:510](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/interface.ts#L510)

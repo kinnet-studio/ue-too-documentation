@@ -2,7 +2,7 @@
 
 # 類別: LockedOnObjectState
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:355](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L355)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:355](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L355)
 
 State implementation for camera locked to follow an object.
 Only accepts locked object pan events until unlocked.
@@ -17,7 +17,7 @@ Only accepts locked object pan events until unlocked.
 
 > **new LockedOnObjectState**(): `LockedOnObjectState`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:361](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L361)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:361](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L361)
 
 #### 回傳
 
@@ -81,7 +81,7 @@ Only accepts locked object pan events until unlocked.
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), `BaseContext`, [`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\>
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:365](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L365)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:365](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L365)
 
 #### 覆寫了
 
@@ -283,7 +283,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectPanByInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:382](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L382)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:382](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L382)
 
 #### 參數
 
@@ -305,7 +305,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectPanToInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:389](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L389)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:389](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L389)
 
 #### 參數
 

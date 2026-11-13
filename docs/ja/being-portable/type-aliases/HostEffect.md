@@ -4,7 +4,7 @@
 
 > **HostEffect** = `object`
 
-定義: [being-portable/src/host.ts:54](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/host.ts#L54)
+定義: [being-portable/src/host.ts:54](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L54)
 
 An effect after [defineHost](../functions/defineHost.md) parsed its types.
 
@@ -14,7 +14,7 @@ An effect after [defineHost](../functions/defineHost.md) parsed its types.
 
 > `readonly` **args**: `ReadonlyMap`\<`string`, [`ValueType`](ValueType.md)\>
 
-定義: [being-portable/src/host.ts:55](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/host.ts#L55)
+定義: [being-portable/src/host.ts:55](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L55)
 
 ***
 
@@ -22,7 +22,7 @@ An effect after [defineHost](../functions/defineHost.md) parsed its types.
 
 > `readonly` **returns**: [`ValueType`](ValueType.md) \| `null`
 
-定義: [being-portable/src/host.ts:56](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/host.ts#L56)
+定義: [being-portable/src/host.ts:56](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L56)
 
 ***
 
@@ -30,7 +30,7 @@ An effect after [defineHost](../functions/defineHost.md) parsed its types.
 
 > `readonly` **run**: (`args`) => [`Value`](Value.md) \| `void`
 
-定義: [being-portable/src/host.ts:57](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/host.ts#L57)
+定義: [being-portable/src/host.ts:57](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L57)
 
 #### パラメータ
 
