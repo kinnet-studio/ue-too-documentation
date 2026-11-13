@@ -37,6 +37,17 @@ div[align="center"] {
   --vp-c-brand-soft: rgba(122, 178, 82, 0.16);
 }
 
+/* Brand buttons: dark text on the green. White text on these greens is 1.7:1
+   to 3.1:1, under the 4.5:1 WCAG AA asks of text this size; #13200b is 5.4:1
+   or more on every green a button shows, in both themes. Pressing keeps the
+   hover green, since brand-1 (VitePress's pressed colour) gives 4.3:1 */
+:root {
+  --vp-button-brand-text: #13200b;
+  --vp-button-brand-hover-text: #13200b;
+  --vp-button-brand-active-text: #13200b;
+  --vp-button-brand-active-bg: var(--vp-c-brand-2);
+}
+
 /* Prevent text wrapping in hero section */
 .VPHomeHero .text {
   white-space: nowrap;
