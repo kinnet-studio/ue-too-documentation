@@ -13,8 +13,8 @@ export interface ThemeConfig extends DefaultTheme.Config {
 
 // Where the whole site is served. Each version is a separate build under it,
 // so links between versions are full URLs; set DOCS_SITE_URL to preview a
-// combined build locally (e.g. http://localhost:4173/ue-too-documentation/).
-const siteUrl = (process.env.DOCS_SITE_URL ?? 'https://kinnet-studio.github.io/ue-too-documentation/').replace(/\/?$/, '/')
+// combined build locally (e.g. http://localhost:4173/).
+const siteUrl = (process.env.DOCS_SITE_URL ?? 'https://ue-too.dev/').replace(/\/?$/, '/')
 
 const versions = loadVersions()
 const lines = siteLines(versions)
@@ -28,7 +28,7 @@ if (!docsRelease) {
   throw new Error(`DOCS_VERSION ${docsVersion} is not listed in versions.json`)
 }
 const srcDir = versionSrcDir(versions, docsVersion)
-// Where this version is served, e.g. /ue-too-documentation/ or /ue-too-documentation/v0.18/
+// Where this version is served, e.g. / or /v0.18/
 const base = `${new URL(siteUrl).pathname}${versionPath(versions, docsVersion)}`
 
 // Package READMEs carry an npm badge showing the registry's latest release,

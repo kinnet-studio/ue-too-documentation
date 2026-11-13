@@ -14,7 +14,7 @@ import { launchBrowser } from './browser'
 import { loadVersions } from './versions'
 
 const TIMEOUT = 20000
-const DEFAULT_URL = 'http://localhost:4173/ue-too-documentation/board/live-examples.html'
+const DEFAULT_URL = 'http://localhost:4173/board/live-examples.html'
 
 const urlFlag = process.argv.indexOf('--url')
 const pageUrl = urlFlag === -1 ? DEFAULT_URL : process.argv[urlFlag + 1]
