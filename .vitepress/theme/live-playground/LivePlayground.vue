@@ -339,17 +339,16 @@ onBeforeUnmount(() => {
 .lp-btn:hover {
   border-color: var(--vp-c-brand-1);
 }
+/* The site's brand button colours (custom.css), so the text stays readable */
 .lp-btn-primary {
-  border-color: var(--vp-c-brand-1);
-  background: var(--vp-c-brand-1);
-  color: var(--vp-c-white);
+  border-color: var(--vp-button-brand-bg);
+  background: var(--vp-button-brand-bg);
+  color: var(--vp-button-brand-text);
 }
 .lp-btn-primary:hover {
-  border-color: var(--vp-c-brand-2);
-  background: var(--vp-c-brand-2);
-}
-.dark .lp-btn-primary {
-  color: #13200b;
+  border-color: var(--vp-button-brand-hover-bg);
+  background: var(--vp-button-brand-hover-bg);
+  color: var(--vp-button-brand-hover-text);
 }
 .lp-btn svg {
   width: 14px;
