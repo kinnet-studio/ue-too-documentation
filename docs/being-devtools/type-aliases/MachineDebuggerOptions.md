@@ -4,7 +4,7 @@
 
 > **MachineDebuggerOptions** = `object`
 
-Defined in: [debugger.ts:26](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/debugger.ts#L26)
+Defined in: [debugger.ts:26](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/debugger.ts#L26)
 
 Options for a [MachineDebugger](../classes/MachineDebugger.md) panel.
 
@@ -14,7 +14,7 @@ Options for a [MachineDebugger](../classes/MachineDebugger.md) panel.
 
 > `optional` **container**: `HTMLElement`
 
-Defined in: [debugger.ts:28](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/debugger.ts#L28)
+Defined in: [debugger.ts:28](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/debugger.ts#L28)
 
 Render inline into this element instead of as a floating overlay.
 
@@ -24,7 +24,7 @@ Render inline into this element instead of as a floating overlay.
 
 > `optional` **hotkey**: `string` \| `false`
 
-Defined in: [debugger.ts:30](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/debugger.ts#L30)
+Defined in: [debugger.ts:30](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/debugger.ts#L30)
 
 Toggle shortcut (default [DEFAULT\_HOTKEY](../variables/DEFAULT_HOTKEY.md)). `false` disables it.
 
@@ -34,6 +34,6 @@ Toggle shortcut (default [DEFAULT\_HOTKEY](../variables/DEFAULT_HOTKEY.md)). `fa
 
 > `optional` **openByDefault**: `boolean`
 
-Defined in: [debugger.ts:32](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/debugger.ts#L32)
+Defined in: [debugger.ts:32](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/debugger.ts#L32)
 
 Start expanded. Defaults to `false` for the overlay, `true` with a container.

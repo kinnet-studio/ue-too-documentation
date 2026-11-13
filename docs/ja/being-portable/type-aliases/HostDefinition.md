@@ -4,7 +4,7 @@
 
 > **HostDefinition** = `object`
 
-定義: [being-portable/src/host.ts:44](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/host.ts#L44)
+定義: [being-portable/src/host.ts:44](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L44)
 
 What a host passes to [defineHost](../functions/defineHost.md).
 
@@ -14,7 +14,7 @@ What a host passes to [defineHost](../functions/defineHost.md).
 
 > `readonly` `optional` **effects**: `Readonly`\<`Record`\<`string`, [`EffectImplementation`](EffectImplementation.md)\>\>
 
-定義: [being-portable/src/host.ts:45](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/host.ts#L45)
+定義: [being-portable/src/host.ts:45](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L45)
 
 ***
 
@@ -22,7 +22,7 @@ What a host passes to [defineHost](../functions/defineHost.md).
 
 > `readonly` `optional` **limits**: `Partial`\<[`Limits`](Limits.md)\>
 
-定義: [being-portable/src/host.ts:48](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/host.ts#L48)
+定義: [being-portable/src/host.ts:48](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L48)
 
 ***
 
@@ -30,7 +30,7 @@ What a host passes to [defineHost](../functions/defineHost.md).
 
 > `readonly` `optional` **onError**: (`error`) => `void`
 
-定義: [being-portable/src/host.ts:50](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/host.ts#L50)
+定義: [being-portable/src/host.ts:50](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L50)
 
 Receives every runtime failure. Defaults to `console.error`.
 
@@ -50,6 +50,6 @@ Receives every runtime failure. Defaults to `console.error`.
 
 > `readonly` `optional` **services**: `Partial`\<[`Services`](Services.md)\>
 
-定義: [being-portable/src/host.ts:47](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/host.ts#L47)
+定義: [being-portable/src/host.ts:47](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L47)
 
 Defaults to `Math.random` and `Date.now`.

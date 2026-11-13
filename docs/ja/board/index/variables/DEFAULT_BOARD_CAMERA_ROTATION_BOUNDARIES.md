@@ -4,6 +4,6 @@
 
 > `const` **DEFAULT\_BOARD\_CAMERA\_ROTATION\_BOUNDARIES**: [`RotationLimits`](../type-aliases/RotationLimits.md) \| `undefined` = `undefined`
 
-定義: [packages/board/src/camera/default-camera.ts:36](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/default-camera.ts#L36)
+定義: [packages/board/src/camera/default-camera.ts:36](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/default-camera.ts#L36)
 
 Default rotation boundaries (unrestricted)

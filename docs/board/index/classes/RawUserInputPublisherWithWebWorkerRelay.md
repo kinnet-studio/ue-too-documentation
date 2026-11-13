@@ -2,7 +2,7 @@
 
 # Class: RawUserInputPublisherWithWebWorkerRelay
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:307](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L307)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:307](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L307)
 
 Interface for publishing raw user input events to observers.
 
@@ -22,7 +22,7 @@ for input event distribution.
 
 > **new RawUserInputPublisherWithWebWorkerRelay**(`webWorker`): `RawUserInputPublisherWithWebWorkerRelay`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:314](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L314)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:314](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L314)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyPan**(`diff`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:330](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L330)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:330](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L330)
 
 Notifies subscribers of a pan gesture
 
@@ -64,7 +64,7 @@ Notifies subscribers of a pan gesture
 
 > **notifyRotate**(`deltaRotation`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:359](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L359)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:359](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L359)
 
 Notifies subscribers of a rotate gesture
 
@@ -88,7 +88,7 @@ Notifies subscribers of a rotate gesture
 
 > **notifyZoom**(`deltaZoomAmount`, `anchorPoint`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:339](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L339)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:339](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L339)
 
 Notifies subscribers of a zoom gesture
 
@@ -116,7 +116,7 @@ Notifies subscribers of a zoom gesture
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:368](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L368)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:368](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L368)
 
 Subscribes to input events
 

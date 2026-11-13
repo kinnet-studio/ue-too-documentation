@@ -4,7 +4,7 @@
 
 > **LoadError** = `object`
 
-Defined in: [being-portable/src/errors.ts:47](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/errors.ts#L47)
+Defined in: [being-portable/src/errors.ts:47](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/errors.ts#L47)
 
 One problem found while loading a definition or restoring a snapshot.
 
@@ -14,7 +14,7 @@ One problem found while loading a definition or restoring a snapshot.
 
 > `readonly` **code**: [`LoadErrorCode`](LoadErrorCode.md)
 
-Defined in: [being-portable/src/errors.ts:48](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/errors.ts#L48)
+Defined in: [being-portable/src/errors.ts:48](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/errors.ts#L48)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [being-portable/src/errors.ts:48](https://github.com/kinnet-studio/u
 
 > `readonly` **message**: `string`
 
-Defined in: [being-portable/src/errors.ts:49](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/errors.ts#L49)
+Defined in: [being-portable/src/errors.ts:49](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/errors.ts#L49)
 
 ***
 
@@ -30,6 +30,6 @@ Defined in: [being-portable/src/errors.ts:49](https://github.com/kinnet-studio/u
 
 > `readonly` **path**: `string`
 
-Defined in: [being-portable/src/errors.ts:51](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-portable/src/errors.ts#L51)
+Defined in: [being-portable/src/errors.ts:51](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/errors.ts#L51)
 
 JSON path into the document, e.g. `states.READY.on.select.do[1]`.

@@ -4,7 +4,7 @@
 
 > **ZoomPanPath** = `object`
 
-Defined in: [packages/board/src/camera/utils/zoom-pan-path.ts:29](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/utils/zoom-pan-path.ts#L29)
+Defined in: [packages/board/src/camera/utils/zoom-pan-path.ts:29](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/zoom-pan-path.ts#L29)
 
 A smooth camera path between two views, made by [createZoomPanPath](../functions/createZoomPanPath.md).
 
@@ -14,7 +14,7 @@ A smooth camera path between two views, made by [createZoomPanPath](../functions
 
 > `readonly` **length**: `number`
 
-Defined in: [packages/board/src/camera/utils/zoom-pan-path.ts:35](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/utils/zoom-pan-path.ts#L35)
+Defined in: [packages/board/src/camera/utils/zoom-pan-path.ts:35](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/zoom-pan-path.ts#L35)
 
 How long the trip feels, in the metric of Van Wijk & Nuij's paper.
 A longer or deeper trip gives a bigger number, so it can scale an
@@ -26,7 +26,7 @@ animation's duration. It is 0 when both views are the same.
 
 > **at**(`t`): [`CameraView`](CameraView.md)
 
-Defined in: [packages/board/src/camera/utils/zoom-pan-path.ts:46](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/utils/zoom-pan-path.ts#L46)
+Defined in: [packages/board/src/camera/utils/zoom-pan-path.ts:46](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/zoom-pan-path.ts#L46)
 
 The camera view at progress `t`.
 

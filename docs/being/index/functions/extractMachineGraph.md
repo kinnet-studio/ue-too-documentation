@@ -4,7 +4,7 @@
 
 > **extractMachineGraph**(`machine`): [`MachineGraph`](../type-aliases/MachineGraph.md)
 
-Defined in: [introspect.ts:60](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being/src/introspect.ts#L60)
+Defined in: [introspect.ts:60](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/introspect.ts#L60)
 
 Extracts a machine's states and transitions as a directed graph.
 

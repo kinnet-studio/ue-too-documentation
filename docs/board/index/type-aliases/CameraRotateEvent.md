@@ -4,7 +4,7 @@
 
 > **CameraRotateEvent** = `object` & [`CameraRotateEventPayload`](CameraRotateEventPayload.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:69](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board/src/camera/update-publisher.ts#L69)
+Defined in: [packages/board/src/camera/update-publisher.ts:69](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/update-publisher.ts#L69)
 
 Rotation event with discriminated type field for 'all' event handling.
 Includes type discriminator and rotation payload.

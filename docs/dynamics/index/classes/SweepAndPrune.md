@@ -2,7 +2,7 @@
 
 # Class: SweepAndPrune\<T\>
 
-Defined in: [dynamic-tree.ts:112](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/dynamics/src/dynamic-tree.ts#L112)
+Defined in: [dynamic-tree.ts:112](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/dynamic-tree.ts#L112)
 
 Sweep and Prune (SAP) spatial indexing algorithm.
 
@@ -32,7 +32,7 @@ Sweep and Prune (SAP) spatial indexing algorithm.
 
 > **clear**(): `void`
 
-Defined in: [dynamic-tree.ts:122](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/dynamics/src/dynamic-tree.ts#L122)
+Defined in: [dynamic-tree.ts:122](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/dynamic-tree.ts#L122)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [dynamic-tree.ts:122](https://github.com/kinnet-studio/ue-too/blob/0
 
 > `optional` **draw**(`context`): `void`
 
-Defined in: [dynamic-tree.ts:281](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/dynamics/src/dynamic-tree.ts#L281)
+Defined in: [dynamic-tree.ts:281](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/dynamic-tree.ts#L281)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [dynamic-tree.ts:281](https://github.com/kinnet-studio/ue-too/blob/0
 
 > **findAllOverlaps**(): `object`[]
 
-Defined in: [dynamic-tree.ts:212](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/dynamics/src/dynamic-tree.ts#L212)
+Defined in: [dynamic-tree.ts:212](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/dynamic-tree.ts#L212)
 
 #### Returns
 
@@ -82,7 +82,7 @@ Defined in: [dynamic-tree.ts:212](https://github.com/kinnet-studio/ue-too/blob/0
 
 > **getStats**(): `object`
 
-Defined in: [dynamic-tree.ts:306](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/dynamics/src/dynamic-tree.ts#L306)
+Defined in: [dynamic-tree.ts:306](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/dynamic-tree.ts#L306)
 
 #### Returns
 
@@ -102,7 +102,7 @@ Defined in: [dynamic-tree.ts:306](https://github.com/kinnet-studio/ue-too/blob/0
 
 > **insert**(`object`): `void`
 
-Defined in: [dynamic-tree.ts:128](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/dynamics/src/dynamic-tree.ts#L128)
+Defined in: [dynamic-tree.ts:128](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/dynamic-tree.ts#L128)
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: [dynamic-tree.ts:128](https://github.com/kinnet-studio/ue-too/blob/0
 
 > **remove**(`object`): `void`
 
-Defined in: [dynamic-tree.ts:172](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/dynamics/src/dynamic-tree.ts#L172)
+Defined in: [dynamic-tree.ts:172](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/dynamic-tree.ts#L172)
 
 #### Parameters
 
@@ -142,7 +142,7 @@ Defined in: [dynamic-tree.ts:172](https://github.com/kinnet-studio/ue-too/blob/0
 
 > **retrieve**(`queryObject`): `T`[]
 
-Defined in: [dynamic-tree.ts:181](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/dynamics/src/dynamic-tree.ts#L181)
+Defined in: [dynamic-tree.ts:181](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/dynamic-tree.ts#L181)
 
 #### Parameters
 
@@ -164,7 +164,7 @@ Defined in: [dynamic-tree.ts:181](https://github.com/kinnet-studio/ue-too/blob/0
 
 > **update**(`object`): `void`
 
-Defined in: [dynamic-tree.ts:151](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/dynamics/src/dynamic-tree.ts#L151)
+Defined in: [dynamic-tree.ts:151](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/dynamic-tree.ts#L151)
 
 #### Parameters
 

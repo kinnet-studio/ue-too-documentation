@@ -2,7 +2,7 @@
 
 # 類別: CompositeBCurve
 
-定義於: [packages/curve/src/composite-curve.ts:358](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/curve/src/composite-curve.ts#L358)
+定義於: [packages/curve/src/composite-curve.ts:358](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/curve/src/composite-curve.ts#L358)
 
 Composite Bezier curve made of multiple control points with handles.
 
@@ -12,7 +12,7 @@ Composite Bezier curve made of multiple control points with handles.
 
 > **new CompositeBCurve**(`controlPoints`): `CompositeBCurve`
 
-定義於: [packages/curve/src/composite-curve.ts:361](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/curve/src/composite-curve.ts#L361)
+定義於: [packages/curve/src/composite-curve.ts:361](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/curve/src/composite-curve.ts#L361)
 
 #### 參數
 
@@ -30,7 +30,7 @@ Composite Bezier curve made of multiple control points with handles.
 
 > **appendControlPoint**(`position`): `void`
 
-定義於: [packages/curve/src/composite-curve.ts:369](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/curve/src/composite-curve.ts#L369)
+定義於: [packages/curve/src/composite-curve.ts:369](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/curve/src/composite-curve.ts#L369)
 
 #### 參數
 
@@ -48,7 +48,7 @@ Composite Bezier curve made of multiple control points with handles.
 
 > **getControlPoints**(): [`ControlPoint`](ControlPoint.md)[]
 
-定義於: [packages/curve/src/composite-curve.ts:365](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/curve/src/composite-curve.ts#L365)
+定義於: [packages/curve/src/composite-curve.ts:365](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/curve/src/composite-curve.ts#L365)
 
 #### 回傳
 
@@ -60,7 +60,7 @@ Composite Bezier curve made of multiple control points with handles.
 
 > **setLeftHandlePositionOfControlPoint**(`controlPointIndex`, `destPos`): `void`
 
-定義於: [packages/curve/src/composite-curve.ts:395](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/curve/src/composite-curve.ts#L395)
+定義於: [packages/curve/src/composite-curve.ts:395](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/curve/src/composite-curve.ts#L395)
 
 #### 參數
 
@@ -82,7 +82,7 @@ Composite Bezier curve made of multiple control points with handles.
 
 > **setPositionOfControlPoint**(`controlPointIndex`, `destPos`): `void`
 
-定義於: [packages/curve/src/composite-curve.ts:421](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/curve/src/composite-curve.ts#L421)
+定義於: [packages/curve/src/composite-curve.ts:421](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/curve/src/composite-curve.ts#L421)
 
 #### 參數
 
@@ -104,7 +104,7 @@ Composite Bezier curve made of multiple control points with handles.
 
 > **setRightHandlePositionOfControlPoint**(`controlPointIndex`, `destPos`): `void`
 
-定義於: [packages/curve/src/composite-curve.ts:408](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/curve/src/composite-curve.ts#L408)
+定義於: [packages/curve/src/composite-curve.ts:408](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/curve/src/composite-curve.ts#L408)
 
 #### 參數
 

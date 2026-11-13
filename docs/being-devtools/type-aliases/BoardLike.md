@@ -4,7 +4,7 @@
 
 > **BoardLike** = `object`
 
-Defined in: [board.ts:10](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/board.ts#L10)
+Defined in: [board.ts:10](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/board.ts#L10)
 
 The slice of a `Board` this helper reads. Typed loosely so tests can
 stub it and so a `Board` from a second copy of `@ue-too/board` still
@@ -16,7 +16,7 @@ fits; every value is checked structurally before use.
 
 > **cameraMux**: `unknown`
 
-Defined in: [board.ts:13](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/board.ts#L13)
+Defined in: [board.ts:13](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/board.ts#L13)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [board.ts:13](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b
 
 > `optional` **kmtInputStateMachine**: `unknown`
 
-Defined in: [board.ts:11](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/board.ts#L11)
+Defined in: [board.ts:11](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/board.ts#L11)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [board.ts:11](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b
 
 > `optional` **touchInputStateMachine**: `unknown`
 
-Defined in: [board.ts:12](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/being-devtools/src/board.ts#L12)
+Defined in: [board.ts:12](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-devtools/src/board.ts#L12)

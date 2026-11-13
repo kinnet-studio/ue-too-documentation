@@ -2,7 +2,7 @@
 
 # Interface: Keyframes\<T\>
 
-Defined in: [composite-animation.ts:1205](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/animate/src/composite-animation.ts#L1205)
+Defined in: [composite-animation.ts:1205](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/animate/src/composite-animation.ts#L1205)
 
 ## Type Parameters
 
@@ -16,7 +16,7 @@ Defined in: [composite-animation.ts:1205](https://github.com/kinnet-studio/ue-to
 
 > **keyframes**: [`Keyframe`](../type-aliases/Keyframe.md)\<`T`\>[]
 
-Defined in: [composite-animation.ts:1206](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/animate/src/composite-animation.ts#L1206)
+Defined in: [composite-animation.ts:1206](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/animate/src/composite-animation.ts#L1206)
 
 ## Methods
 
@@ -24,7 +24,7 @@ Defined in: [composite-animation.ts:1206](https://github.com/kinnet-studio/ue-to
 
 > **clearFrames**(): `void`
 
-Defined in: [composite-animation.ts:1210](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/animate/src/composite-animation.ts#L1210)
+Defined in: [composite-animation.ts:1210](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/animate/src/composite-animation.ts#L1210)
 
 #### Returns
 
@@ -36,7 +36,7 @@ Defined in: [composite-animation.ts:1210](https://github.com/kinnet-studio/ue-to
 
 > **from**(`value`): `Keyframes`\<`T`\>
 
-Defined in: [composite-animation.ts:1207](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/animate/src/composite-animation.ts#L1207)
+Defined in: [composite-animation.ts:1207](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/animate/src/composite-animation.ts#L1207)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [composite-animation.ts:1207](https://github.com/kinnet-studio/ue-to
 
 > **insertAt**(`percentage`, `value`): `void`
 
-Defined in: [composite-animation.ts:1209](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/animate/src/composite-animation.ts#L1209)
+Defined in: [composite-animation.ts:1209](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/animate/src/composite-animation.ts#L1209)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ Defined in: [composite-animation.ts:1209](https://github.com/kinnet-studio/ue-to
 
 > **to**(`value`): `Keyframes`\<`T`\>
 
-Defined in: [composite-animation.ts:1208](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/animate/src/composite-animation.ts#L1208)
+Defined in: [composite-animation.ts:1208](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/animate/src/composite-animation.ts#L1208)
 
 #### Parameters
 

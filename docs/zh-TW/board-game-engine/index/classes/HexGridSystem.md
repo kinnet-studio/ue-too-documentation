@@ -2,7 +2,7 @@
 
 # 類別: HexGridSystem
 
-定義於: [grid-system/hex-grid.ts:100](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/grid-system/hex-grid.ts#L100)
+定義於: [grid-system/hex-grid.ts:100](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/grid-system/hex-grid.ts#L100)
 
 ## 實作
 
@@ -14,7 +14,7 @@
 
 > **new HexGridSystem**(`coordinator`): `HexGridSystem`
 
-定義於: [grid-system/hex-grid.ts:104](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/grid-system/hex-grid.ts#L104)
+定義於: [grid-system/hex-grid.ts:104](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/grid-system/hex-grid.ts#L104)
 
 #### 參數
 
@@ -32,7 +32,7 @@
 
 > **entities**: `Set`\<`number`\>
 
-定義於: [grid-system/hex-grid.ts:101](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/grid-system/hex-grid.ts#L101)
+定義於: [grid-system/hex-grid.ts:101](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/grid-system/hex-grid.ts#L101)
 
 #### 實作了
 
@@ -44,7 +44,7 @@
 
 > **addEntityToGridCell**(`grid`, `q`, `r`, `entity`, `direction`, `displace`): `void`
 
-定義於: [grid-system/hex-grid.ts:138](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/grid-system/hex-grid.ts#L138)
+定義於: [grid-system/hex-grid.ts:138](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/grid-system/hex-grid.ts#L138)
 
 #### 參數
 
@@ -82,7 +82,7 @@
 
 > **getCellEntityAt**(`grid`, `q`, `r`): `number` \| `null`
 
-定義於: [grid-system/hex-grid.ts:240](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/grid-system/hex-grid.ts#L240)
+定義於: [grid-system/hex-grid.ts:240](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/grid-system/hex-grid.ts#L240)
 
 #### 參數
 
@@ -108,7 +108,7 @@
 
 > **getEntireGridEntities**(`grid`): \{ `entities`: (`number` \| `null`)[][]; `hasHole`: `boolean`; \} \| `null`
 
-定義於: [grid-system/hex-grid.ts:192](https://github.com/kinnet-studio/ue-too/blob/0b8c7a55b77018878f79549f091765753671b81b/packages/board-game-engine/src/grid-system/hex-grid.ts#L192)
+定義於: [grid-system/hex-grid.ts:192](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/grid-system/hex-grid.ts#L192)
 
 #### 參數
 
