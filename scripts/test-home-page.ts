@@ -15,7 +15,7 @@ import { launchBrowser } from './browser'
 import type {} from '../.vitepress/theme/canvas-home/canvas-home'
 
 const TIMEOUT = 20000
-const DEFAULT_URL = 'http://localhost:4173/ue-too-documentation/'
+const DEFAULT_URL = 'http://localhost:4173/'
 
 const urlFlag = process.argv.indexOf('--url')
 const urlArg = urlFlag === -1 ? DEFAULT_URL : process.argv[urlFlag + 1]
@@ -80,7 +80,7 @@ async function drag(page: Page, from: { x: number; y: number }, to: { x: number;
 const EMPTY = { x: 200, y: 760 }
 
 async function onPackagesPage(page: Page, locale = '') {
-  const pattern = new RegExp(`/ue-too-documentation/${locale}packages(\\.html)?$`)
+  const pattern = new RegExp(`^${new URL(siteUrl).pathname}${locale}packages(\\.html)?$`)
   await page.waitForURL(url => pattern.test(url.pathname), { timeout: TIMEOUT })
 }
 

@@ -1,6 +1,6 @@
 # ue-too-documentation
 
-Source of the uē-tôo docs site, https://kinnet-studio.github.io/ue-too-documentation/, built with VitePress.
+Source of the uē-tôo docs site, https://ue-too.dev/, built with VitePress.
 
 ```bash
 bun install
@@ -21,7 +21,7 @@ Each version is a separate VitePress build (`DOCS_VERSION` in `.vitepress/config
 Static files that every version serves, like the logo and favicons, live in `.vitepress/public/` (set as Vite's `publicDir`), so a `public/` folder inside `docs/` or `versions/v<line>/` isn't used.
 
 - Work on an archived version: `DOCS_VERSION=0.18 bun run docs:dev`
-- Try the version menu locally: build with `DOCS_SITE_URL=http://localhost:4173/ue-too-documentation/ bun run docs:build`, then `bun run docs:preview`
+- Try the version menu locally: build with `DOCS_SITE_URL=http://localhost:4173/ bun run docs:build`, then `bun run docs:preview`
 - Drop an old version: delete its folder and remove it from `versions.json`
 
 ## Release updates
