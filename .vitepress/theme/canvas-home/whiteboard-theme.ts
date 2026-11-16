@@ -2,10 +2,30 @@
  * The drawing's colours on the home page, light and dark. Shapes store colour
  * names (ink, red, …); these turn them into colours that read on the site's
  * background in each theme.
+ *
+ * Only types come from @ue-too/board/whiteboard: this module loads with
+ * every page, and the whiteboard itself loads with the home canvas only.
  */
-import { DEFAULT_THEME, type ColorName, type WhiteboardTheme } from '@ue-too/board/whiteboard'
+import type { ColorName, WhiteboardTheme } from '@ue-too/board/whiteboard'
 
-const DARK_COLORS: Record<ColorName, string> = {
+/** The whiteboard's own light palette (its DEFAULT_THEME) */
+export const LIGHT_COLORS: Record<ColorName, string> = {
+  ink: '#1e1e1e',
+  red: '#e03131',
+  blue: '#1971c2',
+  green: '#2f9e44',
+  orange: '#f08c00',
+}
+
+const LIGHT_PAPER: Record<ColorName, string> = {
+  ink: '#fff0a3',
+  red: '#ffc9c9',
+  blue: '#a5d8ff',
+  green: '#b2f2bb',
+  orange: '#ffd8a8',
+}
+
+export const DARK_COLORS: Record<ColorName, string> = {
   ink: '#e8e8e0',
   red: '#ff8787',
   blue: '#74c0fc',
@@ -28,10 +48,10 @@ const DARK_PAPER: Record<ColorName, string> = {
  */
 export function whiteboardTheme(dark: boolean, brand: string, siteFont: string): Partial<WhiteboardTheme> {
   return {
-    colors: dark ? DARK_COLORS : DEFAULT_THEME.colors,
-    paper: dark ? DARK_PAPER : DEFAULT_THEME.paper,
-    paperText: dark ? '#231d00' : DEFAULT_THEME.paperText,
-    selection: brand || DEFAULT_THEME.selection,
+    colors: dark ? DARK_COLORS : LIGHT_COLORS,
+    paper: dark ? DARK_PAPER : LIGHT_PAPER,
+    paperText: dark ? '#231d00' : '#3d3300',
+    selection: brand || '#4f7a33',
     fonts: { hand: `'Caveat', ${siteFont}` },
   }
 }

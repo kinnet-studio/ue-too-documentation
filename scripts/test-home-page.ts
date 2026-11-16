@@ -51,6 +51,11 @@ async function waitForCanvas(page: Page) {
   })
 }
 
+// The drawing dock loads just after the canvas
+async function waitForDock(page: Page) {
+  await page.getByTestId('wb-dock').waitFor({ timeout: TIMEOUT })
+}
+
 async function buttonRect(page: Page): Promise<Rect> {
   const rects = await page.evaluate(() => window.__canvasHome!.buttonRects().map(r => ({ x: r.x, y: r.y, width: r.width, height: r.height })))
   assert(rects.length > 0, 'the hero has no buttons')
@@ -542,6 +547,149 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     await page.reload()
     await waitForCanvas(page)
     assert((await size()) === 0, `after clearing and reloading the board has ${await size()} shapes`)
+    await context.close()
+  },
+
+  // The dock picks tools; a drawing tool swaps the hint for the style panel
+  async 'dock-tools'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const dock = page.getByTestId('wb-dock')
+    const tool = () => page.evaluate(() => window.__canvasHome!.editor.tool)
+    assert(await page.getByTestId('wb-hint').isVisible(), 'the hint is hidden with the hand tool')
+    assert(!(await page.getByTestId('wb-style').isVisible()), 'the style panel shows with the hand tool')
+    await dock.getByRole('button', { name: 'Pen', exact: true }).click()
+    assert((await tool()) === 'pen', `the Pen button picked ${await tool()}`)
+    assert((await dock.getByRole('button', { name: 'Pen', exact: true }).getAttribute('aria-pressed')) === 'true', 'Pen is not pressed')
+    await page.keyboard.press('r')
+    assert((await dock.getByRole('button', { name: 'Rectangle', exact: true }).getAttribute('aria-pressed')) === 'true', 'R did not press Rectangle')
+    await drag(page, EMPTY, { x: EMPTY.x + 120, y: EMPTY.y - 80 })
+    const size = await page.evaluate(() => window.__canvasHome!.editor.document.size)
+    assert(size === 1, `drawing a rectangle left ${size} shapes`)
+    await dock.getByRole('button', { name: 'Pen', exact: true }).click()
+    assert(await page.getByTestId('wb-style').isVisible(), 'the style panel is hidden with a drawing tool')
+    assert(!(await page.getByTestId('wb-hint').isVisible()), 'the hint shows with a drawing tool')
+    await context.close()
+  },
+
+  async 'dock-undo-clear'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const dock = page.getByTestId('wb-dock')
+    const size = () => page.evaluate(() => window.__canvasHome!.editor.document.size)
+    await dock.getByRole('button', { name: 'Pen', exact: true }).click()
+    await drag(page, EMPTY, { x: EMPTY.x + 120, y: EMPTY.y - 40 })
+    assert((await size()) === 1, 'the stroke was not drawn')
+    await dock.getByRole('button', { name: 'Undo' }).click()
+    assert((await size()) === 0, 'Undo kept the stroke')
+    await dock.getByRole('button', { name: 'Redo' }).click()
+    assert((await size()) === 1, 'Redo did not bring it back')
+    const clear = dock.getByRole('button', { name: 'Clear the board' })
+    await clear.click()
+    assert((await size()) === 0, 'Clear kept the stroke')
+    assert(await clear.isDisabled(), 'Clear is enabled on an empty board')
+    await page.keyboard.press('Control+z')
+    assert((await size()) === 1, 'Ctrl+Z did not undo the clear')
+    await context.close()
+  },
+
+  async 'dock-style'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const dock = page.getByTestId('wb-dock')
+    const panel = page.getByTestId('wb-style')
+    await dock.getByRole('button', { name: 'Rectangle', exact: true }).click()
+    assert(await panel.getByRole('button', { name: 'Hatched' }).isVisible(), 'the fill options are hidden for rectangles')
+    await panel.getByRole('button', { name: 'Red' }).click()
+    await drag(page, EMPTY, { x: EMPTY.x + 120, y: EMPTY.y - 80 })
+    const style = () => page.evaluate(() => window.__canvasHome!.editor.document.all()[0]!.style)
+    assert((await style()).color === 'red', `the rectangle is ${(await style()).color}`)
+    // The rectangle is selected after drawing; the panel restyles it
+    await panel.getByRole('button', { name: 'Large' }).click()
+    assert((await style()).size === 'l', `the rectangle's size is ${(await style()).size}`)
+    await dock.getByRole('button', { name: 'Pen', exact: true }).click()
+    assert(!(await panel.getByRole('button', { name: 'Hatched' }).isVisible()), 'the fill options show for the pen')
+    await context.close()
+  },
+
+  async 'dock-keyboard'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const dock = page.getByTestId('wb-dock')
+    await dock.getByRole('button', { name: 'Hand', exact: true }).focus()
+    await page.keyboard.press('ArrowRight')
+    const focused = await page.evaluate(() => document.activeElement?.getAttribute('aria-label'))
+    assert(focused === 'Select', `ArrowRight moved focus to ${focused}`)
+    await page.keyboard.press('Enter')
+    assert((await page.evaluate(() => window.__canvasHome!.editor.tool)) === 'select', 'Enter did not pick Select')
+    assert((await dock.getByRole('button', { name: 'Hand', exact: true }).getAttribute('tabindex')) === '-1', 'more than one dock button is in the tab order')
+    // Typing in the site search doesn't switch tools
+    await page.locator('.VPNavBarSearch button').first().click()
+    await page.waitForFunction(() => document.activeElement?.classList.contains('search-input'), null, { timeout: TIMEOUT })
+    await page.keyboard.type('rope')
+    await page.waitForTimeout(200)
+    assert((await page.evaluate(() => window.__canvasHome!.editor.tool)) === 'select', 'typing in search switched tools')
+    await context.close()
+  },
+
+  async 'dock-phone'(browser) {
+    const { context, page } = await openHome(browser, '', PHONE)
+    await waitForDock(page)
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
+    assert(overflow === 0, `the page scrolls sideways by ${overflow}px`)
+    const dock = page.getByTestId('wb-dock')
+    const box = await dock.boundingBox()
+    assert(box && box.x >= 0 && box.x + box.width <= 390, `the dock is ${JSON.stringify(box)}`)
+    await dock.getByRole('button', { name: 'Shapes' }).tap()
+    const menu = page.getByTestId('wb-shapes-menu')
+    assert(await menu.isVisible(), 'the Shapes menu did not open')
+    await menu.getByRole('button', { name: 'Ellipse' }).tap()
+    assert(!(await menu.isVisible()), 'the Shapes menu stayed open')
+    assert((await page.evaluate(() => window.__canvasHome!.editor.tool)) === 'ellipse', 'Ellipse was not picked')
+    const cdp = await context.newCDPSession(page)
+    const touch = (type: 'touchStart' | 'touchMove' | 'touchEnd', x: number, y: number) =>
+      cdp.send('Input.dispatchTouchEvent', { type, touchPoints: type === 'touchEnd' ? [] : [{ x, y }] })
+    await touch('touchStart', 80, 200)
+    for (let i = 1; i <= 6; i++) await touch('touchMove', 80 + i * 15, 200 + i * 10)
+    await touch('touchEnd', 170, 260)
+    const shapes = await page.evaluate(() => window.__canvasHome!.editor.document.all().map(s => s.type))
+    assert(shapes.length === 1 && shapes[0] === 'ellipse', `a one-finger drag drew ${JSON.stringify(shapes)}`)
+    await dock.getByRole('button', { name: 'More' }).tap()
+    assert(await page.getByTestId('wb-more-menu').getByRole('button', { name: 'Clear the board' }).isVisible(), 'More has no Clear')
+    await context.close()
+  },
+
+  async 'dock-locales'(browser) {
+    for (const [path, note] of [['ja/', '付箋'], ['zh-TW/', '便利貼']] as const) {
+      const { context, page } = await openHome(browser, path)
+      await waitForDock(page)
+      assert(await page.getByTestId('wb-dock').getByRole('button', { name: note }).isVisible(), `${path} has no ${note} button`)
+      await context.close()
+    }
+  },
+
+  async 'text-typing'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    await page.getByTestId('wb-dock').getByRole('button', { name: 'Text', exact: true }).click()
+    await page.mouse.click(EMPTY.x, EMPTY.y - 100)
+    await page.keyboard.type('Hello')
+    const text = () => page.evaluate(() => (window.__canvasHome!.editor.document.all()[0] as { text?: string } | undefined)?.text)
+    assert((await text()) === 'Hello', `the text shape holds ${await text()}`)
+    await page.keyboard.press('Escape')
+    assert(!(await page.evaluate(() => window.__canvasHome!.editor.getState().editingText)), 'Escape did not end editing')
+    await context.close()
+  },
+
+  async 'back-pill-above-dock'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    await drag(page, EMPTY, { x: EMPTY.x + 300, y: EMPTY.y - 150 })
+    await page.waitForTimeout(100)
+    const pill = await backRect(page)
+    const stack = await page.getByTestId('wb-stack').boundingBox()
+    assert(pill && stack, 'the pill or the dock is missing')
+    assert(pill.y + pill.height <= stack.y, `the pill (bottom ${pill.y + pill.height}) overlaps the dock (top ${stack.y})`)
     await context.close()
   },
 

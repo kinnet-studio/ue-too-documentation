@@ -6,7 +6,7 @@
  * focusing one draws a focus ring on the canvas.
  */
 import { useData } from 'vitepress'
-import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { computed, defineAsyncComponent, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import type { CanvasHomeHandle } from './canvas-home'
 import type { HeroContent } from './hero-layout'
 import { backLabel, canvasHome } from './state'
@@ -35,6 +35,9 @@ const HINTS: Record<'en' | 'ja' | 'zh-TW', { fine: string; touch: string }> = {
   },
 }
 
+// The drawing dock loads with the canvas, so other pages never download the whiteboard
+const WhiteboardDock = defineAsyncComponent(() => import('./WhiteboardDock.vue'))
+
 const { frontmatter, isDark, lang } = useData()
 const canvasEl = ref<HTMLCanvasElement>()
 let handle: CanvasHomeHandle | null = null
@@ -50,8 +53,10 @@ function theme() {
   return whiteboardTheme(isDark.value, brand, getComputedStyle(document.body).fontFamily)
 }
 
-function hint(): string {
-  const locale = lang.value.startsWith('ja') ? 'ja' : lang.value === 'zh-TW' ? 'zh-TW' : 'en'
+const hintText = computed(() => hint(lang.value))
+
+function hint(lang: string): string {
+  const locale = lang.startsWith('ja') ? 'ja' : lang === 'zh-TW' ? 'zh-TW' : 'en'
   return HINTS[locale][matchMedia('(pointer: coarse)').matches ? 'touch' : 'fine']
 }
 
@@ -151,6 +156,7 @@ onBeforeUnmount(() => {
 
 <template>
   <canvas ref="canvasEl" class="canvas-home" data-testid="canvas-home" aria-hidden="true"></canvas>
+  <WhiteboardDock v-if="canvasHome" :hint="hintText" />
 </template>
 
 <style scoped>

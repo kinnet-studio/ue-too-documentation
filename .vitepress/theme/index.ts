@@ -5,6 +5,9 @@ import VersionBanner from './VersionBanner.vue'
 import BackToStartButton from './canvas-home/BackToStartButton.vue'
 import CanvasHome from './canvas-home/CanvasHome.vue'
 import './custom.css'
+// The home page whiteboard's handwriting font: only the @font-face rules load
+// here, the font files load once a drawing has text in it
+import '@fontsource/caveat/700.css'
 
 export default {
   extends: DefaultTheme,
