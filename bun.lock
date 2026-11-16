@@ -11,7 +11,7 @@
         "@codemirror/view": "^6.43.14",
         "@fontsource/caveat": "^5.3.0",
         "@lezer/highlight": "^1.2.5",
-        "@ue-too/board": "0.21.0",
+        "@ue-too/board": "0.21.1",
         "codemirror": "^6.0.2",
       },
       "devDependencies": {
@@ -207,11 +207,11 @@
 
     "@types/web-bluetooth": ["@types/web-bluetooth@0.0.21", "", {}, "sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA=="],
 
-    "@ue-too/being": ["@ue-too/being@0.21.0", "", {}, "sha512-fE/lyJCe4olHMcqKzaQrDNI9e1/TuN+mHei9jduTZnCDpv42eezfh76f6X4oPTIDGugH89MxbM0FpZrwM6HJRw=="],
+    "@ue-too/being": ["@ue-too/being@0.21.1", "", {}, "sha512-uIkpX2Mi9Kipr0uuh2BQ66kSG8ge9fUvaDALR/fP1SY6Jt1IQEcWLUsoBJhKkLDG1e/dSh2zhZv2djs97tfkzQ=="],
 
-    "@ue-too/board": ["@ue-too/board@0.21.0", "", { "dependencies": { "@ue-too/being": "^0.21.0", "@ue-too/math": "^0.21.0" } }, "sha512-csnuYfZsZYtVpLe14Eh+6tfjWoqNn3ArFVHJs9a4dYAU8oQJcuX+PRPSqmI4SinrTyBTsa9UjJO8/drevlKqtA=="],
+    "@ue-too/board": ["@ue-too/board@0.21.1", "", { "dependencies": { "@ue-too/being": "^0.21.1", "@ue-too/math": "^0.21.1" } }, "sha512-qQAdtut0VuvTgfCvFHPX3UrdYyPXq38gR2+Gde+WQjJcrxBiY3zxqVoLgZ7v+6QXLVDT1xT0zlp99+/atGZmOw=="],
 
-    "@ue-too/math": ["@ue-too/math@0.21.0", "", {}, "sha512-3gbhNkgY1q6wLepolNIJLh5Sf63K+W1Nn34MPywLnVvb73jWEDya0KZNhnizqx0A0RvCs0FUrn8UvkUrvCS5vw=="],
+    "@ue-too/math": ["@ue-too/math@0.21.1", "", {}, "sha512-2NnVk/STdvCmhjz8sMUiofRmENg1h5QhtRMi2tYE8NXomAR3/gcIl0W1qun9bzgQgOb4pbTCf8Ynpks10Elxdw=="],
 
     "@ungap/structured-clone": ["@ungap/structured-clone@1.3.0", "", {}, "sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g=="],
 
