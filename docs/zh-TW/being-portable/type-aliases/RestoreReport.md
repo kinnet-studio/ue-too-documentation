@@ -4,7 +4,7 @@
 
 > **RestoreReport** = `object`
 
-定義於: [being-portable/src/api-types.ts:45](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/api-types.ts#L45)
+定義於: [being-portable/src/api-types.ts:45](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/api-types.ts#L45)
 
 What a structural restore changed. Paths are JSON paths into the snapshot.
 
@@ -14,7 +14,7 @@ What a structural restore changed. Paths are JSON paths into the snapshot.
 
 > `readonly` **defaulted**: readonly `string`[]
 
-定義於: [being-portable/src/api-types.ts:47](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/api-types.ts#L47)
+定義於: [being-portable/src/api-types.ts:47](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/api-types.ts#L47)
 
 ***
 
@@ -22,4 +22,4 @@ What a structural restore changed. Paths are JSON paths into the snapshot.
 
 > `readonly` **dropped**: readonly `string`[]
 
-定義於: [being-portable/src/api-types.ts:46](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/api-types.ts#L46)
+定義於: [being-portable/src/api-types.ts:46](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/api-types.ts#L46)

@@ -2,7 +2,7 @@
 
 # クラス: PinJoint
 
-定義: [constraint.ts:149](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L149)
+定義: [constraint.ts:149](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/dynamics/src/constraint.ts#L149)
 
 Pin joint connecting two bodies together.
 
@@ -42,7 +42,7 @@ world.addConstraint(joint);
 
 > **new PinJoint**(`bodyA`, `bodyB`, `anchorA`, `anchorB`): `PinJoint`
 
-定義: [constraint.ts:155](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L155)
+定義: [constraint.ts:155](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/dynamics/src/constraint.ts#L155)
 
 #### パラメータ
 
@@ -72,7 +72,7 @@ world.addConstraint(joint);
 
 > **enforce**(`dt`): `void`
 
-定義: [constraint.ts:167](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L167)
+定義: [constraint.ts:167](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/dynamics/src/constraint.ts#L167)
 
 Enforces the constraint for one timestep.
 
@@ -98,7 +98,7 @@ Timestep in seconds
 
 > **solvePinJointConstraint**(`dt`): `void`
 
-定義: [constraint.ts:171](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L171)
+定義: [constraint.ts:171](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/dynamics/src/constraint.ts#L171)
 
 #### パラメータ
 

@@ -2,7 +2,7 @@
 
 # 類別: KmtIdleState
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:257](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L257)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:257](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L257)
 
 IDLE state - default state waiting for user input.
 
@@ -38,7 +38,7 @@ from mice (which typically only produce deltaY), and a middle-click settles on `
 
 > **new KmtIdleState**(): `KmtIdleState`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:263](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L263)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:263](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L263)
 
 #### 回傳
 
@@ -78,7 +78,7 @@ from mice (which typically only produce deltaY), and a middle-click settles on `
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), `Guard`\<[`KmtInputContext`](../interfaces/KmtInputContext.md)\>\>\> = `{}`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:271](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L271)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:271](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L271)
 
 #### 覆寫了
 
@@ -102,7 +102,7 @@ from mice (which typically only produce deltaY), and a middle-click settles on `
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\>
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:345](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L345)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:345](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L345)
 
 #### 覆寫了
 
@@ -114,7 +114,7 @@ from mice (which typically only produce deltaY), and a middle-click settles on `
 
 > `protected` **\_guards**: `Guard`\<[`KmtInputContext`](../interfaces/KmtInputContext.md), `"isIdle"`\>
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:267](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L267)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:267](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L267)
 
 #### 覆寫了
 
@@ -304,7 +304,7 @@ keyof `EventPayloadMapping`[]
 
 > **middlePointerDownHandler**(`context`, `payload`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:385](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L385)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:385](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L385)
 
 #### 參數
 
@@ -326,7 +326,7 @@ keyof `EventPayloadMapping`[]
 
 > **scrollHandler**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:322](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L322)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:322](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L322)
 
 #### 參數
 
@@ -348,7 +348,7 @@ keyof `EventPayloadMapping`[]
 
 > **scrollPan**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:281](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L281)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:281](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L281)
 
 #### 參數
 
@@ -370,7 +370,7 @@ keyof `EventPayloadMapping`[]
 
 > **scrollWithCtrlHandler**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:338](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L338)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:338](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L338)
 
 #### 參數
 
@@ -392,7 +392,7 @@ keyof `EventPayloadMapping`[]
 
 > **scrollZoom**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:295](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L295)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:295](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L295)
 
 #### 參數
 
@@ -414,7 +414,7 @@ keyof `EventPayloadMapping`[]
 
 > **spacebarDownHandler**(`context`, `payload`): `number`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:377](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L377)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:377](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L377)
 
 #### 參數
 
@@ -436,7 +436,7 @@ keyof `EventPayloadMapping`[]
 
 > **uponEnter**(`context`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:373](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L373)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:373](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L373)
 
 #### 參數
 

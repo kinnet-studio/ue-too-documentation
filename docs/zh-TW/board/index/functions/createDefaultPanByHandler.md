@@ -4,7 +4,7 @@
 
 > **createDefaultPanByHandler**(): [`PanByHandlerFunction`](../type-aliases/PanByHandlerFunction.md)
 
-定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:312](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/camera-rig/pan-handler.ts#L312)
+定義於: [packages/board/src/camera/camera-rig/pan-handler.ts:312](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/camera-rig/pan-handler.ts#L312)
 
 Creates a default "pan by" handler pipeline for relative camera movement.
 

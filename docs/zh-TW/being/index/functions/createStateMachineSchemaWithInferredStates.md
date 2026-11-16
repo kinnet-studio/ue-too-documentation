@@ -4,7 +4,7 @@
 
 > **createStateMachineSchemaWithInferredStates**\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\>(`schema`): [`StateMachineSchema`](../interfaces/StateMachineSchema.md)\<`Context`, `EventPayloadMapping`, [`ExtractStateNames`](../type-aliases/ExtractStateNames.md)\<`States`\>, `EventOutputMapping`\>
 
-定義於: [schema-factory.ts:249](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/schema-factory.ts#L249)
+定義於: [schema-factory.ts:249](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/schema-factory.ts#L249)
 
 Helper function to create a typed state machine schema with inferred state names.
 Use this when you have a const states array and want TypeScript to infer the state names.

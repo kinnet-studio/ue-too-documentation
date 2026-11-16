@@ -2,7 +2,7 @@
 
 # 類別: Editor
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:155](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L155)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:155](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L155)
 
 A whiteboard editor on a `@ue-too/board` board: tools, selection, undo,
 and drawing the document each frame.
@@ -36,7 +36,7 @@ requestAnimationFrame(frame);
 
 > **new Editor**(`options`): `Editor`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:188](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L188)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:188](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L188)
 
 #### 參數
 
@@ -54,7 +54,7 @@ requestAnimationFrame(frame);
 
 > `readonly` **document**: [`WhiteboardDocument`](WhiteboardDocument.md)
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:156](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L156)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:156](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L156)
 
 ***
 
@@ -62,7 +62,7 @@ requestAnimationFrame(frame);
 
 > `readonly` **history**: [`History`](History.md)
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:157](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L157)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:157](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L157)
 
 ***
 
@@ -70,7 +70,7 @@ requestAnimationFrame(frame);
 
 > `readonly` **input**: [`PointerInput`](PointerInput.md)
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:158](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L158)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:158](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L158)
 
 ## 存取器
 
@@ -80,7 +80,7 @@ requestAnimationFrame(frame);
 
 > **get** **erasing**(): `ReadonlySet`\<`string`\>
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:262](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L262)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:262](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L262)
 
 Shapes the eraser has marked; they are drawn faded until it lets go
 
@@ -96,7 +96,7 @@ Shapes the eraser has marked; they are drawn faded until it lets go
 
 > **get** **tool**(): `"rect"` \| `"ellipse"` \| `"arrow"` \| `"line"` \| `"pen"` \| `"text"` \| `"note"` \| `"hand"` \| `"select"` \| `"eraser"`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:257](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L257)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:257](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L257)
 
 The tool in use
 
@@ -110,7 +110,7 @@ The tool in use
 
 > **clear**(): `void`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:362](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L362)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:362](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L362)
 
 Removes every shape, as one undo step
 
@@ -124,7 +124,7 @@ Removes every shape, as one undo step
 
 > **deleteSelection**(): `void`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:406](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L406)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:406](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L406)
 
 Deletes the selected shapes, as one undo step
 
@@ -138,7 +138,7 @@ Deletes the selected shapes, as one undo step
 
 > **destroy**(): `void`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:418](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L418)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:418](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L418)
 
 Removes the editor's listeners; the document is left as it is
 
@@ -152,7 +152,7 @@ Removes the editor's listeners; the document is left as it is
 
 > **draw**(`ctx`): `void`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:309](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L309)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:309](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L309)
 
 Draws the document and the selection overlay. Call it each frame with
 the board's context, after the board's `step` and your own background.
@@ -173,7 +173,7 @@ the board's context, after the board's `step` and your own background.
 
 > **getState**(): [`EditorState`](../interfaces/EditorState.md)
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:290](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L290)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:290](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L290)
 
 #### 回傳
 
@@ -185,7 +185,7 @@ the board's context, after the board's `step` and your own background.
 
 > **getTheme**(): [`WhiteboardTheme`](../interfaces/WhiteboardTheme.md)
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:286](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L286)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:286](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L286)
 
 #### 回傳
 
@@ -197,7 +197,7 @@ the board's context, after the board's `step` and your own background.
 
 > **handleKey**(`event`): `boolean`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:375](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L375)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:375](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L375)
 
 Runs the shortcut a key press stands for (see `shortcutFor`). The
 editor calls it for key presses on the canvas's window; call it
@@ -221,7 +221,7 @@ Whether the key was handled (its default is then prevented)
 
 > **redo**(): `void`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:338](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L338)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:338](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L338)
 
 Puts back the last change you undid
 
@@ -235,7 +235,7 @@ Puts back the last change you undid
 
 > **selectAll**(): `void`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:412](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L412)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:412](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L412)
 
 Selects every shape, switching to the select tool
 
@@ -249,7 +249,7 @@ Selects every shape, switching to the select tool
 
 > **setStyle**(`style`): `void`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:347](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L347)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:347](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L347)
 
 Sets the style the next shape gets, and restyles the selected shapes
 (as one undo step)
@@ -270,7 +270,7 @@ Sets the style the next shape gets, and restyles the selected shapes
 
 > **setTheme**(`theme`): `void`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:280](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L280)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:280](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L280)
 
 Replaces parts of the theme (after a light/dark switch, say)
 
@@ -290,7 +290,7 @@ Replaces parts of the theme (after a light/dark switch, say)
 
 > **setTool**(`tool`): `void`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:267](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L267)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:267](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L267)
 
 Switches tools, abandoning any gesture under way
 
@@ -310,7 +310,7 @@ Switches tools, abandoning any gesture under way
 
 > **subscribe**(`listener`): () => `void`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:300](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L300)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:300](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L300)
 
 Listens for changes to [EditorState](../interfaces/EditorState.md); called only when something
 in it changed.
@@ -337,7 +337,7 @@ A function that stops the listener
 
 > **toWorld**(`client`): `Point`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:275](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L275)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:275](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L275)
 
 Converts a window point (CSS pixels) to world coordinates
 
@@ -357,7 +357,7 @@ Converts a window point (CSS pixels) to world coordinates
 
 > **undo**(): `void`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:332](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L332)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:332](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L332)
 
 Takes back your last change, abandoning any gesture under way first
 

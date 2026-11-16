@@ -4,7 +4,7 @@
 
 > **convert2WorldSpaceWithTransformationMatrix**(`point`, `transformationMatrix`): `Point`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:567](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/utils/coordinate-conversion.ts#L567)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:567](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/utils/coordinate-conversion.ts#L567)
 
 Transforms a viewport point to world space using a precomputed transformation matrix.
 Faster than repeated function calls when transforming many points with the same camera state.

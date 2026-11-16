@@ -2,7 +2,7 @@
 
 # Interface: PointerInputDeps
 
-Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:16](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/pointer-input.ts#L16)
+Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:16](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/pointer-input.ts#L16)
 
 What [PointerInput](../classes/PointerInput.md) needs from the editor around it.
 
@@ -12,7 +12,7 @@ What [PointerInput](../classes/PointerInput.md) needs from the editor around it.
 
 > **boardBusy**(): `boolean`
 
-Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:19](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/pointer-input.ts#L19)
+Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:19](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/pointer-input.ts#L19)
 
 The board is in one of its own gestures (Space + drag, middle-drag)
 
@@ -26,7 +26,7 @@ The board is in one of its own gestures (Space + drag, middle-drag)
 
 > **dispatch**(`event`, `payload`): `void`
 
-Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:22](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/pointer-input.ts#L22)
+Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:22](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/pointer-input.ts#L22)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:22](https://g
 
 > **middleClick**(`pointer`): `void`
 
-Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:32](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/pointer-input.ts#L32)
+Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:32](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/pointer-input.ts#L32)
 
 A middle-button click (no drag) happened
 
@@ -68,7 +68,7 @@ A middle-button click (no drag) happened
 
 > **ownsPointer**(`client`): `boolean`
 
-Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:21](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/pointer-input.ts#L21)
+Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:21](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/pointer-input.ts#L21)
 
 The app's screen-space controls take presses at this point
 
@@ -88,7 +88,7 @@ The app's screen-space controls take presses at this point
 
 > **setCursor**(`cursor`): `void`
 
-Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:34](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/pointer-input.ts#L34)
+Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:34](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/pointer-input.ts#L34)
 
 Overrides the cursor, or hands it back to the tool with null
 
@@ -108,7 +108,7 @@ Overrides the cursor, or hands it back to the tool with null
 
 > **toWorld**(`client`): `Point`
 
-Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:17](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/pointer-input.ts#L17)
+Defined in: [packages/board/src/whiteboard/editor/pointer-input.ts:17](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/pointer-input.ts#L17)
 
 #### Parameters
 

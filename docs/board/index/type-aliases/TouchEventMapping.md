@@ -4,7 +4,7 @@
 
 > **TouchEventMapping** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:80](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L80)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:80](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L80)
 
 Event mapping for the touch input state machine.
 
@@ -19,7 +19,7 @@ the three core touch events: touchstart, touchmove, and touchend.
 
 > **touchend**: [`TouchEventPayload`](TouchEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:83](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L83)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:83](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L83)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **touchmove**: [`TouchEventPayload`](TouchEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:82](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L82)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:82](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L82)
 
 ***
 
@@ -35,4 +35,4 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **touchstart**: [`TouchEventPayload`](TouchEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:81](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L81)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:81](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L81)

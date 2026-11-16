@@ -2,7 +2,7 @@
 
 # Interface: Host
 
-Defined in: [being-portable/src/host.ts:65](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L65)
+Defined in: [being-portable/src/host.ts:65](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/host.ts#L65)
 
 A validated host, made by [defineHost](../functions/defineHost.md).
 
@@ -12,7 +12,7 @@ A validated host, made by [defineHost](../functions/defineHost.md).
 
 > `readonly` **effects**: `ReadonlyMap`\<`string`, [`HostEffect`](../type-aliases/HostEffect.md)\>
 
-Defined in: [being-portable/src/host.ts:66](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L66)
+Defined in: [being-portable/src/host.ts:66](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/host.ts#L66)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [being-portable/src/host.ts:66](https://github.com/kinnet-studio/ue-
 
 > `readonly` **limits**: [`Limits`](../type-aliases/Limits.md)
 
-Defined in: [being-portable/src/host.ts:68](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L68)
+Defined in: [being-portable/src/host.ts:68](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/host.ts#L68)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [being-portable/src/host.ts:68](https://github.com/kinnet-studio/ue-
 
 > `readonly` **onError**: (`error`) => `void`
 
-Defined in: [being-portable/src/host.ts:69](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L69)
+Defined in: [being-portable/src/host.ts:69](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/host.ts#L69)
 
 #### Parameters
 
@@ -46,4 +46,4 @@ Defined in: [being-portable/src/host.ts:69](https://github.com/kinnet-studio/ue-
 
 > `readonly` **services**: [`Services`](../type-aliases/Services.md)
 
-Defined in: [being-portable/src/host.ts:67](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L67)
+Defined in: [being-portable/src/host.ts:67](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/host.ts#L67)

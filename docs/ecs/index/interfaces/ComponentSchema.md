@@ -2,7 +2,7 @@
 
 # Interface: ComponentSchema
 
-Defined in: [index.ts:212](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/ecs/src/index.ts#L212)
+Defined in: [index.ts:212](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/ecs/src/index.ts#L212)
 
 Schema definition for a component type that can be defined at runtime.
 
@@ -12,7 +12,7 @@ Schema definition for a component type that can be defined at runtime.
 
 > **componentName**: `symbol`
 
-Defined in: [index.ts:214](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/ecs/src/index.ts#L214)
+Defined in: [index.ts:214](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/ecs/src/index.ts#L214)
 
 The name of the component type (using Symbol for type safety)
 
@@ -22,6 +22,6 @@ The name of the component type (using Symbol for type safety)
 
 > **fields**: [`ComponentFieldDefinition`](../type-aliases/ComponentFieldDefinition.md)[]
 
-Defined in: [index.ts:216](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/ecs/src/index.ts#L216)
+Defined in: [index.ts:216](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/ecs/src/index.ts#L216)
 
 Array of field definitions

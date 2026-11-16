@@ -2,7 +2,7 @@
 
 # インターフェイス: Change
 
-定義: [packages/board/src/whiteboard/document/types.ts:168](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L168)
+定義: [packages/board/src/whiteboard/document/types.ts:168](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L168)
 
 One batch of edits to a document.
 
@@ -16,7 +16,7 @@ One batch of edits to a document.
 
 > **added**: [`Shape`](../type-aliases/Shape.md)[]
 
-定義: [packages/board/src/whiteboard/document/types.ts:169](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L169)
+定義: [packages/board/src/whiteboard/document/types.ts:169](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L169)
 
 ***
 
@@ -24,7 +24,7 @@ One batch of edits to a document.
 
 > **removed**: [`Shape`](../type-aliases/Shape.md)[]
 
-定義: [packages/board/src/whiteboard/document/types.ts:171](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L171)
+定義: [packages/board/src/whiteboard/document/types.ts:171](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L171)
 
 ***
 
@@ -32,7 +32,7 @@ One batch of edits to a document.
 
 > **source**: [`ChangeSource`](../type-aliases/ChangeSource.md)
 
-定義: [packages/board/src/whiteboard/document/types.ts:172](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L172)
+定義: [packages/board/src/whiteboard/document/types.ts:172](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L172)
 
 ***
 
@@ -40,4 +40,4 @@ One batch of edits to a document.
 
 > **updated**: \[[`Shape`](../type-aliases/Shape.md), [`Shape`](../type-aliases/Shape.md)\][]
 
-定義: [packages/board/src/whiteboard/document/types.ts:170](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L170)
+定義: [packages/board/src/whiteboard/document/types.ts:170](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L170)

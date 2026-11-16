@@ -4,7 +4,7 @@
 
 > **expandTouchInputStateMachine**\<`E`, `C`, `S`, `O`\>(`context`, `define`, `initialState`): `TemplateStateMachine`\<`E`, `C`, `S`, `O`\>
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:448](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L448)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:448](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L448)
 
 Builds a touch input state machine with more events, states, context or
 outputs than the stock one, reusing every built-in state.

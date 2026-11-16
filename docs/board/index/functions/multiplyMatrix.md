@@ -4,7 +4,7 @@
 
 > **multiplyMatrix**(`m1`, `m2`): `object`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:332](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/utils/matrix.ts#L332)
+Defined in: [packages/board/src/camera/utils/matrix.ts:332](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/utils/matrix.ts#L332)
 
 Multiplies two 2D transformation matrices.
 Order matters: M = m1 × m2 applies m2 first, then m1.

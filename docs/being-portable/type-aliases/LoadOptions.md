@@ -4,7 +4,7 @@
 
 > **LoadOptions** = `object`
 
-Defined in: [being-portable/src/api-types.ts:90](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/api-types.ts#L90)
+Defined in: [being-portable/src/api-types.ts:90](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/api-types.ts#L90)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [being-portable/src/api-types.ts:90](https://github.com/kinnet-studi
 
 > `readonly` `optional` **autoStart**: `boolean`
 
-Defined in: [being-portable/src/api-types.ts:96](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/api-types.ts#L96)
+Defined in: [being-portable/src/api-types.ts:96](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/api-types.ts#L96)
 
 Defaults to `true`. Ignored when `snapshot` is given.
 
@@ -22,7 +22,7 @@ Defaults to `true`. Ignored when `snapshot` is given.
 
 > `readonly` `optional` **restoreMode**: [`RestoreMode`](RestoreMode.md)
 
-Defined in: [being-portable/src/api-types.ts:94](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/api-types.ts#L94)
+Defined in: [being-portable/src/api-types.ts:94](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/api-types.ts#L94)
 
 Defaults to `'strict'`.
 
@@ -32,6 +32,6 @@ Defaults to `'strict'`.
 
 > `readonly` `optional` **snapshot**: `unknown`
 
-Defined in: [being-portable/src/api-types.ts:92](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/api-types.ts#L92)
+Defined in: [being-portable/src/api-types.ts:92](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/api-types.ts#L92)
 
 Restore this snapshot instead of starting.

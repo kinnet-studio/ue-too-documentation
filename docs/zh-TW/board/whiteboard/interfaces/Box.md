@@ -2,7 +2,7 @@
 
 # 介面: Box
 
-定義於: [packages/board/src/whiteboard/geometry/box.ts:6](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/geometry/box.ts#L6)
+定義於: [packages/board/src/whiteboard/geometry/box.ts:6](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/geometry/box.ts#L6)
 
 An axis-aligned box in world units: top-left corner, width and height.
 
@@ -12,7 +12,7 @@ An axis-aligned box in world units: top-left corner, width and height.
 
 > **h**: `number`
 
-定義於: [packages/board/src/whiteboard/geometry/box.ts:10](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/geometry/box.ts#L10)
+定義於: [packages/board/src/whiteboard/geometry/box.ts:10](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/geometry/box.ts#L10)
 
 ***
 
@@ -20,7 +20,7 @@ An axis-aligned box in world units: top-left corner, width and height.
 
 > **w**: `number`
 
-定義於: [packages/board/src/whiteboard/geometry/box.ts:9](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/geometry/box.ts#L9)
+定義於: [packages/board/src/whiteboard/geometry/box.ts:9](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/geometry/box.ts#L9)
 
 ***
 
@@ -28,7 +28,7 @@ An axis-aligned box in world units: top-left corner, width and height.
 
 > **x**: `number`
 
-定義於: [packages/board/src/whiteboard/geometry/box.ts:7](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/geometry/box.ts#L7)
+定義於: [packages/board/src/whiteboard/geometry/box.ts:7](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/geometry/box.ts#L7)
 
 ***
 
@@ -36,4 +36,4 @@ An axis-aligned box in world units: top-left corner, width and height.
 
 > **y**: `number`
 
-定義於: [packages/board/src/whiteboard/geometry/box.ts:8](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/geometry/box.ts#L8)
+定義於: [packages/board/src/whiteboard/geometry/box.ts:8](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/geometry/box.ts#L8)

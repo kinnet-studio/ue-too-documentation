@@ -4,7 +4,7 @@
 
 > **GuardEvaluation**\<`Context`\> = (`context`) => `boolean`
 
-Defined in: [interface.ts:463](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/interface.ts#L463)
+Defined in: [interface.ts:463](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/interface.ts#L463)
 
 ## Type Parameters
 

@@ -4,4 +4,4 @@
 
 > `const` **PLAYER\_COMPONENT**: `symbol`
 
-定義於: [player-system/player-component.ts:11](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/player-system/player-component.ts#L11)
+定義於: [player-system/player-component.ts:11](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/player-system/player-component.ts#L11)

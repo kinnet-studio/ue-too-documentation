@@ -2,7 +2,7 @@
 
 # クラス: KmtInputStateMachineWebWorkerProxy
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:788](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L788)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:788](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L788)
 
 ## 拡張
 
@@ -14,7 +14,7 @@
 
 > **new KmtInputStateMachineWebWorkerProxy**(`webworker`): `KmtInputStateMachineWebWorkerProxy`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:796](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L796)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:796](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L796)
 
 #### パラメータ
 
@@ -237,7 +237,7 @@ this reference.
 
 > **happens**(...`args`): `EventResult`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:813](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L813)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:813](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L813)
 
 #### パラメータ
 

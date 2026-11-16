@@ -2,7 +2,7 @@
 
 # 介面: SketchPart
 
-定義於: [packages/board/src/whiteboard/render/sketch.ts:30](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/sketch.ts#L30)
+定義於: [packages/board/src/whiteboard/render/sketch.ts:30](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/render/sketch.ts#L30)
 
 One path of a sketched shape and how to paint it.
 
@@ -17,7 +17,7 @@ filled in its colour at low opacity, `paper` is a note's sheet.
 
 > **kind**: `"stroke"` \| `"fill"`
 
-定義於: [packages/board/src/whiteboard/render/sketch.ts:31](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/sketch.ts#L31)
+定義於: [packages/board/src/whiteboard/render/sketch.ts:31](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/render/sketch.ts#L31)
 
 ***
 
@@ -25,7 +25,7 @@ filled in its colour at low opacity, `paper` is a note's sheet.
 
 > **ops**: [`PathOp`](../type-aliases/PathOp.md)[]
 
-定義於: [packages/board/src/whiteboard/render/sketch.ts:33](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/sketch.ts#L33)
+定義於: [packages/board/src/whiteboard/render/sketch.ts:33](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/render/sketch.ts#L33)
 
 ***
 
@@ -33,4 +33,4 @@ filled in its colour at low opacity, `paper` is a note's sheet.
 
 > **role**: `"hachure"` \| `"solid"` \| `"outline"` \| `"paper"`
 
-定義於: [packages/board/src/whiteboard/render/sketch.ts:32](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/sketch.ts#L32)
+定義於: [packages/board/src/whiteboard/render/sketch.ts:32](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/render/sketch.ts#L32)

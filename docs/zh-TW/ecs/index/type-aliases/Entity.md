@@ -4,6 +4,6 @@
 
 > **Entity** = `number`
 
-定義於: [index.ts:125](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/ecs/src/index.ts#L125)
+定義於: [index.ts:125](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/ecs/src/index.ts#L125)
 
 Entity identifier (unique number).

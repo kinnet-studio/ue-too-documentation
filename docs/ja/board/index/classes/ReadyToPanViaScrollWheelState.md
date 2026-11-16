@@ -2,7 +2,7 @@
 
 # クラス: ReadyToPanViaScrollWheelState
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:548](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L548)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:548](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L548)
 
 ## Description
 
@@ -18,7 +18,7 @@ The ready to pan via scroll wheel state of the keyboard mouse and trackpad input
 
 > **new ReadyToPanViaScrollWheelState**(): `ReadyToPanViaScrollWheelState`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:554](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L554)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:554](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L554)
 
 #### 戻り値
 
@@ -82,7 +82,7 @@ The ready to pan via scroll wheel state of the keyboard mouse and trackpad input
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:558](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L558)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:558](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L558)
 
 #### 上書き
 
@@ -284,7 +284,7 @@ keyof `EventPayloadMapping`[]
 
 > **uponEnter**(`context`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:574](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L574)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:574](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L574)
 
 #### パラメータ
 

@@ -2,7 +2,7 @@
 
 # Class: ReadyToPanViaSpaceBarState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:435](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L435)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:435](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L435)
 
 ## Description
 
@@ -18,7 +18,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > **new ReadyToPanViaSpaceBarState**(): `ReadyToPanViaSpaceBarState`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:441](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L441)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:441](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L441)
 
 #### Returns
 
@@ -82,7 +82,7 @@ Defined in: packages/being/dist/interface.d.ts:579
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:445](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L445)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:445](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L445)
 
 #### Overrides
 
@@ -284,7 +284,7 @@ Defined in: packages/being/dist/interface.d.ts:590
 
 > **leftPointerDownHandler**(`context`, `payload`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:473](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L473)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:473](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L473)
 
 #### Parameters
 
@@ -306,7 +306,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **uponEnter**(`context`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:469](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L469)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:469](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L469)
 
 #### Parameters
 

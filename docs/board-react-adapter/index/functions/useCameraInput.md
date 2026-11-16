@@ -4,7 +4,7 @@
 
 > **useCameraInput**(): `object`
 
-Defined in: [hooks/useBoardify.tsx:148](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-react-adapter/src/hooks/useBoardify.tsx#L148)
+Defined in: [hooks/useBoardify.tsx:148](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-react-adapter/src/hooks/useBoardify.tsx#L148)
 
 Hook to get camera control functions for programmatic camera manipulation.
 

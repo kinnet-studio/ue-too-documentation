@@ -4,7 +4,7 @@
 
 > **ExtendableState** = `object`
 
-Defined in: [expansion.ts:81](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/expansion.ts#L81)
+Defined in: [expansion.ts:81](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/expansion.ts#L81)
 
 The part of a state [extendState](../functions/extendState.md) reads from the original.
 
@@ -19,7 +19,7 @@ not assignable to `State<any, any, any, any>`. Every `State` satisfies it.
 
 > **beforeExit**: (...`args`) => `void`
 
-Defined in: [expansion.ts:88](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/expansion.ts#L88)
+Defined in: [expansion.ts:88](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/expansion.ts#L88)
 
 #### Parameters
 
@@ -37,7 +37,7 @@ Defined in: [expansion.ts:88](https://github.com/kinnet-studio/ue-too/blob/d5a4f
 
 > `readonly` **delay**: `unknown`
 
-Defined in: [expansion.ts:86](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/expansion.ts#L86)
+Defined in: [expansion.ts:86](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/expansion.ts#L86)
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: [expansion.ts:86](https://github.com/kinnet-studio/ue-too/blob/d5a4f
 
 > `readonly` **eventGuards**: `object`
 
-Defined in: [expansion.ts:84](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/expansion.ts#L84)
+Defined in: [expansion.ts:84](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/expansion.ts#L84)
 
 ***
 
@@ -53,7 +53,7 @@ Defined in: [expansion.ts:84](https://github.com/kinnet-studio/ue-too/blob/d5a4f
 
 > `readonly` `optional` **eventPreconditions**: `object`
 
-Defined in: [expansion.ts:85](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/expansion.ts#L85)
+Defined in: [expansion.ts:85](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/expansion.ts#L85)
 
 ***
 
@@ -61,7 +61,7 @@ Defined in: [expansion.ts:85](https://github.com/kinnet-studio/ue-too/blob/d5a4f
 
 > `readonly` **eventReactions**: `object`
 
-Defined in: [expansion.ts:82](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/expansion.ts#L82)
+Defined in: [expansion.ts:82](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/expansion.ts#L82)
 
 ***
 
@@ -69,7 +69,7 @@ Defined in: [expansion.ts:82](https://github.com/kinnet-studio/ue-too/blob/d5a4f
 
 > `readonly` **guards**: `object`
 
-Defined in: [expansion.ts:83](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/expansion.ts#L83)
+Defined in: [expansion.ts:83](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/expansion.ts#L83)
 
 ***
 
@@ -77,7 +77,7 @@ Defined in: [expansion.ts:83](https://github.com/kinnet-studio/ue-too/blob/d5a4f
 
 > **uponEnter**: (...`args`) => `void`
 
-Defined in: [expansion.ts:87](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/expansion.ts#L87)
+Defined in: [expansion.ts:87](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/expansion.ts#L87)
 
 #### Parameters
 

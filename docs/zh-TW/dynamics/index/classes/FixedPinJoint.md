@@ -2,7 +2,7 @@
 
 # 類別: FixedPinJoint
 
-定義於: [constraint.ts:50](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L50)
+定義於: [constraint.ts:50](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/dynamics/src/constraint.ts#L50)
 
 Pin joint connecting a body to a fixed world point.
 
@@ -37,7 +37,7 @@ world.addConstraint(joint);
 
 > **new FixedPinJoint**(`bodyA`, `anchorA`, `worldAnchorA`): `FixedPinJoint`
 
-定義於: [constraint.ts:55](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L55)
+定義於: [constraint.ts:55](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/dynamics/src/constraint.ts#L55)
 
 #### 參數
 
@@ -63,7 +63,7 @@ world.addConstraint(joint);
 
 > **enforce**(`dt`): `void`
 
-定義於: [constraint.ts:61](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L61)
+定義於: [constraint.ts:61](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/dynamics/src/constraint.ts#L61)
 
 Enforces the constraint for one timestep.
 
@@ -89,7 +89,7 @@ Timestep in seconds
 
 > **solveWorldPinJointConstraint**(`dt`): `void`
 
-定義於: [constraint.ts:65](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L65)
+定義於: [constraint.ts:65](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/dynamics/src/constraint.ts#L65)
 
 #### 參數
 

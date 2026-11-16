@@ -4,7 +4,7 @@
 
 > **shortcutFor**(`event`): [`EditorCommand`](../type-aliases/EditorCommand.md) \| `null`
 
-Defined in: [packages/board/src/whiteboard/editor/keyboard.ts:69](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/keyboard.ts#L69)
+Defined in: [packages/board/src/whiteboard/editor/keyboard.ts:69](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/keyboard.ts#L69)
 
 The command a key press stands for, or null.
 

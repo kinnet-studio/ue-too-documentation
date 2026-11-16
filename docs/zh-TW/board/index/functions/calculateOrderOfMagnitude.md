@@ -4,7 +4,7 @@
 
 > **calculateOrderOfMagnitude**(`value`): `number`
 
-定義於: [packages/board/src/utils/ruler.ts:37](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/utils/ruler.ts#L37)
+定義於: [packages/board/src/utils/ruler.ts:37](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/utils/ruler.ts#L37)
 
 Calculates the order of magnitude (power of 10) of a number.
 

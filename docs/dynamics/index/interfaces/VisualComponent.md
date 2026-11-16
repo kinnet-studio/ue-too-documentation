@@ -2,7 +2,7 @@
 
 # Interface: VisualComponent
 
-Defined in: [rigidbody.ts:66](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/rigidbody.ts#L66)
+Defined in: [rigidbody.ts:66](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/dynamics/src/rigidbody.ts#L66)
 
 ## Methods
 
@@ -10,7 +10,7 @@ Defined in: [rigidbody.ts:66](https://github.com/kinnet-studio/ue-too/blob/d5a4f
 
 > **draw**(`ctx`): `void`
 
-Defined in: [rigidbody.ts:67](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/rigidbody.ts#L67)
+Defined in: [rigidbody.ts:67](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/dynamics/src/rigidbody.ts#L67)
 
 #### Parameters
 

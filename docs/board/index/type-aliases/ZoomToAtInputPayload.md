@@ -4,7 +4,7 @@
 
 > **ZoomToAtInputPayload** = `object`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:36](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L36)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:36](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L36)
 
 Payload for zoom-to-at input events (absolute zoom to target around a point).
 
@@ -14,7 +14,7 @@ Payload for zoom-to-at input events (absolute zoom to target around a point).
 
 > **anchorPoint**: `Point`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:40](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L40)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:40](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L40)
 
 Anchor point for zoom operation
 
@@ -24,6 +24,6 @@ Anchor point for zoom operation
 
 > **targetZoom**: `number`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:38](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L38)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:38](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L38)
 
 Target zoom level

@@ -4,6 +4,6 @@
 
 > **ShapeFill** = `"none"` \| `"hachure"` \| `"solid"`
 
-定義: [packages/board/src/whiteboard/document/types.ts:36](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L36)
+定義: [packages/board/src/whiteboard/document/types.ts:36](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L36)
 
 How a rectangle or ellipse is filled.

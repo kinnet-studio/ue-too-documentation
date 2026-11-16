@@ -4,7 +4,7 @@
 
 > **createDefaultZoomToOnlyHandler**(): [`ZoomToHandlerFunction`](../type-aliases/ZoomToHandlerFunction.md)
 
-定義於: [packages/board/src/camera/camera-rig/zoom-handler.ts:422](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/camera-rig/zoom-handler.ts#L422)
+定義於: [packages/board/src/camera/camera-rig/zoom-handler.ts:422](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/camera-rig/zoom-handler.ts#L422)
 
 Creates a default "zoom to" handler pipeline for absolute zoom operations.
 

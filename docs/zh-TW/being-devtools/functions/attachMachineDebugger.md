@@ -4,7 +4,7 @@
 
 > **attachMachineDebugger**(`machine`, `options?`): [`AttachHandle`](../type-aliases/AttachHandle.md)
 
-定義於: [attach.ts:98](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-devtools/src/attach.ts#L98)
+定義於: [attach.ts:98](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-devtools/src/attach.ts#L98)
 
 Attaches a machine to the page's shared floating panel, creating the
 panel on first use. Press Ctrl+Shift+M (Cmd+Shift+M on macOS) to open it.

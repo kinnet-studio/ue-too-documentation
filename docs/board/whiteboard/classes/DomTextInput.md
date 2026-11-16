@@ -2,7 +2,7 @@
 
 # Class: DomTextInput
 
-Defined in: [packages/board/src/whiteboard/editor/text-input.ts:56](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L56)
+Defined in: [packages/board/src/whiteboard/editor/text-input.ts:56](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L56)
 
 The editor's built-in [TextInput](../interfaces/TextInput.md): a transparent `<textarea>` laid
 over the shape, so typing, IME composition (Japanese, Chinese), selection
@@ -24,7 +24,7 @@ ends editing.
 
 > **new DomTextInput**(`_parent`): `DomTextInput`
 
-Defined in: [packages/board/src/whiteboard/editor/text-input.ts:61](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L61)
+Defined in: [packages/board/src/whiteboard/editor/text-input.ts:61](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L61)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ The element the textarea is added to
 
 > **get** **active**(): `boolean`
 
-Defined in: [packages/board/src/whiteboard/editor/text-input.ts:63](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L63)
+Defined in: [packages/board/src/whiteboard/editor/text-input.ts:63](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L63)
 
 ##### Returns
 
@@ -62,7 +62,7 @@ Defined in: [packages/board/src/whiteboard/editor/text-input.ts:63](https://gith
 
 > **close**(): `void`
 
-Defined in: [packages/board/src/whiteboard/editor/text-input.ts:123](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L123)
+Defined in: [packages/board/src/whiteboard/editor/text-input.ts:123](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L123)
 
 Ends editing, committing the text
 
@@ -80,7 +80,7 @@ Ends editing, committing the text
 
 > **open**(`session`): `void`
 
-Defined in: [packages/board/src/whiteboard/editor/text-input.ts:67](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L67)
+Defined in: [packages/board/src/whiteboard/editor/text-input.ts:67](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L67)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ Defined in: [packages/board/src/whiteboard/editor/text-input.ts:67](https://gith
 
 > **reposition**(`rect`, `scale`): `void`
 
-Defined in: [packages/board/src/whiteboard/editor/text-input.ts:119](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L119)
+Defined in: [packages/board/src/whiteboard/editor/text-input.ts:119](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L119)
 
 Follows the camera while editing
 

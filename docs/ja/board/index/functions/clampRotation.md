@@ -4,7 +4,7 @@
 
 > **clampRotation**(`rotation`, `rotationLimits?`): `number`
 
-定義: [packages/board/src/camera/utils/rotation.ts:71](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/utils/rotation.ts#L71)
+定義: [packages/board/src/camera/utils/rotation.ts:71](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/utils/rotation.ts#L71)
 
 Clamps a rotation angle to stay within specified angular limits.
 

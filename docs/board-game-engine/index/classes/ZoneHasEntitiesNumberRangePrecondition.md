@@ -2,7 +2,7 @@
 
 # Class: ZoneHasEntitiesNumberRangePrecondition
 
-Defined in: [zone-system/precondition.ts:49](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/zone-system/precondition.ts#L49)
+Defined in: [zone-system/precondition.ts:49](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/zone-system/precondition.ts#L49)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [zone-system/precondition.ts:49](https://github.com/kinnet-studio/ue
 
 > **new ZoneHasEntitiesNumberRangePrecondition**(`_coordinator`, `_zoneEntity`, `_minCount`, `_maxCount`): `ZoneHasEntitiesNumberRangePrecondition`
 
-Defined in: [zone-system/precondition.ts:50](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/zone-system/precondition.ts#L50)
+Defined in: [zone-system/precondition.ts:50](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/zone-system/precondition.ts#L50)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [zone-system/precondition.ts:50](https://github.com/kinnet-studio/ue
 
 > **check**(): `boolean`
 
-Defined in: [zone-system/precondition.ts:57](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/zone-system/precondition.ts#L57)
+Defined in: [zone-system/precondition.ts:57](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/zone-system/precondition.ts#L57)
 
 #### Returns
 

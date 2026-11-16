@@ -4,6 +4,6 @@
 
 > `const` **MAJOR\_TICK\_LENGTH**: `30` = `30`
 
-定義: [packages/board/src/utils/drawing.ts:92](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/utils/drawing.ts#L92)
+定義: [packages/board/src/utils/drawing.ts:92](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/utils/drawing.ts#L92)
 
 Length of major tick marks in pixels (viewport space).

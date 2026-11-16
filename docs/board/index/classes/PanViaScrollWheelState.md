@@ -2,7 +2,7 @@
 
 # Class: PanViaScrollWheelState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:646](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L646)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:646](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L646)
 
 ## Description
 
@@ -80,7 +80,7 @@ Defined in: packages/being/dist/interface.d.ts:579
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:652](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L652)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:652](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L652)
 
 #### Overrides
 
@@ -282,7 +282,7 @@ Defined in: packages/being/dist/interface.d.ts:590
 
 > **middlePointerMoveHandler**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:668](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L668)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:668](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L668)
 
 #### Parameters
 
@@ -304,7 +304,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **uponEnter**(`context`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:686](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L686)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:686](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L686)
 
 #### Parameters
 

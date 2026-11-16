@@ -2,7 +2,7 @@
 
 # Interface: EllipseShape
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:86](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L86)
+Defined in: [packages/board/src/whiteboard/document/types.ts:86](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L86)
 
 An ellipse; `x`, `y` is the top-left corner of its box.
 
@@ -16,7 +16,7 @@ An ellipse; `x`, `y` is the top-left corner of its box.
 
 > **h**: `number`
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:88](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L88)
+Defined in: [packages/board/src/whiteboard/document/types.ts:88](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L88)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [packages/board/src/whiteboard/document/types.ts:88](https://github.
 
 > **id**: `string`
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:57](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L57)
+Defined in: [packages/board/src/whiteboard/document/types.ts:57](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L57)
 
 Random, 16 base-62 characters
 
@@ -38,7 +38,7 @@ Random, 16 base-62 characters
 
 > **index**: `string`
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:65](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L65)
+Defined in: [packages/board/src/whiteboard/document/types.ts:65](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L65)
 
 Fractional index: stacking order, sorted as a plain string
 
@@ -52,7 +52,7 @@ Fractional index: stacking order, sorted as a plain string
 
 > **rotation**: `number`
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:63](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L63)
+Defined in: [packages/board/src/whiteboard/document/types.ts:63](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L63)
 
 Radians; always 0 for now
 
@@ -66,7 +66,7 @@ Radians; always 0 for now
 
 > **seed**: `number`
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:67](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L67)
+Defined in: [packages/board/src/whiteboard/document/types.ts:67](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L67)
 
 Fixes the sketchy wobble, so every viewer sees the same shape
 
@@ -80,7 +80,7 @@ Fixes the sketchy wobble, so every viewer sees the same shape
 
 > **style**: [`ShapeStyle`](ShapeStyle.md)
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:68](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L68)
+Defined in: [packages/board/src/whiteboard/document/types.ts:68](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L68)
 
 #### Inherited from
 
@@ -92,7 +92,7 @@ Defined in: [packages/board/src/whiteboard/document/types.ts:68](https://github.
 
 > **type**: `"ellipse"`
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:58](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L58)
+Defined in: [packages/board/src/whiteboard/document/types.ts:58](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L58)
 
 #### Inherited from
 
@@ -104,7 +104,7 @@ Defined in: [packages/board/src/whiteboard/document/types.ts:58](https://github.
 
 > **w**: `number`
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:87](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L87)
+Defined in: [packages/board/src/whiteboard/document/types.ts:87](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L87)
 
 ***
 
@@ -112,7 +112,7 @@ Defined in: [packages/board/src/whiteboard/document/types.ts:87](https://github.
 
 > **x**: `number`
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:60](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L60)
+Defined in: [packages/board/src/whiteboard/document/types.ts:60](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L60)
 
 World position of the shape's origin (see each shape type)
 
@@ -126,7 +126,7 @@ World position of the shape's origin (see each shape type)
 
 > **y**: `number`
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:61](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L61)
+Defined in: [packages/board/src/whiteboard/document/types.ts:61](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L61)
 
 #### Inherited from
 

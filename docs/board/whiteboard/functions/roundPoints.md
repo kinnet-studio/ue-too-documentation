@@ -4,7 +4,7 @@
 
 > **roundPoints**(`points`, `decimals`): [`PointPair`](../type-aliases/PointPair.md)[]
 
-Defined in: [packages/board/src/whiteboard/geometry/simplify.ts:80](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/geometry/simplify.ts#L80)
+Defined in: [packages/board/src/whiteboard/geometry/simplify.ts:80](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/geometry/simplify.ts#L80)
 
 Rounds every coordinate to `decimals` places (half away from zero), to keep
 saved drawings small.

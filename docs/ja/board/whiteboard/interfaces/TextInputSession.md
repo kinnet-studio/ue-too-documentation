@@ -2,7 +2,7 @@
 
 # インターフェイス: TextInputSession
 
-定義: [packages/board/src/whiteboard/editor/text-input.ts:8](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L8)
+定義: [packages/board/src/whiteboard/editor/text-input.ts:8](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L8)
 
 One text-editing session: where the text sits and what to report back.
 
@@ -12,7 +12,7 @@ One text-editing session: where the text sits and what to report back.
 
 > **color**: `string`
 
-定義: [packages/board/src/whiteboard/editor/text-input.ts:12](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L12)
+定義: [packages/board/src/whiteboard/editor/text-input.ts:12](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L12)
 
 ***
 
@@ -20,7 +20,7 @@ One text-editing session: where the text sits and what to report back.
 
 > **font**: `string`
 
-定義: [packages/board/src/whiteboard/editor/text-input.ts:11](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L11)
+定義: [packages/board/src/whiteboard/editor/text-input.ts:11](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L11)
 
 CSS font at zoom 1
 
@@ -30,7 +30,7 @@ CSS font at zoom 1
 
 > **lineHeight**: `number`
 
-定義: [packages/board/src/whiteboard/editor/text-input.ts:14](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L14)
+定義: [packages/board/src/whiteboard/editor/text-input.ts:14](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L14)
 
 In CSS pixels at zoom 1
 
@@ -40,7 +40,7 @@ In CSS pixels at zoom 1
 
 > **rect**: [`Box`](Box.md)
 
-定義: [packages/board/src/whiteboard/editor/text-input.ts:19](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L19)
+定義: [packages/board/src/whiteboard/editor/text-input.ts:19](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L19)
 
 Where the text sits: `x`, `y` in window (client) CSS pixels, `w`, `h`
 its size at zoom 1
@@ -51,7 +51,7 @@ its size at zoom 1
 
 > **scale**: `number`
 
-定義: [packages/board/src/whiteboard/editor/text-input.ts:21](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L21)
+定義: [packages/board/src/whiteboard/editor/text-input.ts:21](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L21)
 
 Camera zoom
 
@@ -61,7 +61,7 @@ Camera zoom
 
 > **text**: `string`
 
-定義: [packages/board/src/whiteboard/editor/text-input.ts:9](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L9)
+定義: [packages/board/src/whiteboard/editor/text-input.ts:9](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L9)
 
 ***
 
@@ -69,7 +69,7 @@ Camera zoom
 
 > **wrap**: `boolean`
 
-定義: [packages/board/src/whiteboard/editor/text-input.ts:23](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L23)
+定義: [packages/board/src/whiteboard/editor/text-input.ts:23](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L23)
 
 Notes wrap to their width; text shapes grow to fit
 
@@ -79,7 +79,7 @@ Notes wrap to their width; text shapes grow to fit
 
 > **onCommit**(`text`): `void`
 
-定義: [packages/board/src/whiteboard/editor/text-input.ts:25](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L25)
+定義: [packages/board/src/whiteboard/editor/text-input.ts:25](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L25)
 
 #### パラメータ
 
@@ -97,7 +97,7 @@ Notes wrap to their width; text shapes grow to fit
 
 > **onInput**(`text`): `void`
 
-定義: [packages/board/src/whiteboard/editor/text-input.ts:24](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L24)
+定義: [packages/board/src/whiteboard/editor/text-input.ts:24](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L24)
 
 #### パラメータ
 

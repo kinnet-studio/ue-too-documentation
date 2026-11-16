@@ -4,7 +4,7 @@
 
 > **TouchInputEventOutputMapping** = `object`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:95](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L95)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:95](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L95)
 
 Mapping of events to their output types.
 
@@ -19,4 +19,4 @@ touchstart and touchend only manage state transitions.
 
 > **touchmove**: [`TouchOutputEvent`](TouchOutputEvent.md)
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:96](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L96)
+定義於: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:96](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L96)

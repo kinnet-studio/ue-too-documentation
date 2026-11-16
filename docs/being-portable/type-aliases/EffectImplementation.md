@@ -4,7 +4,7 @@
 
 > **EffectImplementation** = `object`
 
-Defined in: [being-portable/src/host.ts:18](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L18)
+Defined in: [being-portable/src/host.ts:18](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/host.ts#L18)
 
 One host capability, as the host writes it.
 
@@ -14,7 +14,7 @@ One host capability, as the host writes it.
 
 > `readonly` **args**: `Readonly`\<`Record`\<`string`, [`TypeSpec`](TypeSpec.md)\>\>
 
-Defined in: [being-portable/src/host.ts:20](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L20)
+Defined in: [being-portable/src/host.ts:20](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/host.ts#L20)
 
 Argument names and types; must match the document's declaration exactly.
 
@@ -24,7 +24,7 @@ Argument names and types; must match the document's declaration exactly.
 
 > `readonly` `optional` **returns**: [`TypeSpec`](TypeSpec.md)
 
-Defined in: [being-portable/src/host.ts:22](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L22)
+Defined in: [being-portable/src/host.ts:22](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/host.ts#L22)
 
 Return type; must match the document's declaration exactly.
 
@@ -34,7 +34,7 @@ Return type; must match the document's declaration exactly.
 
 > `readonly` **run**: (`args`) => [`Value`](Value.md) \| `void`
 
-Defined in: [being-portable/src/host.ts:24](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L24)
+Defined in: [being-portable/src/host.ts:24](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/host.ts#L24)
 
 Receives validated, frozen arguments.
 

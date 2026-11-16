@@ -2,7 +2,7 @@
 
 # Interface: PlayerComponent
 
-Defined in: [player-system/player-component.ts:14](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/player-system/player-component.ts#L14)
+Defined in: [player-system/player-component.ts:14](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/player-system/player-component.ts#L14)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [player-system/player-component.ts:14](https://github.com/kinnet-stu
 
 > **inPlay**: `boolean`
 
-Defined in: [player-system/player-component.ts:17](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/player-system/player-component.ts#L17)
+Defined in: [player-system/player-component.ts:17](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/player-system/player-component.ts#L17)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [player-system/player-component.ts:17](https://github.com/kinnet-stu
 
 > **name**: `string`
 
-Defined in: [player-system/player-component.ts:15](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/player-system/player-component.ts#L15)
+Defined in: [player-system/player-component.ts:15](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/player-system/player-component.ts#L15)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [player-system/player-component.ts:15](https://github.com/kinnet-stu
 
 > **playerNumber**: `number`
 
-Defined in: [player-system/player-component.ts:16](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/player-system/player-component.ts#L16)
+Defined in: [player-system/player-component.ts:16](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/player-system/player-component.ts#L16)
