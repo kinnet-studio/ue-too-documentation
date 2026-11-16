@@ -2,7 +2,7 @@
 
 # 類別: History
 
-定義於: [packages/board/src/whiteboard/document/history.ts:24](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L24)
+定義於: [packages/board/src/whiteboard/document/history.ts:24](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L24)
 
 Undo and redo for one person's edits to a [WhiteboardDocument](WhiteboardDocument.md).
 
@@ -22,7 +22,7 @@ record's state from before the step, even if someone else changed it since
 
 > **new History**(`_doc`): `History`
 
-定義於: [packages/board/src/whiteboard/document/history.ts:33](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L33)
+定義於: [packages/board/src/whiteboard/document/history.ts:33](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L33)
 
 #### 參數
 
@@ -42,7 +42,7 @@ record's state from before the step, even if someone else changed it since
 
 > **get** **canRedo**(): `boolean`
 
-定義於: [packages/board/src/whiteboard/document/history.ts:103](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L103)
+定義於: [packages/board/src/whiteboard/document/history.ts:103](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L103)
 
 ##### 回傳
 
@@ -56,7 +56,7 @@ record's state from before the step, even if someone else changed it since
 
 > **get** **canUndo**(): `boolean`
 
-定義於: [packages/board/src/whiteboard/document/history.ts:99](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L99)
+定義於: [packages/board/src/whiteboard/document/history.ts:99](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L99)
 
 ##### 回傳
 
@@ -70,7 +70,7 @@ record's state from before the step, even if someone else changed it since
 
 > **get** **open**(): `boolean`
 
-定義於: [packages/board/src/whiteboard/document/history.ts:108](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L108)
+定義於: [packages/board/src/whiteboard/document/history.ts:108](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L108)
 
 Whether a step is open (a gesture is under way)
 
@@ -84,7 +84,7 @@ Whether a step is open (a gesture is under way)
 
 > **begin**(): `void`
 
-定義於: [packages/board/src/whiteboard/document/history.ts:38](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L38)
+定義於: [packages/board/src/whiteboard/document/history.ts:38](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L38)
 
 Opens a step; nested begin/end pairs join the outer step
 
@@ -98,7 +98,7 @@ Opens a step; nested begin/end pairs join the outer step
 
 > **cancel**(): `void`
 
-定義於: [packages/board/src/whiteboard/document/history.ts:56](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L56)
+定義於: [packages/board/src/whiteboard/document/history.ts:56](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L56)
 
 Reverts everything the open step changed and drops it
 
@@ -112,7 +112,7 @@ Reverts everything the open step changed and drops it
 
 > **dispose**(): `void`
 
-定義於: [packages/board/src/whiteboard/document/history.ts:124](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L124)
+定義於: [packages/board/src/whiteboard/document/history.ts:124](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L124)
 
 Stops recording
 
@@ -126,7 +126,7 @@ Stops recording
 
 > **end**(): `void`
 
-定義於: [packages/board/src/whiteboard/document/history.ts:45](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L45)
+定義於: [packages/board/src/whiteboard/document/history.ts:45](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L45)
 
 Closes the step; an empty step is dropped
 
@@ -140,7 +140,7 @@ Closes the step; an empty step is dropped
 
 > **redo**(): `boolean`
 
-定義於: [packages/board/src/whiteboard/document/history.ts:89](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L89)
+定義於: [packages/board/src/whiteboard/document/history.ts:89](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L89)
 
 Puts back the last undone step.
 
@@ -156,7 +156,7 @@ Whether there was anything to redo
 
 > **subscribe**(`listener`): () => `void`
 
-定義於: [packages/board/src/whiteboard/document/history.ts:118](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L118)
+定義於: [packages/board/src/whiteboard/document/history.ts:118](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L118)
 
 Listens for changes to [History.canUndo](#canundo), [History.canRedo](#canredo)
 and [History.open](#open).
@@ -183,7 +183,7 @@ A function that stops the listener
 
 > **undo**(): `boolean`
 
-定義於: [packages/board/src/whiteboard/document/history.ts:70](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/history.ts#L70)
+定義於: [packages/board/src/whiteboard/document/history.ts:70](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/history.ts#L70)
 
 Takes back the last step, cancelling an open one first.
 

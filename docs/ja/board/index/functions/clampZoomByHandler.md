@@ -4,7 +4,7 @@
 
 > **clampZoomByHandler**(`delta`, `camera`, `config`): `number`
 
-定義: [packages/board/src/camera/camera-rig/zoom-handler.ts:261](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/camera-rig/zoom-handler.ts#L261)
+定義: [packages/board/src/camera/camera-rig/zoom-handler.ts:261](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/camera-rig/zoom-handler.ts#L261)
 
 Handler pipeline step that clamps "zoom by" deltas to prevent boundary violations.
 

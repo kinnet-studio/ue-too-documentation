@@ -4,7 +4,7 @@
 
 > **MachineBody** = `object`
 
-定義於: [being-portable/src/format/types.ts:155](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L155)
+定義於: [being-portable/src/format/types.ts:155](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L155)
 
 The parts every machine has, root or child.
 
@@ -14,7 +14,7 @@ The parts every machine has, root or child.
 
 > `readonly` **context**: `Readonly`\<`Record`\<`string`, [`ContextFieldDefinition`](ContextFieldDefinition.md)\>\>
 
-定義於: [being-portable/src/format/types.ts:156](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L156)
+定義於: [being-portable/src/format/types.ts:156](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L156)
 
 ***
 
@@ -22,7 +22,7 @@ The parts every machine has, root or child.
 
 > `readonly` **events**: `Readonly`\<`Record`\<`string`, `Readonly`\<`Record`\<`string`, [`TypeSpec`](TypeSpec.md)\>\>\>\>
 
-定義於: [being-portable/src/format/types.ts:157](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L157)
+定義於: [being-portable/src/format/types.ts:157](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L157)
 
 ***
 
@@ -30,7 +30,7 @@ The parts every machine has, root or child.
 
 > `readonly` **initialState**: `string`
 
-定義於: [being-portable/src/format/types.ts:161](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L161)
+定義於: [being-portable/src/format/types.ts:161](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L161)
 
 ***
 
@@ -38,7 +38,7 @@ The parts every machine has, root or child.
 
 > `readonly` `optional` **outputs**: `Readonly`\<`Record`\<`string`, [`TypeSpec`](TypeSpec.md)\>\>
 
-定義於: [being-portable/src/format/types.ts:160](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L160)
+定義於: [being-portable/src/format/types.ts:160](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L160)
 
 ***
 
@@ -46,4 +46,4 @@ The parts every machine has, root or child.
 
 > `readonly` **states**: `Readonly`\<`Record`\<`string`, [`StateDefinition`](StateDefinition.md)\>\>
 
-定義於: [being-portable/src/format/types.ts:162](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L162)
+定義於: [being-portable/src/format/types.ts:162](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L162)

@@ -2,7 +2,7 @@
 
 # 介面: ShapeStyle
 
-定義於: [packages/board/src/whiteboard/document/types.ts:43](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L43)
+定義於: [packages/board/src/whiteboard/document/types.ts:43](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L43)
 
 The style every shape carries.
 
@@ -12,7 +12,7 @@ The style every shape carries.
 
 > **color**: [`ColorName`](../type-aliases/ColorName.md)
 
-定義於: [packages/board/src/whiteboard/document/types.ts:44](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L44)
+定義於: [packages/board/src/whiteboard/document/types.ts:44](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L44)
 
 ***
 
@@ -20,7 +20,7 @@ The style every shape carries.
 
 > **fill**: [`ShapeFill`](../type-aliases/ShapeFill.md)
 
-定義於: [packages/board/src/whiteboard/document/types.ts:46](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L46)
+定義於: [packages/board/src/whiteboard/document/types.ts:46](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L46)
 
 ***
 
@@ -28,4 +28,4 @@ The style every shape carries.
 
 > **size**: [`ShapeSize`](../type-aliases/ShapeSize.md)
 
-定義於: [packages/board/src/whiteboard/document/types.ts:45](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L45)
+定義於: [packages/board/src/whiteboard/document/types.ts:45](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L45)

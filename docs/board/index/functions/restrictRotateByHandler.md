@@ -4,7 +4,7 @@
 
 > **restrictRotateByHandler**(`delta`, `camera`, `config`): `number`
 
-Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:288](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/camera-rig/rotation-handler.ts#L288)
+Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:288](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/camera-rig/rotation-handler.ts#L288)
 
 Handler pipeline step that prevents "rotate by" operations when rotation is locked.
 

@@ -4,7 +4,7 @@
 
 > **HexGridLocationComponent** = `object`
 
-Defined in: [grid-system/hex-grid.ts:27](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/grid-system/hex-grid.ts#L27)
+Defined in: [grid-system/hex-grid.ts:27](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/grid-system/hex-grid.ts#L27)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [grid-system/hex-grid.ts:27](https://github.com/kinnet-studio/ue-too
 
 > **grid**: `Entity`
 
-Defined in: [grid-system/hex-grid.ts:28](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/grid-system/hex-grid.ts#L28)
+Defined in: [grid-system/hex-grid.ts:28](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/grid-system/hex-grid.ts#L28)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [grid-system/hex-grid.ts:28](https://github.com/kinnet-studio/ue-too
 
 > **q**: `number`
 
-Defined in: [grid-system/hex-grid.ts:29](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/grid-system/hex-grid.ts#L29)
+Defined in: [grid-system/hex-grid.ts:29](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/grid-system/hex-grid.ts#L29)
 
 ***
 
@@ -28,4 +28,4 @@ Defined in: [grid-system/hex-grid.ts:29](https://github.com/kinnet-studio/ue-too
 
 > **r**: `number`
 
-Defined in: [grid-system/hex-grid.ts:30](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/grid-system/hex-grid.ts#L30)
+Defined in: [grid-system/hex-grid.ts:30](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/grid-system/hex-grid.ts#L30)

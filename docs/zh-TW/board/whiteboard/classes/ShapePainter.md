@@ -2,7 +2,7 @@
 
 # 類別: ShapePainter
 
-定義於: [packages/board/src/whiteboard/render/painter.ts:65](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/painter.ts#L65)
+定義於: [packages/board/src/whiteboard/render/painter.ts:65](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/render/painter.ts#L65)
 
 Paints shapes onto a 2D canvas in their sketchy style.
 
@@ -20,7 +20,7 @@ units.
 
 > **new ShapePainter**(`options`): `ShapePainter`
 
-定義於: [packages/board/src/whiteboard/render/painter.ts:71](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/painter.ts#L71)
+定義於: [packages/board/src/whiteboard/render/painter.ts:71](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/render/painter.ts#L71)
 
 #### 參數
 
@@ -44,7 +44,7 @@ Makes an empty path; `new Path2D()` by default
 
 > **get** **cacheSize**(): `number`
 
-定義於: [packages/board/src/whiteboard/render/painter.ts:76](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/painter.ts#L76)
+定義於: [packages/board/src/whiteboard/render/painter.ts:76](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/render/painter.ts#L76)
 
 How many records have had their paths built (for tests)
 
@@ -58,7 +58,7 @@ How many records have had their paths built (for tests)
 
 > **paint**(`ctx`, `shape`, `theme`, `env`, `options`): `void`
 
-定義於: [packages/board/src/whiteboard/render/painter.ts:81](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/painter.ts#L81)
+定義於: [packages/board/src/whiteboard/render/painter.ts:81](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/render/painter.ts#L81)
 
 Paints one shape
 

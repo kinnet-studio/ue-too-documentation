@@ -2,7 +2,7 @@
 
 # Interface: PointerSample
 
-Defined in: [packages/board/src/whiteboard/editor/events.ts:34](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/events.ts#L34)
+Defined in: [packages/board/src/whiteboard/editor/events.ts:34](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/events.ts#L34)
 
 One pointer event as the editor needs it, from the DOM or any other
 source (tests, a custom event layer).
@@ -13,7 +13,7 @@ source (tests, a custom event layer).
 
 > **altKey**: `boolean`
 
-Defined in: [packages/board/src/whiteboard/editor/events.ts:44](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/events.ts#L44)
+Defined in: [packages/board/src/whiteboard/editor/events.ts:44](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/events.ts#L44)
 
 ***
 
@@ -21,7 +21,7 @@ Defined in: [packages/board/src/whiteboard/editor/events.ts:44](https://github.c
 
 > **button**: `number`
 
-Defined in: [packages/board/src/whiteboard/editor/events.ts:38](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/events.ts#L38)
+Defined in: [packages/board/src/whiteboard/editor/events.ts:38](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/events.ts#L38)
 
 0 primary, 1 middle, 2 secondary
 
@@ -31,7 +31,7 @@ Defined in: [packages/board/src/whiteboard/editor/events.ts:38](https://github.c
 
 > **client**: `Point`
 
-Defined in: [packages/board/src/whiteboard/editor/events.ts:40](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/events.ts#L40)
+Defined in: [packages/board/src/whiteboard/editor/events.ts:40](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/events.ts#L40)
 
 Window coordinates in CSS pixels
 
@@ -41,7 +41,7 @@ Window coordinates in CSS pixels
 
 > **ctrlKey**: `boolean`
 
-Defined in: [packages/board/src/whiteboard/editor/events.ts:42](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/events.ts#L42)
+Defined in: [packages/board/src/whiteboard/editor/events.ts:42](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/events.ts#L42)
 
 ***
 
@@ -49,7 +49,7 @@ Defined in: [packages/board/src/whiteboard/editor/events.ts:42](https://github.c
 
 > **id**: `number`
 
-Defined in: [packages/board/src/whiteboard/editor/events.ts:35](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/events.ts#L35)
+Defined in: [packages/board/src/whiteboard/editor/events.ts:35](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/events.ts#L35)
 
 ***
 
@@ -57,7 +57,7 @@ Defined in: [packages/board/src/whiteboard/editor/events.ts:35](https://github.c
 
 > **metaKey**: `boolean`
 
-Defined in: [packages/board/src/whiteboard/editor/events.ts:43](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/events.ts#L43)
+Defined in: [packages/board/src/whiteboard/editor/events.ts:43](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/events.ts#L43)
 
 ***
 
@@ -65,7 +65,7 @@ Defined in: [packages/board/src/whiteboard/editor/events.ts:43](https://github.c
 
 > **pointerType**: `"pen"` \| `"mouse"` \| `"touch"`
 
-Defined in: [packages/board/src/whiteboard/editor/events.ts:36](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/events.ts#L36)
+Defined in: [packages/board/src/whiteboard/editor/events.ts:36](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/events.ts#L36)
 
 ***
 
@@ -73,7 +73,7 @@ Defined in: [packages/board/src/whiteboard/editor/events.ts:36](https://github.c
 
 > **shiftKey**: `boolean`
 
-Defined in: [packages/board/src/whiteboard/editor/events.ts:41](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/events.ts#L41)
+Defined in: [packages/board/src/whiteboard/editor/events.ts:41](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/events.ts#L41)
 
 ***
 
@@ -81,6 +81,6 @@ Defined in: [packages/board/src/whiteboard/editor/events.ts:41](https://github.c
 
 > **timeStamp**: `number`
 
-Defined in: [packages/board/src/whiteboard/editor/events.ts:46](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/events.ts#L46)
+Defined in: [packages/board/src/whiteboard/editor/events.ts:46](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/events.ts#L46)
 
 Milliseconds, as `event.timeStamp`

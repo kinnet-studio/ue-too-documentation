@@ -4,7 +4,7 @@
 
 > `const` **MAX\_WHEEL\_ZOOM\_FACTOR**: `1.25` = `1.25`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:226](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L226)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:226](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L226)
 
 Largest zoom change a single wheel event may make: ×1.25 in, ÷1.25 out.
 

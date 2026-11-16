@@ -4,7 +4,7 @@
 
 > **EventResultCallback**\<`EventPayloadMapping`, `Context`, `States`\> = (`args`, `result`, `context`) => `void`
 
-定義於: [interface.ts:322](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/interface.ts#L322)
+定義於: [interface.ts:322](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/interface.ts#L322)
 
 Callback invoked after a state has handled an event, with the event's
 full [EventResult](EventResult.md).

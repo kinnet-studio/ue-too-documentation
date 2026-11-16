@@ -2,7 +2,7 @@
 
 # Interface: Change
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:168](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L168)
+Defined in: [packages/board/src/whiteboard/document/types.ts:168](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L168)
 
 One batch of edits to a document.
 
@@ -16,7 +16,7 @@ One batch of edits to a document.
 
 > **added**: [`Shape`](../type-aliases/Shape.md)[]
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:169](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L169)
+Defined in: [packages/board/src/whiteboard/document/types.ts:169](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L169)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [packages/board/src/whiteboard/document/types.ts:169](https://github
 
 > **removed**: [`Shape`](../type-aliases/Shape.md)[]
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:171](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L171)
+Defined in: [packages/board/src/whiteboard/document/types.ts:171](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L171)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [packages/board/src/whiteboard/document/types.ts:171](https://github
 
 > **source**: [`ChangeSource`](../type-aliases/ChangeSource.md)
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:172](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L172)
+Defined in: [packages/board/src/whiteboard/document/types.ts:172](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L172)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: [packages/board/src/whiteboard/document/types.ts:172](https://github
 
 > **updated**: \[[`Shape`](../type-aliases/Shape.md), [`Shape`](../type-aliases/Shape.md)\][]
 
-Defined in: [packages/board/src/whiteboard/document/types.ts:170](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/types.ts#L170)
+Defined in: [packages/board/src/whiteboard/document/types.ts:170](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/types.ts#L170)

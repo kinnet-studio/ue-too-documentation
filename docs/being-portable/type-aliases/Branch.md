@@ -4,7 +4,7 @@
 
 > **Branch** = `object`
 
-Defined in: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L81)
+Defined in: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L81)
 
 A conditional transition, checked after `do`.
 
@@ -14,7 +14,7 @@ A conditional transition, checked after `do`.
 
 > `readonly` **if**: [`GuardRef`](GuardRef.md)
 
-Defined in: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L81)
+Defined in: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L81)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [being-portable/src/format/types.ts:81](https://github.com/kinnet-st
 
 > `readonly` **target**: `string`
 
-Defined in: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L81)
+Defined in: [being-portable/src/format/types.ts:81](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L81)

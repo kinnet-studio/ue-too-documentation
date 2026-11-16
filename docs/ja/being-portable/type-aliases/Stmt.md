@@ -4,6 +4,6 @@
 
 > **Stmt** = \{ `set`: `string`; `to`: [`Expr`](Expr.md); \} \| \{ `push`: `string`; `value`: [`Expr`](Expr.md); \} \| \{ `index`: [`Expr`](Expr.md); `removeAt`: `string`; \} \| \{ `else?`: readonly `Stmt`[]; `if`: [`Expr`](Expr.md); `then`: readonly `Stmt`[]; \} \| \{ `args?`: `Readonly`\<`Record`\<`string`, [`Expr`](Expr.md)\>\>; `call`: `string`; `into?`: `string`; \} \| \{ `output`: [`Expr`](Expr.md); \}
 
-定義: [being-portable/src/format/types.ts:60](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L60)
+定義: [being-portable/src/format/types.ts:60](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L60)
 
 A statement.

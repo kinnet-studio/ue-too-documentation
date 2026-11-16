@@ -2,7 +2,7 @@
 
 # 介面: EditorState
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:88](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L88)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:88](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L88)
 
 What a toolbar needs to show.
 
@@ -12,7 +12,7 @@ What a toolbar needs to show.
 
 > **canRedo**: `boolean`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:96](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L96)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:96](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L96)
 
 ***
 
@@ -20,7 +20,7 @@ What a toolbar needs to show.
 
 > **canUndo**: `boolean`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:95](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L95)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:95](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L95)
 
 ***
 
@@ -28,7 +28,7 @@ What a toolbar needs to show.
 
 > **editingText**: `boolean`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:98](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L98)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:98](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L98)
 
 ***
 
@@ -36,7 +36,7 @@ What a toolbar needs to show.
 
 > **empty**: `boolean`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:97](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L97)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:97](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L97)
 
 ***
 
@@ -44,7 +44,7 @@ What a toolbar needs to show.
 
 > **selection**: readonly `string`[]
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:90](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L90)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:90](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L90)
 
 ***
 
@@ -52,7 +52,7 @@ What a toolbar needs to show.
 
 > **selectionStyle**: `Partial`\<[`ShapeStyle`](ShapeStyle.md)\> \| `null`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:94](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L94)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:94](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L94)
 
 The style values every selected shape shares, or null with nothing selected
 
@@ -62,7 +62,7 @@ The style values every selected shape shares, or null with nothing selected
 
 > **style**: [`ShapeStyle`](ShapeStyle.md)
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:92](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L92)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:92](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L92)
 
 The style the next shape gets
 
@@ -72,4 +72,4 @@ The style the next shape gets
 
 > **tool**: `"rect"` \| `"ellipse"` \| `"arrow"` \| `"line"` \| `"pen"` \| `"text"` \| `"note"` \| `"hand"` \| `"select"` \| `"eraser"`
 
-定義於: [packages/board/src/whiteboard/editor/editor.ts:89](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/editor.ts#L89)
+定義於: [packages/board/src/whiteboard/editor/editor.ts:89](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/editor.ts#L89)

@@ -4,7 +4,7 @@
 
 > **Action**\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`, `Output`\> = `object`
 
-定義: [interface.ts:480](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/interface.ts#L480)
+定義: [interface.ts:480](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/interface.ts#L480)
 
 ## 型パラメーター
 
@@ -34,7 +34,7 @@
 
 > **action**: (`context`, `event`, `stateMachine`) => `Output` \| `void`
 
-定義: [interface.ts:489](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/interface.ts#L489)
+定義: [interface.ts:489](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/interface.ts#L489)
 
 #### パラメータ
 
@@ -60,4 +60,4 @@
 
 > `optional` **defaultTargetState**: `States`
 
-定義: [interface.ts:499](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/interface.ts#L499)
+定義: [interface.ts:499](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being/src/interface.ts#L499)

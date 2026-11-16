@@ -2,7 +2,7 @@
 
 # Interface: TextInput
 
-Defined in: [packages/board/src/whiteboard/editor/text-input.ts:35](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L35)
+Defined in: [packages/board/src/whiteboard/editor/text-input.ts:35](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L35)
 
 Where typing happens while a text shape or note is edited. The editor
 ships a `<textarea>` overlay (`DomTextInput`); tests and other hosts can
@@ -14,7 +14,7 @@ supply their own.
 
 > `readonly` **active**: `boolean`
 
-Defined in: [packages/board/src/whiteboard/editor/text-input.ts:41](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L41)
+Defined in: [packages/board/src/whiteboard/editor/text-input.ts:41](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L41)
 
 ## Methods
 
@@ -22,7 +22,7 @@ Defined in: [packages/board/src/whiteboard/editor/text-input.ts:41](https://gith
 
 > **close**(): `void`
 
-Defined in: [packages/board/src/whiteboard/editor/text-input.ts:40](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L40)
+Defined in: [packages/board/src/whiteboard/editor/text-input.ts:40](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L40)
 
 Ends editing, committing the text
 
@@ -36,7 +36,7 @@ Ends editing, committing the text
 
 > **open**(`session`): `void`
 
-Defined in: [packages/board/src/whiteboard/editor/text-input.ts:36](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L36)
+Defined in: [packages/board/src/whiteboard/editor/text-input.ts:36](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L36)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/board/src/whiteboard/editor/text-input.ts:36](https://gith
 
 > **reposition**(`rect`, `scale`): `void`
 
-Defined in: [packages/board/src/whiteboard/editor/text-input.ts:38](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/editor/text-input.ts#L38)
+Defined in: [packages/board/src/whiteboard/editor/text-input.ts:38](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/editor/text-input.ts#L38)
 
 Follows the camera while editing
 

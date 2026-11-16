@@ -2,7 +2,7 @@
 
 # クラス: EntityFieldModificationEffect
 
-定義: [action-system/effect.ts:219](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/action-system/effect.ts#L219)
+定義: [action-system/effect.ts:219](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/action-system/effect.ts#L219)
 
 ## 実装
 
@@ -14,7 +14,7 @@
 
 > **new EntityFieldModificationEffect**(`coordinator`, `componentName`, `entity`, `valuePath`, `newEntityValue`): `EntityFieldModificationEffect`
 
-定義: [action-system/effect.ts:226](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/action-system/effect.ts#L226)
+定義: [action-system/effect.ts:226](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/action-system/effect.ts#L226)
 
 #### パラメータ
 
@@ -48,7 +48,7 @@
 
 > **apply**(): `void`
 
-定義: [action-system/effect.ts:240](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/action-system/effect.ts#L240)
+定義: [action-system/effect.ts:240](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-game-engine/src/action-system/effect.ts#L240)
 
 #### 戻り値
 

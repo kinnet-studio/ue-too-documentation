@@ -4,7 +4,7 @@
 
 > **LevelSnapshot** = `object`
 
-Defined in: [being-portable/src/format/types.ts:183](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L183)
+Defined in: [being-portable/src/format/types.ts:183](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L183)
 
 The running state of one machine level inside a snapshot.
 
@@ -14,7 +14,7 @@ The running state of one machine level inside a snapshot.
 
 > `readonly` `optional` **child**: `LevelSnapshot`
 
-Defined in: [being-portable/src/format/types.ts:186](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L186)
+Defined in: [being-portable/src/format/types.ts:186](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L186)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [being-portable/src/format/types.ts:186](https://github.com/kinnet-s
 
 > `readonly` **context**: `Readonly`\<`Record`\<`string`, [`Value`](Value.md)\>\>
 
-Defined in: [being-portable/src/format/types.ts:185](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L185)
+Defined in: [being-portable/src/format/types.ts:185](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L185)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [being-portable/src/format/types.ts:185](https://github.com/kinnet-s
 
 > `readonly` **state**: `string`
 
-Defined in: [being-portable/src/format/types.ts:184](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/format/types.ts#L184)
+Defined in: [being-portable/src/format/types.ts:184](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/format/types.ts#L184)

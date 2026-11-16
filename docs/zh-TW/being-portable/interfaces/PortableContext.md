@@ -2,7 +2,7 @@
 
 # 介面: PortableContext
 
-定義於: [being-portable/src/api-types.ts:26](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/api-types.ts#L26)
+定義於: [being-portable/src/api-types.ts:26](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/api-types.ts#L26)
 
 A read-only view of a portable machine's context. Only events change it.
 
@@ -32,7 +32,7 @@ A read-only view of a portable machine's context. Only events change it.
 
 > **fields**(): `Readonly`\<`Record`\<`string`, [`Value`](../type-aliases/Value.md)\>\>
 
-定義於: [being-portable/src/api-types.ts:30](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/api-types.ts#L30)
+定義於: [being-portable/src/api-types.ts:30](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/api-types.ts#L30)
 
 Every field's current value, frozen.
 
@@ -46,7 +46,7 @@ Every field's current value, frozen.
 
 > **get**(`field`): [`Value`](../type-aliases/Value.md)
 
-定義於: [being-portable/src/api-types.ts:28](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/api-types.ts#L28)
+定義於: [being-portable/src/api-types.ts:28](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/being-portable/src/api-types.ts#L28)
 
 The field's current value. Lists are frozen. Throws for an unknown field.
 

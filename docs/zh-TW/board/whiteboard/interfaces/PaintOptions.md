@@ -2,7 +2,7 @@
 
 # 介面: PaintOptions
 
-定義於: [packages/board/src/whiteboard/render/painter.ts:17](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/painter.ts#L17)
+定義於: [packages/board/src/whiteboard/render/painter.ts:17](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/render/painter.ts#L17)
 
 How one shape is painted this frame.
 
@@ -12,7 +12,7 @@ How one shape is painted this frame.
 
 > `optional` **faded**: `boolean`
 
-定義於: [packages/board/src/whiteboard/render/painter.ts:19](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/painter.ts#L19)
+定義於: [packages/board/src/whiteboard/render/painter.ts:19](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/render/painter.ts#L19)
 
 Drawn at 30% opacity (shapes the eraser has marked)
 
@@ -22,6 +22,6 @@ Drawn at 30% opacity (shapes the eraser has marked)
 
 > `optional` **hideText**: `boolean`
 
-定義於: [packages/board/src/whiteboard/render/painter.ts:21](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/painter.ts#L21)
+定義於: [packages/board/src/whiteboard/render/painter.ts:21](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/render/painter.ts#L21)
 
 Text left out (the shape whose text is being edited)

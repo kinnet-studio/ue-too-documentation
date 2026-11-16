@@ -4,7 +4,7 @@
 
 > **RotateByInputEventPayload** = `object`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:24](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L24)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:24](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L24)
 
 Payload for rotate-by input events (relative rotation).
 
@@ -14,6 +14,6 @@ Payload for rotate-by input events (relative rotation).
 
 > **diff**: `number`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:26](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L26)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:26](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L26)
 
 Rotation angle delta in radians

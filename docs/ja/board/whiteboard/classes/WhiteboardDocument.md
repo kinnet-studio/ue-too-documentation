@@ -2,7 +2,7 @@
 
 # クラス: WhiteboardDocument
 
-定義: [packages/board/src/whiteboard/document/document.ts:40](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L40)
+定義: [packages/board/src/whiteboard/document/document.ts:40](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L40)
 
 A whiteboard's shapes: a flat set of immutable records keyed by id, and a
 stream of the changes made to them.
@@ -34,7 +34,7 @@ doc.transact(() => {
 
 > **new WhiteboardDocument**(`shapes`): `WhiteboardDocument`
 
-定義: [packages/board/src/whiteboard/document/document.ts:49](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L49)
+定義: [packages/board/src/whiteboard/document/document.ts:49](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L49)
 
 #### パラメータ
 
@@ -56,7 +56,7 @@ Records to start with; no change is emitted for them
 
 > **get** **size**(): `number`
 
-定義: [packages/board/src/whiteboard/document/document.ts:59](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L59)
+定義: [packages/board/src/whiteboard/document/document.ts:59](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L59)
 
 How many records there are
 
@@ -70,7 +70,7 @@ How many records there are
 
 > **all**(): readonly [`Shape`](../type-aliases/Shape.md)[]
 
-定義: [packages/board/src/whiteboard/document/document.ts:64](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L64)
+定義: [packages/board/src/whiteboard/document/document.ts:64](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L64)
 
 Every record in stacking order (bottom first)
 
@@ -84,7 +84,7 @@ readonly [`Shape`](../type-aliases/Shape.md)[]
 
 > **applyRemote**(`change`): `void`
 
-定義: [packages/board/src/whiteboard/document/document.ts:125](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L125)
+定義: [packages/board/src/whiteboard/document/document.ts:125](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L125)
 
 Applies a change made by another client: puts its added records and the
 `after` side of its updates, removes its removed records, and reports
@@ -106,7 +106,7 @@ the result with `source: 'remote'`.
 
 > **get**(`id`): [`Shape`](../type-aliases/Shape.md) \| `undefined`
 
-定義: [packages/board/src/whiteboard/document/document.ts:54](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L54)
+定義: [packages/board/src/whiteboard/document/document.ts:54](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L54)
 
 The record with this id, if any
 
@@ -126,7 +126,7 @@ The record with this id, if any
 
 > **nextIndex**(): `string`
 
-定義: [packages/board/src/whiteboard/document/document.ts:160](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L160)
+定義: [packages/board/src/whiteboard/document/document.ts:160](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L160)
 
 A stacking key above every record, for a new shape on top
 
@@ -140,7 +140,7 @@ A stacking key above every record, for a new shape on top
 
 > **put**(`shapes`): `void`
 
-定義: [packages/board/src/whiteboard/document/document.ts:70](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L70)
+定義: [packages/board/src/whiteboard/document/document.ts:70](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L70)
 
 Adds records, or replaces the records with the same ids
 
@@ -160,7 +160,7 @@ Adds records, or replaces the records with the same ids
 
 > **remove**(`ids`): `void`
 
-定義: [packages/board/src/whiteboard/document/document.ts:83](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L83)
+定義: [packages/board/src/whiteboard/document/document.ts:83](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L83)
 
 Removes the records with these ids; unknown ids are ignored
 
@@ -180,7 +180,7 @@ Removes the records with these ids; unknown ids are ignored
 
 > **subscribe**(`listener`): () => `void`
 
-定義: [packages/board/src/whiteboard/document/document.ts:115](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L115)
+定義: [packages/board/src/whiteboard/document/document.ts:115](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L115)
 
 Listens for changes, delivered after each outermost transaction.
 
@@ -206,7 +206,7 @@ A function that stops the listener
 
 > **toSnapshot**(): [`Snapshot`](../interfaces/Snapshot.md)
 
-定義: [packages/board/src/whiteboard/document/document.ts:141](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L141)
+定義: [packages/board/src/whiteboard/document/document.ts:141](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L141)
 
 The whole document as plain JSON, records in stacking order
 
@@ -220,7 +220,7 @@ The whole document as plain JSON, records in stacking order
 
 > **transact**\<`T`\>(`fn`): `T`
 
-定義: [packages/board/src/whiteboard/document/document.ts:99](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L99)
+定義: [packages/board/src/whiteboard/document/document.ts:99](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L99)
 
 Runs `fn` and reports everything it changed as one [Change](../interfaces/Change.md).
 Nested calls join the outermost one.
@@ -247,7 +247,7 @@ Nested calls join the outermost one.
 
 > `static` **fromSnapshot**(`json`): `WhiteboardDocument`
 
-定義: [packages/board/src/whiteboard/document/document.ts:155](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/document.ts#L155)
+定義: [packages/board/src/whiteboard/document/document.ts:155](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/document.ts#L155)
 
 A document holding a snapshot's records.
 

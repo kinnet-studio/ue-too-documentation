@@ -2,7 +2,7 @@
 
 # Class: SnapshotError
 
-Defined in: [packages/board/src/whiteboard/document/snapshot.ts:33](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/snapshot.ts#L33)
+Defined in: [packages/board/src/whiteboard/document/snapshot.ts:33](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/snapshot.ts#L33)
 
 Thrown when a value isn't a whiteboard snapshot this version can read.
 
@@ -16,7 +16,7 @@ Thrown when a value isn't a whiteboard snapshot this version can read.
 
 > **new SnapshotError**(`message`): `SnapshotError`
 
-Defined in: [packages/board/src/whiteboard/document/snapshot.ts:34](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/document/snapshot.ts#L34)
+Defined in: [packages/board/src/whiteboard/document/snapshot.ts:34](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board/src/whiteboard/document/snapshot.ts#L34)
 
 #### Parameters
 

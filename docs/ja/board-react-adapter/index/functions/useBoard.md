@@ -4,7 +4,7 @@
 
 > **useBoard**(): `Board`
 
-定義: [hooks/useBoardify.tsx:419](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-react-adapter/src/hooks/useBoardify.tsx#L419)
+定義: [hooks/useBoardify.tsx:419](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-react-adapter/src/hooks/useBoardify.tsx#L419)
 
 Hook to access the Board instance from context.
 

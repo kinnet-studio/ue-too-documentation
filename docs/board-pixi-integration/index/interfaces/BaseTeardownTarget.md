@@ -2,7 +2,7 @@
 
 # Interface: BaseTeardownTarget
 
-Defined in: [base-teardown.ts:3](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-integration/src/base-teardown.ts#L3)
+Defined in: [base-teardown.ts:3](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-pixi-integration/src/base-teardown.ts#L3)
 
 The slice of the app components the base teardown touches. Structural so
  the teardown can be unit-tested without a Pixi renderer.
@@ -13,7 +13,7 @@ The slice of the app components the base teardown touches. Structural so
 
 > **canvasProxy**: `object`
 
-Defined in: [base-teardown.ts:6](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-integration/src/base-teardown.ts#L6)
+Defined in: [base-teardown.ts:6](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-pixi-integration/src/base-teardown.ts#L6)
 
 #### tearDown()
 
@@ -29,7 +29,7 @@ Defined in: [base-teardown.ts:6](https://github.com/kinnet-studio/ue-too/blob/d5
 
 > **cleanups**: () => `void`[]
 
-Defined in: [base-teardown.ts:7](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-integration/src/base-teardown.ts#L7)
+Defined in: [base-teardown.ts:7](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-pixi-integration/src/base-teardown.ts#L7)
 
 #### Returns
 
@@ -41,7 +41,7 @@ Defined in: [base-teardown.ts:7](https://github.com/kinnet-studio/ue-too/blob/d5
 
 > **kmtParser**: `object`
 
-Defined in: [base-teardown.ts:4](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-integration/src/base-teardown.ts#L4)
+Defined in: [base-teardown.ts:4](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-pixi-integration/src/base-teardown.ts#L4)
 
 #### tearDown()
 
@@ -57,7 +57,7 @@ Defined in: [base-teardown.ts:4](https://github.com/kinnet-studio/ue-too/blob/d5
 
 > **touchParser**: `object`
 
-Defined in: [base-teardown.ts:5](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-integration/src/base-teardown.ts#L5)
+Defined in: [base-teardown.ts:5](https://github.com/kinnet-studio/ue-too/blob/365aee502d765098695d898e7b6317eba52f313e/packages/board-pixi-integration/src/base-teardown.ts#L5)
 
 #### tearDown()
 
