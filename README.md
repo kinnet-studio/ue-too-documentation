@@ -36,14 +36,19 @@ English is the root locale, so English pages live in `docs/<package>/` and other
 
 ## Home page
 
-Each home page (every locale and version) is a full-window `@ue-too/board` canvas with the hero drawn on it: drag to pan, Ctrl + scroll or pinch to zoom, click the button to follow it. The code is in `.vitepress/theme/canvas-home/`:
+Each home page (every locale and version) is a full-window `@ue-too/board` canvas with the hero drawn on it, and a whiteboard on top: drag to pan, scroll or pinch to zoom, click a button to follow it, or pick a tool from the dock at the bottom and draw. The code is in `.vitepress/theme/canvas-home/`:
 
 - The text comes from the `hero` frontmatter of each `index.md`, so editing it there changes the canvas too.
 - The stock VitePress hero stays in the page, visually hidden, for screen readers, search engines and keyboard users. Clicking a button on the canvas activates its hidden link, and tabbing to that link draws a focus ring on the canvas. If the canvas can't load, or JavaScript is off, the HTML hero shows instead.
-- Once the visitor pans or zooms away, a Back to start pill shows above the hint and flies the camera back to where the page opened, using the board's `createZoomPanPath` (`back-to-start.ts`). Its keyboard and screen reader copy is a hidden button after the hero's links (`BackToStartButton.vue`).
-- The board version is pinned in `package.json` and bundled with the site; it doesn't follow the docs release on its own.
+- The whiteboard is the editor from `@ue-too/board/whiteboard`, running on the same board (`canvas-home.ts`). The hero is its background: with the hand or select tool a click on a hero button follows it, unless a shape covers the button; the other tools draw over the hero.
+- The dock (`WhiteboardDock.vue`) has the tools (hand, select, rectangle, ellipse, arrow, line, pen, text, sticky note, eraser), undo, redo and clear, a style panel (colour, size, fill) while a drawing tool or a selection is active, and the hint. Under 640px wide the four shapes fold into a Shapes menu, and redo and clear into a More menu. Its words are in `whiteboard-labels.ts` (English, Japanese, Traditional Chinese), and the letter shortcuts come from the editor.
+- The drawing is kept in the visitor's browser: `localStorage` under `ue-too:home-whiteboard`, written 400 ms after the last change and when the page is hidden (`whiteboard-storage.ts`). Every locale and version shares it, and a page open in another tab, or brought back by Back, picks up a newer save while keeping its own unsaved edits. If storage is blocked or full, the board still works and the console gets a warning.
+- Text and sticky notes use Caveat (`@fontsource/caveat`, loaded in `.vitepress/theme/index.ts`). `whiteboard-theme.ts` turns the shapes' colour names into colours for the light and dark themes, and uses the brand colour for selections. Its light palette is a copy of the editor's `DEFAULT_THEME`, so it loads with every page without pulling in the editor; keep the two in step.
+- The editor and the dock load with the home canvas only, not on other pages.
+- Once the visitor pans or zooms away, a Back to start pill shows above the dock and flies the camera back to where the page opened, using the board's `createZoomPanPath` (`back-to-start.ts`). Its keyboard and screen reader copy is a hidden button after the hero's links (`BackToStartButton.vue`).
+- The board version, whiteboard included, is pinned in `package.json` and bundled with the site; it doesn't follow the docs release on its own.
 
-Check it with `bunx vitepress build`, then `bun run test:home:page`. It runs in the `Live examples` workflow too.
+Check it with `bunx vitepress build`, then `bun run test:home:page` (`--only <check>,<check>` runs just those checks). It runs in the `Live examples` workflow too.
 
 ## Live examples
 
@@ -65,5 +70,6 @@ bun run test:examples:page    # drives the built page (running, errors, tabs, th
 
 - `LIVE_EXAMPLES_CDN` replaces jsDelivr (e.g. with a local mirror), for the scripts and for `vitepress build`.
 - `CHROMIUM_EXECUTABLE` points the scripts at a specific Chromium; otherwise run `bunx playwright install chromium` once.
+- `bun run scripts/wait-for-cdn.ts` waits, for up to 15 minutes, until the CDN serves every release in `versions.json`. The workflow runs it before the examples, because the release-import PR starts minutes after publishing, before jsDelivr has the new release.
 
 The `Live examples` workflow runs all of these on pull requests (including each release-import PR), on pushes to `main` and weekly. It doesn't block deploys.

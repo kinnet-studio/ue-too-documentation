@@ -6,10 +6,12 @@
  * focusing one draws a focus ring on the canvas.
  */
 import { useData } from 'vitepress'
-import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { computed, defineAsyncComponent, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import type { CanvasHomeHandle } from './canvas-home'
 import type { HeroContent } from './hero-layout'
 import { backLabel, canvasHome } from './state'
+import { whiteboardTheme } from './whiteboard-theme'
+import type { BoardSaver } from './whiteboard-storage'
 
 interface HeroFrontmatter {
   name?: string
@@ -19,18 +21,44 @@ interface HeroFrontmatter {
 }
 
 const HINTS: Record<'en' | 'ja' | 'zh-TW', { fine: string; touch: string }> = {
-  en: { fine: 'Drag to pan · Ctrl + scroll or pinch to zoom', touch: 'Drag to pan · Pinch to zoom' },
-  ja: { fine: 'ドラッグで移動 · Ctrl + スクロールかピンチでズーム', touch: 'ドラッグで移動 · ピンチでズーム' },
-  'zh-TW': { fine: '拖曳平移 · Ctrl + 滾輪或雙指縮放', touch: '拖曳平移 · 雙指縮放' },
+  en: {
+    fine: 'Drag to pan · Scroll or pinch to zoom · Pick a tool to draw',
+    touch: 'Drag to pan · Pinch to zoom · Pick a tool to draw',
+  },
+  ja: {
+    fine: 'ドラッグで移動 · スクロールかピンチでズーム · ツールを選んで描く',
+    touch: 'ドラッグで移動 · ピンチでズーム · ツールを選んで描く',
+  },
+  'zh-TW': {
+    fine: '拖曳平移 · 滾輪或雙指縮放 · 選擇工具開始畫',
+    touch: '拖曳平移 · 雙指縮放 · 選擇工具開始畫',
+  },
 }
+
+// The drawing dock loads with the canvas, so other pages never download the whiteboard
+const WhiteboardDock = defineAsyncComponent(() => import('./WhiteboardDock.vue'))
 
 const { frontmatter, isDark, lang } = useData()
 const canvasEl = ref<HTMLCanvasElement>()
 let handle: CanvasHomeHandle | null = null
+let saver: BoardSaver | null = null
+// Stops reloading the drawing when another tab saves it
+let stopWatching = () => {}
 let unmounted = false
 
-function hint(): string {
-  const locale = lang.value.startsWith('ja') ? 'ja' : lang.value === 'zh-TW' ? 'zh-TW' : 'en'
+// Leaving the page saves what a pending save hasn't yet
+const flushDrawing = () => saver?.flush()
+
+// The drawing's colours follow the site's theme; read once the theme's CSS has applied
+function theme() {
+  const brand = getComputedStyle(document.documentElement).getPropertyValue('--vp-c-brand-1').trim()
+  return whiteboardTheme(isDark.value, brand, getComputedStyle(document.body).fontFamily)
+}
+
+const hintText = computed(() => hint(lang.value))
+
+function hint(lang: string): string {
+  const locale = lang.startsWith('ja') ? 'ja' : lang === 'zh-TW' ? 'zh-TW' : 'en'
   return HINTS[locale][matchMedia('(pointer: coarse)').matches ? 'touch' : 'fine']
 }
 
@@ -87,26 +115,40 @@ onMounted(async () => {
   document.addEventListener('focusin', onFocusIn)
   document.addEventListener('focusout', onFocusOut)
   try {
-    const { mountCanvasHome } = await import('./canvas-home')
+    const [{ mountCanvasHome }, storage] = await Promise.all([
+      import('./canvas-home'),
+      import('./whiteboard-storage'),
+    ])
     if (unmounted || !canvasEl.value) return
+    const store = storage.browserStorage()
+    const drawing = storage.loadBoard(store)
     handle = mountCanvasHome(canvasEl.value, {
       content: content(),
-      hint: hint(),
       backLabel: backLabel(lang.value),
+      document: drawing,
+      theme: theme(),
       onActivate: activate,
       onError: fallBack,
     })
     canvasHome.value = handle
+    saver = storage.saveBoard(drawing, store)
+    stopWatching = storage.watchSaves(saver)
+    window.addEventListener('pagehide', flushDrawing)
   } catch (error) {
     fallBack(error)
   }
 })
 
-watch(isDark, () => nextTick(() => handle?.refreshTheme()))
-watch([() => frontmatter.value.hero, lang], () => handle?.setContent(content(), hint(), backLabel(lang.value)))
+watch(isDark, () => nextTick(() => handle?.refreshTheme(theme())))
+watch([() => frontmatter.value.hero, lang], () => handle?.setContent(content(), backLabel(lang.value)))
 
 onBeforeUnmount(() => {
   unmounted = true
+  window.removeEventListener('pagehide', flushDrawing)
+  stopWatching()
+  saver?.flush()
+  saver?.dispose()
+  saver = null
   handle?.destroy()
   handle = null
   canvasHome.value = null
@@ -118,6 +160,7 @@ onBeforeUnmount(() => {
 
 <template>
   <canvas ref="canvasEl" class="canvas-home" data-testid="canvas-home" aria-hidden="true"></canvas>
+  <WhiteboardDock v-if="canvasHome" :hint="hintText" />
 </template>
 
 <style scoped>

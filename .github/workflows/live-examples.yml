@@ -30,6 +30,12 @@ jobs:
       - name: Unit tests
         run: bun run test
 
+      # The release-import PR runs minutes after publishing, before jsDelivr
+      # serves the new release; wait for it rather than fail
+      - name: Wait for the releases on the CDN
+        run: bun run scripts/wait-for-cdn.ts
+        timeout-minutes: 20
+
       - name: Run every live example
         run: bun run test:examples
 

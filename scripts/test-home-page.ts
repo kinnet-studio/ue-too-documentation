@@ -3,7 +3,7 @@
  * ue-too canvas, panning, zooming, clicking its button, keyboard focus, the
  * theme toggle, the locales, leaving the page, phone width and no JavaScript.
  *
- * Usage: bun run test:home:page [--url <site root url>]
+ * Usage: bun run test:home:page [--url <site root url>] [--only <check>,<check>]
  *
  * Without --url it serves the latest line's build (`bunx vitepress build`
  * first) with `vitepress preview` on port 4173.
@@ -49,6 +49,11 @@ async function waitForCanvas(page: Page) {
   await page.waitForFunction(() => window.__canvasHome, null, { timeout: TIMEOUT }).catch(() => {
     throw new Error('the home page canvas never mounted')
   })
+}
+
+// The drawing dock loads just after the canvas
+async function waitForDock(page: Page) {
+  await page.getByTestId('wb-dock').waitFor({ timeout: TIMEOUT })
 }
 
 async function buttonRect(page: Page): Promise<Rect> {
@@ -341,8 +346,32 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     assert((await zoom()) <= 4 + 1e-6, `zoomed in past 4: ${await zoom()}`)
     for (let i = 0; i < 80; i++) await page.mouse.wheel(0, 400)
     await page.waitForTimeout(100)
-    assert((await zoom()) >= 0.5 - 1e-6, `zoomed out past 0.5: ${await zoom()}`)
+    const out = await zoom()
+    assert(out >= 0.25 - 1e-6, `zoomed out past 0.25: ${out}`)
+    assert(out <= 0.25 + 1e-3, `zooming out stopped at ${out}, before 0.25`)
     await page.keyboard.up('Control')
+    await context.close()
+  },
+
+  // Boards start in keyboard-mouse mode: a plain scroll zooms at the cursor
+  async 'scroll-zooms'(browser) {
+    const { context, page } = await openHome(browser)
+    const before = (await camera(page)).zoom
+    await page.mouse.move(700, 500)
+    await page.mouse.wheel(0, -200)
+    await page.waitForTimeout(100)
+    const after = (await camera(page)).zoom
+    assert(after > before, `a plain scroll left the zoom at ${after} (was ${before})`)
+    await context.close()
+  },
+
+  // There's room to draw: the camera can travel 4,000 world units from the hero
+  async 'pan-room'(browser) {
+    const { context, page } = await openHome(browser)
+    for (let i = 0; i < 8; i++) await drag(page, EMPTY, { x: EMPTY.x + 600, y: EMPTY.y })
+    const { x } = await camera(page)
+    assert(x < -1000, `panning stopped at x = ${x}`)
+    assert(x >= -4000 - 1e-6, `panned past the limit: x = ${x}`)
     await context.close()
   },
 
@@ -442,6 +471,374 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     await context.close()
   },
 
+  // With a drawing tool, drawing over the hero's button draws instead of following the link
+  async 'draw-over-hero'(browser) {
+    const { context, page } = await openHome(browser)
+    await page.evaluate(() => window.__canvasHome!.editor.setTool('pen'))
+    const rect = await buttonRect(page)
+    await drag(page, { x: rect.x - 40, y: rect.y + rect.height / 2 }, { x: rect.x + rect.width + 40, y: rect.y + rect.height / 2 })
+    await page.waitForTimeout(500)
+    assert(new URL(page.url()).pathname === new URL(siteUrl).pathname, `drawing over the button navigated to ${page.url()}`)
+    const size = await page.evaluate(() => window.__canvasHome!.editor.document.size)
+    assert(size === 1, `the stroke left ${size} shapes`)
+    await context.close()
+  },
+
+  // A shape lying over the button wins the click; the uncovered part still works
+  async 'shape-over-button'(browser) {
+    const { context, page } = await openHome(browser)
+    const rect = await buttonRect(page)
+    await page.evaluate(r => {
+      const editor = window.__canvasHome!.editor
+      const topLeft = editor.toWorld({ x: r.x - 10, y: r.y - 10 })
+      const bottomRight = editor.toWorld({ x: r.x + r.width / 2, y: r.y + r.height + 10 })
+      editor.document.put({
+        id: 'cover',
+        type: 'rect',
+        x: topLeft.x,
+        y: topLeft.y,
+        w: bottomRight.x - topLeft.x,
+        h: bottomRight.y - topLeft.y,
+        rotation: 0,
+        index: 'V',
+        seed: 1,
+        style: { color: 'ink', size: 'm', fill: 'solid' },
+      })
+    }, rect)
+    await page.mouse.click(rect.x + rect.width / 4, rect.y + rect.height / 2)
+    await page.waitForTimeout(500)
+    assert(new URL(page.url()).pathname === new URL(siteUrl).pathname, 'a click on the shape followed the link underneath')
+    await page.mouse.click(rect.x + (rect.width * 3) / 4, rect.y + rect.height / 2)
+    await onPackagesPage(page)
+    await context.close()
+  },
+
+  // Back to start takes its press whatever the tool
+  async 'pill-beats-pen'(browser) {
+    const { context, page } = await openHome(browser)
+    const start = await camera(page)
+    await drag(page, EMPTY, { x: EMPTY.x + 400, y: EMPTY.y + 200 })
+    await page.evaluate(() => window.__canvasHome!.editor.setTool('pen'))
+    const rect = await backRect(page)
+    assert(rect, 'Back to start did not show after panning')
+    const { x, y } = centre(rect)
+    await page.mouse.click(x, y)
+    await page.waitForTimeout(1300)
+    const end = await camera(page)
+    near(end.x, start.x, 1, 'camera x after Back to start')
+    near(end.y, start.y, 1, 'camera y after Back to start')
+    const size = await page.evaluate(() => window.__canvasHome!.editor.document.size)
+    assert(size === 0, `clicking Back to start with the pen drew ${size} shapes`)
+    await context.close()
+  },
+
+  // A drawing is kept in the browser across reloads, and clearing it is kept too
+  async 'drawing-persists'(browser) {
+    const { context, page } = await openHome(browser)
+    const size = () => page.evaluate(() => window.__canvasHome!.editor.document.size)
+    await page.evaluate(() => window.__canvasHome!.editor.setTool('pen'))
+    await drag(page, EMPTY, { x: EMPTY.x + 120, y: EMPTY.y - 40 })
+    await page.waitForTimeout(600)
+    await page.reload()
+    await waitForCanvas(page)
+    assert((await size()) === 1, `after a reload the board has ${await size()} shapes`)
+    await page.evaluate(() => window.__canvasHome!.editor.clear())
+    await page.waitForTimeout(600)
+    await page.reload()
+    await waitForCanvas(page)
+    assert((await size()) === 0, `after clearing and reloading the board has ${await size()} shapes`)
+    await context.close()
+  },
+
+  // The dock picks tools; a drawing tool swaps the hint for the style panel
+  async 'dock-tools'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const dock = page.getByTestId('wb-dock')
+    const tool = () => page.evaluate(() => window.__canvasHome!.editor.tool)
+    assert(await page.getByTestId('wb-hint').isVisible(), 'the hint is hidden with the hand tool')
+    assert(!(await page.getByTestId('wb-style').isVisible()), 'the style panel shows with the hand tool')
+    await dock.getByRole('button', { name: 'Pen', exact: true }).click()
+    assert((await tool()) === 'pen', `the Pen button picked ${await tool()}`)
+    assert((await dock.getByRole('button', { name: 'Pen', exact: true }).getAttribute('aria-pressed')) === 'true', 'Pen is not pressed')
+    await page.keyboard.press('r')
+    assert((await dock.getByRole('button', { name: 'Rectangle', exact: true }).getAttribute('aria-pressed')) === 'true', 'R did not press Rectangle')
+    await drag(page, EMPTY, { x: EMPTY.x + 120, y: EMPTY.y - 80 })
+    const size = await page.evaluate(() => window.__canvasHome!.editor.document.size)
+    assert(size === 1, `drawing a rectangle left ${size} shapes`)
+    await dock.getByRole('button', { name: 'Pen', exact: true }).click()
+    assert(await page.getByTestId('wb-style').isVisible(), 'the style panel is hidden with a drawing tool')
+    assert(!(await page.getByTestId('wb-hint').isVisible()), 'the hint shows with a drawing tool')
+    await context.close()
+  },
+
+  async 'dock-undo-clear'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const dock = page.getByTestId('wb-dock')
+    const size = () => page.evaluate(() => window.__canvasHome!.editor.document.size)
+    await dock.getByRole('button', { name: 'Pen', exact: true }).click()
+    await drag(page, EMPTY, { x: EMPTY.x + 120, y: EMPTY.y - 40 })
+    assert((await size()) === 1, 'the stroke was not drawn')
+    await dock.getByRole('button', { name: 'Undo' }).click()
+    assert((await size()) === 0, 'Undo kept the stroke')
+    await dock.getByRole('button', { name: 'Redo' }).click()
+    assert((await size()) === 1, 'Redo did not bring it back')
+    const clear = dock.getByRole('button', { name: 'Clear the board' })
+    await clear.click()
+    assert((await size()) === 0, 'Clear kept the stroke')
+    assert(await clear.isDisabled(), 'Clear is enabled on an empty board')
+    await page.keyboard.press('Control+z')
+    assert((await size()) === 1, 'Ctrl+Z did not undo the clear')
+    await context.close()
+  },
+
+  async 'dock-style'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const dock = page.getByTestId('wb-dock')
+    const panel = page.getByTestId('wb-style')
+    await dock.getByRole('button', { name: 'Rectangle', exact: true }).click()
+    assert(await panel.getByRole('button', { name: 'Hatched' }).isVisible(), 'the fill options are hidden for rectangles')
+    await panel.getByRole('button', { name: 'Red' }).click()
+    await drag(page, EMPTY, { x: EMPTY.x + 120, y: EMPTY.y - 80 })
+    const style = () => page.evaluate(() => window.__canvasHome!.editor.document.all()[0]!.style)
+    assert((await style()).color === 'red', `the rectangle is ${(await style()).color}`)
+    // The rectangle is selected after drawing; the panel restyles it
+    await panel.getByRole('button', { name: 'Large' }).click()
+    assert((await style()).size === 'l', `the rectangle's size is ${(await style()).size}`)
+    await dock.getByRole('button', { name: 'Pen', exact: true }).click()
+    assert(!(await panel.getByRole('button', { name: 'Hatched' }).isVisible()), 'the fill options show for the pen')
+    await context.close()
+  },
+
+  async 'dock-keyboard'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const dock = page.getByTestId('wb-dock')
+    await dock.getByRole('button', { name: 'Hand', exact: true }).focus()
+    await page.keyboard.press('ArrowRight')
+    const focused = await page.evaluate(() => document.activeElement?.getAttribute('aria-label'))
+    assert(focused === 'Select', `ArrowRight moved focus to ${focused}`)
+    await page.keyboard.press('Enter')
+    assert((await page.evaluate(() => window.__canvasHome!.editor.tool)) === 'select', 'Enter did not pick Select')
+    assert((await dock.getByRole('button', { name: 'Hand', exact: true }).getAttribute('tabindex')) === '-1', 'more than one dock button is in the tab order')
+    // Typing in the site search doesn't switch tools
+    await page.locator('.VPNavBarSearch button').first().click()
+    await page.waitForFunction(() => document.activeElement?.classList.contains('search-input'), null, { timeout: TIMEOUT })
+    await page.keyboard.type('rope')
+    await page.waitForTimeout(200)
+    assert((await page.evaluate(() => window.__canvasHome!.editor.tool)) === 'select', 'typing in search switched tools')
+    await context.close()
+  },
+
+  async 'dock-phone'(browser) {
+    const { context, page } = await openHome(browser, '', PHONE)
+    await waitForDock(page)
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
+    assert(overflow === 0, `the page scrolls sideways by ${overflow}px`)
+    const dock = page.getByTestId('wb-dock')
+    const box = await dock.boundingBox()
+    assert(box && box.x >= 0 && box.x + box.width <= 390, `the dock is ${JSON.stringify(box)}`)
+    await dock.getByRole('button', { name: 'Shapes' }).tap()
+    const menu = page.getByTestId('wb-shapes-menu')
+    assert(await menu.isVisible(), 'the Shapes menu did not open')
+    await menu.getByRole('button', { name: 'Ellipse' }).tap()
+    assert(!(await menu.isVisible()), 'the Shapes menu stayed open')
+    assert((await page.evaluate(() => window.__canvasHome!.editor.tool)) === 'ellipse', 'Ellipse was not picked')
+    const cdp = await context.newCDPSession(page)
+    const touch = (type: 'touchStart' | 'touchMove' | 'touchEnd', x: number, y: number) =>
+      cdp.send('Input.dispatchTouchEvent', { type, touchPoints: type === 'touchEnd' ? [] : [{ x, y }] })
+    await touch('touchStart', 80, 200)
+    for (let i = 1; i <= 6; i++) await touch('touchMove', 80 + i * 15, 200 + i * 10)
+    await touch('touchEnd', 170, 260)
+    const shapes = await page.evaluate(() => window.__canvasHome!.editor.document.all().map(s => s.type))
+    assert(shapes.length === 1 && shapes[0] === 'ellipse', `a one-finger drag drew ${JSON.stringify(shapes)}`)
+    await dock.getByRole('button', { name: 'More' }).tap()
+    assert(await page.getByTestId('wb-more-menu').getByRole('button', { name: 'Clear the board' }).isVisible(), 'More has no Clear')
+    await context.close()
+  },
+
+  // Common phone widths narrower than 390px fit the dock and the style panel, with room to spare
+  async 'dock-narrow-phone'(browser) {
+    for (const width of [360, 320]) {
+      const { context, page } = await openHome(browser, '', { ...PHONE, viewport: { width, height: 740 } })
+      await waitForDock(page)
+      const fits = async (testId: string) => {
+        const box = await page.getByTestId(testId).boundingBox()
+        assert(box && box.x >= 7.5 && box.x + box.width <= width - 7.5, `at ${width}px ${testId} is ${JSON.stringify(box)}`)
+      }
+      await fits('wb-dock')
+      await page.getByTestId('wb-dock').getByRole('button', { name: 'Shapes' }).tap()
+      await page.getByTestId('wb-shapes-menu').getByRole('button', { name: 'Rectangle' }).tap()
+      assert(await page.getByTestId('wb-style').getByRole('button', { name: 'Solid' }).isVisible(), 'the fill options are hidden for rectangles')
+      await fits('wb-style')
+      await context.close()
+    }
+  },
+
+  // On short windows the page still opens with the hero's buttons above the dock
+  async 'hero-above-dock'(browser) {
+    const windows: BrowserContextOptions[] = [
+      { viewport: { width: 844, height: 390 }, hasTouch: true, isMobile: true },
+      { viewport: { width: 1024, height: 520 } },
+      { viewport: { width: 1280, height: 600 } },
+    ]
+    for (const options of windows) {
+      const { context, page } = await openHome(browser, '', options)
+      await waitForDock(page)
+      await page.waitForTimeout(300)
+      const stack = await page.getByTestId('wb-stack').boundingBox()
+      const rects = await page.evaluate(() => window.__canvasHome!.buttonRects().map(r => ({ top: r.top, bottom: r.bottom })))
+      assert(stack, 'the dock is missing')
+      for (const r of rects) {
+        assert(r.bottom <= stack.y, `at ${options.viewport!.width}×${options.viewport!.height} a hero button (${r.top}–${r.bottom}) is under the dock (top ${stack.y})`)
+      }
+      assert((await backRect(page)) === null, `at ${options.viewport!.width}×${options.viewport!.height} Back to start shows on a page that has not moved`)
+      await context.close()
+    }
+  },
+
+  // Tabbing to a hero link whose button lies under the dock brings the button out
+  async 'hero-focus-above-dock'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const stack = await page.getByTestId('wb-stack').boundingBox()
+    assert(stack, 'the dock is missing')
+    const before = await buttonRect(page)
+    const dy = stack.y + 20 - before.y
+    await drag(page, { x: 200, y: 200 }, { x: 200, y: 200 + dy })
+    const under = await buttonRect(page)
+    assert(under.y + under.height > stack.y, `the button did not move under the dock: ${JSON.stringify(under)}`)
+    let focused = false
+    for (let i = 0; i < 30 && !focused; i++) {
+      await page.keyboard.press('Tab')
+      focused = await page.evaluate(() => !!document.activeElement?.closest('.VPHomeHero .actions'))
+    }
+    assert(focused, 'Tab never reached the hero link')
+    const after = await buttonRect(page)
+    assert(after.y + after.height <= stack.y, `the focused button (bottom ${after.y + after.height}) is still under the dock (top ${stack.y})`)
+    await context.close()
+  },
+
+  // A dock button keeps no focus after a click, so Space + drag still pans
+  async 'space-drag-after-dock-click'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    await page.getByTestId('wb-dock').getByRole('button', { name: 'Pen', exact: true }).click()
+    const before = await buttonRect(page)
+    await page.mouse.move(EMPTY.x, EMPTY.y)
+    await page.keyboard.down('Space')
+    await drag(page, EMPTY, { x: EMPTY.x + 100, y: EMPTY.y })
+    await page.keyboard.up('Space')
+    const after = await buttonRect(page)
+    const size = await page.evaluate(() => window.__canvasHome!.editor.document.size)
+    assert(size === 0, `Space + drag with the pen drew ${size} shapes`)
+    near(after.x - before.x, 100, 2, 'Space + drag moved the button')
+    await context.close()
+  },
+
+  // The toolbar stays in the tab order when the focused command becomes unavailable
+  async 'dock-keyboard-clear'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const dock = page.getByTestId('wb-dock')
+    await page.evaluate(() => window.__canvasHome!.editor.setTool('pen'))
+    await drag(page, EMPTY, { x: EMPTY.x + 120, y: EMPTY.y - 40 })
+    await dock.getByRole('button', { name: 'Hand', exact: true }).focus()
+    await page.keyboard.press('End')
+    const last = await page.evaluate(() => document.activeElement?.getAttribute('aria-label'))
+    assert(last === 'Clear the board', `End moved focus to ${last}`)
+    await page.keyboard.press('Enter')
+    assert((await page.evaluate(() => window.__canvasHome!.editor.document.size)) === 0, 'Enter on Clear kept the stroke')
+    await page.waitForTimeout(100)
+    const inDock = await page.evaluate(() => !!document.activeElement?.closest('[data-testid="wb-dock"]'))
+    assert(inDock, `after Clear focus fell to ${await page.evaluate(() => document.activeElement?.tagName)}`)
+    const stops = await dock.locator(':scope > button[tabindex="0"]').count()
+    assert(stops === 1, `${stops} toolbar buttons are in the tab order after Clear`)
+    // Narrowing the window (no Clear button) keeps one button in the tab order
+    await page.setViewportSize({ width: 500, height: 900 })
+    await page.waitForTimeout(200)
+    const narrowStops = await dock.locator(':scope > button[tabindex="0"]').count()
+    assert(narrowStops === 1, `${narrowStops} toolbar buttons are in the tab order on a narrow window`)
+    await context.close()
+  },
+
+  // Two tabs of the home page don't overwrite each other's drawings
+  async 'drawing-syncs-tabs'(browser) {
+    const { context, page: first } = await openHome(browser)
+    const size = (page: Page) => page.evaluate(() => window.__canvasHome!.editor.document.size)
+    const stroke = async (page: Page, dy: number) => {
+      await page.evaluate(() => window.__canvasHome!.editor.setTool('pen'))
+      await drag(page, { x: EMPTY.x, y: EMPTY.y + dy }, { x: EMPTY.x + 120, y: EMPTY.y + dy - 40 })
+      await page.waitForTimeout(600)
+    }
+    await stroke(first, 0)
+    const second = await context.newPage()
+    await second.goto(siteUrl)
+    await waitForCanvas(second)
+    assert((await size(second)) === 1, `the second tab opened with ${await size(second)} shapes`)
+    await stroke(second, -100)
+    await first.waitForFunction(() => window.__canvasHome!.editor.document.size === 2, null, { timeout: 3000 }).catch(() => {})
+    assert((await size(first)) === 2, `the first tab shows ${await size(first)} shapes after the second tab drew`)
+    await stroke(first, -200)
+    const saved = await first.evaluate(() => JSON.parse(localStorage.getItem('ue-too:home-whiteboard') ?? '{}').records?.length)
+    assert(saved === 3, `${saved} shapes are saved after both tabs drew`)
+    await context.close()
+  },
+
+  async 'dock-locales'(browser) {
+    for (const [path, note] of [['ja/', '付箋'], ['zh-TW/', '便利貼']] as const) {
+      const { context, page } = await openHome(browser, path)
+      await waitForDock(page)
+      assert(await page.getByTestId('wb-dock').getByRole('button', { name: note }).isVisible(), `${path} has no ${note} button`)
+      await context.close()
+    }
+  },
+
+  async 'text-typing'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    await page.getByTestId('wb-dock').getByRole('button', { name: 'Text', exact: true }).click()
+    await page.mouse.click(EMPTY.x, EMPTY.y - 100)
+    await page.keyboard.type('Hello')
+    const text = () => page.evaluate(() => (window.__canvasHome!.editor.document.all()[0] as { text?: string } | undefined)?.text)
+    assert((await text()) === 'Hello', `the text shape holds ${await text()}`)
+    await page.keyboard.press('Escape')
+    assert(!(await page.evaluate(() => window.__canvasHome!.editor.getState().editingText)), 'Escape did not end editing')
+    await context.close()
+  },
+
+  async 'back-pill-above-dock'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    await drag(page, EMPTY, { x: EMPTY.x + 300, y: EMPTY.y - 150 })
+    await page.waitForTimeout(100)
+    const pill = await backRect(page)
+    const stack = await page.getByTestId('wb-stack').boundingBox()
+    assert(pill && stack, 'the pill or the dock is missing')
+    assert(pill.y + pill.height <= stack.y, `the pill (bottom ${pill.y + pill.height}) overlaps the dock (top ${stack.y})`)
+    await context.close()
+  },
+
+  // The drawing follows the site's light and dark themes
+  async 'whiteboard-theme'(browser) {
+    const { context, page } = await openHome(browser)
+    const ink = () => page.evaluate(() => window.__canvasHome!.editor.getTheme().colors.ink)
+    const toggle = () => page.locator('.VPNavBarAppearance .VPSwitchAppearance').click()
+    const first = await ink()
+    await toggle()
+    await page.waitForTimeout(300)
+    const second = await ink()
+    await toggle()
+    await page.waitForTimeout(300)
+    const third = await ink()
+    const inks = [first, second].sort()
+    assert(inks[0] === '#1e1e1e' && inks[1] === '#e8e8e0', `inks were ${first} and ${second}`)
+    assert(third === first, `the ink didn't switch back: ${third}`)
+    await context.close()
+  },
+
   async 'failed-import'(browser) {
     const context = await browser.newContext({ viewport: { width: 1400, height: 1000 } })
     await context.route(/\/chunks\/canvas-home\.[^/]*\.js$/, route => route.abort())
@@ -491,10 +888,15 @@ async function startPreviewServer() {
   throw new Error(`vitepress preview did not serve ${siteUrl}; run \`bunx vitepress build\` first`)
 }
 
+// --only a,b runs just those checks
+const onlyFlag = process.argv.indexOf('--only')
+const only = onlyFlag === -1 ? null : new Set(process.argv[onlyFlag + 1]?.split(','))
+const selected = Object.entries(checks).filter(([name]) => !only || only.has(name))
+
 const server = urlFlag === -1 ? await startPreviewServer() : null
 const browser = await launchBrowser()
 let failed = 0
-for (const [name, run] of Object.entries(checks)) {
+for (const [name, run] of selected) {
   try {
     await run(browser)
     console.log(`✓ ${name}`)
@@ -506,5 +908,5 @@ for (const [name, run] of Object.entries(checks)) {
 await browser.close()
 server?.kill()
 
-console.log(`${Object.keys(checks).length - failed} of ${Object.keys(checks).length} page checks passed`)
+console.log(`${selected.length - failed} of ${selected.length} page checks passed`)
 process.exit(failed > 0 ? 1 : 0)
