@@ -2,7 +2,7 @@
 
 # 介面: StateMachine
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:171](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L171)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:171](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L171)
 
 DOM event parser for Keyboard/Mouse/Trackpad input.
 
@@ -58,7 +58,7 @@ parser.tearDown();
 
 > **happens**: (...`args`) => `EventResult`\<`any`\>
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:172](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L172)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:172](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L172)
 
 #### 參數
 

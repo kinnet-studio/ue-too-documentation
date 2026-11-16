@@ -1,0 +1,310 @@
+[@ue-too/board](../../modules.md) / [index](../index.md) / OneFingerPanIdleState
+
+# Class: OneFingerPanIdleState
+
+Defined in: [packages/board/src/input-interpretation/input-state-machine/one-finger-pan-touch-input-state-machine.ts:134](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/one-finger-pan-touch-input-state-machine.ts#L134)
+
+IDLE state: no fingers down.
+
+## Remarks
+
+One finger going down moves to **PANNING**, two or more to **PINCHING**.
+Moves are not handled here.
+
+## Extends
+
+- `FingerCountState`
+
+## Constructors
+
+### Constructor
+
+> **new OneFingerPanIdleState**(): `OneFingerPanIdleState`
+
+#### Returns
+
+`OneFingerPanIdleState`
+
+#### Inherited from
+
+`FingerCountState.constructor`
+
+## Properties
+
+### \_defer
+
+> `protected` **\_defer**: `Defer`\<[`TouchContext`](../interfaces/TouchContext.md), [`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`OneFingerPanTouchStates`](../type-aliases/OneFingerPanTouchStates.md), [`OneFingerPanTouchInputEventOutputMapping`](../type-aliases/OneFingerPanTouchInputEventOutputMapping.md)\> \| `undefined`
+
+Defined in: packages/being/dist/interface.d.ts:581
+
+#### Inherited from
+
+`FingerCountState._defer`
+
+***
+
+### \_delay
+
+> `protected` **\_delay**: `Delay`\<[`TouchContext`](../interfaces/TouchContext.md), [`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`OneFingerPanTouchStates`](../type-aliases/OneFingerPanTouchStates.md), [`OneFingerPanTouchInputEventOutputMapping`](../type-aliases/OneFingerPanTouchInputEventOutputMapping.md)\> \| `undefined`
+
+Defined in: packages/being/dist/interface.d.ts:580
+
+#### Inherited from
+
+`FingerCountState._delay`
+
+***
+
+### \_eventGuards
+
+> `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`OneFingerPanTouchStates`](../type-aliases/OneFingerPanTouchStates.md), [`TouchContext`](../interfaces/TouchContext.md), `Guard`\<[`TouchContext`](../interfaces/TouchContext.md), `"oneFinger"` \| `"twoOrMoreFingers"`\>\>\>
+
+Defined in: [packages/board/src/input-interpretation/input-state-machine/one-finger-pan-touch-input-state-machine.ts:115](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/one-finger-pan-touch-input-state-machine.ts#L115)
+
+#### Inherited from
+
+[`OneFingerPanPanningState`](OneFingerPanPanningState.md).[`_eventGuards`](OneFingerPanPanningState.md#eventguards)
+
+***
+
+### \_eventPreconditions
+
+> `protected` **\_eventPreconditions**: `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+Defined in: packages/being/dist/interface.d.ts:579
+
+#### Inherited from
+
+`FingerCountState._eventPreconditions`
+
+***
+
+### \_eventReactions
+
+> `protected` **\_eventReactions**: `EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`OneFingerPanTouchStates`](../type-aliases/OneFingerPanTouchStates.md), [`OneFingerPanTouchInputEventOutputMapping`](../type-aliases/OneFingerPanTouchInputEventOutputMapping.md)\>
+
+Defined in: [packages/board/src/input-interpretation/input-state-machine/one-finger-pan-touch-input-state-machine.ts:135](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/one-finger-pan-touch-input-state-machine.ts#L135)
+
+#### Overrides
+
+`FingerCountState._eventReactions`
+
+***
+
+### \_guards
+
+> `protected` **\_guards**: `Guard`\<[`TouchContext`](../interfaces/TouchContext.md), `"oneFinger"` \| `"twoOrMoreFingers"`\>
+
+Defined in: [packages/board/src/input-interpretation/input-state-machine/one-finger-pan-touch-input-state-machine.ts:112](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/one-finger-pan-touch-input-state-machine.ts#L112)
+
+#### Inherited from
+
+[`OneFingerPanPanningState`](OneFingerPanPanningState.md).[`_guards`](OneFingerPanPanningState.md#guards)
+
+## Accessors
+
+### delay
+
+#### Get Signature
+
+> **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
+
+Defined in: packages/being/dist/interface.d.ts:587
+
+##### Returns
+
+`Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
+
+#### Inherited from
+
+`FingerCountState.delay`
+
+***
+
+### eventGuards
+
+#### Get Signature
+
+> **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
+
+Defined in: packages/being/dist/interface.d.ts:584
+
+##### Returns
+
+`Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
+
+#### Inherited from
+
+`FingerCountState.eventGuards`
+
+***
+
+### eventPreconditions
+
+#### Get Signature
+
+> **get** **eventPreconditions**(): `Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+Defined in: packages/being/dist/interface.d.ts:585
+
+Pre-action vetoes: named guards that must all pass before this state
+handles an event. Optional so existing State implementations remain
+valid; TemplateState always provides it.
+
+##### Returns
+
+`Partial`\<`EventPreconditions`\<`EventPayloadMapping`, `Context`, `Guard`\<`Context`\>\>\>
+
+#### Inherited from
+
+`FingerCountState.eventPreconditions`
+
+***
+
+### eventReactions
+
+#### Get Signature
+
+> **get** **eventReactions**(): `EventReactions`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
+
+Defined in: packages/being/dist/interface.d.ts:586
+
+##### Returns
+
+`EventReactions`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
+
+#### Inherited from
+
+`FingerCountState.eventReactions`
+
+***
+
+### guards
+
+#### Get Signature
+
+> **get** **guards**(): `Guard`\<`Context`\>
+
+Defined in: packages/being/dist/interface.d.ts:583
+
+##### Returns
+
+`Guard`\<`Context`\>
+
+#### Inherited from
+
+`FingerCountState.guards`
+
+***
+
+### handlingEvents
+
+#### Get Signature
+
+> **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
+
+Defined in: packages/being/dist/interface.d.ts:582
+
+##### Returns
+
+keyof `EventPayloadMapping`[]
+
+#### Inherited from
+
+`FingerCountState.handlingEvents`
+
+## Methods
+
+### beforeExit()
+
+> **beforeExit**(`context`, `stateMachine`, `to`): `void`
+
+Defined in: packages/being/dist/interface.d.ts:589
+
+#### Parameters
+
+##### context
+
+[`TouchContext`](../interfaces/TouchContext.md)
+
+##### stateMachine
+
+`StateMachine`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`OneFingerPanTouchStates`](../type-aliases/OneFingerPanTouchStates.md), [`OneFingerPanTouchInputEventOutputMapping`](../type-aliases/OneFingerPanTouchInputEventOutputMapping.md)\>
+
+##### to
+
+`"TERMINAL"` | [`OneFingerPanTouchStates`](../type-aliases/OneFingerPanTouchStates.md)
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`FingerCountState.beforeExit`
+
+***
+
+### handles()
+
+> **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventResult`\<[`OneFingerPanTouchStates`](../type-aliases/OneFingerPanTouchStates.md), `K` *extends* `"touchmove"` ? [`OneFingerPanTouchInputEventOutputMapping`](../type-aliases/OneFingerPanTouchInputEventOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
+
+Defined in: packages/being/dist/interface.d.ts:590
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string`
+
+#### Parameters
+
+##### args
+
+`EventArgs`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), `K`\>
+
+##### context
+
+[`TouchContext`](../interfaces/TouchContext.md)
+
+##### stateMachine
+
+`StateMachine`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`OneFingerPanTouchStates`](../type-aliases/OneFingerPanTouchStates.md), [`OneFingerPanTouchInputEventOutputMapping`](../type-aliases/OneFingerPanTouchInputEventOutputMapping.md)\>
+
+#### Returns
+
+`EventResult`\<[`OneFingerPanTouchStates`](../type-aliases/OneFingerPanTouchStates.md), `K` *extends* `"touchmove"` ? [`OneFingerPanTouchInputEventOutputMapping`](../type-aliases/OneFingerPanTouchInputEventOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
+
+#### Inherited from
+
+`FingerCountState.handles`
+
+***
+
+### uponEnter()
+
+> **uponEnter**(`context`, `stateMachine`, `from`): `void`
+
+Defined in: packages/being/dist/interface.d.ts:588
+
+#### Parameters
+
+##### context
+
+[`TouchContext`](../interfaces/TouchContext.md)
+
+##### stateMachine
+
+`StateMachine`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`OneFingerPanTouchStates`](../type-aliases/OneFingerPanTouchStates.md), [`OneFingerPanTouchInputEventOutputMapping`](../type-aliases/OneFingerPanTouchInputEventOutputMapping.md)\>
+
+##### from
+
+`"INITIAL"` | [`OneFingerPanTouchStates`](../type-aliases/OneFingerPanTouchStates.md)
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`FingerCountState.uponEnter`

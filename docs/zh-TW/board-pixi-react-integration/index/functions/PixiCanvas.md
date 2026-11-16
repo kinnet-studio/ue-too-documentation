@@ -4,7 +4,7 @@
 
 > **PixiCanvas**(`__namedParameters`): `ReactNode`
 
-定義於: [board-pixi-react-integration/src/components/PixiCanvas.tsx:17](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-pixi-react-integration/src/components/PixiCanvas.tsx#L17)
+定義於: [board-pixi-react-integration/src/components/PixiCanvas.tsx:17](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-react-integration/src/components/PixiCanvas.tsx#L17)
 
 PixiCanvas Component
 Integrates PixiJS with React, setting up the canvas, camera, and input handling

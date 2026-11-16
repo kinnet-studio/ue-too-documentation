@@ -4,7 +4,7 @@
 
 > **TransformationMatrix** = `object`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:54](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/matrix.ts#L54)
+Defined in: [packages/board/src/camera/utils/matrix.ts:54](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/utils/matrix.ts#L54)
 
 2D affine transformation matrix in standard CSS/Canvas format.
 
@@ -57,7 +57,7 @@ const rotate: TransformationMatrix = {
 
 > **a**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:55](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/matrix.ts#L55)
+Defined in: [packages/board/src/camera/utils/matrix.ts:55](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/utils/matrix.ts#L55)
 
 Horizontal scaling / rotation component (m11)
 
@@ -67,7 +67,7 @@ Horizontal scaling / rotation component (m11)
 
 > **b**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:56](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/matrix.ts#L56)
+Defined in: [packages/board/src/camera/utils/matrix.ts:56](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/utils/matrix.ts#L56)
 
 Vertical skewing / rotation component (m12)
 
@@ -77,7 +77,7 @@ Vertical skewing / rotation component (m12)
 
 > **c**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:57](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/matrix.ts#L57)
+Defined in: [packages/board/src/camera/utils/matrix.ts:57](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/utils/matrix.ts#L57)
 
 Horizontal skewing / rotation component (m21)
 
@@ -87,7 +87,7 @@ Horizontal skewing / rotation component (m21)
 
 > **d**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:58](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/matrix.ts#L58)
+Defined in: [packages/board/src/camera/utils/matrix.ts:58](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/utils/matrix.ts#L58)
 
 Vertical scaling / rotation component (m22)
 
@@ -97,7 +97,7 @@ Vertical scaling / rotation component (m22)
 
 > **e**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:59](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/matrix.ts#L59)
+Defined in: [packages/board/src/camera/utils/matrix.ts:59](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/utils/matrix.ts#L59)
 
 Horizontal translation (tx)
 
@@ -107,6 +107,6 @@ Horizontal translation (tx)
 
 > **f**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:60](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/matrix.ts#L60)
+Defined in: [packages/board/src/camera/utils/matrix.ts:60](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/utils/matrix.ts#L60)
 
 Vertical translation (ty)

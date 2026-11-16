@@ -4,7 +4,7 @@
 
 > **Services** = `object`
 
-定義於: [being-portable/src/host.ts:32](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L32)
+定義於: [being-portable/src/host.ts:32](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L32)
 
 Sources of randomness and time for `randomInt` and `now`.
 
@@ -14,7 +14,7 @@ Sources of randomness and time for `randomInt` and `now`.
 
 > `readonly` **now**: () => `number`
 
-定義於: [being-portable/src/host.ts:36](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L36)
+定義於: [being-portable/src/host.ts:36](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L36)
 
 A finite number, usually milliseconds.
 
@@ -28,7 +28,7 @@ A finite number, usually milliseconds.
 
 > `readonly` **random**: () => `number`
 
-定義於: [being-portable/src/host.ts:34](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/host.ts#L34)
+定義於: [being-portable/src/host.ts:34](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/host.ts#L34)
 
 A number in `[0, 1)`.
 

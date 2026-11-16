@@ -2,7 +2,7 @@
 
 # Interface: PinJointConstraint
 
-Defined in: [constraint.ts:254](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/constraint.ts#L254)
+Defined in: [constraint.ts:254](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L254)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [constraint.ts:254](https://github.com/kinnet-studio/ue-too/blob/a2e
 
 > **anchorA**: `Point`
 
-Defined in: [constraint.ts:257](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/constraint.ts#L257)
+Defined in: [constraint.ts:257](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L257)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [constraint.ts:257](https://github.com/kinnet-studio/ue-too/blob/a2e
 
 > **anchorB**: `Point`
 
-Defined in: [constraint.ts:258](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/constraint.ts#L258)
+Defined in: [constraint.ts:258](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L258)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [constraint.ts:258](https://github.com/kinnet-studio/ue-too/blob/a2e
 
 > **bodyA**: [`RigidBody`](RigidBody.md)
 
-Defined in: [constraint.ts:255](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/constraint.ts#L255)
+Defined in: [constraint.ts:255](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L255)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [constraint.ts:255](https://github.com/kinnet-studio/ue-too/blob/a2e
 
 > **bodyB**: [`RigidBody`](RigidBody.md)
 
-Defined in: [constraint.ts:256](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/constraint.ts#L256)
+Defined in: [constraint.ts:256](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/constraint.ts#L256)

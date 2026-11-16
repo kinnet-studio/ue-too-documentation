@@ -4,7 +4,7 @@
 
 > `const` **stringHelperFunctions**: [`AnimatableAttributeHelper`](../interfaces/AnimatableAttributeHelper.md)\<`string`\>
 
-定義於: [animatable-attribute.ts:177](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/animate/src/animatable-attribute.ts#L177)
+定義於: [animatable-attribute.ts:177](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/animate/src/animatable-attribute.ts#L177)
 
 Built-in interpolation helper for animating string values.
 

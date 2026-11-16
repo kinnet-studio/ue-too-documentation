@@ -4,7 +4,7 @@
 
 > **clampRotateByHandler**(`delta`, `camera`, `config`): `number`
 
-定義於: [packages/board/src/camera/camera-rig/rotation-handler.ts:242](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/camera-rig/rotation-handler.ts#L242)
+定義於: [packages/board/src/camera/camera-rig/rotation-handler.ts:242](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/camera-rig/rotation-handler.ts#L242)
 
 Handler pipeline step that clamps "rotate by" deltas to prevent angular boundary violations.
 

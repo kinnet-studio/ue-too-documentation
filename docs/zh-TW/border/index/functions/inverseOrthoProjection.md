@@ -4,7 +4,7 @@
 
 > **inverseOrthoProjection**(`interestPoint`, `origin`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-定義於: [projection.ts:176](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/border/src/projection.ts#L176)
+定義於: [projection.ts:176](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/border/src/projection.ts#L176)
 
 Converts an orthographic projection point back to geographic coordinates.
 

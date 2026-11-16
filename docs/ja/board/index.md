@@ -45,8 +45,8 @@
 
 ### What This Library Is Not
 
-- A complete drawing application like Excalidraw or tldraw
-- A full-featured package with built-in drawing tools and user interfaces
+- A complete drawing application like Excalidraw or tldraw. The optional [`@ue-too/board/whiteboard`](#whiteboard) entry adds sketchy drawing tools on top of the board, but no user interface: your app draws its own toolbar
+- A full-featured package with built-in user interfaces
 
 ## Examples
 
@@ -65,6 +65,7 @@ This monorepo includes comprehensive examples demonstrating various packages and
 - [**Camera Animation**](https://examples.ue-too.dev/camera-animation/) - Click to fly the camera anywhere, or back to the start, along a smooth zoom-and-pan path
 - [**Image Example**](https://examples.ue-too.dev/image-example/) - Upload and display an image on the pannable canvas
 - [**SVG Example**](https://examples.ue-too.dev/svg/) - Board camera system applied to SVG elements
+- [**Whiteboard**](https://examples.ue-too.dev/whiteboard/) - Shapes, arrows, pen strokes, text and sticky notes with `@ue-too/board/whiteboard`
 
 ### Framework Integrations
 
@@ -128,23 +129,44 @@ function draw(timestamp) {
 // call the draw function every frame
 requestAnimationFrame(draw);
 ```
+
 ### Stackblitz Example to try out the library
 
 [Stackblitz example link](https://stackblitz.com/edit/vitejs-vite-jpxrtxzg?file=index.html): This example demonstrates the basic functionality shown in the [Quick Start (HTML Canvas)](#quick-start-html-canvas) section.
 
 ### Default Input Controls
 
+A board starts set up for a keyboard + mouse. Mouse and trackpad scrolling look alike to the browser, so the board doesn't guess: give your users a way to pick their device and call `setInputMode` with their choice.
+
+```ts
+const board = new Board(canvas);
+board.setInputMode('trackpad'); // or 'kmt' (keyboard + mouse, the default)
+```
+
 Pan:
 
-- Mouse + Keyboard: Drag while holding spacebar or use scroll wheel button
+- Keyboard + mouse: Drag while holding spacebar or use scroll wheel button
 - Trackpad: Two-finger swipe
 - Touch: Two-finger swipe
 
 Zoom:
 
-- Mouse + Keyboard: Ctrl + scroll wheel
+- Keyboard + mouse: Scroll wheel (Ctrl + scroll wheel also works)
 - Trackpad: Two-finger pinch
 - Touch: Two-finger pinch
+
+`board.toggleInputMode()` flips between the two modes and `board.inputMode` reads the current one. To fall back to the old automatic behavior, call `board.enableAutoInputMode()`: the scroll wheel pans until the user middle-clicks, which switches to keyboard + mouse.
+
+By default a single finger does nothing, so taps and drags stay free for your app's own UI. To pan with one finger and pinch-zoom with two, as in a map app, swap in the built-in one-finger-pan touch machine:
+
+```ts
+import { Board, createOneFingerPanTouchInputStateMachine } from '@ue-too/board';
+
+const board = new Board(canvas);
+board.setTouchInputStateMachine(createOneFingerPanTouchInputStateMachine);
+```
+
+To tweak it further, build your own variant with `expandOneFingerPanTouchInputStateMachine` and pass a function that builds it to `setTouchInputStateMachine`.
 
 ### A Few Things to Note
 
@@ -161,6 +183,63 @@ The `Board` class handles:
 All components and utility functions are accessible, allowing you to create your own board implementation without using the `requestAnimationFrame` callback method.
 
 For detailed camera control information, refer to the [Board Camera](https://github.com/kinnet-studio/ue-too/tree/main/packages/board/src/camera) section.
+
+## Whiteboard
+
+`@ue-too/board/whiteboard` is a whiteboard editor in the spirit of Excalidraw and tldraw, built on the board: rectangles, ellipses, arrows, lines, pen strokes, text and sticky notes, drawn in a hand-drawn style, with select, move, resize, an eraser and undo. It is a separate entry point, so apps that only use the board don't load any of it.
+
+```ts
+import { Board } from '@ue-too/board';
+import { Editor, WhiteboardDocument } from '@ue-too/board/whiteboard';
+
+const canvas = document.querySelector('canvas') as HTMLCanvasElement;
+const board = new Board(canvas);
+
+function loadDrawing(): WhiteboardDocument {
+    try {
+        const saved = localStorage.getItem('drawing');
+        if (saved) return WhiteboardDocument.fromSnapshot(JSON.parse(saved));
+    } catch {
+        // Unreadable, or saved by a newer version: start fresh. The old value
+        // stays stored until the first edit is saved over it
+    }
+    return new WhiteboardDocument();
+}
+
+const editor = new Editor({ board, canvas, document: loadDrawing() });
+editor.setTool('pen'); // or a toolbar calling setTool, setStyle, undo, redo, clear
+editor.subscribe(state => console.log(state.tool, state.canUndo));
+
+// Save a moment after the drawing last changed, not on every pointer move
+let saveTimer: ReturnType<typeof setTimeout> | undefined;
+editor.document.subscribe(() => {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => {
+        try {
+            localStorage.setItem(
+                'drawing',
+                JSON.stringify(editor.document.toSnapshot())
+            );
+        } catch {
+            // Storage is full or blocked; the board keeps working
+        }
+    }, 400);
+});
+
+function frame(timestamp: number) {
+    board.step(timestamp);
+    if (board.context) editor.draw(board.context); // after your own background
+    requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+```
+
+- **Tools**: hand, select, rectangle, ellipse, arrow, line, pen, text, sticky note and eraser, with keyboard shortcuts (H V R O A L P T N E, Delete, Escape, Ctrl/Cmd + Z). Each tool is a `@ue-too/being` state machine. The board's own gestures keep working: scroll to zoom, Space + drag or middle-drag to pan, two fingers to pinch and pan.
+- **The document** is a set of plain JSON records with a stream of changes (`subscribe`), batched with `transact`, so saving, and later syncing between people, listen in one place. `applyRemote` applies another client's changes, which undo never takes back.
+- **Things under the drawing**: the `background` option lets clicks with the hand and select tools reach things your app draws beneath the shapes, and `ownsPointer` keeps presses on your own screen-space controls away from the tools.
+- **Fonts and colours**: shapes store colour names (`ink`, `red`, `blue`, `green`, `orange`); `setTheme` maps them to CSS colours, for a dark theme say. Text and notes use the `fonts.hand` family (Caveat by default); load it in your app, for example from `@fontsource/caveat`.
+
+The whiteboard reaches the board only through the `@ue-too/board` package name, and is headed for a package of its own.
 
 ## Development
 

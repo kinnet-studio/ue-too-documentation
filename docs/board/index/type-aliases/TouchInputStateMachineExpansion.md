@@ -4,7 +4,7 @@
 
 > **TouchInputStateMachineExpansion**\<`E`, `C`, `S`, `O`\> = (`stock`, `extend`) => `Record`\<`S`, `State`\<`E`, `C`, `S`, `O`\>\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:421](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L421)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:421](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L421)
 
 The callback [expandTouchInputStateMachine](../functions/expandTouchInputStateMachine.md) calls with the stock states.
 

@@ -1,0 +1,10 @@
+[@ue-too/ecs](../../modules.md) / [index](../index.md) / SystemName
+
+# Type Alias: SystemName
+
+> **SystemName** = `symbol`
+
+Defined in: [index.ts:139](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/ecs/src/index.ts#L139)
+
+System name identifier using Symbol for type safety and uniqueness.
+Use [createSystemName](../functions/createSystemName.md) to create system names, or Symbol.for for global symbols.

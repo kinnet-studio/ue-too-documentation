@@ -2,7 +2,7 @@
 
 # クラス: MoveEntityToZoneEffect
 
-定義: [zone-system/effect.ts:13](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/zone-system/effect.ts#L13)
+定義: [zone-system/effect.ts:13](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/zone-system/effect.ts#L13)
 
 ## 実装
 
@@ -14,7 +14,7 @@
 
 > **new MoveEntityToZoneEffect**(`coordinator`, `entity`, `zoneEntity`, `addToIfZoneOrdered`): `MoveEntityToZoneEffect`
 
-定義: [zone-system/effect.ts:19](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/zone-system/effect.ts#L19)
+定義: [zone-system/effect.ts:19](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/zone-system/effect.ts#L19)
 
 #### パラメータ
 
@@ -44,7 +44,7 @@
 
 > **apply**(): `void`
 
-定義: [zone-system/effect.ts:31](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/zone-system/effect.ts#L31)
+定義: [zone-system/effect.ts:31](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/zone-system/effect.ts#L31)
 
 #### 戻り値
 

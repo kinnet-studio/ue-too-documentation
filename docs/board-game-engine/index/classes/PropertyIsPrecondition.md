@@ -2,7 +2,7 @@
 
 # Class: PropertyIsPrecondition\<T\>
 
-Defined in: [action-system/precondition.ts:191](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/action-system/precondition.ts#L191)
+Defined in: [action-system/precondition.ts:191](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/action-system/precondition.ts#L191)
 
 Precondition that checks if a property in a component of an entity equals a certain value.
 Supports multiple types (number, string, boolean, etc.) and works with both custom schema
@@ -40,7 +40,7 @@ const precondition2 = new PropertyIsPrecondition<PlayerComponent>(
 
 > **new PropertyIsPrecondition**\<`T`\>(`coordinator`, `componentName`, `entity`, `property`, `value`): `PropertyIsPrecondition`\<`T`\>
 
-Defined in: [action-system/precondition.ts:200](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/action-system/precondition.ts#L200)
+Defined in: [action-system/precondition.ts:200](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/action-system/precondition.ts#L200)
 
 #### Parameters
 
@@ -74,7 +74,7 @@ Defined in: [action-system/precondition.ts:200](https://github.com/kinnet-studio
 
 > **check**(): `boolean`
 
-Defined in: [action-system/precondition.ts:214](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/action-system/precondition.ts#L214)
+Defined in: [action-system/precondition.ts:214](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/action-system/precondition.ts#L214)
 
 #### Returns
 

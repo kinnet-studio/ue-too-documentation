@@ -4,7 +4,7 @@
 
 > **validateDefinition**(`document`, `options`): [`ValidationResult`](../type-aliases/ValidationResult.md)
 
-定義於: [being-portable/src/api.ts:18](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being-portable/src/api.ts#L18)
+定義於: [being-portable/src/api.ts:18](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being-portable/src/api.ts#L18)
 
 Checks an untrusted document without building a machine. With a host, also
 checks that the host supplies every declared effect with matching types.

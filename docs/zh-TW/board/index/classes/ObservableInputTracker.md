@@ -2,7 +2,7 @@
 
 # 類別: ObservableInputTracker
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:717](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L717)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:744](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L744)
 
 Production implementation of KmtInputContext that tracks input state for the state machine.
 
@@ -13,21 +13,24 @@ all state required by the state machine to recognize and track gestures:
 
 **State Tracking**:
 - Initial cursor position for calculating pan deltas
-- Input modality score to distinguish mouse vs trackpad
-- Determined input mode (kmt/trackpad/TBD)
+- Input mode (kmt/trackpad, or TBD while auto-detecting)
 - Coordinate system alignment preference
 
-**Input Modality Detection**:
-The `kmtTrackpadTrackScore` accumulates evidence about the input device:
-- Positive values indicate mouse behavior (middle-click, no horizontal scroll)
-- Negative values indicate trackpad behavior (horizontal scroll, two-finger gestures)
-- Score is used to determine zoom behavior (Ctrl+Scroll for mouse vs Scroll for trackpad)
+**Input Mode**:
+The tracker starts locked in the mode passed to the constructor (`'kmt'` by
+default). Auto-detection is off: guessing the device from wheel events is
+unreliable, so give the user a choice and call [setMode](#setmode) with it.
+
+[enableInputModeDetection](#enableinputmodedetection) opts back into auto-detection: the mode becomes
+`'TBD'` (a plain scroll pans) and `kmtTrackpadTrackScore` accumulates evidence
+(positive for mouse-like wheel events and middle-clicks, negative for two-axis
+scrolls). A middle-click settles the mode on `'kmt'`.
 
 **Design Pattern**:
 This class follows the Context pattern from the @ue-too/being state machine library,
 providing stateful data and operations that states can access and modify during transitions.
 
-## 範例
+## Examples
 
 ```typescript
 const canvasProxy = new CanvasProxy(canvasElement);
@@ -39,6 +42,11 @@ stateMachine.happens("leftPointerDown", {x: 100, y: 200});
 console.log(context.initialCursorPosition); // {x: 100, y: 200}
 ```
 
+Start a board set up for a trackpad
+```typescript
+const context = new ObservableInputTracker(canvasProxy, 'trackpad');
+```
+
 ## 實作
 
 - [`KmtInputContext`](../interfaces/KmtInputContext.md)
@@ -47,15 +55,24 @@ console.log(context.initialCursorPosition); // {x: 100, y: 200}
 
 ### 建構函式
 
-> **new ObservableInputTracker**(`canvasOperator`): `ObservableInputTracker`
+> **new ObservableInputTracker**(`canvasOperator`, `inputMode`): `ObservableInputTracker`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:725](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L725)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:757](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L757)
 
 #### 參數
 
 ##### canvasOperator
 
 [`Canvas`](../interfaces/Canvas.md)
+
+Canvas accessor for dimensions and cursor control
+
+##### inputMode
+
+[`KmtInputMode`](../type-aliases/KmtInputMode.md) = `'kmt'`
+
+The input device to start in. Defaults to `'kmt'`
+(keyboard + mouse).
 
 #### 回傳
 
@@ -69,7 +86,7 @@ console.log(context.initialCursorPosition); // {x: 100, y: 200}
 
 > **get** **alignCoordinateSystem**(): `boolean`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:774](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L774)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:823](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L823)
 
 Whether to use standard screen coordinate system (vs inverted Y-axis)
 
@@ -81,7 +98,7 @@ Whether to use standard screen coordinate system (vs inverted Y-axis)
 
 > **set** **alignCoordinateSystem**(`value`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:786](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L786)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:835](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L835)
 
 Whether to use standard screen coordinate system (vs inverted Y-axis)
 
@@ -109,7 +126,7 @@ Whether to use standard screen coordinate system (vs inverted Y-axis)
 
 > **get** **canvas**(): [`Canvas`](../interfaces/Canvas.md)
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:778](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L778)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:827](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L827)
 
 Canvas accessor for dimensions and cursor control
 
@@ -131,7 +148,7 @@ Canvas accessor for dimensions and cursor control
 
 > **get** **initialCursorPosition**(): `Point`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:782](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L782)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:831](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L831)
 
 The cursor position when a pan gesture started
 
@@ -153,7 +170,7 @@ The cursor position when a pan gesture started
 
 > **get** **kmtTrackpadTrackScore**(): `number`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:748](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L748)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:797](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L797)
 
 Score tracking input modality: >0 for mouse, <0 for trackpad, 0 for undetermined
 
@@ -175,9 +192,10 @@ Score tracking input modality: >0 for mouse, <0 for trackpad, 0 for undetermined
 
 > **get** **mode**(): `"kmt"` \| `"trackpad"` \| `"TBD"`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:733](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L733)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:769](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L769)
 
-The current input modality: 'kmt' (mouse), 'trackpad', or 'TBD' (to be determined)
+The current input mode: `'kmt'`, `'trackpad'`, or `'TBD'` while
+auto-detection is on and undecided.
 
 ##### 回傳
 
@@ -195,7 +213,7 @@ The current input modality: 'kmt' (mouse), 'trackpad', or 'TBD' (to be determine
 
 > **addKmtTrackpadTrackScore**(): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:763](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L763)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:812](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L812)
 
 Increases the score toward mouse
 
@@ -213,7 +231,7 @@ Increases the score toward mouse
 
 > **cancelCurrentAction**(): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:790](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L790)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:839](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L839)
 
 Cancels the current action and resets cursor position
 
@@ -231,7 +249,7 @@ Cancels the current action and resets cursor position
 
 > **cleanup**(): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:798](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L798)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:847](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L847)
 
 #### 回傳
 
@@ -247,11 +265,19 @@ Cancels the current action and resets cursor position
 
 > **enableInputModeDetection**(): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:742](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L742)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:791](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L791)
+
+Opts into auto-detection: resets the mode to `'TBD'` (a plain scroll pans)
+and starts scoring input. A middle-click settles the mode on `'kmt'`.
 
 #### 回傳
 
 `void`
+
+#### 備註
+
+Auto-detection is off by default. Prefer letting the user choose with
+[setMode](#setmode).
 
 ***
 
@@ -259,7 +285,7 @@ Cancels the current action and resets cursor position
 
 > **setInitialCursorPosition**(`position`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:794](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L794)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:843](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L843)
 
 Sets the initial cursor position when starting a pan gesture
 
@@ -283,13 +309,15 @@ Sets the initial cursor position when starting a pan gesture
 
 > **setMode**(`mode`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:737](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L737)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:778](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L778)
 
-Sets the determined input modality
+Switches the input mode and turns auto-detection off.
 
 #### 參數
 
 ##### mode
+
+The input mode to lock in
 
 `"kmt"` | `"trackpad"` | `"TBD"`
 
@@ -307,7 +335,7 @@ Sets the determined input modality
 
 > **setup**(): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:800](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L800)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:849](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L849)
 
 #### 回傳
 
@@ -323,7 +351,7 @@ Sets the determined input modality
 
 > **subtractKmtTrackpadTrackScore**(): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:752](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L752)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:801](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L801)
 
 Decreases the score toward trackpad
 

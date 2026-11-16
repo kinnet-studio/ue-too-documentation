@@ -1,0 +1,10 @@
+[@ue-too/ecs](../../modules.md) / [index](../index.md) / ComponentName
+
+# 型エイリアス: ComponentName
+
+> **ComponentName** = `symbol`
+
+定義: [index.ts:132](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/ecs/src/index.ts#L132)
+
+Component name identifier using Symbol for type safety and uniqueness.
+Use [createComponentName](../functions/createComponentName.md) to create component names, or Symbol.for for global symbols.
