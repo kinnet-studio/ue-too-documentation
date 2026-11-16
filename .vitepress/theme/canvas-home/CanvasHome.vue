@@ -10,6 +10,7 @@ import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import type { CanvasHomeHandle } from './canvas-home'
 import type { HeroContent } from './hero-layout'
 import { backLabel, canvasHome } from './state'
+import { whiteboardTheme } from './whiteboard-theme'
 
 interface HeroFrontmatter {
   name?: string
@@ -37,6 +38,12 @@ const { frontmatter, isDark, lang } = useData()
 const canvasEl = ref<HTMLCanvasElement>()
 let handle: CanvasHomeHandle | null = null
 let unmounted = false
+
+// The drawing's colours follow the site's theme; read once the theme's CSS has applied
+function theme() {
+  const brand = getComputedStyle(document.documentElement).getPropertyValue('--vp-c-brand-1').trim()
+  return whiteboardTheme(isDark.value, brand, getComputedStyle(document.body).fontFamily)
+}
 
 function hint(): string {
   const locale = lang.value.startsWith('ja') ? 'ja' : lang.value === 'zh-TW' ? 'zh-TW' : 'en'
@@ -96,12 +103,16 @@ onMounted(async () => {
   document.addEventListener('focusin', onFocusIn)
   document.addEventListener('focusout', onFocusOut)
   try {
-    const { mountCanvasHome } = await import('./canvas-home')
+    const [{ mountCanvasHome }, { WhiteboardDocument }] = await Promise.all([
+      import('./canvas-home'),
+      import('@ue-too/board/whiteboard'),
+    ])
     if (unmounted || !canvasEl.value) return
     handle = mountCanvasHome(canvasEl.value, {
       content: content(),
-      hint: hint(),
       backLabel: backLabel(lang.value),
+      document: new WhiteboardDocument(),
+      theme: theme(),
       onActivate: activate,
       onError: fallBack,
     })
@@ -111,8 +122,8 @@ onMounted(async () => {
   }
 })
 
-watch(isDark, () => nextTick(() => handle?.refreshTheme()))
-watch([() => frontmatter.value.hero, lang], () => handle?.setContent(content(), hint(), backLabel(lang.value)))
+watch(isDark, () => nextTick(() => handle?.refreshTheme(theme())))
+watch([() => frontmatter.value.hero, lang], () => handle?.setContent(content(), backLabel(lang.value)))
 
 onBeforeUnmount(() => {
   unmounted = true

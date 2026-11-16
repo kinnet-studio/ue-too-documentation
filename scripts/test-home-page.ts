@@ -466,6 +466,85 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     await context.close()
   },
 
+  // With a drawing tool, drawing over the hero's button draws instead of following the link
+  async 'draw-over-hero'(browser) {
+    const { context, page } = await openHome(browser)
+    await page.evaluate(() => window.__canvasHome!.editor.setTool('pen'))
+    const rect = await buttonRect(page)
+    await drag(page, { x: rect.x - 40, y: rect.y + rect.height / 2 }, { x: rect.x + rect.width + 40, y: rect.y + rect.height / 2 })
+    await page.waitForTimeout(500)
+    assert(new URL(page.url()).pathname === new URL(siteUrl).pathname, `drawing over the button navigated to ${page.url()}`)
+    const size = await page.evaluate(() => window.__canvasHome!.editor.document.size)
+    assert(size === 1, `the stroke left ${size} shapes`)
+    await context.close()
+  },
+
+  // A shape lying over the button wins the click; the uncovered part still works
+  async 'shape-over-button'(browser) {
+    const { context, page } = await openHome(browser)
+    const rect = await buttonRect(page)
+    await page.evaluate(r => {
+      const editor = window.__canvasHome!.editor
+      const topLeft = editor.toWorld({ x: r.x - 10, y: r.y - 10 })
+      const bottomRight = editor.toWorld({ x: r.x + r.width / 2, y: r.y + r.height + 10 })
+      editor.document.put({
+        id: 'cover',
+        type: 'rect',
+        x: topLeft.x,
+        y: topLeft.y,
+        w: bottomRight.x - topLeft.x,
+        h: bottomRight.y - topLeft.y,
+        rotation: 0,
+        index: 'V',
+        seed: 1,
+        style: { color: 'ink', size: 'm', fill: 'solid' },
+      })
+    }, rect)
+    await page.mouse.click(rect.x + rect.width / 4, rect.y + rect.height / 2)
+    await page.waitForTimeout(500)
+    assert(new URL(page.url()).pathname === new URL(siteUrl).pathname, 'a click on the shape followed the link underneath')
+    await page.mouse.click(rect.x + (rect.width * 3) / 4, rect.y + rect.height / 2)
+    await onPackagesPage(page)
+    await context.close()
+  },
+
+  // Back to start takes its press whatever the tool
+  async 'pill-beats-pen'(browser) {
+    const { context, page } = await openHome(browser)
+    const start = await camera(page)
+    await drag(page, EMPTY, { x: EMPTY.x + 400, y: EMPTY.y + 200 })
+    await page.evaluate(() => window.__canvasHome!.editor.setTool('pen'))
+    const rect = await backRect(page)
+    assert(rect, 'Back to start did not show after panning')
+    const { x, y } = centre(rect)
+    await page.mouse.click(x, y)
+    await page.waitForTimeout(1300)
+    const end = await camera(page)
+    near(end.x, start.x, 1, 'camera x after Back to start')
+    near(end.y, start.y, 1, 'camera y after Back to start')
+    const size = await page.evaluate(() => window.__canvasHome!.editor.document.size)
+    assert(size === 0, `clicking Back to start with the pen drew ${size} shapes`)
+    await context.close()
+  },
+
+  // The drawing follows the site's light and dark themes
+  async 'whiteboard-theme'(browser) {
+    const { context, page } = await openHome(browser)
+    const ink = () => page.evaluate(() => window.__canvasHome!.editor.getTheme().colors.ink)
+    const toggle = () => page.locator('.VPNavBarAppearance .VPSwitchAppearance').click()
+    const first = await ink()
+    await toggle()
+    await page.waitForTimeout(300)
+    const second = await ink()
+    await toggle()
+    await page.waitForTimeout(300)
+    const third = await ink()
+    const inks = [first, second].sort()
+    assert(inks[0] === '#1e1e1e' && inks[1] === '#e8e8e0', `inks were ${first} and ${second}`)
+    assert(third === first, `the ink didn't switch back: ${third}`)
+    await context.close()
+  },
+
   async 'failed-import'(browser) {
     const context = await browser.newContext({ viewport: { width: 1400, height: 1000 } })
     await context.route(/\/chunks\/canvas-home\.[^/]*\.js$/, route => route.abort())
