@@ -70,5 +70,6 @@ bun run test:examples:page    # drives the built page (running, errors, tabs, th
 
 - `LIVE_EXAMPLES_CDN` replaces jsDelivr (e.g. with a local mirror), for the scripts and for `vitepress build`.
 - `CHROMIUM_EXECUTABLE` points the scripts at a specific Chromium; otherwise run `bunx playwright install chromium` once.
+- `bun run scripts/wait-for-cdn.ts` waits, for up to 15 minutes, until the CDN serves every release in `versions.json`. The workflow runs it before the examples, because the release-import PR starts minutes after publishing, before jsDelivr has the new release.
 
 The `Live examples` workflow runs all of these on pull requests (including each release-import PR), on pushes to `main` and weekly. It doesn't block deploys.
