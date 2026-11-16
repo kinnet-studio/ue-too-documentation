@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test'
-import { WhiteboardDocument, type Shape } from '@ue-too/board/whiteboard'
-import { STORAGE_KEY, browserStorage, loadBoard, saveBoard } from './whiteboard-storage'
+import { WhiteboardDocument, type Change, type Shape } from '@ue-too/board/whiteboard'
+import { STORAGE_KEY, browserStorage, loadBoard, saveBoard, watchSaves } from './whiteboard-storage'
 
 function memoryStorage(): Storage {
   const items = new Map<string, string>()
@@ -30,6 +30,13 @@ const rect = (id: string): Shape => ({
 })
 
 const quiet = () => {}
+
+// What another tab (or the same page before the back/forward cache restored it) saved
+function saveElsewhere(storage: Storage, shapes: Shape[]) {
+  storage.setItem(STORAGE_KEY, JSON.stringify({ schema: 'ue-too-whiteboard', version: 1, records: shapes }))
+}
+
+const ids = (doc: WhiteboardDocument) => doc.all().map(shape => shape.id).sort()
 const tick = (ms = 10) => new Promise(resolve => setTimeout(resolve, ms))
 
 describe('whiteboard storage', () => {
@@ -114,6 +121,93 @@ describe('whiteboard storage', () => {
     await tick(30)
     expect(writes).toBe(1)
     saver.dispose()
+  })
+
+  describe('a newer save made elsewhere', () => {
+    test('reload brings in what another tab added, changed and removed', () => {
+      const storage = memoryStorage()
+      saveElsewhere(storage, [rect('a'), rect('b')])
+      const doc = loadBoard(storage, quiet)
+      const saver = saveBoard(doc, storage, { warn: quiet })
+      saveElsewhere(storage, [{ ...rect('a'), x: 50 }, rect('c')])
+      saver.reload()
+      expect(ids(doc)).toEqual(['a', 'c'])
+      expect(doc.get('a')!.x).toBe(50)
+      saver.dispose()
+    })
+
+    test('reload keeps edits this page has not saved yet', () => {
+      const storage = memoryStorage()
+      saveElsewhere(storage, [rect('a')])
+      const doc = loadBoard(storage, quiet)
+      const saver = saveBoard(doc, storage, { warn: quiet })
+      doc.put(rect('mine'))
+      saveElsewhere(storage, [rect('a'), rect('theirs')])
+      saver.reload()
+      expect(ids(doc)).toEqual(['a', 'mine', 'theirs'])
+      saver.flush()
+      expect(ids(loadBoard(storage, quiet))).toEqual(['a', 'mine', 'theirs'])
+      saver.dispose()
+    })
+
+    test('a shape this page deleted stays deleted', () => {
+      const storage = memoryStorage()
+      saveElsewhere(storage, [rect('a'), rect('b')])
+      const doc = loadBoard(storage, quiet)
+      const saver = saveBoard(doc, storage, { warn: quiet })
+      doc.remove('b')
+      saveElsewhere(storage, [rect('a'), rect('b'), rect('c')])
+      saver.reload()
+      expect(ids(doc)).toEqual(['a', 'c'])
+      saver.dispose()
+    })
+
+    test('reloads arrive as remote changes, so they stay out of undo, and are not written back', () => {
+      const storage = memoryStorage()
+      const doc = loadBoard(storage, quiet)
+      const saver = saveBoard(doc, storage, { warn: quiet })
+      const changes: Change[] = []
+      doc.subscribe(change => changes.push(change))
+      saveElsewhere(storage, [rect('a')])
+      let writes = 0
+      const setItem = storage.setItem
+      storage.setItem = (key, value) => {
+        writes++
+        setItem(key, value)
+      }
+      saver.reload()
+      saver.flush()
+      expect(changes.map(change => change.source)).toEqual(['remote'])
+      expect(writes).toBe(0)
+      saver.dispose()
+    })
+
+    test('a missing or unreadable save leaves the board alone', () => {
+      const storage = memoryStorage()
+      const doc = new WhiteboardDocument([rect('a')])
+      const saver = saveBoard(doc, storage, { warn: quiet })
+      saver.reload()
+      storage.setItem(STORAGE_KEY, '{not json')
+      saver.reload()
+      storage.setItem(STORAGE_KEY, JSON.stringify({ schema: 'ue-too-whiteboard', version: 99, records: [] }))
+      saver.reload()
+      expect(ids(doc)).toEqual(['a'])
+      saver.dispose()
+    })
+
+    test('watchSaves reloads on a storage event for the key and on a page restored from the cache', () => {
+      let reloads = 0
+      const target = new EventTarget()
+      const stop = watchSaves({ reload: () => reloads++ }, target)
+      target.dispatchEvent(Object.assign(new Event('storage'), { key: STORAGE_KEY }))
+      target.dispatchEvent(Object.assign(new Event('storage'), { key: 'something-else' }))
+      target.dispatchEvent(Object.assign(new Event('pageshow'), { persisted: true }))
+      target.dispatchEvent(Object.assign(new Event('pageshow'), { persisted: false }))
+      expect(reloads).toBe(2)
+      stop()
+      target.dispatchEvent(Object.assign(new Event('storage'), { key: STORAGE_KEY }))
+      expect(reloads).toBe(2)
+    })
   })
 
   test('browserStorage is null when touching localStorage throws', () => {

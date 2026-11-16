@@ -659,6 +659,134 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     await context.close()
   },
 
+  // Common phone widths narrower than 390px fit the dock and the style panel, with room to spare
+  async 'dock-narrow-phone'(browser) {
+    for (const width of [360, 320]) {
+      const { context, page } = await openHome(browser, '', { ...PHONE, viewport: { width, height: 740 } })
+      await waitForDock(page)
+      const fits = async (testId: string) => {
+        const box = await page.getByTestId(testId).boundingBox()
+        assert(box && box.x >= 7.5 && box.x + box.width <= width - 7.5, `at ${width}px ${testId} is ${JSON.stringify(box)}`)
+      }
+      await fits('wb-dock')
+      await page.getByTestId('wb-dock').getByRole('button', { name: 'Shapes' }).tap()
+      await page.getByTestId('wb-shapes-menu').getByRole('button', { name: 'Rectangle' }).tap()
+      assert(await page.getByTestId('wb-style').getByRole('button', { name: 'Solid' }).isVisible(), 'the fill options are hidden for rectangles')
+      await fits('wb-style')
+      await context.close()
+    }
+  },
+
+  // On short windows the page still opens with the hero's buttons above the dock
+  async 'hero-above-dock'(browser) {
+    const windows: BrowserContextOptions[] = [
+      { viewport: { width: 844, height: 390 }, hasTouch: true, isMobile: true },
+      { viewport: { width: 1024, height: 520 } },
+      { viewport: { width: 1280, height: 600 } },
+    ]
+    for (const options of windows) {
+      const { context, page } = await openHome(browser, '', options)
+      await waitForDock(page)
+      await page.waitForTimeout(300)
+      const stack = await page.getByTestId('wb-stack').boundingBox()
+      const rects = await page.evaluate(() => window.__canvasHome!.buttonRects().map(r => ({ top: r.top, bottom: r.bottom })))
+      assert(stack, 'the dock is missing')
+      for (const r of rects) {
+        assert(r.bottom <= stack.y, `at ${options.viewport!.width}×${options.viewport!.height} a hero button (${r.top}–${r.bottom}) is under the dock (top ${stack.y})`)
+      }
+      assert((await backRect(page)) === null, `at ${options.viewport!.width}×${options.viewport!.height} Back to start shows on a page that has not moved`)
+      await context.close()
+    }
+  },
+
+  // Tabbing to a hero link whose button lies under the dock brings the button out
+  async 'hero-focus-above-dock'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const stack = await page.getByTestId('wb-stack').boundingBox()
+    assert(stack, 'the dock is missing')
+    const before = await buttonRect(page)
+    const dy = stack.y + 20 - before.y
+    await drag(page, { x: 200, y: 200 }, { x: 200, y: 200 + dy })
+    const under = await buttonRect(page)
+    assert(under.y + under.height > stack.y, `the button did not move under the dock: ${JSON.stringify(under)}`)
+    let focused = false
+    for (let i = 0; i < 30 && !focused; i++) {
+      await page.keyboard.press('Tab')
+      focused = await page.evaluate(() => !!document.activeElement?.closest('.VPHomeHero .actions'))
+    }
+    assert(focused, 'Tab never reached the hero link')
+    const after = await buttonRect(page)
+    assert(after.y + after.height <= stack.y, `the focused button (bottom ${after.y + after.height}) is still under the dock (top ${stack.y})`)
+    await context.close()
+  },
+
+  // A dock button keeps no focus after a click, so Space + drag still pans
+  async 'space-drag-after-dock-click'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    await page.getByTestId('wb-dock').getByRole('button', { name: 'Pen', exact: true }).click()
+    const before = await buttonRect(page)
+    await page.mouse.move(EMPTY.x, EMPTY.y)
+    await page.keyboard.down('Space')
+    await drag(page, EMPTY, { x: EMPTY.x + 100, y: EMPTY.y })
+    await page.keyboard.up('Space')
+    const after = await buttonRect(page)
+    const size = await page.evaluate(() => window.__canvasHome!.editor.document.size)
+    assert(size === 0, `Space + drag with the pen drew ${size} shapes`)
+    near(after.x - before.x, 100, 2, 'Space + drag moved the button')
+    await context.close()
+  },
+
+  // The toolbar stays in the tab order when the focused command becomes unavailable
+  async 'dock-keyboard-clear'(browser) {
+    const { context, page } = await openHome(browser)
+    await waitForDock(page)
+    const dock = page.getByTestId('wb-dock')
+    await page.evaluate(() => window.__canvasHome!.editor.setTool('pen'))
+    await drag(page, EMPTY, { x: EMPTY.x + 120, y: EMPTY.y - 40 })
+    await dock.getByRole('button', { name: 'Hand', exact: true }).focus()
+    await page.keyboard.press('End')
+    const last = await page.evaluate(() => document.activeElement?.getAttribute('aria-label'))
+    assert(last === 'Clear the board', `End moved focus to ${last}`)
+    await page.keyboard.press('Enter')
+    assert((await page.evaluate(() => window.__canvasHome!.editor.document.size)) === 0, 'Enter on Clear kept the stroke')
+    await page.waitForTimeout(100)
+    const inDock = await page.evaluate(() => !!document.activeElement?.closest('[data-testid="wb-dock"]'))
+    assert(inDock, `after Clear focus fell to ${await page.evaluate(() => document.activeElement?.tagName)}`)
+    const stops = await dock.locator(':scope > button[tabindex="0"]').count()
+    assert(stops === 1, `${stops} toolbar buttons are in the tab order after Clear`)
+    // Narrowing the window (no Clear button) keeps one button in the tab order
+    await page.setViewportSize({ width: 500, height: 900 })
+    await page.waitForTimeout(200)
+    const narrowStops = await dock.locator(':scope > button[tabindex="0"]').count()
+    assert(narrowStops === 1, `${narrowStops} toolbar buttons are in the tab order on a narrow window`)
+    await context.close()
+  },
+
+  // Two tabs of the home page don't overwrite each other's drawings
+  async 'drawing-syncs-tabs'(browser) {
+    const { context, page: first } = await openHome(browser)
+    const size = (page: Page) => page.evaluate(() => window.__canvasHome!.editor.document.size)
+    const stroke = async (page: Page, dy: number) => {
+      await page.evaluate(() => window.__canvasHome!.editor.setTool('pen'))
+      await drag(page, { x: EMPTY.x, y: EMPTY.y + dy }, { x: EMPTY.x + 120, y: EMPTY.y + dy - 40 })
+      await page.waitForTimeout(600)
+    }
+    await stroke(first, 0)
+    const second = await context.newPage()
+    await second.goto(siteUrl)
+    await waitForCanvas(second)
+    assert((await size(second)) === 1, `the second tab opened with ${await size(second)} shapes`)
+    await stroke(second, -100)
+    await first.waitForFunction(() => window.__canvasHome!.editor.document.size === 2, null, { timeout: 3000 }).catch(() => {})
+    assert((await size(first)) === 2, `the first tab shows ${await size(first)} shapes after the second tab drew`)
+    await stroke(first, -200)
+    const saved = await first.evaluate(() => JSON.parse(localStorage.getItem('ue-too:home-whiteboard') ?? '{}').records?.length)
+    assert(saved === 3, `${saved} shapes are saved after both tabs drew`)
+    await context.close()
+  },
+
   async 'dock-locales'(browser) {
     for (const [path, note] of [['ja/', '付箋'], ['zh-TW/', '便利貼']] as const) {
       const { context, page } = await openHome(browser, path)

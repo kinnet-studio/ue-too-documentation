@@ -121,6 +121,7 @@ function pickTool(tool: ToolName) {
 }
 
 function run(item: Item) {
+  if (disabled(item)) return
   if (item === 'shapes' || item === 'more') {
     menu.value = menu.value === item ? null : item
     return
@@ -132,17 +133,21 @@ function run(item: Item) {
   else pickTool(item)
 }
 
-// Roving focus: one dock button is in the tab order, the arrow keys move between them
+// Roving focus: one dock button is in the tab order, the arrow keys move
+// between them. Commands that can't run are aria-disabled rather than
+// disabled, so a focused one keeps its focus and its place in the tab order.
 const toolbar = ref<HTMLElement>()
 const items = computed(() => groups.value.flat())
-const rovingIndex = ref(0)
+const rovingItem = ref<Item>('hand')
+// The last focused button, or the first while it isn't in this layout (Clear on narrow screens)
+const tabStop = computed(() => (items.value.includes(rovingItem.value) ? rovingItem.value : items.value[0]))
 
 function dockButtons(): HTMLButtonElement[] {
   return [...(toolbar.value?.querySelectorAll<HTMLButtonElement>(':scope > button') ?? [])]
 }
 
 function onToolbarKey(event: KeyboardEvent) {
-  const buttons = dockButtons().filter(b => !b.disabled)
+  const buttons = dockButtons()
   const current = buttons.indexOf(document.activeElement as HTMLButtonElement)
   if (current < 0) return
   let next = -1
@@ -156,7 +161,16 @@ function onToolbarKey(event: KeyboardEvent) {
 }
 
 function onButtonFocus(item: Item) {
-  rovingIndex.value = items.value.indexOf(item)
+  rovingItem.value = item
+}
+
+// A clicked button lets go of focus, so keys reach the board again: the
+// board only starts Space + drag while the page itself has focus. Keyboard
+// presses (detail 0) keep it.
+function onStackClick(event: MouseEvent) {
+  if (event.detail === 0) return
+  const button = (event.target as Element | null)?.closest?.('button')
+  if (button && document.activeElement === button) button.blur()
 }
 
 function onMenuKey(event: KeyboardEvent) {
@@ -207,7 +221,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div ref="stack" class="wb-stack" data-testid="wb-stack">
+  <div ref="stack" class="wb-stack" data-testid="wb-stack" @click="onStackClick">
     <div v-show="!showPanel" class="wb-hint" data-testid="wb-hint">{{ props.hint }}</div>
     <div v-show="showPanel" class="wb-bar wb-panel" role="group" :aria-label="labels.style" data-testid="wb-style">
       <button
@@ -272,8 +286,8 @@ onBeforeUnmount(() => {
             :aria-pressed="pressed(item)"
             :aria-haspopup="item === 'shapes' || item === 'more' ? 'true' : undefined"
             :aria-expanded="item === 'shapes' || item === 'more' ? menu === item : undefined"
-            :disabled="disabled(item)"
-            :tabindex="items.indexOf(item) === rovingIndex ? 0 : -1"
+            :aria-disabled="disabled(item) || undefined"
+            :tabindex="item === tabStop ? 0 : -1"
             @click="run(item)"
             @focus="onButtonFocus(item)"
             v-html="iconSvg(icon(item))"
@@ -391,7 +405,7 @@ onBeforeUnmount(() => {
   height: 19px;
 }
 
-.wb-tool:hover:not(:disabled),
+.wb-tool:hover:not(:disabled, [aria-disabled='true']),
 .wb-option:hover {
   background: var(--vp-c-bg-soft);
 }
@@ -402,7 +416,8 @@ onBeforeUnmount(() => {
   color: var(--vp-c-brand-1);
 }
 
-.wb-tool:disabled {
+.wb-tool:disabled,
+.wb-tool[aria-disabled='true'] {
   opacity: 0.35;
   cursor: default;
 }
@@ -471,6 +486,21 @@ onBeforeUnmount(() => {
 @media (max-width: 639px) {
   .wb-stack {
     bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Narrower buttons on narrow phones, so the dock (nine buttons, two
+     separators, 40px of gaps, padding and border) and the style panel
+     (eleven options, 44px) keep 8px from each edge down to 320px wide */
+  .wb-sep {
+    margin: 0 2px;
+  }
+
+  .wb-tool {
+    width: min(38px, calc((100vw - 56px) / 9));
+  }
+
+  .wb-option {
+    width: min(30px, calc((100vw - 60px) / 11));
   }
 }
 </style>

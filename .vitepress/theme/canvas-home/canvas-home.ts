@@ -77,8 +77,9 @@ const GRID = 40
 const MIN_GRID_PX = 16
 const BUTTON_RADIUS = 20
 const PILL_FONT_SIZE = 13
-// Where the Back to start pill sits until the bottom HTML reports its height
-const DEFAULT_BOTTOM_INSET = 70
+// How much of the window's bottom the HTML column (hint and dock) covers
+// until it reports its height: 30 hint + 10 gap + 48 dock + 20 margin
+const DEFAULT_BOTTOM_INSET = 108
 // How long the flight back to the start takes
 const FLIGHT_MS = 1000
 // A press that moves further than this, in CSS pixels, isn't a click on a hero button
@@ -177,6 +178,7 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
   let backPressed = false
   let backFocused = false
   let bottomInset = DEFAULT_BOTTOM_INSET
+  let insetReported = false
   // Where the mouse last was over the canvas, or null once it left
   let lastMouse: { id: number; x: number; y: number } | null = null
 
@@ -210,12 +212,16 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
 
   const navHeight = () => parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--vp-nav-height')) || 64
 
-  // Start with the hero centred below the top bar, shrunk if the window is too short for it
+  // How far the middle of the free area (between the top bar and the bottom
+  // HTML) sits below the window's middle, in CSS pixels
+  const freeMiddleOffset = () => (navHeight() - bottomInset) / 2
+
+  // Start with the hero centred between the top bar and the dock, shrunk if the window is too short for it
   function frameHero() {
     const room = window.innerHeight - navHeight() - bottomInset - 24
     const zoom = Math.min(1, Math.max(MIN_START_ZOOM, room / layout.height))
     rig.zoomTo(zoom)
-    rig.panToWorld({ x: 0, y: -navHeight() / 2 / zoom })
+    rig.panToWorld({ x: 0, y: -freeMiddleOffset() / zoom })
     home = currentView()
   }
 
@@ -503,10 +509,16 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
       if (!button) return
       const rect = windowRect(button)
       const inView =
-        rect.left >= 0 && rect.right <= window.innerWidth && rect.top >= navHeight() && rect.bottom <= window.innerHeight
+        rect.left >= 0 &&
+        rect.right <= window.innerWidth &&
+        rect.top >= navHeight() &&
+        rect.bottom <= window.innerHeight - bottomInset
       if (!inView) {
         flight = null
-        rig.panToWorld({ x: button.x + button.width / 2, y: button.y + button.height / 2 })
+        rig.panToWorld({
+          x: button.x + button.width / 2,
+          y: button.y + button.height / 2 - freeMiddleOffset() / board.camera.zoomLevel,
+        })
       }
     },
     goBack,
@@ -514,7 +526,13 @@ export function mountCanvasHome(canvas: HTMLCanvasElement, options: CanvasHomeOp
       backFocused = focusedNow
     },
     setBottomInset(px) {
+      const first = !insetReported
+      insetReported = true
+      if (px === bottomInset) return
+      // Frame the hero again for the column's real height, unless the visitor has moved already
+      const untouched = !flight && !isAway(currentView(), home)
       bottomInset = px
+      if (first && untouched) frameHero()
     },
     destroy,
     buttonRects() {

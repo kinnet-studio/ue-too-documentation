@@ -42,6 +42,8 @@ const { frontmatter, isDark, lang } = useData()
 const canvasEl = ref<HTMLCanvasElement>()
 let handle: CanvasHomeHandle | null = null
 let saver: BoardSaver | null = null
+// Stops reloading the drawing when another tab saves it
+let stopWatching = () => {}
 let unmounted = false
 
 // Leaving the page saves what a pending save hasn't yet
@@ -130,6 +132,7 @@ onMounted(async () => {
     })
     canvasHome.value = handle
     saver = storage.saveBoard(drawing, store)
+    stopWatching = storage.watchSaves(saver)
     window.addEventListener('pagehide', flushDrawing)
   } catch (error) {
     fallBack(error)
@@ -142,6 +145,7 @@ watch([() => frontmatter.value.hero, lang], () => handle?.setContent(content(), 
 onBeforeUnmount(() => {
   unmounted = true
   window.removeEventListener('pagehide', flushDrawing)
+  stopWatching()
   saver?.flush()
   saver?.dispose()
   saver = null
