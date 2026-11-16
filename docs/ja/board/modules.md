@@ -7,3 +7,4 @@
 ## モジュール
 
 - [index](index/index.md)
+- [whiteboard](whiteboard/index.md)

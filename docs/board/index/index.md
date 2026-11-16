@@ -268,6 +268,7 @@ requestAnimationFrame(draw);
 - [Canvas](interfaces/Canvas.md)
 - [KmtInputContext](interfaces/KmtInputContext.md)
 - [CanvasDimensions](type-aliases/CanvasDimensions.md)
+- [KmtInputMode](type-aliases/KmtInputMode.md)
 
 ## Input State Machine - KMT
 
@@ -288,8 +289,15 @@ requestAnimationFrame(draw);
 ## Input State Machine - Touch
 
 - [IdleState](classes/IdleState.md)
+- [OneFingerPanIdleState](classes/OneFingerPanIdleState.md)
+- [OneFingerPanPanningState](classes/OneFingerPanPanningState.md)
+- [OneFingerPanPinchingState](classes/OneFingerPanPinchingState.md)
 - [TouchInputTracker](classes/TouchInputTracker.md)
 - [TouchContext](interfaces/TouchContext.md)
+- [OneFingerPanTouchInputEventOutputMapping](type-aliases/OneFingerPanTouchInputEventOutputMapping.md)
+- [OneFingerPanTouchInputStateMachine](type-aliases/OneFingerPanTouchInputStateMachine.md)
+- [OneFingerPanTouchInputStateMachineExpansion](type-aliases/OneFingerPanTouchInputStateMachineExpansion.md)
+- [OneFingerPanTouchStates](type-aliases/OneFingerPanTouchStates.md)
 - [TouchEventMapping](type-aliases/TouchEventMapping.md)
 - [TouchEventPayload](type-aliases/TouchEventPayload.md)
 - [TouchInputEventOutputMapping](type-aliases/TouchInputEventOutputMapping.md)
@@ -298,7 +306,9 @@ requestAnimationFrame(draw);
 - [TouchOutputEvent](type-aliases/TouchOutputEvent.md)
 - [TouchPoints](type-aliases/TouchPoints.md)
 - [TouchStates](type-aliases/TouchStates.md)
+- [createOneFingerPanTouchInputStateMachine](functions/createOneFingerPanTouchInputStateMachine.md)
 - [createTouchInputStateMachine](functions/createTouchInputStateMachine.md)
+- [expandOneFingerPanTouchInputStateMachine](functions/expandOneFingerPanTouchInputStateMachine.md)
 - [expandTouchInputStateMachine](functions/expandTouchInputStateMachine.md)
 
 ## Matrix

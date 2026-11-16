@@ -1,4 +1,4 @@
-# @ue-too/board-vue-adapter v0.20.1
+# @ue-too/board-vue-adapter v0.21.0
 
 ## Documents
 

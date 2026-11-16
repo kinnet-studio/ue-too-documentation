@@ -4,7 +4,7 @@
 
 > **InitAppOptions** = `object`
 
-Defined in: [init-app.ts:51](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-pixi-integration/src/init-app.ts#L51)
+Defined in: [init-app.ts:52](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-integration/src/init-app.ts#L52)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [init-app.ts:51](https://github.com/kinnet-studio/ue-too/blob/a2e133
 
 > **boundaries**: `object`
 
-Defined in: [init-app.ts:55](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-pixi-integration/src/init-app.ts#L55)
+Defined in: [init-app.ts:56](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-integration/src/init-app.ts#L56)
 
 #### max
 
@@ -44,7 +44,7 @@ Defined in: [init-app.ts:55](https://github.com/kinnet-studio/ue-too/blob/a2e133
 
 > **camera**: `DefaultBoardCamera`
 
-Defined in: [init-app.ts:54](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-pixi-integration/src/init-app.ts#L54)
+Defined in: [init-app.ts:55](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-integration/src/init-app.ts#L55)
 
 ***
 
@@ -52,7 +52,19 @@ Defined in: [init-app.ts:54](https://github.com/kinnet-studio/ue-too/blob/a2e133
 
 > **fullScreen**: `boolean`
 
-Defined in: [init-app.ts:52](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-pixi-integration/src/init-app.ts#L52)
+Defined in: [init-app.ts:53](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-integration/src/init-app.ts#L53)
+
+***
+
+### inputMode
+
+> **inputMode**: `KmtInputMode`
+
+Defined in: [init-app.ts:60](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-integration/src/init-app.ts#L60)
+
+The input device to start in: `'kmt'` (keyboard + mouse, the default;
+ a plain scroll wheel zooms) or `'trackpad'` (a two-finger swipe pans).
+ Switch later with `observableInputTracker.setMode`.
 
 ***
 
@@ -60,4 +72,4 @@ Defined in: [init-app.ts:52](https://github.com/kinnet-studio/ue-too/blob/a2e133
 
 > **limitEntireViewPort**: `boolean`
 
-Defined in: [init-app.ts:53](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-pixi-integration/src/init-app.ts#L53)
+Defined in: [init-app.ts:54](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-pixi-integration/src/init-app.ts#L54)

@@ -2,7 +2,7 @@
 
 # Class: Board
 
-Defined in: [packages/board/src/boardify/index.ts:233](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L233)
+Defined in: [packages/board/src/boardify/index.ts:236](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L236)
 
 Main user-facing API class that provides an infinite canvas with pan, zoom, and rotate capabilities.
 
@@ -160,7 +160,7 @@ board.attach(canvasElement);
 
 > **get** **alignCoordinateSystem**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:558](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L558)
+Defined in: [packages/board/src/boardify/index.ts:561](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L561)
 
 ##### Returns
 
@@ -170,7 +170,7 @@ Defined in: [packages/board/src/boardify/index.ts:558](https://github.com/kinnet
 
 > **set** **alignCoordinateSystem**(`align`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:552](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L552)
+Defined in: [packages/board/src/boardify/index.ts:555](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L555)
 
 ##### Description
 
@@ -196,7 +196,7 @@ If you change this value during runtime, you should update the context to be ali
 
 > **get** **camera**(): [`ObservableBoardCamera`](../interfaces/ObservableBoardCamera.md)
 
-Defined in: [packages/board/src/boardify/index.ts:707](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L707)
+Defined in: [packages/board/src/boardify/index.ts:761](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L761)
 
 ##### Description
 
@@ -211,7 +211,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **set** **camera**(`camera`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:711](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L711)
+Defined in: [packages/board/src/boardify/index.ts:765](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L765)
 
 ##### Parameters
 
@@ -231,7 +231,7 @@ Defined in: [packages/board/src/boardify/index.ts:711](https://github.com/kinnet
 
 > **get** **cameraMux**(): [`CameraMux`](../interfaces/CameraMux.md)
 
-Defined in: [packages/board/src/boardify/index.ts:721](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L721)
+Defined in: [packages/board/src/boardify/index.ts:775](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L775)
 
 ##### Returns
 
@@ -241,7 +241,7 @@ Defined in: [packages/board/src/boardify/index.ts:721](https://github.com/kinnet
 
 > **set** **cameraMux**(`cameraMux`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:725](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L725)
+Defined in: [packages/board/src/boardify/index.ts:779](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L779)
 
 ##### Parameters
 
@@ -261,7 +261,7 @@ Defined in: [packages/board/src/boardify/index.ts:725](https://github.com/kinnet
 
 > **get** **canvasDimensions**(): [`CanvasDimensions`](../type-aliases/CanvasDimensions.md)
 
-Defined in: [packages/board/src/boardify/index.ts:1069](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1069)
+Defined in: [packages/board/src/boardify/index.ts:1141](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1141)
 
 ##### Returns
 
@@ -275,7 +275,7 @@ Defined in: [packages/board/src/boardify/index.ts:1069](https://github.com/kinne
 
 > **get** **clampRotation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:1014](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1014)
+Defined in: [packages/board/src/boardify/index.ts:1068](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1068)
 
 ##### Returns
 
@@ -285,7 +285,7 @@ Defined in: [packages/board/src/boardify/index.ts:1014](https://github.com/kinne
 
 > **set** **clampRotation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:1018](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1018)
+Defined in: [packages/board/src/boardify/index.ts:1072](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1072)
 
 ##### Parameters
 
@@ -305,7 +305,7 @@ Defined in: [packages/board/src/boardify/index.ts:1018](https://github.com/kinne
 
 > **get** **clampTranslation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:998](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L998)
+Defined in: [packages/board/src/boardify/index.ts:1052](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1052)
 
 ##### Returns
 
@@ -315,7 +315,7 @@ Defined in: [packages/board/src/boardify/index.ts:998](https://github.com/kinnet
 
 > **set** **clampTranslation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:1002](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1002)
+Defined in: [packages/board/src/boardify/index.ts:1056](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1056)
 
 ##### Parameters
 
@@ -335,7 +335,7 @@ Defined in: [packages/board/src/boardify/index.ts:1002](https://github.com/kinne
 
 > **get** **clampZoom**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:1006](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1006)
+Defined in: [packages/board/src/boardify/index.ts:1060](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1060)
 
 ##### Returns
 
@@ -345,7 +345,7 @@ Defined in: [packages/board/src/boardify/index.ts:1006](https://github.com/kinne
 
 > **set** **clampZoom**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:1010](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1010)
+Defined in: [packages/board/src/boardify/index.ts:1064](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1064)
 
 ##### Parameters
 
@@ -365,7 +365,7 @@ Defined in: [packages/board/src/boardify/index.ts:1010](https://github.com/kinne
 
 > **get** **context**(): `CanvasRenderingContext2D` \| `undefined`
 
-Defined in: [packages/board/src/boardify/index.ts:582](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L582)
+Defined in: [packages/board/src/boardify/index.ts:585](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L585)
 
 ##### Description
 
@@ -384,7 +384,7 @@ If alignCoordinateSystem is false, this returns a proxy that automatically negat
 
 > **get** **fullScreen**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:566](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L566)
+Defined in: [packages/board/src/boardify/index.ts:569](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L569)
 
 ##### Description
 
@@ -399,7 +399,7 @@ and the width and height of the board will resize with the window.
 
 > **set** **fullScreen**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:570](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L570)
+Defined in: [packages/board/src/boardify/index.ts:573](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L573)
 
 ##### Parameters
 
@@ -419,7 +419,7 @@ Defined in: [packages/board/src/boardify/index.ts:570](https://github.com/kinnet
 
 > **get** **height**(): `number`
 
-Defined in: [packages/board/src/boardify/index.ts:543](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L543)
+Defined in: [packages/board/src/boardify/index.ts:546](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L546)
 
 ##### Returns
 
@@ -433,7 +433,7 @@ Defined in: [packages/board/src/boardify/index.ts:543](https://github.com/kinnet
 
 > **get** **inputMode**(): `"kmt"` \| `"trackpad"` \| `"TBD"`
 
-Defined in: [packages/board/src/boardify/index.ts:1036](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1036)
+Defined in: [packages/board/src/boardify/index.ts:1107](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1107)
 
 The current input modality.
 
@@ -441,8 +441,9 @@ The current input modality.
 
 `"kmt"` \| `"trackpad"` \| `"TBD"`
 
-`'kmt'` (keyboard-mouse), `'trackpad'`, or `'TBD'` when
-auto-detection is active and has not yet committed to a mode.
+`'kmt'` (keyboard-mouse, the default), `'trackpad'`, or `'TBD'`
+when auto-detection was turned on with [enableAutoInputMode](#enableautoinputmode) and has
+not yet committed to a mode.
 
 ***
 
@@ -452,7 +453,7 @@ auto-detection is active and has not yet committed to a mode.
 
 > **get** **inputOrchestrator**(): [`InputOrchestrator`](InputOrchestrator.md)
 
-Defined in: [packages/board/src/boardify/index.ts:518](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L518)
+Defined in: [packages/board/src/boardify/index.ts:521](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L521)
 
 ##### Returns
 
@@ -466,7 +467,7 @@ Defined in: [packages/board/src/boardify/index.ts:518](https://github.com/kinnet
 
 > **get** **kmtInputStateMachine**(): [`KmtInputStateMachine`](../type-aliases/KmtInputStateMachine.md) \| `undefined`
 
-Defined in: [packages/board/src/boardify/index.ts:648](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L648)
+Defined in: [packages/board/src/boardify/index.ts:651](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L651)
 
 The keyboard/mouse/trackpad input state machine currently driving the
 board, read from the active parser so it stays correct after a
@@ -503,7 +504,7 @@ expose one.
 
 > **get** **kmtParser**(): [`KMTEventParser`](../interfaces/KMTEventParser.md)
 
-Defined in: [packages/board/src/boardify/index.ts:621](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L621)
+Defined in: [packages/board/src/boardify/index.ts:624](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L624)
 
 ##### Returns
 
@@ -513,7 +514,7 @@ Defined in: [packages/board/src/boardify/index.ts:621](https://github.com/kinnet
 
 > **set** **kmtParser**(`parser`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:611](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L611)
+Defined in: [packages/board/src/boardify/index.ts:614](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L614)
 
 ##### Description
 
@@ -538,7 +539,7 @@ You can implement your own strategy by implementing the BoardKMTStrategy interfa
 
 > **get** **limitEntireViewPort**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:603](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L603)
+Defined in: [packages/board/src/boardify/index.ts:606](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L606)
 
 ##### Returns
 
@@ -548,7 +549,7 @@ Defined in: [packages/board/src/boardify/index.ts:603](https://github.com/kinnet
 
 > **set** **limitEntireViewPort**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:593](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L593)
+Defined in: [packages/board/src/boardify/index.ts:596](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L596)
 
 ##### Description
 
@@ -573,7 +574,7 @@ If set to false, only the center of the camera is bounded by the boundaries.
 
 > **get** **maxHalfTransHeight**(): `number` \| `undefined`
 
-Defined in: [packages/board/src/boardify/index.ts:849](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L849)
+Defined in: [packages/board/src/boardify/index.ts:903](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L903)
 
 ##### Description
 
@@ -591,7 +592,7 @@ The max translation height of the camera. This is the maximum distance the camer
 
 > **get** **maxHalfTransWidth**(): `number` \| `undefined`
 
-Defined in: [packages/board/src/boardify/index.ts:856](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L856)
+Defined in: [packages/board/src/boardify/index.ts:910](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L910)
 
 ##### Description
 
@@ -609,7 +610,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **get** **restrictRelativeXTranslation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:950](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L950)
+Defined in: [packages/board/src/boardify/index.ts:1004](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1004)
 
 ##### Returns
 
@@ -619,7 +620,7 @@ Defined in: [packages/board/src/boardify/index.ts:950](https://github.com/kinnet
 
 > **set** **restrictRelativeXTranslation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:966](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L966)
+Defined in: [packages/board/src/boardify/index.ts:1020](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1020)
 
 ##### Parameters
 
@@ -639,7 +640,7 @@ Defined in: [packages/board/src/boardify/index.ts:966](https://github.com/kinnet
 
 > **get** **restrictRelativeYTranslation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:954](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L954)
+Defined in: [packages/board/src/boardify/index.ts:1008](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1008)
 
 ##### Returns
 
@@ -649,7 +650,7 @@ Defined in: [packages/board/src/boardify/index.ts:954](https://github.com/kinnet
 
 > **set** **restrictRelativeYTranslation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:970](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L970)
+Defined in: [packages/board/src/boardify/index.ts:1024](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1024)
 
 ##### Parameters
 
@@ -669,7 +670,7 @@ Defined in: [packages/board/src/boardify/index.ts:970](https://github.com/kinnet
 
 > **get** **restrictRotation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:990](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L990)
+Defined in: [packages/board/src/boardify/index.ts:1044](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1044)
 
 ##### Returns
 
@@ -679,7 +680,7 @@ Defined in: [packages/board/src/boardify/index.ts:990](https://github.com/kinnet
 
 > **set** **restrictRotation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:994](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L994)
+Defined in: [packages/board/src/boardify/index.ts:1048](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1048)
 
 ##### Parameters
 
@@ -699,7 +700,7 @@ Defined in: [packages/board/src/boardify/index.ts:994](https://github.com/kinnet
 
 > **get** **restrictXTranslation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:958](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L958)
+Defined in: [packages/board/src/boardify/index.ts:1012](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1012)
 
 ##### Returns
 
@@ -709,7 +710,7 @@ Defined in: [packages/board/src/boardify/index.ts:958](https://github.com/kinnet
 
 > **set** **restrictXTranslation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:974](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L974)
+Defined in: [packages/board/src/boardify/index.ts:1028](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1028)
 
 ##### Parameters
 
@@ -729,7 +730,7 @@ Defined in: [packages/board/src/boardify/index.ts:974](https://github.com/kinnet
 
 > **get** **restrictYTranslation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:962](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L962)
+Defined in: [packages/board/src/boardify/index.ts:1016](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1016)
 
 ##### Returns
 
@@ -739,7 +740,7 @@ Defined in: [packages/board/src/boardify/index.ts:962](https://github.com/kinnet
 
 > **set** **restrictYTranslation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:978](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L978)
+Defined in: [packages/board/src/boardify/index.ts:1032](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1032)
 
 ##### Parameters
 
@@ -759,7 +760,7 @@ Defined in: [packages/board/src/boardify/index.ts:978](https://github.com/kinnet
 
 > **get** **restrictZoom**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:982](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L982)
+Defined in: [packages/board/src/boardify/index.ts:1036](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1036)
 
 ##### Returns
 
@@ -769,7 +770,7 @@ Defined in: [packages/board/src/boardify/index.ts:982](https://github.com/kinnet
 
 > **set** **restrictZoom**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:986](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L986)
+Defined in: [packages/board/src/boardify/index.ts:1040](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1040)
 
 ##### Parameters
 
@@ -789,7 +790,7 @@ Defined in: [packages/board/src/boardify/index.ts:986](https://github.com/kinnet
 
 > **get** **touchInputStateMachine**(): [`TouchInputStateMachine`](../type-aliases/TouchInputStateMachine.md) \| `undefined`
 
-Defined in: [packages/board/src/boardify/index.ts:696](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L696)
+Defined in: [packages/board/src/boardify/index.ts:699](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L699)
 
 The touch input state machine currently driving the board, read from
 the active parser so it stays correct after a [touchParser](#touchparser) swap.
@@ -826,7 +827,7 @@ expose one.
 
 > **get** **touchParser**(): [`TouchEventParser`](../interfaces/TouchEventParser.md)
 
-Defined in: [packages/board/src/boardify/index.ts:669](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L669)
+Defined in: [packages/board/src/boardify/index.ts:672](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L672)
 
 ##### Returns
 
@@ -836,7 +837,7 @@ Defined in: [packages/board/src/boardify/index.ts:669](https://github.com/kinnet
 
 > **set** **touchParser**(`parser`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:659](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L659)
+Defined in: [packages/board/src/boardify/index.ts:662](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L662)
 
 ##### Description
 
@@ -861,7 +862,7 @@ You can have your own parser by implementing the BoardTouchParser interface.
 
 > **get** **width**(): `number`
 
-Defined in: [packages/board/src/boardify/index.ts:539](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L539)
+Defined in: [packages/board/src/boardify/index.ts:542](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L542)
 
 ##### Returns
 
@@ -873,7 +874,7 @@ Defined in: [packages/board/src/boardify/index.ts:539](https://github.com/kinnet
 
 > **convertWindowPoint2WorldCoord**(`clickPointInWindow`): `Point`
 
-Defined in: [packages/board/src/boardify/index.ts:801](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L801)
+Defined in: [packages/board/src/boardify/index.ts:855](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L855)
 
 TODO add the option to make the camera position to be at the top left corner of the canvas; or better yet any point in the viewport (within the viewport boundaries)
 
@@ -901,7 +902,7 @@ Converts a point from window coordinates to world coordinates.
 
 > **disableEventListeners**(): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:508](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L508)
+Defined in: [packages/board/src/boardify/index.ts:511](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L511)
 
 #### Returns
 
@@ -913,12 +914,13 @@ Defined in: [packages/board/src/boardify/index.ts:508](https://github.com/kinnet
 
 > **enableAutoInputMode**(): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:1061](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1061)
+Defined in: [packages/board/src/boardify/index.ts:1133](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1133)
 
-Returns the board to auto-detection of input modality after a manual lock
-set via [setInputMode](#setinputmode) or [toggleInputMode](#toggleinputmode).
+Opts into auto-detection of the input modality.
 
-The mode reverts to `'TBD'` until auto-detection commits to a mode.
+The mode becomes `'TBD'`, where a plain scroll pans, until a middle-click
+settles it on `'kmt'`. Auto-detection is off by default; prefer letting
+the user choose with [setInputMode](#setinputmode).
 
 #### Returns
 
@@ -930,7 +932,7 @@ The mode reverts to `'TBD'` until auto-detection commits to a mode.
 
 > **enableEventListeners**(): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:513](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L513)
+Defined in: [packages/board/src/boardify/index.ts:516](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L516)
 
 #### Returns
 
@@ -942,7 +944,7 @@ Defined in: [packages/board/src/boardify/index.ts:513](https://github.com/kinnet
 
 > **getCameraRig**(): [`CameraRig`](../interfaces/CameraRig.md)
 
-Defined in: [packages/board/src/boardify/index.ts:1022](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1022)
+Defined in: [packages/board/src/boardify/index.ts:1076](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1076)
 
 #### Returns
 
@@ -954,7 +956,7 @@ Defined in: [packages/board/src/boardify/index.ts:1022](https://github.com/kinne
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: [packages/board/src/boardify/index.ts:824](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L824)
+Defined in: [packages/board/src/boardify/index.ts:878](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L878)
 
 #### Type Parameters
 
@@ -993,7 +995,7 @@ There's also an "all" event that will be triggered when any of the above events 
 
 > **onCanvasDimensionChange**(`callback`): () => `void`
 
-Defined in: [packages/board/src/boardify/index.ts:1065](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1065)
+Defined in: [packages/board/src/boardify/index.ts:1137](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1137)
 
 #### Parameters
 
@@ -1015,7 +1017,7 @@ Defined in: [packages/board/src/boardify/index.ts:1065](https://github.com/kinne
 
 > **onInput**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-Defined in: [packages/board/src/boardify/index.ts:839](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L839)
+Defined in: [packages/board/src/boardify/index.ts:893](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L893)
 
 #### Type Parameters
 
@@ -1049,17 +1051,94 @@ Input event does not necesarily mean that the camera will move. The input events
 
 > **setInputMode**(`mode`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:1026](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1026)
+Defined in: [packages/board/src/boardify/index.ts:1096](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1096)
+
+Sets the input device the board is set up for and turns auto-detection off.
 
 #### Parameters
 
 ##### mode
 
-`"kmt"` | `"trackpad"`
+[`KmtInputMode`](../type-aliases/KmtInputMode.md)
+
+`'kmt'` or `'trackpad'`
 
 #### Returns
 
 `void`
+
+#### Remarks
+
+Boards start in `'kmt'` (keyboard + mouse: a plain scroll wheel zooms). In
+`'trackpad'` a two-finger swipe pans and a pinch zooms. Give users a way to
+choose (and remember their choice) rather than guessing from their input.
+
+#### Example
+
+```typescript
+const board = new Board(canvas);
+board.setInputMode('trackpad');
+```
+
+***
+
+### setTouchInputStateMachine()
+
+> **setTouchInputStateMachine**\<`Machine`\>(`createMachine`): `Machine`
+
+Defined in: [packages/board/src/boardify/index.ts:741](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L741)
+
+Swaps the state machine that turns touch input into camera moves.
+
+#### Type Parameters
+
+##### Machine
+
+`Machine` *extends* [`StateMachine`](../interfaces/StateMachine.md)
+
+#### Parameters
+
+##### createMachine
+
+(`context`) => `Machine`
+
+Builds the machine from the board's own touch
+context, e.g. [createOneFingerPanTouchInputStateMachine](../functions/createOneFingerPanTouchInputStateMachine.md),
+[createTouchInputStateMachine](../functions/createTouchInputStateMachine.md), or your own function wrapping an
+`expand...` helper
+
+#### Returns
+
+`Machine`
+
+The machine `createMachine` built, with its real type
+
+#### Remarks
+
+The board installs a new [VanillaTouchEventParser](VanillaTouchEventParser.md) driving the
+machine, through the [touchParser](#touchparser) setter. A disabled touch
+parser stays disabled. Because the machine shares the board's touch
+context, [alignCoordinateSystem](#aligncoordinatesystem) keeps applying to it.
+
+[touchParser](#touchparser) and [touchInputStateMachine](#touchinputstatemachine) return the new
+machine afterwards, but keep their stock type; use the return value
+when you need the machine's real type.
+
+To use a custom parser instead, build it with the machine and assign it
+to [touchParser](#touchparser).
+
+#### Examples
+
+One finger pans, two fingers pinch-zoom:
+```typescript
+const board = new Board(canvas);
+board.setTouchInputStateMachine(createOneFingerPanTouchInputStateMachine);
+```
+
+Back to the default, where only two-finger gestures move the camera:
+```typescript
+board.setTouchInputStateMachine(createTouchInputStateMachine);
+```
 
 ***
 
@@ -1067,7 +1146,7 @@ Defined in: [packages/board/src/boardify/index.ts:1026](https://github.com/kinne
 
 > **step**(`timestamp`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:738](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L738)
+Defined in: [packages/board/src/boardify/index.ts:792](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L792)
 
 #### Parameters
 
@@ -1089,7 +1168,7 @@ This is the step function that is called in the animation frame. This function i
 
 > **toggleInputMode**(): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:1051](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L1051)
+Defined in: [packages/board/src/boardify/index.ts:1122](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L1122)
 
 Flips the input mode between keyboard-mouse and trackpad and locks it,
 disabling auto-detection.
@@ -1113,7 +1192,7 @@ natural "other" mode to toggle into is `'kmt'`.)
 
 > **setMaxTransWidthWithFixedMaxBoundary**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:919](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L919)
+Defined in: [packages/board/src/boardify/index.ts:973](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L973)
 
 #### Parameters
 
@@ -1135,7 +1214,7 @@ This function sets the max translation width of the camera while fixing the mini
 
 > **setMaxTransWidthWithFixedMinBoundary**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:884](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L884)
+Defined in: [packages/board/src/boardify/index.ts:938](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L938)
 
 #### Parameters
 
@@ -1157,7 +1236,7 @@ This function sets the max translation width of the camera while fixing the mini
 
 > **new Board**(`canvas?`, `debug?`): `Board`
 
-Defined in: [packages/board/src/boardify/index.ts:337](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L337)
+Defined in: [packages/board/src/boardify/index.ts:340](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L340)
 
 Creates a new Board instance with an optional canvas element.
 
@@ -1258,7 +1337,7 @@ const board = new Board(canvas, true);
 
 > **attach**(`canvas`, `debug`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:487](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L487)
+Defined in: [packages/board/src/boardify/index.ts:490](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L490)
 
 Attaches a canvas element to the board, enabling rendering and input handling.
 
@@ -1350,7 +1429,7 @@ board.attach(canvas2);
 
 > **tearDown**(): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:526](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/boardify/index.ts#L526)
+Defined in: [packages/board/src/boardify/index.ts:529](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/boardify/index.ts#L529)
 
 #### Returns
 

@@ -1,0 +1,9 @@
+[@ue-too/board](../../modules.md) / [whiteboard](../index.md) / PathOp
+
+# 型別別名: PathOp
+
+> **PathOp** = \[`"M"`, `number`, `number`\] \| \[`"L"`, `number`, `number`\] \| \[`"C"`, `number`, `number`, `number`, `number`, `number`, `number`\] \| \[`"Z"`\]
+
+定義於: [packages/board/src/whiteboard/render/sketch.ts:15](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/whiteboard/render/sketch.ts#L15)
+
+One path command in world units: move, line, cubic Bézier, close.

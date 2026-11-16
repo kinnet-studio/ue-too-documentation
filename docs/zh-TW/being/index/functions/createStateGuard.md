@@ -4,7 +4,7 @@
 
 > **createStateGuard**\<`T`\>(`set`): (`s`) => `s is T`
 
-定義於: [interface.ts:1191](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/being/src/interface.ts#L1191)
+定義於: [interface.ts:1191](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/being/src/interface.ts#L1191)
 
 Creates a type guard function for checking if a value belongs to a specific set of states.
 

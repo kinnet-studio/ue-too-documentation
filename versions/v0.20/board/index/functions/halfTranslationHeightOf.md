@@ -1,0 +1,37 @@
+[@ue-too/board](../../modules.md) / [index](../index.md) / halfTranslationHeightOf
+
+# Function: halfTranslationHeightOf()
+
+> **halfTranslationHeightOf**(`boundaries`): `number` \| `undefined`
+
+Defined in: [packages/board/src/camera/utils/position.ts:400](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/position.ts#L400)
+
+Calculates half the height (y-axis half-span) of the boundaries.
+
+## Parameters
+
+### boundaries
+
+The boundaries to measure
+
+[`Boundaries`](../type-aliases/Boundaries.md) | `undefined`
+
+## Returns
+
+`number` \| `undefined`
+
+Half-height in world units, or undefined if y boundaries are not fully defined
+
+## Remarks
+
+Useful for calculating radius or offset from center for y-axis.
+Equivalent to `translationHeightOf(boundaries) / 2`.
+
+## Example
+
+```typescript
+halfTranslationHeightOf({
+  min: { x: -100, y: -50 },
+  max: { x: 100, y: 50 }
+}); // 50
+```

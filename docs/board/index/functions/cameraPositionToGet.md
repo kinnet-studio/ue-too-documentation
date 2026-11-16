@@ -4,7 +4,7 @@
 
 > **cameraPositionToGet**(`pointInWorld`, `toPointInViewPort`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:468](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/camera/utils/coordinate-conversion.ts#L468)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:468](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/camera/utils/coordinate-conversion.ts#L468)
 
 Calculates the camera position needed to place a world point at a specific viewport location.
 Useful for implementing "zoom to point" or "focus on object" features.

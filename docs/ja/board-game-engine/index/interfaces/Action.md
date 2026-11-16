@@ -2,7 +2,7 @@
 
 # インターフェイス: Action
 
-定義: [action-system/action.ts:7](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/action-system/action.ts#L7)
+定義: [action-system/action.ts:7](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/action-system/action.ts#L7)
 
 ## プロパティ
 
@@ -10,4 +10,4 @@
 
 > **type**: `string`
 
-定義: [action-system/action.ts:8](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board-game-engine/src/action-system/action.ts#L8)
+定義: [action-system/action.ts:8](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board-game-engine/src/action-system/action.ts#L8)

@@ -2,7 +2,7 @@
 
 # Class: QuadTree\<T\>
 
-Defined in: [quadtree.ts:36](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/quadtree.ts#L36)
+Defined in: [quadtree.ts:36](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/quadtree.ts#L36)
 
 QuadTree spatial indexing structure for efficient collision detection.
 
@@ -22,7 +22,7 @@ QuadTree spatial indexing structure for efficient collision detection.
 
 > **new QuadTree**\<`T`\>(`level`, `bounds`): `QuadTree`\<`T`\>
 
-Defined in: [quadtree.ts:45](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/quadtree.ts#L45)
+Defined in: [quadtree.ts:45](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/quadtree.ts#L45)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [quadtree.ts:45](https://github.com/kinnet-studio/ue-too/blob/a2e133
 
 > **clear**(): `void`
 
-Defined in: [quadtree.ts:70](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/quadtree.ts#L70)
+Defined in: [quadtree.ts:70](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/quadtree.ts#L70)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [quadtree.ts:70](https://github.com/kinnet-studio/ue-too/blob/a2e133
 
 > **draw**(`context`): `void`
 
-Defined in: [quadtree.ts:52](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/quadtree.ts#L52)
+Defined in: [quadtree.ts:52](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/quadtree.ts#L52)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [quadtree.ts:52](https://github.com/kinnet-studio/ue-too/blob/a2e133
 
 > **getIndex**(`vBody`): `-1` \| `0` \| `1` \| `2` \| `3`
 
-Defined in: [quadtree.ts:121](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/quadtree.ts#L121)
+Defined in: [quadtree.ts:121](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/quadtree.ts#L121)
 
 #### Parameters
 
@@ -100,7 +100,7 @@ Defined in: [quadtree.ts:121](https://github.com/kinnet-studio/ue-too/blob/a2e13
 
 > **insert**(`vBody`): `void`
 
-Defined in: [quadtree.ts:148](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/quadtree.ts#L148)
+Defined in: [quadtree.ts:148](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/quadtree.ts#L148)
 
 #### Parameters
 
@@ -122,7 +122,7 @@ Defined in: [quadtree.ts:148](https://github.com/kinnet-studio/ue-too/blob/a2e13
 
 > **retrieve**(`vBody`): `T`[]
 
-Defined in: [quadtree.ts:183](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/quadtree.ts#L183)
+Defined in: [quadtree.ts:183](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/quadtree.ts#L183)
 
 #### Parameters
 
@@ -144,7 +144,7 @@ Defined in: [quadtree.ts:183](https://github.com/kinnet-studio/ue-too/blob/a2e13
 
 > **split**(): `void`
 
-Defined in: [quadtree.ts:81](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/dynamics/src/quadtree.ts#L81)
+Defined in: [quadtree.ts:81](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/dynamics/src/quadtree.ts#L81)
 
 #### Returns
 

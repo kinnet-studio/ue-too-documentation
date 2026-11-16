@@ -4,7 +4,7 @@
 
 > **solveCubic**(`a`, `b`, `c`, `d`): `number`[]
 
-定義: [packages/curve/src/b-curve.ts:2166](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/curve/src/b-curve.ts#L2166)
+定義: [packages/curve/src/b-curve.ts:2166](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/curve/src/b-curve.ts#L2166)
 
 Solves cubic equations.
 

@@ -2,7 +2,7 @@
 
 # 列挙: CursorStyle
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:25](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L25)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:25](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L25)
 
 Cursor styles used to provide visual feedback for different input states.
 
@@ -19,7 +19,7 @@ These cursor styles indicate the current interaction mode to users:
 
 > **DEFAULT**: `"default"`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)
 
 ***
 
@@ -27,7 +27,7 @@ These cursor styles indicate the current interaction mode to users:
 
 > **GRAB**: `"grab"`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:26](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L26)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:26](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L26)
 
 ***
 
@@ -35,4 +35,4 @@ These cursor styles indicate the current interaction mode to users:
 
 > **GRABBING**: `"grabbing"`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:28](https://github.com/kinnet-studio/ue-too/blob/a2e1339cbd9fb4367774a7b277db2e31ac6c0dfb/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L28)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:28](https://github.com/kinnet-studio/ue-too/blob/d5a4f4e24ceffb124b47501c2c57452fccb6febc/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L28)
