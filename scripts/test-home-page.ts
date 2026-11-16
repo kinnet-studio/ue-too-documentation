@@ -527,6 +527,24 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     await context.close()
   },
 
+  // A drawing is kept in the browser across reloads, and clearing it is kept too
+  async 'drawing-persists'(browser) {
+    const { context, page } = await openHome(browser)
+    const size = () => page.evaluate(() => window.__canvasHome!.editor.document.size)
+    await page.evaluate(() => window.__canvasHome!.editor.setTool('pen'))
+    await drag(page, EMPTY, { x: EMPTY.x + 120, y: EMPTY.y - 40 })
+    await page.waitForTimeout(600)
+    await page.reload()
+    await waitForCanvas(page)
+    assert((await size()) === 1, `after a reload the board has ${await size()} shapes`)
+    await page.evaluate(() => window.__canvasHome!.editor.clear())
+    await page.waitForTimeout(600)
+    await page.reload()
+    await waitForCanvas(page)
+    assert((await size()) === 0, `after clearing and reloading the board has ${await size()} shapes`)
+    await context.close()
+  },
+
   // The drawing follows the site's light and dark themes
   async 'whiteboard-theme'(browser) {
     const { context, page } = await openHome(browser)

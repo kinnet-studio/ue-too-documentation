@@ -11,6 +11,7 @@ import type { CanvasHomeHandle } from './canvas-home'
 import type { HeroContent } from './hero-layout'
 import { backLabel, canvasHome } from './state'
 import { whiteboardTheme } from './whiteboard-theme'
+import type { BoardSaver } from './whiteboard-storage'
 
 interface HeroFrontmatter {
   name?: string
@@ -37,7 +38,11 @@ const HINTS: Record<'en' | 'ja' | 'zh-TW', { fine: string; touch: string }> = {
 const { frontmatter, isDark, lang } = useData()
 const canvasEl = ref<HTMLCanvasElement>()
 let handle: CanvasHomeHandle | null = null
+let saver: BoardSaver | null = null
 let unmounted = false
+
+// Leaving the page saves what a pending save hasn't yet
+const flushDrawing = () => saver?.flush()
 
 // The drawing's colours follow the site's theme; read once the theme's CSS has applied
 function theme() {
@@ -103,20 +108,24 @@ onMounted(async () => {
   document.addEventListener('focusin', onFocusIn)
   document.addEventListener('focusout', onFocusOut)
   try {
-    const [{ mountCanvasHome }, { WhiteboardDocument }] = await Promise.all([
+    const [{ mountCanvasHome }, storage] = await Promise.all([
       import('./canvas-home'),
-      import('@ue-too/board/whiteboard'),
+      import('./whiteboard-storage'),
     ])
     if (unmounted || !canvasEl.value) return
+    const store = storage.browserStorage()
+    const drawing = storage.loadBoard(store)
     handle = mountCanvasHome(canvasEl.value, {
       content: content(),
       backLabel: backLabel(lang.value),
-      document: new WhiteboardDocument(),
+      document: drawing,
       theme: theme(),
       onActivate: activate,
       onError: fallBack,
     })
     canvasHome.value = handle
+    saver = storage.saveBoard(drawing, store)
+    window.addEventListener('pagehide', flushDrawing)
   } catch (error) {
     fallBack(error)
   }
@@ -127,6 +136,10 @@ watch([() => frontmatter.value.hero, lang], () => handle?.setContent(content(), 
 
 onBeforeUnmount(() => {
   unmounted = true
+  window.removeEventListener('pagehide', flushDrawing)
+  saver?.flush()
+  saver?.dispose()
+  saver = null
   handle?.destroy()
   handle = null
   canvasHome.value = null
