@@ -3,7 +3,7 @@
  * ue-too canvas, panning, zooming, clicking its button, keyboard focus, the
  * theme toggle, the locales, leaving the page, phone width and no JavaScript.
  *
- * Usage: bun run test:home:page [--url <site root url>]
+ * Usage: bun run test:home:page [--url <site root url>] [--only <check>,<check>]
  *
  * Without --url it serves the latest line's build (`bunx vitepress build`
  * first) with `vitepress preview` on port 4173.
@@ -341,8 +341,32 @@ const checks: Record<string, (browser: Browser) => Promise<void>> = {
     assert((await zoom()) <= 4 + 1e-6, `zoomed in past 4: ${await zoom()}`)
     for (let i = 0; i < 80; i++) await page.mouse.wheel(0, 400)
     await page.waitForTimeout(100)
-    assert((await zoom()) >= 0.5 - 1e-6, `zoomed out past 0.5: ${await zoom()}`)
+    const out = await zoom()
+    assert(out >= 0.25 - 1e-6, `zoomed out past 0.25: ${out}`)
+    assert(out <= 0.25 + 1e-3, `zooming out stopped at ${out}, before 0.25`)
     await page.keyboard.up('Control')
+    await context.close()
+  },
+
+  // Boards start in keyboard-mouse mode: a plain scroll zooms at the cursor
+  async 'scroll-zooms'(browser) {
+    const { context, page } = await openHome(browser)
+    const before = (await camera(page)).zoom
+    await page.mouse.move(700, 500)
+    await page.mouse.wheel(0, -200)
+    await page.waitForTimeout(100)
+    const after = (await camera(page)).zoom
+    assert(after > before, `a plain scroll left the zoom at ${after} (was ${before})`)
+    await context.close()
+  },
+
+  // There's room to draw: the camera can travel 4,000 world units from the hero
+  async 'pan-room'(browser) {
+    const { context, page } = await openHome(browser)
+    for (let i = 0; i < 8; i++) await drag(page, EMPTY, { x: EMPTY.x + 600, y: EMPTY.y })
+    const { x } = await camera(page)
+    assert(x < -1000, `panning stopped at x = ${x}`)
+    assert(x >= -4000 - 1e-6, `panned past the limit: x = ${x}`)
     await context.close()
   },
 
@@ -491,10 +515,15 @@ async function startPreviewServer() {
   throw new Error(`vitepress preview did not serve ${siteUrl}; run \`bunx vitepress build\` first`)
 }
 
+// --only a,b runs just those checks
+const onlyFlag = process.argv.indexOf('--only')
+const only = onlyFlag === -1 ? null : new Set(process.argv[onlyFlag + 1]?.split(','))
+const selected = Object.entries(checks).filter(([name]) => !only || only.has(name))
+
 const server = urlFlag === -1 ? await startPreviewServer() : null
 const browser = await launchBrowser()
 let failed = 0
-for (const [name, run] of Object.entries(checks)) {
+for (const [name, run] of selected) {
   try {
     await run(browser)
     console.log(`✓ ${name}`)
@@ -506,5 +535,5 @@ for (const [name, run] of Object.entries(checks)) {
 await browser.close()
 server?.kill()
 
-console.log(`${Object.keys(checks).length - failed} of ${Object.keys(checks).length} page checks passed`)
+console.log(`${selected.length - failed} of ${selected.length} page checks passed`)
 process.exit(failed > 0 ? 1 : 0)

@@ -19,9 +19,18 @@ interface HeroFrontmatter {
 }
 
 const HINTS: Record<'en' | 'ja' | 'zh-TW', { fine: string; touch: string }> = {
-  en: { fine: 'Drag to pan · Ctrl + scroll or pinch to zoom', touch: 'Drag to pan · Pinch to zoom' },
-  ja: { fine: 'ドラッグで移動 · Ctrl + スクロールかピンチでズーム', touch: 'ドラッグで移動 · ピンチでズーム' },
-  'zh-TW': { fine: '拖曳平移 · Ctrl + 滾輪或雙指縮放', touch: '拖曳平移 · 雙指縮放' },
+  en: {
+    fine: 'Drag to pan · Scroll or pinch to zoom · Pick a tool to draw',
+    touch: 'Drag to pan · Pinch to zoom · Pick a tool to draw',
+  },
+  ja: {
+    fine: 'ドラッグで移動 · スクロールかピンチでズーム · ツールを選んで描く',
+    touch: 'ドラッグで移動 · ピンチでズーム · ツールを選んで描く',
+  },
+  'zh-TW': {
+    fine: '拖曳平移 · 滾輪或雙指縮放 · 選擇工具開始畫',
+    touch: '拖曳平移 · 雙指縮放 · 選擇工具開始畫',
+  },
 }
 
 const { frontmatter, isDark, lang } = useData()

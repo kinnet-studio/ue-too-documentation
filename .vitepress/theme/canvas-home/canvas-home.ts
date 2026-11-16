@@ -48,10 +48,10 @@ declare global {
   }
 }
 
-const MIN_ZOOM = 0.5
+const MIN_ZOOM = 0.25
 const MAX_ZOOM = 4
 // How far the camera centre can move from the hero, in world units
-const PAN_LIMIT = 1000
+const PAN_LIMIT = 4000
 // Grid spacing in world units, doubled while the dots would be closer than MIN_GRID_PX on screen
 const GRID = 40
 const MIN_GRID_PX = 16
